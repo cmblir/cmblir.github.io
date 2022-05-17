@@ -39,7 +39,7 @@ title: 장고와 AWS 설치하기
         
     3. 프로젝트 설정 수정하기
         
-        ![Django-AWS1.png](images/Django-AWS1.png)
+        ![Django-AWS1.png](/images/Django-AWS1.png)
         
         # main 을 INSTALLED_APPS에 추가한다.
         
@@ -56,7 +56,7 @@ title: 장고와 AWS 설치하기
         
     4. 배포에 사용할 웹 구현
         
-        ![Django-AWS2.png](images/Django-AWS2.png)
+        ![Django-AWS2.png](/images/Django-AWS2.png)
         
         내가 사용할 앱에 templates/main 폴더를 만들고 사용할 html 파일을 만든다.
         
