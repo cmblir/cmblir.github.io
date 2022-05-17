@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 장고와 AWS -1
+title: 장고와 AWS 설치하기
 ---
 
 # Django & AWS
@@ -9,27 +9,37 @@ title: 장고와 AWS -1
 
 1. 사용하기 위한 환경 구현
     1. 프로젝트에 사용할 환경변수 설정 (필자는 conda를 활용)
-        
-        `conda create —name test python=3.8` (파이썬은 3.8을 사용)
+        ```bash
+        conda create —name test python=3.8
+        ```
+         (파이썬은 3.8을 사용)
         
     2. Django 라이브러리 설치
         
-        `pip install django`
+        ```bash
+        pip install django
+        ```
         
 2. 프로젝트 만들기
     1. 배포할 프로젝트 만들기
         
-        `django-admin startproject test`
+        ```bash
+        django-admin startproject test
+        ```
         
     2. 프로젝트에 앱 만들기
         
-        `cd test`
+        ```bash
+        cd test
+        ```
         
-        `python [manage.py](http://manage.py) startapp main`
+        ```bash
+        python [manage.py](http://manage.py) startapp main
+        ```
         
     3. 프로젝트 설정 수정하기
         
-        ![# main 을 INSTALLED_APPS에 추가한다.](images/Django-AWS1.png)
+        ![Django-AWS1.png](images/Django-AWS1.png)
         
         # main 을 INSTALLED_APPS에 추가한다.
         
@@ -46,7 +56,7 @@ title: 장고와 AWS -1
         
     4. 배포에 사용할 웹 구현
         
-        ![Untitled](images/Django-AWS1.png)
+        ![Django-AWS2.png](images/Django-AWS2.png)
         
         내가 사용할 앱에 templates/main 폴더를 만들고 사용할 html 파일을 만든다.
         
@@ -88,16 +98,25 @@ title: 장고와 AWS -1
         
     6. 기본 모델들 migrate
         
-        `python [manage.py](http://manage.py) makemigrations && manage.py migrate`
+        ```bash
+        python [manage.py](http://manage.py) makemigrations && manage.py migrate
+        ```
         
     7. 서버 구동
         
-        `python [manage.py](http://manage.py) runserver`
+        ```bash
+        python [manage.py](http://manage.py) runserver
+        ```
         
         [http://127.0.0.1:8000/](http://127.0.0.1:8000/) 주소 접속
         
     8. 서버 컴퓨터에 패키지 설치를 위해 requirements.txt 만들기
         
-        `pip freeze >> requirements.txt`
+        ```bash
+        pip freeze >> requirements.txt
+        ```
         
-        `cat requirements.txt` requirements 내용 확인
+        ```bash
+        cat requirements.txt
+        ```
+        requirements 내용 확인
