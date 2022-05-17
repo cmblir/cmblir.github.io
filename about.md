@@ -4,12 +4,12 @@ title: About
 permalink: /about/
 ---
 
-Some information about you!
+느리지만 더디지않게, 천천히 성장하는 개발일지
 
 ### More Information
 
-A place to include any other types of information that you'd like to include about yourself.
+아직 블로그 작성이 많이 서투릅니다 !
 
 ### Contact me
 
-[email@domain.com](mailto:email@domain.com)
+[sodlalwl13@gmail.com](mailto:sodlalwl13@gmail.com)
