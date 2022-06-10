@@ -6,7 +6,6 @@ categories : [Django & AWS]
 tags: [Server]
 ---
 
-# Django & AWS
 
 ### 프로젝트 배포를 위해 Django와 AWS를 공부해보았다.
 
