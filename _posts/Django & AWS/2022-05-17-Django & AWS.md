@@ -1,11 +1,12 @@
 ---
 layout: post
-title: 장고와 AWS 설치하기
+title: Django & AWS
 comments: true
 categories : [Django & AWS]
 tags: [Server]
 ---
 
+# 장고와 AWS 설치하기
 
 ### 프로젝트 배포를 위해 Django와 AWS를 공부해보았다.
 

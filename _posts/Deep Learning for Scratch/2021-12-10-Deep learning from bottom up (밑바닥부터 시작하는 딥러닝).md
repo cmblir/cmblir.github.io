@@ -1,11 +1,12 @@
 ---
 layout: post
-title: Deep learning from the bottom up (밑바닥부터 시작하는 딥러닝) CH1
+title: Deep Learning for Scratch
 comments: true
 categories : [Deep Learning for Scratch]
 tags: [Book review]
 ---
 
+# Deep learning from the bottom up (밑바닥부터 시작하는 딥러닝) CH1
 
 ### Deep Learning for Scratch
 

@@ -1,11 +1,12 @@
 ---
 layout: post
-title: Document Manager from Hell {git, github}
+title: git
 comments: true
 categories : [git]
 tags: [git, github]
 ---
 
+# Document Manager from Hell {git, github}
 
 ![document-manager1](https://user-images.githubusercontent.com/75519839/169370460-49527621-95f8-4054-a0da-8de45b47827f.png)
 
