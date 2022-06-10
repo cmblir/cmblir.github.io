@@ -1,6 +1,9 @@
 ---
 layout: post
-title: git, github
+title: Document Manager from Hell {git, github}
+comments: true
+categories : [git]
+tags: [git, github]
 ---
 
 # Document Manager from Hell {git, github}

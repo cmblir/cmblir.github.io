@@ -1,6 +1,9 @@
 ---
 layout: post
 title: 장고와 AWS 설치하기
+comments: true
+categories : [Django & AWS]
+tags: [Server]
 ---
 
 # Django & AWS
