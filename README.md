@@ -3,5 +3,3 @@
 행하고 행하고 또 행하게 되면 이루게 된다.
 
 나의 개발 
-**Jekyll** is a static site generator that's perfect for GitHub hosted blogs ([Jekyll Repository](https://github.com/jekyll/jekyll))ㅂㅡㄹ
-**Jekyll** is a static site generator that's perfect for GitHub hosted blogs ([Jekyll Repository](https://github.com/jekyll/jekyll
