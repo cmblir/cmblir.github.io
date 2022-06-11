@@ -1,9 +1,17 @@
 ---
-layout: post
-title: git
-comments: true
-categories : [git]
-tags: [git, github]
+title:  "깃 명렁어"
+excerpt: "깃 터미널에서 사용할 수 명령어 모음"
+
+categories:
+  - git
+tags:
+  - [github, git]
+
+toc: true
+toc_sticky: true
+ 
+date: 2022-05-18
+last_modified_at: 2022-05-18
 ---
 
 # Document Manager from Hell {git, github}

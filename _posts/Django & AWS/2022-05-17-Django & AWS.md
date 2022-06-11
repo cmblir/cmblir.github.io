@@ -1,9 +1,17 @@
 ---
-layout: post
-title: Django & AWS
-comments: true
-categories : [Django & AWS]
-tags: [Server]
+title:  "django를 시작해보자"
+excerpt: "장고로 시작해서 AWS까지 - 1"
+
+categories:
+  - django
+tags:
+  - [django, aws]
+
+toc: true
+toc_sticky: true
+ 
+date: 2022-06-09
+last_modified_at: 2022-06-09
 ---
 
 # 장고와 AWS 설치하기

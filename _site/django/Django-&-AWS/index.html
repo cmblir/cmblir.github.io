@@ -1,0 +1,727 @@
+<!doctype html>
+<!--
+  Minimal Mistakes Jekyll Theme 4.24.0 by Michael Rose
+  Copyright 2013-2020 Michael Rose - mademistakes.com | @mmistakes
+  Free for personal and commercial use under the MIT license
+  https://github.com/mmistakes/minimal-mistakes/blob/master/LICENSE
+-->
+<html lang="en" class="no-js">
+  <head>
+    <meta charset="utf-8">
+
+<!-- begin _includes/seo.html --><title>django를 시작해보자 - Site Title</title>
+<meta name="description" content="장고로 시작해서 AWS까지 - 1">
+
+
+  <meta name="author" content="Your Name">
+  
+  <meta property="article:author" content="Your Name">
+  
+
+
+<meta property="og:type" content="article">
+<meta property="og:locale" content="en_US">
+<meta property="og:site_name" content="Site Title">
+<meta property="og:title" content="django를 시작해보자">
+<meta property="og:url" content="http://localhost:4000/django/Django-&-AWS/">
+
+
+  <meta property="og:description" content="장고로 시작해서 AWS까지 - 1">
+
+
+
+
+
+
+
+  <meta property="article:published_time" content="2022-06-09T00:00:00+09:00">
+
+
+
+  <meta property="article:modified_time" content="2022-06-09T00:00:00+09:00">
+
+
+
+  
+
+  
+
+
+<link rel="canonical" href="http://localhost:4000/django/Django-&-AWS/">
+
+
+
+
+<script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    
+      "@type": "Person",
+      "name": "Your Name",
+      "url": "http://localhost:4000/"
+    
+  }
+</script>
+
+
+
+
+
+
+
+<!-- end _includes/seo.html -->
+
+
+
+  <link href="/feed.xml" type="application/atom+xml" rel="alternate" title="Site Title Feed">
+
+
+<!-- https://t.co/dKP3o1e -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script>
+  document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
+</script>
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="/assets/css/main.css">
+<link rel="preload" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css"></noscript>
+
+
+
+    <!-- start custom head snippets -->
+
+<!-- insert favicons. use https://realfavicongenerator.net/ -->
+
+<!-- end custom head snippets -->
+
+  </head>
+
+  <body class="layout--single">
+    <nav class="skip-links">
+  <ul>
+    <li><a href="#site-nav" class="screen-reader-shortcut">Skip to primary navigation</a></li>
+    <li><a href="#main" class="screen-reader-shortcut">Skip to content</a></li>
+    <li><a href="#footer" class="screen-reader-shortcut">Skip to footer</a></li>
+  </ul>
+</nav>
+
+    
+
+<div class="masthead">
+  <div class="masthead__inner-wrap">
+    <div class="masthead__menu">
+      <nav id="site-nav" class="greedy-nav">
+        
+        <a class="site-title" href="/">
+          Site Title
+          
+        </a>
+        <ul class="visible-links"><li class="masthead__menu-item">
+              <a href="https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/">Quick-Start Guide</a>
+            </li></ul>
+        
+        <button class="greedy-nav__toggle hidden" type="button">
+          <span class="visually-hidden">Toggle menu</span>
+          <div class="navicon"></div>
+        </button>
+        <ul class="hidden-links hidden"></ul>
+      </nav>
+    </div>
+  </div>
+</div>
+
+
+    <div class="initial-content">
+      
+
+
+
+
+
+<div id="main" role="main">
+  
+  <div class="sidebar sticky">
+  
+
+
+<div itemscope itemtype="https://schema.org/Person" class="h-card">
+
+  
+
+  <div class="author__content">
+    <h3 class="author__name p-name" itemprop="name">
+      <a class="u-url" rel="me" href="http://localhost:4000/" itemprop="url">Your Name</a>
+    </h3>
+    
+      <div class="author__bio p-note" itemprop="description">
+        <p>I am an <strong>amazing</strong> person.</p>
+
+      </div>
+    
+  </div>
+
+  <div class="author__urls-wrapper">
+    <button class="btn btn--inverse">Follow</button>
+    <ul class="author__urls social-icons">
+      
+        <li itemprop="homeLocation" itemscope itemtype="https://schema.org/Place">
+          <i class="fas fa-fw fa-map-marker-alt" aria-hidden="true"></i> <span itemprop="name" class="p-locality">Somewhere</span>
+        </li>
+      
+
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      <!--
+  <li>
+    <a href="http://link-to-whatever-social-network.com/user/" itemprop="sameAs" rel="nofollow noopener noreferrer me">
+      <i class="fas fa-fw" aria-hidden="true"></i> Custom Social Profile Link
+    </a>
+  </li>
+-->
+    </ul>
+  </div>
+</div>
+
+  
+  </div>
+
+
+
+  <article class="page h-entry" itemscope itemtype="https://schema.org/CreativeWork">
+    <meta itemprop="headline" content="django를 시작해보자">
+    <meta itemprop="description" content="장고로 시작해서 AWS까지 - 1">
+    <meta itemprop="datePublished" content="2022-06-09T00:00:00+09:00">
+    <meta itemprop="dateModified" content="2022-06-09T00:00:00+09:00">
+
+    <div class="page__inner-wrap">
+      
+        <header>
+          <h1 id="page-title" class="page__title p-name" itemprop="headline">
+            <a href="http://localhost:4000/django/Django-&-AWS/" class="u-url" itemprop="url">django를 시작해보자
+</a>
+          </h1>
+          
+
+  <p class="page__meta">
+    
+
+    
+
+    
+      
+      
+
+      <span class="page__meta-readtime">
+        <i class="far fa-clock" aria-hidden="true"></i>
+        
+          1 minute read
+        
+      </span>
+    
+  </p>
+
+
+        </header>
+      
+
+      <section class="page__content e-content" itemprop="text">
+        
+          <aside class="sidebar__right sticky">
+            <nav class="toc">
+              <header><h4 class="nav__title"><i class="fas fa-file-alt"></i> On this page</h4></header>
+              <ul class="toc__menu"><li><a href="#장고와-aws-설치하기">장고와 AWS 설치하기</a><ul><li><a href="#프로젝트-배포를-위해-django와-aws를-공부해보았다">프로젝트 배포를 위해 Django와 AWS를 공부해보았다.</a></li></ul></li></ul></li></ul>
+
+            </nav>
+          </aside>
+        
+        <h1 id="장고와-aws-설치하기">장고와 AWS 설치하기</h1>
+
+<h3 id="프로젝트-배포를-위해-django와-aws를-공부해보았다">프로젝트 배포를 위해 Django와 AWS를 공부해보았다.</h3>
+
+<ol>
+  <li>사용하기 위한 환경 구현
+    <ol>
+      <li>프로젝트에 사용할 환경변수 설정 (필자는 conda를 활용)
+        <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code> conda create —name <span class="nb">test </span><span class="nv">python</span><span class="o">=</span>3.8
+</code></pre></div>        </div>
+        <p>(파이썬은 3.8을 사용)</p>
+      </li>
+      <li>
+        <p>Django 라이브러리 설치</p>
+
+        <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code> pip <span class="nb">install </span>django
+</code></pre></div>        </div>
+      </li>
+    </ol>
+  </li>
+  <li>프로젝트 만들기
+    <ol>
+      <li>
+        <p>배포할 프로젝트 만들기</p>
+
+        <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code> django-admin startproject <span class="nb">test</span>
+</code></pre></div>        </div>
+      </li>
+      <li>
+        <p>프로젝트에 앱 만들기</p>
+
+        <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code> <span class="nb">cd test</span>
+</code></pre></div>        </div>
+
+        <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code> python <span class="o">[</span>manage.py]<span class="o">(</span>http://manage.py<span class="o">)</span> startapp main
+</code></pre></div>        </div>
+      </li>
+      <li>
+        <p>프로젝트 설정 수정하기</p>
+
+        <p><img src="https://user-images.githubusercontent.com/75519839/168793812-97023850-ee97-40cf-a7e9-ee9df7cff6ba.png" alt="Django-AWS1" /></p>
+
+        <p># main 을 INSTALLED_APPS에 추가한다.</p>
+
+        <aside>
+ 💡 만약 앱이 여러개일 경우 해당 APPS에 본인이 사용할 앱 폴더명을 넣으면 된다.
+ ex) app1, app2, app3 총 3개가 있다면,
+ `INSTALLED_APPS = [
+ ’app1’,
+ ’app2’,
+ ’app3’,
+ ...]`
+        
+ </aside>
+      </li>
+      <li>
+        <p>배포에 사용할 웹 구현</p>
+
+        <p><img src="https://user-images.githubusercontent.com/75519839/168793856-e0047e72-f84a-4d01-a633-574dfef1130f.png" alt="Django-AWS2" /></p>
+
+        <p>내가 사용할 앱에 templates/main 폴더를 만들고 사용할 html 파일을 만든다.</p>
+
+        <div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code> <span class="cp">&lt;!DOCTYPE html&gt;</span>
+ <span class="nt">&lt;html</span> <span class="na">lang=</span><span class="s">"en"</span><span class="nt">&gt;</span>
+ <span class="nt">&lt;head&gt;</span>
+     <span class="nt">&lt;meta</span> <span class="na">charset=</span><span class="s">"UTF-8"</span><span class="nt">&gt;</span>
+     <span class="nt">&lt;meta</span> <span class="na">name=</span><span class="s">"viewport"</span> <span class="na">content=</span><span class="s">"width=device-width, initial-scale=1.0"</span><span class="nt">&gt;</span>
+     <span class="nt">&lt;title&gt;</span>Document<span class="nt">&lt;/title&gt;</span>
+ <span class="nt">&lt;/head&gt;</span>
+ <span class="nt">&lt;body&gt;</span>
+     <span class="nt">&lt;h1&gt;</span> 장고를 화면에 띄웠습니다! <span class="nt">&lt;/h1&gt;</span>
+ <span class="nt">&lt;/body&gt;</span>
+ <span class="nt">&lt;/html&gt;</span>
+</code></pre></div>        </div>
+      </li>
+      <li>
+        <p>views와 url 설정</p>
+
+        <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code> <span class="kn">from</span> <span class="nn">django.shortcuts</span> <span class="kn">import</span> <span class="n">render</span>
+         
+ <span class="c1"># Create your views here.
+</span> <span class="k">def</span> <span class="nf">index</span><span class="p">(</span><span class="n">request</span><span class="p">):</span>
+     <span class="k">return</span> <span class="n">render</span><span class="p">(</span><span class="n">request</span><span class="p">,</span> <span class="s">"main/index.html"</span><span class="p">)</span>
+ <span class="c1"># index.html은 필자가 사용한 html 파일 이름이다. 만약 이름이 다르면 변경하고 폴더주소도 다를경우 변경
+</span></code></pre></div>        </div>
+
+        <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code> <span class="kn">from</span> <span class="nn">django.contrib</span> <span class="kn">import</span> <span class="n">admin</span>
+ <span class="kn">from</span> <span class="nn">django.urls</span> <span class="kn">import</span> <span class="n">path</span>
+ <span class="kn">from</span> <span class="nn">main</span> <span class="kn">import</span> <span class="n">views</span> <span class="k">as</span> <span class="n">main_views</span>
+         
+ <span class="n">urlpatterns</span> <span class="o">=</span> <span class="p">[</span>
+     <span class="n">path</span><span class="p">(</span><span class="s">''</span><span class="p">,</span> <span class="n">main_views</span><span class="p">.</span><span class="n">index</span><span class="p">,</span> <span class="n">name</span><span class="o">=</span><span class="s">"index"</span><span class="p">),</span> <span class="c1"># html 파일 이름을 사용한다
+</span>     <span class="n">path</span><span class="p">(</span><span class="s">'admin/'</span><span class="p">,</span> <span class="n">admin</span><span class="p">.</span><span class="n">site</span><span class="p">.</span><span class="n">urls</span><span class="p">),</span>
+ <span class="p">]</span>
+</code></pre></div>        </div>
+      </li>
+      <li>
+        <p>기본 모델들 migrate</p>
+
+        <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code> python <span class="o">[</span>manage.py]<span class="o">(</span>http://manage.py<span class="o">)</span> makemigrations <span class="o">&amp;&amp;</span> manage.py migrate
+</code></pre></div>        </div>
+      </li>
+      <li>
+        <p>서버 구동</p>
+
+        <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code> python <span class="o">[</span>manage.py]<span class="o">(</span>http://manage.py<span class="o">)</span> runserver
+</code></pre></div>        </div>
+
+        <p><a href="http://127.0.0.1:8000/">http://127.0.0.1:8000/</a> 주소 접속</p>
+      </li>
+      <li>
+        <p>서버 컴퓨터에 패키지 설치를 위해 requirements.txt 만들기</p>
+
+        <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code> pip freeze <span class="o">&gt;&gt;</span> requirements.txt
+</code></pre></div>        </div>
+
+        <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code> <span class="nb">cat </span>requirements.txt
+</code></pre></div>        </div>
+        <p>requirements 내용 확인</p>
+      </li>
+    </ol>
+  </li>
+</ol>
+
+        
+      </section>
+
+      <footer class="page__meta">
+        
+        
+  
+
+
+  
+
+  <p class="page__taxonomy">
+    <strong><i class="fas fa-fw fa-tags" aria-hidden="true"></i> Tags: </strong>
+    <span itemprop="keywords">
+    
+      <a href="/tags/#aws" class="page__taxonomy-item p-category" rel="tag">aws</a><span class="sep">, </span>
+    
+      <a href="/tags/#django" class="page__taxonomy-item p-category" rel="tag">django</a>
+    
+    </span>
+  </p>
+
+
+
+
+  
+
+
+  
+
+  <p class="page__taxonomy">
+    <strong><i class="fas fa-fw fa-folder-open" aria-hidden="true"></i> Categories: </strong>
+    <span itemprop="keywords">
+    
+      <a href="/categories/#django" class="page__taxonomy-item p-category" rel="tag">django</a>
+    
+    </span>
+  </p>
+
+
+        
+
+  <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> Updated:</strong> <time class="dt-published" datetime="2022-06-09">June 9, 2022</time></p>
+
+      </footer>
+
+      <section class="page__share">
+  
+    <h4 class="page__share-title">Share on</h4>
+  
+
+  <a href="https://twitter.com/intent/tweet?text=django%EB%A5%BC+%EC%8B%9C%EC%9E%91%ED%95%B4%EB%B3%B4%EC%9E%90%20http%3A%2F%2Flocalhost%3A4000%2Fdjango%2FDjango-%26-AWS%2F" class="btn btn--twitter" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Twitter"><i class="fab fa-fw fa-twitter" aria-hidden="true"></i><span> Twitter</span></a>
+
+  <a href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Flocalhost%3A4000%2Fdjango%2FDjango-%26-AWS%2F" class="btn btn--facebook" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Facebook"><i class="fab fa-fw fa-facebook" aria-hidden="true"></i><span> Facebook</span></a>
+
+  <a href="https://www.linkedin.com/shareArticle?mini=true&url=http%3A%2F%2Flocalhost%3A4000%2Fdjango%2FDjango-%26-AWS%2F" class="btn btn--linkedin" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on LinkedIn"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i><span> LinkedIn</span></a>
+</section>
+
+
+      
+  <nav class="pagination">
+    
+      <a href="/daily%20life/%EB%B8%94%EB%A1%9C%EA%B7%B8%EB%A5%BC-%EB%8B%A4%EC%8B%9C-%EC%8B%9C%EC%9E%91%ED%95%98%EB%A9%B0/" class="pagination--pager" title="화이트 보드
+">Previous</a>
+    
+    
+      <a href="#" class="pagination--pager disabled">Next</a>
+    
+  </nav>
+
+    </div>
+
+    
+  </article>
+
+  
+  
+    <div class="page__related">
+      <h2 class="page__related-title">You may also enjoy</h2>
+      <div class="grid__wrapper">
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title no_toc" itemprop="headline">
+      
+        <a href="/daily%20life/%EB%B8%94%EB%A1%9C%EA%B7%B8%EB%A5%BC-%EB%8B%A4%EC%8B%9C-%EC%8B%9C%EC%9E%91%ED%95%98%EB%A9%B0/" rel="permalink">화이트 보드
+</a>
+      
+    </h2>
+    
+
+  <p class="page__meta">
+    
+
+    
+
+    
+      
+      
+
+      <span class="page__meta-readtime">
+        <i class="far fa-clock" aria-hidden="true"></i>
+        
+          less than 1 minute read
+        
+      </span>
+    
+  </p>
+
+
+    <p class="archive__item-excerpt" itemprop="description">라이브코딩에 사용했던 화이트 보드를 이제는 우리집에도
+</p>
+  </article>
+</div>
+
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title no_toc" itemprop="headline">
+      
+        <a href="/daily%20life/%EC%B2%AB-%EB%A9%B4%EC%A0%91/" rel="permalink">처음으로 면접을 보았다.
+</a>
+      
+    </h2>
+    
+
+  <p class="page__meta">
+    
+
+    
+
+    
+      
+      
+
+      <span class="page__meta-readtime">
+        <i class="far fa-clock" aria-hidden="true"></i>
+        
+          2 minute read
+        
+      </span>
+    
+  </p>
+
+
+    <p class="archive__item-excerpt" itemprop="description">나의 첫 면접 회고
+</p>
+  </article>
+</div>
+
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title no_toc" itemprop="headline">
+      
+        <a href="/git/Document-Manager-from-Hell-git,-github/" rel="permalink">깃 명렁어
+</a>
+      
+    </h2>
+    
+
+  <p class="page__meta">
+    
+
+    
+
+    
+      
+      
+
+      <span class="page__meta-readtime">
+        <i class="far fa-clock" aria-hidden="true"></i>
+        
+          1 minute read
+        
+      </span>
+    
+  </p>
+
+
+    <p class="archive__item-excerpt" itemprop="description">깃 터미널에서 사용할 수 명령어 모음
+</p>
+  </article>
+</div>
+
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title no_toc" itemprop="headline">
+      
+        <a href="/book%20review/Deep-learning-from-bottom-up-(%EB%B0%91%EB%B0%94%EB%8B%A5%EB%B6%80%ED%84%B0-%EC%8B%9C%EC%9E%91%ED%95%98%EB%8A%94-%EB%94%A5%EB%9F%AC%EB%8B%9D)/" rel="permalink">밑바닥부터 시작하는 딥러닝
+</a>
+      
+    </h2>
+    
+
+  <p class="page__meta">
+    
+
+    
+
+    
+      
+      
+
+      <span class="page__meta-readtime">
+        <i class="far fa-clock" aria-hidden="true"></i>
+        
+          less than 1 minute read
+        
+      </span>
+    
+  </p>
+
+
+    <p class="archive__item-excerpt" itemprop="description">
+</p>
+  </article>
+</div>
+
+        
+      </div>
+    </div>
+  
+  
+</div>
+
+    </div>
+
+    
+
+    <div id="footer" class="page__footer">
+      <footer>
+        <!-- start custom footer snippets -->
+
+<!-- end custom footer snippets -->
+        <div class="page__footer-follow">
+  <ul class="social-icons">
+    
+      <li><strong>Follow:</strong></li>
+    
+
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+
+    
+      <li><a href="/feed.xml"><i class="fas fa-fw fa-rss-square" aria-hidden="true"></i> Feed</a></li>
+    
+  </ul>
+</div>
+
+<div class="page__footer-copyright">&copy; 2022 Your Name. Powered by <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.</div>
+
+      </footer>
+    </div>
+
+    
+  <script src="/assets/js/main.min.js"></script>
+
+
+
+
+
+
+
+
+
+
+  </body>
+</html>
