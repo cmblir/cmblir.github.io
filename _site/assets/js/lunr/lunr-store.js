@@ -28,4 +28,10 @@ var store = [{
         "tags": ["django","aws"],
         "url": "/django/Django-&-AWS/",
         "teaser": null
+      },{
+        "title": "라이브 코딩",
+        "excerpt":"1. 문제 리스트 길이가 긴 리스트에서 내가 찾아야할 값이 존재하는 위치 찾기 2. 해결방법 및 시간복잡도 브루트포스 O(N) 이진탐색 O(logN) index 라이브러리 O(1) bisect 라이브러리 O(logN) 3. 문제 해결 및 코드 주석을 참고하면서 이해를 돕습니다. 4. 알고리즘 간략 설명 브루트포스 알고리즘 문제의 뜻 그래도 단순하게 “난폭한 힘” 이다. 단순 무식하게...","categories": ["Algorythm"],
+        "tags": ["알고리즘","라이브코딩","코테"],
+        "url": "/algorythm/%EB%9D%BC%EC%9D%B4%EB%B8%8C%EC%BD%94%EB%94%A9-%ED%9B%84%EA%B8%B0/",
+        "teaser": null
       }]

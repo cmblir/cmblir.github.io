@@ -1,4 +1,43 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2022-06-11T15:48:20+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Site Title</title><subtitle>An amazing website.</subtitle><author><name>Your Name</name></author><entry><title type="html">처음으로 면접을 보았다.</title><link href="http://localhost:4000/daily%20life/%EC%B2%AB-%EB%A9%B4%EC%A0%91/" rel="alternate" type="text/html" title="처음으로 면접을 보았다." /><published>2022-06-09T00:00:00+09:00</published><updated>2022-06-09T00:00:00+09:00</updated><id>http://localhost:4000/daily%20life/%EC%B2%AB%20%EB%A9%B4%EC%A0%91</id><content type="html" xml:base="http://localhost:4000/daily%20life/%EC%B2%AB-%EB%A9%B4%EC%A0%91/">&lt;p&gt;&lt;img src=&quot;https://user-images.githubusercontent.com/75519839/172981895-e0bb270b-1068-4774-8d8c-a5c54ce49a39.jpg&quot; alt=&quot;IMG_8432&quot; /&gt;&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2022-06-12T17:43:15+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Site Title</title><subtitle>An amazing website.</subtitle><author><name>Your Name</name></author><entry><title type="html">라이브 코딩</title><link href="http://localhost:4000/algorythm/%EB%9D%BC%EC%9D%B4%EB%B8%8C%EC%BD%94%EB%94%A9-%ED%9B%84%EA%B8%B0/" rel="alternate" type="text/html" title="라이브 코딩" /><published>2022-06-10T00:00:00+09:00</published><updated>2022-06-10T00:00:00+09:00</updated><id>http://localhost:4000/algorythm/%EB%9D%BC%EC%9D%B4%EB%B8%8C%EC%BD%94%EB%94%A9%20%ED%9B%84%EA%B8%B0</id><content type="html" xml:base="http://localhost:4000/algorythm/%EB%9D%BC%EC%9D%B4%EB%B8%8C%EC%BD%94%EB%94%A9-%ED%9B%84%EA%B8%B0/">&lt;h2 id=&quot;1-문제&quot;&gt;1. 문제&lt;/h2&gt;
+&lt;p&gt;리스트 길이가 긴 리스트에서 내가 찾아야할 값이 존재하는 위치 찾기&lt;/p&gt;
+
+&lt;h2 id=&quot;2-해결방법-및-시간복잡도&quot;&gt;2. 해결방법 및 시간복잡도&lt;/h2&gt;
+&lt;ol&gt;
+  &lt;li&gt;브루트포스 O(N)&lt;/li&gt;
+  &lt;li&gt;이진탐색 O(logN)&lt;/li&gt;
+  &lt;li&gt;index 라이브러리 O(1)&lt;/li&gt;
+  &lt;li&gt;bisect 라이브러리 O(logN)&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h2 id=&quot;3-문제-해결-및-코드&quot;&gt;3. 문제 해결 및 코드&lt;/h2&gt;
+&lt;hr /&gt;
+
+&lt;script src=&quot;https://gist.github.com/godhin/bff7447ac082349dabff5a55e4ed047e.js&quot;&gt;&lt;/script&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;h2 id=&quot;주석을-참고하면서-이해를-돕습니다&quot;&gt;주석을 참고하면서 이해를 돕습니다.&lt;/h2&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;4-알고리즘-간략-설명&quot;&gt;4. 알고리즘 간략 설명&lt;/h2&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;브루트포스&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;알고리즘 문제의 뜻 그래도 단순하게 “난폭한 힘” 이다. 단순 무식하게 문제를 해결하는 방식으로 반복문을 많이 사용하기 떄문에 사용하기에 편하나 시간복잡도가 높아질 수 있다.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;이진탐색&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;마치 업다운 게임처럼 중앙을 계속 변경하면서 좌우로 찾는 방식이다. 계속해서 문제를 절반으로 줄이기때문에 N/2 -&amp;gt; 1/2 * N/2 -&amp;gt; ,,,&lt;/li&gt;
+  &lt;li&gt;결국에는 자료의 갯수 N에 따라 시행횟수가 log2N으로 표기가 되기떄문에 시간 복잡도는 O(logN)이다.&lt;/li&gt;
+&lt;/ul&gt;</content><author><name>Your Name</name></author><category term="Algorythm" /><category term="알고리즘" /><category term="라이브코딩" /><category term="코테" /><summary type="html">리스트 내 특정 값의 위치를 찾기</summary></entry><entry><title type="html">처음으로 면접을 보았다.</title><link href="http://localhost:4000/daily%20life/%EC%B2%AB-%EB%A9%B4%EC%A0%91/" rel="alternate" type="text/html" title="처음으로 면접을 보았다." /><published>2022-06-09T00:00:00+09:00</published><updated>2022-06-09T00:00:00+09:00</updated><id>http://localhost:4000/daily%20life/%EC%B2%AB%20%EB%A9%B4%EC%A0%91</id><content type="html" xml:base="http://localhost:4000/daily%20life/%EC%B2%AB-%EB%A9%B4%EC%A0%91/">&lt;p&gt;&lt;img src=&quot;https://user-images.githubusercontent.com/75519839/172981895-e0bb270b-1068-4774-8d8c-a5c54ce49a39.jpg&quot; alt=&quot;IMG_8432&quot; /&gt;&lt;/p&gt;
 &lt;h3 id=&quot;너무-오랜만에-입어보는-정장-️&quot;&gt;너무 오랜만에 입어보는 정장 🤵🏻‍♂️&lt;/h3&gt;
 
 &lt;h3 id=&quot;1-고민하고-고민하다&quot;&gt;1. 고민하고 고민하다.&lt;/h3&gt;
