@@ -1,4 +1,33 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2022-06-12T17:43:15+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Site Title</title><subtitle>An amazing website.</subtitle><author><name>Your Name</name></author><entry><title type="html">라이브 코딩</title><link href="http://localhost:4000/algorythm/%EB%9D%BC%EC%9D%B4%EB%B8%8C%EC%BD%94%EB%94%A9-%ED%9B%84%EA%B8%B0/" rel="alternate" type="text/html" title="라이브 코딩" /><published>2022-06-10T00:00:00+09:00</published><updated>2022-06-10T00:00:00+09:00</updated><id>http://localhost:4000/algorythm/%EB%9D%BC%EC%9D%B4%EB%B8%8C%EC%BD%94%EB%94%A9%20%ED%9B%84%EA%B8%B0</id><content type="html" xml:base="http://localhost:4000/algorythm/%EB%9D%BC%EC%9D%B4%EB%B8%8C%EC%BD%94%EB%94%A9-%ED%9B%84%EA%B8%B0/">&lt;h2 id=&quot;1-문제&quot;&gt;1. 문제&lt;/h2&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2022-06-13T23:11:57+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Site Title</title><subtitle>An amazing website.</subtitle><author><name>Your Name</name></author><entry><title type="html">DP로 해결하기</title><link href="http://localhost:4000/algorythm/DP%EB%A1%9C-%ED%95%B4%EA%B2%B0%ED%95%98%EA%B8%B0/" rel="alternate" type="text/html" title="DP로 해결하기" /><published>2022-06-11T00:00:00+09:00</published><updated>2022-06-11T00:00:00+09:00</updated><id>http://localhost:4000/algorythm/DP%EB%A1%9C%20%ED%95%B4%EA%B2%B0%ED%95%98%EA%B8%B0</id><content type="html" xml:base="http://localhost:4000/algorythm/DP%EB%A1%9C-%ED%95%B4%EA%B2%B0%ED%95%98%EA%B8%B0/">&lt;h2 id=&quot;1-문제&quot;&gt;1. 문제&lt;/h2&gt;
+&lt;p&gt;자신이 속한 열을 제외한 값중 가장 큰 값을 중복으로 더하여 최종 행의 가장 큰 값을 호출하기&lt;/p&gt;
+
+&lt;h2 id=&quot;2-해결방법-시간복잡도&quot;&gt;2. 해결방법 시간복잡도&lt;/h2&gt;
+&lt;ol&gt;
+  &lt;li&gt;DP O(N^2)&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h2 id=&quot;3-문제-해결-및-코드&quot;&gt;3. 문제 해결 및 코드&lt;/h2&gt;
+&lt;hr /&gt;
+
+&lt;script src=&quot;https://gist.github.com/godhin/684d11add85d245bc7825d8c535de5b3.js&quot;&gt;&lt;/script&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;h2 id=&quot;주석을-참고하면서-이해를-돕습니다&quot;&gt;주석을 참고하면서 이해를 돕습니다.&lt;/h2&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;4-알고리즘-간략-설명&quot;&gt;4. 알고리즘 간략 설명&lt;/h2&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;DP&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;동적 계획법이라고 불리는 문제로 1회용 알고리즘이다. 최소한의 계산방식으로 문제를 해결하기 때문에 시간을 최소화할 수 있지만 문제가 생길 시 브루트포스와 같이 코드 전체를 바꿔야할 수도 있다.&lt;/li&gt;
+  &lt;li&gt;반복적으로 계산해야하는 문제이며 답이 같다라는 조건하여 DP로 해결할 수 있다.&lt;/li&gt;
+  &lt;li&gt;위의 문제의 경우 반복적으로 문제를 해결해야하기에 DP를 사용했고 따로 변수를 만들지않고 기존의 값에 지속적으로 값을 추가하며 바꾸는 방식으로 메모리 소비를 최소화하였다. (이러한 방식을 &lt;strong&gt;메모이제이션&lt;/strong&gt; 이라고 한다.)&lt;/li&gt;
+&lt;/ul&gt;</content><author><name>Your Name</name></author><category term="Algorythm" /><category term="알고리즘" /><category term="라이브코딩" /><category term="코테" /><summary type="html">예전에 풀었던 땅따먹기 문제를 DP로 다시 해결해보았다.</summary></entry><entry><title type="html">라이브 코딩</title><link href="http://localhost:4000/algorythm/%EB%9D%BC%EC%9D%B4%EB%B8%8C%EC%BD%94%EB%94%A9-%ED%9B%84%EA%B8%B0/" rel="alternate" type="text/html" title="라이브 코딩" /><published>2022-06-10T00:00:00+09:00</published><updated>2022-06-10T00:00:00+09:00</updated><id>http://localhost:4000/algorythm/%EB%9D%BC%EC%9D%B4%EB%B8%8C%EC%BD%94%EB%94%A9%20%ED%9B%84%EA%B8%B0</id><content type="html" xml:base="http://localhost:4000/algorythm/%EB%9D%BC%EC%9D%B4%EB%B8%8C%EC%BD%94%EB%94%A9-%ED%9B%84%EA%B8%B0/">&lt;h2 id=&quot;1-문제&quot;&gt;1. 문제&lt;/h2&gt;
 &lt;p&gt;리스트 길이가 긴 리스트에서 내가 찾아야할 값이 존재하는 위치 찾기&lt;/p&gt;
 
 &lt;h2 id=&quot;2-해결방법-및-시간복잡도&quot;&gt;2. 해결방법 및 시간복잡도&lt;/h2&gt;
