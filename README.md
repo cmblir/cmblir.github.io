@@ -1,1 +1,13 @@
 ![IMG_7194 2](https://user-images.githubusercontent.com/75519839/173573581-dd89ce93-8350-4c73-931a-7428359dd508.jpg)
+
+## 🇰🇷 깃블로그를 만들면서 ##
+좋아하는 글귀가 있다.
+유대인들의 배움의 근원이 되는 탈무드에서 "인간은 20년 걸려서 배운 것을 2년으로 잊을 수 있다"라고 적혀있다.
+
+나는 느리지만 더디지 않게 앞으로 나아가려고 한다.
+깃블로그가 그것의 뒷받침이 될거라고 생각한다.
+
+## 🇺🇸 I've been working on a blog ##
+There is a favorite phrase. In Talmud, the source of Jewish learning, it reads, "Human beings can forget what they learned in two years, which takes 20 years."
+
+I try to move forward slowly but not slowly. I think gitblog will be a prop for that.
