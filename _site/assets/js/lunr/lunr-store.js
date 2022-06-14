@@ -25,7 +25,7 @@ var store = [{
       },{
         "title": "django를 시작해보자",
         "excerpt":"장고와 AWS 설치하기 프로젝트 배포를 위해 Django와 AWS를 공부해보았다. 사용하기 위한 환경 구현 프로젝트에 사용할 환경변수 설정 (필자는 conda를 활용) conda create —name test python=3.8 (파이썬은 3.8을 사용) Django 라이브러리 설치 pip install django 프로젝트 만들기 배포할 프로젝트 만들기 django-admin startproject test 프로젝트에 앱 만들기 cd test python [manage.py](http://manage.py) startapp...","categories": ["장고"],
-        "tags": ["django","aws"],
+        "tags": ["장고","aws"],
         "url": "/%EC%9E%A5%EA%B3%A0/Django-&-AWS/",
         "teaser": null
       },{
