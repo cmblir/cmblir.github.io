@@ -1,0 +1,35 @@
+---
+title: "저에 관하여 👨🏻‍💻"
+layout: about
+permalink: /about/
+---
+
+<img src = "https://user-images.githubusercontent.com/75519839/173583830-9c455fd3-d5da-490c-abc2-385263324ad6.jpg" width ="50%" height = "50%">
+
+# 🇰🇷 한국어 소개
+
+## 성장하는 개발자의 블로그 🌸
+
+### 시작하며 🫀
+- 불로그를 시작한 이유는 제 스스로의 성장과정을 하나의 글로 담아보려고 합니다. 기억은 마치 한 순간처럼 눈 깜빡할 사이에 사라진다고 생각합니다. **순간을 기억하고 싶다면 우리는 사진을 찍습니다.** 개발자는 순간을 기억하고 싶으면 기록을 해야한다고 생각합니다. 그래서 블로그를 시작하게 되었습니다.
+
+
+### 완벽하지는 않지만 공들인 글 🙏🏻
+- 저의 글들은 많이 미흡하지만 정성이 들어가있습니다. 공부하면서 배운 내용이 있다면 그것을 개인 노션에 정리하고, 내 글이 누군가에게 도움이 되었으면 하는 마음에 또 정리해서 블로그에 올립니다. 그래도 많이 미흡하니 보시다가 틀린 사항이 있으면 이메일이나 댓글로 지적해주세요!
+
+### 제가 궁금하다면 👀
+왼쪽에 깃허브, 이메일, 인스타그램으로 연락해주세요 👋
+
+# 🇺🇸 Introduction in English
+
+## Blogs of Growing Developers 🌸
+
+### Let's start
+- The reason why I started bullogging is because I'm trying to capture my own growth process. I think memories disappear in a blink of an eye like a moment. **If you want to remember the moment, we take pictures.** I think developers need to record moments if they want to remember them. So I started a blog.
+
+
+### It's not perfect, but it's elaborate 🙏🏻
+- My writing is not good enough, but it contains sincerity. If there is anything I learned while studying, I organize it in my personal note, and I organize it again and post it on my blog because I want my writing to be helpful to someone. But it's not enough, so please point it out by email or comment if there's
+
+### If you're curious about me 👀
+Please contact GitHub, email, and Instagram on the left 👋
