@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2022-06-15T02:28:41+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">메인으로</title><subtitle>An amazing website.</subtitle><author><name>You Nicholas</name></author><entry><title type="html">[파이썬][프로그래머스] 신고 결과 받기 풀이</title><link href="http://localhost:4000/%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8/%EC%8B%A0%EA%B3%A0-%EA%B2%B0%EA%B3%BC-%EB%B0%9B%EA%B8%B0/" rel="alternate" type="text/html" title="[파이썬][프로그래머스] 신고 결과 받기 풀이" /><published>2022-06-15T00:00:00+09:00</published><updated>2022-06-15T00:00:00+09:00</updated><id>http://localhost:4000/%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8/%EC%8B%A0%EA%B3%A0%20%EA%B2%B0%EA%B3%BC%20%EB%B0%9B%EA%B8%B0</id><content type="html" xml:base="http://localhost:4000/%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8/%EC%8B%A0%EA%B3%A0-%EA%B2%B0%EA%B3%BC-%EB%B0%9B%EA%B8%B0/">&lt;h2 id=&quot;1-문제&quot;&gt;1. 문제&lt;/h2&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2022-06-15T03:03:00+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">메인으로</title><subtitle>An amazing website.</subtitle><author><name>You Nicholas</name></author><entry><title type="html">[파이썬][프로그래머스] 신고 결과 받기 풀이</title><link href="http://localhost:4000/%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8/%EC%8B%A0%EA%B3%A0-%EA%B2%B0%EA%B3%BC-%EB%B0%9B%EA%B8%B0/" rel="alternate" type="text/html" title="[파이썬][프로그래머스] 신고 결과 받기 풀이" /><published>2022-06-14T00:00:00+09:00</published><updated>2022-06-14T00:00:00+09:00</updated><id>http://localhost:4000/%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8/%EC%8B%A0%EA%B3%A0%20%EA%B2%B0%EA%B3%BC%20%EB%B0%9B%EA%B8%B0</id><content type="html" xml:base="http://localhost:4000/%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8/%EC%8B%A0%EA%B3%A0-%EA%B2%B0%EA%B3%BC-%EB%B0%9B%EA%B8%B0/">&lt;h2 id=&quot;1-문제&quot;&gt;1. 문제&lt;/h2&gt;
 
 &lt;h1 id=&quot;level-1-신고-결과-받기---92334&quot;&gt;[level 1] 신고 결과 받기 - 92334&lt;/h1&gt;
 
@@ -375,7 +375,41 @@
 &lt;ul&gt;
   &lt;li&gt;마치 업다운 게임처럼 중앙을 계속 변경하면서 좌우로 찾는 방식이다. 계속해서 문제를 절반으로 줄이기때문에 N/2 -&amp;gt; 1/2 * N/2 -&amp;gt; ,,,&lt;/li&gt;
   &lt;li&gt;결국에는 자료의 갯수 N에 따라 시행횟수가 log2N으로 표기가 되기떄문에 시간 복잡도는 O(logN)이다.&lt;/li&gt;
-&lt;/ul&gt;</content><author><name>You Nicholas</name></author><category term="알고리즘" /><category term="알고리즘" /><category term="라이브코딩" /><category term="코테" /><summary type="html">리스트 내 특정 값의 위치를 찾기</summary></entry><entry><title type="html">처음으로 면접을 보았다.</title><link href="http://localhost:4000/%EC%9D%BC%EC%83%81/%EC%B2%AB-%EB%A9%B4%EC%A0%91/" rel="alternate" type="text/html" title="처음으로 면접을 보았다." /><published>2022-06-09T00:00:00+09:00</published><updated>2022-06-09T00:00:00+09:00</updated><id>http://localhost:4000/%EC%9D%BC%EC%83%81/%EC%B2%AB%20%EB%A9%B4%EC%A0%91</id><content type="html" xml:base="http://localhost:4000/%EC%9D%BC%EC%83%81/%EC%B2%AB-%EB%A9%B4%EC%A0%91/">&lt;p&gt;&lt;img src=&quot;https://user-images.githubusercontent.com/75519839/172981895-e0bb270b-1068-4774-8d8c-a5c54ce49a39.jpg&quot; alt=&quot;IMG_8432&quot; /&gt;&lt;/p&gt;
+&lt;/ul&gt;</content><author><name>You Nicholas</name></author><category term="알고리즘" /><category term="알고리즘" /><category term="라이브코딩" /><category term="코테" /><summary type="html">리스트 내 특정 값의 위치를 찾기</summary></entry><entry><title type="html">저에 관하여 👨🏻‍💻</title><link href="http://localhost:4000/about/" rel="alternate" type="text/html" title="저에 관하여 👨🏻‍💻" /><published>2022-06-09T00:00:00+09:00</published><updated>2022-06-09T00:00:00+09:00</updated><id>http://localhost:4000/about</id><content type="html" xml:base="http://localhost:4000/about/">&lt;p&gt;&lt;img src=&quot;https://user-images.githubusercontent.com/75519839/173583830-9c455fd3-d5da-490c-abc2-385263324ad6.jpg&quot; width=&quot;50%&quot; height=&quot;50%&quot; /&gt;&lt;/p&gt;
+
+&lt;h1 id=&quot;-한국어-소개&quot;&gt;🇰🇷 한국어 소개&lt;/h1&gt;
+
+&lt;h2 id=&quot;성장하는-개발자의-블로그-&quot;&gt;성장하는 개발자의 블로그 🌸&lt;/h2&gt;
+
+&lt;h3 id=&quot;시작하며-&quot;&gt;시작하며 🫀&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;블로그를 시작한 이유는 제 스스로의 성장과정을 하나의 글로 담아보려고 합니다. 기억은 마치 한 순간처럼 눈 깜빡할 사이에 사라진다고 생각합니다. &lt;strong&gt;순간을 기억하고 싶다면 우리는 사진을 찍습니다.&lt;/strong&gt; 개발자는 순간을 기억하고 싶으면 기록을 해야한다고 생각합니다. 그래서 블로그를 시작하게 되었습니다.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;완벽하지는-않지만-공들인-글-&quot;&gt;완벽하지는 않지만 공들인 글 🙏🏻&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;저의 글들은 많이 미흡하지만 정성이 들어가있습니다. 공부하면서 배운 내용이 있다면 그것을 개인 노션에 정리하고, 내 글이 누군가에게 도움이 되었으면 하는 마음에 또 정리해서 블로그에 올립니다. 그래도 많이 미흡하니 보시다가 틀린 사항이 있으면 이메일이나 댓글로 지적해주세요!&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;제가-궁금하다면-&quot;&gt;제가 궁금하다면 👀&lt;/h3&gt;
+&lt;p&gt;왼쪽에 깃허브, 이메일, 인스타그램으로 연락해주세요 👋&lt;/p&gt;
+
+&lt;h1 id=&quot;-introduction-in-english&quot;&gt;🇺🇸 Introduction in English&lt;/h1&gt;
+
+&lt;h2 id=&quot;blogs-of-growing-developers-&quot;&gt;Blogs of Growing Developers 🌸&lt;/h2&gt;
+
+&lt;h3 id=&quot;lets-start&quot;&gt;Let’s start&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;The reason why I started bullogging is because I’m trying to capture my own growth process. I think memories disappear in a blink of an eye like a moment. &lt;strong&gt;If you want to remember the moment, we take pictures.&lt;/strong&gt; I think developers need to record moments if they want to remember them. So I started a blog.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;its-not-perfect-but-its-elaborate-&quot;&gt;It’s not perfect, but it’s elaborate 🙏🏻&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;My writing is not good enough, but it contains sincerity. If there is anything I learned while studying, I organize it in my personal note, and I organize it again and post it on my blog because I want my writing to be helpful to someone. But it’s not enough, so please point it out by email or comment if there’s&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;if-youre-curious-about-me-&quot;&gt;If you’re curious about me 👀&lt;/h3&gt;
+&lt;p&gt;Please contact GitHub, email, and Instagram on the left 👋&lt;/p&gt;</content><author><name>You Nicholas</name></author><summary type="html">소개글</summary></entry><entry><title type="html">처음으로 면접을 보았다.</title><link href="http://localhost:4000/%EC%9D%BC%EC%83%81/%EC%B2%AB-%EB%A9%B4%EC%A0%91/" rel="alternate" type="text/html" title="처음으로 면접을 보았다." /><published>2022-06-09T00:00:00+09:00</published><updated>2022-06-09T00:00:00+09:00</updated><id>http://localhost:4000/%EC%9D%BC%EC%83%81/%EC%B2%AB%20%EB%A9%B4%EC%A0%91</id><content type="html" xml:base="http://localhost:4000/%EC%9D%BC%EC%83%81/%EC%B2%AB-%EB%A9%B4%EC%A0%91/">&lt;p&gt;&lt;img src=&quot;https://user-images.githubusercontent.com/75519839/172981895-e0bb270b-1068-4774-8d8c-a5c54ce49a39.jpg&quot; alt=&quot;IMG_8432&quot; /&gt;&lt;/p&gt;
 &lt;h3 id=&quot;너무-오랜만에-입어보는-정장-️&quot;&gt;너무 오랜만에 입어보는 정장 🤵🏻‍♂️&lt;/h3&gt;
 
 &lt;h3 id=&quot;1-고민하고-고민하다&quot;&gt;1. 고민하고 고민하다.&lt;/h3&gt;
@@ -414,22 +448,7 @@
 &lt;h3 id=&quot;7-회고&quot;&gt;7. 회고&lt;/h3&gt;
 
 &lt;p&gt;첫 면접인데도 면접관님들의 배려와 좋은 질문들 그리고 경험들이 너무나도 좋아서 나가기 전 면접이 어땠냐는 물음에 “너무 좋았습니다”라고 말하면서 나의 첫 면접은 그렇게 끝이 났다. 머릿속에서 면접 내용이 떠내려가기 전에 재빠르게 개인 메모장에 오늘 받았던 면접 질문들과 하셨던 말씀들 그리고 문제 내가 했던 대답들을 적어놨다. 나중에 같은 질문을 받게 된다면 그때는 이것만큼은 꼭 대답하리라는 생각에 근처 카페로 달려가 머리에 남아있는 걸 모두 적었다. 
-집에 오고 나서는 아까 못 푼 문제가 너무 화가나서 집에 와서 관련된 문제만 계속해서 풀었다. 풀고 또 풀고 풀고 풀고 계속 풀었다.&lt;/p&gt;</content><author><name>You Nicholas</name></author><category term="일상" /><category term="일상" /><category term="면접" /><summary type="html">나의 첫 면접 회고</summary></entry><entry><title type="html">화이트 보드</title><link href="http://localhost:4000/%EC%9D%BC%EC%83%81/%EB%B8%94%EB%A1%9C%EA%B7%B8%EB%A5%BC-%EB%8B%A4%EC%8B%9C-%EC%8B%9C%EC%9E%91%ED%95%98%EB%A9%B0/" rel="alternate" type="text/html" title="화이트 보드" /><published>2022-06-09T00:00:00+09:00</published><updated>2022-06-09T00:00:00+09:00</updated><id>http://localhost:4000/%EC%9D%BC%EC%83%81/%EB%B8%94%EB%A1%9C%EA%B7%B8%EB%A5%BC%20%EB%8B%A4%EC%8B%9C%20%EC%8B%9C%EC%9E%91%ED%95%98%EB%A9%B0</id><content type="html" xml:base="http://localhost:4000/%EC%9D%BC%EC%83%81/%EB%B8%94%EB%A1%9C%EA%B7%B8%EB%A5%BC-%EB%8B%A4%EC%8B%9C-%EC%8B%9C%EC%9E%91%ED%95%98%EB%A9%B0/">&lt;h1 id=&quot;화이트-보드&quot;&gt;화이트 보드&lt;/h1&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://user-images.githubusercontent.com/75519839/173072075-82410cc7-2aec-44b1-ac16-bc3437bc46ae.jpg&quot; alt=&quot;IMG_8437&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;나는 화이트보드를 샀다.
-무엇이든 내가 이루고자 하는 것이 있으면 그것에 필요한 물건에는 약간의 고민과 많은 추진력이 필요하다고 생각한다.
-어제의 내가 풀지 못하였던 문제들은 나의 작은 습관 (컴퓨터에 안도하고 모르는 문제를 스스로 해결하지 않으려는 나쁜 버릇)이 문제 해결을 방해하였다고 생각한다.
-그렇기에 오늘부로 문제 알고리즘별 문제 몇개를 선별해서 화이트보드로 푸는 연습을 하려고 한다.&lt;/p&gt;
-
-&lt;h3 id=&quot;어디를-가든지-마음을-다해-가라&quot;&gt;어디를 가든지 마음을 다해 가라.&lt;/h3&gt;
-
-&lt;p&gt;내가 좋아하는 몇 안되는 말귀중 하나이다. 우리 아버지께서는 도전을 참 좋아했다.
-집이 가난해지는 순간까지 사업을 시도하였으니까 그런 아버지 밑에서 자란 나는 자연스럽게 무언가 하고 싶으면 일단 하고 보는 성격으로 자라게 되었다.
-그렇게 바쁘게 살아오던 와중 군대에 입대하여 처음으로 독서를 하였고, 그 책중 ‘공자’ 라는 책에서 많이 감명을 받았던 것 같다.&lt;/p&gt;
-
-&lt;p&gt;“어디를 가든지 마음을 다해 가라.” 이루고자 하는 목표가 있다면 최선을 다해야한다는 거다. 마치 사업이 여러번 망했어도 본인이 무모하다는 사실을 알면서도 쉬지 않고 포기하던 아버지의 모습처럼 말이다.&lt;/p&gt;</content><author><name>You Nicholas</name></author><category term="일상" /><category term="일상" /><category term="면접" /><category term="라이브코딩" /><summary type="html">라이브코딩에 사용했던 화이트 보드를 이제는 우리집에도</summary></entry><entry><title type="html">django를 시작해보자</title><link href="http://localhost:4000/%EC%9E%A5%EA%B3%A0/Django-&-AWS/" rel="alternate" type="text/html" title="django를 시작해보자" /><published>2022-06-09T00:00:00+09:00</published><updated>2022-06-09T00:00:00+09:00</updated><id>http://localhost:4000/%EC%9E%A5%EA%B3%A0/Django%20&amp;%20AWS</id><content type="html" xml:base="http://localhost:4000/%EC%9E%A5%EA%B3%A0/Django-&amp;-AWS/">&lt;h1 id=&quot;장고와-aws-설치하기&quot;&gt;장고와 AWS 설치하기&lt;/h1&gt;
+집에 오고 나서는 아까 못 푼 문제가 너무 화가나서 집에 와서 관련된 문제만 계속해서 풀었다. 풀고 또 풀고 풀고 풀고 계속 풀었다.&lt;/p&gt;</content><author><name>You Nicholas</name></author><category term="일상" /><category term="일상" /><category term="면접" /><summary type="html">나의 첫 면접 회고</summary></entry><entry><title type="html">django를 시작해보자</title><link href="http://localhost:4000/%EC%9E%A5%EA%B3%A0/Django-&-AWS/" rel="alternate" type="text/html" title="django를 시작해보자" /><published>2022-06-09T00:00:00+09:00</published><updated>2022-06-09T00:00:00+09:00</updated><id>http://localhost:4000/%EC%9E%A5%EA%B3%A0/Django%20&amp;%20AWS</id><content type="html" xml:base="http://localhost:4000/%EC%9E%A5%EA%B3%A0/Django-&amp;-AWS/">&lt;h1 id=&quot;장고와-aws-설치하기&quot;&gt;장고와 AWS 설치하기&lt;/h1&gt;
 
 &lt;h3 id=&quot;프로젝트-배포를-위해-django와-aws를-공부해보았다&quot;&gt;프로젝트 배포를 위해 Django와 AWS를 공부해보았다.&lt;/h3&gt;
 
@@ -551,7 +570,22 @@
       &lt;/li&gt;
     &lt;/ol&gt;
   &lt;/li&gt;
-&lt;/ol&gt;</content><author><name>You Nicholas</name></author><category term="장고" /><category term="장고" /><category term="aws" /><summary type="html">장고로 시작해서 AWS까지 - 1</summary></entry><entry><title type="html">깃 명렁어</title><link href="http://localhost:4000/%EA%B9%83/Document-Manager-from-Hell-git,-github/" rel="alternate" type="text/html" title="깃 명렁어" /><published>2022-05-18T00:00:00+09:00</published><updated>2022-05-18T00:00:00+09:00</updated><id>http://localhost:4000/%EA%B9%83/Document%20Manager%20from%20Hell%20%7Bgit,%20github%7D</id><content type="html" xml:base="http://localhost:4000/%EA%B9%83/Document-Manager-from-Hell-git,-github/">&lt;h1 id=&quot;document-manager-from-hell-git-github&quot;&gt;Document Manager from Hell {git, github}&lt;/h1&gt;
+&lt;/ol&gt;</content><author><name>You Nicholas</name></author><category term="장고" /><category term="장고" /><category term="aws" /><summary type="html">장고로 시작해서 AWS까지 - 1</summary></entry><entry><title type="html">화이트 보드</title><link href="http://localhost:4000/%EC%9D%BC%EC%83%81/%EB%B8%94%EB%A1%9C%EA%B7%B8%EB%A5%BC-%EB%8B%A4%EC%8B%9C-%EC%8B%9C%EC%9E%91%ED%95%98%EB%A9%B0/" rel="alternate" type="text/html" title="화이트 보드" /><published>2022-06-09T00:00:00+09:00</published><updated>2022-06-09T00:00:00+09:00</updated><id>http://localhost:4000/%EC%9D%BC%EC%83%81/%EB%B8%94%EB%A1%9C%EA%B7%B8%EB%A5%BC%20%EB%8B%A4%EC%8B%9C%20%EC%8B%9C%EC%9E%91%ED%95%98%EB%A9%B0</id><content type="html" xml:base="http://localhost:4000/%EC%9D%BC%EC%83%81/%EB%B8%94%EB%A1%9C%EA%B7%B8%EB%A5%BC-%EB%8B%A4%EC%8B%9C-%EC%8B%9C%EC%9E%91%ED%95%98%EB%A9%B0/">&lt;h1 id=&quot;화이트-보드&quot;&gt;화이트 보드&lt;/h1&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://user-images.githubusercontent.com/75519839/173072075-82410cc7-2aec-44b1-ac16-bc3437bc46ae.jpg&quot; alt=&quot;IMG_8437&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;나는 화이트보드를 샀다.
+무엇이든 내가 이루고자 하는 것이 있으면 그것에 필요한 물건에는 약간의 고민과 많은 추진력이 필요하다고 생각한다.
+어제의 내가 풀지 못하였던 문제들은 나의 작은 습관 (컴퓨터에 안도하고 모르는 문제를 스스로 해결하지 않으려는 나쁜 버릇)이 문제 해결을 방해하였다고 생각한다.
+그렇기에 오늘부로 문제 알고리즘별 문제 몇개를 선별해서 화이트보드로 푸는 연습을 하려고 한다.&lt;/p&gt;
+
+&lt;h3 id=&quot;어디를-가든지-마음을-다해-가라&quot;&gt;어디를 가든지 마음을 다해 가라.&lt;/h3&gt;
+
+&lt;p&gt;내가 좋아하는 몇 안되는 말귀중 하나이다. 우리 아버지께서는 도전을 참 좋아했다.
+집이 가난해지는 순간까지 사업을 시도하였으니까 그런 아버지 밑에서 자란 나는 자연스럽게 무언가 하고 싶으면 일단 하고 보는 성격으로 자라게 되었다.
+그렇게 바쁘게 살아오던 와중 군대에 입대하여 처음으로 독서를 하였고, 그 책중 ‘공자’ 라는 책에서 많이 감명을 받았던 것 같다.&lt;/p&gt;
+
+&lt;p&gt;“어디를 가든지 마음을 다해 가라.” 이루고자 하는 목표가 있다면 최선을 다해야한다는 거다. 마치 사업이 여러번 망했어도 본인이 무모하다는 사실을 알면서도 쉬지 않고 포기하던 아버지의 모습처럼 말이다.&lt;/p&gt;</content><author><name>You Nicholas</name></author><category term="일상" /><category term="일상" /><category term="면접" /><category term="라이브코딩" /><summary type="html">라이브코딩에 사용했던 화이트 보드를 이제는 우리집에도</summary></entry><entry><title type="html">깃 명렁어</title><link href="http://localhost:4000/%EA%B9%83/Document-Manager-from-Hell-git,-github/" rel="alternate" type="text/html" title="깃 명렁어" /><published>2022-05-18T00:00:00+09:00</published><updated>2022-05-18T00:00:00+09:00</updated><id>http://localhost:4000/%EA%B9%83/Document%20Manager%20from%20Hell%20%7Bgit,%20github%7D</id><content type="html" xml:base="http://localhost:4000/%EA%B9%83/Document-Manager-from-Hell-git,-github/">&lt;h1 id=&quot;document-manager-from-hell-git-github&quot;&gt;Document Manager from Hell {git, github}&lt;/h1&gt;
 
 &lt;p&gt;&lt;img src=&quot;https://user-images.githubusercontent.com/75519839/169370460-49527621-95f8-4054-a0da-8de45b47827f.png&quot; alt=&quot;document-manager1&quot; /&gt;&lt;/p&gt;
 
