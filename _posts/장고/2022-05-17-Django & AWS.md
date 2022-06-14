@@ -5,7 +5,7 @@ excerpt: "장고로 시작해서 AWS까지 - 1"
 categories:
   - 장고
 tags:
-  - [django, aws]
+  - [장고, aws]
 
 toc: true
 toc_sticky: true
