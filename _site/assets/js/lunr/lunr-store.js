@@ -82,4 +82,10 @@ var store = [{
         "tags": ["알고리즘","라이브코딩","코테","프로그래머스","Level_1"],
         "url": "/%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8/%EC%8B%A0%EA%B3%A0-%EA%B2%B0%EA%B3%BC-%EB%B0%9B%EA%B8%B0/",
         "teaser": null
+      },{
+        "title": "갑작스러운 소나기",
+        "excerpt":"소나기 ☔️ &lt;source src = \"https://user-images.githubusercontent.com/75519839/173714474-224d8418-ccd0-4a0e-9c2f-9261f1c77cdf.mp4\", type = \"video/mp4\"&gt; 뭔가 집이 되게 낡아보이는 것 같다. 내가 수도권으로 올라오면서 처음 느낀 점은 집값이 너무 비싸다. 욕심을 내서 쓰리룸에 1억 2천에 운 좋게 들어갔는데 외관은 너무 빈티지하다. 🤣 너무 추워 오늘은 이른 아침부터 일어나서 분주하게 하루를 맞이했다. 뜨거운 여름에는 항상 선풍기와 함께...","categories": ["일상"],
+        "tags": ["일상","면접","라이브코딩"],
+        "url": "/%EC%9D%BC%EC%83%81/%EA%B0%91%EC%9E%91%EC%8A%A4%EB%9F%AC%EC%9A%B4-%EC%86%8C%EB%82%98%EA%B8%B0/",
+        "teaser": null
       }]
