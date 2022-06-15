@@ -5,16 +5,40 @@ var store = [{
         "url": "/%EB%B0%91%EB%B0%94%EB%8B%A5%EB%B6%80%ED%84%B0%20%EC%8B%9C%EC%9E%91%ED%95%98%EB%8A%94%20%EB%94%A5%EB%9F%AC%EB%8B%9D/Deep-learning-from-bottom-up-(%EB%B0%91%EB%B0%94%EB%8B%A5%EB%B6%80%ED%84%B0-%EC%8B%9C%EC%9E%91%ED%95%98%EB%8A%94-%EB%94%A5%EB%9F%AC%EB%8B%9D)/",
         "teaser": null
       },{
-        "title": "깃 명렁어",
-        "excerpt":"Document Manager from Hell {git, github} $ git 깃 명령어 확인 $ git config 깃 사용자 정보 설정 $ git config —global [user.name](http://user.name) 깃 이름 확인 $ git config —global [user.email](http://user.email) 깃 이메일 확인 $ git config —global core.editor “notepad++” 깃의 기본 편집기를 Notepad++ 로 변경 $ git init initialize의...","categories": ["깃"],
-        "tags": ["깃허브","깃"],
-        "url": "/%EA%B9%83/Document-Manager-from-Hell-git,-github/",
-        "teaser": null
-      },{
         "title": "저에 관하여 👨🏻‍💻",
         "excerpt":"🇰🇷 한국어 소개 성장하는 개발자의 블로그 🌸 시작하며 🫀 블로그를 시작한 이유는 제 스스로의 성장과정을 하나의 글로 담아보려고 합니다. 기억은 마치 한 순간처럼 눈 깜빡할 사이에 사라진다고 생각합니다. 순간을 기억하고 싶다면 우리는 사진을 찍습니다. 개발자는 순간을 기억하고 싶으면 기록을 해야한다고 생각합니다. 그래서 블로그를 시작하게 되었습니다. 완벽하지는 않지만 공들인 글 🙏🏻...","categories": [],
         "tags": [],
         "url": "/about/",
+        "teaser": null
+      },{
+        "title": "[파이썬][백준 1000번] A + B 풀이",
+        "excerpt":"1. 문제 [Bronze V] A+B - 1000 문제 링크 성능 요약 메모리: 30864 KB, 시간: 68 ms 분류 사칙연산(arithmetic), 구현(implementation), 수학(math) 문제 설명 두 정수 A와 B를 입력받은 다음, A+B를 출력하는 프로그램을 작성하시오. 입력 첫째 줄에 A와 B가 주어진다. (0 &lt; A, B &lt; 10) 출력 첫째 줄에 A+B를 출력한다....","categories": ["코딩테스트"],
+        "tags": ["알고리즘","라이브코딩","코테","프로그래머스","Bronze"],
+        "url": "/%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8/1000/",
+        "teaser": null
+      },{
+        "title": "[파이썬][백준 1001번] A - B 풀이",
+        "excerpt":"1. 문제 [Bronze V] A-B - 1001 문제 링크 성능 요약 메모리: 30864 KB, 시간: 72 ms 분류 사칙연산(arithmetic), 구현(implementation), 수학(math) 문제 설명 두 정수 A와 B를 입력받은 다음, A-B를 출력하는 프로그램을 작성하시오. 입력 첫째 줄에 A와 B가 주어진다. (0 &lt; A, B &lt; 10) 출력 첫째 줄에 A-B를 출력한다....","categories": ["코딩테스트"],
+        "tags": ["알고리즘","라이브코딩","코테","프로그래머스","Bronze"],
+        "url": "/%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8/1001/",
+        "teaser": null
+      },{
+        "title": "[파이썬][백준 1008번] A / B 풀이",
+        "excerpt":"1. 문제 [Bronze IV] A/B - 1008 문제 링크 성능 요약 메모리: 30864 KB, 시간: 68 ms 분류 사칙연산(arithmetic), 구현(implementation), 수학(math) 문제 설명 두 정수 A와 B를 입력받은 다음, A/B를 출력하는 프로그램을 작성하시오. 입력 첫째 줄에 A와 B가 주어진다. (0 &lt; A, B &lt; 10) 출력 첫째 줄에 A/B를 출력한다....","categories": ["코딩테스트"],
+        "tags": ["알고리즘","라이브코딩","코테","프로그래머스","Bronze"],
+        "url": "/%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8/1008/",
+        "teaser": null
+      },{
+        "title": "[파이썬][백준 10039번] 평균 점수 풀이",
+        "excerpt":"[Bronze IV] 평균 점수 - 10039 문제 링크 성능 요약 메모리: 30840 KB, 시간: 72 ms 분류 사칙연산(arithmetic), 수학(math) 문제 설명 상현이가 가르치는 아이폰 앱 개발 수업의 수강생은 원섭, 세희, 상근, 숭, 강수이다. 어제 이 수업의 기말고사가 있었고, 상현이는 지금 학생들의 기말고사 시험지를 채점하고 있다. 기말고사 점수가 40점 이상인 학생들은...","categories": ["코딩테스트"],
+        "tags": ["알고리즘","라이브코딩","코테","프로그래머스","Bronze"],
+        "url": "/%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8/10039/",
+        "teaser": null
+      },{
+        "title": "깃 명렁어",
+        "excerpt":"Document Manager from Hell {git, github} $ git 깃 명령어 확인 $ git config 깃 사용자 정보 설정 $ git config —global [user.name](http://user.name) 깃 이름 확인 $ git config —global [user.email](http://user.email) 깃 이메일 확인 $ git config —global core.editor “notepad++” 깃의 기본 편집기를 Notepad++ 로 변경 $ git init initialize의...","categories": ["깃"],
+        "tags": ["깃허브","깃"],
+        "url": "/%EA%B9%83/Document-Manager-from-Hell-git,-github/",
         "teaser": null
       },{
         "title": "처음으로 면접을 보았다.",
