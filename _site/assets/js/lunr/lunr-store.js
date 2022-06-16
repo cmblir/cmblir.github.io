@@ -13,20 +13,26 @@ var store = [{
       },{
         "title": "[파이썬][백준 1000번] A + B 풀이",
         "excerpt":"1. 문제 [Bronze V] A+B - 1000 문제 링크 성능 요약 메모리: 30864 KB, 시간: 68 ms 분류 사칙연산(arithmetic), 구현(implementation), 수학(math) 문제 설명 두 정수 A와 B를 입력받은 다음, A+B를 출력하는 프로그램을 작성하시오. 입력 첫째 줄에 A와 B가 주어진다. (0 &lt; A, B &lt; 10) 출력 첫째 줄에 A+B를 출력한다....","categories": ["코딩테스트"],
-        "tags": ["알고리즘","라이브코딩","코테","프로그래머스","Bronze"],
+        "tags": ["알고리즘","라이브코딩","코테","백준","Bronze"],
         "url": "/%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8/1000/",
         "teaser": null
       },{
         "title": "[파이썬][백준 1001번] A - B 풀이",
         "excerpt":"1. 문제 [Bronze V] A-B - 1001 문제 링크 성능 요약 메모리: 30864 KB, 시간: 72 ms 분류 사칙연산(arithmetic), 구현(implementation), 수학(math) 문제 설명 두 정수 A와 B를 입력받은 다음, A-B를 출력하는 프로그램을 작성하시오. 입력 첫째 줄에 A와 B가 주어진다. (0 &lt; A, B &lt; 10) 출력 첫째 줄에 A-B를 출력한다....","categories": ["코딩테스트"],
-        "tags": ["알고리즘","라이브코딩","코테","프로그래머스","Bronze"],
+        "tags": ["알고리즘","라이브코딩","코테","백준","Bronze"],
         "url": "/%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8/1001/",
         "teaser": null
       },{
         "title": "[파이썬][백준 1008번] A / B 풀이",
         "excerpt":"1. 문제 [Bronze IV] A/B - 1008 문제 링크 성능 요약 메모리: 30864 KB, 시간: 68 ms 분류 사칙연산(arithmetic), 구현(implementation), 수학(math) 문제 설명 두 정수 A와 B를 입력받은 다음, A/B를 출력하는 프로그램을 작성하시오. 입력 첫째 줄에 A와 B가 주어진다. (0 &lt; A, B &lt; 10) 출력 첫째 줄에 A/B를 출력한다....","categories": ["코딩테스트"],
-        "tags": ["알고리즘","라이브코딩","코테","프로그래머스","Bronze"],
+        "tags": ["알고리즘","라이브코딩","코테","백준","Bronze"],
         "url": "/%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8/1008/",
+        "teaser": null
+      },{
+        "title": "[파이썬][백준 1009번] 분산처리 풀이",
+        "excerpt":"1. 문제 [Bronze III] 분산처리 - 1009 문제 링크 성능 요약 메모리: 30860 KB, 시간: 120 ms 분류 구현(implementation), 수학(math) 문제 설명 재용이는 최신 컴퓨터 10대를 가지고 있다. 어느 날 재용이는 많은 데이터를 처리해야 될 일이 생겨서 각 컴퓨터에 1번부터 10번까지의 번호를 부여하고, 10대의 컴퓨터가 다음과 같은 방법으로 데이터들을 처리하기로...","categories": ["코딩테스트"],
+        "tags": ["알고리즘","라이브코딩","코테","백준","Bronze"],
+        "url": "/%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8/1009/",
         "teaser": null
       },{
         "title": "[파이썬][백준 10039번] 평균 점수 풀이",
@@ -35,10 +41,22 @@ var store = [{
         "url": "/%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8/10039/",
         "teaser": null
       },{
+        "title": "[파이썬][백준 10102번] 개표 풀이",
+        "excerpt":"1. 문제 [Bronze II] 개표 - 10102 문제 링크 성능 요약 메모리: 30840 KB, 시간: 68 ms 분류 문자열(string) 출처: 백준, https://https://www.acmicpc.net/ 2. 해결방법 시간복잡도 단순 코딩 3. 문제 해결 및 코드 주석을 참고하면서 이해를 돕습니다. 4. 알고리즘 및 해설 받아야 될 값은 T로 받는다. AB라는 값을 문자열로 받고 해당...","categories": ["코딩테스트"],
+        "tags": ["알고리즘","라이브코딩","코테","백준","Bronze"],
+        "url": "/%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8/10102/",
+        "teaser": null
+      },{
         "title": "깃 명렁어",
         "excerpt":"Document Manager from Hell {git, github} $ git 깃 명령어 확인 $ git config 깃 사용자 정보 설정 $ git config —global [user.name](http://user.name) 깃 이름 확인 $ git config —global [user.email](http://user.email) 깃 이메일 확인 $ git config —global core.editor “notepad++” 깃의 기본 편집기를 Notepad++ 로 변경 $ git init initialize의...","categories": ["깃"],
         "tags": ["깃허브","깃"],
         "url": "/%EA%B9%83/Document-Manager-from-Hell-git,-github/",
+        "teaser": null
+      },{
+        "title": "[파이썬][백준 10093번] 숫자 풀이",
+        "excerpt":"1. 문제 [Bronze II] 숫자 - 10093 문제 링크 성능 요약 메모리: 30840 KB, 시간: 128 ms 분류 구현(implementation) 문제 설명 두 양의 정수가 주어졌을 때, 두 수 사이에 있는 정수를 모두 출력하는 프로그램을 작성하시오. 입력 두 정수 A와 B가 주어진다. 출력 첫째 줄에 두 수 사이에 있는 수의 개수를...","categories": ["코딩테스트"],
+        "tags": ["알고리즘","라이브코딩","코테","백준","Bronze"],
+        "url": "/%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8/10093/",
         "teaser": null
       },{
         "title": "처음으로 면접을 보았다.",
@@ -84,8 +102,8 @@ var store = [{
         "teaser": null
       },{
         "title": "갑작스러운 소나기",
-        "excerpt":"소나기 ☔️ &lt;source src = \"https://user-images.githubusercontent.com/75519839/173714474-224d8418-ccd0-4a0e-9c2f-9261f1c77cdf.mp4\", type = \"video/mp4\"&gt; 뭔가 집이 되게 낡아보이는 것 같다. 내가 수도권으로 올라오면서 처음 느낀 점은 집값이 너무 비싸다. 욕심을 내서 쓰리룸에 1억 2천에 운 좋게 들어갔는데 외관은 너무 빈티지하다. 🤣 너무 추워 오늘은 이른 아침부터 일어나서 분주하게 하루를 맞이했다. 뜨거운 여름에는 항상 선풍기와 함께...","categories": ["일상"],
-        "tags": ["일상","면접","라이브코딩"],
+        "excerpt":"소나기 ☔️ 뭔가 집이 되게 낡아보이는 것 같다. 내가 수도권으로 올라오면서 처음 느낀 점은 집값이 너무 비싸다. 욕심을 내서 쓰리룸에 1억 2천에 운 좋게 들어갔는데 외관은 너무 빈티지하다. 🤣 너무 추워 오늘은 이른 아침부터 일어나서 분주하게 하루를 맞이했다. 뜨거운 여름에는 항상 선풍기와 함께 잠을 청하고는 하는데 비로 인해 차가워진 공기와...","categories": ["일상"],
+        "tags": ["일상"],
         "url": "/%EC%9D%BC%EC%83%81/%EA%B0%91%EC%9E%91%EC%8A%A4%EB%9F%AC%EC%9A%B4-%EC%86%8C%EB%82%98%EA%B8%B0/",
         "teaser": null
       }]
