@@ -9,8 +9,8 @@
   <head>
     <meta charset="utf-8">
 
-<!-- begin _includes/seo.html --><title>DP로 해결하기 - 성장형 개발자 블로그</title>
-<meta name="description" content="예전에 풀었던 땅따먹기 문제를 DP로 다시 해결해보았다.">
+<!-- begin _includes/seo.html --><title>화이트 보드 - 성장형 개발자 블로그</title>
+<meta name="description" content="라이브코딩에 사용했던 화이트 보드를 이제는 우리집에도">
 
 
   <meta name="author" content="You Nicholas">
@@ -22,32 +22,32 @@
 <meta property="og:type" content="article">
 <meta property="og:locale" content="ko">
 <meta property="og:site_name" content="성장형 개발자 블로그">
-<meta property="og:title" content="DP로 해결하기">
-<meta property="og:url" content="http://localhost:4000/%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98/DP%EB%A1%9C-%ED%95%B4%EA%B2%B0%ED%95%98%EA%B8%B0/">
+<meta property="og:title" content="화이트 보드">
+<meta property="og:url" content="http://localhost:4000/%EC%9D%BC%EC%83%81/%EB%87%8C-%EA%B3%BC%ED%95%99-%EA%B7%B8%EB%A6%AC%EA%B3%A0-%ED%95%98%EB%A3%A8%EC%9D%98-%EC%8B%9C%EC%9E%91/">
 
 
-  <meta property="og:description" content="예전에 풀었던 땅따먹기 문제를 DP로 다시 해결해보았다.">
-
-
-
+  <meta property="og:description" content="라이브코딩에 사용했던 화이트 보드를 이제는 우리집에도">
 
 
 
 
-  <meta property="article:published_time" content="2022-06-13T00:00:00+09:00">
 
 
 
-  <meta property="article:modified_time" content="2022-06-13T00:00:00+09:00">
+  <meta property="article:published_time" content="2022-06-09T00:00:00+09:00">
 
 
 
-  
+  <meta property="article:modified_time" content="2022-06-09T00:00:00+09:00">
+
+
 
   
 
+  
 
-<link rel="canonical" href="http://localhost:4000/%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98/DP%EB%A1%9C-%ED%95%B4%EA%B2%B0%ED%95%98%EA%B8%B0/">
+
+<link rel="canonical" href="http://localhost:4000/%EC%9D%BC%EC%83%81/%EB%87%8C-%EA%B3%BC%ED%95%99-%EA%B7%B8%EB%A6%AC%EA%B3%A0-%ED%95%98%EB%A3%A8%EC%9D%98-%EC%8B%9C%EC%9E%91/">
 
 
 
@@ -268,16 +268,16 @@
 
 
   <article class="page h-entry" itemscope itemtype="https://schema.org/CreativeWork">
-    <meta itemprop="headline" content="DP로 해결하기">
-    <meta itemprop="description" content="예전에 풀었던 땅따먹기 문제를 DP로 다시 해결해보았다.">
-    <meta itemprop="datePublished" content="2022-06-13T00:00:00+09:00">
-    <meta itemprop="dateModified" content="2022-06-13T00:00:00+09:00">
+    <meta itemprop="headline" content="화이트 보드">
+    <meta itemprop="description" content="라이브코딩에 사용했던 화이트 보드를 이제는 우리집에도">
+    <meta itemprop="datePublished" content="2022-06-09T00:00:00+09:00">
+    <meta itemprop="dateModified" content="2022-06-09T00:00:00+09:00">
 
     <div class="page__inner-wrap">
       
         <header>
           <h1 id="page-title" class="page__title p-name" itemprop="headline">
-            <a href="http://localhost:4000/%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98/DP%EB%A1%9C-%ED%95%B4%EA%B2%B0%ED%95%98%EA%B8%B0/" class="u-url" itemprop="url">DP로 해결하기
+            <a href="http://localhost:4000/%EC%9D%BC%EC%83%81/%EB%87%8C-%EA%B3%BC%ED%95%99-%EA%B7%B8%EB%A6%AC%EA%B3%A0-%ED%95%98%EB%A3%A8%EC%9D%98-%EC%8B%9C%EC%9E%91/" class="u-url" itemprop="url">화이트 보드
 </a>
           </h1>
           
@@ -309,41 +309,27 @@
           <aside class="sidebar__right sticky">
             <nav class="toc">
               <header><h4 class="nav__title"><i class="fas fa-file-alt"></i> On This Page</h4></header>
-              <ul class="toc__menu"><li><a href="#1-문제">1. 문제</a></li><li><a href="#2-해결방법-시간복잡도">2. 해결방법 시간복잡도</a></li><li><a href="#3-문제-해결-및-코드">3. 문제 해결 및 코드</a></li><li><a href="#주석을-참고하면서-이해를-돕습니다">주석을 참고하면서 이해를 돕습니다.</a></li><li><a href="#4-알고리즘-간략-설명">4. 알고리즘 간략 설명</a></li></ul>
+              <ul class="toc__menu"><li><a href="#화이트-보드">화이트 보드</a><ul><li><a href="#어디를-가든지-마음을-다해-가라">어디를 가든지 마음을 다해 가라.</a></li></ul></li></ul></li></ul>
 
             </nav>
           </aside>
         
-        <h2 id="1-문제">1. 문제</h2>
-<p>자신이 속한 열을 제외한 값중 가장 큰 값을 중복으로 더하여 최종 행의 가장 큰 값을 호출하기</p>
+        <h1 id="화이트-보드">화이트 보드</h1>
 
-<h2 id="2-해결방법-시간복잡도">2. 해결방법 시간복잡도</h2>
-<ol>
-  <li>DP O(N^2)</li>
-</ol>
+<p><img src="https://user-images.githubusercontent.com/75519839/173072075-82410cc7-2aec-44b1-ac16-bc3437bc46ae.jpg" alt="IMG_8437" /></p>
 
-<h2 id="3-문제-해결-및-코드">3. 문제 해결 및 코드</h2>
-<hr />
+<p>나는 화이트보드를 샀다.
+무엇이든 내가 이루고자 하는 것이 있으면 그것에 필요한 물건에는 약간의 고민과 많은 추진력이 필요하다고 생각한다.
+어제의 내가 풀지 못하였던 문제들은 나의 작은 습관 (컴퓨터에 안도하고 모르는 문제를 스스로 해결하지 않으려는 나쁜 버릇)이 문제 해결을 방해하였다고 생각한다.
+그렇기에 오늘부로 문제 알고리즘별 문제 몇개를 선별해서 화이트보드로 푸는 연습을 하려고 한다.</p>
 
-<script src="https://gist.github.com/godhin/684d11add85d245bc7825d8c535de5b3.js"></script>
+<h3 id="어디를-가든지-마음을-다해-가라">어디를 가든지 마음을 다해 가라.</h3>
 
-<ul>
-  <li>
-    <h2 id="주석을-참고하면서-이해를-돕습니다">주석을 참고하면서 이해를 돕습니다.</h2>
-  </li>
-</ul>
+<p>내가 좋아하는 몇 안되는 말귀중 하나이다. 우리 아버지께서는 도전을 참 좋아했다.
+집이 가난해지는 순간까지 사업을 시도하였으니까 그런 아버지 밑에서 자란 나는 자연스럽게 무언가 하고 싶으면 일단 하고 보는 성격으로 자라게 되었다.
+그렇게 바쁘게 살아오던 와중 군대에 입대하여 처음으로 독서를 하였고, 그 책중 ‘공자’ 라는 책에서 많이 감명을 받았던 것 같다.</p>
 
-<h2 id="4-알고리즘-간략-설명">4. 알고리즘 간략 설명</h2>
-
-<ol>
-  <li>DP</li>
-</ol>
-
-<ul>
-  <li>동적 계획법이라고 불리는 문제로 1회용 알고리즘이다. 최소한의 계산방식으로 문제를 해결하기 때문에 시간을 최소화할 수 있지만 문제가 생길 시 브루트포스와 같이 코드 전체를 바꿔야할 수도 있다.</li>
-  <li>반복적으로 계산해야하는 문제이며 답이 같다라는 조건하여 DP로 해결할 수 있다.</li>
-  <li>위의 문제의 경우 반복적으로 문제를 해결해야하기에 DP를 사용했고 따로 변수를 만들지않고 기존의 값에 지속적으로 값을 추가하며 바꾸는 방식으로 메모리 소비를 최소화하였다. (이러한 방식을 <strong>메모이제이션</strong> 이라고 한다.)</li>
-</ul>
+<p>“어디를 가든지 마음을 다해 가라.” 이루고자 하는 목표가 있다면 최선을 다해야한다는 거다. 마치 사업이 여러번 망했어도 본인이 무모하다는 사실을 알면서도 쉬지 않고 포기하던 아버지의 모습처럼 말이다.</p>
 
         
       </section>
@@ -362,9 +348,9 @@
     
       <a href="/tags/#%EB%9D%BC%EC%9D%B4%EB%B8%8C%EC%BD%94%EB%94%A9" class="page__taxonomy-item p-category" rel="tag">라이브코딩</a><span class="sep">, </span>
     
-      <a href="/tags/#%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98" class="page__taxonomy-item p-category" rel="tag">알고리즘</a><span class="sep">, </span>
+      <a href="/tags/#%EB%A9%B4%EC%A0%91" class="page__taxonomy-item p-category" rel="tag">면접</a><span class="sep">, </span>
     
-      <a href="/tags/#%EC%BD%94%ED%85%8C" class="page__taxonomy-item p-category" rel="tag">코테</a>
+      <a href="/tags/#%EC%9D%BC%EC%83%81" class="page__taxonomy-item p-category" rel="tag">일상</a>
     
     </span>
   </p>
@@ -381,7 +367,7 @@
     <strong><i class="fas fa-fw fa-folder-open" aria-hidden="true"></i> 카테고리: </strong>
     <span itemprop="keywords">
     
-      <a href="/categories/#%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98" class="page__taxonomy-item p-category" rel="tag">알고리즘</a>
+      <a href="/categories/#%EC%9D%BC%EC%83%81" class="page__taxonomy-item p-category" rel="tag">일상</a>
     
     </span>
   </p>
@@ -389,7 +375,7 @@
 
         
 
-  <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> 업데이트:</strong> <time class="dt-published" datetime="2022-06-13">June 13, 2022</time></p>
+  <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> 업데이트:</strong> <time class="dt-published" datetime="2022-06-09">June 9, 2022</time></p>
 
       </footer>
 
@@ -398,22 +384,22 @@
     <h4 class="page__share-title">공유하기</h4>
   
 
-  <a href="https://twitter.com/intent/tweet?text=DP%EB%A1%9C+%ED%95%B4%EA%B2%B0%ED%95%98%EA%B8%B0%20http%3A%2F%2Flocalhost%3A4000%2F%25EC%2595%258C%25EA%25B3%25A0%25EB%25A6%25AC%25EC%25A6%2598%2FDP%25EB%25A1%259C-%25ED%2595%25B4%25EA%25B2%25B0%25ED%2595%2598%25EA%25B8%25B0%2F" class="btn btn--twitter" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="공유하기 Twitter"><i class="fab fa-fw fa-twitter" aria-hidden="true"></i><span> Twitter</span></a>
+  <a href="https://twitter.com/intent/tweet?text=%ED%99%94%EC%9D%B4%ED%8A%B8+%EB%B3%B4%EB%93%9C%20http%3A%2F%2Flocalhost%3A4000%2F%25EC%259D%25BC%25EC%2583%2581%2F%25EB%2587%258C-%25EA%25B3%25BC%25ED%2595%2599-%25EA%25B7%25B8%25EB%25A6%25AC%25EA%25B3%25A0-%25ED%2595%2598%25EB%25A3%25A8%25EC%259D%2598-%25EC%258B%259C%25EC%259E%2591%2F" class="btn btn--twitter" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="공유하기 Twitter"><i class="fab fa-fw fa-twitter" aria-hidden="true"></i><span> Twitter</span></a>
 
-  <a href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Flocalhost%3A4000%2F%25EC%2595%258C%25EA%25B3%25A0%25EB%25A6%25AC%25EC%25A6%2598%2FDP%25EB%25A1%259C-%25ED%2595%25B4%25EA%25B2%25B0%25ED%2595%2598%25EA%25B8%25B0%2F" class="btn btn--facebook" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="공유하기 Facebook"><i class="fab fa-fw fa-facebook" aria-hidden="true"></i><span> Facebook</span></a>
+  <a href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Flocalhost%3A4000%2F%25EC%259D%25BC%25EC%2583%2581%2F%25EB%2587%258C-%25EA%25B3%25BC%25ED%2595%2599-%25EA%25B7%25B8%25EB%25A6%25AC%25EA%25B3%25A0-%25ED%2595%2598%25EB%25A3%25A8%25EC%259D%2598-%25EC%258B%259C%25EC%259E%2591%2F" class="btn btn--facebook" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="공유하기 Facebook"><i class="fab fa-fw fa-facebook" aria-hidden="true"></i><span> Facebook</span></a>
 
-  <a href="https://www.linkedin.com/shareArticle?mini=true&url=http%3A%2F%2Flocalhost%3A4000%2F%25EC%2595%258C%25EA%25B3%25A0%25EB%25A6%25AC%25EC%25A6%2598%2FDP%25EB%25A1%259C-%25ED%2595%25B4%25EA%25B2%25B0%25ED%2595%2598%25EA%25B8%25B0%2F" class="btn btn--linkedin" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="공유하기 LinkedIn"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i><span> LinkedIn</span></a>
+  <a href="https://www.linkedin.com/shareArticle?mini=true&url=http%3A%2F%2Flocalhost%3A4000%2F%25EC%259D%25BC%25EC%2583%2581%2F%25EB%2587%258C-%25EA%25B3%25BC%25ED%2595%2599-%25EA%25B7%25B8%25EB%25A6%25AC%25EA%25B3%25A0-%25ED%2595%2598%25EB%25A3%25A8%25EC%259D%2598-%25EC%258B%259C%25EC%259E%2591%2F" class="btn btn--linkedin" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="공유하기 LinkedIn"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i><span> LinkedIn</span></a>
 </section>
 
 
       
   <nav class="pagination">
     
-      <a href="/%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98/%EB%9D%BC%EC%9D%B4%EB%B8%8C%EC%BD%94%EB%94%A9-%ED%9B%84%EA%B8%B0/" class="pagination--pager" title="라이브 코딩
+      <a href="/%EC%9D%BC%EC%83%81/%EB%B8%94%EB%A1%9C%EA%B7%B8%EB%A5%BC-%EB%8B%A4%EC%8B%9C-%EC%8B%9C%EC%9E%91%ED%95%98%EB%A9%B0/" class="pagination--pager" title="화이트 보드
 ">이전</a>
     
     
-      <a href="/%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98/%ED%83%90%EC%9A%95-%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98-%EB%B3%B5%EC%8A%B5%ED%95%98%EA%B8%B0/" class="pagination--pager" title="탐욕 알고리즘 복습하기
+      <a href="/%EC%9E%A5%EA%B3%A0/Django-&-AWS/" class="pagination--pager" title="django를 시작해보자
 ">다음</a>
     
   </nav>

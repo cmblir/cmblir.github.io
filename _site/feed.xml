@@ -1,4 +1,71 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2022-06-16T11:18:00+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">메인으로</title><subtitle>An amazing website.</subtitle><author><name>You Nicholas</name></author><entry><title type="html">갑작스러운 소나기</title><link href="http://localhost:4000/%EC%9D%BC%EC%83%81/%EA%B0%91%EC%9E%91%EC%8A%A4%EB%9F%AC%EC%9A%B4-%EC%86%8C%EB%82%98%EA%B8%B0/" rel="alternate" type="text/html" title="갑작스러운 소나기" /><published>2022-06-15T00:00:00+09:00</published><updated>2022-06-15T00:00:00+09:00</updated><id>http://localhost:4000/%EC%9D%BC%EC%83%81/%EA%B0%91%EC%9E%91%EC%8A%A4%EB%9F%AC%EC%9A%B4%20%EC%86%8C%EB%82%98%EA%B8%B0</id><content type="html" xml:base="http://localhost:4000/%EC%9D%BC%EC%83%81/%EA%B0%91%EC%9E%91%EC%8A%A4%EB%9F%AC%EC%9A%B4-%EC%86%8C%EB%82%98%EA%B8%B0/">&lt;h2 id=&quot;소나기-️&quot;&gt;소나기 ☔️&lt;/h2&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2022-06-18T16:22:29+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">성장형 개발자 블로그</title><subtitle>An amazing website.</subtitle><author><name>You Nicholas</name></author><entry><title type="html">기계식 키보드란</title><link href="http://localhost:4000/%ED%82%A4%EB%B3%B4%EB%93%9C/%EA%B8%B0%EA%B3%84%EC%8B%9D%ED%82%A4%EB%B3%B4%EB%93%9C%EB%9E%80/" rel="alternate" type="text/html" title="기계식 키보드란" /><published>2022-06-17T00:00:00+09:00</published><updated>2022-06-17T00:00:00+09:00</updated><id>http://localhost:4000/%ED%82%A4%EB%B3%B4%EB%93%9C/%EA%B8%B0%EA%B3%84%EC%8B%9D%ED%82%A4%EB%B3%B4%EB%93%9C%EB%9E%80</id><content type="html" xml:base="http://localhost:4000/%ED%82%A4%EB%B3%B4%EB%93%9C/%EA%B8%B0%EA%B3%84%EC%8B%9D%ED%82%A4%EB%B3%B4%EB%93%9C%EB%9E%80/">&lt;h2 id=&quot;기계식-키보드란&quot;&gt;기계식 키보드란?&lt;/h2&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://user-images.githubusercontent.com/75519839/174333187-79df3216-aaeb-4a82-9065-89d81e4c9011.jpg&quot; alt=&quot;IMG_8393&quot; /&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;이 사진은 내 기계식 키보드이다.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;기계식-키보드가-되기-위한-조건&quot;&gt;기계식 키보드가 되기 위한 조건&lt;/h3&gt;
+
+&lt;p&gt;우리가 흔히 말하는 ‘기계식’ 키보드는 3가지 조건을 달성하면 우리가 흔히 아는 기계식이 된다.&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;축전식이 아닌 것&lt;/li&gt;
+  &lt;li&gt;분리되어 있던 금속 접점이 서로 접촉하며 키가 입력되는 방식일 것&lt;/li&gt;
+  &lt;li&gt;금속 접점이 분리할 수 있는 스위치 내부에 존재할 것&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;좀 더 쉽게 설명하자면,&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;축전량의 변화가 키를 누르는 지를 감지하는 방식 -&amp;gt; 용수철같은 전도체가 축전센서에 신호를 주는 방식이 아닌 것&lt;/li&gt;
+  &lt;li&gt;키보드 안에 스위치를 낄 수 있는 자리가 있어서 그것을 접촉시켜 키가 입력되어야 하는 방식&lt;/li&gt;
+  &lt;li&gt;스위치 안에 접점부가 있을 것&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://user-images.githubusercontent.com/75519839/174334588-8316ce01-3b9a-4a16-a203-3f98b4b11572.jpg&quot; alt=&quot;IMG_8447&quot; /&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;위의 사진이 바로 스위치라는 것이다. 해당 스위치를 눌렀을 때 우리가 흔히 말하는 땅을 치면서 접점부를 누르게 된다.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;작동-방식으로-조건-간략-설명&quot;&gt;작동 방식으로 조건 간략 설명&lt;/h3&gt;
+
+&lt;p&gt;위의 조건에 나와있는 것을 반대로 돌아가면 정확하게 작동 방식이 이해가 된다.&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;스위치 내부의 접점부를 누른다. (스위치를 누르면 안에 스템이 내부의 스프링을 누르면서 접점부를 누르게 된다.)&lt;/li&gt;
+  &lt;li&gt;접점부를 누름과 동시에 해당 스위치의 금속 접점과 PCB(키보드 메인보드 느낌)의 접점이 신호를 받으면서 해당 키가 눌렸다고 전달한다.&lt;/li&gt;
+  &lt;li&gt;이러한 방식은 축전식이 아닌 기계식이다.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/Pc0p70nKb3M&quot; title=&quot;YouTube video player&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;위의 영상은 제 개인 유튜브로 간략하게 찍어봤습니다. 위에 나온 스위치를 키보드에 넣었을 때 나오는 소리입니다.&lt;/li&gt;
+&lt;/ul&gt;</content><author><name>You Nicholas</name></author><category term="키보드" /><category term="키보드" /><summary type="html">멤브레인 키보드의 차이</summary></entry><entry><title type="html">노션의 글을 옮기며</title><link href="http://localhost:4000/%EC%9D%BC%EC%83%81/%EB%85%B8%EC%85%98%EC%9D%98-%EA%B8%80%EB%93%A4%EC%9D%84-%EC%98%AE%EA%B8%B0%EB%A9%B0/" rel="alternate" type="text/html" title="노션의 글을 옮기며" /><published>2022-06-16T00:00:00+09:00</published><updated>2022-06-16T00:00:00+09:00</updated><id>http://localhost:4000/%EC%9D%BC%EC%83%81/%EB%85%B8%EC%85%98%EC%9D%98%20%EA%B8%80%EB%93%A4%EC%9D%84%20%EC%98%AE%EA%B8%B0%EB%A9%B0</id><content type="html" xml:base="http://localhost:4000/%EC%9D%BC%EC%83%81/%EB%85%B8%EC%85%98%EC%9D%98-%EA%B8%80%EB%93%A4%EC%9D%84-%EC%98%AE%EA%B8%B0%EB%A9%B0/">&lt;h2 id=&quot;혼자만의-공부-공간-&quot;&gt;혼자만의 공부 공간 📜&lt;/h2&gt;
+&lt;p&gt;&lt;img src=&quot;https://user-images.githubusercontent.com/75519839/174033997-3bfd6402-63fc-45ad-b727-48efa7c97cef.png&quot; alt=&quot;스크린샷 2022-06-16 17 59 45&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;혼자 공부하는 공간이라 나만 알아볼 수 있게 정리해놨다. 👀&lt;/p&gt;
+
+&lt;p&gt;위에 보이는 것 이외에도 페이지가 너무 많아서 조만간 더 정리할 생각이다 (아이디어 노트같이 카테고리를 정하기 애매한 것들이 많다 ㅠ)&lt;/p&gt;
+
+&lt;p&gt;나는 처음 코딩을 배울 때 아는 지인으로부터 공부한 걸 기록하는 습관이 중요하다고 배웠다. 중고등학교 시절부터 무언가 배운 것이 있으면 적지 않고 머리로만 암기해서 풀었다. 그나마 교과서에 끄적이는 게 전부였기에 처음에 노션을 접하고 하나하나 적다보니 지금은 일단 적고 보는 편이다.&lt;/p&gt;
+
+&lt;p&gt;그런 나에게 노션은 혁명이였다. 적기도 수월했고 그리고 기록이 버릇으로 남다보니 핸드폰을 들고다니며 생각나는 아이디어가 있으면 일단 적고 본다. 적으니까 기억에 남아서 나중에는 잘 까먹지도 않는다.&lt;/p&gt;
+
+&lt;h2 id=&quot;엄청난-메리트-&quot;&gt;엄청난 메리트 ⁉&lt;/h2&gt;
+
+&lt;p&gt;아무래도 정리를 하다보니 문제를 풀다가 막히는 부분이 있다면 일단 내 노션부터 키고 본다. 예전에 마주했던 문제가 있다면 구글에서 찾고 비슷한 문제다 싶으면 들어가서 또 찾고 비교해야하는 수월을 훨씬 줄일 수 있다.&lt;/p&gt;
+
+&lt;h2 id=&quot;디메리트-&quot;&gt;디메리트 💢&lt;/h2&gt;
+
+&lt;p&gt;문제가 생기면 일단 기록하고 내가 본 적 있는 문제다 싶으면 노션을 켰다. 그래서 장시간 문제를 해결하는 노력을 하지 않게 된다. 디메리트라고 하기가 뭐하긴하지만 유연하게 문제를 해결하기 위해서는 가끔은 고지식하게 하나를 물고 늘어질 필요도 있다. 하지만 요즘 같이 바쁘다 바빠 현대사회에서 시간은 금이기에 ‘어? 이 문제 어디서 본 적 있는데? 이 코드 쓴 적 있는데?’ 하면 일단 내가 쓴거부터 본다.&lt;/p&gt;
+
+&lt;h3 id=&quot;고치는-중이야&quot;&gt;고치는 중이야..&lt;/h3&gt;
+
+&lt;p&gt;첫 면접날에 라이브 코딩을 본 적이 있다고 했다. 궁금하다면 &lt;strong&gt;&lt;a href=&quot;&amp;quot;https://godhin.github.io/%EC%9D%BC%EC%83%81/%EC%B2%AB-%EB%A9%B4%EC%A0%91/&amp;quot;&quot;&gt;처음으로 면접을 보았다&lt;/a&gt;&lt;/strong&gt; 가서 후기를 보길 바란다. 정말 간단한 문제였는데 못 풀었다. 그때 그 경험이 좋았던게 화이트보드를 통한 라이브코딩 그래서 나도 문제 풀때 꼭 옆에 화이트보드를 끼고 일단 머리 굴려서 풀어보고, 그리고 손 굴려서 풀어본다. 그러니까 이상하게 머리에 더 오래 남는 느낌이다. &lt;em&gt;마지막으로 블로그에 글 까지 쓰면 완벽하다.&lt;/em&gt;&lt;/p&gt;</content><author><name>You Nicholas</name></author><category term="일상" /><category term="일상" /><category term="면접" /><category term="라이브코딩" /><summary type="html">바쁜 와중 이루어진 나의 블로그 이사</summary></entry><entry><title type="html">갑작스러운 소나기</title><link href="http://localhost:4000/%EC%9D%BC%EC%83%81/%EA%B0%91%EC%9E%91%EC%8A%A4%EB%9F%AC%EC%9A%B4-%EC%86%8C%EB%82%98%EA%B8%B0/" rel="alternate" type="text/html" title="갑작스러운 소나기" /><published>2022-06-15T00:00:00+09:00</published><updated>2022-06-15T00:00:00+09:00</updated><id>http://localhost:4000/%EC%9D%BC%EC%83%81/%EA%B0%91%EC%9E%91%EC%8A%A4%EB%9F%AC%EC%9A%B4%20%EC%86%8C%EB%82%98%EA%B8%B0</id><content type="html" xml:base="http://localhost:4000/%EC%9D%BC%EC%83%81/%EA%B0%91%EC%9E%91%EC%8A%A4%EB%9F%AC%EC%9A%B4-%EC%86%8C%EB%82%98%EA%B8%B0/">&lt;h2 id=&quot;소나기-️&quot;&gt;소나기 ☔️&lt;/h2&gt;
 
 &lt;video width=&quot;80%&quot; height=&quot;80%&quot; controls=&quot;controls&quot;&gt;
 &lt;source src=&quot;https://user-images.githubusercontent.com/75519839/173714474-224d8418-ccd0-4a0e-9c2f-9261f1c77cdf.mp4&quot; /&gt;
@@ -31,69 +98,7 @@
 
 &lt;ul&gt;
   &lt;li&gt;아직도 첫 면접이 생각나고 ‘왜 그때 이런 대답을 하지 못했을까?’ 라는 생각이 뇌리에서 쉽사리 떠나지 않는 것 같다. 그걸 만회하기 위해 그 전보다 더 노력해야한다. 더 부단해야한다. 첫잔이 생각나지 않게끔&lt;/li&gt;
-&lt;/ul&gt;</content><author><name>You Nicholas</name></author><category term="일상" /><category term="일상" /><summary type="html">하지만 원래 소나기는 갑작기 오는 비</summary></entry><entry><title type="html">탐욕 알고리즘 복습하기</title><link href="http://localhost:4000/%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98/%ED%83%90%EC%9A%95-%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98-%EB%B3%B5%EC%8A%B5%ED%95%98%EA%B8%B0/" rel="alternate" type="text/html" title="탐욕 알고리즘 복습하기" /><published>2022-06-14T00:00:00+09:00</published><updated>2022-06-14T00:00:00+09:00</updated><id>http://localhost:4000/%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98/%ED%83%90%EC%9A%95%20%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98%20%EB%B3%B5%EC%8A%B5%ED%95%98%EA%B8%B0</id><content type="html" xml:base="http://localhost:4000/%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98/%ED%83%90%EC%9A%95-%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98-%EB%B3%B5%EC%8A%B5%ED%95%98%EA%B8%B0/">&lt;h2 id=&quot;1-문제&quot;&gt;1. 문제&lt;/h2&gt;
-&lt;p&gt;탐욕 알고리즘으로 가장 대표적인 거스름돈 문제 해결하기
-손님에게 거스름돈으로 줄 수 있는 최소한의 동전 개수 구하기&lt;/p&gt;
-
-&lt;h2 id=&quot;2-해결방법-시간복잡도&quot;&gt;2. 해결방법 시간복잡도&lt;/h2&gt;
-&lt;ol&gt;
-  &lt;li&gt;탐욕 알고리즘 O(N)&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;h2 id=&quot;3-문제-해결-및-코드&quot;&gt;3. 문제 해결 및 코드&lt;/h2&gt;
-&lt;hr /&gt;
-
-&lt;script src=&quot;https://gist.github.com/godhin/49700625dfee55b19ad7e456ab3f091b.js&quot;&gt;&lt;/script&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;
-    &lt;h2 id=&quot;주석을-참고하면서-이해를-돕습니다&quot;&gt;주석을 참고하면서 이해를 돕습니다.&lt;/h2&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&quot;4-알고리즘-간략-설명&quot;&gt;4. 알고리즘 간략 설명&lt;/h2&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;탐욕 알고리즘&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;대게 탐욕 알고리즘 2가지 조건에 의해 잘 작동하게 된다.
-    &lt;ul&gt;
-      &lt;li&gt;
-        &lt;ol&gt;
-          &lt;li&gt;선택 조건 (greedy choice property)
-            &lt;ul&gt;
-              &lt;li&gt;앞의 선택이 뒤의 선택에 영향을 주지 않음&lt;/li&gt;
-            &lt;/ul&gt;
-          &lt;/li&gt;
-        &lt;/ol&gt;
-      &lt;/li&gt;
-      &lt;li&gt;
-        &lt;ol&gt;
-          &lt;li&gt;최적 조건 (optimal substructure)
-            &lt;ul&gt;
-              &lt;li&gt;문제의 일부의 해결 방법이 최적의 문제 해결 방법으로 구성되어 있음&lt;/li&gt;
-            &lt;/ul&gt;
-          &lt;/li&gt;
-        &lt;/ol&gt;
-      &lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;선택 조건 충족
-    &lt;ul&gt;
-      &lt;li&gt;큰 단위부터 계속하여도 작은 단위가 결과값에 영향을 주지 않음&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;최적 조건 충족
-    &lt;ul&gt;
-      &lt;li&gt;최소한의 동전 개수를 주기 위해서는 큰 단위부터 거슬러줘야함&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-&lt;/ol&gt;</content><author><name>You Nicholas</name></author><category term="알고리즘" /><category term="알고리즘" /><category term="라이브코딩" /><category term="코테" /><summary type="html">탐욕 알고리즘으로 풀었던 문제 복습해보기</summary></entry><entry><title type="html">[파이썬][프로그래머스] 신고 결과 받기 풀이</title><link href="http://localhost:4000/%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8/%EC%8B%A0%EA%B3%A0-%EA%B2%B0%EA%B3%BC-%EB%B0%9B%EA%B8%B0/" rel="alternate" type="text/html" title="[파이썬][프로그래머스] 신고 결과 받기 풀이" /><published>2022-06-14T00:00:00+09:00</published><updated>2022-06-14T00:00:00+09:00</updated><id>http://localhost:4000/%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8/%EC%8B%A0%EA%B3%A0%20%EA%B2%B0%EA%B3%BC%20%EB%B0%9B%EA%B8%B0</id><content type="html" xml:base="http://localhost:4000/%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8/%EC%8B%A0%EA%B3%A0-%EA%B2%B0%EA%B3%BC-%EB%B0%9B%EA%B8%B0/">&lt;h2 id=&quot;1-문제&quot;&gt;1. 문제&lt;/h2&gt;
+&lt;/ul&gt;</content><author><name>You Nicholas</name></author><category term="일상" /><category term="일상" /><summary type="html">하지만 원래 소나기는 갑작기 오는 비</summary></entry><entry><title type="html">[파이썬][프로그래머스] 신고 결과 받기</title><link href="http://localhost:4000/%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8/%EC%8B%A0%EA%B3%A0-%EA%B2%B0%EA%B3%BC-%EB%B0%9B%EA%B8%B0/" rel="alternate" type="text/html" title="[파이썬][프로그래머스] 신고 결과 받기" /><published>2022-06-14T00:00:00+09:00</published><updated>2022-06-14T00:00:00+09:00</updated><id>http://localhost:4000/%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8/%EC%8B%A0%EA%B3%A0%20%EA%B2%B0%EA%B3%BC%20%EB%B0%9B%EA%B8%B0</id><content type="html" xml:base="http://localhost:4000/%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8/%EC%8B%A0%EA%B3%A0-%EA%B2%B0%EA%B3%BC-%EB%B0%9B%EA%B8%B0/">&lt;h2 id=&quot;1-문제&quot;&gt;1. 문제&lt;/h2&gt;
 
 &lt;h1 id=&quot;level-1-신고-결과-받기---92334&quot;&gt;[level 1] 신고 결과 받기 - 92334&lt;/h1&gt;
 
@@ -340,7 +345,69 @@
   &lt;li&gt;위의 의사코드 작성처럼 신고 명단과 신고당한 사람을 셀 수 있는 dictionary를 만들어준다.&lt;/li&gt;
   &lt;li&gt;2개의 딕셔너리에서 명단에는 신고자와 신고당한 사람을 세주고, 신고당한 횟수 명단에는 숫자를 세준다.&lt;/li&gt;
   &lt;li&gt;마지막으로 특정값을 충족하였을 때 결과값에 출력을 해준다.&lt;/li&gt;
-&lt;/ol&gt;</content><author><name>You Nicholas</name></author><category term="코딩테스트" /><category term="알고리즘" /><category term="라이브코딩" /><category term="코테" /><category term="프로그래머스" /><category term="Level_1" /><summary type="html">브루트포스로 문제 해결하기s</summary></entry><entry><title type="html">DP로 해결하기</title><link href="http://localhost:4000/%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98/DP%EB%A1%9C-%ED%95%B4%EA%B2%B0%ED%95%98%EA%B8%B0/" rel="alternate" type="text/html" title="DP로 해결하기" /><published>2022-06-13T00:00:00+09:00</published><updated>2022-06-13T00:00:00+09:00</updated><id>http://localhost:4000/%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98/DP%EB%A1%9C%20%ED%95%B4%EA%B2%B0%ED%95%98%EA%B8%B0</id><content type="html" xml:base="http://localhost:4000/%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98/DP%EB%A1%9C-%ED%95%B4%EA%B2%B0%ED%95%98%EA%B8%B0/">&lt;h2 id=&quot;1-문제&quot;&gt;1. 문제&lt;/h2&gt;
+&lt;/ol&gt;</content><author><name>You Nicholas</name></author><category term="코딩테스트" /><category term="알고리즘" /><category term="라이브코딩" /><category term="코테" /><category term="프로그래머스" /><category term="Level_1" /><summary type="html">프로그래머스 신고 결과 받기 풀이</summary></entry><entry><title type="html">탐욕 알고리즘 복습하기</title><link href="http://localhost:4000/%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98/%ED%83%90%EC%9A%95-%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98-%EB%B3%B5%EC%8A%B5%ED%95%98%EA%B8%B0/" rel="alternate" type="text/html" title="탐욕 알고리즘 복습하기" /><published>2022-06-14T00:00:00+09:00</published><updated>2022-06-14T00:00:00+09:00</updated><id>http://localhost:4000/%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98/%ED%83%90%EC%9A%95%20%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98%20%EB%B3%B5%EC%8A%B5%ED%95%98%EA%B8%B0</id><content type="html" xml:base="http://localhost:4000/%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98/%ED%83%90%EC%9A%95-%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98-%EB%B3%B5%EC%8A%B5%ED%95%98%EA%B8%B0/">&lt;h2 id=&quot;1-문제&quot;&gt;1. 문제&lt;/h2&gt;
+&lt;p&gt;탐욕 알고리즘으로 가장 대표적인 거스름돈 문제 해결하기
+손님에게 거스름돈으로 줄 수 있는 최소한의 동전 개수 구하기&lt;/p&gt;
+
+&lt;h2 id=&quot;2-해결방법-시간복잡도&quot;&gt;2. 해결방법 시간복잡도&lt;/h2&gt;
+&lt;ol&gt;
+  &lt;li&gt;탐욕 알고리즘 O(N)&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h2 id=&quot;3-문제-해결-및-코드&quot;&gt;3. 문제 해결 및 코드&lt;/h2&gt;
+&lt;hr /&gt;
+
+&lt;script src=&quot;https://gist.github.com/godhin/49700625dfee55b19ad7e456ab3f091b.js&quot;&gt;&lt;/script&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;h2 id=&quot;주석을-참고하면서-이해를-돕습니다&quot;&gt;주석을 참고하면서 이해를 돕습니다.&lt;/h2&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;4-알고리즘-간략-설명&quot;&gt;4. 알고리즘 간략 설명&lt;/h2&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;탐욕 알고리즘&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;대게 탐욕 알고리즘 2가지 조건에 의해 잘 작동하게 된다.
+    &lt;ul&gt;
+      &lt;li&gt;
+        &lt;ol&gt;
+          &lt;li&gt;선택 조건 (greedy choice property)
+            &lt;ul&gt;
+              &lt;li&gt;앞의 선택이 뒤의 선택에 영향을 주지 않음&lt;/li&gt;
+            &lt;/ul&gt;
+          &lt;/li&gt;
+        &lt;/ol&gt;
+      &lt;/li&gt;
+      &lt;li&gt;
+        &lt;ol&gt;
+          &lt;li&gt;최적 조건 (optimal substructure)
+            &lt;ul&gt;
+              &lt;li&gt;문제의 일부의 해결 방법이 최적의 문제 해결 방법으로 구성되어 있음&lt;/li&gt;
+            &lt;/ul&gt;
+          &lt;/li&gt;
+        &lt;/ol&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;선택 조건 충족
+    &lt;ul&gt;
+      &lt;li&gt;큰 단위부터 계속하여도 작은 단위가 결과값에 영향을 주지 않음&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;최적 조건 충족
+    &lt;ul&gt;
+      &lt;li&gt;최소한의 동전 개수를 주기 위해서는 큰 단위부터 거슬러줘야함&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;</content><author><name>You Nicholas</name></author><category term="알고리즘" /><category term="알고리즘" /><category term="라이브코딩" /><category term="코테" /><summary type="html">탐욕 알고리즘으로 풀었던 문제 복습해보기</summary></entry><entry><title type="html">DP로 해결하기</title><link href="http://localhost:4000/%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98/DP%EB%A1%9C-%ED%95%B4%EA%B2%B0%ED%95%98%EA%B8%B0/" rel="alternate" type="text/html" title="DP로 해결하기" /><published>2022-06-13T00:00:00+09:00</published><updated>2022-06-13T00:00:00+09:00</updated><id>http://localhost:4000/%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98/DP%EB%A1%9C%20%ED%95%B4%EA%B2%B0%ED%95%98%EA%B8%B0</id><content type="html" xml:base="http://localhost:4000/%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98/DP%EB%A1%9C-%ED%95%B4%EA%B2%B0%ED%95%98%EA%B8%B0/">&lt;h2 id=&quot;1-문제&quot;&gt;1. 문제&lt;/h2&gt;
 &lt;p&gt;자신이 속한 열을 제외한 값중 가장 큰 값을 중복으로 더하여 최종 행의 가장 큰 값을 호출하기&lt;/p&gt;
 
 &lt;h2 id=&quot;2-해결방법-시간복잡도&quot;&gt;2. 해결방법 시간복잡도&lt;/h2&gt;
@@ -530,22 +597,7 @@
       &lt;/li&gt;
     &lt;/ol&gt;
   &lt;/li&gt;
-&lt;/ol&gt;</content><author><name>You Nicholas</name></author><category term="장고" /><category term="장고" /><category term="aws" /><summary type="html">장고로 시작해서 AWS까지 - 1</summary></entry><entry><title type="html">화이트 보드</title><link href="http://localhost:4000/%EC%9D%BC%EC%83%81/%EB%B8%94%EB%A1%9C%EA%B7%B8%EB%A5%BC-%EB%8B%A4%EC%8B%9C-%EC%8B%9C%EC%9E%91%ED%95%98%EB%A9%B0/" rel="alternate" type="text/html" title="화이트 보드" /><published>2022-06-09T00:00:00+09:00</published><updated>2022-06-09T00:00:00+09:00</updated><id>http://localhost:4000/%EC%9D%BC%EC%83%81/%EB%B8%94%EB%A1%9C%EA%B7%B8%EB%A5%BC%20%EB%8B%A4%EC%8B%9C%20%EC%8B%9C%EC%9E%91%ED%95%98%EB%A9%B0</id><content type="html" xml:base="http://localhost:4000/%EC%9D%BC%EC%83%81/%EB%B8%94%EB%A1%9C%EA%B7%B8%EB%A5%BC-%EB%8B%A4%EC%8B%9C-%EC%8B%9C%EC%9E%91%ED%95%98%EB%A9%B0/">&lt;h1 id=&quot;화이트-보드&quot;&gt;화이트 보드&lt;/h1&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://user-images.githubusercontent.com/75519839/173072075-82410cc7-2aec-44b1-ac16-bc3437bc46ae.jpg&quot; alt=&quot;IMG_8437&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;나는 화이트보드를 샀다.
-무엇이든 내가 이루고자 하는 것이 있으면 그것에 필요한 물건에는 약간의 고민과 많은 추진력이 필요하다고 생각한다.
-어제의 내가 풀지 못하였던 문제들은 나의 작은 습관 (컴퓨터에 안도하고 모르는 문제를 스스로 해결하지 않으려는 나쁜 버릇)이 문제 해결을 방해하였다고 생각한다.
-그렇기에 오늘부로 문제 알고리즘별 문제 몇개를 선별해서 화이트보드로 푸는 연습을 하려고 한다.&lt;/p&gt;
-
-&lt;h3 id=&quot;어디를-가든지-마음을-다해-가라&quot;&gt;어디를 가든지 마음을 다해 가라.&lt;/h3&gt;
-
-&lt;p&gt;내가 좋아하는 몇 안되는 말귀중 하나이다. 우리 아버지께서는 도전을 참 좋아했다.
-집이 가난해지는 순간까지 사업을 시도하였으니까 그런 아버지 밑에서 자란 나는 자연스럽게 무언가 하고 싶으면 일단 하고 보는 성격으로 자라게 되었다.
-그렇게 바쁘게 살아오던 와중 군대에 입대하여 처음으로 독서를 하였고, 그 책중 ‘공자’ 라는 책에서 많이 감명을 받았던 것 같다.&lt;/p&gt;
-
-&lt;p&gt;“어디를 가든지 마음을 다해 가라.” 이루고자 하는 목표가 있다면 최선을 다해야한다는 거다. 마치 사업이 여러번 망했어도 본인이 무모하다는 사실을 알면서도 쉬지 않고 포기하던 아버지의 모습처럼 말이다.&lt;/p&gt;</content><author><name>You Nicholas</name></author><category term="일상" /><category term="일상" /><category term="면접" /><category term="라이브코딩" /><summary type="html">라이브코딩에 사용했던 화이트 보드를 이제는 우리집에도</summary></entry><entry><title type="html">처음으로 면접을 보았다.</title><link href="http://localhost:4000/%EC%9D%BC%EC%83%81/%EC%B2%AB-%EB%A9%B4%EC%A0%91/" rel="alternate" type="text/html" title="처음으로 면접을 보았다." /><published>2022-06-09T00:00:00+09:00</published><updated>2022-06-09T00:00:00+09:00</updated><id>http://localhost:4000/%EC%9D%BC%EC%83%81/%EC%B2%AB%20%EB%A9%B4%EC%A0%91</id><content type="html" xml:base="http://localhost:4000/%EC%9D%BC%EC%83%81/%EC%B2%AB-%EB%A9%B4%EC%A0%91/">&lt;p&gt;&lt;img src=&quot;https://user-images.githubusercontent.com/75519839/172981895-e0bb270b-1068-4774-8d8c-a5c54ce49a39.jpg&quot; alt=&quot;IMG_8432&quot; /&gt;&lt;/p&gt;
+&lt;/ol&gt;</content><author><name>You Nicholas</name></author><category term="장고" /><category term="장고" /><category term="aws" /><summary type="html">장고로 시작해서 AWS까지 - 1</summary></entry><entry><title type="html">처음으로 면접을 보았다.</title><link href="http://localhost:4000/%EC%9D%BC%EC%83%81/%EC%B2%AB-%EB%A9%B4%EC%A0%91/" rel="alternate" type="text/html" title="처음으로 면접을 보았다." /><published>2022-06-09T00:00:00+09:00</published><updated>2022-06-09T00:00:00+09:00</updated><id>http://localhost:4000/%EC%9D%BC%EC%83%81/%EC%B2%AB%20%EB%A9%B4%EC%A0%91</id><content type="html" xml:base="http://localhost:4000/%EC%9D%BC%EC%83%81/%EC%B2%AB-%EB%A9%B4%EC%A0%91/">&lt;p&gt;&lt;img src=&quot;https://user-images.githubusercontent.com/75519839/172981895-e0bb270b-1068-4774-8d8c-a5c54ce49a39.jpg&quot; alt=&quot;IMG_8432&quot; /&gt;&lt;/p&gt;
 &lt;h3 id=&quot;너무-오랜만에-입어보는-정장-️&quot;&gt;너무 오랜만에 입어보는 정장 🤵🏻‍♂️&lt;/h3&gt;
 
 &lt;h3 id=&quot;1-고민하고-고민하다&quot;&gt;1. 고민하고 고민하다.&lt;/h3&gt;
@@ -584,168 +636,19 @@
 &lt;h3 id=&quot;7-회고&quot;&gt;7. 회고&lt;/h3&gt;
 
 &lt;p&gt;첫 면접인데도 면접관님들의 배려와 좋은 질문들 그리고 경험들이 너무나도 좋아서 나가기 전 면접이 어땠냐는 물음에 “너무 좋았습니다”라고 말하면서 나의 첫 면접은 그렇게 끝이 났다. 머릿속에서 면접 내용이 떠내려가기 전에 재빠르게 개인 메모장에 오늘 받았던 면접 질문들과 하셨던 말씀들 그리고 문제 내가 했던 대답들을 적어놨다. 나중에 같은 질문을 받게 된다면 그때는 이것만큼은 꼭 대답하리라는 생각에 근처 카페로 달려가 머리에 남아있는 걸 모두 적었다. 
-집에 오고 나서는 아까 못 푼 문제가 너무 화가나서 집에 와서 관련된 문제만 계속해서 풀었다. 풀고 또 풀고 풀고 풀고 계속 풀었다.&lt;/p&gt;</content><author><name>You Nicholas</name></author><category term="일상" /><category term="일상" /><category term="면접" /><summary type="html">나의 첫 면접 회고</summary></entry><entry><title type="html">[파이썬][백준 10093번] 숫자 풀이</title><link href="http://localhost:4000/%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8/10093/" rel="alternate" type="text/html" title="[파이썬][백준 10093번] 숫자 풀이" /><published>2022-05-28T00:00:00+09:00</published><updated>2022-05-28T00:00:00+09:00</updated><id>http://localhost:4000/%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8/10093</id><content type="html" xml:base="http://localhost:4000/%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8/10093/">&lt;h2 id=&quot;1-문제&quot;&gt;1. 문제&lt;/h2&gt;
+집에 오고 나서는 아까 못 푼 문제가 너무 화가나서 집에 와서 관련된 문제만 계속해서 풀었다. 풀고 또 풀고 풀고 풀고 계속 풀었다.&lt;/p&gt;</content><author><name>You Nicholas</name></author><category term="일상" /><category term="일상" /><category term="면접" /><summary type="html">나의 첫 면접 회고</summary></entry><entry><title type="html">화이트 보드</title><link href="http://localhost:4000/%EC%9D%BC%EC%83%81/%EB%87%8C-%EA%B3%BC%ED%95%99-%EA%B7%B8%EB%A6%AC%EA%B3%A0-%ED%95%98%EB%A3%A8%EC%9D%98-%EC%8B%9C%EC%9E%91/" rel="alternate" type="text/html" title="화이트 보드" /><published>2022-06-09T00:00:00+09:00</published><updated>2022-06-09T00:00:00+09:00</updated><id>http://localhost:4000/%EC%9D%BC%EC%83%81/%EB%87%8C%20%EA%B3%BC%ED%95%99%20%EA%B7%B8%EB%A6%AC%EA%B3%A0%20%ED%95%98%EB%A3%A8%EC%9D%98%20%EC%8B%9C%EC%9E%91</id><content type="html" xml:base="http://localhost:4000/%EC%9D%BC%EC%83%81/%EB%87%8C-%EA%B3%BC%ED%95%99-%EA%B7%B8%EB%A6%AC%EA%B3%A0-%ED%95%98%EB%A3%A8%EC%9D%98-%EC%8B%9C%EC%9E%91/">&lt;h1 id=&quot;화이트-보드&quot;&gt;화이트 보드&lt;/h1&gt;
 
-&lt;h1 id=&quot;bronze-ii-숫자---10093&quot;&gt;[Bronze II] 숫자 - 10093&lt;/h1&gt;
+&lt;p&gt;&lt;img src=&quot;https://user-images.githubusercontent.com/75519839/173072075-82410cc7-2aec-44b1-ac16-bc3437bc46ae.jpg&quot; alt=&quot;IMG_8437&quot; /&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&quot;https://www.acmicpc.net/problem/10093&quot;&gt;문제 링크&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;나는 화이트보드를 샀다.
+무엇이든 내가 이루고자 하는 것이 있으면 그것에 필요한 물건에는 약간의 고민과 많은 추진력이 필요하다고 생각한다.
+어제의 내가 풀지 못하였던 문제들은 나의 작은 습관 (컴퓨터에 안도하고 모르는 문제를 스스로 해결하지 않으려는 나쁜 버릇)이 문제 해결을 방해하였다고 생각한다.
+그렇기에 오늘부로 문제 알고리즘별 문제 몇개를 선별해서 화이트보드로 푸는 연습을 하려고 한다.&lt;/p&gt;
 
-&lt;h3 id=&quot;성능-요약&quot;&gt;성능 요약&lt;/h3&gt;
+&lt;h3 id=&quot;어디를-가든지-마음을-다해-가라&quot;&gt;어디를 가든지 마음을 다해 가라.&lt;/h3&gt;
 
-&lt;p&gt;메모리: 30840 KB, 시간: 128 ms&lt;/p&gt;
+&lt;p&gt;내가 좋아하는 몇 안되는 말귀중 하나이다. 우리 아버지께서는 도전을 참 좋아했다.
+집이 가난해지는 순간까지 사업을 시도하였으니까 그런 아버지 밑에서 자란 나는 자연스럽게 무언가 하고 싶으면 일단 하고 보는 성격으로 자라게 되었다.
+그렇게 바쁘게 살아오던 와중 군대에 입대하여 처음으로 독서를 하였고, 그 책중 ‘공자’ 라는 책에서 많이 감명을 받았던 것 같다.&lt;/p&gt;
 
-&lt;h3 id=&quot;분류&quot;&gt;분류&lt;/h3&gt;
-
-&lt;p&gt;구현(implementation)&lt;/p&gt;
-
-&lt;h3 id=&quot;문제-설명&quot;&gt;문제 설명&lt;/h3&gt;
-
-&lt;p&gt;두 양의 정수가 주어졌을 때, 두 수 사이에 있는 정수를 모두 출력하는 프로그램을 작성하시오.&lt;/p&gt;
-
-&lt;h3 id=&quot;입력&quot;&gt;입력&lt;/h3&gt;
-
-&lt;p&gt;두 정수 A와 B가 주어진다.&lt;/p&gt;
-
-&lt;h3 id=&quot;출력&quot;&gt;출력&lt;/h3&gt;
-
-&lt;p&gt;첫째 줄에 두 수 사이에 있는 수의 개수를 출력한다.&lt;/p&gt;
-
-&lt;p&gt;둘째 줄에는 두 수 사이에 있는 수를 오름차순으로 출력한다.&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;출처: 백준, https://https://www.acmicpc.net/&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;h2 id=&quot;2-해결방법-시간복잡도&quot;&gt;2. 해결방법 시간복잡도&lt;/h2&gt;
-&lt;ol&gt;
-  &lt;li&gt;단순 코딩 O(N)&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;h2 id=&quot;3-문제-해결-및-코드&quot;&gt;3. 문제 해결 및 코드&lt;/h2&gt;
-&lt;hr /&gt;
-
-&lt;script src=&quot;https://gist.github.com/godhin/659732ed00af5c523b97b60d1d77ebaa.js&quot;&gt;&lt;/script&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;
-    &lt;h2 id=&quot;주석을-참고하면서-이해를-돕습니다&quot;&gt;주석을 참고하면서 이해를 돕습니다.&lt;/h2&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&quot;4-알고리즘-및-해설&quot;&gt;4. 알고리즘 및 해설&lt;/h2&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;map() 함수를 통해 두 값을 받는다.&lt;/li&gt;
-  &lt;li&gt;if문을 통해 같은 경우, A가 큰 경우, B가 큰 경우의 값을 출력하고, 작은값에서 큰 값까지의 수를 출력받는다. 단, 이떄 end = “ “를 통해 한 줄로 출력받는다.&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;h2 id=&quot;5-짚고-넘어가기&quot;&gt;5. 짚고 넘어가기&lt;/h2&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;&lt;strong&gt;print(“출력할 문구”, end = “ “)&lt;/strong&gt; 출력구문을 한 줄로 받을 때 아주 유용하게 사용된다.&lt;/li&gt;
-&lt;/ol&gt;</content><author><name>You Nicholas</name></author><category term="코딩테스트" /><category term="알고리즘" /><category term="라이브코딩" /><category term="코테" /><category term="백준" /><category term="Bronze" /><summary type="html">백준 10093번 숫자 문제 풀이</summary></entry><entry><title type="html">깃 명렁어</title><link href="http://localhost:4000/%EA%B9%83/Document-Manager-from-Hell-git,-github/" rel="alternate" type="text/html" title="깃 명렁어" /><published>2022-05-18T00:00:00+09:00</published><updated>2022-05-18T00:00:00+09:00</updated><id>http://localhost:4000/%EA%B9%83/Document%20Manager%20from%20Hell%20%7Bgit,%20github%7D</id><content type="html" xml:base="http://localhost:4000/%EA%B9%83/Document-Manager-from-Hell-git,-github/">&lt;h1 id=&quot;document-manager-from-hell-git-github&quot;&gt;Document Manager from Hell {git, github}&lt;/h1&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://user-images.githubusercontent.com/75519839/169370460-49527621-95f8-4054-a0da-8de45b47827f.png&quot; alt=&quot;document-manager1&quot; /&gt;&lt;/p&gt;
-
-&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;git
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-&lt;p&gt;깃 명령어 확인&lt;/p&gt;
-
-&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;git config
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-&lt;p&gt;깃 사용자 정보 설정&lt;/p&gt;
-
-&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;git config —global &lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;user.name]&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;http://user.name&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-&lt;p&gt;깃 이름 확인&lt;/p&gt;
-
-&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;git config —global &lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;user.email]&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;http://user.email&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-&lt;p&gt;깃 이메일 확인&lt;/p&gt;
-
-&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;git config —global core.editor “notepad++”
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-&lt;p&gt;깃의 기본 편집기를 Notepad++ 로 변경&lt;/p&gt;
-
-&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;git init
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-&lt;p&gt;initialize의 약자, 깃을 사용할 수 있도록 디텍터리 초기화&lt;/p&gt;
-
-&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;git status
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-&lt;p&gt;깃 상태 확인&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;“Change to be commited: “라는 메시지가 나타나면 커밋 직전 단계인 staged 상태인 것이다.&lt;/p&gt;
-
-&lt;/blockquote&gt;
-
-&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;git add test.txt
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-&lt;p&gt;깃 스테이징 (test.txt라는 파일을 깃에 올린다.)&lt;/p&gt;
-
-&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;git add &lt;span class=&quot;nb&quot;&gt;.&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-&lt;p&gt;해당 디텍터리에 있는 모든 파일 스테이징&lt;/p&gt;
-
-&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;git commit &lt;span class=&quot;nt&quot;&gt;-m&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-&lt;p&gt;“쓰고 싶은 메시지” : 깃에 파일을 커밋, -m {OPTION}을 사용해서 함께 저장할 메시지 추가&lt;/p&gt;
-
-&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;git commit —amend
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-&lt;p&gt;커밋 메시지를 잘못 입력했다면 커밋을 만든 즉시 커밋 메시지를 수정&lt;/p&gt;
-
-&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;git log
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-&lt;p&gt;방금 커밋한 버전에 대한 설명 확인, 커밋을 만든 사람, 만든 시간과 커밋 메시지 등등 확인&lt;/p&gt;
-
-&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;git log —stat
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-&lt;p&gt;커밋에 관련된 파일 함께보기&lt;/p&gt;
-
-&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;git diff
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-&lt;p&gt;수정한 파일과 최신 버전의 파일이 어떻게 다른 지 변경사항 확인&lt;/p&gt;
-
-&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;git checkout — test.txt
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-&lt;p&gt;작업 트리에서 수정한 파일 되돌리기&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;
-    &lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;  &lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;git reset commands
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
-
-    &lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;  &lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;git reset HEAD test.txt
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
-    &lt;p&gt;스테이징된 파일 내리기 (unstage 작업)&lt;/p&gt;
-
-    &lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;  &lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;git reser HEAD^
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
-    &lt;p&gt;HEAD가 가르키는 브랜치의 최신 커밋을 HEAD^라고 한다. 이렇게 되돌리면 커밋 취소 + 스테이지에서도 내려오기&lt;/p&gt;
-
-    &lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;  &lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;git reset —soft HEAD^
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
-    &lt;p&gt;최근 커밋을 하기 전 상태로 작업 트리 되돌리기&lt;/p&gt;
-
-    &lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;  &lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;git reset —mixed HEAD^
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
-    &lt;p&gt;최근 커밋과 스테이징을 하기 전 상태로 작업 트리 되돌리기, {OPTION}없이 git reset 명령을 사용할 경우 이 옵션을 기본으로 작동한다.&lt;/p&gt;
-
-    &lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;  &lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;git reset —hard HEAD^
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
-    &lt;p&gt;최근 커밋과 스테이징, 파일 수정을 하기 전 상태로 작업 트리를 되돌린다. 이 옵션으로 되돌린 내용은 복구할 수 없다.&lt;/p&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;aside&gt;
-🚧 .gitignore 파일로 버전 관리에서 제외가 가능하다. 해당 파일의 내용에 a.txt, a/, .py 같이 파일이나 디텍터리, 확장자를 버전관리에서 제외시킬 수 있다. (a와 py는 파일 이름과 확장자를 예시로 든 것이다.)
-
-&lt;/aside&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://user-images.githubusercontent.com/75519839/169370477-71abe6fb-ca4c-4ac8-a28a-2c4dba6fb939.png&quot; alt=&quot;document-manager2&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://docs.github.com/en&quot;&gt;GitHub.com Help Documentation&lt;/a&gt;&lt;/p&gt;
-
-&lt;h1 id=&quot;깃허브-참고-문헌&quot;&gt;깃허브 참고 문헌&lt;/h1&gt;</content><author><name>You Nicholas</name></author><category term="깃" /><category term="깃허브" /><category term="깃" /><summary type="html">깃 터미널에서 사용할 수 명령어 모음</summary></entry></feed>
+&lt;p&gt;“어디를 가든지 마음을 다해 가라.” 이루고자 하는 목표가 있다면 최선을 다해야한다는 거다. 마치 사업이 여러번 망했어도 본인이 무모하다는 사실을 알면서도 쉬지 않고 포기하던 아버지의 모습처럼 말이다.&lt;/p&gt;</content><author><name>You Nicholas</name></author><category term="일상" /><category term="일상" /><category term="면접" /><category term="라이브코딩" /><summary type="html">라이브코딩에 사용했던 화이트 보드를 이제는 우리집에도</summary></entry></feed>
