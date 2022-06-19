@@ -41,6 +41,24 @@ var store = [{
         "url": "/%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8/10172/",
         "teaser": null
       },{
+        "title": "[파이썬][백준 10430번] 나머지",
+        "excerpt":"1. 문제 [Bronze V] 나머지 - 10430 문제 링크 성능 요약 메모리: 30860 KB, 시간: 80 ms 분류 사칙연산(arithmetic), 구현(implementation), 수학(math) 문제 설명 (A+B)%C는 ((A%C) + (B%C))%C 와 같을까? (A×B)%C는 ((A%C) × (B%C))%C 와 같을까? 세 수 A, B, C가 주어졌을 때, 위의 네 가지 값을 구하는 프로그램을 작성하시오. 입력...","categories": ["코딩테스트"],
+        "tags": ["알고리즘","라이브코딩","코테","백준","Bronze"],
+        "url": "/%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8/10430/",
+        "teaser": null
+      },{
+        "title": "[파이썬][백준 10718번] We love krill",
+        "excerpt":"1. 문제 [Bronze V] We love kriii - 10718 문제 링크 성능 요약 메모리: 30860 KB, 시간: 72 ms 분류 구현(implementation) 문제 설명 ACM-ICPC 인터넷 예선, Regional, 그리고 World Finals까지 이미 2회씩 진출해버린 kriii는 미련을 버리지 못하고 왠지 모르게 올해에도 파주 World Finals 준비 캠프에 참여했다. 대회를 뜰 줄 모르는...","categories": ["코딩테스트"],
+        "tags": ["알고리즘","라이브코딩","코테","백준","Bronze"],
+        "url": "/%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8/10718/",
+        "teaser": null
+      },{
+        "title": "[파이썬][백준 10809번] 알파벳 찾기",
+        "excerpt":"1. 문제 [Bronze II] 알파벳 찾기 - 10809 문제 링크 성능 요약 메모리: 33484 KB, 시간: 132 ms 분류 구현(implementation), 문자열(string) 문제 설명 알파벳 소문자로만 이루어진 단어 S가 주어진다. 각각의 알파벳에 대해서, 단어에 포함되어 있는 경우에는 처음 등장하는 위치를, 포함되어 있지 않은 경우에는 -1을 출력하는 프로그램을 작성하시오. 입력 첫째 줄에...","categories": ["코딩테스트"],
+        "tags": ["알고리즘","라이브코딩","코테","백준","Bronze"],
+        "url": "/%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8/10809/",
+        "teaser": null
+      },{
         "title": "[파이썬][백준 10250번] ACM 호텔",
         "excerpt":"1. 문제 [Bronze III] ACM 호텔 - 10250 문제 링크 성능 요약 메모리: 30864 KB, 시간: 76 ms 분류 사칙연산(arithmetic), 구현(implementation), 수학(math) 문제 설명 ACM 호텔 매니저 지우는 손님이 도착하는 대로 빈 방을 배정하고 있다. 고객 설문조사에 따르면 손님들은 호텔 정문으로부터 걸어서 가장 짧은 거리에 있는 방을 선호한다고 한다. 여러분은...","categories": ["코딩테스트"],
         "tags": ["알고리즘","라이브코딩","코테","백준","Bronze"],
@@ -53,10 +71,34 @@ var store = [{
         "url": "/%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8/1009/",
         "teaser": null
       },{
+        "title": "[파이썬][백준 10757번] 큰 수 A + B",
+        "excerpt":"1. 문제 [Bronze V] 큰 수 A+B - 10757 문제 링크 성능 요약 메모리: 30864 KB, 시간: 76 ms 분류 임의 정밀도 / 큰 수 연산(arbitrary_precision), 사칙연산(arithmetic), 구현(implementation), 수학(math) 출처: 백준, https://https://www.acmicpc.net/ 2. 해결방법 시간복잡도 단순 코딩 O(1) 3. 문제 해결 및 코드 주석을 참고하면서 이해를 돕습니다. 4. 알고리즘 및...","categories": ["코딩테스트"],
+        "tags": ["알고리즘","라이브코딩","코테","백준","Bronze"],
+        "url": "/%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8/10757/",
+        "teaser": null
+      },{
         "title": "[파이썬][백준 10170번] NFC West vs North",
         "excerpt":"1. 문제 [Bronze V] NFC West vs North - 10170 문제 링크 성능 요약 메모리: 30864 KB, 시간: 72 ms 분류 구현(implementation) 문제 설명 동혁이를 위해 NFC 서부와 북부 디비전 순위를 출력하는 프로그램을 작성하시오. 입력 없음 출력 예제와 같이 NFC 서부와 북부 디비전 순위를 출력한다. 출처: 백준, https://https://www.acmicpc.net/ 2. 해결방법...","categories": ["코딩테스트"],
         "tags": ["알고리즘","라이브코딩","코테","백준","Bronze"],
         "url": "/%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8/10170/",
+        "teaser": null
+      },{
+        "title": "[파이썬][백준 10797번] 10부제",
+        "excerpt":"1. 문제 [Bronze IV] 10부제 - 10797 문제 링크 성능 요약 메모리: 30840 KB, 시간: 68 ms 분류 구현(implementation) 출처: 백준, https://https://www.acmicpc.net/ 2. 해결방법 시간복잡도 단순 코딩 O(N) 3. 문제 해결 및 코드 주석을 참고하면서 이해를 돕습니다. 4. 알고리즘 및 해설 받아야 할 값들을 N과 A에 받는다. 이때 A는 리스트...","categories": ["코딩테스트"],
+        "tags": ["알고리즘","라이브코딩","코테","백준","Bronze"],
+        "url": "/%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8/10797/",
+        "teaser": null
+      },{
+        "title": "[파이썬][백준 10817번] 세 수",
+        "excerpt":"1. 문제 [Bronze III] 세 수 - 10817 문제 링크 성능 요약 메모리: 30840 KB, 시간: 68 ms 분류 구현(implementation) 문제 설명 세 정수 A, B, C가 주어진다. 이때, 두 번째로 큰 정수를 출력하는 프로그램을 작성하시오. 입력 첫째 줄에 세 정수 A, B, C가 공백으로 구분되어 주어진다. (1 ≤ A,...","categories": ["코딩테스트"],
+        "tags": ["알고리즘","라이브코딩","코테","백준","Bronze"],
+        "url": "/%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8/10817/",
+        "teaser": null
+      },{
+        "title": "[파이썬][백준 1032번] 명령 프로모트",
+        "excerpt":"1. 문제 [Bronze I] 명령 프롬프트 - 1032 문제 링크 성능 요약 메모리: 30840 KB, 시간: 72 ms 분류 구현(implementation), 문자열(string) 문제 설명 시작 -&gt; 실행 -&gt; cmd를 쳐보자. 검정 화면이 눈에 보인다. 여기서 dir이라고 치면 그 디렉토리에 있는 서브디렉토리와 파일이 모두 나온다. 이때 원하는 파일을 찾으려면 다음과 같이 하면...","categories": ["코딩테스트"],
+        "tags": ["알고리즘","라이브코딩","코테","백준","Bronze"],
+        "url": "/%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8/1032/",
         "teaser": null
       },{
         "title": "[파이썬][백준 10039번] 평균 점수",

@@ -9,8 +9,8 @@
   <head>
     <meta charset="utf-8">
 
-<!-- begin _includes/seo.html --><title>[파이썬][백준 10250번] ACM 호텔 - 성장형 개발자 블로그</title>
-<meta name="description" content="백준 10250번 ACM 문제 풀이">
+<!-- begin _includes/seo.html --><title>[파이썬][백준 1032번] 명령 프로모트 - 성장형 개발자 블로그</title>
+<meta name="description" content="백준 1032번 명령 프로모트 문제 풀이">
 
 
   <meta name="author" content="You Nicholas">
@@ -22,32 +22,32 @@
 <meta property="og:type" content="article">
 <meta property="og:locale" content="ko">
 <meta property="og:site_name" content="성장형 개발자 블로그">
-<meta property="og:title" content="[파이썬][백준 10250번] ACM 호텔">
-<meta property="og:url" content="http://localhost:4000/%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8/10250/">
+<meta property="og:title" content="[파이썬][백준 1032번] 명령 프로모트">
+<meta property="og:url" content="http://localhost:4000/%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8/1032/">
 
 
-  <meta property="og:description" content="백준 10250번 ACM 문제 풀이">
-
-
-
+  <meta property="og:description" content="백준 1032번 명령 프로모트 문제 풀이">
 
 
 
 
-  <meta property="article:published_time" content="2022-04-02T00:00:00+09:00">
 
 
 
-  <meta property="article:modified_time" content="2022-04-02T00:00:00+09:00">
+  <meta property="article:published_time" content="2022-05-12T00:00:00+09:00">
 
 
 
-  
+  <meta property="article:modified_time" content="2022-05-12T00:00:00+09:00">
+
+
 
   
 
+  
 
-<link rel="canonical" href="http://localhost:4000/%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8/10250/">
+
+<link rel="canonical" href="http://localhost:4000/%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8/1032/">
 
 
 
@@ -268,16 +268,16 @@
 
 
   <article class="page h-entry" itemscope itemtype="https://schema.org/CreativeWork">
-    <meta itemprop="headline" content="[파이썬][백준 10250번] ACM 호텔">
-    <meta itemprop="description" content="백준 10250번 ACM 문제 풀이">
-    <meta itemprop="datePublished" content="2022-04-02T00:00:00+09:00">
-    <meta itemprop="dateModified" content="2022-04-02T00:00:00+09:00">
+    <meta itemprop="headline" content="[파이썬][백준 1032번] 명령 프로모트">
+    <meta itemprop="description" content="백준 1032번 명령 프로모트 문제 풀이">
+    <meta itemprop="datePublished" content="2022-05-12T00:00:00+09:00">
+    <meta itemprop="dateModified" content="2022-05-12T00:00:00+09:00">
 
     <div class="page__inner-wrap">
       
         <header>
           <h1 id="page-title" class="page__title p-name" itemprop="headline">
-            <a href="http://localhost:4000/%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8/10250/" class="u-url" itemprop="url">[파이썬][백준 10250번] ACM 호텔
+            <a href="http://localhost:4000/%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8/1032/" class="u-url" itemprop="url">[파이썬][백준 1032번] 명령 프로모트
 </a>
           </h1>
           
@@ -294,7 +294,7 @@
       <span class="page__meta-readtime">
         <i class="far fa-clock" aria-hidden="true"></i>
         
-          2 분 소요
+          1 분 소요
         
       </span>
     
@@ -316,41 +316,33 @@
         
         <h2 id="1-문제">1. 문제</h2>
 
-<h1 id="bronze-iii-acm-호텔---10250">[Bronze III] ACM 호텔 - 10250</h1>
+<h1 id="bronze-i-명령-프롬프트---1032">[Bronze I] 명령 프롬프트 - 1032</h1>
 
-<p><a href="https://www.acmicpc.net/problem/10250">문제 링크</a></p>
+<p><a href="https://www.acmicpc.net/problem/1032">문제 링크</a></p>
 
 <h3 id="성능-요약">성능 요약</h3>
 
-<p>메모리: 30864 KB, 시간: 76 ms</p>
+<p>메모리: 30840 KB, 시간: 72 ms</p>
 
 <h3 id="분류">분류</h3>
 
-<p>사칙연산(arithmetic), 구현(implementation), 수학(math)</p>
+<p>구현(implementation), 문자열(string)</p>
 
 <h3 id="문제-설명">문제 설명</h3>
 
-<p><img alt="" src="https://www.acmicpc.net/upload/images2/acmhotel.png" style="float:right; height:202px; width:294px" />ACM 호텔 매니저 지우는 손님이 도착하는 대로 빈 방을 배정하고 있다. 고객 설문조사에 따르면 손님들은 호텔 정문으로부터 걸어서 가장 짧은 거리에 있는 방을 선호한다고 한다. 여러분은 지우를 도와 줄 프로그램을 작성하고자 한다. 즉 설문조사 결과 대로 호텔 정문으로부터 걷는 거리가 가장 짧도록 방을 배정하는 프로그램을 작성하고자 한다.</p>
+<p>시작 -&gt; 실행 -&gt; cmd를 쳐보자. 검정 화면이 눈에 보인다. 여기서 dir이라고 치면 그 디렉토리에 있는 서브디렉토리와 파일이 모두 나온다. 이때 원하는 파일을 찾으려면 다음과 같이 하면 된다.</p>
 
-<p>문제를 단순화하기 위해서 호텔은 직사각형 모양이라고 가정하자. 각 층에 W 개의 방이 있는 H 층 건물이라고 가정하자 (1 ≤ H, W ≤ 99). 그리고 엘리베이터는 가장 왼쪽에 있다고 가정하자(그림 1 참고). 이런 형태의 호텔을 H × W 형태 호텔이라고 부른다. 호텔 정문은 일층 엘리베이터 바로 앞에 있는데, 정문에서 엘리베이터까지의 거리는 무시한다. 또 모든 인접한 두 방 사이의 거리는 같은 거리(거리 1)라고 가정하고 호텔의 정면 쪽에만 방이 있다고 가정한다.</p>
+<p>dir *.exe라고 치면 확장자가 exe인 파일이 다 나온다. "dir 패턴"과 같이 치면 그 패턴에 맞는 파일만 검색 결과로 나온다. 예를 들어, dir a?b.exe라고 검색하면 파일명의 첫 번째 글자가 a이고, 세 번째 글자가 b이고, 확장자가 exe인 것이 모두 나온다. 이때 두 번째 문자는 아무거나 나와도 된다. 예를 들어, acb.exe, aab.exe, apb.exe가 나온다.</p>
 
-<p style="text-align:center"><img alt="" src="https://www.acmicpc.net/upload/images2/elevator.png" style="height:312px; width:521px" /></p>
-
-<p style="text-align:center">그림 1. H = 6 이고 W = 12 인 H × W 호텔을 간략하게 나타낸 그림</p>
-
-<p>방 번호는 YXX 나 YYXX 형태인데 여기서 Y 나 YY 는 층 수를 나타내고 XX 는 엘리베이터에서부터 세었을 때의 번호를 나타낸다. 즉, 그림 1 에서 빗금으로 표시한 방은 305 호가 된다.</p>
-
-<p>손님은 엘리베이터를 타고 이동하는 거리는 신경 쓰지 않는다. 다만 걷는 거리가 같을 때에는 아래층의 방을 더 선호한다. 예를 들면 102 호 방보다는 301 호 방을 더 선호하는데, 102 호는 거리 2 만큼 걸어야 하지만 301 호는 거리 1 만큼만 걸으면 되기 때문이다. 같은 이유로 102 호보다 2101 호를 더 선호한다.</p>
-
-<p>여러분이 작성할 프로그램은 초기에 모든 방이 비어있다고 가정하에 이 정책에 따라 N 번째로 도착한 손님에게 배정될 방 번호를 계산하는 프로그램이다. 첫 번째 손님은 101 호, 두 번째 손님은 201 호 등과 같이 배정한다. 그림 1 의 경우를 예로 들면, H = 6이므로 10 번째 손님은 402 호에 배정해야 한다.</p>
+<p>이 문제는 검색 결과가 먼저 주어졌을 때, 패턴으로 뭘 쳐야 그 결과가 나오는지를 출력하는 문제이다. 패턴에는 알파벳과 "." 그리고 "?"만 넣을 수 있다. 가능하면 ?을 적게 써야 한다. 그 디렉토리에는 검색 결과에 나온 파일만 있다고 가정하고, 파일 이름의 길이는 모두 같다.</p>
 
 <h3 id="입력">입력</h3>
 
-<p>프로그램은 표준 입력에서 입력 데이터를 받는다. 프로그램의 입력은 T 개의 테스트 데이터로 이루어져 있는데 T 는 입력의 맨 첫 줄에 주어진다. 각 테스트 데이터는 한 행으로서 H, W, N, 세 정수를 포함하고 있으며 각각 호텔의 층 수, 각 층의 방 수, 몇 번째 손님인지를 나타낸다(1 ≤ H, W ≤ 99, 1 ≤ N ≤ H × W). </p>
+<p>첫째 줄에 파일 이름의 개수 N이 주어진다. 둘째 줄부터 N개의 줄에는 파일 이름이 주어진다. N은 50보다 작거나 같은 자연수이고 파일 이름의 길이는 모두 같고 길이는 최대 50이다. 파일이름은 알파벳 소문자와 '.' 로만 이루어져 있다.</p>
 
 <h3 id="출력">출력</h3>
 
-<p>프로그램은 표준 출력에 출력한다. 각 테스트 데이터마다 정확히 한 행을 출력하는데, 내용은 N 번째 손님에게 배정되어야 하는 방 번호를 출력한다.</p>
+<p>첫째 줄에 패턴을 출력하면 된다.</p>
 
 <blockquote>
   <p>출처: 백준, https://https://www.acmicpc.net/</p>
@@ -364,7 +356,7 @@
 <h2 id="3-문제-해결-및-코드">3. 문제 해결 및 코드</h2>
 <hr />
 
-<script src="https://gist.github.com/godhin/68464a57913c096a81715ac82567ad9d.js"></script>
+<script src="https://gist.github.com/godhin/53e9818dd8ca2c04bc6a045c27e807f5.js"></script>
 
 <ul>
   <li>
@@ -375,15 +367,17 @@
 <h2 id="4-알고리즘-및-해설">4. 알고리즘 및 해설</h2>
 
 <ol>
-  <li>받아야 될 값은 T로 받는다.</li>
-  <li>이중 반복문을 통해서 문제를 해결한다. while문에 N번째 손님에서 층수 곱하기 카운트를 뺀 값이 0보다 작다면 카운트를 해준다.</li>
-  <li>이때 층값(height) N번째 손님에서 층수 곱하기 카운트 - 1이다.</li>
+  <li>받아야할 값을 N으로 받는다.</li>
+  <li>반복문을 통해 N번만큼 문자열을 받은 뒤, 리스트에 삽입한다.</li>
+  <li>n이라는 변수를 해당 리스트의 길이로 만든다.</li>
+  <li>leng이라는 변수를 해당 리스트에 첫번째로 삽입한 문자열 길이로 만든다.</li>
+  <li>이중 반복문에서 첫 반복문이 해당 리스트의 길이 - 1 만큼 돌아가는 동안 내부 반복문에 if문을 통해 1번째 문자열 안에 문자들을 이 확인해야하는 문자열과 다를 경우 해당 위치에 ?로 바꿔준다.</li>
 </ol>
 
 <h2 id="5-짚고-넘어가기">5. 짚고 넘어가기</h2>
 
 <ol>
-  <li><strong>while</strong>문을 통해 특정 조건이 나올때까지 반복해서 해결하기</li>
+  <li><strong>”“.join()</strong>을 통해 해당 리스트 전체를 문자열 형태로 출력한다.</li>
 </ol>
 
         
@@ -434,7 +428,7 @@
 
         
 
-  <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> 업데이트:</strong> <time class="dt-published" datetime="2022-04-02">April 2, 2022</time></p>
+  <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> 업데이트:</strong> <time class="dt-published" datetime="2022-05-12">May 12, 2022</time></p>
 
       </footer>
 
@@ -443,22 +437,22 @@
     <h4 class="page__share-title">공유하기</h4>
   
 
-  <a href="https://twitter.com/intent/tweet?text=%5B%ED%8C%8C%EC%9D%B4%EC%8D%AC%5D%5B%EB%B0%B1%EC%A4%80+10250%EB%B2%88%5D+ACM+%ED%98%B8%ED%85%94%20http%3A%2F%2Flocalhost%3A4000%2F%25EC%25BD%2594%25EB%2594%25A9%25ED%2585%258C%25EC%258A%25A4%25ED%258A%25B8%2F10250%2F" class="btn btn--twitter" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="공유하기 Twitter"><i class="fab fa-fw fa-twitter" aria-hidden="true"></i><span> Twitter</span></a>
+  <a href="https://twitter.com/intent/tweet?text=%5B%ED%8C%8C%EC%9D%B4%EC%8D%AC%5D%5B%EB%B0%B1%EC%A4%80+1032%EB%B2%88%5D+%EB%AA%85%EB%A0%B9+%ED%94%84%EB%A1%9C%EB%AA%A8%ED%8A%B8%20http%3A%2F%2Flocalhost%3A4000%2F%25EC%25BD%2594%25EB%2594%25A9%25ED%2585%258C%25EC%258A%25A4%25ED%258A%25B8%2F1032%2F" class="btn btn--twitter" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="공유하기 Twitter"><i class="fab fa-fw fa-twitter" aria-hidden="true"></i><span> Twitter</span></a>
 
-  <a href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Flocalhost%3A4000%2F%25EC%25BD%2594%25EB%2594%25A9%25ED%2585%258C%25EC%258A%25A4%25ED%258A%25B8%2F10250%2F" class="btn btn--facebook" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="공유하기 Facebook"><i class="fab fa-fw fa-facebook" aria-hidden="true"></i><span> Facebook</span></a>
+  <a href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Flocalhost%3A4000%2F%25EC%25BD%2594%25EB%2594%25A9%25ED%2585%258C%25EC%258A%25A4%25ED%258A%25B8%2F1032%2F" class="btn btn--facebook" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="공유하기 Facebook"><i class="fab fa-fw fa-facebook" aria-hidden="true"></i><span> Facebook</span></a>
 
-  <a href="https://www.linkedin.com/shareArticle?mini=true&url=http%3A%2F%2Flocalhost%3A4000%2F%25EC%25BD%2594%25EB%2594%25A9%25ED%2585%258C%25EC%258A%25A4%25ED%258A%25B8%2F10250%2F" class="btn btn--linkedin" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="공유하기 LinkedIn"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i><span> LinkedIn</span></a>
+  <a href="https://www.linkedin.com/shareArticle?mini=true&url=http%3A%2F%2Flocalhost%3A4000%2F%25EC%25BD%2594%25EB%2594%25A9%25ED%2585%258C%25EC%258A%25A4%25ED%258A%25B8%2F1032%2F" class="btn btn--linkedin" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="공유하기 LinkedIn"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i><span> LinkedIn</span></a>
 </section>
 
 
       
   <nav class="pagination">
     
-      <a href="/%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8/10809/" class="pagination--pager" title="[파이썬][백준 10809번] 알파벳 찾기
+      <a href="/%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8/10817/" class="pagination--pager" title="[파이썬][백준 10817번] 세 수
 ">이전</a>
     
     
-      <a href="/%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8/1009/" class="pagination--pager" title="[파이썬][백준 1009번] 분산처리
+      <a href="/%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8/10039/" class="pagination--pager" title="[파이썬][백준 10039번] 평균 점수
 ">다음</a>
     
   </nav>
