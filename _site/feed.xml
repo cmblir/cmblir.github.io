@@ -1,4 +1,124 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2022-06-20T16:54:15+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">성장형 개발자 블로그</title><subtitle>An amazing website.</subtitle><author><name>You Nicholas</name></author><entry><title type="html">움직여라</title><link href="http://localhost:4000/%ED%95%98%EB%A3%A8/%EC%9B%80%EC%A7%81%EC%97%AC%EB%9D%BC/" rel="alternate" type="text/html" title="움직여라" /><published>2022-06-20T00:00:00+09:00</published><updated>2022-06-20T00:00:00+09:00</updated><id>http://localhost:4000/%ED%95%98%EB%A3%A8/%EC%9B%80%EC%A7%81%EC%97%AC%EB%9D%BC</id><content type="html" xml:base="http://localhost:4000/%ED%95%98%EB%A3%A8/%EC%9B%80%EC%A7%81%EC%97%AC%EB%9D%BC/">&lt;h2 id=&quot;따뜻한-햇살-아래-포근한-침대&quot;&gt;따뜻한 햇살 아래 포근한 침대&lt;/h2&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2022-06-21T00:46:01+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">성장형 개발자 블로그</title><subtitle>An amazing website.</subtitle><author><name>You Nicholas</name></author><entry><title type="html">[파이썬][프로그래머스] 폰켓몬</title><link href="http://localhost:4000/%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8/%ED%8F%B0%EC%BC%93%EB%AA%AC/" rel="alternate" type="text/html" title="[파이썬][프로그래머스] 폰켓몬" /><published>2022-06-21T00:00:00+09:00</published><updated>2022-06-21T00:00:00+09:00</updated><id>http://localhost:4000/%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8/%ED%8F%B0%EC%BC%93%EB%AA%AC</id><content type="html" xml:base="http://localhost:4000/%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8/%ED%8F%B0%EC%BC%93%EB%AA%AC/">&lt;h2 id=&quot;1-문제&quot;&gt;1. 문제&lt;/h2&gt;
+
+&lt;h1 id=&quot;level-1-폰켓몬---1845&quot;&gt;[level 1] 폰켓몬 - 1845&lt;/h1&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://programmers.co.kr/learn/courses/30/lessons/1845&quot;&gt;문제 링크&lt;/a&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;성능-요약&quot;&gt;성능 요약&lt;/h3&gt;
+
+&lt;p&gt;메모리: 10.3 MB, 시간: 0.19 ms&lt;/p&gt;
+
+&lt;h3 id=&quot;구분&quot;&gt;구분&lt;/h3&gt;
+
+&lt;p&gt;코딩테스트 연습 &amp;gt; 찾아라 프로그래밍 마에스터&lt;/p&gt;
+
+&lt;h3 id=&quot;채점결과&quot;&gt;채점결과&lt;/h3&gt;
+
+&lt;p&gt;&lt;br /&gt;정확성: 100.0&lt;br /&gt;합계: 100.0 / 100.0&lt;/p&gt;
+
+&lt;h3 id=&quot;문제-설명&quot;&gt;문제 설명&lt;/h3&gt;
+
+&lt;p&gt;당신은 폰켓몬을 잡기 위한 오랜 여행 끝에, 홍 박사님의 연구실에 도착했습니다. 홍 박사님은 당신에게 자신의 연구실에 있는 총 N 마리의 폰켓몬 중에서 N/2마리를 가져가도 좋다고 했습니다.&lt;br /&gt;
+홍 박사님 연구실의 폰켓몬은 종류에 따라 번호를 붙여 구분합니다. 따라서 같은 종류의 폰켓몬은 같은 번호를 가지고 있습니다. 예를 들어 연구실에 총 4마리의 폰켓몬이 있고, 각 폰켓몬의 종류 번호가 [3번, 1번, 2번, 3번]이라면 이는 3번 폰켓몬 두 마리, 1번 폰켓몬 한 마리, 2번 폰켓몬 한 마리가 있음을 나타냅니다. 이때, 4마리의 폰켓몬 중 2마리를 고르는 방법은 다음과 같이 6가지가 있습니다.&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;첫 번째(3번), 두 번째(1번) 폰켓몬을 선택&lt;/li&gt;
+&lt;li&gt;첫 번째(3번), 세 번째(2번) 폰켓몬을 선택&lt;/li&gt;
+&lt;li&gt;첫 번째(3번), 네 번째(3번) 폰켓몬을 선택&lt;/li&gt;
+&lt;li&gt;두 번째(1번), 세 번째(2번) 폰켓몬을 선택&lt;/li&gt;
+&lt;li&gt;두 번째(1번), 네 번째(3번) 폰켓몬을 선택&lt;/li&gt;
+&lt;li&gt;세 번째(2번), 네 번째(3번) 폰켓몬을 선택&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;이때, 첫 번째(3번) 폰켓몬과 네 번째(3번) 폰켓몬을 선택하는 방법은 한 종류(3번 폰켓몬 두 마리)의 폰켓몬만 가질 수 있지만, 다른 방법들은 모두 두 종류의 폰켓몬을 가질 수 있습니다. 따라서 위 예시에서 가질 수 있는 폰켓몬 종류 수의 최댓값은 2가 됩니다.&lt;br /&gt;
+당신은 최대한 다양한 종류의 폰켓몬을 가지길 원하기 때문에, 최대한 많은 종류의 폰켓몬을 포함해서 N/2마리를 선택하려 합니다. N마리 폰켓몬의 종류 번호가 담긴 배열 nums가 매개변수로 주어질 때, N/2마리의 폰켓몬을 선택하는 방법 중, 가장 많은 종류의 폰켓몬을 선택하는 방법을 찾아, 그때의 폰켓몬 종류 번호의 개수를 return 하도록 solution 함수를 완성해주세요.&lt;/p&gt;
+
+&lt;h5&gt;제한사항&lt;/h5&gt;
+
+&lt;ul&gt;
+&lt;li&gt;nums는 폰켓몬의 종류 번호가 담긴 1차원 배열입니다.&lt;/li&gt;
+&lt;li&gt;nums의 길이(N)는 1 이상 10,000 이하의 자연수이며, 항상 짝수로 주어집니다.&lt;/li&gt;
+&lt;li&gt;폰켓몬의 종류 번호는 1 이상 200,000 이하의 자연수로 나타냅니다.&lt;/li&gt;
+&lt;li&gt;가장 많은 종류의 폰켓몬을 선택하는 방법이 여러 가지인 경우에도, 선택할 수 있는 폰켓몬 종류 개수의 최댓값 하나만 return 하면 됩니다.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr /&gt;
+
+&lt;h5&gt;입출력 예&lt;/h5&gt;
+&lt;table class=&quot;table&quot;&gt;
+        &lt;thead&gt;&lt;tr&gt;
+&lt;th&gt;nums&lt;/th&gt;
+&lt;th&gt;result&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+        &lt;tbody&gt;&lt;tr&gt;
+&lt;td&gt;[3,1,2,3]&lt;/td&gt;
+&lt;td&gt;2&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;[3,3,3,2,2,4]&lt;/td&gt;
+&lt;td&gt;3&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;[3,3,3,2,2,2]&lt;/td&gt;
+&lt;td&gt;2&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+      &lt;/table&gt;
+&lt;h5&gt;입출력 예 설명&lt;/h5&gt;
+
+&lt;p&gt;입출력 예 #1&lt;br /&gt;
+문제의 예시와 같습니다.&lt;/p&gt;
+
+&lt;p&gt;입출력 예 #2&lt;br /&gt;
+6마리의 폰켓몬이 있으므로, 3마리의 폰켓몬을 골라야 합니다.&lt;br /&gt;
+가장 많은 종류의 폰켓몬을 고르기 위해서는 3번 폰켓몬 한 마리, 2번 폰켓몬 한 마리, 4번 폰켓몬 한 마리를 고르면 되며, 따라서 3을 return 합니다.&lt;/p&gt;
+
+&lt;p&gt;입출력 예 #3&lt;br /&gt;
+6마리의 폰켓몬이 있으므로, 3마리의 폰켓몬을 골라야 합니다.&lt;br /&gt;
+가장 많은 종류의 폰켓몬을 고르기 위해서는 3번 폰켓몬 한 마리와 2번 폰켓몬 두 마리를 고르거나, 혹은 3번 폰켓몬 두 마리와 2번 폰켓몬 한 마리를 고르면 됩니다. 따라서 최대 고를 수 있는 폰켓몬 종류의 수는 2입니다.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;출처: 프로그래머스 코딩 테스트 연습, https://programmers.co.kr/learn/challenges&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h2 id=&quot;2-해결방법-시간복잡도&quot;&gt;2. 해결방법 시간복잡도&lt;/h2&gt;
+&lt;ol&gt;
+  &lt;li&gt;단순 코딩 O(N)&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h2 id=&quot;3-문제-해결-및-코드&quot;&gt;3. 문제 해결 및 코드&lt;/h2&gt;
+&lt;hr /&gt;
+
+&lt;script src=&quot;https://gist.github.com/godhin/b954c7fddb54276a3395eb98cbe00ea9.js&quot;&gt;&lt;/script&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;h2 id=&quot;주석을-참고하면서-이해를-돕습니다&quot;&gt;주석을 참고하면서 이해를 돕습니다.&lt;/h2&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;4-알고리즘-및-해설&quot;&gt;4. 알고리즘 및 해설&lt;/h2&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;총 폰켓몬 종류를 구하는 문제로 가지고 있는 폰켓몬의 N/2 숫자만큼 선택이 가능하다.&lt;/li&gt;
+  &lt;li&gt;그 중 나올 수 있는 경우의 수를 구하는 문제이다.&lt;/li&gt;
+  &lt;li&gt;문제를 더 간단하게 정리하자면, [3, 1, 2, 3] 총 4마리의 폰켓몬이 있다.
+    &lt;ul&gt;
+      &lt;li&gt;폰켓몬은 4마리이므로 N/2는 2마리까지 선택이 가능하다.&lt;/li&gt;
+      &lt;li&gt;경우의 수는 [3, 1], [3, 2], [3, 3], [1, 2], [1, 3], [2, 3]&lt;/li&gt;
+      &lt;li&gt;이 중 중복을 제외한 4가지 [1, 3], [2, 3], [3, 3], [1, 2]&lt;/li&gt;
+      &lt;li&gt;서로 다른 2종류의 폰켓몬을 고르는 경우 1가지, 같은 종류의 폰켓몬을 고르는 경우 1가지&lt;/li&gt;
+      &lt;li&gt;총 2가지이므로 답은 2&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;내가 선택한 방법은 중복을 제거한 반복문이 돌아가는 동안, 한번에 선택할 수 있는 폰켓몬 경우의 수를 세는 것이다.
+    &lt;ul&gt;
+      &lt;li&gt;반복문이 도는 동안 중복을 제외한 [3, 1, 2], 가질 수 있는 폰켓몬 2마리&lt;/li&gt;
+      &lt;li&gt;총 3번의 반복을 하는 동안 가질 수 있는 폰켓몬 종류 번호의 개수보다 크다면 + 1&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;</content><author><name>You Nicholas</name></author><category term="코딩테스트" /><category term="알고리즘" /><category term="라이브코딩" /><category term="코테" /><category term="프로그래머스" /><category term="Level_1" /><summary type="html">프로그래머스 폰켓몬 풀이</summary></entry><entry><title type="html">움직여라</title><link href="http://localhost:4000/%ED%95%98%EB%A3%A8/%EC%9B%80%EC%A7%81%EC%97%AC%EB%9D%BC/" rel="alternate" type="text/html" title="움직여라" /><published>2022-06-20T00:00:00+09:00</published><updated>2022-06-20T00:00:00+09:00</updated><id>http://localhost:4000/%ED%95%98%EB%A3%A8/%EC%9B%80%EC%A7%81%EC%97%AC%EB%9D%BC</id><content type="html" xml:base="http://localhost:4000/%ED%95%98%EB%A3%A8/%EC%9B%80%EC%A7%81%EC%97%AC%EB%9D%BC/">&lt;h2 id=&quot;따뜻한-햇살-아래-포근한-침대&quot;&gt;따뜻한 햇살 아래 포근한 침대&lt;/h2&gt;
 
 &lt;p&gt;요새 너무 게을러버린 나는 9시에 일어난다. 그리고 오늘 해야할 일을 간략하게 적고 하다가 금방 낮잠에 들고 만다. 따뜻한 햇살이랑 누구도 건들지 않는 평일의 침대는 그 누구도 뿌리치기 힘든 유혹이다. 그런 유혹에 넘어가길 벌써 며칠째이다. 아침을 바꾸고 싶다는 마음에 동기부여영상을 보고 짐퀵이라는 브레인 코치의 말을 들으며 적어봤다.&lt;/p&gt;
 
@@ -182,69 +302,7 @@
 
 &lt;ul&gt;
   &lt;li&gt;아직도 첫 면접이 생각나고 ‘왜 그때 이런 대답을 하지 못했을까?’ 라는 생각이 뇌리에서 쉽사리 떠나지 않는 것 같다. 그걸 만회하기 위해 그 전보다 더 노력해야한다. 더 부단해야한다. 첫잔이 생각나지 않게끔&lt;/li&gt;
-&lt;/ul&gt;</content><author><name>You Nicholas</name></author><category term="일상" /><category term="일상" /><summary type="html">하지만 원래 소나기는 갑작기 오는 비</summary></entry><entry><title type="html">탐욕 알고리즘 복습하기</title><link href="http://localhost:4000/%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98/%ED%83%90%EC%9A%95-%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98-%EB%B3%B5%EC%8A%B5%ED%95%98%EA%B8%B0/" rel="alternate" type="text/html" title="탐욕 알고리즘 복습하기" /><published>2022-06-14T00:00:00+09:00</published><updated>2022-06-14T00:00:00+09:00</updated><id>http://localhost:4000/%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98/%ED%83%90%EC%9A%95%20%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98%20%EB%B3%B5%EC%8A%B5%ED%95%98%EA%B8%B0</id><content type="html" xml:base="http://localhost:4000/%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98/%ED%83%90%EC%9A%95-%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98-%EB%B3%B5%EC%8A%B5%ED%95%98%EA%B8%B0/">&lt;h2 id=&quot;1-문제&quot;&gt;1. 문제&lt;/h2&gt;
-&lt;p&gt;탐욕 알고리즘으로 가장 대표적인 거스름돈 문제 해결하기
-손님에게 거스름돈으로 줄 수 있는 최소한의 동전 개수 구하기&lt;/p&gt;
-
-&lt;h2 id=&quot;2-해결방법-시간복잡도&quot;&gt;2. 해결방법 시간복잡도&lt;/h2&gt;
-&lt;ol&gt;
-  &lt;li&gt;탐욕 알고리즘 O(N)&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;h2 id=&quot;3-문제-해결-및-코드&quot;&gt;3. 문제 해결 및 코드&lt;/h2&gt;
-&lt;hr /&gt;
-
-&lt;script src=&quot;https://gist.github.com/godhin/49700625dfee55b19ad7e456ab3f091b.js&quot;&gt;&lt;/script&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;
-    &lt;h2 id=&quot;주석을-참고하면서-이해를-돕습니다&quot;&gt;주석을 참고하면서 이해를 돕습니다.&lt;/h2&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&quot;4-알고리즘-간략-설명&quot;&gt;4. 알고리즘 간략 설명&lt;/h2&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;탐욕 알고리즘&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;대게 탐욕 알고리즘 2가지 조건에 의해 잘 작동하게 된다.
-    &lt;ul&gt;
-      &lt;li&gt;
-        &lt;ol&gt;
-          &lt;li&gt;선택 조건 (greedy choice property)
-            &lt;ul&gt;
-              &lt;li&gt;앞의 선택이 뒤의 선택에 영향을 주지 않음&lt;/li&gt;
-            &lt;/ul&gt;
-          &lt;/li&gt;
-        &lt;/ol&gt;
-      &lt;/li&gt;
-      &lt;li&gt;
-        &lt;ol&gt;
-          &lt;li&gt;최적 조건 (optimal substructure)
-            &lt;ul&gt;
-              &lt;li&gt;문제의 일부의 해결 방법이 최적의 문제 해결 방법으로 구성되어 있음&lt;/li&gt;
-            &lt;/ul&gt;
-          &lt;/li&gt;
-        &lt;/ol&gt;
-      &lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;선택 조건 충족
-    &lt;ul&gt;
-      &lt;li&gt;큰 단위부터 계속하여도 작은 단위가 결과값에 영향을 주지 않음&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;최적 조건 충족
-    &lt;ul&gt;
-      &lt;li&gt;최소한의 동전 개수를 주기 위해서는 큰 단위부터 거슬러줘야함&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-&lt;/ol&gt;</content><author><name>You Nicholas</name></author><category term="알고리즘" /><category term="알고리즘" /><category term="라이브코딩" /><category term="코테" /><summary type="html">탐욕 알고리즘으로 풀었던 문제 복습해보기</summary></entry><entry><title type="html">[파이썬][프로그래머스] 신고 결과 받기</title><link href="http://localhost:4000/%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8/%EC%8B%A0%EA%B3%A0-%EA%B2%B0%EA%B3%BC-%EB%B0%9B%EA%B8%B0/" rel="alternate" type="text/html" title="[파이썬][프로그래머스] 신고 결과 받기" /><published>2022-06-14T00:00:00+09:00</published><updated>2022-06-14T00:00:00+09:00</updated><id>http://localhost:4000/%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8/%EC%8B%A0%EA%B3%A0%20%EA%B2%B0%EA%B3%BC%20%EB%B0%9B%EA%B8%B0</id><content type="html" xml:base="http://localhost:4000/%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8/%EC%8B%A0%EA%B3%A0-%EA%B2%B0%EA%B3%BC-%EB%B0%9B%EA%B8%B0/">&lt;h2 id=&quot;1-문제&quot;&gt;1. 문제&lt;/h2&gt;
+&lt;/ul&gt;</content><author><name>You Nicholas</name></author><category term="일상" /><category term="일상" /><summary type="html">하지만 원래 소나기는 갑작기 오는 비</summary></entry><entry><title type="html">[파이썬][프로그래머스] 신고 결과 받기</title><link href="http://localhost:4000/%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8/%EC%8B%A0%EA%B3%A0-%EA%B2%B0%EA%B3%BC-%EB%B0%9B%EA%B8%B0/" rel="alternate" type="text/html" title="[파이썬][프로그래머스] 신고 결과 받기" /><published>2022-06-14T00:00:00+09:00</published><updated>2022-06-14T00:00:00+09:00</updated><id>http://localhost:4000/%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8/%EC%8B%A0%EA%B3%A0%20%EA%B2%B0%EA%B3%BC%20%EB%B0%9B%EA%B8%B0</id><content type="html" xml:base="http://localhost:4000/%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8/%EC%8B%A0%EA%B3%A0-%EA%B2%B0%EA%B3%BC-%EB%B0%9B%EA%B8%B0/">&lt;h2 id=&quot;1-문제&quot;&gt;1. 문제&lt;/h2&gt;
 
 &lt;h1 id=&quot;level-1-신고-결과-받기---92334&quot;&gt;[level 1] 신고 결과 받기 - 92334&lt;/h1&gt;
 
@@ -491,7 +549,69 @@
   &lt;li&gt;위의 의사코드 작성처럼 신고 명단과 신고당한 사람을 셀 수 있는 dictionary를 만들어준다.&lt;/li&gt;
   &lt;li&gt;2개의 딕셔너리에서 명단에는 신고자와 신고당한 사람을 세주고, 신고당한 횟수 명단에는 숫자를 세준다.&lt;/li&gt;
   &lt;li&gt;마지막으로 특정값을 충족하였을 때 결과값에 출력을 해준다.&lt;/li&gt;
-&lt;/ol&gt;</content><author><name>You Nicholas</name></author><category term="코딩테스트" /><category term="알고리즘" /><category term="라이브코딩" /><category term="코테" /><category term="프로그래머스" /><category term="Level_1" /><summary type="html">프로그래머스 신고 결과 받기 풀이</summary></entry><entry><title type="html">DP로 해결하기</title><link href="http://localhost:4000/%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98/DP%EB%A1%9C-%ED%95%B4%EA%B2%B0%ED%95%98%EA%B8%B0/" rel="alternate" type="text/html" title="DP로 해결하기" /><published>2022-06-13T00:00:00+09:00</published><updated>2022-06-13T00:00:00+09:00</updated><id>http://localhost:4000/%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98/DP%EB%A1%9C%20%ED%95%B4%EA%B2%B0%ED%95%98%EA%B8%B0</id><content type="html" xml:base="http://localhost:4000/%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98/DP%EB%A1%9C-%ED%95%B4%EA%B2%B0%ED%95%98%EA%B8%B0/">&lt;h2 id=&quot;1-문제&quot;&gt;1. 문제&lt;/h2&gt;
+&lt;/ol&gt;</content><author><name>You Nicholas</name></author><category term="코딩테스트" /><category term="알고리즘" /><category term="라이브코딩" /><category term="코테" /><category term="프로그래머스" /><category term="Level_1" /><summary type="html">프로그래머스 신고 결과 받기 풀이</summary></entry><entry><title type="html">탐욕 알고리즘 복습하기</title><link href="http://localhost:4000/%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98/%ED%83%90%EC%9A%95-%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98-%EB%B3%B5%EC%8A%B5%ED%95%98%EA%B8%B0/" rel="alternate" type="text/html" title="탐욕 알고리즘 복습하기" /><published>2022-06-14T00:00:00+09:00</published><updated>2022-06-14T00:00:00+09:00</updated><id>http://localhost:4000/%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98/%ED%83%90%EC%9A%95%20%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98%20%EB%B3%B5%EC%8A%B5%ED%95%98%EA%B8%B0</id><content type="html" xml:base="http://localhost:4000/%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98/%ED%83%90%EC%9A%95-%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98-%EB%B3%B5%EC%8A%B5%ED%95%98%EA%B8%B0/">&lt;h2 id=&quot;1-문제&quot;&gt;1. 문제&lt;/h2&gt;
+&lt;p&gt;탐욕 알고리즘으로 가장 대표적인 거스름돈 문제 해결하기
+손님에게 거스름돈으로 줄 수 있는 최소한의 동전 개수 구하기&lt;/p&gt;
+
+&lt;h2 id=&quot;2-해결방법-시간복잡도&quot;&gt;2. 해결방법 시간복잡도&lt;/h2&gt;
+&lt;ol&gt;
+  &lt;li&gt;탐욕 알고리즘 O(N)&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h2 id=&quot;3-문제-해결-및-코드&quot;&gt;3. 문제 해결 및 코드&lt;/h2&gt;
+&lt;hr /&gt;
+
+&lt;script src=&quot;https://gist.github.com/godhin/49700625dfee55b19ad7e456ab3f091b.js&quot;&gt;&lt;/script&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;h2 id=&quot;주석을-참고하면서-이해를-돕습니다&quot;&gt;주석을 참고하면서 이해를 돕습니다.&lt;/h2&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;4-알고리즘-간략-설명&quot;&gt;4. 알고리즘 간략 설명&lt;/h2&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;탐욕 알고리즘&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;대게 탐욕 알고리즘 2가지 조건에 의해 잘 작동하게 된다.
+    &lt;ul&gt;
+      &lt;li&gt;
+        &lt;ol&gt;
+          &lt;li&gt;선택 조건 (greedy choice property)
+            &lt;ul&gt;
+              &lt;li&gt;앞의 선택이 뒤의 선택에 영향을 주지 않음&lt;/li&gt;
+            &lt;/ul&gt;
+          &lt;/li&gt;
+        &lt;/ol&gt;
+      &lt;/li&gt;
+      &lt;li&gt;
+        &lt;ol&gt;
+          &lt;li&gt;최적 조건 (optimal substructure)
+            &lt;ul&gt;
+              &lt;li&gt;문제의 일부의 해결 방법이 최적의 문제 해결 방법으로 구성되어 있음&lt;/li&gt;
+            &lt;/ul&gt;
+          &lt;/li&gt;
+        &lt;/ol&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;선택 조건 충족
+    &lt;ul&gt;
+      &lt;li&gt;큰 단위부터 계속하여도 작은 단위가 결과값에 영향을 주지 않음&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;최적 조건 충족
+    &lt;ul&gt;
+      &lt;li&gt;최소한의 동전 개수를 주기 위해서는 큰 단위부터 거슬러줘야함&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;</content><author><name>You Nicholas</name></author><category term="알고리즘" /><category term="알고리즘" /><category term="라이브코딩" /><category term="코테" /><summary type="html">탐욕 알고리즘으로 풀었던 문제 복습해보기</summary></entry><entry><title type="html">DP로 해결하기</title><link href="http://localhost:4000/%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98/DP%EB%A1%9C-%ED%95%B4%EA%B2%B0%ED%95%98%EA%B8%B0/" rel="alternate" type="text/html" title="DP로 해결하기" /><published>2022-06-13T00:00:00+09:00</published><updated>2022-06-13T00:00:00+09:00</updated><id>http://localhost:4000/%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98/DP%EB%A1%9C%20%ED%95%B4%EA%B2%B0%ED%95%98%EA%B8%B0</id><content type="html" xml:base="http://localhost:4000/%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98/DP%EB%A1%9C-%ED%95%B4%EA%B2%B0%ED%95%98%EA%B8%B0/">&lt;h2 id=&quot;1-문제&quot;&gt;1. 문제&lt;/h2&gt;
 &lt;p&gt;자신이 속한 열을 제외한 값중 가장 큰 값을 중복으로 더하여 최종 행의 가장 큰 값을 호출하기&lt;/p&gt;
 
 &lt;h2 id=&quot;2-해결방법-시간복잡도&quot;&gt;2. 해결방법 시간복잡도&lt;/h2&gt;
@@ -559,126 +679,4 @@
 &lt;ul&gt;
   &lt;li&gt;마치 업다운 게임처럼 중앙을 계속 변경하면서 좌우로 찾는 방식이다. 계속해서 문제를 절반으로 줄이기때문에 N/2 -&amp;gt; 1/2 * N/2 -&amp;gt; ,,,&lt;/li&gt;
   &lt;li&gt;결국에는 자료의 갯수 N에 따라 시행횟수가 log2N으로 표기가 되기떄문에 시간 복잡도는 O(logN)이다.&lt;/li&gt;
-&lt;/ul&gt;</content><author><name>You Nicholas</name></author><category term="알고리즘" /><category term="알고리즘" /><category term="라이브코딩" /><category term="코테" /><summary type="html">리스트 내 특정 값의 위치를 찾기</summary></entry><entry><title type="html">django를 시작해보자</title><link href="http://localhost:4000/%EC%9E%A5%EA%B3%A0/Django-&-AWS/" rel="alternate" type="text/html" title="django를 시작해보자" /><published>2022-06-09T00:00:00+09:00</published><updated>2022-06-09T00:00:00+09:00</updated><id>http://localhost:4000/%EC%9E%A5%EA%B3%A0/Django%20&amp;%20AWS</id><content type="html" xml:base="http://localhost:4000/%EC%9E%A5%EA%B3%A0/Django-&amp;-AWS/">&lt;h1 id=&quot;장고와-aws-설치하기&quot;&gt;장고와 AWS 설치하기&lt;/h1&gt;
-
-&lt;h3 id=&quot;프로젝트-배포를-위해-django와-aws를-공부해보았다&quot;&gt;프로젝트 배포를 위해 Django와 AWS를 공부해보았다.&lt;/h3&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;사용하기 위한 환경 구현
-    &lt;ol&gt;
-      &lt;li&gt;프로젝트에 사용할 환경변수 설정 (필자는 conda를 활용)
-        &lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt; conda create —name &lt;span class=&quot;nb&quot;&gt;test &lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;python&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;3.8
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;        &lt;/div&gt;
-        &lt;p&gt;(파이썬은 3.8을 사용)&lt;/p&gt;
-      &lt;/li&gt;
-      &lt;li&gt;
-        &lt;p&gt;Django 라이브러리 설치&lt;/p&gt;
-
-        &lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt; pip &lt;span class=&quot;nb&quot;&gt;install &lt;/span&gt;django
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;        &lt;/div&gt;
-      &lt;/li&gt;
-    &lt;/ol&gt;
-  &lt;/li&gt;
-  &lt;li&gt;프로젝트 만들기
-    &lt;ol&gt;
-      &lt;li&gt;
-        &lt;p&gt;배포할 프로젝트 만들기&lt;/p&gt;
-
-        &lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt; django-admin startproject &lt;span class=&quot;nb&quot;&gt;test&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;        &lt;/div&gt;
-      &lt;/li&gt;
-      &lt;li&gt;
-        &lt;p&gt;프로젝트에 앱 만들기&lt;/p&gt;
-
-        &lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt; &lt;span class=&quot;nb&quot;&gt;cd test&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;        &lt;/div&gt;
-
-        &lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt; python &lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;manage.py]&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;http://manage.py&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; startapp main
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;        &lt;/div&gt;
-      &lt;/li&gt;
-      &lt;li&gt;
-        &lt;p&gt;프로젝트 설정 수정하기&lt;/p&gt;
-
-        &lt;p&gt;&lt;img src=&quot;https://user-images.githubusercontent.com/75519839/168793812-97023850-ee97-40cf-a7e9-ee9df7cff6ba.png&quot; alt=&quot;Django-AWS1&quot; /&gt;&lt;/p&gt;
-
-        &lt;p&gt;# main 을 INSTALLED_APPS에 추가한다.&lt;/p&gt;
-
-        &lt;aside&gt;
- 💡 만약 앱이 여러개일 경우 해당 APPS에 본인이 사용할 앱 폴더명을 넣으면 된다.
- ex) app1, app2, app3 총 3개가 있다면,
- `INSTALLED_APPS = [
- ’app1’,
- ’app2’,
- ’app3’,
- ...]`
-        
- &lt;/aside&gt;
-      &lt;/li&gt;
-      &lt;li&gt;
-        &lt;p&gt;배포에 사용할 웹 구현&lt;/p&gt;
-
-        &lt;p&gt;&lt;img src=&quot;https://user-images.githubusercontent.com/75519839/168793856-e0047e72-f84a-4d01-a633-574dfef1130f.png&quot; alt=&quot;Django-AWS2&quot; /&gt;&lt;/p&gt;
-
-        &lt;p&gt;내가 사용할 앱에 templates/main 폴더를 만들고 사용할 html 파일을 만든다.&lt;/p&gt;
-
-        &lt;div class=&quot;language-html highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt; &lt;span class=&quot;cp&quot;&gt;&amp;lt;!DOCTYPE html&amp;gt;&lt;/span&gt;
- &lt;span class=&quot;nt&quot;&gt;&amp;lt;html&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;lang=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;en&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
- &lt;span class=&quot;nt&quot;&gt;&amp;lt;head&amp;gt;&lt;/span&gt;
-     &lt;span class=&quot;nt&quot;&gt;&amp;lt;meta&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;charset=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;UTF-8&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
-     &lt;span class=&quot;nt&quot;&gt;&amp;lt;meta&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;name=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;viewport&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;content=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;width=device-width, initial-scale=1.0&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
-     &lt;span class=&quot;nt&quot;&gt;&amp;lt;title&amp;gt;&lt;/span&gt;Document&lt;span class=&quot;nt&quot;&gt;&amp;lt;/title&amp;gt;&lt;/span&gt;
- &lt;span class=&quot;nt&quot;&gt;&amp;lt;/head&amp;gt;&lt;/span&gt;
- &lt;span class=&quot;nt&quot;&gt;&amp;lt;body&amp;gt;&lt;/span&gt;
-     &lt;span class=&quot;nt&quot;&gt;&amp;lt;h1&amp;gt;&lt;/span&gt; 장고를 화면에 띄웠습니다! &lt;span class=&quot;nt&quot;&gt;&amp;lt;/h1&amp;gt;&lt;/span&gt;
- &lt;span class=&quot;nt&quot;&gt;&amp;lt;/body&amp;gt;&lt;/span&gt;
- &lt;span class=&quot;nt&quot;&gt;&amp;lt;/html&amp;gt;&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;        &lt;/div&gt;
-      &lt;/li&gt;
-      &lt;li&gt;
-        &lt;p&gt;views와 url 설정&lt;/p&gt;
-
-        &lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt; &lt;span class=&quot;kn&quot;&gt;from&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;django.shortcuts&lt;/span&gt; &lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;render&lt;/span&gt;
-         
- &lt;span class=&quot;c1&quot;&gt;# Create your views here.
-&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;index&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;request&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt;
-     &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;render&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;request&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;main/index.html&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
- &lt;span class=&quot;c1&quot;&gt;# index.html은 필자가 사용한 html 파일 이름이다. 만약 이름이 다르면 변경하고 폴더주소도 다를경우 변경
-&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;        &lt;/div&gt;
-
-        &lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt; &lt;span class=&quot;kn&quot;&gt;from&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;django.contrib&lt;/span&gt; &lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;admin&lt;/span&gt;
- &lt;span class=&quot;kn&quot;&gt;from&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;django.urls&lt;/span&gt; &lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;path&lt;/span&gt;
- &lt;span class=&quot;kn&quot;&gt;from&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;main&lt;/span&gt; &lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;views&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;as&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;main_views&lt;/span&gt;
-         
- &lt;span class=&quot;n&quot;&gt;urlpatterns&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;
-     &lt;span class=&quot;n&quot;&gt;path&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;''&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;main_views&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;index&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;index&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;),&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;# html 파일 이름을 사용한다
-&lt;/span&gt;     &lt;span class=&quot;n&quot;&gt;path&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'admin/'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;admin&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;site&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;urls&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;),&lt;/span&gt;
- &lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;        &lt;/div&gt;
-      &lt;/li&gt;
-      &lt;li&gt;
-        &lt;p&gt;기본 모델들 migrate&lt;/p&gt;
-
-        &lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt; python &lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;manage.py]&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;http://manage.py&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; makemigrations &lt;span class=&quot;o&quot;&gt;&amp;amp;&amp;amp;&lt;/span&gt; manage.py migrate
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;        &lt;/div&gt;
-      &lt;/li&gt;
-      &lt;li&gt;
-        &lt;p&gt;서버 구동&lt;/p&gt;
-
-        &lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt; python &lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;manage.py]&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;http://manage.py&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; runserver
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;        &lt;/div&gt;
-
-        &lt;p&gt;&lt;a href=&quot;http://127.0.0.1:8000/&quot;&gt;http://127.0.0.1:8000/&lt;/a&gt; 주소 접속&lt;/p&gt;
-      &lt;/li&gt;
-      &lt;li&gt;
-        &lt;p&gt;서버 컴퓨터에 패키지 설치를 위해 requirements.txt 만들기&lt;/p&gt;
-
-        &lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt; pip freeze &lt;span class=&quot;o&quot;&gt;&amp;gt;&amp;gt;&lt;/span&gt; requirements.txt
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;        &lt;/div&gt;
-
-        &lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt; &lt;span class=&quot;nb&quot;&gt;cat &lt;/span&gt;requirements.txt
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;        &lt;/div&gt;
-        &lt;p&gt;requirements 내용 확인&lt;/p&gt;
-      &lt;/li&gt;
-    &lt;/ol&gt;
-  &lt;/li&gt;
-&lt;/ol&gt;</content><author><name>You Nicholas</name></author><category term="장고" /><category term="장고" /><category term="aws" /><summary type="html">장고로 시작해서 AWS까지 - 1</summary></entry></feed>
+&lt;/ul&gt;</content><author><name>You Nicholas</name></author><category term="알고리즘" /><category term="알고리즘" /><category term="라이브코딩" /><category term="코테" /><summary type="html">리스트 내 특정 값의 위치를 찾기</summary></entry></feed>
