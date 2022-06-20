@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2022-06-20T16:04:51+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">성장형 개발자 블로그</title><subtitle>An amazing website.</subtitle><author><name>You Nicholas</name></author><entry><title type="html">움직여라</title><link href="http://localhost:4000/%ED%95%98%EB%A3%A8/%EC%9B%80%EC%A7%81%EC%97%AC%EB%9D%BC/" rel="alternate" type="text/html" title="움직여라" /><published>2022-06-20T00:00:00+09:00</published><updated>2022-06-20T00:00:00+09:00</updated><id>http://localhost:4000/%ED%95%98%EB%A3%A8/%EC%9B%80%EC%A7%81%EC%97%AC%EB%9D%BC</id><content type="html" xml:base="http://localhost:4000/%ED%95%98%EB%A3%A8/%EC%9B%80%EC%A7%81%EC%97%AC%EB%9D%BC/">&lt;h2 id=&quot;따뜻한-햇살-아래-포근한-침대&quot;&gt;따뜻한 햇살 아래 포근한 침대&lt;/h2&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2022-06-20T16:54:15+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">성장형 개발자 블로그</title><subtitle>An amazing website.</subtitle><author><name>You Nicholas</name></author><entry><title type="html">움직여라</title><link href="http://localhost:4000/%ED%95%98%EB%A3%A8/%EC%9B%80%EC%A7%81%EC%97%AC%EB%9D%BC/" rel="alternate" type="text/html" title="움직여라" /><published>2022-06-20T00:00:00+09:00</published><updated>2022-06-20T00:00:00+09:00</updated><id>http://localhost:4000/%ED%95%98%EB%A3%A8/%EC%9B%80%EC%A7%81%EC%97%AC%EB%9D%BC</id><content type="html" xml:base="http://localhost:4000/%ED%95%98%EB%A3%A8/%EC%9B%80%EC%A7%81%EC%97%AC%EB%9D%BC/">&lt;h2 id=&quot;따뜻한-햇살-아래-포근한-침대&quot;&gt;따뜻한 햇살 아래 포근한 침대&lt;/h2&gt;
 
 &lt;p&gt;요새 너무 게을러버린 나는 9시에 일어난다. 그리고 오늘 해야할 일을 간략하게 적고 하다가 금방 낮잠에 들고 만다. 따뜻한 햇살이랑 누구도 건들지 않는 평일의 침대는 그 누구도 뿌리치기 힘든 유혹이다. 그런 유혹에 넘어가길 벌써 며칠째이다. 아침을 바꾸고 싶다는 마음에 동기부여영상을 보고 짐퀵이라는 브레인 코치의 말을 들으며 적어봤다.&lt;/p&gt;
 
@@ -182,7 +182,69 @@
 
 &lt;ul&gt;
   &lt;li&gt;아직도 첫 면접이 생각나고 ‘왜 그때 이런 대답을 하지 못했을까?’ 라는 생각이 뇌리에서 쉽사리 떠나지 않는 것 같다. 그걸 만회하기 위해 그 전보다 더 노력해야한다. 더 부단해야한다. 첫잔이 생각나지 않게끔&lt;/li&gt;
-&lt;/ul&gt;</content><author><name>You Nicholas</name></author><category term="일상" /><category term="일상" /><summary type="html">하지만 원래 소나기는 갑작기 오는 비</summary></entry><entry><title type="html">[파이썬][프로그래머스] 신고 결과 받기</title><link href="http://localhost:4000/%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8/%EC%8B%A0%EA%B3%A0-%EA%B2%B0%EA%B3%BC-%EB%B0%9B%EA%B8%B0/" rel="alternate" type="text/html" title="[파이썬][프로그래머스] 신고 결과 받기" /><published>2022-06-14T00:00:00+09:00</published><updated>2022-06-14T00:00:00+09:00</updated><id>http://localhost:4000/%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8/%EC%8B%A0%EA%B3%A0%20%EA%B2%B0%EA%B3%BC%20%EB%B0%9B%EA%B8%B0</id><content type="html" xml:base="http://localhost:4000/%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8/%EC%8B%A0%EA%B3%A0-%EA%B2%B0%EA%B3%BC-%EB%B0%9B%EA%B8%B0/">&lt;h2 id=&quot;1-문제&quot;&gt;1. 문제&lt;/h2&gt;
+&lt;/ul&gt;</content><author><name>You Nicholas</name></author><category term="일상" /><category term="일상" /><summary type="html">하지만 원래 소나기는 갑작기 오는 비</summary></entry><entry><title type="html">탐욕 알고리즘 복습하기</title><link href="http://localhost:4000/%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98/%ED%83%90%EC%9A%95-%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98-%EB%B3%B5%EC%8A%B5%ED%95%98%EA%B8%B0/" rel="alternate" type="text/html" title="탐욕 알고리즘 복습하기" /><published>2022-06-14T00:00:00+09:00</published><updated>2022-06-14T00:00:00+09:00</updated><id>http://localhost:4000/%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98/%ED%83%90%EC%9A%95%20%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98%20%EB%B3%B5%EC%8A%B5%ED%95%98%EA%B8%B0</id><content type="html" xml:base="http://localhost:4000/%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98/%ED%83%90%EC%9A%95-%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98-%EB%B3%B5%EC%8A%B5%ED%95%98%EA%B8%B0/">&lt;h2 id=&quot;1-문제&quot;&gt;1. 문제&lt;/h2&gt;
+&lt;p&gt;탐욕 알고리즘으로 가장 대표적인 거스름돈 문제 해결하기
+손님에게 거스름돈으로 줄 수 있는 최소한의 동전 개수 구하기&lt;/p&gt;
+
+&lt;h2 id=&quot;2-해결방법-시간복잡도&quot;&gt;2. 해결방법 시간복잡도&lt;/h2&gt;
+&lt;ol&gt;
+  &lt;li&gt;탐욕 알고리즘 O(N)&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h2 id=&quot;3-문제-해결-및-코드&quot;&gt;3. 문제 해결 및 코드&lt;/h2&gt;
+&lt;hr /&gt;
+
+&lt;script src=&quot;https://gist.github.com/godhin/49700625dfee55b19ad7e456ab3f091b.js&quot;&gt;&lt;/script&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;h2 id=&quot;주석을-참고하면서-이해를-돕습니다&quot;&gt;주석을 참고하면서 이해를 돕습니다.&lt;/h2&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;4-알고리즘-간략-설명&quot;&gt;4. 알고리즘 간략 설명&lt;/h2&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;탐욕 알고리즘&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;대게 탐욕 알고리즘 2가지 조건에 의해 잘 작동하게 된다.
+    &lt;ul&gt;
+      &lt;li&gt;
+        &lt;ol&gt;
+          &lt;li&gt;선택 조건 (greedy choice property)
+            &lt;ul&gt;
+              &lt;li&gt;앞의 선택이 뒤의 선택에 영향을 주지 않음&lt;/li&gt;
+            &lt;/ul&gt;
+          &lt;/li&gt;
+        &lt;/ol&gt;
+      &lt;/li&gt;
+      &lt;li&gt;
+        &lt;ol&gt;
+          &lt;li&gt;최적 조건 (optimal substructure)
+            &lt;ul&gt;
+              &lt;li&gt;문제의 일부의 해결 방법이 최적의 문제 해결 방법으로 구성되어 있음&lt;/li&gt;
+            &lt;/ul&gt;
+          &lt;/li&gt;
+        &lt;/ol&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;선택 조건 충족
+    &lt;ul&gt;
+      &lt;li&gt;큰 단위부터 계속하여도 작은 단위가 결과값에 영향을 주지 않음&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;최적 조건 충족
+    &lt;ul&gt;
+      &lt;li&gt;최소한의 동전 개수를 주기 위해서는 큰 단위부터 거슬러줘야함&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;</content><author><name>You Nicholas</name></author><category term="알고리즘" /><category term="알고리즘" /><category term="라이브코딩" /><category term="코테" /><summary type="html">탐욕 알고리즘으로 풀었던 문제 복습해보기</summary></entry><entry><title type="html">[파이썬][프로그래머스] 신고 결과 받기</title><link href="http://localhost:4000/%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8/%EC%8B%A0%EA%B3%A0-%EA%B2%B0%EA%B3%BC-%EB%B0%9B%EA%B8%B0/" rel="alternate" type="text/html" title="[파이썬][프로그래머스] 신고 결과 받기" /><published>2022-06-14T00:00:00+09:00</published><updated>2022-06-14T00:00:00+09:00</updated><id>http://localhost:4000/%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8/%EC%8B%A0%EA%B3%A0%20%EA%B2%B0%EA%B3%BC%20%EB%B0%9B%EA%B8%B0</id><content type="html" xml:base="http://localhost:4000/%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8/%EC%8B%A0%EA%B3%A0-%EA%B2%B0%EA%B3%BC-%EB%B0%9B%EA%B8%B0/">&lt;h2 id=&quot;1-문제&quot;&gt;1. 문제&lt;/h2&gt;
 
 &lt;h1 id=&quot;level-1-신고-결과-받기---92334&quot;&gt;[level 1] 신고 결과 받기 - 92334&lt;/h1&gt;
 
@@ -429,69 +491,7 @@
   &lt;li&gt;위의 의사코드 작성처럼 신고 명단과 신고당한 사람을 셀 수 있는 dictionary를 만들어준다.&lt;/li&gt;
   &lt;li&gt;2개의 딕셔너리에서 명단에는 신고자와 신고당한 사람을 세주고, 신고당한 횟수 명단에는 숫자를 세준다.&lt;/li&gt;
   &lt;li&gt;마지막으로 특정값을 충족하였을 때 결과값에 출력을 해준다.&lt;/li&gt;
-&lt;/ol&gt;</content><author><name>You Nicholas</name></author><category term="코딩테스트" /><category term="알고리즘" /><category term="라이브코딩" /><category term="코테" /><category term="프로그래머스" /><category term="Level_1" /><summary type="html">프로그래머스 신고 결과 받기 풀이</summary></entry><entry><title type="html">탐욕 알고리즘 복습하기</title><link href="http://localhost:4000/%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98/%ED%83%90%EC%9A%95-%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98-%EB%B3%B5%EC%8A%B5%ED%95%98%EA%B8%B0/" rel="alternate" type="text/html" title="탐욕 알고리즘 복습하기" /><published>2022-06-14T00:00:00+09:00</published><updated>2022-06-14T00:00:00+09:00</updated><id>http://localhost:4000/%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98/%ED%83%90%EC%9A%95%20%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98%20%EB%B3%B5%EC%8A%B5%ED%95%98%EA%B8%B0</id><content type="html" xml:base="http://localhost:4000/%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98/%ED%83%90%EC%9A%95-%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98-%EB%B3%B5%EC%8A%B5%ED%95%98%EA%B8%B0/">&lt;h2 id=&quot;1-문제&quot;&gt;1. 문제&lt;/h2&gt;
-&lt;p&gt;탐욕 알고리즘으로 가장 대표적인 거스름돈 문제 해결하기
-손님에게 거스름돈으로 줄 수 있는 최소한의 동전 개수 구하기&lt;/p&gt;
-
-&lt;h2 id=&quot;2-해결방법-시간복잡도&quot;&gt;2. 해결방법 시간복잡도&lt;/h2&gt;
-&lt;ol&gt;
-  &lt;li&gt;탐욕 알고리즘 O(N)&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;h2 id=&quot;3-문제-해결-및-코드&quot;&gt;3. 문제 해결 및 코드&lt;/h2&gt;
-&lt;hr /&gt;
-
-&lt;script src=&quot;https://gist.github.com/godhin/49700625dfee55b19ad7e456ab3f091b.js&quot;&gt;&lt;/script&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;
-    &lt;h2 id=&quot;주석을-참고하면서-이해를-돕습니다&quot;&gt;주석을 참고하면서 이해를 돕습니다.&lt;/h2&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&quot;4-알고리즘-간략-설명&quot;&gt;4. 알고리즘 간략 설명&lt;/h2&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;탐욕 알고리즘&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;대게 탐욕 알고리즘 2가지 조건에 의해 잘 작동하게 된다.
-    &lt;ul&gt;
-      &lt;li&gt;
-        &lt;ol&gt;
-          &lt;li&gt;선택 조건 (greedy choice property)
-            &lt;ul&gt;
-              &lt;li&gt;앞의 선택이 뒤의 선택에 영향을 주지 않음&lt;/li&gt;
-            &lt;/ul&gt;
-          &lt;/li&gt;
-        &lt;/ol&gt;
-      &lt;/li&gt;
-      &lt;li&gt;
-        &lt;ol&gt;
-          &lt;li&gt;최적 조건 (optimal substructure)
-            &lt;ul&gt;
-              &lt;li&gt;문제의 일부의 해결 방법이 최적의 문제 해결 방법으로 구성되어 있음&lt;/li&gt;
-            &lt;/ul&gt;
-          &lt;/li&gt;
-        &lt;/ol&gt;
-      &lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;선택 조건 충족
-    &lt;ul&gt;
-      &lt;li&gt;큰 단위부터 계속하여도 작은 단위가 결과값에 영향을 주지 않음&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;최적 조건 충족
-    &lt;ul&gt;
-      &lt;li&gt;최소한의 동전 개수를 주기 위해서는 큰 단위부터 거슬러줘야함&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-&lt;/ol&gt;</content><author><name>You Nicholas</name></author><category term="알고리즘" /><category term="알고리즘" /><category term="라이브코딩" /><category term="코테" /><summary type="html">탐욕 알고리즘으로 풀었던 문제 복습해보기</summary></entry><entry><title type="html">DP로 해결하기</title><link href="http://localhost:4000/%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98/DP%EB%A1%9C-%ED%95%B4%EA%B2%B0%ED%95%98%EA%B8%B0/" rel="alternate" type="text/html" title="DP로 해결하기" /><published>2022-06-13T00:00:00+09:00</published><updated>2022-06-13T00:00:00+09:00</updated><id>http://localhost:4000/%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98/DP%EB%A1%9C%20%ED%95%B4%EA%B2%B0%ED%95%98%EA%B8%B0</id><content type="html" xml:base="http://localhost:4000/%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98/DP%EB%A1%9C-%ED%95%B4%EA%B2%B0%ED%95%98%EA%B8%B0/">&lt;h2 id=&quot;1-문제&quot;&gt;1. 문제&lt;/h2&gt;
+&lt;/ol&gt;</content><author><name>You Nicholas</name></author><category term="코딩테스트" /><category term="알고리즘" /><category term="라이브코딩" /><category term="코테" /><category term="프로그래머스" /><category term="Level_1" /><summary type="html">프로그래머스 신고 결과 받기 풀이</summary></entry><entry><title type="html">DP로 해결하기</title><link href="http://localhost:4000/%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98/DP%EB%A1%9C-%ED%95%B4%EA%B2%B0%ED%95%98%EA%B8%B0/" rel="alternate" type="text/html" title="DP로 해결하기" /><published>2022-06-13T00:00:00+09:00</published><updated>2022-06-13T00:00:00+09:00</updated><id>http://localhost:4000/%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98/DP%EB%A1%9C%20%ED%95%B4%EA%B2%B0%ED%95%98%EA%B8%B0</id><content type="html" xml:base="http://localhost:4000/%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98/DP%EB%A1%9C-%ED%95%B4%EA%B2%B0%ED%95%98%EA%B8%B0/">&lt;h2 id=&quot;1-문제&quot;&gt;1. 문제&lt;/h2&gt;
 &lt;p&gt;자신이 속한 열을 제외한 값중 가장 큰 값을 중복으로 더하여 최종 행의 가장 큰 값을 호출하기&lt;/p&gt;
 
 &lt;h2 id=&quot;2-해결방법-시간복잡도&quot;&gt;2. 해결방법 시간복잡도&lt;/h2&gt;

@@ -1,0 +1,934 @@
+<!doctype html>
+<!--
+  Minimal Mistakes Jekyll Theme 4.24.0 by Michael Rose
+  Copyright 2013-2020 Michael Rose - mademistakes.com | @mmistakes
+  Free for personal and commercial use under the MIT license
+  https://github.com/mmistakes/minimal-mistakes/blob/master/LICENSE
+-->
+<html lang="ko" class="no-js">
+  <head>
+    <meta charset="utf-8">
+
+<!-- begin _includes/seo.html --><title>데이터 분석과 머신러닝 - Data Manipulation - 성장형 개발자 블로그</title>
+<meta name="description" content="Data Manipulation에 대해">
+
+
+  <meta name="author" content="You Nicholas">
+  
+  <meta property="article:author" content="You Nicholas">
+  
+
+
+<meta property="og:type" content="article">
+<meta property="og:locale" content="ko">
+<meta property="og:site_name" content="성장형 개발자 블로그">
+<meta property="og:title" content="데이터 분석과 머신러닝 - Data Manipulation">
+<meta property="og:url" content="http://localhost:4000/%EB%8D%B0%EC%9D%B4%ED%84%B0%20%EB%B6%84%EC%84%9D%EA%B3%BC%20%EB%A8%B8%EC%8B%A0%EB%9F%AC%EB%8B%9D/manipulation/">
+
+
+  <meta property="og:description" content="Data Manipulation에 대해">
+
+
+
+
+
+
+
+  <meta property="article:published_time" content="2021-11-19T00:00:00+09:00">
+
+
+
+  <meta property="article:modified_time" content="2021-11-19T00:00:00+09:00">
+
+
+
+  
+
+  
+
+
+<link rel="canonical" href="http://localhost:4000/%EB%8D%B0%EC%9D%B4%ED%84%B0%20%EB%B6%84%EC%84%9D%EA%B3%BC%20%EB%A8%B8%EC%8B%A0%EB%9F%AC%EB%8B%9D/manipulation/">
+
+
+
+
+<script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    
+      "@type": "Person",
+      "name": "Yoo Nicholas",
+      "url": "http://localhost:4000/"
+    
+  }
+</script>
+
+
+
+
+
+
+
+<!-- end _includes/seo.html -->
+
+
+
+  <link href="/feed.xml" type="application/atom+xml" rel="alternate" title="성장형 개발자 블로그 Feed">
+
+
+<!-- https://t.co/dKP3o1e -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script>
+  document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
+</script>
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="/assets/css/main.css">
+<link rel="preload" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css"></noscript>
+
+
+
+    <!-- start custom head snippets -->
+
+<!-- insert favicons. use https://realfavicongenerator.net/ -->
+
+<!-- end custom head snippets -->
+
+  </head>
+
+  <body class="layout--single">
+    <nav class="skip-links">
+  <ul>
+    <li><a href="#site-nav" class="screen-reader-shortcut">Skip to primary navigation</a></li>
+    <li><a href="#main" class="screen-reader-shortcut">Skip to content</a></li>
+    <li><a href="#footer" class="screen-reader-shortcut">Skip to footer</a></li>
+  </ul>
+</nav>
+
+    
+
+<div class="masthead">
+  <div class="masthead__inner-wrap">
+    <div class="masthead__menu">
+      <nav id="site-nav" class="greedy-nav">
+        
+        <a class="site-title" href="/">
+          성장형 개발자 블로그
+          
+        </a>
+        <ul class="visible-links"><li class="masthead__menu-item">
+              <a href="/about/">소개글</a>
+            </li><li class="masthead__menu-item">
+              <a href="/categories/">카테고리</a>
+            </li><li class="masthead__menu-item">
+              <a href="/tags/">태그</a>
+            </li></ul>
+        
+        <button class="greedy-nav__toggle hidden" type="button">
+          <span class="visually-hidden">토글 메뉴</span>
+          <div class="navicon"></div>
+        </button>
+        <ul class="hidden-links hidden"></ul>
+      </nav>
+    </div>
+  </div>
+</div>
+
+
+    <div class="initial-content">
+      
+
+
+
+
+
+<div id="main" role="main">
+  
+  <div class="sidebar sticky">
+  
+
+
+<div itemscope itemtype="https://schema.org/Person" class="h-card">
+
+  
+    <div class="author__avatar">
+      <a href="http://localhost:4000/">
+        <img src="https://avatars.githubusercontent.com/u/75519839?v=4" alt="You Nicholas" itemprop="image" class="u-photo">
+      </a>
+    </div>
+  
+
+  <div class="author__content">
+    <h3 class="author__name p-name" itemprop="name">
+      <a class="u-url" rel="me" href="http://localhost:4000/" itemprop="url">You Nicholas</a>
+    </h3>
+    
+      <div class="author__bio p-note" itemprop="description">
+        <p>가고 가고 또 가면 <strong>알게되고</strong>, 행하고 행하고 또 행하게 되면 <strong>이루게 된다.</strong></p>
+
+      </div>
+    
+  </div>
+
+  <div class="author__urls-wrapper">
+    <button class="btn btn--inverse">팔로우</button>
+    <ul class="author__urls social-icons">
+      
+        <li itemprop="homeLocation" itemscope itemtype="https://schema.org/Place">
+          <i class="fas fa-fw fa-map-marker-alt" aria-hidden="true"></i> <span itemprop="name" class="p-locality">Republic of Korea</span>
+        </li>
+      
+
+      
+        
+          
+            <li><a href="godhin:sodlalwl13e@gmail.com" rel="nofollow noopener noreferrer me"><i class="fas fa-fw fa-envelope-square" aria-hidden="true"></i><span class="label">Email</span></a></li>
+          
+        
+          
+        
+          
+        
+          
+        
+          
+            <li><a href="https://github.com/godhin" rel="nofollow noopener noreferrer me" itemprop="sameAs"><i class="fab fa-fw fa-github" aria-hidden="true"></i><span class="label">GitHub</span></a></li>
+          
+        
+          
+            <li><a href="https://instagram.com/cmblir" rel="nofollow noopener noreferrer me" itemprop="sameAs"><i class="fab fa-fw fa-instagram" aria-hidden="true"></i><span class="label">Instagram</span></a></li>
+          
+        
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      <!--
+  <li>
+    <a href="http://link-to-whatever-social-network.com/user/" itemprop="sameAs" rel="nofollow noopener noreferrer me">
+      <i class="fas fa-fw" aria-hidden="true"></i> Custom Social Profile Link
+    </a>
+  </li>
+-->
+    </ul>
+  </div>
+</div>
+
+  
+  </div>
+
+
+
+  <article class="page h-entry" itemscope itemtype="https://schema.org/CreativeWork">
+    <meta itemprop="headline" content="데이터 분석과 머신러닝 - Data Manipulation">
+    <meta itemprop="description" content="Data Manipulation에 대해">
+    <meta itemprop="datePublished" content="2021-11-19T00:00:00+09:00">
+    <meta itemprop="dateModified" content="2021-11-19T00:00:00+09:00">
+
+    <div class="page__inner-wrap">
+      
+        <header>
+          <h1 id="page-title" class="page__title p-name" itemprop="headline">
+            <a href="http://localhost:4000/%EB%8D%B0%EC%9D%B4%ED%84%B0%20%EB%B6%84%EC%84%9D%EA%B3%BC%20%EB%A8%B8%EC%8B%A0%EB%9F%AC%EB%8B%9D/manipulation/" class="u-url" itemprop="url">데이터 분석과 머신러닝 - Data Manipulation
+</a>
+          </h1>
+          
+
+  <p class="page__meta">
+    
+
+    
+
+    
+      
+      
+
+      <span class="page__meta-readtime">
+        <i class="far fa-clock" aria-hidden="true"></i>
+        
+          3 분 소요
+        
+      </span>
+    
+  </p>
+
+
+        </header>
+      
+
+      <section class="page__content e-content" itemprop="text">
+        
+          <aside class="sidebar__right sticky">
+            <nav class="toc">
+              <header><h4 class="nav__title"><i class="fas fa-file-alt"></i> On This Page</h4></header>
+              <ul class="toc__menu"><li><a href="#13-data-manipulation">1.3 Data Manipulation</a><ul><li><a href="#pandas로-데이터-합치기">pandas로 데이터 합치기</a><ul><li><a href="#concat-concatenate">Concat (Concatenate)</a></li><li><a href="#string-">string +</a></li><li><a href="#dataframe">data.frame</a></li></ul></li><li><a href="#stocks">Stocks</a><ul><li><a href="#데이터-준비">데이터 준비</a></li></ul></li></ul></li><li><a href="#concat으로-df에-df2를-병합한-것이다-axis--1을-통해-row에-추가한-것이다">concat으로 df에 df2를 병합한 것이다. axis = 1을 통해 row에 추가한 것이다.</a><ul><li><a href="#merge">Merge</a></li><li><a href="#conditioning">Conditioning</a></li><li><a href="#isin">isin</a></li></ul></li><li><a href="#테마가-주류인-데이터를-골라서-출력한다">테마가 주류인 데이터를 골라서 출력한다,</a><ul><li><a href="#groupby">Groupby</a></li></ul></li><li><a href="#1번-문제를-groupby로-해결했다">1번 문제를 Groupby로 해결했다.</a></li><li><a href="#이런식으로-출력이-가능하다">이런식으로 출력이 가능하다.</a></li></ul>
+
+            </nav>
+          </aside>
+        
+        <h1 id="13-data-manipulation">1.3 Data Manipulation</h1>
+
+<h2 id="pandas로-데이터-합치기">pandas로 데이터 합치기</h2>
+
+<h3 id="concat-concatenate">Concat (Concatenate)</h3>
+
+<p>concat은 ‘더한다’ 혹은 ‘붙인다’라는 의미로 이해하면 된다.</p>
+
+<p>예를 들어, 2개의 문자열을 + 연산자를 이용해 붙일 수 있다.</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="o">&gt;&gt;&gt;</span> <span class="s">'"+" 연산자를 '</span> <span class="o">+</span> <span class="s">'사용하여'</span> <span class="o">+</span> <span class="s">'붙일 수 있다.'</span>
+<span class="s">'"+" 연산자를 사용하여 붙일 수 있다.
+</span></code></pre></div></div>
+
+<h3 id="string-">string +</h3>
+
+<p>다른 방법으로 문자열을 더할 수 있다.</p>
+
+<ul>
+  <li>tostring</li>
+  <li>join</li>
+</ul>
+
+<p>문자열을 나눌수도 있다.</p>
+
+<ul>
+  <li>split</li>
+</ul>
+
+<h3 id="dataframe">data.frame</h3>
+
+<p>data.frame도 열이나 행을 기준으로 더할 수 있다.</p>
+
+<p><img src="https://user-images.githubusercontent.com/75519839/174546916-7032a69a-bffb-443c-81e1-fdc3364b1366.png" alt="Untitled" /></p>
+
+<p><img src="https://user-images.githubusercontent.com/75519839/174546829-c000f288-8ec1-4cea-bd48-aef54544bc31.png" alt="Untitled 1" /></p>
+
+<p><img src="https://user-images.githubusercontent.com/75519839/174546836-52274950-e9d8-4556-809c-ca322fdf39c6.png" alt="Untitled 2" /></p>
+
+<p><strong>Index가 다른 경우</strong></p>
+
+<p><img src="https://user-images.githubusercontent.com/75519839/174546843-153ca15d-5367-4b6b-92ec-097bd6c02f38.png" alt="Untitled 3" /></p>
+
+<p><img src="https://user-images.githubusercontent.com/75519839/174546852-b1a25367-6695-4c01-a39f-2c18ab01310b.png" alt="Untitled 4" /></p>
+
+<p><img src="https://user-images.githubusercontent.com/75519839/174546857-ca007790-a4f7-40c8-9d50-6b1dc4890763.png" alt="Untitled 5" /></p>
+
+<p><strong>파이썬으로 구현해보자!</strong></p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="n">pd</span>
+
+<span class="n">x</span> <span class="o">=</span> <span class="n">pd</span><span class="p">.</span><span class="n">DataFrame</span><span class="p">([[</span><span class="s">'AX'</span><span class="p">,</span><span class="s">'AY'</span><span class="p">],[</span><span class="s">'BX'</span><span class="p">,</span><span class="s">'BY'</span><span class="p">]],</span> <span class="n">index</span> <span class="o">=</span> <span class="p">[</span><span class="s">'A'</span><span class="p">,</span><span class="s">'B'</span><span class="p">],</span> <span class="n">columns</span> <span class="o">=</span> <span class="p">[</span><span class="s">'X'</span><span class="p">,</span><span class="s">'Y'</span><span class="p">])</span>
+<span class="n">y</span> <span class="o">=</span> <span class="n">pd</span><span class="p">.</span><span class="n">DataFrame</span><span class="p">([[</span><span class="s">'AX'</span><span class="p">,</span><span class="s">'AZ'</span><span class="p">],[</span><span class="s">'CX'</span><span class="p">,</span><span class="s">'CZ'</span><span class="p">]],</span> <span class="n">index</span> <span class="o">=</span> <span class="p">[</span><span class="s">'A'</span><span class="p">,</span><span class="s">'C'</span><span class="p">],</span> <span class="n">columns</span> <span class="o">=</span> <span class="p">[</span><span class="s">'X'</span><span class="p">,</span><span class="s">'Z'</span><span class="p">])</span>
+<span class="k">print</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
+
+<span class="c1"># x 결과값
+</span><span class="n">X</span>   <span class="n">Y</span>
+<span class="n">A</span>  <span class="n">AX</span>  <span class="n">AY</span>
+<span class="n">B</span>  <span class="n">BX</span>  <span class="n">BY</span>
+
+<span class="c1"># y 결과값
+</span><span class="n">X</span>   <span class="n">Z</span>
+<span class="n">A</span>  <span class="n">AX</span>  <span class="n">AZ</span>
+<span class="n">C</span>  <span class="n">CX</span>  <span class="n">CZ</span>
+</code></pre></div></div>
+
+<p>concat을 사용한다면?</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">pd</span><span class="p">.</span><span class="n">concat</span><span class="p">([</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">])</span> <span class="c1">## concate_by_row
+</span>
+<span class="c1"># 결과값
+</span>    <span class="n">X</span>    <span class="n">Y</span>    <span class="n">Z</span>
+<span class="n">A</span>  <span class="n">AX</span>   <span class="n">AY</span>  <span class="n">NaN</span>
+<span class="n">B</span>  <span class="n">BX</span>   <span class="n">BY</span>  <span class="n">NaN</span>
+<span class="n">A</span>  <span class="n">AX</span>  <span class="n">NaN</span>   <span class="n">AZ</span>
+<span class="n">C</span>  <span class="n">CX</span>  <span class="n">NaN</span>   <span class="n">CZ</span>
+</code></pre></div></div>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">pd</span><span class="p">.</span><span class="n">concat</span><span class="p">([</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">],</span> <span class="n">axis</span> <span class="o">=</span> <span class="mi">1</span><span class="p">)</span> <span class="c1">## concate_by_column
+</span>
+<span class="c1"># 결과값
+</span>     <span class="n">X</span>    <span class="n">Y</span>    <span class="n">X</span>    <span class="n">Z</span>
+<span class="n">A</span>   <span class="n">AX</span>   <span class="n">AY</span>   <span class="n">AX</span>   <span class="n">AZ</span>
+<span class="n">B</span>   <span class="n">BX</span>   <span class="n">BY</span>  <span class="n">NaN</span>  <span class="n">NaN</span>
+<span class="n">C</span>  <span class="n">NaN</span>  <span class="n">NaN</span>   <span class="n">CX</span>   <span class="n">CZ</span>
+</code></pre></div></div>
+
+<aside>
+☝ 데이터 프레임을 더할 때, 일반적으로 더해지는 행, 열의 이름이나 인덱스 값이 일치해야 한다. 만약 그렇지 않은 경우, 비어있는 부분에 대해서는 (결측치를 의미하는) **NaN**으로 채워진다.
+
+</aside>
+
+<h2 id="stocks">Stocks</h2>
+
+<p>이번에는 제가 <strong>치맥 주식</strong>이라 이름 붙인 실제 데이터를 기반으로 concat을 연습해보겠습니다.</p>
+
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">000080.csv</code></li>
+  <li><code class="language-plaintext highlighter-rouge">000890.csv</code></li>
+  <li><code class="language-plaintext highlighter-rouge">005300.csv</code></li>
+  <li><code class="language-plaintext highlighter-rouge">027740.csv</code></li>
+  <li><code class="language-plaintext highlighter-rouge">035810.csv</code></li>
+  <li><code class="language-plaintext highlighter-rouge">136480.csv</code></li>
+</ul>
+
+<p>여러개의 파일로 구성되어 있기 때문에, 각각 잘 로드되었는지 확인하는 것 뿐만 아니라 데이터프레임을 하나로 합치는 것 또한 필요하다.</p>
+
+<p>이번 연습의 목표 중 하나는 아래 그림처럼 <strong>최근 분기에 해당하는 데이터</strong>와 <code class="language-plaintext highlighter-rouge">종목코드</code>, <code class="language-plaintext highlighter-rouge">종목명</code> ,<code class="language-plaintext highlighter-rouge">테마</code>와 같은 <strong>추가 정보 (Feature)</strong>를 더해, 하나의 데이터프레임으로 합치는 것이다.</p>
+
+<h3 id="데이터-준비">데이터 준비</h3>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="n">pd</span>
+
+<span class="n">df1</span> <span class="o">=</span> <span class="n">pd</span><span class="p">.</span><span class="n">read_csv</span><span class="p">(</span><span class="n">urlhead</span> <span class="o">+</span> <span class="s">'000080.csv'</span><span class="p">)</span>
+<span class="n">df1</span><span class="p">.</span><span class="n">head</span><span class="p">()</span>
+</code></pre></div></div>
+
+<p><img src="https://user-images.githubusercontent.com/75519839/174546859-a39e0e8f-a070-4e8d-8e0c-34176bb4216d.png" alt="Untitled 6" /></p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">df1</span> <span class="o">=</span> <span class="n">pd</span><span class="p">.</span><span class="n">read_csv</span><span class="p">(</span><span class="n">urlhead</span> <span class="o">+</span> <span class="s">'000080.csv'</span><span class="p">).</span><span class="n">transpose</span><span class="p">()</span>
+<span class="n">df1</span><span class="p">.</span><span class="n">head</span><span class="p">()</span>
+</code></pre></div></div>
+
+<p><img src="https://user-images.githubusercontent.com/75519839/174546862-898b957c-2e14-411a-8e1c-2ae38fc5cd9a.png" alt="Untitled 7" /></p>
+
+<blockquote>
+  <p>pandas first row header</p>
+
+</blockquote>
+
+<p>위의 값의 column을 해결하기 위해 실행한 코드</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">new_header</span> <span class="o">=</span> <span class="n">df</span><span class="p">.</span><span class="n">iloc</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="c1"># grab the first row for the header
+</span><span class="n">df</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="mi">1</span><span class="p">:]</span> <span class="c1"># take the data less the header row
+</span><span class="n">df</span><span class="p">.</span><span class="n">columns</span> <span class="o">=</span> <span class="n">new_header</span>
+<span class="k">return</span> <span class="n">df</span>
+</code></pre></div></div>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">def</span> <span class="nf">mydf</span><span class="p">(</span><span class="n">myurl</span><span class="p">):</span>
+    <span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="p">.</span><span class="n">read_csv</span><span class="p">(</span><span class="n">urlhead</span> <span class="o">+</span> <span class="n">myurl</span><span class="p">).</span><span class="n">transpose</span><span class="p">()</span>
+    <span class="n">new_header</span> <span class="o">=</span> <span class="n">df</span><span class="p">.</span><span class="n">iloc</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> 
+    <span class="n">df</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="mi">1</span><span class="p">:]</span> 
+    <span class="n">df</span><span class="p">.</span><span class="n">columns</span> <span class="o">=</span> <span class="n">new_header</span> 
+    <span class="k">return</span> <span class="n">df</span>
+</code></pre></div></div>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">df1</span> <span class="o">=</span> <span class="n">mydf</span><span class="p">(</span><span class="s">'000080.csv'</span><span class="p">)</span>
+<span class="n">df1</span>
+</code></pre></div></div>
+
+<p><img src="https://user-images.githubusercontent.com/75519839/174546868-7ed20231-c3a2-4f17-90df-ee8ef643d542.png" alt="Untitled 8" /></p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">df2</span> <span class="o">=</span> <span class="n">mydf</span><span class="p">(</span><span class="s">'000890.csv'</span><span class="p">)</span>
+<span class="n">df3</span> <span class="o">=</span> <span class="n">mydf</span><span class="p">(</span><span class="s">'005300.csv'</span><span class="p">)</span>
+<span class="n">df4</span> <span class="o">=</span> <span class="n">mydf</span><span class="p">(</span><span class="s">'027740.csv'</span><span class="p">)</span>
+<span class="n">df5</span> <span class="o">=</span> <span class="n">mydf</span><span class="p">(</span><span class="s">'035810.csv'</span><span class="p">)</span>
+<span class="n">df6</span> <span class="o">=</span> <span class="n">mydf</span><span class="p">(</span><span class="s">'136480.csv'</span><span class="p">)</span>
+</code></pre></div></div>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="p">.</span><span class="n">concat</span><span class="p">([</span><span class="n">df1</span><span class="p">,</span> <span class="n">df2</span><span class="p">,</span> <span class="n">df3</span><span class="p">,</span> <span class="n">df4</span><span class="p">,</span> <span class="n">df5</span><span class="p">,</span> <span class="n">df6</span><span class="p">])</span>
+<span class="n">df</span><span class="p">.</span><span class="n">shape</span>
+</code></pre></div></div>
+
+<p>우리가 필요한 것은 마지막 분기의 데이터이다.</p>
+
+<p>이를 위해 mydf 를 어떻게 수정해야 할까?</p>
+
+<blockquote>
+  <p>이번 연습의 목표 중 하나는 아래 그림처럼 <strong>최근 분기에 해당하는 데이터</strong>와 <code class="language-plaintext highlighter-rouge">종목코드</code>, <code class="language-plaintext highlighter-rouge">종목명</code> ,<code class="language-plaintext highlighter-rouge">테마</code>와 같은 <strong>추가 정보 (Feature)</strong>를 더해, 하나의 데이터프레임으로 합치는 것입니다.</p>
+
+</blockquote>
+
+<p><img src="https://user-images.githubusercontent.com/75519839/174546872-7d20b9d4-8ddc-4b40-bc86-66a08fddb455.png" alt="Untitled 9" /></p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">df</span> <span class="o">=</span> <span class="n">mydf</span><span class="p">(</span><span class="s">'000080.csv'</span><span class="p">)</span>
+</code></pre></div></div>
+
+<p><img src="https://user-images.githubusercontent.com/75519839/174546876-56d36c27-eba8-4e64-9d69-22315f526621.png" alt="Untitled 10" /></p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">def</span> <span class="nf">mydf</span><span class="p">(</span><span class="n">myurl</span><span class="p">):</span>
+    <span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="p">.</span><span class="n">read_csv</span><span class="p">(</span><span class="n">urlhead</span> <span class="o">+</span> <span class="n">myurl</span><span class="p">).</span><span class="n">transpose</span><span class="p">()</span>
+    <span class="n">new_header</span> <span class="o">=</span> <span class="n">df</span><span class="p">.</span><span class="n">iloc</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> 
+    <span class="n">df</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="mi">1</span><span class="p">:]</span> 
+    <span class="n">df</span><span class="p">.</span><span class="n">columns</span> <span class="o">=</span> <span class="n">new_header</span> 
+    <span class="k">return</span> <span class="n">df</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">:]</span>
+
+<span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="p">.</span><span class="n">concat</span><span class="p">([</span><span class="n">mydf</span><span class="p">(</span><span class="s">'000080.csv'</span><span class="p">),</span> <span class="n">mydf</span><span class="p">(</span><span class="s">'000890.csv'</span><span class="p">),</span> <span class="n">mydf</span><span class="p">(</span><span class="s">'005300.csv'</span><span class="p">),</span> <span class="n">mydf</span><span class="p">(</span><span class="s">'027740.csv'</span><span class="p">),</span> <span class="n">mydf</span><span class="p">(</span><span class="s">'035810.csv'</span><span class="p">),</span> <span class="n">mydf</span><span class="p">(</span><span class="s">'136480.csv'</span><span class="p">)])</span>
+<span class="n">df</span> <span class="o">=</span> <span class="n">df</span><span class="p">.</span><span class="n">reset_index</span><span class="p">()</span>
+<span class="n">df</span> <span class="o">=</span> <span class="n">df</span><span class="p">.</span><span class="n">drop</span><span class="p">(</span><span class="n">df</span><span class="p">.</span><span class="n">columns</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
+    
+<span class="n">df</span>
+</code></pre></div></div>
+
+<p><img src="https://user-images.githubusercontent.com/75519839/174546878-f287943d-91af-4542-8acf-9800a0a43a89.png" alt="Untitled 11" /></p>
+
+<p>이제 <code class="language-plaintext highlighter-rouge">테마</code>라는 추가 정보를 더해보도록 하겠다.</p>
+
+<p>추가하고자 하는 정보는 다음 테이블과 같다. 7개인 것에 유의해야된다.</p>
+
+<p><img src="https://user-images.githubusercontent.com/75519839/174546884-b11fd918-24b2-4fdd-a064-af416da8c476.png" alt="Untitled 12" /></p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">df2</span> <span class="o">=</span> <span class="n">pd</span><span class="p">.</span><span class="n">DataFrame</span><span class="p">(</span>
+    <span class="p">{</span><span class="s">'종목'</span> <span class="p">:</span> <span class="p">[</span><span class="s">'000080'</span><span class="p">,</span> <span class="s">'000890'</span><span class="p">,</span> <span class="s">'005300'</span><span class="p">,</span> <span class="s">'027740'</span><span class="p">,</span> <span class="s">'035810'</span><span class="p">,</span> <span class="s">'136480'</span><span class="p">,</span> <span class="s">'136490'</span><span class="p">],</span>
+     <span class="s">'종목명'</span><span class="p">:</span> <span class="p">[</span><span class="s">'하이트진로'</span><span class="p">,</span> <span class="s">'보해양조'</span><span class="p">,</span> <span class="s">'롯데칠성'</span><span class="p">,</span> <span class="s">'마니커'</span><span class="p">,</span> <span class="s">'이지홀딩스'</span><span class="p">,</span> <span class="s">'하림'</span><span class="p">,</span> <span class="s">'선진'</span><span class="p">],</span> 
+     <span class="s">'테마'</span> <span class="p">:</span> <span class="p">[</span><span class="s">'주류'</span><span class="p">,</span> <span class="s">'주류'</span><span class="p">,</span> <span class="s">'주류'</span><span class="p">,</span> <span class="s">'육계'</span><span class="p">,</span> <span class="s">'육계'</span><span class="p">,</span> <span class="s">'육계'</span><span class="p">,</span> <span class="s">'돼지고기'</span><span class="p">]}</span>
+<span class="p">)</span>
+<span class="n">pd</span><span class="p">.</span><span class="n">concat</span><span class="p">([</span><span class="n">df2</span><span class="p">,</span> <span class="n">df</span><span class="p">],</span> <span class="n">axis</span> <span class="o">=</span> <span class="mi">1</span><span class="p">)</span>
+</code></pre></div></div>
+
+<p><img src="https://user-images.githubusercontent.com/75519839/174546885-c91212be-a66e-4f66-867b-f615d9429251.png" alt="Untitled 13" /></p>
+
+<h1 id="concat으로-df에-df2를-병합한-것이다-axis--1을-통해-row에-추가한-것이다">concat으로 df에 df2를 병합한 것이다. axis = 1을 통해 row에 추가한 것이다.</h1>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">df</span><span class="p">[[</span><span class="s">'종목'</span><span class="p">,</span> <span class="s">'매출액'</span><span class="p">,</span> <span class="s">'순이익률'</span><span class="p">]]</span>
+</code></pre></div></div>
+
+<p><img src="https://user-images.githubusercontent.com/75519839/174546891-1c635b64-192f-4a88-a172-6d5dff817925.png" alt="Untitled 14" /></p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">df</span> <span class="o">=</span> <span class="n">df</span><span class="p">[[</span><span class="s">'종목'</span><span class="p">,</span> <span class="s">'매출액'</span><span class="p">,</span> <span class="s">'순이익률'</span><span class="p">]]</span>
+<span class="n">df</span>
+</code></pre></div></div>
+
+<p><img src="https://user-images.githubusercontent.com/75519839/174546892-773537de-3bc5-48c4-8561-549ae1e1ae7f.png" alt="Untitled 15" /></p>
+
+<h2 id="merge">Merge</h2>
+
+<p><code class="language-plaintext highlighter-rouge">df.merge("붙일 내용", how = "(방법)", on="(기준 feature)")</code></p>
+
+<p><img src="https://user-images.githubusercontent.com/75519839/174546895-66b42905-192e-480c-9539-29878f96a55f.png" alt="Untitled 16" /></p>
+
+<h2 id="conditioning">Conditioning</h2>
+
+<ol>
+  <li><strong>주식 종목들의 평균 수익률</strong></li>
+  <li><strong>순이익률이 -인 종목은 제외</strong></li>
+  <li><strong>추가로 테마별로</strong></li>
+</ol>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># type cast
+</span><span class="n">df</span><span class="p">[</span><span class="s">'순이익률'</span><span class="p">]</span> <span class="o">=</span> <span class="n">pd</span><span class="p">.</span><span class="n">to_numeric</span><span class="p">(</span><span class="n">df</span><span class="p">[</span><span class="s">'순이익률'</span><span class="p">])</span>
+
+<span class="c1"># 필터링 조건 (Condition) 설정
+</span><span class="n">condition</span> <span class="o">=</span> <span class="p">(</span><span class="n">df</span><span class="p">[</span><span class="s">'순이익률'</span><span class="p">]</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">)</span> <span class="c1"># Type Cast
+# ()로 씌우는 것에 주의
+</span>
+<span class="c1"># condition 값을 출력
+# [] 안에 컨디션을 설정, 컨디션의 값이 True로 해당하는 부분의 데이터만 선택
+</span><span class="n">df_subset</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="n">condition</span><span class="p">]</span>
+
+<span class="n">df_subset</span>
+</code></pre></div></div>
+
+<p><img src="https://user-images.githubusercontent.com/75519839/174546897-1ec0d77a-d350-418f-a45d-bb100d712ee8.png" alt="Untitled 17" /></p>
+
+<p>그렇다면 컨디션을 조절한다면?</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">condition</span> <span class="o">=</span> <span class="p">(</span> <span class="p">(</span><span class="n">df</span><span class="p">[</span><span class="s">'순이익률'</span><span class="p">]</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">)</span> <span class="o">&amp;</span> <span class="p">(</span><span class="n">df</span><span class="p">[</span><span class="s">'순이익률'</span><span class="p">]</span> <span class="o">&lt;</span> <span class="mi">10</span><span class="p">))</span>
+<span class="n">df_subset2</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="n">condition</span><span class="p">]</span>
+<span class="c1"># 035810 이지홀딩스가 날라간 것을 볼 수 있다.
+</span><span class="n">df_subset2</span>
+</code></pre></div></div>
+
+<p><img src="https://user-images.githubusercontent.com/75519839/174546900-83afa7d2-0852-4bb0-9f92-87195dd76d76.png" alt="Untitled 18" /></p>
+
+<table>
+  <tbody>
+    <tr>
+      <td>추가적으로 &amp;(and)와</td>
+      <td>(or)을 사용해서 여러개의 condition을 조절할 수 있다.</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 id="isin">isin</h2>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">df_subset</span><span class="p">[</span><span class="n">sf_subset</span><span class="p">[</span><span class="s">'테마'</span><span class="p">].</span><span class="n">isin</span><span class="p">([</span><span class="s">'주류'</span><span class="p">])]</span>
+</code></pre></div></div>
+
+<p><img src="https://user-images.githubusercontent.com/75519839/174546901-fbab3771-3291-4f2e-8242-1a209f6fcaa3.png" alt="Untitled 19" /></p>
+
+<h1 id="테마가-주류인-데이터를-골라서-출력한다">테마가 주류인 데이터를 골라서 출력한다,</h1>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">df</span><span class="p">[(</span><span class="n">df</span><span class="p">[</span><span class="s">'테마'</span><span class="p">]</span> <span class="o">==</span> <span class="s">'주류'</span><span class="p">)]</span>
+</code></pre></div></div>
+
+<h2 id="groupby">Groupby</h2>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">df_subset</span><span class="p">.</span><span class="n">groupby</span><span class="p">(</span><span class="s">'테마'</span><span class="p">).</span><span class="n">순이익률</span><span class="p">.</span><span class="n">mean</span><span class="p">()</span>
+</code></pre></div></div>
+
+<p><img src="https://user-images.githubusercontent.com/75519839/174546906-1ba8b675-9fe8-4aa0-a55a-3256623f289e.png" alt="Untitled 20" /></p>
+
+<h1 id="1번-문제를-groupby로-해결했다">1번 문제를 Groupby로 해결했다.</h1>
+
+<p>위의 식에서 <code class="language-plaintext highlighter-rouge">df_subset.groupby('테마').mean()</code> 으로 바꿔서 출력한다면</p>
+
+<p><img src="https://user-images.githubusercontent.com/75519839/174546908-381c6d8b-2e44-4958-91fd-0b5cab7da4d3.png" alt="Untitled 21" /></p>
+
+<h1 id="이런식으로-출력이-가능하다">이런식으로 출력이 가능하다.</h1>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">def</span> <span class="nf">toInt</span><span class="p">(</span><span class="n">string</span><span class="p">):</span>
+	<span class="k">return</span> <span class="nb">int</span><span class="p">(</span><span class="n">string</span><span class="p">.</span><span class="n">replace</span><span class="p">(</span><span class="s">','</span><span class="p">,</span><span class="s">''</span><span class="p">))</span>
+<span class="n">df_subset</span><span class="p">[</span><span class="s">'매출액'</span><span class="p">]</span> <span class="o">=</span> <span class="n">df_subset</span><span class="p">[</span><span class="s">'매출액'</span><span class="p">].</span><span class="nb">apply</span><span class="p">(</span><span class="n">toInt</span><span class="p">)</span>
+<span class="n">df_subset</span>
+</code></pre></div></div>
+
+<p><img src="https://user-images.githubusercontent.com/75519839/174546913-1dffcdac-7a11-4309-bba9-efb9334dd28a.png" alt="Untitled 22" /></p>
+
+        
+      </section>
+
+      <footer class="page__meta">
+        
+        
+  
+
+
+  
+
+  <p class="page__taxonomy">
+    <strong><i class="fas fa-fw fa-tags" aria-hidden="true"></i> 태그: </strong>
+    <span itemprop="keywords">
+    
+      <a href="/tags/#%EB%8D%B0%EC%9D%B4%ED%84%B0-%EB%B6%84%EC%84%9D" class="page__taxonomy-item p-category" rel="tag">데이터 분석</a><span class="sep">, </span>
+    
+      <a href="/tags/#%EB%A8%B8%EC%8B%A0%EB%9F%AC%EB%8B%9D" class="page__taxonomy-item p-category" rel="tag">머신러닝</a>
+    
+    </span>
+  </p>
+
+
+
+
+  
+
+
+  
+
+  <p class="page__taxonomy">
+    <strong><i class="fas fa-fw fa-folder-open" aria-hidden="true"></i> 카테고리: </strong>
+    <span itemprop="keywords">
+    
+      <a href="/categories/#%EB%8D%B0%EC%9D%B4%ED%84%B0-%EB%B6%84%EC%84%9D%EA%B3%BC-%EB%A8%B8%EC%8B%A0%EB%9F%AC%EB%8B%9D" class="page__taxonomy-item p-category" rel="tag">데이터 분석과 머신러닝</a>
+    
+    </span>
+  </p>
+
+
+        
+
+  <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> 업데이트:</strong> <time class="dt-published" datetime="2021-11-19">November 19, 2021</time></p>
+
+      </footer>
+
+      <section class="page__share">
+  
+    <h4 class="page__share-title">공유하기</h4>
+  
+
+  <a href="https://twitter.com/intent/tweet?text=%EB%8D%B0%EC%9D%B4%ED%84%B0+%EB%B6%84%EC%84%9D%EA%B3%BC+%EB%A8%B8%EC%8B%A0%EB%9F%AC%EB%8B%9D+-+Data+Manipulation%20http%3A%2F%2Flocalhost%3A4000%2F%25EB%258D%25B0%25EC%259D%25B4%25ED%2584%25B0%2520%25EB%25B6%2584%25EC%2584%259D%25EA%25B3%25BC%2520%25EB%25A8%25B8%25EC%258B%25A0%25EB%259F%25AC%25EB%258B%259D%2Fmanipulation%2F" class="btn btn--twitter" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="공유하기 Twitter"><i class="fab fa-fw fa-twitter" aria-hidden="true"></i><span> Twitter</span></a>
+
+  <a href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Flocalhost%3A4000%2F%25EB%258D%25B0%25EC%259D%25B4%25ED%2584%25B0%2520%25EB%25B6%2584%25EC%2584%259D%25EA%25B3%25BC%2520%25EB%25A8%25B8%25EC%258B%25A0%25EB%259F%25AC%25EB%258B%259D%2Fmanipulation%2F" class="btn btn--facebook" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="공유하기 Facebook"><i class="fab fa-fw fa-facebook" aria-hidden="true"></i><span> Facebook</span></a>
+
+  <a href="https://www.linkedin.com/shareArticle?mini=true&url=http%3A%2F%2Flocalhost%3A4000%2F%25EB%258D%25B0%25EC%259D%25B4%25ED%2584%25B0%2520%25EB%25B6%2584%25EC%2584%259D%25EA%25B3%25BC%2520%25EB%25A8%25B8%25EC%258B%25A0%25EB%259F%25AC%25EB%258B%259D%2Fmanipulation%2F" class="btn btn--linkedin" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="공유하기 LinkedIn"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i><span> LinkedIn</span></a>
+</section>
+
+
+      
+  <nav class="pagination">
+    
+      <a href="/%EB%8D%B0%EC%9D%B4%ED%84%B0%20%EB%B6%84%EC%84%9D%EA%B3%BC%20%EB%A8%B8%EC%8B%A0%EB%9F%AC%EB%8B%9D/feture_engineering/" class="pagination--pager" title="데이터 분석과 머신러닝 - Feature Engineering
+">이전</a>
+    
+    
+      <a href="/%EB%8D%B0%EC%9D%B4%ED%84%B0%20%EB%B6%84%EC%84%9D%EA%B3%BC%20%EB%A8%B8%EC%8B%A0%EB%9F%AC%EB%8B%9D/derivative/" class="pagination--pager" title="데이터 분석과 머신러닝 - Basic Derivative
+">다음</a>
+    
+  </nav>
+
+    </div>
+
+    
+  </article>
+
+  
+  
+    <div class="page__related">
+      <h2 class="page__related-title">참고</h2>
+      <div class="grid__wrapper">
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title no_toc" itemprop="headline">
+      
+        <a href="/%ED%95%98%EB%A3%A8/%EC%9B%80%EC%A7%81%EC%97%AC%EB%9D%BC/" rel="permalink">움직여라
+</a>
+      
+    </h2>
+    
+
+  <p class="page__meta">
+    
+
+    
+
+    
+      
+      
+
+      <span class="page__meta-readtime">
+        <i class="far fa-clock" aria-hidden="true"></i>
+        
+          1 분 소요
+        
+      </span>
+    
+  </p>
+
+
+    <p class="archive__item-excerpt" itemprop="description">아침을 이기면 하루를 이길 수 있다.
+</p>
+  </article>
+</div>
+
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title no_toc" itemprop="headline">
+      
+        <a href="/%ED%82%A4%EB%B3%B4%EB%93%9C/%EA%B8%B0%EA%B3%84%EC%8B%9D%ED%82%A4%EB%B3%B4%EB%93%9C%EB%9E%80/" rel="permalink">기계식 키보드란
+</a>
+      
+    </h2>
+    
+
+  <p class="page__meta">
+    
+
+    
+
+    
+      
+      
+
+      <span class="page__meta-readtime">
+        <i class="far fa-clock" aria-hidden="true"></i>
+        
+          최대 1 분 소요
+        
+      </span>
+    
+  </p>
+
+
+    <p class="archive__item-excerpt" itemprop="description">멤브레인 키보드의 차이
+</p>
+  </article>
+</div>
+
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title no_toc" itemprop="headline">
+      
+        <a href="/%EC%9D%BC%EC%83%81/%EB%85%B8%EC%85%98%EC%9D%98-%EA%B8%80%EB%93%A4%EC%9D%84-%EC%98%AE%EA%B8%B0%EB%A9%B0/" rel="permalink">노션의 글을 옮기며
+</a>
+      
+    </h2>
+    
+
+  <p class="page__meta">
+    
+
+    
+
+    
+      
+      
+
+      <span class="page__meta-readtime">
+        <i class="far fa-clock" aria-hidden="true"></i>
+        
+          1 분 소요
+        
+      </span>
+    
+  </p>
+
+
+    <p class="archive__item-excerpt" itemprop="description">바쁜 와중 이루어진 나의 블로그 이사
+</p>
+  </article>
+</div>
+
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title no_toc" itemprop="headline">
+      
+        <a href="/%ED%95%98%EB%A3%A8/%ED%95%98%EB%A3%A8%EC%9D%98-%EC%8B%9C%EC%9E%91/" rel="permalink">하루라는 금
+</a>
+      
+    </h2>
+    
+
+  <p class="page__meta">
+    
+
+    
+
+    
+      
+      
+
+      <span class="page__meta-readtime">
+        <i class="far fa-clock" aria-hidden="true"></i>
+        
+          최대 1 분 소요
+        
+      </span>
+    
+  </p>
+
+
+    <p class="archive__item-excerpt" itemprop="description">만약에 너한테 내일 사라지는 금을 준다면 어떻게 할래?
+</p>
+  </article>
+</div>
+
+        
+      </div>
+    </div>
+  
+  
+</div>
+
+    </div>
+
+    
+
+    <div id="footer" class="page__footer">
+      <footer>
+        <!-- start custom footer snippets -->
+
+<!-- end custom footer snippets -->
+        <div class="page__footer-follow">
+  <ul class="social-icons">
+    
+      <li><strong>팔로우:</strong></li>
+    
+
+    
+      
+        
+          <li><a href="godhin:sodlalwl13e@gmail.com" rel="nofollow noopener noreferrer"><i class="fas fa-fw fa-envelope-square" aria-hidden="true"></i> Email</a></li>
+        
+      
+        
+      
+        
+      
+        
+      
+        
+          <li><a href="https://github.com/godhin" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-github" aria-hidden="true"></i> GitHub</a></li>
+        
+      
+        
+          <li><a href="https://instagram.com/cmblir" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-instagram" aria-hidden="true"></i> Instagram</a></li>
+        
+      
+    
+
+    
+      <li><a href="/feed.xml"><i class="fas fa-fw fa-rss-square" aria-hidden="true"></i> 피드</a></li>
+    
+  </ul>
+</div>
+
+<div class="page__footer-copyright">&copy; 2022 Yoo Nicholas. Powered by <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.</div>
+
+      </footer>
+    </div>
+
+    
+  <script src="/assets/js/main.min.js"></script>
+
+
+
+
+
+
+
+
+
+
+  </body>
+</html>

@@ -5,6 +5,30 @@ var store = [{
         "url": "/about/",
         "teaser": null
       },{
+        "title": "데이터 분석과 머신러닝 - EDA",
+        "excerpt":"1.1 Data EDA 데이터셋 불러오기 데이터를 분석한다 데이터를 다룬다 데이터로부터 모델링을 한다 데이터셋을 불러오기 위한 단계: 1. Description을 통해 데이터셋에 대한 정보를 파악합니다. 행과 열의 수 열에 헤더가 있는지 (or “데이터 이름”이 있는지?) 결측 데이터 (Missing data)가 있는지 확인 원본의 형태를 확인하기 : 여러분이 기대하던 형태가 아닐 수도 있다. pandas.read_csv()를...","categories": ["데이터 분석과 머신러닝"],
+        "tags": ["데이터 분석","머신러닝"],
+        "url": "/%EB%8D%B0%EC%9D%B4%ED%84%B0%20%EB%B6%84%EC%84%9D%EA%B3%BC%20%EB%A8%B8%EC%8B%A0%EB%9F%AC%EB%8B%9D/eda/",
+        "teaser": null
+      },{
+        "title": "데이터 분석과 머신러닝 - Feature Engineering",
+        "excerpt":"1.2 Feature-Engineering Feature Engineering 도메인 지식과 창의성을 바탕으로, 데이터셋에 존재하는 Feature들을 재조합하여 새로운 Feature을 만드는 것 feature를 조합하여 (+) 새로운 feature을 만들어 낸 다음, 이를 분석에 사용할 수 있을 것이다. 실사용에서 사용하고 있는 것 더 좋은 퍼포먼스를 위하여 더 새롭고, 더 의미있는 패턴을 제공하는 것이 궁극적인 Feature Engineering의 목적이다. DataFrame...","categories": ["데이터 분석과 머신러닝"],
+        "tags": ["데이터 분석","머신러닝"],
+        "url": "/%EB%8D%B0%EC%9D%B4%ED%84%B0%20%EB%B6%84%EC%84%9D%EA%B3%BC%20%EB%A8%B8%EC%8B%A0%EB%9F%AC%EB%8B%9D/feture_engineering/",
+        "teaser": null
+      },{
+        "title": "데이터 분석과 머신러닝 - Data Manipulation",
+        "excerpt":"1.3 Data Manipulation pandas로 데이터 합치기 Concat (Concatenate) concat은 ‘더한다’ 혹은 ‘붙인다’라는 의미로 이해하면 된다. 예를 들어, 2개의 문자열을 + 연산자를 이용해 붙일 수 있다. &gt;&gt;&gt; '\"+\" 연산자를 ' + '사용하여' + '붙일 수 있다.' '\"+\" 연산자를 사용하여 붙일 수 있다. string + 다른 방법으로 문자열을 더할 수 있다. tostring...","categories": ["데이터 분석과 머신러닝"],
+        "tags": ["데이터 분석","머신러닝"],
+        "url": "/%EB%8D%B0%EC%9D%B4%ED%84%B0%20%EB%B6%84%EC%84%9D%EA%B3%BC%20%EB%A8%B8%EC%8B%A0%EB%9F%AC%EB%8B%9D/manipulation/",
+        "teaser": null
+      },{
+        "title": "데이터 분석과 머신러닝 - Basic Derivative",
+        "excerpt":"1.4 Basic Derivation 미분 우리가 수학시간에 많이 들어봤던 단어로 말 그대로 작게 나누는 것이다. X라는 값이 들어갔을 때 해당 값을 나누는 것이다. 미분을 파이썬으로 구현하는 방법은 대표적으로 2가지가 있다. 직접 구현하는 경우 def numerical_diff(f, x): delta = 0.001 # 매우 작은 값 return (f(x+delta) - f(x)) / delta Scipy 라이브러리를...","categories": ["데이터 분석과 머신러닝"],
+        "tags": ["데이터 분석","머신러닝"],
+        "url": "/%EB%8D%B0%EC%9D%B4%ED%84%B0%20%EB%B6%84%EC%84%9D%EA%B3%BC%20%EB%A8%B8%EC%8B%A0%EB%9F%AC%EB%8B%9D/derivative/",
+        "teaser": null
+      },{
         "title": "밑바닥부터 시작하는 딥러닝",
         "excerpt":"Deep learning from the bottom up (밑바닥부터 시작하는 딥러닝) CH1   Deep Learning for Scratch   사이토 고키 지음 / 齋藤康毅／著      Deep Learning 1  ","categories": ["밑바닥부터 시작하는 딥러닝"],
         "tags": ["밑바닥부터 시작하는 딥러닝","딥러닝"],
