@@ -9,8 +9,8 @@
   <head>
     <meta charset="utf-8">
 
-<!-- begin _includes/seo.html --><title>[파이썬][백준 10102번] 개표 - 성장형 개발자 블로그</title>
-<meta name="description" content="백준 10102번 개표 문제 풀이">
+<!-- begin _includes/seo.html --><title>[파이썬][백준 10886번] 0 = not cute / 1 = cute - 성장형 개발자 블로그</title>
+<meta name="description" content="백준 10886번 0 = not cute / 1 = cute 문제 풀이">
 
 
   <meta name="author" content="You Nicholas">
@@ -22,11 +22,11 @@
 <meta property="og:type" content="article">
 <meta property="og:locale" content="ko">
 <meta property="og:site_name" content="성장형 개발자 블로그">
-<meta property="og:title" content="[파이썬][백준 10102번] 개표">
-<meta property="og:url" content="http://localhost:4000/%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8/10102/">
+<meta property="og:title" content="[파이썬][백준 10886번] 0 = not cute / 1 = cute">
+<meta property="og:url" content="http://localhost:4000/%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8/10886/">
 
 
-  <meta property="og:description" content="백준 10102번 개표 문제 풀이">
+  <meta property="og:description" content="백준 10886번 0 = not cute / 1 = cute 문제 풀이">
 
 
 
@@ -47,7 +47,7 @@
   
 
 
-<link rel="canonical" href="http://localhost:4000/%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8/10102/">
+<link rel="canonical" href="http://localhost:4000/%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8/10886/">
 
 
 
@@ -268,8 +268,8 @@
 
 
   <article class="page h-entry" itemscope itemtype="https://schema.org/CreativeWork">
-    <meta itemprop="headline" content="[파이썬][백준 10102번] 개표">
-    <meta itemprop="description" content="백준 10102번 개표 문제 풀이">
+    <meta itemprop="headline" content="[파이썬][백준 10886번] 0 = not cute / 1 = cute">
+    <meta itemprop="description" content="백준 10886번 0 = not cute / 1 = cute 문제 풀이">
     <meta itemprop="datePublished" content="2022-05-15T00:00:00+09:00">
     <meta itemprop="dateModified" content="2022-05-15T00:00:00+09:00">
 
@@ -277,7 +277,7 @@
       
         <header>
           <h1 id="page-title" class="page__title p-name" itemprop="headline">
-            <a href="http://localhost:4000/%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8/10102/" class="u-url" itemprop="url">[파이썬][백준 10102번] 개표
+            <a href="http://localhost:4000/%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8/10886/" class="u-url" itemprop="url">[파이썬][백준 10886번] 0 = not cute / 1 = cute
 </a>
           </h1>
           
@@ -316,9 +316,9 @@
         
         <h2 id="1-문제">1. 문제</h2>
 
-<h1 id="bronze-ii-개표---10102">[Bronze II] 개표 - 10102</h1>
+<h1 id="bronze-iii-0--not-cute--1--cute---10886">[Bronze III] 0 = not cute / 1 = cute - 10886</h1>
 
-<p><a href="https://www.acmicpc.net/problem/10102">문제 링크</a></p>
+<p><a href="https://www.acmicpc.net/problem/10886">문제 링크</a></p>
 
 <h3 id="성능-요약">성능 요약</h3>
 
@@ -326,21 +326,22 @@
 
 <h3 id="분류">분류</h3>
 
-<p>문자열(string)</p>
+<p>사칙연산(arithmetic), 구현(implementation), 수학(math)</p>
 
 <blockquote>
   <p>출처: 백준, https://https://www.acmicpc.net/</p>
 </blockquote>
 
 <h2 id="2-해결방법-시간복잡도">2. 해결방법 시간복잡도</h2>
+
 <ol>
-  <li>단순 코딩</li>
+  <li>단순 코딩 O(N)</li>
 </ol>
 
 <h2 id="3-문제-해결-및-코드">3. 문제 해결 및 코드</h2>
 <hr />
 
-<script src="https://gist.github.com/godhin/7617a222cc3148ebbf01b981eb1b0ab7.js"></script>
+<script src="https://gist.github.com/godhin/edcb28304cbc628b71e348d6db27a8e1.js"></script>
 
 <ul>
   <li>
@@ -351,15 +352,15 @@
 <h2 id="4-알고리즘-및-해설">4. 알고리즘 및 해설</h2>
 
 <ol>
-  <li>받아야 될 값은 T로 받는다.</li>
-  <li>AB라는 값을 문자열로 받고 해당 문자열에서 찾고자 하는 값을 count()함수를 이용하여 찾는다.</li>
-  <li>if문을 통해 경우에 따라 원하는 값을 출력한다.</li>
+  <li><em>준희의 귀여움을 판단하는 문제로 굉장히 중요하다.</em></li>
+  <li>반복문을 통해 해당 결과값에 문자열을 삽입한다.</li>
+  <li>이후 count() 함수를 통해 리스트내의 0과 1의 개수를 if문을 통해 경우에 따라 출력한다.</li>
 </ol>
 
 <h2 id="5-짚고-넘어가기">5. 짚고 넘어가기</h2>
 
 <ol>
-  <li>문자열에서의 count()함수는 우리가 찾고자 하는 문자값을 쉽게 찾을 수 있다.</li>
+  <li><strong>count()</strong> 함수를 통해 리스트의 문자열을 세는 것이 중요하다.</li>
 </ol>
 
         
@@ -419,22 +420,22 @@
     <h4 class="page__share-title">공유하기</h4>
   
 
-  <a href="https://twitter.com/intent/tweet?text=%5B%ED%8C%8C%EC%9D%B4%EC%8D%AC%5D%5B%EB%B0%B1%EC%A4%80+10102%EB%B2%88%5D+%EA%B0%9C%ED%91%9C%20http%3A%2F%2Flocalhost%3A4000%2F%25EC%25BD%2594%25EB%2594%25A9%25ED%2585%258C%25EC%258A%25A4%25ED%258A%25B8%2F10102%2F" class="btn btn--twitter" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="공유하기 Twitter"><i class="fab fa-fw fa-twitter" aria-hidden="true"></i><span> Twitter</span></a>
+  <a href="https://twitter.com/intent/tweet?text=%5B%ED%8C%8C%EC%9D%B4%EC%8D%AC%5D%5B%EB%B0%B1%EC%A4%80+10886%EB%B2%88%5D+0+%3D+not+cute+%2F+1+%3D+cute%20http%3A%2F%2Flocalhost%3A4000%2F%25EC%25BD%2594%25EB%2594%25A9%25ED%2585%258C%25EC%258A%25A4%25ED%258A%25B8%2F10886%2F" class="btn btn--twitter" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="공유하기 Twitter"><i class="fab fa-fw fa-twitter" aria-hidden="true"></i><span> Twitter</span></a>
 
-  <a href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Flocalhost%3A4000%2F%25EC%25BD%2594%25EB%2594%25A9%25ED%2585%258C%25EC%258A%25A4%25ED%258A%25B8%2F10102%2F" class="btn btn--facebook" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="공유하기 Facebook"><i class="fab fa-fw fa-facebook" aria-hidden="true"></i><span> Facebook</span></a>
+  <a href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Flocalhost%3A4000%2F%25EC%25BD%2594%25EB%2594%25A9%25ED%2585%258C%25EC%258A%25A4%25ED%258A%25B8%2F10886%2F" class="btn btn--facebook" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="공유하기 Facebook"><i class="fab fa-fw fa-facebook" aria-hidden="true"></i><span> Facebook</span></a>
 
-  <a href="https://www.linkedin.com/shareArticle?mini=true&url=http%3A%2F%2Flocalhost%3A4000%2F%25EC%25BD%2594%25EB%2594%25A9%25ED%2585%258C%25EC%258A%25A4%25ED%258A%25B8%2F10102%2F" class="btn btn--linkedin" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="공유하기 LinkedIn"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i><span> LinkedIn</span></a>
+  <a href="https://www.linkedin.com/shareArticle?mini=true&url=http%3A%2F%2Flocalhost%3A4000%2F%25EC%25BD%2594%25EB%2594%25A9%25ED%2585%258C%25EC%258A%25A4%25ED%258A%25B8%2F10886%2F" class="btn btn--linkedin" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="공유하기 LinkedIn"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i><span> LinkedIn</span></a>
 </section>
 
 
       
   <nav class="pagination">
     
-      <a href="/%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8/10886/" class="pagination--pager" title="[파이썬][백준 10886번] 0 = not cute / 1 = cute
+      <a href="/%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8/10214/" class="pagination--pager" title="[파이썬][백준 10214번] Baseball
 ">이전</a>
     
     
-      <a href="/%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8/10156/" class="pagination--pager" title="[파이썬][백준 10103번] 과제
+      <a href="/%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8/10102/" class="pagination--pager" title="[파이썬][백준 10102번] 개표
 ">다음</a>
     
   </nav>
