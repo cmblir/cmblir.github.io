@@ -418,4 +418,22 @@ var store = [{
         "tags": ["알고리즘","라이브코딩","코테","프로그래머스","Level_1"],
         "url": "/%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8/1845/",
         "teaser": null
+      },{
+        "title": "[파이썬][Codility_] BinaryGap",
+        "excerpt":"1. 문제 A binary gap within a positive integer N is any maximal sequence of consecutive zeros that is surrounded by ones at both ends in the binary representation of N. For example, number 9 has binary representation 1001 and contains a binary gap of length 2. The number 529...","categories": ["코딩테스트"],
+        "tags": ["알고리즘","라이브코딩","코테","Codility","Lessons"],
+        "url": "/%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8/BinaryGap/",
+        "teaser": null
+      },{
+        "title": "[파이썬][Codility_] CyclicRotation",
+        "excerpt":"1. 문제 An array A consisting of N integers is given. Rotation of the array means that each element is shifted right by one index, and the last element of the array is moved to the first place. For example, the rotation of array A = [3, 8, 9, 7,...","categories": ["코딩테스트"],
+        "tags": ["알고리즘","라이브코딩","코테","Codility","Lessons"],
+        "url": "/%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8/CyclicRotation/",
+        "teaser": null
+      },{
+        "title": "[파이썬][Codility_] FuryRoad",
+        "excerpt":"0. 챌린지 소개 1. 문제 You have to be at your work as soon as possible. The road on your route to work may consist of two types of surface: asphalt or sand. To simplify the description, it will be denoted by a string R consisting only of the letters:...","categories": ["코딩테스트"],
+        "tags": ["알고리즘","라이브코딩","코테","Codility Challenge"],
+        "url": "/%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8/FuryRoad/",
+        "teaser": null
       }]

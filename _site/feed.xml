@@ -1,4 +1,216 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2022-06-22T17:18:38+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">성장형 개발자 블로그</title><subtitle>An amazing website.</subtitle><author><name>You Nicholas</name></author><entry><title type="html">[파이썬][프로그래머스] 폰켓몬</title><link href="http://localhost:4000/%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8/1845/" rel="alternate" type="text/html" title="[파이썬][프로그래머스] 폰켓몬" /><published>2022-06-21T00:00:00+09:00</published><updated>2022-06-21T00:00:00+09:00</updated><id>http://localhost:4000/%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8/1845</id><content type="html" xml:base="http://localhost:4000/%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8/1845/">&lt;h2 id=&quot;1-문제&quot;&gt;1. 문제&lt;/h2&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2022-06-23T03:35:17+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">성장형 개발자 블로그</title><subtitle>An amazing website.</subtitle><author><name>You Nicholas</name></author><entry><title type="html">[파이썬][Codility_] FuryRoad</title><link href="http://localhost:4000/%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8/FuryRoad/" rel="alternate" type="text/html" title="[파이썬][Codility_] FuryRoad" /><published>2022-06-23T00:00:00+09:00</published><updated>2022-06-23T00:00:00+09:00</updated><id>http://localhost:4000/%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8/FuryRoad</id><content type="html" xml:base="http://localhost:4000/%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8/FuryRoad/">&lt;h2 id=&quot;0-챌린지-소개&quot;&gt;0. 챌린지 소개&lt;/h2&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://user-images.githubusercontent.com/75519839/175105370-bb96a64a-f99d-4138-8810-d788d154689d.png&quot; alt=&quot;image&quot; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;1-문제&quot;&gt;1. 문제&lt;/h2&gt;
+
+&lt;p&gt;You have to be at your work as soon as possible. The road on your route to work may consist of two types of surface: asphalt or sand. To simplify the description, it will be denoted by a string R consisting only of the letters: “A” for an asphalt segment and “S” for a sand segment. All segments represent the same distance. For example, R = “SAAS” describes a road comprising of sand, asphalt, asphalt and sand segments.&lt;/p&gt;
+
+&lt;p&gt;When you go on foot, you need 20 minutes to pass through an asphalt segment and 30 minutes through a sand segment. You also have an electric scooter, which needs 5 minutes to pass through an asphalt segment and 40 minutes through a sand segment.&lt;/p&gt;
+
+&lt;p&gt;You start your journey on the scooter, but at any point you can get off the scooter and go on foot for the rest of the journey. What is the shortest time in which you can get to work?&lt;/p&gt;
+
+&lt;p&gt;Write a function:&lt;/p&gt;
+
+&lt;p&gt;def solution(R)&lt;/p&gt;
+
+&lt;p&gt;that, given a string R of length N, representing the road to work, returns the minimum time that you need to get to work.&lt;/p&gt;
+
+&lt;p&gt;Examples:&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;
+    &lt;p&gt;Given R = “ASAASS”, your function should return 115. You ride on the scooter over the first four segments (“ASAA”) in 5 + 40 + 5 + 5 = 55 and then you go on foot through “SS” in 30 + 30 = 60. Altogether, your journey will take 55 + 60 = 115.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Given R = “SSA”, the function should return 80. You do not ride on the scooter at all, and you go on foot in 30 + 30 + 20 = 80.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Given R = “SSSSAAA”, the function should return 175. You ride on the scooter all the time in 40 + 40 + 40 + 40 + 5 + 5 + 5 = 175.&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;Write an efficient algorithm for the following assumptions:&lt;/p&gt;
+
+&lt;p&gt;N is an integer within the range [1..100,000];
+string R consists only of the characters “S” and/or “A”.
+Copyright 2009–2022 by Codility Limited. All Rights Reserved. Unauthorized copying, publication or disclosure prohibited.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;출처: Codility_, https://app.codility.com/programmers/&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h2 id=&quot;2-해결방법-시간복잡도&quot;&gt;2. 해결방법 시간복잡도&lt;/h2&gt;
+&lt;ol&gt;
+  &lt;li&gt;단순 코딩 O(N)&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h2 id=&quot;3-문제-해결-및-코드&quot;&gt;3. 문제 해결 및 코드&lt;/h2&gt;
+&lt;hr /&gt;
+
+&lt;script src=&quot;https://gist.github.com/godhin/626d86140fbd84e219dd45731e965877.js&quot;&gt;&lt;/script&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;h2 id=&quot;주석을-참고하면서-이해를-돕습니다&quot;&gt;주석을 참고하면서 이해를 돕습니다.&lt;/h2&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;4-알고리즘-및-해설&quot;&gt;4. 알고리즘 및 해설&lt;/h2&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;문제의 요점은 2가지 이동수단을 통해 움직이는 것이다.
+    &lt;ul&gt;
+      &lt;li&gt;도보로 이동하는 경우
+        &lt;ul&gt;
+          &lt;li&gt;아스팔트 20분&lt;/li&gt;
+          &lt;li&gt;모래 30분&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;스쿠터로 이동하는 경우
+        &lt;ul&gt;
+          &lt;li&gt;아스팔트 5분&lt;/li&gt;
+          &lt;li&gt;모래 40분&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;스쿠터의 경우 중간에 내리면 더 이상 사용할 수 없다는 점을 이용해서 도보로만 가는 경우를 만들었다.
+    &lt;ul&gt;
+      &lt;li&gt;이때 아스팔트 A와 모래 S를 숫자로 변환해서 리스트로 넣었다. -&amp;gt; 이는 도보로만 이동한 경우의 총합 시간을 구하기 위해서이다.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;이후 반복문을 통해 스쿠터로 지나가는 모든 경우의 총합 시간을 리스트에 넣는다.
+    &lt;ul&gt;
+      &lt;li&gt;스쿠터가 해당 위치를 지나갈 때마다 스쿠터로 이동하는 시간으로 변경해준다.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;그 중 가장 적게 걸린 시간을 출력한다.&lt;/li&gt;
+&lt;/ol&gt;</content><author><name>You Nicholas</name></author><category term="코딩테스트" /><category term="알고리즘" /><category term="라이브코딩" /><category term="코테" /><category term="Codility Challenge" /><summary type="html">Codility FuryRoad 문제 풀이</summary></entry><entry><title type="html">[파이썬][Codility_] CyclicRotation</title><link href="http://localhost:4000/%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8/CyclicRotation/" rel="alternate" type="text/html" title="[파이썬][Codility_] CyclicRotation" /><published>2022-06-23T00:00:00+09:00</published><updated>2022-06-23T00:00:00+09:00</updated><id>http://localhost:4000/%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8/CyclicRotation</id><content type="html" xml:base="http://localhost:4000/%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8/CyclicRotation/">&lt;h2 id=&quot;1-문제&quot;&gt;1. 문제&lt;/h2&gt;
+
+&lt;p&gt;An array A consisting of N integers is given. Rotation of the array means that each element is shifted right by one index, and the last element of the array is moved to the first place. For example, the rotation of array A = [3, 8, 9, 7, 6] is [6, 3, 8, 9, 7] (elements are shifted right by one index and 6 is moved to the first place).&lt;/p&gt;
+
+&lt;p&gt;The goal is to rotate array A K times; that is, each element of A will be shifted to the right K times.&lt;/p&gt;
+
+&lt;p&gt;Write a function:&lt;/p&gt;
+
+&lt;p&gt;def solution(A, K)&lt;/p&gt;
+
+&lt;p&gt;that, given an array A consisting of N integers and an integer K, returns the array A rotated K times.&lt;/p&gt;
+
+&lt;p&gt;For example, given&lt;/p&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;A = [3, 8, 9, 7, 6]
+K = 3 the function should return [9, 7, 6, 3, 8]. Three rotations were made:
+
+[3, 8, 9, 7, 6] -&amp;gt; [6, 3, 8, 9, 7]
+[6, 3, 8, 9, 7] -&amp;gt; [7, 6, 3, 8, 9]
+[7, 6, 3, 8, 9] -&amp;gt; [9, 7, 6, 3, 8] For another example, given
+
+A = [0, 0, 0]
+K = 1 the function should return [0, 0, 0]
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Given&lt;/p&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;A = [1, 2, 3, 4]
+K = 4 the function should return [1, 2, 3, 4]
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Assume that:&lt;/p&gt;
+
+&lt;p&gt;N and K are integers within the range [0..100];
+each element of array A is an integer within the range [−1,000..1,000].
+In your solution, focus on correctness. The performance of your solution will not be the focus of the assessment.&lt;/p&gt;
+
+&lt;p&gt;Copyright 2009–2022 by Codility Limited. All Rights Reserved. Unauthorized copying, publication or disclosure prohibited.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;출처: Codility_, https://app.codility.com/programmers/&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h2 id=&quot;2-해결방법-시간복잡도&quot;&gt;2. 해결방법 시간복잡도&lt;/h2&gt;
+&lt;ol&gt;
+  &lt;li&gt;덱(deque) O(1)&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h2 id=&quot;3-문제-해결-및-코드&quot;&gt;3. 문제 해결 및 코드&lt;/h2&gt;
+&lt;hr /&gt;
+
+&lt;script src=&quot;https://gist.github.com/godhin/ef883c5fa2f2e33ef23bba0c5606a8ae.js&quot;&gt;&lt;/script&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;h2 id=&quot;주석을-참고하면서-이해를-돕습니다&quot;&gt;주석을 참고하면서 이해를 돕습니다.&lt;/h2&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;4-알고리즘-및-해설&quot;&gt;4. 알고리즘 및 해설&lt;/h2&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;해당 문제의 경우 리스트내 값을 뒤에서 앞으로 바꿔오는 게 핵심이다.&lt;/li&gt;
+  &lt;li&gt;deque를 통해 제일 뒤에 값을 앞에 만들어주고, 제일 뒤에 값을 빼는 형식으로 구현해봤다.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h2 id=&quot;5-파이썬-deque-구현&quot;&gt;5. 파이썬 deque 구현&lt;/h2&gt;
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kn&quot;&gt;from&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;collections&lt;/span&gt; &lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;deque&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;# 덱 라이브러리
+&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;solution&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;N&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;N&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;deque&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;N&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;# 덱 형태로 변환
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name>You Nicholas</name></author><category term="코딩테스트" /><category term="알고리즘" /><category term="라이브코딩" /><category term="코테" /><category term="Codility" /><category term="Lessons" /><summary type="html">Codility CyclicRotation 문제 풀이</summary></entry><entry><title type="html">[파이썬][Codility_] BinaryGap</title><link href="http://localhost:4000/%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8/BinaryGap/" rel="alternate" type="text/html" title="[파이썬][Codility_] BinaryGap" /><published>2022-06-22T00:00:00+09:00</published><updated>2022-06-22T00:00:00+09:00</updated><id>http://localhost:4000/%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8/BinaryGap</id><content type="html" xml:base="http://localhost:4000/%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8/BinaryGap/">&lt;h2 id=&quot;1-문제&quot;&gt;1. 문제&lt;/h2&gt;
+
+&lt;p&gt;A binary gap within a positive integer N is any maximal sequence of consecutive zeros that is surrounded by ones at both ends in the binary representation of N.&lt;/p&gt;
+
+&lt;p&gt;For example, number 9 has binary representation 1001 and contains a binary gap of length 2. The number 529 has binary representation 1000010001 and contains two binary gaps: one of length 4 and one of length 3. The number 20 has binary representation 10100 and contains one binary gap of length 1. The number 15 has binary representation 1111 and has no binary gaps. The number 32 has binary representation 100000 and has no binary gaps.&lt;/p&gt;
+
+&lt;p&gt;Write a function:&lt;/p&gt;
+
+&lt;p&gt;def solution(N)&lt;/p&gt;
+
+&lt;p&gt;that, given a positive integer N, returns the length of its longest binary gap. The function should return 0 if N doesn’t contain a binary gap.&lt;/p&gt;
+
+&lt;p&gt;For example, given N = 1041 the function should return 5, because N has binary representation 10000010001 and so its longest binary gap is of length 5. Given N = 32 the function should return 0, because N has binary representation ‘100000’ and thus no binary gaps.&lt;/p&gt;
+
+&lt;p&gt;Write an efficient algorithm for the following assumptions:&lt;/p&gt;
+
+&lt;p&gt;N is an integer within the range [1..2,147,483,647].
+Copyright 2009–2022 by Codility Limited. All Rights Reserved. Unauthorized copying, publication or disclosure prohibited.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;출처: Codility_, https://app.codility.com/programmers/&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h2 id=&quot;2-해결방법-시간복잡도&quot;&gt;2. 해결방법 시간복잡도&lt;/h2&gt;
+&lt;ol&gt;
+  &lt;li&gt;단순 코딩 O(1)&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h2 id=&quot;3-문제-해결-및-코드&quot;&gt;3. 문제 해결 및 코드&lt;/h2&gt;
+&lt;hr /&gt;
+
+&lt;script src=&quot;https://gist.github.com/godhin/334cd7a9c941c122e1b003be1f21228b.js&quot;&gt;&lt;/script&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;h2 id=&quot;주석을-참고하면서-이해를-돕습니다&quot;&gt;주석을 참고하면서 이해를 돕습니다.&lt;/h2&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;4-알고리즘-및-해설&quot;&gt;4. 알고리즘 및 해설&lt;/h2&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;bin() 함수를 통해 해당 문자열을 이진수로 바꿔준다.&lt;/li&gt;
+  &lt;li&gt;strip()으로 좌우측 0과 1을 제외해준다.
+    &lt;ul&gt;
+      &lt;li&gt;해당 문제에서 말하는 바이너리 갭은 110011처럼 숫자 사이에 낀 것을 뜻한다.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;이후 반복되는 수중 가장 길이가 긴 문자열의 길이를 출력한다.&lt;/li&gt;
+&lt;/ol&gt;</content><author><name>You Nicholas</name></author><category term="코딩테스트" /><category term="알고리즘" /><category term="라이브코딩" /><category term="코테" /><category term="Codility" /><category term="Lessons" /><summary type="html">Codility BinaryGap 문제 풀이</summary></entry><entry><title type="html">애어른</title><link href="http://localhost:4000/%ED%95%98%EB%A3%A8/%EC%95%A0%EC%96%B4%EB%A5%B8/" rel="alternate" type="text/html" title="애어른" /><published>2022-06-21T00:00:00+09:00</published><updated>2022-06-21T00:00:00+09:00</updated><id>http://localhost:4000/%ED%95%98%EB%A3%A8/%EC%95%A0%EC%96%B4%EB%A5%B8</id><content type="html" xml:base="http://localhost:4000/%ED%95%98%EB%A3%A8/%EC%95%A0%EC%96%B4%EB%A5%B8/">&lt;h2 id=&quot;어제는-누구보다-빠르게-달려갔고-오늘은-누구보다-느리게-걸어간다&quot;&gt;어제는 누구보다 빠르게 달려갔고, 오늘은 누구보다 느리게 걸어간다.&lt;/h2&gt;
+&lt;p&gt;&lt;br /&gt;어려서부터 독립성도 강하고 모든지 혼자 해결하려고 했다. 부모님 말로는 내가 애기때부터 숫자에 관심이 많아 산수가 빨랐다고 했다. 물건을 살때도 “엄마 이게 저거보다 양도 많은데 훨씬 싸” 하면서 비교하고 거스름돈도 착착 잘 챙겨와서 커서 걱정이 없을거라고 하셨다. 그래서 그런가 걱정을 안하시고 커서 남들보다 뭐든지 앞서가고 빠르게 행동했고, 철도 금방 들었던 것 같다. 주변에서는 마치 어른처럼 행동하고 뭐든지 책임감있게 하려는 모습이 내가 ‘애어른’같다고 하며 하는 행동이 정말 기특하다고 하셨다.&lt;/p&gt;
+
+&lt;h2 id=&quot;내일은-달릴-수-있길-바라며&quot;&gt;내일은 달릴 수 있길 바라며&lt;/h2&gt;
+&lt;p&gt;&lt;br /&gt;
+그렇게 자란 내 모습은 아직도 ‘애어른’같다. 책임감이 강하던 그 아이는 이제 어디에도 없는 듯 보인다. 나는 꿈도 있고, 목표가 있는데 그걸 이뤄야하는 책임또한 있다. 남들보다 앞서 나가던 아이는 24살인 지금 그 누구보다 뒤처지고 있다. 그렇게 장학금받으며 잘 다니던 학교도 그만두고 수도권으로 상경한 지 1년째 나는 아직 정체중인 것만 같다. 누구는 꿈을 향해 열정적으로 달려가고 누군가는 오늘을 살기위해 최선을 다한다. 그리고 내일을 바라보며 오늘을 준비한다. 그런데 나는 어제 누구보다 빨리 달렸고 오늘은 멈춰있는 것만 같다.&lt;/p&gt;</content><author><name>You Nicholas</name></author><category term="하루" /><category term="유통기한 하루" /><category term="성장" /><category term="습관" /><summary type="html">하는 행동이 어른같은 아이, 하는 행동이 애같은 어른</summary></entry><entry><title type="html">[파이썬][프로그래머스] 폰켓몬</title><link href="http://localhost:4000/%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8/1845/" rel="alternate" type="text/html" title="[파이썬][프로그래머스] 폰켓몬" /><published>2022-06-21T00:00:00+09:00</published><updated>2022-06-21T00:00:00+09:00</updated><id>http://localhost:4000/%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8/1845</id><content type="html" xml:base="http://localhost:4000/%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8/1845/">&lt;h2 id=&quot;1-문제&quot;&gt;1. 문제&lt;/h2&gt;
 
 &lt;h1 id=&quot;level-1-폰켓몬---1845&quot;&gt;[level 1] 폰켓몬 - 1845&lt;/h1&gt;
 
@@ -118,12 +330,7 @@
       &lt;li&gt;총 3번의 반복을 하는 동안 가질 수 있는 폰켓몬 종류 번호의 개수보다 크다면 + 1&lt;/li&gt;
     &lt;/ul&gt;
   &lt;/li&gt;
-&lt;/ol&gt;</content><author><name>You Nicholas</name></author><category term="코딩테스트" /><category term="알고리즘" /><category term="라이브코딩" /><category term="코테" /><category term="프로그래머스" /><category term="Level_1" /><summary type="html">프로그래머스 폰켓몬 문제 풀이</summary></entry><entry><title type="html">애어른</title><link href="http://localhost:4000/%ED%95%98%EB%A3%A8/%EC%95%A0%EC%96%B4%EB%A5%B8/" rel="alternate" type="text/html" title="애어른" /><published>2022-06-21T00:00:00+09:00</published><updated>2022-06-21T00:00:00+09:00</updated><id>http://localhost:4000/%ED%95%98%EB%A3%A8/%EC%95%A0%EC%96%B4%EB%A5%B8</id><content type="html" xml:base="http://localhost:4000/%ED%95%98%EB%A3%A8/%EC%95%A0%EC%96%B4%EB%A5%B8/">&lt;h2 id=&quot;어제는-누구보다-빠르게-달려갔고-오늘은-누구보다-느리게-걸어간다&quot;&gt;어제는 누구보다 빠르게 달려갔고, 오늘은 누구보다 느리게 걸어간다.&lt;/h2&gt;
-&lt;p&gt;&lt;br /&gt;어려서부터 독립성도 강하고 모든지 혼자 해결하려고 했다. 부모님 말로는 내가 애기때부터 숫자에 관심이 많아 산수가 빨랐다고 했다. 물건을 살때도 “엄마 이게 저거보다 양도 많은데 훨씬 싸” 하면서 비교하고 거스름돈도 착착 잘 챙겨와서 커서 걱정이 없을거라고 하셨다. 그래서 그런가 걱정을 안하시고 커서 남들보다 뭐든지 앞서가고 빠르게 행동했고, 철도 금방 들었던 것 같다. 주변에서는 마치 어른처럼 행동하고 뭐든지 책임감있게 하려는 모습이 내가 ‘애어른’같다고 하며 하는 행동이 정말 기특하다고 하셨다.&lt;/p&gt;
-
-&lt;h2 id=&quot;내일은-달릴-수-있길-바라며&quot;&gt;내일은 달릴 수 있길 바라며&lt;/h2&gt;
-&lt;p&gt;&lt;br /&gt;
-그렇게 자란 내 모습은 아직도 ‘애어른’같다. 책임감이 강하던 그 아이는 이제 어디에도 없는 듯 보인다. 나는 꿈도 있고, 목표가 있는데 그걸 이뤄야하는 책임또한 있다. 남들보다 앞서 나가던 아이는 24살인 지금 그 누구보다 뒤처지고 있다. 그렇게 장학금받으며 잘 다니던 학교도 그만두고 수도권으로 상경한 지 1년째 나는 아직 정체중인 것만 같다. 누구는 꿈을 향해 열정적으로 달려가고 누군가는 오늘을 살기위해 최선을 다한다. 그리고 내일을 바라보며 오늘을 준비한다. 그런데 나는 어제 누구보다 빨리 달렸고 오늘은 멈춰있는 것만 같다.&lt;/p&gt;</content><author><name>You Nicholas</name></author><category term="하루" /><category term="유통기한 하루" /><category term="성장" /><category term="습관" /><summary type="html">하는 행동이 어른같은 아이, 하는 행동이 애같은 어른</summary></entry><entry><title type="html">움직여라</title><link href="http://localhost:4000/%ED%95%98%EB%A3%A8/%EC%9B%80%EC%A7%81%EC%97%AC%EB%9D%BC/" rel="alternate" type="text/html" title="움직여라" /><published>2022-06-20T00:00:00+09:00</published><updated>2022-06-20T00:00:00+09:00</updated><id>http://localhost:4000/%ED%95%98%EB%A3%A8/%EC%9B%80%EC%A7%81%EC%97%AC%EB%9D%BC</id><content type="html" xml:base="http://localhost:4000/%ED%95%98%EB%A3%A8/%EC%9B%80%EC%A7%81%EC%97%AC%EB%9D%BC/">&lt;h2 id=&quot;따뜻한-햇살-아래-포근한-침대&quot;&gt;따뜻한 햇살 아래 포근한 침대&lt;/h2&gt;
+&lt;/ol&gt;</content><author><name>You Nicholas</name></author><category term="코딩테스트" /><category term="알고리즘" /><category term="라이브코딩" /><category term="코테" /><category term="프로그래머스" /><category term="Level_1" /><summary type="html">프로그래머스 폰켓몬 문제 풀이</summary></entry><entry><title type="html">움직여라</title><link href="http://localhost:4000/%ED%95%98%EB%A3%A8/%EC%9B%80%EC%A7%81%EC%97%AC%EB%9D%BC/" rel="alternate" type="text/html" title="움직여라" /><published>2022-06-20T00:00:00+09:00</published><updated>2022-06-20T00:00:00+09:00</updated><id>http://localhost:4000/%ED%95%98%EB%A3%A8/%EC%9B%80%EC%A7%81%EC%97%AC%EB%9D%BC</id><content type="html" xml:base="http://localhost:4000/%ED%95%98%EB%A3%A8/%EC%9B%80%EC%A7%81%EC%97%AC%EB%9D%BC/">&lt;h2 id=&quot;따뜻한-햇살-아래-포근한-침대&quot;&gt;따뜻한 햇살 아래 포근한 침대&lt;/h2&gt;
 
 &lt;p&gt;요새 너무 게을러버린 나는 9시에 일어난다. 그리고 오늘 해야할 일을 간략하게 적고 하다가 금방 낮잠에 들고 만다. 따뜻한 햇살이랑 누구도 건들지 않는 평일의 침대는 그 누구도 뿌리치기 힘든 유혹이다. 그런 유혹에 넘어가길 벌써 며칠째이다. 아침을 바꾸고 싶다는 마음에 동기부여영상을 보고 짐퀵이라는 브레인 코치의 말을 들으며 적어봤다.&lt;/p&gt;
 
@@ -307,342 +514,4 @@
 
 &lt;ul&gt;
   &lt;li&gt;아직도 첫 면접이 생각나고 ‘왜 그때 이런 대답을 하지 못했을까?’ 라는 생각이 뇌리에서 쉽사리 떠나지 않는 것 같다. 그걸 만회하기 위해 그 전보다 더 노력해야한다. 더 부단해야한다. 첫잔이 생각나지 않게끔&lt;/li&gt;
-&lt;/ul&gt;</content><author><name>You Nicholas</name></author><category term="일상" /><category term="일상" /><summary type="html">하지만 원래 소나기는 갑작기 오는 비</summary></entry><entry><title type="html">탐욕 알고리즘 복습하기</title><link href="http://localhost:4000/%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98/%ED%83%90%EC%9A%95-%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98-%EB%B3%B5%EC%8A%B5%ED%95%98%EA%B8%B0/" rel="alternate" type="text/html" title="탐욕 알고리즘 복습하기" /><published>2022-06-14T00:00:00+09:00</published><updated>2022-06-14T00:00:00+09:00</updated><id>http://localhost:4000/%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98/%ED%83%90%EC%9A%95%20%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98%20%EB%B3%B5%EC%8A%B5%ED%95%98%EA%B8%B0</id><content type="html" xml:base="http://localhost:4000/%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98/%ED%83%90%EC%9A%95-%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98-%EB%B3%B5%EC%8A%B5%ED%95%98%EA%B8%B0/">&lt;h2 id=&quot;1-문제&quot;&gt;1. 문제&lt;/h2&gt;
-&lt;p&gt;탐욕 알고리즘으로 가장 대표적인 거스름돈 문제 해결하기
-손님에게 거스름돈으로 줄 수 있는 최소한의 동전 개수 구하기&lt;/p&gt;
-
-&lt;h2 id=&quot;2-해결방법-시간복잡도&quot;&gt;2. 해결방법 시간복잡도&lt;/h2&gt;
-&lt;ol&gt;
-  &lt;li&gt;탐욕 알고리즘 O(N)&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;h2 id=&quot;3-문제-해결-및-코드&quot;&gt;3. 문제 해결 및 코드&lt;/h2&gt;
-&lt;hr /&gt;
-
-&lt;script src=&quot;https://gist.github.com/godhin/49700625dfee55b19ad7e456ab3f091b.js&quot;&gt;&lt;/script&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;
-    &lt;h2 id=&quot;주석을-참고하면서-이해를-돕습니다&quot;&gt;주석을 참고하면서 이해를 돕습니다.&lt;/h2&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&quot;4-알고리즘-간략-설명&quot;&gt;4. 알고리즘 간략 설명&lt;/h2&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;탐욕 알고리즘&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;대게 탐욕 알고리즘 2가지 조건에 의해 잘 작동하게 된다.
-    &lt;ul&gt;
-      &lt;li&gt;
-        &lt;ol&gt;
-          &lt;li&gt;선택 조건 (greedy choice property)
-            &lt;ul&gt;
-              &lt;li&gt;앞의 선택이 뒤의 선택에 영향을 주지 않음&lt;/li&gt;
-            &lt;/ul&gt;
-          &lt;/li&gt;
-        &lt;/ol&gt;
-      &lt;/li&gt;
-      &lt;li&gt;
-        &lt;ol&gt;
-          &lt;li&gt;최적 조건 (optimal substructure)
-            &lt;ul&gt;
-              &lt;li&gt;문제의 일부의 해결 방법이 최적의 문제 해결 방법으로 구성되어 있음&lt;/li&gt;
-            &lt;/ul&gt;
-          &lt;/li&gt;
-        &lt;/ol&gt;
-      &lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;선택 조건 충족
-    &lt;ul&gt;
-      &lt;li&gt;큰 단위부터 계속하여도 작은 단위가 결과값에 영향을 주지 않음&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;최적 조건 충족
-    &lt;ul&gt;
-      &lt;li&gt;최소한의 동전 개수를 주기 위해서는 큰 단위부터 거슬러줘야함&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-&lt;/ol&gt;</content><author><name>You Nicholas</name></author><category term="알고리즘" /><category term="알고리즘" /><category term="라이브코딩" /><category term="코테" /><summary type="html">탐욕 알고리즘으로 풀었던 문제 복습해보기</summary></entry><entry><title type="html">[파이썬][프로그래머스] 신고 결과 받기</title><link href="http://localhost:4000/%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8/92334/" rel="alternate" type="text/html" title="[파이썬][프로그래머스] 신고 결과 받기" /><published>2022-06-14T00:00:00+09:00</published><updated>2022-06-14T00:00:00+09:00</updated><id>http://localhost:4000/%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8/92334</id><content type="html" xml:base="http://localhost:4000/%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8/92334/">&lt;h2 id=&quot;1-문제&quot;&gt;1. 문제&lt;/h2&gt;
-
-&lt;h1 id=&quot;level-1-신고-결과-받기---92334&quot;&gt;[level 1] 신고 결과 받기 - 92334&lt;/h1&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://programmers.co.kr/learn/courses/30/lessons/92334&quot;&gt;문제 링크&lt;/a&gt;&lt;/p&gt;
-
-&lt;h3 id=&quot;성능-요약&quot;&gt;성능 요약&lt;/h3&gt;
-
-&lt;p&gt;메모리: 10.2 MB, 시간: 0.01 ms&lt;/p&gt;
-
-&lt;h3 id=&quot;구분&quot;&gt;구분&lt;/h3&gt;
-
-&lt;p&gt;코딩테스트 연습 &amp;gt; 2022 KAKAO BLIND RECRUITMENT&lt;/p&gt;
-
-&lt;h3 id=&quot;채점결과&quot;&gt;채점결과&lt;/h3&gt;
-
-&lt;p&gt;&lt;br /&gt;정확성: 100.0&lt;br /&gt;합계: 100.0 / 100.0&lt;/p&gt;
-
-&lt;h3 id=&quot;문제-설명&quot;&gt;문제 설명&lt;/h3&gt;
-
-&lt;h5&gt;문제 설명&lt;/h5&gt;
-
-&lt;p&gt;신입사원 무지는 게시판 불량 이용자를 신고하고 처리 결과를 메일로 발송하는 시스템을 개발하려 합니다. 무지가 개발하려는 시스템은 다음과 같습니다.&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;각 유저는 한 번에 한 명의 유저를 신고할 수 있습니다.
-
-&lt;ul&gt;
-&lt;li&gt;신고 횟수에 제한은 없습니다. 서로 다른 유저를 계속해서 신고할 수 있습니다.&lt;/li&gt;
-&lt;li&gt;한 유저를 여러 번 신고할 수도 있지만, 동일한 유저에 대한 신고 횟수는 1회로 처리됩니다.&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;li&gt;k번 이상 신고된 유저는 게시판 이용이 정지되며, 해당 유저를 신고한 모든 유저에게 정지 사실을 메일로 발송합니다.
-
-&lt;ul&gt;
-&lt;li&gt;유저가 신고한 모든 내용을 취합하여 마지막에 한꺼번에 게시판 이용 정지를 시키면서 정지 메일을 발송합니다.&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;다음은 전체 유저 목록이 [&quot;muzi&quot;, &quot;frodo&quot;, &quot;apeach&quot;, &quot;neo&quot;]이고, k = 2(즉, 2번 이상 신고당하면 이용 정지)인 경우의 예시입니다.&lt;/p&gt;
-&lt;table class=&quot;table&quot;&gt;
-        &lt;thead&gt;&lt;tr&gt;
-&lt;th&gt;유저 ID&lt;/th&gt;
-&lt;th&gt;유저가 신고한 ID&lt;/th&gt;
-&lt;th&gt;설명&lt;/th&gt;
-&lt;/tr&gt;
-&lt;/thead&gt;
-        &lt;tbody&gt;&lt;tr&gt;
-&lt;td&gt;&quot;muzi&quot;&lt;/td&gt;
-&lt;td&gt;&quot;frodo&quot;&lt;/td&gt;
-&lt;td&gt;&quot;muzi&quot;가 &quot;frodo&quot;를 신고했습니다.&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;&quot;apeach&quot;&lt;/td&gt;
-&lt;td&gt;&quot;frodo&quot;&lt;/td&gt;
-&lt;td&gt;&quot;apeach&quot;가 &quot;frodo&quot;를 신고했습니다.&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;&quot;frodo&quot;&lt;/td&gt;
-&lt;td&gt;&quot;neo&quot;&lt;/td&gt;
-&lt;td&gt;&quot;frodo&quot;가 &quot;neo&quot;를 신고했습니다.&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;&quot;muzi&quot;&lt;/td&gt;
-&lt;td&gt;&quot;neo&quot;&lt;/td&gt;
-&lt;td&gt;&quot;muzi&quot;가 &quot;neo&quot;를 신고했습니다.&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;&quot;apeach&quot;&lt;/td&gt;
-&lt;td&gt;&quot;muzi&quot;&lt;/td&gt;
-&lt;td&gt;&quot;apeach&quot;가 &quot;muzi&quot;를 신고했습니다.&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/tbody&gt;
-      &lt;/table&gt;
-&lt;p&gt;각 유저별로 신고당한 횟수는 다음과 같습니다.&lt;/p&gt;
-&lt;table class=&quot;table&quot;&gt;
-        &lt;thead&gt;&lt;tr&gt;
-&lt;th&gt;유저 ID&lt;/th&gt;
-&lt;th&gt;신고당한 횟수&lt;/th&gt;
-&lt;/tr&gt;
-&lt;/thead&gt;
-        &lt;tbody&gt;&lt;tr&gt;
-&lt;td&gt;&quot;muzi&quot;&lt;/td&gt;
-&lt;td&gt;1&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;&quot;frodo&quot;&lt;/td&gt;
-&lt;td&gt;2&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;&quot;apeach&quot;&lt;/td&gt;
-&lt;td&gt;0&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;&quot;neo&quot;&lt;/td&gt;
-&lt;td&gt;2&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/tbody&gt;
-      &lt;/table&gt;
-&lt;p&gt;위 예시에서는 2번 이상 신고당한 &quot;frodo&quot;와 &quot;neo&quot;의 게시판 이용이 정지됩니다. 이때, 각 유저별로 신고한 아이디와 정지된 아이디를 정리하면 다음과 같습니다.&lt;/p&gt;
-&lt;table class=&quot;table&quot;&gt;
-        &lt;thead&gt;&lt;tr&gt;
-&lt;th&gt;유저 ID&lt;/th&gt;
-&lt;th&gt;유저가 신고한 ID&lt;/th&gt;
-&lt;th&gt;정지된 ID&lt;/th&gt;
-&lt;/tr&gt;
-&lt;/thead&gt;
-        &lt;tbody&gt;&lt;tr&gt;
-&lt;td&gt;&quot;muzi&quot;&lt;/td&gt;
-&lt;td&gt;[&quot;frodo&quot;, &quot;neo&quot;]&lt;/td&gt;
-&lt;td&gt;[&quot;frodo&quot;, &quot;neo&quot;]&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;&quot;frodo&quot;&lt;/td&gt;
-&lt;td&gt;[&quot;neo&quot;]&lt;/td&gt;
-&lt;td&gt;[&quot;neo&quot;]&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;&quot;apeach&quot;&lt;/td&gt;
-&lt;td&gt;[&quot;muzi&quot;, &quot;frodo&quot;]&lt;/td&gt;
-&lt;td&gt;[&quot;frodo&quot;]&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;&quot;neo&quot;&lt;/td&gt;
-&lt;td&gt;없음&lt;/td&gt;
-&lt;td&gt;없음&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/tbody&gt;
-      &lt;/table&gt;
-&lt;p&gt;따라서 &quot;muzi&quot;는 처리 결과 메일을 2회, &quot;frodo&quot;와 &quot;apeach&quot;는 각각 처리 결과 메일을 1회 받게 됩니다.&lt;/p&gt;
-
-&lt;p&gt;이용자의 ID가 담긴 문자열 배열 &lt;code&gt;id_list&lt;/code&gt;, 각 이용자가 신고한 이용자의 ID 정보가 담긴 문자열 배열 &lt;code&gt;report&lt;/code&gt;, 정지 기준이 되는 신고 횟수 &lt;code&gt;k&lt;/code&gt;가 매개변수로 주어질 때, 각 유저별로 처리 결과 메일을 받은 횟수를 배열에 담아 return 하도록 solution 함수를 완성해주세요.&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;h5&gt;제한사항&lt;/h5&gt;
-
-&lt;ul&gt;
-&lt;li&gt;2 ≤ &lt;code&gt;id_list&lt;/code&gt;의 길이 ≤ 1,000
-
-&lt;ul&gt;
-&lt;li&gt;1 ≤ &lt;code&gt;id_list&lt;/code&gt;의 원소 길이 ≤ 10&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;id_list&lt;/code&gt;의 원소는 이용자의 id를 나타내는 문자열이며 알파벳 소문자로만 이루어져 있습니다.&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;id_list&lt;/code&gt;에는 같은 아이디가 중복해서 들어있지 않습니다.&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;li&gt;1 ≤ &lt;code&gt;report&lt;/code&gt;의 길이 ≤ 200,000
-
-&lt;ul&gt;
-&lt;li&gt;3 ≤ &lt;code&gt;report&lt;/code&gt;의 원소 길이 ≤ 21&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;report&lt;/code&gt;의 원소는 &quot;이용자id 신고한id&quot;형태의 문자열입니다.&lt;/li&gt;
-&lt;li&gt;예를 들어 &quot;muzi frodo&quot;의 경우 &quot;muzi&quot;가 &quot;frodo&quot;를 신고했다는 의미입니다.&lt;/li&gt;
-&lt;li&gt;id는 알파벳 소문자로만 이루어져 있습니다.&lt;/li&gt;
-&lt;li&gt;이용자id와 신고한id는 공백(스페이스)하나로 구분되어 있습니다.&lt;/li&gt;
-&lt;li&gt;자기 자신을 신고하는 경우는 없습니다.&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;li&gt;1 ≤ &lt;code&gt;k&lt;/code&gt; ≤ 200, &lt;code&gt;k&lt;/code&gt;는 자연수입니다.&lt;/li&gt;
-&lt;li&gt;return 하는 배열은 &lt;code&gt;id_list&lt;/code&gt;에 담긴 id 순서대로 각 유저가 받은 결과 메일 수를 담으면 됩니다.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;hr /&gt;
-
-&lt;h5&gt;입출력 예&lt;/h5&gt;
-&lt;table class=&quot;table&quot;&gt;
-        &lt;thead&gt;&lt;tr&gt;
-&lt;th&gt;id_list&lt;/th&gt;
-&lt;th&gt;report&lt;/th&gt;
-&lt;th&gt;k&lt;/th&gt;
-&lt;th&gt;result&lt;/th&gt;
-&lt;/tr&gt;
-&lt;/thead&gt;
-        &lt;tbody&gt;&lt;tr&gt;
-&lt;td&gt;&lt;code&gt;[&quot;muzi&quot;, &quot;frodo&quot;, &quot;apeach&quot;, &quot;neo&quot;]&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;&lt;code&gt;[&quot;muzi frodo&quot;,&quot;apeach frodo&quot;,&quot;frodo neo&quot;,&quot;muzi neo&quot;,&quot;apeach muzi&quot;]&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;2&lt;/td&gt;
-&lt;td&gt;[2,1,1,0]&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;code&gt;[&quot;con&quot;, &quot;ryan&quot;]&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;&lt;code&gt;[&quot;ryan con&quot;, &quot;ryan con&quot;, &quot;ryan con&quot;, &quot;ryan con&quot;]&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;3&lt;/td&gt;
-&lt;td&gt;[0,0]&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/tbody&gt;
-      &lt;/table&gt;
-&lt;hr /&gt;
-
-&lt;h5&gt;입출력 예 설명&lt;/h5&gt;
-
-&lt;p&gt;&lt;strong&gt;입출력 예 #1&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;문제의 예시와 같습니다.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;입출력 예 #2&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;&quot;ryan&quot;이 &quot;con&quot;을 4번 신고했으나, 주어진 조건에 따라 한 유저가 같은 유저를 여러 번 신고한 경우는 신고 횟수 1회로 처리합니다. 따라서 &quot;con&quot;은 1회 신고당했습니다. 3번 이상 신고당한 이용자는 없으며, &quot;con&quot;과 &quot;ryan&quot;은 결과 메일을 받지 않습니다. 따라서 [0, 0]을 return 합니다.&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;h5&gt;제한시간 안내&lt;/h5&gt;
-
-&lt;ul&gt;
-&lt;li&gt;정확성 테스트 : 10초&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;출처: 프로그래머스 코딩 테스트 연습, https://programmers.co.kr/learn/challenges&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;h2 id=&quot;2-해결방법-시간복잡도&quot;&gt;2. 해결방법 시간복잡도&lt;/h2&gt;
-&lt;ol&gt;
-  &lt;li&gt;브루트포스 O(N^2)&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;h2 id=&quot;3-문제-해결-및-코드&quot;&gt;3. 문제 해결 및 코드&lt;/h2&gt;
-&lt;hr /&gt;
-
-&lt;script src=&quot;https://gist.github.com/godhin/ffb94cdaafd2d0903c74f9af85b56900.js&quot;&gt;&lt;/script&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;
-    &lt;h2 id=&quot;주석을-참고하면서-이해를-돕습니다&quot;&gt;주석을 참고하면서 이해를 돕습니다.&lt;/h2&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&quot;4-알고리즘-및-해설&quot;&gt;4. 알고리즘 및 해설&lt;/h2&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;브루트 포스&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;알고리즘 문제의 뜻 그래도 단순하게 “난폭한 힘” 이다. 단순 무식하게 문제를 해결하는 방식으로 반복문을 많이 사용하기 떄문에 사용하기에 편하나 시간복잡도가 높아질 수 있다.&lt;/li&gt;
-  &lt;li&gt;해당 문제의 경우 특정 조건이 있다고 판단되지 않아 브루트 포스로 해결하였다.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;문제의 요점&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;해당 문제에서 해결해야할 점은 &lt;strong&gt;신고한 사람과 신고당한 사람&lt;/strong&gt;의 횟수를 세는 것이다. 이것이 K라는 특정 값을 넘을 경우에만 결과가 나오게끔 유도하는 것이다.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;문제 풀기에 앞서 중복(악의적으로 무지성 신고를 하는 경우)를 제외하고 시작한다.&lt;/li&gt;
-  &lt;li&gt;위의 의사코드 작성처럼 신고 명단과 신고당한 사람을 셀 수 있는 dictionary를 만들어준다.&lt;/li&gt;
-  &lt;li&gt;2개의 딕셔너리에서 명단에는 신고자와 신고당한 사람을 세주고, 신고당한 횟수 명단에는 숫자를 세준다.&lt;/li&gt;
-  &lt;li&gt;마지막으로 특정값을 충족하였을 때 결과값에 출력을 해준다.&lt;/li&gt;
-&lt;/ol&gt;</content><author><name>You Nicholas</name></author><category term="코딩테스트" /><category term="알고리즘" /><category term="라이브코딩" /><category term="코테" /><category term="프로그래머스" /><category term="Level_1" /><summary type="html">프로그래머스 신고 결과 받기 문제 풀이</summary></entry><entry><title type="html">DP로 해결하기</title><link href="http://localhost:4000/%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98/DP%EB%A1%9C-%ED%95%B4%EA%B2%B0%ED%95%98%EA%B8%B0/" rel="alternate" type="text/html" title="DP로 해결하기" /><published>2022-06-13T00:00:00+09:00</published><updated>2022-06-13T00:00:00+09:00</updated><id>http://localhost:4000/%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98/DP%EB%A1%9C%20%ED%95%B4%EA%B2%B0%ED%95%98%EA%B8%B0</id><content type="html" xml:base="http://localhost:4000/%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98/DP%EB%A1%9C-%ED%95%B4%EA%B2%B0%ED%95%98%EA%B8%B0/">&lt;h2 id=&quot;1-문제&quot;&gt;1. 문제&lt;/h2&gt;
-&lt;p&gt;자신이 속한 열을 제외한 값중 가장 큰 값을 중복으로 더하여 최종 행의 가장 큰 값을 호출하기&lt;/p&gt;
-
-&lt;h2 id=&quot;2-해결방법-시간복잡도&quot;&gt;2. 해결방법 시간복잡도&lt;/h2&gt;
-&lt;ol&gt;
-  &lt;li&gt;DP O(N^2)&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;h2 id=&quot;3-문제-해결-및-코드&quot;&gt;3. 문제 해결 및 코드&lt;/h2&gt;
-&lt;hr /&gt;
-
-&lt;script src=&quot;https://gist.github.com/godhin/684d11add85d245bc7825d8c535de5b3.js&quot;&gt;&lt;/script&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;
-    &lt;h2 id=&quot;주석을-참고하면서-이해를-돕습니다&quot;&gt;주석을 참고하면서 이해를 돕습니다.&lt;/h2&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&quot;4-알고리즘-간략-설명&quot;&gt;4. 알고리즘 간략 설명&lt;/h2&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;DP&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;동적 계획법이라고 불리는 문제로 1회용 알고리즘이다. 최소한의 계산방식으로 문제를 해결하기 때문에 시간을 최소화할 수 있지만 문제가 생길 시 브루트포스와 같이 코드 전체를 바꿔야할 수도 있다.&lt;/li&gt;
-  &lt;li&gt;반복적으로 계산해야하는 문제이며 답이 같다라는 조건하여 DP로 해결할 수 있다.&lt;/li&gt;
-  &lt;li&gt;위의 문제의 경우 반복적으로 문제를 해결해야하기에 DP를 사용했고 따로 변수를 만들지않고 기존의 값에 지속적으로 값을 추가하며 바꾸는 방식으로 메모리 소비를 최소화하였다. (이러한 방식을 &lt;strong&gt;메모이제이션&lt;/strong&gt; 이라고 한다.)&lt;/li&gt;
-&lt;/ul&gt;</content><author><name>You Nicholas</name></author><category term="알고리즘" /><category term="알고리즘" /><category term="라이브코딩" /><category term="코테" /><summary type="html">예전에 풀었던 땅따먹기 문제를 DP로 다시 해결해보았다.</summary></entry></feed>
+&lt;/ul&gt;</content><author><name>You Nicholas</name></author><category term="일상" /><category term="일상" /><summary type="html">하지만 원래 소나기는 갑작기 오는 비</summary></entry></feed>
