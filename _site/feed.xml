@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2022-06-23T04:21:57+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">성장형 개발자 블로그</title><subtitle>An amazing website.</subtitle><author><name>You Nicholas</name></author><entry><title type="html">[파이썬][Codility_] OddOccurrencesInArray</title><link href="http://localhost:4000/%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8/OddOccurrencesInArray/" rel="alternate" type="text/html" title="[파이썬][Codility_] OddOccurrencesInArray" /><published>2022-06-23T00:00:00+09:00</published><updated>2022-06-23T00:00:00+09:00</updated><id>http://localhost:4000/%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8/OddOccurrencesInArray</id><content type="html" xml:base="http://localhost:4000/%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8/OddOccurrencesInArray/">&lt;h2 id=&quot;1-문제&quot;&gt;1. 문제&lt;/h2&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2022-06-23T04:36:35+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">성장형 개발자 블로그</title><subtitle>An amazing website.</subtitle><author><name>You Nicholas</name></author><entry><title type="html">[파이썬][Codility_] OddOccurrencesInArray</title><link href="http://localhost:4000/%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8/OddOccurrencesInArray/" rel="alternate" type="text/html" title="[파이썬][Codility_] OddOccurrencesInArray" /><published>2022-06-22T00:00:00+09:00</published><updated>2022-06-23T00:00:00+09:00</updated><id>http://localhost:4000/%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8/OddOccurrencesInArray</id><content type="html" xml:base="http://localhost:4000/%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8/OddOccurrencesInArray/">&lt;h2 id=&quot;1-문제&quot;&gt;1. 문제&lt;/h2&gt;
 
 &lt;p&gt;A non-empty array A consisting of N integers is given. The array contains an odd number of elements, and each element of the array can be paired with another element that has the same value, except for one element that is left unpaired.&lt;/p&gt;
 
@@ -67,7 +67,9 @@ Copyright 2009–2022 by Codility Limited. All Rights Reserved. Unauthorized cop
 &lt;h2 id=&quot;5-알아두면-좋은-정보&quot;&gt;5. 알아두면 좋은 정보&lt;/h2&gt;
 &lt;ol&gt;
   &lt;li&gt;&lt;strong&gt;sort()또는 sorted()&lt;/strong&gt; 함수의 경우 버블과 같이 느린 방식이 아닌 최적화된 정렬 알고리즘 방식을 사용하기 때문에 시간복잡도가 O(nlogn)이 된다.&lt;/li&gt;
-&lt;/ol&gt;</content><author><name>You Nicholas</name></author><category term="코딩테스트" /><category term="알고리즘" /><category term="라이브코딩" /><category term="코테" /><category term="Codility" /><category term="Lessons" /><summary type="html">Codility OddOccurrencesInArray 문제 풀이</summary></entry><entry><title type="html">[파이썬][Codility_] CyclicRotation</title><link href="http://localhost:4000/%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8/CyclicRotation/" rel="alternate" type="text/html" title="[파이썬][Codility_] CyclicRotation" /><published>2022-06-23T00:00:00+09:00</published><updated>2022-06-23T00:00:00+09:00</updated><id>http://localhost:4000/%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8/CyclicRotation</id><content type="html" xml:base="http://localhost:4000/%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8/CyclicRotation/">&lt;h2 id=&quot;1-문제&quot;&gt;1. 문제&lt;/h2&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;정렬 알고리즘 문제 해결에 참고한 블로그 : &lt;a href=&quot;'http://www.secmem.org/blog/2019/04/10/special-sorts/'&quot;&gt;djm03178&lt;/a&gt;&lt;/p&gt;</content><author><name>You Nicholas</name></author><category term="코딩테스트" /><category term="알고리즘" /><category term="라이브코딩" /><category term="코테" /><category term="Codility" /><category term="Lessons" /><summary type="html">Codility OddOccurrencesInArray 문제 풀이</summary></entry><entry><title type="html">[파이썬][Codility_] CyclicRotation</title><link href="http://localhost:4000/%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8/CyclicRotation/" rel="alternate" type="text/html" title="[파이썬][Codility_] CyclicRotation" /><published>2022-06-22T00:00:00+09:00</published><updated>2022-06-23T00:00:00+09:00</updated><id>http://localhost:4000/%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8/CyclicRotation</id><content type="html" xml:base="http://localhost:4000/%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8/CyclicRotation/">&lt;h2 id=&quot;1-문제&quot;&gt;1. 문제&lt;/h2&gt;
 
 &lt;p&gt;An array A consisting of N integers is given. Rotation of the array means that each element is shifted right by one index, and the last element of the array is moved to the first place. For example, the rotation of array A = [3, 8, 9, 7, 6] is [6, 3, 8, 9, 7] (elements are shifted right by one index and 6 is moved to the first place).&lt;/p&gt;
 
@@ -137,7 +139,56 @@ In your solution, focus on correctness. The performance of your solution will no
 &lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kn&quot;&gt;from&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;collections&lt;/span&gt; &lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;deque&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;# 덱 라이브러리
 &lt;/span&gt;&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;solution&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;N&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt;
     &lt;span class=&quot;n&quot;&gt;N&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;deque&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;N&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;# 덱 형태로 변환
-&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name>You Nicholas</name></author><category term="코딩테스트" /><category term="알고리즘" /><category term="라이브코딩" /><category term="코테" /><category term="Codility" /><category term="Lessons" /><summary type="html">Codility CyclicRotation 문제 풀이</summary></entry><entry><title type="html">[파이썬][Codility_] FuryRoad</title><link href="http://localhost:4000/%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8/FuryRoad/" rel="alternate" type="text/html" title="[파이썬][Codility_] FuryRoad" /><published>2022-06-23T00:00:00+09:00</published><updated>2022-06-23T00:00:00+09:00</updated><id>http://localhost:4000/%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8/FuryRoad</id><content type="html" xml:base="http://localhost:4000/%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8/FuryRoad/">&lt;h2 id=&quot;0-챌린지-소개&quot;&gt;0. 챌린지 소개&lt;/h2&gt;
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name>You Nicholas</name></author><category term="코딩테스트" /><category term="알고리즘" /><category term="라이브코딩" /><category term="코테" /><category term="Codility" /><category term="Lessons" /><summary type="html">Codility CyclicRotation 문제 풀이</summary></entry><entry><title type="html">[파이썬][Codility_] BinaryGap</title><link href="http://localhost:4000/%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8/BinaryGap/" rel="alternate" type="text/html" title="[파이썬][Codility_] BinaryGap" /><published>2022-06-22T00:00:00+09:00</published><updated>2022-06-22T00:00:00+09:00</updated><id>http://localhost:4000/%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8/BinaryGap</id><content type="html" xml:base="http://localhost:4000/%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8/BinaryGap/">&lt;h2 id=&quot;1-문제&quot;&gt;1. 문제&lt;/h2&gt;
+
+&lt;p&gt;A binary gap within a positive integer N is any maximal sequence of consecutive zeros that is surrounded by ones at both ends in the binary representation of N.&lt;/p&gt;
+
+&lt;p&gt;For example, number 9 has binary representation 1001 and contains a binary gap of length 2. The number 529 has binary representation 1000010001 and contains two binary gaps: one of length 4 and one of length 3. The number 20 has binary representation 10100 and contains one binary gap of length 1. The number 15 has binary representation 1111 and has no binary gaps. The number 32 has binary representation 100000 and has no binary gaps.&lt;/p&gt;
+
+&lt;p&gt;Write a function:&lt;/p&gt;
+
+&lt;p&gt;def solution(N)&lt;/p&gt;
+
+&lt;p&gt;that, given a positive integer N, returns the length of its longest binary gap. The function should return 0 if N doesn’t contain a binary gap.&lt;/p&gt;
+
+&lt;p&gt;For example, given N = 1041 the function should return 5, because N has binary representation 10000010001 and so its longest binary gap is of length 5. Given N = 32 the function should return 0, because N has binary representation ‘100000’ and thus no binary gaps.&lt;/p&gt;
+
+&lt;p&gt;Write an efficient algorithm for the following assumptions:&lt;/p&gt;
+
+&lt;p&gt;N is an integer within the range [1..2,147,483,647].
+Copyright 2009–2022 by Codility Limited. All Rights Reserved. Unauthorized copying, publication or disclosure prohibited.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;출처: Codility_, https://app.codility.com/programmers/&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h2 id=&quot;2-해결방법-시간복잡도&quot;&gt;2. 해결방법 시간복잡도&lt;/h2&gt;
+&lt;ol&gt;
+  &lt;li&gt;단순 코딩 O(1)&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h2 id=&quot;3-문제-해결-및-코드&quot;&gt;3. 문제 해결 및 코드&lt;/h2&gt;
+&lt;hr /&gt;
+
+&lt;script src=&quot;https://gist.github.com/godhin/334cd7a9c941c122e1b003be1f21228b.js&quot;&gt;&lt;/script&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;h2 id=&quot;주석을-참고하면서-이해를-돕습니다&quot;&gt;주석을 참고하면서 이해를 돕습니다.&lt;/h2&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;4-알고리즘-및-해설&quot;&gt;4. 알고리즘 및 해설&lt;/h2&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;bin() 함수를 통해 해당 문자열을 이진수로 바꿔준다.&lt;/li&gt;
+  &lt;li&gt;strip()으로 좌우측 0과 1을 제외해준다.
+    &lt;ul&gt;
+      &lt;li&gt;해당 문제에서 말하는 바이너리 갭은 110011처럼 숫자 사이에 낀 것을 뜻한다.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;이후 반복되는 수중 가장 길이가 긴 문자열의 길이를 출력한다.&lt;/li&gt;
+&lt;/ol&gt;</content><author><name>You Nicholas</name></author><category term="코딩테스트" /><category term="알고리즘" /><category term="라이브코딩" /><category term="코테" /><category term="Codility" /><category term="Lessons" /><summary type="html">Codility BinaryGap 문제 풀이</summary></entry><entry><title type="html">[파이썬][Codility_] FuryRoad</title><link href="http://localhost:4000/%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8/FuryRoad/" rel="alternate" type="text/html" title="[파이썬][Codility_] FuryRoad" /><published>2022-06-22T00:00:00+09:00</published><updated>2022-06-23T00:00:00+09:00</updated><id>http://localhost:4000/%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8/FuryRoad</id><content type="html" xml:base="http://localhost:4000/%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8/FuryRoad/">&lt;h2 id=&quot;0-챌린지-소개&quot;&gt;0. 챌린지 소개&lt;/h2&gt;
 
 &lt;p&gt;&lt;img src=&quot;https://user-images.githubusercontent.com/75519839/175105370-bb96a64a-f99d-4138-8810-d788d154689d.png&quot; alt=&quot;image&quot; /&gt;&lt;/p&gt;
 
@@ -225,61 +276,7 @@ Copyright 2009–2022 by Codility Limited. All Rights Reserved. Unauthorized cop
     &lt;/ul&gt;
   &lt;/li&gt;
   &lt;li&gt;그 중 가장 적게 걸린 시간을 출력한다.&lt;/li&gt;
-&lt;/ol&gt;</content><author><name>You Nicholas</name></author><category term="코딩테스트" /><category term="알고리즘" /><category term="라이브코딩" /><category term="코테" /><category term="Codility Challenge" /><summary type="html">Codility FuryRoad 문제 풀이</summary></entry><entry><title type="html">[파이썬][Codility_] BinaryGap</title><link href="http://localhost:4000/%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8/BinaryGap/" rel="alternate" type="text/html" title="[파이썬][Codility_] BinaryGap" /><published>2022-06-22T00:00:00+09:00</published><updated>2022-06-22T00:00:00+09:00</updated><id>http://localhost:4000/%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8/BinaryGap</id><content type="html" xml:base="http://localhost:4000/%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8/BinaryGap/">&lt;h2 id=&quot;1-문제&quot;&gt;1. 문제&lt;/h2&gt;
-
-&lt;p&gt;A binary gap within a positive integer N is any maximal sequence of consecutive zeros that is surrounded by ones at both ends in the binary representation of N.&lt;/p&gt;
-
-&lt;p&gt;For example, number 9 has binary representation 1001 and contains a binary gap of length 2. The number 529 has binary representation 1000010001 and contains two binary gaps: one of length 4 and one of length 3. The number 20 has binary representation 10100 and contains one binary gap of length 1. The number 15 has binary representation 1111 and has no binary gaps. The number 32 has binary representation 100000 and has no binary gaps.&lt;/p&gt;
-
-&lt;p&gt;Write a function:&lt;/p&gt;
-
-&lt;p&gt;def solution(N)&lt;/p&gt;
-
-&lt;p&gt;that, given a positive integer N, returns the length of its longest binary gap. The function should return 0 if N doesn’t contain a binary gap.&lt;/p&gt;
-
-&lt;p&gt;For example, given N = 1041 the function should return 5, because N has binary representation 10000010001 and so its longest binary gap is of length 5. Given N = 32 the function should return 0, because N has binary representation ‘100000’ and thus no binary gaps.&lt;/p&gt;
-
-&lt;p&gt;Write an efficient algorithm for the following assumptions:&lt;/p&gt;
-
-&lt;p&gt;N is an integer within the range [1..2,147,483,647].
-Copyright 2009–2022 by Codility Limited. All Rights Reserved. Unauthorized copying, publication or disclosure prohibited.&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;출처: Codility_, https://app.codility.com/programmers/&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;h2 id=&quot;2-해결방법-시간복잡도&quot;&gt;2. 해결방법 시간복잡도&lt;/h2&gt;
-&lt;ol&gt;
-  &lt;li&gt;단순 코딩 O(1)&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;h2 id=&quot;3-문제-해결-및-코드&quot;&gt;3. 문제 해결 및 코드&lt;/h2&gt;
-&lt;hr /&gt;
-
-&lt;script src=&quot;https://gist.github.com/godhin/334cd7a9c941c122e1b003be1f21228b.js&quot;&gt;&lt;/script&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;
-    &lt;h2 id=&quot;주석을-참고하면서-이해를-돕습니다&quot;&gt;주석을 참고하면서 이해를 돕습니다.&lt;/h2&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&quot;4-알고리즘-및-해설&quot;&gt;4. 알고리즘 및 해설&lt;/h2&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;bin() 함수를 통해 해당 문자열을 이진수로 바꿔준다.&lt;/li&gt;
-  &lt;li&gt;strip()으로 좌우측 0과 1을 제외해준다.
-    &lt;ul&gt;
-      &lt;li&gt;해당 문제에서 말하는 바이너리 갭은 110011처럼 숫자 사이에 낀 것을 뜻한다.&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;이후 반복되는 수중 가장 길이가 긴 문자열의 길이를 출력한다.&lt;/li&gt;
-&lt;/ol&gt;</content><author><name>You Nicholas</name></author><category term="코딩테스트" /><category term="알고리즘" /><category term="라이브코딩" /><category term="코테" /><category term="Codility" /><category term="Lessons" /><summary type="html">Codility BinaryGap 문제 풀이</summary></entry><entry><title type="html">애어른</title><link href="http://localhost:4000/%ED%95%98%EB%A3%A8/%EC%95%A0%EC%96%B4%EB%A5%B8/" rel="alternate" type="text/html" title="애어른" /><published>2022-06-21T00:00:00+09:00</published><updated>2022-06-21T00:00:00+09:00</updated><id>http://localhost:4000/%ED%95%98%EB%A3%A8/%EC%95%A0%EC%96%B4%EB%A5%B8</id><content type="html" xml:base="http://localhost:4000/%ED%95%98%EB%A3%A8/%EC%95%A0%EC%96%B4%EB%A5%B8/">&lt;h2 id=&quot;어제는-누구보다-빠르게-달려갔고-오늘은-누구보다-느리게-걸어간다&quot;&gt;어제는 누구보다 빠르게 달려갔고, 오늘은 누구보다 느리게 걸어간다.&lt;/h2&gt;
-&lt;p&gt;&lt;br /&gt;어려서부터 독립성도 강하고 모든지 혼자 해결하려고 했다. 부모님 말로는 내가 애기때부터 숫자에 관심이 많아 산수가 빨랐다고 했다. 물건을 살때도 “엄마 이게 저거보다 양도 많은데 훨씬 싸” 하면서 비교하고 거스름돈도 착착 잘 챙겨와서 커서 걱정이 없을거라고 하셨다. 그래서 그런가 걱정을 안하시고 커서 남들보다 뭐든지 앞서가고 빠르게 행동했고, 철도 금방 들었던 것 같다. 주변에서는 마치 어른처럼 행동하고 뭐든지 책임감있게 하려는 모습이 내가 ‘애어른’같다고 하며 하는 행동이 정말 기특하다고 하셨다.&lt;/p&gt;
-
-&lt;h2 id=&quot;내일은-달릴-수-있길-바라며&quot;&gt;내일은 달릴 수 있길 바라며&lt;/h2&gt;
-&lt;p&gt;&lt;br /&gt;
-그렇게 자란 내 모습은 아직도 ‘애어른’같다. 책임감이 강하던 그 아이는 이제 어디에도 없는 듯 보인다. 나는 꿈도 있고, 목표가 있는데 그걸 이뤄야하는 책임또한 있다. 남들보다 앞서 나가던 아이는 24살인 지금 그 누구보다 뒤처지고 있다. 그렇게 장학금받으며 잘 다니던 학교도 그만두고 수도권으로 상경한 지 1년째 나는 아직 정체중인 것만 같다. 누구는 꿈을 향해 열정적으로 달려가고 누군가는 오늘을 살기위해 최선을 다한다. 그리고 내일을 바라보며 오늘을 준비한다. 그런데 나는 어제 누구보다 빨리 달렸고 오늘은 멈춰있는 것만 같다.&lt;/p&gt;</content><author><name>You Nicholas</name></author><category term="하루" /><category term="유통기한 하루" /><category term="성장" /><category term="습관" /><summary type="html">하는 행동이 어른같은 아이, 하는 행동이 애같은 어른</summary></entry><entry><title type="html">[파이썬][프로그래머스] 폰켓몬</title><link href="http://localhost:4000/%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8/1845/" rel="alternate" type="text/html" title="[파이썬][프로그래머스] 폰켓몬" /><published>2022-06-21T00:00:00+09:00</published><updated>2022-06-21T00:00:00+09:00</updated><id>http://localhost:4000/%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8/1845</id><content type="html" xml:base="http://localhost:4000/%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8/1845/">&lt;h2 id=&quot;1-문제&quot;&gt;1. 문제&lt;/h2&gt;
+&lt;/ol&gt;</content><author><name>You Nicholas</name></author><category term="코딩테스트" /><category term="알고리즘" /><category term="라이브코딩" /><category term="코테" /><category term="Codility Challenge" /><summary type="html">Codility FuryRoad 문제 풀이</summary></entry><entry><title type="html">[파이썬][프로그래머스] 폰켓몬</title><link href="http://localhost:4000/%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8/1845/" rel="alternate" type="text/html" title="[파이썬][프로그래머스] 폰켓몬" /><published>2022-06-21T00:00:00+09:00</published><updated>2022-06-21T00:00:00+09:00</updated><id>http://localhost:4000/%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8/1845</id><content type="html" xml:base="http://localhost:4000/%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8/1845/">&lt;h2 id=&quot;1-문제&quot;&gt;1. 문제&lt;/h2&gt;
 
 &lt;h1 id=&quot;level-1-폰켓몬---1845&quot;&gt;[level 1] 폰켓몬 - 1845&lt;/h1&gt;
 
@@ -399,7 +396,12 @@ Copyright 2009–2022 by Codility Limited. All Rights Reserved. Unauthorized cop
       &lt;li&gt;총 3번의 반복을 하는 동안 가질 수 있는 폰켓몬 종류 번호의 개수보다 크다면 + 1&lt;/li&gt;
     &lt;/ul&gt;
   &lt;/li&gt;
-&lt;/ol&gt;</content><author><name>You Nicholas</name></author><category term="코딩테스트" /><category term="알고리즘" /><category term="라이브코딩" /><category term="코테" /><category term="프로그래머스" /><category term="Level_1" /><summary type="html">프로그래머스 폰켓몬 문제 풀이</summary></entry><entry><title type="html">움직여라</title><link href="http://localhost:4000/%ED%95%98%EB%A3%A8/%EC%9B%80%EC%A7%81%EC%97%AC%EB%9D%BC/" rel="alternate" type="text/html" title="움직여라" /><published>2022-06-20T00:00:00+09:00</published><updated>2022-06-20T00:00:00+09:00</updated><id>http://localhost:4000/%ED%95%98%EB%A3%A8/%EC%9B%80%EC%A7%81%EC%97%AC%EB%9D%BC</id><content type="html" xml:base="http://localhost:4000/%ED%95%98%EB%A3%A8/%EC%9B%80%EC%A7%81%EC%97%AC%EB%9D%BC/">&lt;h2 id=&quot;따뜻한-햇살-아래-포근한-침대&quot;&gt;따뜻한 햇살 아래 포근한 침대&lt;/h2&gt;
+&lt;/ol&gt;</content><author><name>You Nicholas</name></author><category term="코딩테스트" /><category term="알고리즘" /><category term="라이브코딩" /><category term="코테" /><category term="프로그래머스" /><category term="Level_1" /><summary type="html">프로그래머스 폰켓몬 문제 풀이</summary></entry><entry><title type="html">애어른</title><link href="http://localhost:4000/%ED%95%98%EB%A3%A8/%EC%95%A0%EC%96%B4%EB%A5%B8/" rel="alternate" type="text/html" title="애어른" /><published>2022-06-21T00:00:00+09:00</published><updated>2022-06-21T00:00:00+09:00</updated><id>http://localhost:4000/%ED%95%98%EB%A3%A8/%EC%95%A0%EC%96%B4%EB%A5%B8</id><content type="html" xml:base="http://localhost:4000/%ED%95%98%EB%A3%A8/%EC%95%A0%EC%96%B4%EB%A5%B8/">&lt;h2 id=&quot;어제는-누구보다-빠르게-달려갔고-오늘은-누구보다-느리게-걸어간다&quot;&gt;어제는 누구보다 빠르게 달려갔고, 오늘은 누구보다 느리게 걸어간다.&lt;/h2&gt;
+&lt;p&gt;&lt;br /&gt;어려서부터 독립성도 강하고 모든지 혼자 해결하려고 했다. 부모님 말로는 내가 애기때부터 숫자에 관심이 많아 산수가 빨랐다고 했다. 물건을 살때도 “엄마 이게 저거보다 양도 많은데 훨씬 싸” 하면서 비교하고 거스름돈도 착착 잘 챙겨와서 커서 걱정이 없을거라고 하셨다. 그래서 그런가 걱정을 안하시고 커서 남들보다 뭐든지 앞서가고 빠르게 행동했고, 철도 금방 들었던 것 같다. 주변에서는 마치 어른처럼 행동하고 뭐든지 책임감있게 하려는 모습이 내가 ‘애어른’같다고 하며 하는 행동이 정말 기특하다고 하셨다.&lt;/p&gt;
+
+&lt;h2 id=&quot;내일은-달릴-수-있길-바라며&quot;&gt;내일은 달릴 수 있길 바라며&lt;/h2&gt;
+&lt;p&gt;&lt;br /&gt;
+그렇게 자란 내 모습은 아직도 ‘애어른’같다. 책임감이 강하던 그 아이는 이제 어디에도 없는 듯 보인다. 나는 꿈도 있고, 목표가 있는데 그걸 이뤄야하는 책임또한 있다. 남들보다 앞서 나가던 아이는 24살인 지금 그 누구보다 뒤처지고 있다. 그렇게 장학금받으며 잘 다니던 학교도 그만두고 수도권으로 상경한 지 1년째 나는 아직 정체중인 것만 같다. 누구는 꿈을 향해 열정적으로 달려가고 누군가는 오늘을 살기위해 최선을 다한다. 그리고 내일을 바라보며 오늘을 준비한다. 그런데 나는 어제 누구보다 빨리 달렸고 오늘은 멈춰있는 것만 같다.&lt;/p&gt;</content><author><name>You Nicholas</name></author><category term="하루" /><category term="유통기한 하루" /><category term="성장" /><category term="습관" /><summary type="html">하는 행동이 어른같은 아이, 하는 행동이 애같은 어른</summary></entry><entry><title type="html">움직여라</title><link href="http://localhost:4000/%ED%95%98%EB%A3%A8/%EC%9B%80%EC%A7%81%EC%97%AC%EB%9D%BC/" rel="alternate" type="text/html" title="움직여라" /><published>2022-06-20T00:00:00+09:00</published><updated>2022-06-20T00:00:00+09:00</updated><id>http://localhost:4000/%ED%95%98%EB%A3%A8/%EC%9B%80%EC%A7%81%EC%97%AC%EB%9D%BC</id><content type="html" xml:base="http://localhost:4000/%ED%95%98%EB%A3%A8/%EC%9B%80%EC%A7%81%EC%97%AC%EB%9D%BC/">&lt;h2 id=&quot;따뜻한-햇살-아래-포근한-침대&quot;&gt;따뜻한 햇살 아래 포근한 침대&lt;/h2&gt;
 
 &lt;p&gt;요새 너무 게을러버린 나는 9시에 일어난다. 그리고 오늘 해야할 일을 간략하게 적고 하다가 금방 낮잠에 들고 만다. 따뜻한 햇살이랑 누구도 건들지 않는 평일의 침대는 그 누구도 뿌리치기 힘든 유혹이다. 그런 유혹에 넘어가길 벌써 며칠째이다. 아침을 바꾸고 싶다는 마음에 동기부여영상을 보고 짐퀵이라는 브레인 코치의 말을 들으며 적어봤다.&lt;/p&gt;
 

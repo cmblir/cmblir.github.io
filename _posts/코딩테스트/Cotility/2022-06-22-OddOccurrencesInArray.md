@@ -10,7 +10,7 @@ tags:
 toc: true
 toc_sticky: true
  
-date: 2022-06-23
+date: 2022-06-22
 last_modified_at: 2022-06-23
 ---
 
@@ -72,4 +72,6 @@ Copyright 2009–2022 by Codility Limited. All Rights Reserved. Unauthorized cop
 
 ## 5. 알아두면 좋은 정보
 1. **sort()또는 sorted()** 함수의 경우 버블과 같이 느린 방식이 아닌 최적화된 정렬 알고리즘 방식을 사용하기 때문에 시간복잡도가 O(nlogn)이 된다.
+
+정렬 알고리즘 문제 해결에 참고한 블로그 : [djm03178]('http://www.secmem.org/blog/2019/04/10/special-sorts/')
 
