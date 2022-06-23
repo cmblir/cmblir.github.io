@@ -1,4 +1,220 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2022-06-23T04:36:35+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">성장형 개발자 블로그</title><subtitle>An amazing website.</subtitle><author><name>You Nicholas</name></author><entry><title type="html">[파이썬][Codility_] OddOccurrencesInArray</title><link href="http://localhost:4000/%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8/OddOccurrencesInArray/" rel="alternate" type="text/html" title="[파이썬][Codility_] OddOccurrencesInArray" /><published>2022-06-22T00:00:00+09:00</published><updated>2022-06-23T00:00:00+09:00</updated><id>http://localhost:4000/%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8/OddOccurrencesInArray</id><content type="html" xml:base="http://localhost:4000/%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8/OddOccurrencesInArray/">&lt;h2 id=&quot;1-문제&quot;&gt;1. 문제&lt;/h2&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2022-06-24T06:47:33+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">성장형 개발자 블로그</title><subtitle>An amazing website.</subtitle><author><name>You Nicholas</name></author><entry><title type="html">[파이썬][Codility_] TapeEquilibrium</title><link href="http://localhost:4000/%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8/TapeEquilibrium/" rel="alternate" type="text/html" title="[파이썬][Codility_] TapeEquilibrium" /><published>2022-06-23T00:00:00+09:00</published><updated>2022-06-24T00:00:00+09:00</updated><id>http://localhost:4000/%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8/TapeEquilibrium</id><content type="html" xml:base="http://localhost:4000/%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8/TapeEquilibrium/">&lt;h2 id=&quot;1-문제&quot;&gt;1. 문제&lt;/h2&gt;
+
+&lt;p&gt;A non-empty array A consisting of N integers is given. Array A represents numbers on a tape.&lt;/p&gt;
+
+&lt;p&gt;Any integer P, such that 0 &amp;lt; P &amp;lt; N, splits this tape into two non-empty parts: A[0], A[1], …, A[P − 1] and A[P], A[P + 1], …, A[N − 1].&lt;/p&gt;
+
+&lt;table&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;The difference between the two parts is the value of:&lt;/td&gt;
+      &lt;td&gt;(A[0] + A[1] + … + A[P − 1]) − (A[P] + A[P + 1] + … + A[N − 1])&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;p&gt;In other words, it is the absolute difference between the sum of the first part and the sum of the second part.&lt;/p&gt;
+
+&lt;p&gt;For example, consider array A such that:&lt;/p&gt;
+
+&lt;p&gt;A[0] = 3
+  A[1] = 1
+  A[2] = 2
+  A[3] = 4
+  A[4] = 3
+We can split this tape in four places:&lt;/p&gt;
+
+&lt;p&gt;P = 1, difference = |3 − 10| = 7
+P = 2, difference = |4 − 9| = 5
+P = 3, difference = |6 − 7| = 1
+P = 4, difference = |10 − 3| = 7
+Write a function:&lt;/p&gt;
+
+&lt;p&gt;def solution(A)&lt;/p&gt;
+
+&lt;p&gt;that, given a non-empty array A of N integers, returns the minimal difference that can be achieved.&lt;/p&gt;
+
+&lt;p&gt;For example, given:&lt;/p&gt;
+
+&lt;p&gt;A[0] = 3
+  A[1] = 1
+  A[2] = 2
+  A[3] = 4
+  A[4] = 3
+the function should return 1, as explained above.&lt;/p&gt;
+
+&lt;p&gt;Write an efficient algorithm for the following assumptions:&lt;/p&gt;
+
+&lt;p&gt;N is an integer within the range [2..100,000];
+each element of array A is an integer within the range [−1,000..1,000].
+Copyright 2009–2022 by Codility Limited. All Rights Reserved. Unauthorized copying, publication or disclosure prohibited.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;출처: Codility_, https://app.codility.com/programmers/&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h2 id=&quot;2-해결방법-시간복잡도&quot;&gt;2. 해결방법 시간복잡도&lt;/h2&gt;
+&lt;ol&gt;
+  &lt;li&gt;단순 코딩 O(N)&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h2 id=&quot;3-문제-해결-및-코드&quot;&gt;3. 문제 해결 및 코드&lt;/h2&gt;
+&lt;hr /&gt;
+
+&lt;script src=&quot;https://gist.github.com/godhin/49a2fb5ae8c51b4ffb7b83fbf11778b4.js&quot;&gt;&lt;/script&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;h2 id=&quot;주석을-참고하면서-이해를-돕습니다&quot;&gt;주석을 참고하면서 이해를 돕습니다.&lt;/h2&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;4-알고리즘-및-해설&quot;&gt;4. 알고리즘 및 해설&lt;/h2&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;문제의 요점은 P까지의 합과 P이후의 합의 차를 절대값으로 구하고, 모든 P의 수 중 가장 작은 값을 도출하는 것이다.&lt;/li&gt;
+  &lt;li&gt;0이라는 값과 A 배열의 모든 합을 좌측 우측으로 지정해준다.
+    &lt;ol&gt;
+      &lt;li&gt;결과값은 None으로 지정해줘서 계속해서 업데이트 해준다.&lt;/li&gt;
+    &lt;/ol&gt;
+  &lt;/li&gt;
+  &lt;li&gt;반복문을 통해 좌 우측 값을 업데이트하고 값을 계산해서, min()을 통해 결과값들을 비교후 가장 작은 값을 도출해준다.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h2 id=&quot;5-내가-처음-시도했던-방식&quot;&gt;5. 내가 처음 시도했던 방식&lt;/h2&gt;
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;result&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;bp&quot;&gt;None&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;for&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;i&lt;/span&gt; &lt;span class=&quot;ow&quot;&gt;in&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;range&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;len&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;A&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)):&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;result&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;==&lt;/span&gt; &lt;span class=&quot;bp&quot;&gt;None&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;result&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;abs&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;sum&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;A&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[:&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;])&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;sum&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;A&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:]))&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;else&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;result&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;min&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;abs&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;sum&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;A&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[:&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;])&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;sum&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;A&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:])),&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;result&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;result&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;위와 같은 방법이나 리스트내에서 현재 위치 i 이전의 합과, 현재 위치 i 이후의 값을 계산한다는 점에서 시간복잡도가 높게 나온 것 같다.
+    &lt;ul&gt;
+      &lt;li&gt;해당 방식으로 해결한 결과 시간 복잡도 O(N*N)&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;</content><author><name>You Nicholas</name></author><category term="코딩테스트" /><category term="알고리즘" /><category term="라이브코딩" /><category term="코테" /><category term="Codility" /><category term="Lessons" /><summary type="html">Codility TapeEquilibrium 문제 풀이</summary></entry><entry><title type="html">[파이썬][Codility_] FrogJmp</title><link href="http://localhost:4000/%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8/FrogJmp/" rel="alternate" type="text/html" title="[파이썬][Codility_] FrogJmp" /><published>2022-06-23T00:00:00+09:00</published><updated>2022-06-24T00:00:00+09:00</updated><id>http://localhost:4000/%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8/FrogJmp</id><content type="html" xml:base="http://localhost:4000/%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8/FrogJmp/">&lt;h2 id=&quot;1-문제&quot;&gt;1. 문제&lt;/h2&gt;
+
+&lt;p&gt;A small frog wants to get to the other side of the road. The frog is currently located at position X and wants to get to a position greater than or equal to Y. The small frog always jumps a fixed distance, D.&lt;/p&gt;
+
+&lt;p&gt;Count the minimal number of jumps that the small frog must perform to reach its target.&lt;/p&gt;
+
+&lt;p&gt;Write a function:&lt;/p&gt;
+
+&lt;p&gt;def solution(X, Y, D)&lt;/p&gt;
+
+&lt;p&gt;that, given three integers X, Y and D, returns the minimal number of jumps from position X to a position equal to or greater than Y.&lt;/p&gt;
+
+&lt;p&gt;For example, given:&lt;/p&gt;
+
+&lt;p&gt;X = 10
+  Y = 85
+  D = 30
+the function should return 3, because the frog will be positioned as follows:&lt;/p&gt;
+
+&lt;p&gt;after the first jump, at position 10 + 30 = 40
+after the second jump, at position 10 + 30 + 30 = 70
+after the third jump, at position 10 + 30 + 30 + 30 = 100
+Write an efficient algorithm for the following assumptions:&lt;/p&gt;
+
+&lt;p&gt;X, Y and D are integers within the range [1..1,000,000,000];
+X ≤ Y.
+Copyright 2009–2022 by Codility Limited. All Rights Reserved. Unauthorized copying, publication or disclosure prohibited.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;출처: Codility_, https://app.codility.com/programmers/&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h2 id=&quot;2-해결방법-시간복잡도&quot;&gt;2. 해결방법 시간복잡도&lt;/h2&gt;
+&lt;ol&gt;
+  &lt;li&gt;단순 코딩 O(1)&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h2 id=&quot;3-문제-해결-및-코드&quot;&gt;3. 문제 해결 및 코드&lt;/h2&gt;
+&lt;hr /&gt;
+
+&lt;script src=&quot;https://gist.github.com/godhin/712e1f66446f2bf122be0cf7444ce152.js&quot;&gt;&lt;/script&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;h2 id=&quot;주석을-참고하면서-이해를-돕습니다&quot;&gt;주석을 참고하면서 이해를 돕습니다.&lt;/h2&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;4-알고리즘-및-해설&quot;&gt;4. 알고리즘 및 해설&lt;/h2&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;문제의 요점은 개구리가 현재 위치에서 목표지점까지 몇 번을 뛰어야하냐는 것이다.&lt;/li&gt;
+  &lt;li&gt;목표지점까지의 거리를 점프하는 거리로 나누어주되, 그 값을 반올림해준다.
+    &lt;ul&gt;
+      &lt;li&gt;소수점단위로 뛸 수는 없기떄문에 math.ceil() 함수를 이용해서 반올림한다.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h2 id=&quot;5-알아두면-좋은-정보&quot;&gt;5. 알아두면 좋은 정보&lt;/h2&gt;
+&lt;ol&gt;
+  &lt;li&gt;문제 자체는 간단하나 &lt;em&gt;math&lt;/em&gt; 라이브러리를 사용해서 보다 쉽게 문제 해결이 가능하다.&lt;/li&gt;
+&lt;/ol&gt;</content><author><name>You Nicholas</name></author><category term="코딩테스트" /><category term="알고리즘" /><category term="라이브코딩" /><category term="코테" /><category term="Codility" /><category term="Lessons" /><summary type="html">Codility FrogJmp 문제 풀이</summary></entry><entry><title type="html">[파이썬][Codility_] PermMissingElem</title><link href="http://localhost:4000/%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8/PermMissingElem/" rel="alternate" type="text/html" title="[파이썬][Codility_] PermMissingElem" /><published>2022-06-23T00:00:00+09:00</published><updated>2022-06-24T00:00:00+09:00</updated><id>http://localhost:4000/%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8/PermMissingElem</id><content type="html" xml:base="http://localhost:4000/%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8/PermMissingElem/">&lt;h2 id=&quot;1-문제&quot;&gt;1. 문제&lt;/h2&gt;
+
+&lt;p&gt;Task description
+An array A consisting of N different integers is given. The array contains integers in the range [1..(N + 1)], which means that exactly one element is missing.&lt;/p&gt;
+
+&lt;p&gt;Your goal is to find that missing element.&lt;/p&gt;
+
+&lt;p&gt;Write a function:&lt;/p&gt;
+
+&lt;p&gt;def solution(A)&lt;/p&gt;
+
+&lt;p&gt;that, given an array A, returns the value of the missing element.&lt;/p&gt;
+
+&lt;p&gt;For example, given array A such that:&lt;/p&gt;
+
+&lt;p&gt;A[0] = 2
+  A[1] = 3
+  A[2] = 1
+  A[3] = 5
+the function should return 4, as it is the missing element.&lt;/p&gt;
+
+&lt;p&gt;Write an efficient algorithm for the following assumptions:&lt;/p&gt;
+
+&lt;p&gt;N is an integer within the range [0..100,000];
+the elements of A are all distinct;
+each element of array A is an integer within the range [1..(N + 1)].
+Copyright 2009–2022 by Codility Limited. All Rights Reserved. Unauthorized copying, publication or disclosure prohibited.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;출처: Codility_, https://app.codility.com/programmers/&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h2 id=&quot;2-해결방법-시간복잡도&quot;&gt;2. 해결방법 시간복잡도&lt;/h2&gt;
+&lt;ol&gt;
+  &lt;li&gt;단순 코딩 O(N) or O(Nlog(N))&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h2 id=&quot;3-문제-해결-및-코드&quot;&gt;3. 문제 해결 및 코드&lt;/h2&gt;
+&lt;hr /&gt;
+
+&lt;script src=&quot;https://gist.github.com/godhin/5afa6fba851afcc2151af39c0909989b.js&quot;&gt;&lt;/script&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;h2 id=&quot;주석을-참고하면서-이해를-돕습니다&quot;&gt;주석을 참고하면서 이해를 돕습니다.&lt;/h2&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;4-알고리즘-및-해설&quot;&gt;4. 알고리즘 및 해설&lt;/h2&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;문제의 요점은 순차적으로 증가하는 배열에서 규칙에 맞지않는 수를 찾는 것이다.&lt;/li&gt;
+  &lt;li&gt;내가 사용한 방법은 해당 규칙의 모든 수의 합 - 배열의 합을 한 것이다.
+    &lt;ul&gt;
+      &lt;li&gt;이때 예외처리를 해야하는 것은 배열이 없는 경우는 1로 출력한다.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;</content><author><name>You Nicholas</name></author><category term="코딩테스트" /><category term="알고리즘" /><category term="라이브코딩" /><category term="코테" /><category term="Codility" /><category term="Lessons" /><summary type="html">Codility PermMissingElem 문제 풀이</summary></entry><entry><title type="html">[파이썬][Codility_] OddOccurrencesInArray</title><link href="http://localhost:4000/%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8/OddOccurrencesInArray/" rel="alternate" type="text/html" title="[파이썬][Codility_] OddOccurrencesInArray" /><published>2022-06-22T00:00:00+09:00</published><updated>2022-06-23T00:00:00+09:00</updated><id>http://localhost:4000/%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8/OddOccurrencesInArray</id><content type="html" xml:base="http://localhost:4000/%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8/OddOccurrencesInArray/">&lt;h2 id=&quot;1-문제&quot;&gt;1. 문제&lt;/h2&gt;
 
 &lt;p&gt;A non-empty array A consisting of N integers is given. The array contains an odd number of elements, and each element of the array can be paired with another element that has the same value, except for one element that is left unpaired.&lt;/p&gt;
 
@@ -479,77 +695,4 @@ Copyright 2009–2022 by Codility Limited. All Rights Reserved. Unauthorized cop
       &lt;li&gt;오늘도 하루라는 금을 쓰러 가보자!&lt;/li&gt;
     &lt;/ul&gt;
   &lt;/li&gt;
-&lt;/ol&gt;</content><author><name>You Nicholas</name></author><category term="하루" /><category term="유통기한 하루" /><category term="성장" /><category term="습관" /><summary type="html">아침을 이기면 하루를 이길 수 있다.</summary></entry><entry><title type="html">기계식 키보드란</title><link href="http://localhost:4000/%ED%82%A4%EB%B3%B4%EB%93%9C/%EA%B8%B0%EA%B3%84%EC%8B%9D%ED%82%A4%EB%B3%B4%EB%93%9C%EB%9E%80/" rel="alternate" type="text/html" title="기계식 키보드란" /><published>2022-06-17T00:00:00+09:00</published><updated>2022-06-17T00:00:00+09:00</updated><id>http://localhost:4000/%ED%82%A4%EB%B3%B4%EB%93%9C/%EA%B8%B0%EA%B3%84%EC%8B%9D%ED%82%A4%EB%B3%B4%EB%93%9C%EB%9E%80</id><content type="html" xml:base="http://localhost:4000/%ED%82%A4%EB%B3%B4%EB%93%9C/%EA%B8%B0%EA%B3%84%EC%8B%9D%ED%82%A4%EB%B3%B4%EB%93%9C%EB%9E%80/">&lt;h2 id=&quot;기계식-키보드란&quot;&gt;기계식 키보드란?&lt;/h2&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://user-images.githubusercontent.com/75519839/174333187-79df3216-aaeb-4a82-9065-89d81e4c9011.jpg&quot; alt=&quot;IMG_8393&quot; /&gt;&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;이 사진은 내 기계식 키보드이다.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&quot;기계식-키보드가-되기-위한-조건&quot;&gt;기계식 키보드가 되기 위한 조건&lt;/h3&gt;
-
-&lt;p&gt;우리가 흔히 말하는 ‘기계식’ 키보드는 3가지 조건을 달성하면 우리가 흔히 아는 기계식이 된다.&lt;/p&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;축전식이 아닌 것&lt;/li&gt;
-  &lt;li&gt;분리되어 있던 금속 접점이 서로 접촉하며 키가 입력되는 방식일 것&lt;/li&gt;
-  &lt;li&gt;금속 접점이 분리할 수 있는 스위치 내부에 존재할 것&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;좀 더 쉽게 설명하자면,&lt;/p&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;축전량의 변화가 키를 누르는 지를 감지하는 방식 -&amp;gt; 용수철같은 전도체가 축전센서에 신호를 주는 방식이 아닌 것&lt;/li&gt;
-  &lt;li&gt;키보드 안에 스위치를 낄 수 있는 자리가 있어서 그것을 접촉시켜 키가 입력되어야 하는 방식&lt;/li&gt;
-  &lt;li&gt;스위치 안에 접점부가 있을 것&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://user-images.githubusercontent.com/75519839/174334588-8316ce01-3b9a-4a16-a203-3f98b4b11572.jpg&quot; alt=&quot;IMG_8447&quot; /&gt;&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;위의 사진이 바로 스위치라는 것이다. 해당 스위치를 눌렀을 때 우리가 흔히 말하는 땅을 치면서 접점부를 누르게 된다.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&quot;작동-방식으로-조건-간략-설명&quot;&gt;작동 방식으로 조건 간략 설명&lt;/h3&gt;
-
-&lt;p&gt;위의 조건에 나와있는 것을 반대로 돌아가면 정확하게 작동 방식이 이해가 된다.&lt;/p&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;스위치 내부의 접점부를 누른다. (스위치를 누르면 안에 스템이 내부의 스프링을 누르면서 접점부를 누르게 된다.)&lt;/li&gt;
-  &lt;li&gt;접점부를 누름과 동시에 해당 스위치의 금속 접점과 PCB(키보드 메인보드 느낌)의 접점이 신호를 받으면서 해당 키가 눌렸다고 전달한다.&lt;/li&gt;
-  &lt;li&gt;이러한 방식은 축전식이 아닌 기계식이다.&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/Pc0p70nKb3M&quot; title=&quot;YouTube video player&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;위의 영상은 제 개인 유튜브로 간략하게 찍어봤습니다. 위에 나온 스위치를 키보드에 넣었을 때 나오는 소리입니다.&lt;/li&gt;
-&lt;/ul&gt;</content><author><name>You Nicholas</name></author><category term="키보드" /><category term="키보드" /><summary type="html">멤브레인 키보드의 차이</summary></entry><entry><title type="html">노션의 글을 옮기며</title><link href="http://localhost:4000/%EC%9D%BC%EC%83%81/%EB%85%B8%EC%85%98%EC%9D%98-%EA%B8%80%EB%93%A4%EC%9D%84-%EC%98%AE%EA%B8%B0%EB%A9%B0/" rel="alternate" type="text/html" title="노션의 글을 옮기며" /><published>2022-06-16T00:00:00+09:00</published><updated>2022-06-16T00:00:00+09:00</updated><id>http://localhost:4000/%EC%9D%BC%EC%83%81/%EB%85%B8%EC%85%98%EC%9D%98%20%EA%B8%80%EB%93%A4%EC%9D%84%20%EC%98%AE%EA%B8%B0%EB%A9%B0</id><content type="html" xml:base="http://localhost:4000/%EC%9D%BC%EC%83%81/%EB%85%B8%EC%85%98%EC%9D%98-%EA%B8%80%EB%93%A4%EC%9D%84-%EC%98%AE%EA%B8%B0%EB%A9%B0/">&lt;h2 id=&quot;혼자만의-공부-공간-&quot;&gt;혼자만의 공부 공간 📜&lt;/h2&gt;
-&lt;p&gt;&lt;img src=&quot;https://user-images.githubusercontent.com/75519839/174033997-3bfd6402-63fc-45ad-b727-48efa7c97cef.png&quot; alt=&quot;스크린샷 2022-06-16 17 59 45&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;혼자 공부하는 공간이라 나만 알아볼 수 있게 정리해놨다. 👀&lt;/p&gt;
-
-&lt;p&gt;위에 보이는 것 이외에도 페이지가 너무 많아서 조만간 더 정리할 생각이다 (아이디어 노트같이 카테고리를 정하기 애매한 것들이 많다 ㅠ)&lt;/p&gt;
-
-&lt;p&gt;나는 처음 코딩을 배울 때 아는 지인으로부터 공부한 걸 기록하는 습관이 중요하다고 배웠다. 중고등학교 시절부터 무언가 배운 것이 있으면 적지 않고 머리로만 암기해서 풀었다. 그나마 교과서에 끄적이는 게 전부였기에 처음에 노션을 접하고 하나하나 적다보니 지금은 일단 적고 보는 편이다.&lt;/p&gt;
-
-&lt;p&gt;그런 나에게 노션은 혁명이였다. 적기도 수월했고 그리고 기록이 버릇으로 남다보니 핸드폰을 들고다니며 생각나는 아이디어가 있으면 일단 적고 본다. 적으니까 기억에 남아서 나중에는 잘 까먹지도 않는다.&lt;/p&gt;
-
-&lt;h2 id=&quot;엄청난-메리트-&quot;&gt;엄청난 메리트 ⁉&lt;/h2&gt;
-
-&lt;p&gt;아무래도 정리를 하다보니 문제를 풀다가 막히는 부분이 있다면 일단 내 노션부터 키고 본다. 예전에 마주했던 문제가 있다면 구글에서 찾고 비슷한 문제다 싶으면 들어가서 또 찾고 비교해야하는 수월을 훨씬 줄일 수 있다.&lt;/p&gt;
-
-&lt;h2 id=&quot;디메리트-&quot;&gt;디메리트 💢&lt;/h2&gt;
-
-&lt;p&gt;문제가 생기면 일단 기록하고 내가 본 적 있는 문제다 싶으면 노션을 켰다. 그래서 장시간 문제를 해결하는 노력을 하지 않게 된다. 디메리트라고 하기가 뭐하긴하지만 유연하게 문제를 해결하기 위해서는 가끔은 고지식하게 하나를 물고 늘어질 필요도 있다. 하지만 요즘 같이 바쁘다 바빠 현대사회에서 시간은 금이기에 ‘어? 이 문제 어디서 본 적 있는데? 이 코드 쓴 적 있는데?’ 하면 일단 내가 쓴거부터 본다.&lt;/p&gt;
-
-&lt;h3 id=&quot;고치는-중이야&quot;&gt;고치는 중이야..&lt;/h3&gt;
-
-&lt;p&gt;첫 면접날에 라이브 코딩을 본 적이 있다고 했다. 궁금하다면 &lt;strong&gt;&lt;a href=&quot;&amp;quot;https://godhin.github.io/%EC%9D%BC%EC%83%81/%EC%B2%AB-%EB%A9%B4%EC%A0%91/&amp;quot;&quot;&gt;처음으로 면접을 보았다&lt;/a&gt;&lt;/strong&gt; 가서 후기를 보길 바란다. 정말 간단한 문제였는데 못 풀었다. 그때 그 경험이 좋았던게 화이트보드를 통한 라이브코딩 그래서 나도 문제 풀때 꼭 옆에 화이트보드를 끼고 일단 머리 굴려서 풀어보고, 그리고 손 굴려서 풀어본다. 그러니까 이상하게 머리에 더 오래 남는 느낌이다. &lt;em&gt;마지막으로 블로그에 글 까지 쓰면 완벽하다.&lt;/em&gt;&lt;/p&gt;</content><author><name>You Nicholas</name></author><category term="일상" /><category term="일상" /><category term="면접" /><category term="라이브코딩" /><summary type="html">바쁜 와중 이루어진 나의 블로그 이사</summary></entry><entry><title type="html">하루라는 금</title><link href="http://localhost:4000/%ED%95%98%EB%A3%A8/%ED%95%98%EB%A3%A8%EC%9D%98-%EC%8B%9C%EC%9E%91/" rel="alternate" type="text/html" title="하루라는 금" /><published>2022-06-16T00:00:00+09:00</published><updated>2022-06-16T00:00:00+09:00</updated><id>http://localhost:4000/%ED%95%98%EB%A3%A8/%ED%95%98%EB%A3%A8%EC%9D%98%20%EC%8B%9C%EC%9E%91</id><content type="html" xml:base="http://localhost:4000/%ED%95%98%EB%A3%A8/%ED%95%98%EB%A3%A8%EC%9D%98-%EC%8B%9C%EC%9E%91/">&lt;h2 id=&quot;돌아보면서&quot;&gt;돌아보면서&lt;/h2&gt;
-&lt;p&gt;가끔 그런 생각에 빠져드는 날이 있다. ‘오늘 아무것도 하기 싫다’, ‘내일부터 하지 뭐’라는 생각이 나의 머리를 지배하는 날들
-그런 날들이 나에게 계속해서 쌓여만 가던 와중 블로그를 시작하게 되었고, 책을 읽게 되고 거울속의 내 모습을 긴 시간동안 바라보았다.
-‘과연 나는 내가 어릴 적 꿈꿔오던 지금 나이의 모습이랑 같은가’ 머릿속에 그런 문장이 지나가고 나는 되돌아보게 되었다.&lt;/p&gt;
-
-&lt;h2 id=&quot;만약에-게임&quot;&gt;만약에 게임&lt;/h2&gt;
-&lt;p&gt;만약에 ~~라면?? 만약에 말이야~ 라는 말을 입에 달고 산 적이 있다. 그런 내가 나의 모습을 본 뒤로 나에게 질문하는 만약에 게임이 있다. &lt;em&gt;‘만약에 너한테 내일 사라지는 금을 준다면 어떻게 할래?’&lt;/em&gt; 우리는 하루라는 금과도 같은 시간을 매일 버리고 있는 것 같다. 누군가는 오늘이 마지막날일 수도 있다 누군가는 내일 하루라도 더 살기위해 고통을 참고 살아간다 누군가는 어제를 후회하며 오늘을 산다. 시간은 금과 같다 우리는 매일 금같은 하루라는 시간을 가지게 되는데 이 금을 어떻게 할것인가는 나의 선택에 달린 것 같다.&lt;/p&gt;</content><author><name>You Nicholas</name></author><category term="하루" /><category term="유통기한 하루" /><category term="성장" /><category term="습관" /><summary type="html">만약에 너한테 내일 사라지는 금을 준다면 어떻게 할래?</summary></entry></feed>
+&lt;/ol&gt;</content><author><name>You Nicholas</name></author><category term="하루" /><category term="유통기한 하루" /><category term="성장" /><category term="습관" /><summary type="html">아침을 이기면 하루를 이길 수 있다.</summary></entry></feed>

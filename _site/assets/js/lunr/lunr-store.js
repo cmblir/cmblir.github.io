@@ -442,4 +442,22 @@ var store = [{
         "tags": ["알고리즘","라이브코딩","코테","Codility","Lessons"],
         "url": "/%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8/OddOccurrencesInArray/",
         "teaser": null
+      },{
+        "title": "[파이썬][Codility_] FrogJmp",
+        "excerpt":"1. 문제 A small frog wants to get to the other side of the road. The frog is currently located at position X and wants to get to a position greater than or equal to Y. The small frog always jumps a fixed distance, D. Count the minimal number of...","categories": ["코딩테스트"],
+        "tags": ["알고리즘","라이브코딩","코테","Codility","Lessons"],
+        "url": "/%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8/FrogJmp/",
+        "teaser": null
+      },{
+        "title": "[파이썬][Codility_] PermMissingElem",
+        "excerpt":"1. 문제 Task description An array A consisting of N different integers is given. The array contains integers in the range [1..(N + 1)], which means that exactly one element is missing. Your goal is to find that missing element. Write a function: def solution(A) that, given an array A,...","categories": ["코딩테스트"],
+        "tags": ["알고리즘","라이브코딩","코테","Codility","Lessons"],
+        "url": "/%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8/PermMissingElem/",
+        "teaser": null
+      },{
+        "title": "[파이썬][Codility_] TapeEquilibrium",
+        "excerpt":"1. 문제 A non-empty array A consisting of N integers is given. Array A represents numbers on a tape. Any integer P, such that 0 &lt; P &lt; N, splits this tape into two non-empty parts: A[0], A[1], …, A[P − 1] and A[P], A[P + 1], …, A[N −...","categories": ["코딩테스트"],
+        "tags": ["알고리즘","라이브코딩","코테","Codility","Lessons"],
+        "url": "/%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8/TapeEquilibrium/",
+        "teaser": null
       }]
