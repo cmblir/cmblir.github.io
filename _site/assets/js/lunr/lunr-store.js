@@ -29,6 +29,18 @@ var store = [{
         "url": "/%EB%8D%B0%EC%9D%B4%ED%84%B0%20%EB%B6%84%EC%84%9D%EA%B3%BC%20%EB%A8%B8%EC%8B%A0%EB%9F%AC%EB%8B%9D/derivative/",
         "teaser": null
       },{
+        "title": "데이터 분석과 머신러닝 - Hypothesis Test",
+        "excerpt":"1.5 Hypothesis Test 가설 검정에 대하여 가설 검정이란 주어진 상황에 대해서 하고자 하는 주장의 진위여부를 확인하는 것 데이터 분석에서는 모집단의 실제 값에 대한 sample의 통계치를 사용해서 통계적으로 유의한 지 아닌 지 확인하는 것 Descriptive Statics (기술 통계치) 데이터를 설명하는 값들 기술 통계치의 시각화 Boxplot &lt;/img&gt; Bagplot &lt;/img&gt; Violin plot &lt;/img&gt;...","categories": ["데이터 분석과 머신러닝"],
+        "tags": ["데이터 분석","머신러닝"],
+        "url": "/%EB%8D%B0%EC%9D%B4%ED%84%B0%20%EB%B6%84%EC%84%9D%EA%B3%BC%20%EB%A8%B8%EC%8B%A0%EB%9F%AC%EB%8B%9D/hypothesis/",
+        "teaser": null
+      },{
+        "title": "데이터 분석과 머신러닝 - Hypothesis Test - 2",
+        "excerpt":"1.6 Hypothesis Test 가설 검정에 대하여 가설 검정이란 주어진 상황에 대해서 하고자 하는 주장의 진위여부를 확인하는 것 데이터 분석에서는 모집단의 실제 값에 대한 sample의 통계치를 사용해서 통계적으로 유의한 지 아닌 지 확인하는 것 이전편에서 이어지는 내용에 T-test를 사용하기 위해서 조건이 필요한게 해당 조건에 대해 알아보자 T-test 특성 독립성 두 그룹이...","categories": ["데이터 분석과 머신러닝"],
+        "tags": ["데이터 분석","머신러닝"],
+        "url": "/%EB%8D%B0%EC%9D%B4%ED%84%B0%20%EB%B6%84%EC%84%9D%EA%B3%BC%20%EB%A8%B8%EC%8B%A0%EB%9F%AC%EB%8B%9D/hypothesis/",
+        "teaser": null
+      },{
         "title": "밑바닥부터 시작하는 딥러닝",
         "excerpt":"Deep learning from the bottom up (밑바닥부터 시작하는 딥러닝) CH1   Deep Learning for Scratch   사이토 고키 지음 / 齋藤康毅／著      Deep Learning 1  ","categories": ["밑바닥부터 시작하는 딥러닝"],
         "tags": ["밑바닥부터 시작하는 딥러닝","딥러닝"],
