@@ -9,8 +9,8 @@
   <head>
     <meta charset="utf-8">
 
-<!-- begin _includes/seo.html --><title>[파이썬][프로그래머스] 같은 숫자는 싫어 - 성장형 개발자 블로그</title>
-<meta name="description" content="프로그래머스 같은 숫자는 싫어 문제 풀이">
+<!-- begin _includes/seo.html --><title>[파이썬][프로그래머스] 이상한 문자 만들기 - 성장형 개발자 블로그</title>
+<meta name="description" content="프로그래머스 이상한 문자 만들기 문제 풀이">
 
 
   <meta name="author" content="You Nicholas">
@@ -22,32 +22,32 @@
 <meta property="og:type" content="article">
 <meta property="og:locale" content="ko">
 <meta property="og:site_name" content="성장형 개발자 블로그">
-<meta property="og:title" content="[파이썬][프로그래머스] 같은 숫자는 싫어">
-<meta property="og:url" content="http://localhost:4000/%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8/12906/">
+<meta property="og:title" content="[파이썬][프로그래머스] 이상한 문자 만들기">
+<meta property="og:url" content="http://localhost:4000/%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8/12930/">
 
 
-  <meta property="og:description" content="프로그래머스 같은 숫자는 싫어 문제 풀이">
-
-
-
+  <meta property="og:description" content="프로그래머스 이상한 문자 만들기 문제 풀이">
 
 
 
 
-  <meta property="article:published_time" content="2022-04-18T00:00:00+09:00">
 
 
 
-  <meta property="article:modified_time" content="2022-04-18T00:00:00+09:00">
+  <meta property="article:published_time" content="2022-04-24T00:00:00+09:00">
 
 
 
-  
+  <meta property="article:modified_time" content="2022-04-24T00:00:00+09:00">
+
+
 
   
 
+  
 
-<link rel="canonical" href="http://localhost:4000/%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8/12906/">
+
+<link rel="canonical" href="http://localhost:4000/%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8/12930/">
 
 
 
@@ -268,16 +268,16 @@
 
 
   <article class="page h-entry" itemscope itemtype="https://schema.org/CreativeWork">
-    <meta itemprop="headline" content="[파이썬][프로그래머스] 같은 숫자는 싫어">
-    <meta itemprop="description" content="프로그래머스 같은 숫자는 싫어 문제 풀이">
-    <meta itemprop="datePublished" content="2022-04-18T00:00:00+09:00">
-    <meta itemprop="dateModified" content="2022-04-18T00:00:00+09:00">
+    <meta itemprop="headline" content="[파이썬][프로그래머스] 이상한 문자 만들기">
+    <meta itemprop="description" content="프로그래머스 이상한 문자 만들기 문제 풀이">
+    <meta itemprop="datePublished" content="2022-04-24T00:00:00+09:00">
+    <meta itemprop="dateModified" content="2022-04-24T00:00:00+09:00">
 
     <div class="page__inner-wrap">
       
         <header>
           <h1 id="page-title" class="page__title p-name" itemprop="headline">
-            <a href="http://localhost:4000/%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8/12906/" class="u-url" itemprop="url">[파이썬][프로그래머스] 같은 숫자는 싫어
+            <a href="http://localhost:4000/%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8/12930/" class="u-url" itemprop="url">[파이썬][프로그래머스] 이상한 문자 만들기
 </a>
           </h1>
           
@@ -294,7 +294,7 @@
       <span class="page__meta-readtime">
         <i class="far fa-clock" aria-hidden="true"></i>
         
-          1 분 소요
+          최대 1 분 소요
         
       </span>
     
@@ -316,13 +316,13 @@
         
         <h2 id="1-문제">1. 문제</h2>
 
-<h1 id="level-1-같은-숫자는-싫어---12906">[level 1] 같은 숫자는 싫어 - 12906</h1>
+<h1 id="level-1-이상한-문자-만들기---12930">[level 1] 이상한 문자 만들기 - 12930</h1>
 
-<p><a href="https://programmers.co.kr/learn/courses/30/lessons/12906">문제 링크</a></p>
+<p><a href="https://programmers.co.kr/learn/courses/30/lessons/12930">문제 링크</a></p>
 
 <h3 id="성능-요약">성능 요약</h3>
 
-<p>메모리: 27.9 MB, 시간: 106.24 ms</p>
+<p>메모리: 10.2 MB, 시간: 0.04 ms</p>
 
 <h3 id="구분">구분</h3>
 
@@ -330,49 +330,35 @@
 
 <h3 id="채점결과">채점결과</h3>
 
-<p><br />정확성: 71.9<br />효율성: 28.1<br />합계: 100.0 / 100.0</p>
+<p><br />정확성: 100.0<br />합계: 100.0 / 100.0</p>
 
 <h3 id="문제-설명">문제 설명</h3>
 
-<p>배열 arr가 주어집니다. 배열 arr의 각 원소는 숫자 0부터 9까지로 이루어져 있습니다. 이때, 배열 arr에서 연속적으로 나타나는 숫자는 하나만 남기고 전부 제거하려고 합니다. 단, 제거된 후 남은 수들을 반환할 때는 배열 arr의 원소들의 순서를 유지해야 합니다. 예를 들면,</p>
+<p>문자열 s는 한 개 이상의 단어로 구성되어 있습니다. 각 단어는 하나 이상의 공백문자로 구분되어 있습니다. 각 단어의 짝수번째 알파벳은 대문자로, 홀수번째 알파벳은 소문자로 바꾼 문자열을 리턴하는 함수, solution을 완성하세요.</p>
+
+<h5>제한 사항</h5>
 
 <ul>
-<li>arr = [1, 1, 3, 3, 0, 1, 1] 이면 [1, 3, 0, 1] 을 return 합니다.</li>
-<li>arr = [4, 4, 4, 3, 3] 이면 [4, 3] 을 return 합니다.</li>
+<li>문자열 전체의 짝/홀수 인덱스가 아니라, 단어(공백을 기준)별로 짝/홀수 인덱스를 판단해야합니다.</li>
+<li>첫 번째 글자는 0번째 인덱스로 보아 짝수번째 알파벳으로 처리해야 합니다.</li>
 </ul>
-
-<p>배열 arr에서 연속적으로 나타나는 숫자는 제거하고 남은 수들을 return 하는 solution 함수를 완성해 주세요.</p>
-
-<h5>제한사항</h5>
-
-<ul>
-<li>배열 arr의 크기 : 1,000,000 이하의 자연수</li>
-<li>배열 arr의 원소의 크기 : 0보다 크거나 같고 9보다 작거나 같은 정수</li>
-</ul>
-
-<hr />
 
 <h5>입출력 예</h5>
 <table class="table">
         <thead><tr>
-<th>arr</th>
-<th>answer</th>
+<th>s</th>
+<th>return</th>
 </tr>
 </thead>
         <tbody><tr>
-<td>[1,1,3,3,0,1,1]</td>
-<td>[1,3,0,1]</td>
-</tr>
-<tr>
-<td>[4,4,4,3,3]</td>
-<td>[4,3]</td>
+<td>"try hello world"</td>
+<td>"TrY HeLlO WoRlD"</td>
 </tr>
 </tbody>
       </table>
 <h5>입출력 예 설명</h5>
 
-<p>입출력 예 #1,2<br />
-문제의 예시와 같습니다.</p>
+<p>"try hello world"는 세 단어 "try", "hello", "world"로 구성되어 있습니다. 각 단어의 짝수번째 문자를 대문자로, 홀수번째 문자를 소문자로 바꾸면 "TrY", "HeLlO", "WoRlD"입니다. 따라서 "TrY HeLlO WoRlD" 를 리턴합니다.</p>
 
 <blockquote>
   <p>출처: 프로그래머스 코딩 테스트 연습, https://programmers.co.kr/learn/challenges</p>
@@ -380,13 +366,13 @@
 
 <h2 id="2-해결방법-시간복잡도">2. 해결방법 시간복잡도</h2>
 <ol>
-  <li>단순 코딩 O(N)</li>
+  <li>단순 코딩 O(N^2)</li>
 </ol>
 
 <h2 id="3-문제-해결-및-코드">3. 문제 해결 및 코드</h2>
 <hr />
 
-<script src="https://gist.github.com/godhin/e124404be785906abbc3991a8f1b2fe7.js"></script>
+<script src="https://gist.github.com/godhin/5634c0498284d16902e58a78aa0a5607.js"></script>
 
 <ul>
   <li>
@@ -397,10 +383,10 @@
 <h2 id="4-알고리즘-및-해설">4. 알고리즘 및 해설</h2>
 
 <ol>
-  <li>반복문을 통해 해당 리스트 전체를 확인한다.</li>
-  <li>이때 if문을 통해 반복문이 돌아가는 동안 현재 반복문이 위치한 값과 다음 위치할 값이 같지 않다면(같은 숫자가 아니라면), result라는 리스트에 현재 값을 삽입한다.</li>
-  <li>마지막 값은 비교할 다음 값이 없으므로 추가해준다.</li>
-  <li>반복되는 수가 제거된 result 리스트를 출력해준다.</li>
+  <li>결과값에 사용할 변수를 빈 문자열로 만든다.</li>
+  <li>리스트형태로 받은 문자열을 공백을 기준으로 나눠준 뒤 이중 반복문을 통해 문제를 해결한다.</li>
+  <li>이때 해당 문자의 길이만큼 반복을 도는데, 문자의 위치가 짝수번째일 경우 해당 문자는 대문자로, 아닐경우 소문자로 바꿔준다.</li>
+  <li>반복문이 끝나는 시점마다 공백을 다시 재추가하여 마지막 공백 이전까지 출력한다.</li>
 </ol>
 
         
@@ -451,7 +437,7 @@
 
         
 
-  <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> 업데이트:</strong> <time class="dt-published" datetime="2022-04-18">April 18, 2022</time></p>
+  <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> 업데이트:</strong> <time class="dt-published" datetime="2022-04-24">April 24, 2022</time></p>
 
       </footer>
 
@@ -460,22 +446,22 @@
     <h4 class="page__share-title">공유하기</h4>
   
 
-  <a href="https://twitter.com/intent/tweet?text=%5B%ED%8C%8C%EC%9D%B4%EC%8D%AC%5D%5B%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4%5D+%EA%B0%99%EC%9D%80+%EC%88%AB%EC%9E%90%EB%8A%94+%EC%8B%AB%EC%96%B4%20http%3A%2F%2Flocalhost%3A4000%2F%25EC%25BD%2594%25EB%2594%25A9%25ED%2585%258C%25EC%258A%25A4%25ED%258A%25B8%2F12906%2F" class="btn btn--twitter" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="공유하기 Twitter"><i class="fab fa-fw fa-twitter" aria-hidden="true"></i><span> Twitter</span></a>
+  <a href="https://twitter.com/intent/tweet?text=%5B%ED%8C%8C%EC%9D%B4%EC%8D%AC%5D%5B%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4%5D+%EC%9D%B4%EC%83%81%ED%95%9C+%EB%AC%B8%EC%9E%90+%EB%A7%8C%EB%93%A4%EA%B8%B0%20http%3A%2F%2Flocalhost%3A4000%2F%25EC%25BD%2594%25EB%2594%25A9%25ED%2585%258C%25EC%258A%25A4%25ED%258A%25B8%2F12930%2F" class="btn btn--twitter" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="공유하기 Twitter"><i class="fab fa-fw fa-twitter" aria-hidden="true"></i><span> Twitter</span></a>
 
-  <a href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Flocalhost%3A4000%2F%25EC%25BD%2594%25EB%2594%25A9%25ED%2585%258C%25EC%258A%25A4%25ED%258A%25B8%2F12906%2F" class="btn btn--facebook" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="공유하기 Facebook"><i class="fab fa-fw fa-facebook" aria-hidden="true"></i><span> Facebook</span></a>
+  <a href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Flocalhost%3A4000%2F%25EC%25BD%2594%25EB%2594%25A9%25ED%2585%258C%25EC%258A%25A4%25ED%258A%25B8%2F12930%2F" class="btn btn--facebook" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="공유하기 Facebook"><i class="fab fa-fw fa-facebook" aria-hidden="true"></i><span> Facebook</span></a>
 
-  <a href="https://www.linkedin.com/shareArticle?mini=true&url=http%3A%2F%2Flocalhost%3A4000%2F%25EC%25BD%2594%25EB%2594%25A9%25ED%2585%258C%25EC%258A%25A4%25ED%258A%25B8%2F12906%2F" class="btn btn--linkedin" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="공유하기 LinkedIn"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i><span> LinkedIn</span></a>
+  <a href="https://www.linkedin.com/shareArticle?mini=true&url=http%3A%2F%2Flocalhost%3A4000%2F%25EC%25BD%2594%25EB%2594%25A9%25ED%2585%258C%25EC%258A%25A4%25ED%258A%25B8%2F12930%2F" class="btn btn--linkedin" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="공유하기 LinkedIn"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i><span> LinkedIn</span></a>
 </section>
 
 
       
   <nav class="pagination">
     
-      <a href="/%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8/10797/" class="pagination--pager" title="[파이썬][백준 10797번] 10부제
+      <a href="/%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8/12926/" class="pagination--pager" title="[파이썬][프로그래머스] 시저 암호
 ">이전</a>
     
     
-      <a href="/%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8/12935/" class="pagination--pager" title="[파이썬][프로그래머스] 제일 작은 수 제거하기
+      <a href="/%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8/10817/" class="pagination--pager" title="[파이썬][백준 10817번] 세 수
 ">다음</a>
     
   </nav>
