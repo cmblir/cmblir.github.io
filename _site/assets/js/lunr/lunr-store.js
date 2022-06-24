@@ -197,6 +197,12 @@ var store = [{
         "url": "/%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8/12906/",
         "teaser": null
       },{
+        "title": "[파이썬][프로그래머스] 문자열을 정수로 바꾸기",
+        "excerpt":"1. 문제 [level 1] 문자열을 정수로 바꾸기 - 12925 문제 링크 성능 요약 메모리: 10.3 MB, 시간: 0.01 ms 구분 코딩테스트 연습 &gt; 연습문제 채점결과 정확성: 100.0 합계: 100.0 / 100.0 문제 설명 문자열 s를 숫자로 변환한 결과를 반환하는 함수, solution을 완성하세요. 제한 조건 s의 길이는 1 이상 5이하입니다. s의 맨앞에는...","categories": ["코딩테스트"],
+        "tags": ["알고리즘","라이브코딩","코테","프로그래머스","Level_1"],
+        "url": "/%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8/12925/",
+        "teaser": null
+      },{
         "title": "[파이썬][프로그래머스] 2016년",
         "excerpt":"1. 문제 [level 1] 2016년 - 12901 문제 링크 성능 요약 메모리: 10.2 MB, 시간: 0.00 ms 구분 코딩테스트 연습 &gt; 연습문제 채점결과 정확성: 100.0 합계: 100.0 / 100.0 문제 설명 2016년 1월 1일은 금요일입니다. 2016년 a월 b일은 무슨 요일일까요? 두 수 a ,b를 입력받아 2016년 a월 b일이 무슨 요일인지 리턴하는...","categories": ["코딩테스트"],
         "tags": ["알고리즘","라이브코딩","코테","프로그래머스","Level_1"],
@@ -263,6 +269,18 @@ var store = [{
         "url": "/%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8/12922/",
         "teaser": null
       },{
+        "title": "12928",
+        "excerpt":" ","categories": [],
+        "tags": [],
+        "url": "/12928/",
+        "teaser": null
+      },{
+        "title": "[파이썬][프로그래머스] 시저 암호",
+        "excerpt":"1. 문제 [level 1] 시저 암호 - 12926 문제 링크 성능 요약 메모리: 10.1 MB, 시간: 1.77 ms 구분 코딩테스트 연습 &gt; 연습문제 채점결과 정확성: 100.0 합계: 100.0 / 100.0 문제 설명 어떤 문장의 각 알파벳을 일정한 거리만큼 밀어서 다른 알파벳으로 바꾸는 암호화 방식을 시저 암호라고 합니다. 예를 들어 \"AB\"는 1만큼...","categories": ["코딩테스트"],
+        "tags": ["알고리즘","라이브코딩","코테","프로그래머스","Level_1"],
+        "url": "/%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8/12926/",
+        "teaser": null
+      },{
         "title": "[파이썬][백준 10817번] 세 수",
         "excerpt":"1. 문제 [Bronze III] 세 수 - 10817 문제 링크 성능 요약 메모리: 30840 KB, 시간: 68 ms 분류 구현(implementation) 문제 설명 세 정수 A, B, C가 주어진다. 이때, 두 번째로 큰 정수를 출력하는 프로그램을 작성하시오. 입력 첫째 줄에 세 정수 A, B, C가 공백으로 구분되어 주어진다. (1 ≤ A,...","categories": ["코딩테스트"],
         "tags": ["알고리즘","라이브코딩","코테","백준","Bronze"],
@@ -283,7 +301,7 @@ var store = [{
       },{
         "title": "[파이썬][백준 10039번] 평균 점수",
         "excerpt":"[Bronze IV] 평균 점수 - 10039 문제 링크 성능 요약 메모리: 30840 KB, 시간: 72 ms 분류 사칙연산(arithmetic), 수학(math) 문제 설명 상현이가 가르치는 아이폰 앱 개발 수업의 수강생은 원섭, 세희, 상근, 숭, 강수이다. 어제 이 수업의 기말고사가 있었고, 상현이는 지금 학생들의 기말고사 시험지를 채점하고 있다. 기말고사 점수가 40점 이상인 학생들은...","categories": ["코딩테스트"],
-        "tags": ["알고리즘","라이브코딩","코테","프로그래머스","Bronze"],
+        "tags": ["알고리즘","라이브코딩","코테","백준","Bronze"],
         "url": "/%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8/10039/",
         "teaser": null
       },{
@@ -419,45 +437,45 @@ var store = [{
         "url": "/%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8/1845/",
         "teaser": null
       },{
-        "title": "[파이썬][Codility_] BinaryGap",
+        "title": "[파이썬][Codility_][코디리티] BinaryGap",
         "excerpt":"1. 문제 A binary gap within a positive integer N is any maximal sequence of consecutive zeros that is surrounded by ones at both ends in the binary representation of N. For example, number 9 has binary representation 1001 and contains a binary gap of length 2. The number 529...","categories": ["코딩테스트"],
-        "tags": ["알고리즘","라이브코딩","코테","Codility","Lessons"],
+        "tags": ["알고리즘","라이브코딩","코테","Codility","코디리티","Lessons"],
         "url": "/%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8/BinaryGap/",
         "teaser": null
       },{
-        "title": "[파이썬][Codility_] CyclicRotation",
+        "title": "[파이썬][Codility_][코디리티] CyclicRotation",
         "excerpt":"1. 문제 An array A consisting of N integers is given. Rotation of the array means that each element is shifted right by one index, and the last element of the array is moved to the first place. For example, the rotation of array A = [3, 8, 9, 7,...","categories": ["코딩테스트"],
-        "tags": ["알고리즘","라이브코딩","코테","Codility","Lessons"],
+        "tags": ["알고리즘","라이브코딩","코테","Codility","코디리티","Lessons"],
         "url": "/%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8/CyclicRotation/",
         "teaser": null
       },{
-        "title": "[파이썬][Codility_] FuryRoad",
+        "title": "[파이썬][Codility_][코디리티] FuryRoad",
         "excerpt":"0. 챌린지 소개 1. 문제 You have to be at your work as soon as possible. The road on your route to work may consist of two types of surface: asphalt or sand. To simplify the description, it will be denoted by a string R consisting only of the letters:...","categories": ["코딩테스트"],
-        "tags": ["알고리즘","라이브코딩","코테","Codility Challenge"],
+        "tags": ["알고리즘","라이브코딩","코테","Codility","코디리티","Codility Challenge"],
         "url": "/%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8/FuryRoad/",
         "teaser": null
       },{
-        "title": "[파이썬][Codility_] OddOccurrencesInArray",
+        "title": "[파이썬][Codility_][코디리티] OddOccurrencesInArray",
         "excerpt":"1. 문제 A non-empty array A consisting of N integers is given. The array contains an odd number of elements, and each element of the array can be paired with another element that has the same value, except for one element that is left unpaired. For example, in array A...","categories": ["코딩테스트"],
-        "tags": ["알고리즘","라이브코딩","코테","Codility","Lessons"],
+        "tags": ["알고리즘","라이브코딩","코테","Codility","코디리티","Lessons"],
         "url": "/%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8/OddOccurrencesInArray/",
         "teaser": null
       },{
-        "title": "[파이썬][Codility_] FrogJmp",
+        "title": "[파이썬][Codility_][코디리티] FrogJmp",
         "excerpt":"1. 문제 A small frog wants to get to the other side of the road. The frog is currently located at position X and wants to get to a position greater than or equal to Y. The small frog always jumps a fixed distance, D. Count the minimal number of...","categories": ["코딩테스트"],
-        "tags": ["알고리즘","라이브코딩","코테","Codility","Lessons"],
+        "tags": ["알고리즘","라이브코딩","코테","Codility","코디리티","Lessons"],
         "url": "/%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8/FrogJmp/",
         "teaser": null
       },{
-        "title": "[파이썬][Codility_] PermMissingElem",
+        "title": "[파이썬][Codility_][코디리티] PermMissingElem",
         "excerpt":"1. 문제 Task description An array A consisting of N different integers is given. The array contains integers in the range [1..(N + 1)], which means that exactly one element is missing. Your goal is to find that missing element. Write a function: def solution(A) that, given an array A,...","categories": ["코딩테스트"],
-        "tags": ["알고리즘","라이브코딩","코테","Codility","Lessons"],
+        "tags": ["알고리즘","라이브코딩","코테","Codility","코디리티","Lessons"],
         "url": "/%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8/PermMissingElem/",
         "teaser": null
       },{
-        "title": "[파이썬][Codility_] TapeEquilibrium",
+        "title": "[파이썬][Codility_][코디리티] TapeEquilibrium",
         "excerpt":"1. 문제 A non-empty array A consisting of N integers is given. Array A represents numbers on a tape. Any integer P, such that 0 &lt; P &lt; N, splits this tape into two non-empty parts: A[0], A[1], …, A[P − 1] and A[P], A[P + 1], …, A[N −...","categories": ["코딩테스트"],
-        "tags": ["알고리즘","라이브코딩","코테","Codility","Lessons"],
+        "tags": ["알고리즘","라이브코딩","코테","Codility","코디리티","Lessons"],
         "url": "/%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8/TapeEquilibrium/",
         "teaser": null
       }]

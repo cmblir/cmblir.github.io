@@ -1,11 +1,11 @@
 ---
-title:  "[파이썬][Codility_] BinaryGap"
+title:  "[파이썬][Codility_][코디리티] BinaryGap"
 excerpt: "Codility BinaryGap 문제 풀이"
 
 categories:
   - 코딩테스트
 tags:
-  - [알고리즘, 라이브코딩, 코테, Codility, Lessons]
+  - [알고리즘, 라이브코딩, 코테, Codility, 코디리티, Lessons]
 
 toc: true
 toc_sticky: true
