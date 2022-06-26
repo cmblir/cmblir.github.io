@@ -9,8 +9,8 @@
   <head>
     <meta charset="utf-8">
 
-<!-- begin _includes/seo.html --><title>[파이썬][프로그래머스] 콜라츠 추측 - 성장형 개발자 블로그</title>
-<meta name="description" content="프로그래머스 콜라츠 추측 문제 풀이">
+<!-- begin _includes/seo.html --><title>[파이썬][프로그래머스] 로또의 최고 순위와 최저 순위 - 성장형 개발자 블로그</title>
+<meta name="description" content="프로그래머스 로또의 최고 순위와 최저 순위 문제 풀이">
 
 
   <meta name="author" content="You Nicholas">
@@ -22,32 +22,32 @@
 <meta property="og:type" content="article">
 <meta property="og:locale" content="ko">
 <meta property="og:site_name" content="성장형 개발자 블로그">
-<meta property="og:title" content="[파이썬][프로그래머스] 콜라츠 추측">
-<meta property="og:url" content="http://localhost:4000/%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8/12943/">
+<meta property="og:title" content="[파이썬][프로그래머스] 로또의 최고 순위와 최저 순위">
+<meta property="og:url" content="http://localhost:4000/%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8/77484/">
 
 
-  <meta property="og:description" content="프로그래머스 콜라츠 추측 문제 풀이">
-
-
-
+  <meta property="og:description" content="프로그래머스 로또의 최고 순위와 최저 순위 문제 풀이">
 
 
 
 
-  <meta property="article:published_time" content="2022-04-18T00:00:00+09:00">
 
 
 
-  <meta property="article:modified_time" content="2022-04-18T00:00:00+09:00">
+  <meta property="article:published_time" content="2022-06-26T00:00:00+09:00">
 
 
 
-  
+  <meta property="article:modified_time" content="2022-06-26T00:00:00+09:00">
+
+
 
   
 
+  
 
-<link rel="canonical" href="http://localhost:4000/%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8/12943/">
+
+<link rel="canonical" href="http://localhost:4000/%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8/77484/">
 
 
 
@@ -268,16 +268,16 @@
 
 
   <article class="page h-entry" itemscope itemtype="https://schema.org/CreativeWork">
-    <meta itemprop="headline" content="[파이썬][프로그래머스] 콜라츠 추측">
-    <meta itemprop="description" content="프로그래머스 콜라츠 추측 문제 풀이">
-    <meta itemprop="datePublished" content="2022-04-18T00:00:00+09:00">
-    <meta itemprop="dateModified" content="2022-04-18T00:00:00+09:00">
+    <meta itemprop="headline" content="[파이썬][프로그래머스] 로또의 최고 순위와 최저 순위">
+    <meta itemprop="description" content="프로그래머스 로또의 최고 순위와 최저 순위 문제 풀이">
+    <meta itemprop="datePublished" content="2022-06-26T00:00:00+09:00">
+    <meta itemprop="dateModified" content="2022-06-26T00:00:00+09:00">
 
     <div class="page__inner-wrap">
       
         <header>
           <h1 id="page-title" class="page__title p-name" itemprop="headline">
-            <a href="http://localhost:4000/%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8/12943/" class="u-url" itemprop="url">[파이썬][프로그래머스] 콜라츠 추측
+            <a href="http://localhost:4000/%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8/77484/" class="u-url" itemprop="url">[파이썬][프로그래머스] 로또의 최고 순위와 최저 순위
 </a>
           </h1>
           
@@ -294,7 +294,7 @@
       <span class="page__meta-readtime">
         <i class="far fa-clock" aria-hidden="true"></i>
         
-          1 분 소요
+          3 분 소요
         
       </span>
     
@@ -316,17 +316,17 @@
         
         <h2 id="1-문제">1. 문제</h2>
 
-<h1 id="level-1-콜라츠-추측---12943">[level 1] 콜라츠 추측 - 12943</h1>
+<h1 id="level-1-로또의-최고-순위와-최저-순위---77484">[level 1] 로또의 최고 순위와 최저 순위 - 77484</h1>
 
-<p><a href="https://programmers.co.kr/learn/courses/30/lessons/12943">문제 링크</a></p>
+<p><a href="https://programmers.co.kr/learn/courses/30/lessons/77484">문제 링크</a></p>
 
 <h3 id="성능-요약">성능 요약</h3>
 
-<p>메모리: 10.2 MB, 시간: 0.04 ms</p>
+<p>메모리: 10.4 MB, 시간: 0.02 ms</p>
 
 <h3 id="구분">구분</h3>
 
-<p>코딩테스트 연습 &gt; 연습문제</p>
+<p>코딩테스트 연습 &gt; 2021 Dev－Matching： 웹 백엔드 개발자（상반기）</p>
 
 <h3 id="채점결과">채점결과</h3>
 
@@ -334,50 +334,192 @@
 
 <h3 id="문제-설명">문제 설명</h3>
 
-<p>1937년 Collatz란 사람에 의해 제기된 이 추측은, 주어진 수가 1이 될때까지 다음 작업을 반복하면, 모든 수를 1로 만들 수 있다는 추측입니다. 작업은 다음과 같습니다.</p>
-<div class="highlight"><pre class="codehilite"><code>1-1. 입력된 수가 짝수라면 2로 나눕니다. 
-1-2. 입력된 수가 홀수라면 3을 곱하고 1을 더합니다.
-2. 결과로 나온 수에 같은 작업을 1이 될 때까지 반복합니다.
-</code></pre></div>
-<p>예를 들어, 입력된 수가 6이라면 6→3→10→5→16→8→4→2→1 이 되어 총 8번 만에 1이 됩니다. 위 작업을 몇 번이나 반복해야하는지 반환하는 함수, solution을 완성해 주세요. 단, 작업을 500번을 반복해도 1이 되지 않는다면 –1을 반환해 주세요.</p>
-
-<h5>제한 사항</h5>
+<p><code>로또 6/45</code>(이하 '로또'로 표기)는 1부터 45까지의 숫자 중 6개를 찍어서 맞히는 대표적인 복권입니다. 아래는 로또의 순위를 정하는 방식입니다. <sup id="fnref1"><a href="#fn1">1</a></sup></p>
+<table class="table">
+        <thead><tr>
+<th>순위</th>
+<th>당첨 내용</th>
+</tr>
+</thead>
+        <tbody><tr>
+<td>1</td>
+<td>6개 번호가 모두 일치</td>
+</tr>
+<tr>
+<td>2</td>
+<td>5개 번호가 일치</td>
+</tr>
+<tr>
+<td>3</td>
+<td>4개 번호가 일치</td>
+</tr>
+<tr>
+<td>4</td>
+<td>3개 번호가 일치</td>
+</tr>
+<tr>
+<td>5</td>
+<td>2개 번호가 일치</td>
+</tr>
+<tr>
+<td>6(낙첨)</td>
+<td>그 외</td>
+</tr>
+</tbody>
+      </table>
+<p>로또를 구매한 민우는 당첨 번호 발표일을 학수고대하고 있었습니다. 하지만, 민우의 동생이 로또에 낙서를 하여, 일부 번호를 알아볼 수 없게 되었습니다. 당첨 번호 발표 후, 민우는 자신이 구매했던 로또로 당첨이 가능했던 최고 순위와 최저 순위를 알아보고 싶어 졌습니다. <br />
+알아볼 수 없는 번호를 <code>0</code>으로 표기하기로 하고, 민우가 구매한 로또 번호 6개가 <code>44, 1, 0, 0, 31 25</code>라고 가정해보겠습니다. 당첨 번호 6개가 <code>31, 10, 45, 1, 6, 19</code>라면, 당첨 가능한 최고 순위와 최저 순위의 한 예는 아래와 같습니다.</p>
+<table class="table">
+        <thead><tr>
+<th>당첨 번호</th>
+<th>31</th>
+<th>10</th>
+<th>45</th>
+<th>1</th>
+<th>6</th>
+<th>19</th>
+<th>결과</th>
+</tr>
+</thead>
+        <tbody><tr>
+<td>최고 순위 번호</td>
+<td><u><strong>31</strong></u></td>
+<td>0→<u><strong>10</strong></u></td>
+<td>44</td>
+<td><u><strong>1</strong></u></td>
+<td>0→<u><strong>6</strong></u></td>
+<td>25</td>
+<td>4개 번호 일치, 3등</td>
+</tr>
+<tr>
+<td>최저 순위 번호</td>
+<td><u><strong>31</strong></u></td>
+<td>0→11</td>
+<td>44</td>
+<td><u><strong>1</strong></u></td>
+<td>0→7</td>
+<td>25</td>
+<td>2개 번호 일치, 5등</td>
+</tr>
+</tbody>
+      </table>
+<ul>
+<li>순서와 상관없이, 구매한 로또에 당첨 번호와 일치하는 번호가 있으면 맞힌 걸로 인정됩니다. </li>
+<li>알아볼 수 없는 두 개의 번호를 각각 10, 6이라고 가정하면 3등에 당첨될 수 있습니다. 
 
 <ul>
-<li>입력된 수,  <code>num</code>은 1 이상 8000000 미만인 정수입니다.</li>
+<li>3등을 만드는 다른 방법들도 존재합니다. 하지만, 2등 이상으로 만드는 것은 불가능합니다. </li>
+</ul></li>
+<li>알아볼 수 없는 두 개의 번호를 각각 11, 7이라고 가정하면 5등에 당첨될 수 있습니다. 
+
+<ul>
+<li>5등을 만드는 다른 방법들도 존재합니다. 하지만, 6등(낙첨)으로 만드는 것은 불가능합니다.</li>
+</ul></li>
 </ul>
+
+<p>민우가 구매한 로또 번호를 담은 배열 lottos, 당첨 번호를 담은 배열 win_nums가 매개변수로 주어집니다. 이때, 당첨 가능한 최고 순위와 최저 순위를 차례대로 배열에 담아서 return 하도록 solution 함수를 완성해주세요. </p>
+
+<h5>제한사항</h5>
+
+<ul>
+<li>lottos는 길이 6인 정수 배열입니다.</li>
+<li>lottos의 모든 원소는 0 이상 45 이하인 정수입니다.
+
+<ul>
+<li>0은 알아볼 수 없는 숫자를 의미합니다.</li>
+<li>0을 제외한 다른 숫자들은 lottos에 2개 이상 담겨있지 않습니다.</li>
+<li>lottos의 원소들은 정렬되어 있지 않을 수도 있습니다.</li>
+</ul></li>
+<li>win_nums은 길이 6인 정수 배열입니다.</li>
+<li>win_nums의 모든 원소는 1 이상 45 이하인 정수입니다.
+
+<ul>
+<li>win_nums에는 같은 숫자가 2개 이상 담겨있지 않습니다.</li>
+<li>win_nums의 원소들은 정렬되어 있지 않을 수도 있습니다.</li>
+</ul></li>
+</ul>
+
+<hr />
 
 <h5>입출력 예</h5>
 <table class="table">
         <thead><tr>
-<th>n</th>
+<th>lottos</th>
+<th>win_nums</th>
 <th>result</th>
 </tr>
 </thead>
         <tbody><tr>
-<td>6</td>
-<td>8</td>
+<td>[44, 1, 0, 0, 31, 25]</td>
+<td>[31, 10, 45, 1, 6, 19]</td>
+<td>[3, 5]</td>
 </tr>
 <tr>
-<td>16</td>
-<td>4</td>
+<td>[0, 0, 0, 0, 0, 0]</td>
+<td>[38, 19, 20, 40, 15, 25]</td>
+<td>[1, 6]</td>
 </tr>
 <tr>
-<td>626331</td>
-<td>-1</td>
+<td>[45, 4, 35, 20, 3, 9]</td>
+<td>[20, 9, 3, 45, 4, 35]</td>
+<td>[1, 1]</td>
 </tr>
 </tbody>
       </table>
 <h5>입출력 예 설명</h5>
 
 <p>입출력 예 #1<br />
-문제의 설명과 같습니다.</p>
+문제 예시와 같습니다.</p>
 
 <p>입출력 예 #2<br />
-16 -&gt; 8 -&gt; 4 -&gt; 2 -&gt; 1 이되어 총 4번만에 1이 됩니다.</p>
-
+알아볼 수 없는 번호들이 아래와 같았다면, 1등과 6등에 당첨될 수 있습니다. </p>
+<table class="table">
+        <thead><tr>
+<th>당첨 번호</th>
+<th>38</th>
+<th>19</th>
+<th>20</th>
+<th>40</th>
+<th>15</th>
+<th>25</th>
+<th>결과</th>
+</tr>
+</thead>
+        <tbody><tr>
+<td>최고 순위 번호</td>
+<td>0→<u><strong>38</strong></u></td>
+<td>0→<u><strong>19</strong></u></td>
+<td>0→<u><strong>20</strong></u></td>
+<td>0→<u><strong>40</strong></u></td>
+<td>0→<u><strong>15</strong></u></td>
+<td>0→<u><strong>25</strong></u></td>
+<td>6개 번호 일치, 1등</td>
+</tr>
+<tr>
+<td>최저 순위 번호</td>
+<td>0→21</td>
+<td>0→22</td>
+<td>0→23</td>
+<td>0→24</td>
+<td>0→26</td>
+<td>0→27</td>
+<td>0개 번호 일치, 6등</td>
+</tr>
+</tbody>
+      </table>
 <p>입출력 예 #3<br />
-626331은 500번을 시도해도 1이 되지 못하므로 -1을 리턴해야합니다.</p>
+민우가 구매한 로또의 번호와 당첨 번호가 모두 일치하므로, 최고 순위와 최저 순위는 모두 1등입니다. </p>
+
+<div class="footnotes">
+<hr />
+<ol>
+
+<li id="fn1">
+<p>실제로 사용되는 로또 순위의 결정 방식과는 약간 다르지만, 이 문제에서는 지문에 명시된 대로 로또 순위를 결정하도록 합니다. &nbsp;<a href="#fnref1">↩</a></p>
+</li>
+
+</ol>
+</div>
 
 <blockquote>
   <p>출처: 프로그래머스 코딩 테스트 연습, https://programmers.co.kr/learn/challenges</p>
@@ -385,13 +527,13 @@
 
 <h2 id="2-해결방법-시간복잡도">2. 해결방법 시간복잡도</h2>
 <ol>
-  <li>재귀문 O(N)</li>
+  <li>단순 코딩 O(N)</li>
 </ol>
 
 <h2 id="3-문제-해결-및-코드">3. 문제 해결 및 코드</h2>
 <hr />
 
-<script src="https://gist.github.com/godhin/986643e30d4a39a6b148dd098c4f6a8a.js"></script>
+<script src="https://gist.github.com/godhin/fd6c1299d939d62517db232f47bc4de4.js"></script>
 
 <ul>
   <li>
@@ -402,15 +544,32 @@
 <h2 id="4-알고리즘-및-해설">4. 알고리즘 및 해설</h2>
 
 <ol>
-  <li>해당 수가 짝수라면 2로 나누고 아니라면 3을 곱하고 1을 더해서 최종적으로 1을 만드는 문제이다.</li>
-  <li>재귀문을 통해 1이 되었을 때 시도횟수가 500회를 넘는다면 -1을 넘지 않는다면 카운트한 숫자를 출력해준다.</li>
+  <li>문제에서 제시하는 로또의 등수 기준을 딕셔너리로 만들었다.</li>
+  <li>이후 두 변수를 만든 후 반복문을 통해 내가 쓴 로또번호가 당첨 번호에 있을 경우 변수에 값을 추가하는 방식이다.
+    <ul>
+      <li>이때 0인 경우는 당첨여부를 모르기때문에 행복회로(최고 순위)값에 추가해준다.</li>
+    </ul>
+  </li>
+  <li>이후 해당 값을 딕셔너리에서 찾아 출력하는 방식으로 풀었다.</li>
 </ol>
 
 <h2 id="5-짚고-넘어가기">5. 짚고 넘어가기</h2>
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">def</span> <span class="nf">solution</span><span class="p">(</span><span class="n">lottos</span><span class="p">,</span> <span class="n">win_nums</span><span class="p">):</span>
+    <span class="n">zero</span> <span class="o">=</span> <span class="n">lottos</span><span class="p">.</span><span class="n">count</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>
+    <span class="n">a</span><span class="o">=</span> <span class="p">[</span><span class="n">x</span> <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="n">lottos</span> <span class="k">if</span> <span class="n">x</span> <span class="ow">in</span> <span class="n">win_nums</span><span class="p">]</span>
+    <span class="nb">max</span> <span class="o">=</span> <span class="n">zero</span><span class="o">+</span><span class="nb">len</span><span class="p">(</span><span class="n">a</span><span class="p">)</span>
+    <span class="nb">min</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">a</span><span class="p">)</span>
 
-<ol>
-  <li><strong>nonlocal</strong>의 경우 정의된 함수 밖의 변수에 값을 변경할 때 자주 사용된다.</li>
-</ol>
+    <span class="nb">max</span> <span class="o">=</span> <span class="mi">7</span><span class="o">-</span> <span class="nb">max</span> <span class="k">if</span> <span class="nb">max</span> <span class="o">&gt;=</span><span class="mi">1</span> <span class="k">else</span> <span class="mi">6</span>
+    <span class="nb">min</span> <span class="o">=</span> <span class="mi">7</span><span class="o">-</span> <span class="nb">min</span> <span class="k">if</span> <span class="nb">min</span> <span class="o">&gt;=</span><span class="mi">1</span> <span class="k">else</span> <span class="mi">6</span>
+    <span class="k">return</span> <span class="p">[</span><span class="nb">max</span><span class="p">,</span><span class="nb">min</span><span class="p">]</span>
+
+</code></pre></div></div>
+
+<p>[정답 출처 : 프로그래머스 다른 사람의 풀이]</p>
+<ul>
+  <li>다른 코드를 보았을 때 대부분 비슷하게 풀이하였으나, 이분의 경우 컴프리핸션과 count()함수를 사용해서 0값을 찾고 시작했다는 점이 인상깊었다.</li>
+</ul>
 
         
       </section>
@@ -460,7 +619,7 @@
 
         
 
-  <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> 업데이트:</strong> <time class="dt-published" datetime="2022-04-18">April 18, 2022</time></p>
+  <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> 업데이트:</strong> <time class="dt-published" datetime="2022-06-26">June 26, 2022</time></p>
 
       </footer>
 
@@ -469,23 +628,22 @@
     <h4 class="page__share-title">공유하기</h4>
   
 
-  <a href="https://twitter.com/intent/tweet?text=%5B%ED%8C%8C%EC%9D%B4%EC%8D%AC%5D%5B%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4%5D+%EC%BD%9C%EB%9D%BC%EC%B8%A0+%EC%B6%94%EC%B8%A1%20http%3A%2F%2Flocalhost%3A4000%2F%25EC%25BD%2594%25EB%2594%25A9%25ED%2585%258C%25EC%258A%25A4%25ED%258A%25B8%2F12943%2F" class="btn btn--twitter" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="공유하기 Twitter"><i class="fab fa-fw fa-twitter" aria-hidden="true"></i><span> Twitter</span></a>
+  <a href="https://twitter.com/intent/tweet?text=%5B%ED%8C%8C%EC%9D%B4%EC%8D%AC%5D%5B%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4%5D+%EB%A1%9C%EB%98%90%EC%9D%98+%EC%B5%9C%EA%B3%A0+%EC%88%9C%EC%9C%84%EC%99%80+%EC%B5%9C%EC%A0%80+%EC%88%9C%EC%9C%84%20http%3A%2F%2Flocalhost%3A4000%2F%25EC%25BD%2594%25EB%2594%25A9%25ED%2585%258C%25EC%258A%25A4%25ED%258A%25B8%2F77484%2F" class="btn btn--twitter" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="공유하기 Twitter"><i class="fab fa-fw fa-twitter" aria-hidden="true"></i><span> Twitter</span></a>
 
-  <a href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Flocalhost%3A4000%2F%25EC%25BD%2594%25EB%2594%25A9%25ED%2585%258C%25EC%258A%25A4%25ED%258A%25B8%2F12943%2F" class="btn btn--facebook" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="공유하기 Facebook"><i class="fab fa-fw fa-facebook" aria-hidden="true"></i><span> Facebook</span></a>
+  <a href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Flocalhost%3A4000%2F%25EC%25BD%2594%25EB%2594%25A9%25ED%2585%258C%25EC%258A%25A4%25ED%258A%25B8%2F77484%2F" class="btn btn--facebook" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="공유하기 Facebook"><i class="fab fa-fw fa-facebook" aria-hidden="true"></i><span> Facebook</span></a>
 
-  <a href="https://www.linkedin.com/shareArticle?mini=true&url=http%3A%2F%2Flocalhost%3A4000%2F%25EC%25BD%2594%25EB%2594%25A9%25ED%2585%258C%25EC%258A%25A4%25ED%258A%25B8%2F12943%2F" class="btn btn--linkedin" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="공유하기 LinkedIn"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i><span> LinkedIn</span></a>
+  <a href="https://www.linkedin.com/shareArticle?mini=true&url=http%3A%2F%2Flocalhost%3A4000%2F%25EC%25BD%2594%25EB%2594%25A9%25ED%2585%258C%25EC%258A%25A4%25ED%258A%25B8%2F77484%2F" class="btn btn--linkedin" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="공유하기 LinkedIn"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i><span> LinkedIn</span></a>
 </section>
 
 
       
   <nav class="pagination">
     
-      <a href="/%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8/12940/" class="pagination--pager" title="[파이썬][프로그래머스] 최대공약수와 최소공배수
+      <a href="/%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8/64061/" class="pagination--pager" title="[파이썬][프로그래머스] 크레인 인형뽑기 게임
 ">이전</a>
     
     
-      <a href="/%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8/12925/" class="pagination--pager" title="[파이썬][프로그래머스] 문자열을 정수로 바꾸기
-">다음</a>
+      <a href="#" class="pagination--pager disabled">다음</a>
     
   </nav>
 
@@ -499,46 +657,6 @@
     <div class="page__related">
       <h2 class="page__related-title">참고</h2>
       <div class="grid__wrapper">
-        
-          
-
-
-
-<div class="grid__item">
-  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
-    
-    <h2 class="archive__item-title no_toc" itemprop="headline">
-      
-        <a href="/%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8/77484/" rel="permalink">[파이썬][프로그래머스] 로또의 최고 순위와 최저 순위
-</a>
-      
-    </h2>
-    
-
-  <p class="page__meta">
-    
-
-    
-
-    
-      
-      
-
-      <span class="page__meta-readtime">
-        <i class="far fa-clock" aria-hidden="true"></i>
-        
-          3 분 소요
-        
-      </span>
-    
-  </p>
-
-
-    <p class="archive__item-excerpt" itemprop="description">프로그래머스 로또의 최고 순위와 최저 순위 문제 풀이
-</p>
-  </article>
-</div>
-
         
           
 
@@ -567,7 +685,7 @@
       <span class="page__meta-readtime">
         <i class="far fa-clock" aria-hidden="true"></i>
         
-          3 분 소요
+          2 분 소요
         
       </span>
     
@@ -607,7 +725,7 @@
       <span class="page__meta-readtime">
         <i class="far fa-clock" aria-hidden="true"></i>
         
-          최대 1 분 소요
+          1 분 소요
         
       </span>
     
@@ -647,7 +765,7 @@
       <span class="page__meta-readtime">
         <i class="far fa-clock" aria-hidden="true"></i>
         
-          1 분 소요
+          최대 1 분 소요
         
       </span>
     
@@ -655,6 +773,46 @@
 
 
     <p class="archive__item-excerpt" itemprop="description">Codility PermMissingElem 문제 풀이
+</p>
+  </article>
+</div>
+
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title no_toc" itemprop="headline">
+      
+        <a href="/%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8/FrogJmp/" rel="permalink">[파이썬][Codility_][코디리티] FrogJmp
+</a>
+      
+    </h2>
+    
+
+  <p class="page__meta">
+    
+
+    
+
+    
+      
+      
+
+      <span class="page__meta-readtime">
+        <i class="far fa-clock" aria-hidden="true"></i>
+        
+          1 분 소요
+        
+      </span>
+    
+  </p>
+
+
+    <p class="archive__item-excerpt" itemprop="description">Codility FrogJmp 문제 풀이
 </p>
   </article>
 </div>

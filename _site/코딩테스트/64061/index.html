@@ -9,8 +9,8 @@
   <head>
     <meta charset="utf-8">
 
-<!-- begin _includes/seo.html --><title>[파이썬][프로그래머스] 콜라츠 추측 - 성장형 개발자 블로그</title>
-<meta name="description" content="프로그래머스 콜라츠 추측 문제 풀이">
+<!-- begin _includes/seo.html --><title>[파이썬][프로그래머스] 크레인 인형뽑기 게임 - 성장형 개발자 블로그</title>
+<meta name="description" content="프로그래머스 크레인 인형뽑기 게임 문제 풀이">
 
 
   <meta name="author" content="You Nicholas">
@@ -22,32 +22,32 @@
 <meta property="og:type" content="article">
 <meta property="og:locale" content="ko">
 <meta property="og:site_name" content="성장형 개발자 블로그">
-<meta property="og:title" content="[파이썬][프로그래머스] 콜라츠 추측">
-<meta property="og:url" content="http://localhost:4000/%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8/12943/">
+<meta property="og:title" content="[파이썬][프로그래머스] 크레인 인형뽑기 게임">
+<meta property="og:url" content="http://localhost:4000/%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8/64061/">
 
 
-  <meta property="og:description" content="프로그래머스 콜라츠 추측 문제 풀이">
-
-
-
+  <meta property="og:description" content="프로그래머스 크레인 인형뽑기 게임 문제 풀이">
 
 
 
 
-  <meta property="article:published_time" content="2022-04-18T00:00:00+09:00">
 
 
 
-  <meta property="article:modified_time" content="2022-04-18T00:00:00+09:00">
+  <meta property="article:published_time" content="2022-06-26T00:00:00+09:00">
 
 
 
-  
+  <meta property="article:modified_time" content="2022-06-26T00:00:00+09:00">
+
+
 
   
 
+  
 
-<link rel="canonical" href="http://localhost:4000/%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8/12943/">
+
+<link rel="canonical" href="http://localhost:4000/%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8/64061/">
 
 
 
@@ -268,16 +268,16 @@
 
 
   <article class="page h-entry" itemscope itemtype="https://schema.org/CreativeWork">
-    <meta itemprop="headline" content="[파이썬][프로그래머스] 콜라츠 추측">
-    <meta itemprop="description" content="프로그래머스 콜라츠 추측 문제 풀이">
-    <meta itemprop="datePublished" content="2022-04-18T00:00:00+09:00">
-    <meta itemprop="dateModified" content="2022-04-18T00:00:00+09:00">
+    <meta itemprop="headline" content="[파이썬][프로그래머스] 크레인 인형뽑기 게임">
+    <meta itemprop="description" content="프로그래머스 크레인 인형뽑기 게임 문제 풀이">
+    <meta itemprop="datePublished" content="2022-06-26T00:00:00+09:00">
+    <meta itemprop="dateModified" content="2022-06-26T00:00:00+09:00">
 
     <div class="page__inner-wrap">
       
         <header>
           <h1 id="page-title" class="page__title p-name" itemprop="headline">
-            <a href="http://localhost:4000/%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8/12943/" class="u-url" itemprop="url">[파이썬][프로그래머스] 콜라츠 추측
+            <a href="http://localhost:4000/%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8/64061/" class="u-url" itemprop="url">[파이썬][프로그래머스] 크레인 인형뽑기 게임
 </a>
           </h1>
           
@@ -294,7 +294,7 @@
       <span class="page__meta-readtime">
         <i class="far fa-clock" aria-hidden="true"></i>
         
-          1 분 소요
+          2 분 소요
         
       </span>
     
@@ -316,17 +316,17 @@
         
         <h2 id="1-문제">1. 문제</h2>
 
-<h1 id="level-1-콜라츠-추측---12943">[level 1] 콜라츠 추측 - 12943</h1>
+<h1 id="level-1-크레인-인형뽑기-게임---64061">[level 1] 크레인 인형뽑기 게임 - 64061</h1>
 
-<p><a href="https://programmers.co.kr/learn/courses/30/lessons/12943">문제 링크</a></p>
+<p><a href="https://programmers.co.kr/learn/courses/30/lessons/64061">문제 링크</a></p>
 
 <h3 id="성능-요약">성능 요약</h3>
 
-<p>메모리: 10.2 MB, 시간: 0.04 ms</p>
+<p>메모리: 10.2 MB, 시간: 0.71 ms</p>
 
 <h3 id="구분">구분</h3>
 
-<p>코딩테스트 연습 &gt; 연습문제</p>
+<p>코딩테스트 연습 &gt; 2019 카카오 개발자 겨울 인턴십</p>
 
 <h3 id="채점결과">채점결과</h3>
 
@@ -334,50 +334,59 @@
 
 <h3 id="문제-설명">문제 설명</h3>
 
-<p>1937년 Collatz란 사람에 의해 제기된 이 추측은, 주어진 수가 1이 될때까지 다음 작업을 반복하면, 모든 수를 1로 만들 수 있다는 추측입니다. 작업은 다음과 같습니다.</p>
-<div class="highlight"><pre class="codehilite"><code>1-1. 입력된 수가 짝수라면 2로 나눕니다. 
-1-2. 입력된 수가 홀수라면 3을 곱하고 1을 더합니다.
-2. 결과로 나온 수에 같은 작업을 1이 될 때까지 반복합니다.
-</code></pre></div>
-<p>예를 들어, 입력된 수가 6이라면 6→3→10→5→16→8→4→2→1 이 되어 총 8번 만에 1이 됩니다. 위 작업을 몇 번이나 반복해야하는지 반환하는 함수, solution을 완성해 주세요. 단, 작업을 500번을 반복해도 1이 되지 않는다면 –1을 반환해 주세요.</p>
+<p>게임개발자인 "죠르디"는 크레인 인형뽑기 기계를 모바일 게임으로 만들려고 합니다.<br />
+"죠르디"는 게임의 재미를 높이기 위해 화면 구성과 규칙을 다음과 같이 게임 로직에 반영하려고 합니다.</p>
 
-<h5>제한 사항</h5>
+<p><img src="https://grepp-programmers.s3.ap-northeast-2.amazonaws.com/files/production/69f1cd36-09f4-4435-8363-b71a650f7448/crane_game_101.png" title="" alt="crane_game_101.png" /></p>
+
+<p>게임 화면은 <strong>"1 x 1"</strong> 크기의 칸들로 이루어진 <strong>"N x N"</strong> 크기의 정사각 격자이며 위쪽에는 크레인이 있고 오른쪽에는 바구니가 있습니다. (위 그림은 "5 x 5" 크기의 예시입니다). 각 격자 칸에는 다양한 인형이 들어 있으며 인형이 없는 칸은 빈칸입니다. 모든 인형은 "1 x 1" 크기의 격자 한 칸을 차지하며 <strong>격자의 가장 아래 칸부터 차곡차곡 쌓여 있습니다.</strong> 게임 사용자는 크레인을 좌우로 움직여서 멈춘 위치에서 가장 위에 있는 인형을 집어 올릴 수 있습니다. 집어 올린 인형은 바구니에 쌓이게 되는 데, 이때 바구니의 가장 아래 칸부터 인형이 순서대로 쌓이게 됩니다. 다음 그림은  [1번, 5번, 3번] 위치에서 순서대로 인형을 집어 올려 바구니에 담은 모습입니다.</p>
+
+<p><img src="https://grepp-programmers.s3.ap-northeast-2.amazonaws.com/files/production/638e2162-b1e4-4bbb-b0d7-62d31e97d75c/crane_game_102.png" title="" alt="crane_game_102.png" /></p>
+
+<p>만약 같은 모양의 인형 두 개가 바구니에 연속해서 쌓이게 되면 두 인형은 터뜨려지면서 바구니에서 사라지게 됩니다. 위 상태에서 이어서 [5번] 위치에서 인형을 집어 바구니에 쌓으면 같은 모양 인형 <strong>두 개</strong>가 없어집니다.</p>
+
+<p><img src="https://grepp-programmers.s3.ap-northeast-2.amazonaws.com/files/production/8569d736-091e-4771-b2d3-7a6e95a20c22/crane_game_103.gif" title="" alt="crane_game_103.gif" /></p>
+
+<p>크레인 작동 시 인형이 집어지지 않는 경우는 없으나 만약 인형이 없는 곳에서 크레인을 작동시키는 경우에는 아무런 일도 일어나지 않습니다. 또한 바구니는 모든 인형이  들어갈 수 있을 만큼 충분히 크다고 가정합니다. (그림에서는 화면표시 제약으로 5칸만으로 표현하였음)</p>
+
+<p>게임 화면의 격자의 상태가 담긴 2차원 배열 board와 인형을 집기 위해 크레인을 작동시킨 위치가 담긴 배열 moves가 매개변수로 주어질 때, 크레인을 모두 작동시킨 후 터트려져 사라진 인형의 개수를 return 하도록 solution 함수를 완성해주세요.</p>
+
+<h5><strong>[제한사항]</strong></h5>
 
 <ul>
-<li>입력된 수,  <code>num</code>은 1 이상 8000000 미만인 정수입니다.</li>
+<li>board 배열은 2차원 배열로 크기는 "5 x 5" 이상 "30 x 30" 이하입니다.</li>
+<li>board의 각 칸에는 0 이상 100 이하인 정수가 담겨있습니다.
+
+<ul>
+<li>0은 빈 칸을 나타냅니다.</li>
+<li>1 ~ 100의 각 숫자는 각기 다른 인형의 모양을 의미하며 같은 숫자는 같은 모양의 인형을 나타냅니다.</li>
+</ul></li>
+<li>moves 배열의 크기는 1 이상 1,000 이하입니다.</li>
+<li>moves 배열 각 원소들의 값은 1 이상이며 board 배열의 가로 크기 이하인 자연수입니다.</li>
 </ul>
 
-<h5>입출력 예</h5>
+<h5><strong>입출력 예</strong></h5>
 <table class="table">
         <thead><tr>
-<th>n</th>
+<th>board</th>
+<th>moves</th>
 <th>result</th>
 </tr>
 </thead>
         <tbody><tr>
-<td>6</td>
-<td>8</td>
-</tr>
-<tr>
-<td>16</td>
+<td>[[0,0,0,0,0],[0,0,1,0,3],[0,2,5,0,1],[4,2,4,4,2],[3,5,1,3,1]]</td>
+<td>[1,5,3,5,1,2,1,4]</td>
 <td>4</td>
-</tr>
-<tr>
-<td>626331</td>
-<td>-1</td>
 </tr>
 </tbody>
       </table>
-<h5>입출력 예 설명</h5>
+<h5><strong>입출력 예에 대한 설명</strong></h5>
 
-<p>입출력 예 #1<br />
-문제의 설명과 같습니다.</p>
+<p><strong>입출력 예 #1</strong></p>
 
-<p>입출력 예 #2<br />
-16 -&gt; 8 -&gt; 4 -&gt; 2 -&gt; 1 이되어 총 4번만에 1이 됩니다.</p>
+<p>인형의 처음 상태는 문제에 주어진 예시와 같습니다. 크레인이 [1, 5, 3, 5, 1, 2, 1, 4] 번 위치에서 차례대로 인형을 집어서 바구니에 옮겨 담은 후, 상태는 아래 그림과 같으며 바구니에 담는 과정에서 터트려져 사라진 인형은 4개 입니다.</p>
 
-<p>입출력 예 #3<br />
-626331은 500번을 시도해도 1이 되지 못하므로 -1을 리턴해야합니다.</p>
+<p><img src="https://grepp-programmers.s3.ap-northeast-2.amazonaws.com/files/production/bb0f59c7-6b72-485a-8302-217fe53ea88f/crane_game_104.jpg" title="" alt="crane_game_104.jpg" /></p>
 
 <blockquote>
   <p>출처: 프로그래머스 코딩 테스트 연습, https://programmers.co.kr/learn/challenges</p>
@@ -385,13 +394,13 @@
 
 <h2 id="2-해결방법-시간복잡도">2. 해결방법 시간복잡도</h2>
 <ol>
-  <li>재귀문 O(N)</li>
+  <li>스택 O(N^2)</li>
 </ol>
 
 <h2 id="3-문제-해결-및-코드">3. 문제 해결 및 코드</h2>
 <hr />
 
-<script src="https://gist.github.com/godhin/986643e30d4a39a6b148dd098c4f6a8a.js"></script>
+<script src="https://gist.github.com/godhin/3d39a4402caef85886a9e792dfc8af7a.js"></script>
 
 <ul>
   <li>
@@ -402,15 +411,55 @@
 <h2 id="4-알고리즘-및-해설">4. 알고리즘 및 해설</h2>
 
 <ol>
-  <li>해당 수가 짝수라면 2로 나누고 아니라면 3을 곱하고 1을 더해서 최종적으로 1을 만드는 문제이다.</li>
-  <li>재귀문을 통해 1이 되었을 때 시도횟수가 500회를 넘는다면 -1을 넘지 않는다면 카운트한 숫자를 출력해준다.</li>
+  <li>크레인 뽑기의 핵심은 배열내에 해당 값을 찾아 스택에 쌓는 것이다.</li>
+  <li>moves라는 우리가 움직여야하는 손과 board라는 2차원 배열에서 해당 값을 찾아 만약 0이 아니라면 해당 값을 스택에 쌓는다.
+    <ul>
+      <li>0이 아닌 경우는 != 라고도 표현할 수 있으나 해당 문제에서는 0보다 크게 나와 &gt; 라고 표현하였다.</li>
+    </ul>
+  </li>
+  <li>이후 내가 뽑은 위치값을 0으로 변경해준다. 삭제하는 방법도 있지만 이는 추후에 크레인이 해당 위치값을 또 찾으러 갈 때 값이 변경되어 있을 가능성을 배제하기 위해서 0으로 변경한다.
+    <ul>
+      <li>0이 아닌 삭제를 할 경우 뒤의 값이 앞으로 당겨져서 의도와는 다른 수를 찾게 되는 경우가 있음</li>
+    </ul>
+  </li>
+  <li>스택에 마지막에 쌓인 값과 바로 앞에 쌓인 값이 같다면 pop()을 통해 빼준다.
+    <ul>
+      <li>문제에서는 2개가 같은 경우에 빼주기떄문에 결과값에 += 2를 해준다.</li>
+    </ul>
+  </li>
+  <li>최종 결과값을 출력해준다.</li>
 </ol>
 
 <h2 id="5-짚고-넘어가기">5. 짚고 넘어가기</h2>
 
 <ol>
-  <li><strong>nonlocal</strong>의 경우 정의된 함수 밖의 변수에 값을 변경할 때 자주 사용된다.</li>
+  <li>문제를 해결하는 방법은 크게 2가지 정도가 있는 것같다.
+    <ul>
+      <li>단순 코딩 == 브루트 포스</li>
+      <li><strong>스택</strong></li>
+    </ul>
+  </li>
 </ol>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">def</span> <span class="nf">solution</span><span class="p">(</span><span class="n">board</span><span class="p">,</span> <span class="n">moves</span><span class="p">):</span>
+    <span class="n">cols</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="nb">map</span><span class="p">(</span><span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="nb">list</span><span class="p">(</span><span class="nb">filter</span><span class="p">(</span><span class="k">lambda</span> <span class="n">y</span><span class="p">:</span> <span class="n">y</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">,</span> <span class="n">x</span><span class="p">)),</span> <span class="nb">zip</span><span class="p">(</span><span class="o">*</span><span class="n">board</span><span class="p">)))</span>
+    <span class="n">a</span><span class="p">,</span> <span class="n">s</span> <span class="o">=</span> <span class="mi">0</span><span class="p">,</span> <span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+
+    <span class="k">for</span> <span class="n">m</span> <span class="ow">in</span> <span class="n">moves</span><span class="p">:</span>
+        <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">cols</span><span class="p">[</span><span class="n">m</span> <span class="o">-</span> <span class="mi">1</span><span class="p">])</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">:</span>
+            <span class="k">if</span> <span class="p">(</span><span class="n">d</span> <span class="p">:</span><span class="o">=</span> <span class="n">cols</span><span class="p">[</span><span class="n">m</span> <span class="o">-</span> <span class="mi">1</span><span class="p">].</span><span class="n">pop</span><span class="p">(</span><span class="mi">0</span><span class="p">))</span> <span class="o">==</span> <span class="p">(</span><span class="n">l</span> <span class="p">:</span><span class="o">=</span> <span class="n">s</span><span class="p">.</span><span class="n">pop</span><span class="p">()):</span>
+                <span class="n">a</span> <span class="o">+=</span> <span class="mi">2</span>
+            <span class="k">else</span><span class="p">:</span>
+                <span class="n">s</span><span class="p">.</span><span class="n">extend</span><span class="p">([</span><span class="n">l</span><span class="p">,</span> <span class="n">d</span><span class="p">])</span>
+
+    <span class="k">return</span> <span class="n">a</span>
+</code></pre></div></div>
+
+<p>[정답 출처 : 프로그래머스 다른 사람의 풀이]</p>
+<ul>
+  <li>다른 분이 푼 문제를 봤는데, 해당 문제를 lambda와 filter의 조화로 해결하여서 굉장히 인상깊었다. 이런 식으로 문제를 해결한다면 시간복잡도는 O(N)으로 기존보다 훨씬 메모리 효율이 좋을 것이라는 생각이 들었다.</li>
+</ul>
+
 
         
       </section>
@@ -460,7 +509,7 @@
 
         
 
-  <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> 업데이트:</strong> <time class="dt-published" datetime="2022-04-18">April 18, 2022</time></p>
+  <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> 업데이트:</strong> <time class="dt-published" datetime="2022-06-26">June 26, 2022</time></p>
 
       </footer>
 
@@ -469,22 +518,22 @@
     <h4 class="page__share-title">공유하기</h4>
   
 
-  <a href="https://twitter.com/intent/tweet?text=%5B%ED%8C%8C%EC%9D%B4%EC%8D%AC%5D%5B%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4%5D+%EC%BD%9C%EB%9D%BC%EC%B8%A0+%EC%B6%94%EC%B8%A1%20http%3A%2F%2Flocalhost%3A4000%2F%25EC%25BD%2594%25EB%2594%25A9%25ED%2585%258C%25EC%258A%25A4%25ED%258A%25B8%2F12943%2F" class="btn btn--twitter" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="공유하기 Twitter"><i class="fab fa-fw fa-twitter" aria-hidden="true"></i><span> Twitter</span></a>
+  <a href="https://twitter.com/intent/tweet?text=%5B%ED%8C%8C%EC%9D%B4%EC%8D%AC%5D%5B%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4%5D+%ED%81%AC%EB%A0%88%EC%9D%B8+%EC%9D%B8%ED%98%95%EB%BD%91%EA%B8%B0+%EA%B2%8C%EC%9E%84%20http%3A%2F%2Flocalhost%3A4000%2F%25EC%25BD%2594%25EB%2594%25A9%25ED%2585%258C%25EC%258A%25A4%25ED%258A%25B8%2F64061%2F" class="btn btn--twitter" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="공유하기 Twitter"><i class="fab fa-fw fa-twitter" aria-hidden="true"></i><span> Twitter</span></a>
 
-  <a href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Flocalhost%3A4000%2F%25EC%25BD%2594%25EB%2594%25A9%25ED%2585%258C%25EC%258A%25A4%25ED%258A%25B8%2F12943%2F" class="btn btn--facebook" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="공유하기 Facebook"><i class="fab fa-fw fa-facebook" aria-hidden="true"></i><span> Facebook</span></a>
+  <a href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Flocalhost%3A4000%2F%25EC%25BD%2594%25EB%2594%25A9%25ED%2585%258C%25EC%258A%25A4%25ED%258A%25B8%2F64061%2F" class="btn btn--facebook" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="공유하기 Facebook"><i class="fab fa-fw fa-facebook" aria-hidden="true"></i><span> Facebook</span></a>
 
-  <a href="https://www.linkedin.com/shareArticle?mini=true&url=http%3A%2F%2Flocalhost%3A4000%2F%25EC%25BD%2594%25EB%2594%25A9%25ED%2585%258C%25EC%258A%25A4%25ED%258A%25B8%2F12943%2F" class="btn btn--linkedin" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="공유하기 LinkedIn"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i><span> LinkedIn</span></a>
+  <a href="https://www.linkedin.com/shareArticle?mini=true&url=http%3A%2F%2Flocalhost%3A4000%2F%25EC%25BD%2594%25EB%2594%25A9%25ED%2585%258C%25EC%258A%25A4%25ED%258A%25B8%2F64061%2F" class="btn btn--linkedin" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="공유하기 LinkedIn"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i><span> LinkedIn</span></a>
 </section>
 
 
       
   <nav class="pagination">
     
-      <a href="/%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8/12940/" class="pagination--pager" title="[파이썬][프로그래머스] 최대공약수와 최소공배수
+      <a href="/%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8/TapeEquilibrium/" class="pagination--pager" title="[파이썬][Codility_][코디리티] TapeEquilibrium
 ">이전</a>
     
     
-      <a href="/%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8/12925/" class="pagination--pager" title="[파이썬][프로그래머스] 문자열을 정수로 바꾸기
+      <a href="/%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8/77484/" class="pagination--pager" title="[파이썬][프로그래머스] 로또의 최고 순위와 최저 순위
 ">다음</a>
     
   </nav>
@@ -549,46 +598,6 @@
     
     <h2 class="archive__item-title no_toc" itemprop="headline">
       
-        <a href="/%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8/64061/" rel="permalink">[파이썬][프로그래머스] 크레인 인형뽑기 게임
-</a>
-      
-    </h2>
-    
-
-  <p class="page__meta">
-    
-
-    
-
-    
-      
-      
-
-      <span class="page__meta-readtime">
-        <i class="far fa-clock" aria-hidden="true"></i>
-        
-          3 분 소요
-        
-      </span>
-    
-  </p>
-
-
-    <p class="archive__item-excerpt" itemprop="description">프로그래머스 크레인 인형뽑기 게임 문제 풀이
-</p>
-  </article>
-</div>
-
-        
-          
-
-
-
-<div class="grid__item">
-  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
-    
-    <h2 class="archive__item-title no_toc" itemprop="headline">
-      
         <a href="/%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8/TapeEquilibrium/" rel="permalink">[파이썬][Codility_][코디리티] TapeEquilibrium
 </a>
       
@@ -607,7 +616,7 @@
       <span class="page__meta-readtime">
         <i class="far fa-clock" aria-hidden="true"></i>
         
-          최대 1 분 소요
+          1 분 소요
         
       </span>
     
@@ -647,7 +656,7 @@
       <span class="page__meta-readtime">
         <i class="far fa-clock" aria-hidden="true"></i>
         
-          1 분 소요
+          최대 1 분 소요
         
       </span>
     
@@ -655,6 +664,46 @@
 
 
     <p class="archive__item-excerpt" itemprop="description">Codility PermMissingElem 문제 풀이
+</p>
+  </article>
+</div>
+
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title no_toc" itemprop="headline">
+      
+        <a href="/%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8/FrogJmp/" rel="permalink">[파이썬][Codility_][코디리티] FrogJmp
+</a>
+      
+    </h2>
+    
+
+  <p class="page__meta">
+    
+
+    
+
+    
+      
+      
+
+      <span class="page__meta-readtime">
+        <i class="far fa-clock" aria-hidden="true"></i>
+        
+          1 분 소요
+        
+      </span>
+    
+  </p>
+
+
+    <p class="archive__item-excerpt" itemprop="description">Codility FrogJmp 문제 풀이
 </p>
   </article>
 </div>
