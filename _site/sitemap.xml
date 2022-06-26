@@ -133,6 +133,14 @@
 <lastmod>2022-04-04T00:00:00+09:00</lastmod>
 </url>
 <url>
+<loc>http://localhost:4000/%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8/12944/</loc>
+<lastmod>2022-04-04T00:00:00+09:00</lastmod>
+</url>
+<url>
+<loc>http://localhost:4000/%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8/12947/</loc>
+<lastmod>2022-04-04T00:00:00+09:00</lastmod>
+</url>
+<url>
 <loc>http://localhost:4000/%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8/10872/</loc>
 <lastmod>2022-04-05T00:00:00+09:00</lastmod>
 </url>
@@ -222,6 +230,10 @@
 </url>
 <url>
 <loc>http://localhost:4000/%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8/12934/</loc>
+<lastmod>2022-04-20T00:00:00+09:00</lastmod>
+</url>
+<url>
+<loc>http://localhost:4000/%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8/12948/</loc>
 <lastmod>2022-04-20T00:00:00+09:00</lastmod>
 </url>
 <url>
@@ -434,6 +446,9 @@
 </url>
 <url>
 <loc>http://localhost:4000/page19/</loc>
+</url>
+<url>
+<loc>http://localhost:4000/page20/</loc>
 </url>
 <url>
 <loc>http://localhost:4000/google7c782fb583ad6271.html</loc>

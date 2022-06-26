@@ -9,8 +9,8 @@
   <head>
     <meta charset="utf-8">
 
-<!-- begin _includes/seo.html --><title>[파이썬][백준 10872번] 팩토리얼 - 성장형 개발자 블로그</title>
-<meta name="description" content="백준 10872번 팩토리얼 문제 풀이">
+<!-- begin _includes/seo.html --><title>[파이썬][프로그래머스] 하샤드 수 - 성장형 개발자 블로그</title>
+<meta name="description" content="프로그래머스 하샤드 수 문제 풀이">
 
 
   <meta name="author" content="You Nicholas">
@@ -22,32 +22,32 @@
 <meta property="og:type" content="article">
 <meta property="og:locale" content="ko">
 <meta property="og:site_name" content="성장형 개발자 블로그">
-<meta property="og:title" content="[파이썬][백준 10872번] 팩토리얼">
-<meta property="og:url" content="http://localhost:4000/%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8/10872/">
+<meta property="og:title" content="[파이썬][프로그래머스] 하샤드 수">
+<meta property="og:url" content="http://localhost:4000/%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8/12947/">
 
 
-  <meta property="og:description" content="백준 10872번 팩토리얼 문제 풀이">
-
-
-
+  <meta property="og:description" content="프로그래머스 하샤드 수 문제 풀이">
 
 
 
 
-  <meta property="article:published_time" content="2022-04-05T00:00:00+09:00">
 
 
 
-  <meta property="article:modified_time" content="2022-04-05T00:00:00+09:00">
+  <meta property="article:published_time" content="2022-04-04T00:00:00+09:00">
 
 
 
-  
+  <meta property="article:modified_time" content="2022-04-04T00:00:00+09:00">
+
+
 
   
 
+  
 
-<link rel="canonical" href="http://localhost:4000/%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8/10872/">
+
+<link rel="canonical" href="http://localhost:4000/%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8/12947/">
 
 
 
@@ -268,16 +268,16 @@
 
 
   <article class="page h-entry" itemscope itemtype="https://schema.org/CreativeWork">
-    <meta itemprop="headline" content="[파이썬][백준 10872번] 팩토리얼">
-    <meta itemprop="description" content="백준 10872번 팩토리얼 문제 풀이">
-    <meta itemprop="datePublished" content="2022-04-05T00:00:00+09:00">
-    <meta itemprop="dateModified" content="2022-04-05T00:00:00+09:00">
+    <meta itemprop="headline" content="[파이썬][프로그래머스] 하샤드 수">
+    <meta itemprop="description" content="프로그래머스 하샤드 수 문제 풀이">
+    <meta itemprop="datePublished" content="2022-04-04T00:00:00+09:00">
+    <meta itemprop="dateModified" content="2022-04-04T00:00:00+09:00">
 
     <div class="page__inner-wrap">
       
         <header>
           <h1 id="page-title" class="page__title p-name" itemprop="headline">
-            <a href="http://localhost:4000/%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8/10872/" class="u-url" itemprop="url">[파이썬][백준 10872번] 팩토리얼
+            <a href="http://localhost:4000/%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8/12947/" class="u-url" itemprop="url">[파이썬][프로그래머스] 하샤드 수
 </a>
           </h1>
           
@@ -294,7 +294,7 @@
       <span class="page__meta-readtime">
         <i class="far fa-clock" aria-hidden="true"></i>
         
-          최대 1 분 소요
+          1 분 소요
         
       </span>
     
@@ -309,51 +309,91 @@
           <aside class="sidebar__right sticky">
             <nav class="toc">
               <header><h4 class="nav__title"><i class="fas fa-file-alt"></i> On This Page</h4></header>
-              <ul class="toc__menu"><li><a href="#1-문제">1. 문제</a><ul><li><a href="#성능-요약">성능 요약</a></li><li><a href="#분류">분류</a></li><li><a href="#문제-설명">문제 설명</a></li><li><a href="#입력">입력</a></li><li><a href="#출력">출력</a></li></ul></li><li><a href="#2-해결방법-시간복잡도">2. 해결방법 시간복잡도</a></li><li><a href="#3-문제-해결-및-코드">3. 문제 해결 및 코드</a></li><li><a href="#주석을-참고하면서-이해를-돕습니다">주석을 참고하면서 이해를 돕습니다.</a></li><li><a href="#4-알고리즘-및-해설">4. 알고리즘 및 해설</a></li><li><a href="#5-짚고-넘어가기">5. 짚고 넘어가기</a></li></ul>
+              <ul class="toc__menu"><li><a href="#1-문제">1. 문제</a><ul><li><a href="#성능-요약">성능 요약</a></li><li><a href="#구분">구분</a></li><li><a href="#채점결과">채점결과</a></li><li><a href="#문제-설명">문제 설명</a></li></ul></li><li><a href="#2-해결방법-시간복잡도">2. 해결방법 시간복잡도</a></li><li><a href="#3-문제-해결-및-코드">3. 문제 해결 및 코드</a></li><li><a href="#주석을-참고하면서-이해를-돕습니다">주석을 참고하면서 이해를 돕습니다.</a></li><li><a href="#4-알고리즘-및-해설">4. 알고리즘 및 해설</a></li><li><a href="#5-짚고-넘어가기">5. 짚고 넘어가기</a><ul><li><a href="#하샤드-수">하샤드 수</a></li></ul></li></ul>
 
             </nav>
           </aside>
         
         <h2 id="1-문제">1. 문제</h2>
 
-<h1 id="bronze-iii-팩토리얼---10872">[Bronze III] 팩토리얼 - 10872</h1>
+<h1 id="level-1-하샤드-수---12947">[level 1] 하샤드 수 - 12947</h1>
 
-<p><a href="https://www.acmicpc.net/problem/10872">문제 링크</a></p>
+<p><a href="https://programmers.co.kr/learn/courses/30/lessons/12947">문제 링크</a></p>
 
 <h3 id="성능-요약">성능 요약</h3>
 
-<p>메모리: 30864 KB, 시간: 68 ms</p>
+<p>메모리: 10.4 MB, 시간: 0.02 ms</p>
 
-<h3 id="분류">분류</h3>
+<h3 id="구분">구분</h3>
 
-<p>구현(implementation), 수학(math)</p>
+<p>코딩테스트 연습 &gt; 연습문제</p>
+
+<h3 id="채점결과">채점결과</h3>
+
+<p><br />정확성: 100.0<br />합계: 100.0 / 100.0</p>
 
 <h3 id="문제-설명">문제 설명</h3>
 
-<p>0보다 크거나 같은 정수 N이 주어진다. 이때, N!을 출력하는 프로그램을 작성하시오.</p>
+<p>양의 정수 x가 하샤드 수이려면 x의 자릿수의 합으로 x가 나누어져야 합니다. 예를 들어 18의 자릿수 합은 1+8=9이고, 18은 9로 나누어 떨어지므로 18은 하샤드 수입니다. 자연수 x를 입력받아 x가 하샤드 수인지 아닌지 검사하는 함수, solution을 완성해주세요.</p>
 
-<h3 id="입력">입력</h3>
+<h5>제한 조건</h5>
 
-<p>첫째 줄에 정수 N(0 ≤ N ≤ 12)이 주어진다.</p>
+<ul>
+<li><code>x</code>는 1 이상, 10000 이하인 정수입니다.</li>
+</ul>
 
-<h3 id="출력">출력</h3>
+<h5>입출력 예</h5>
+<table class="table">
+        <thead><tr>
+<th>arr</th>
+<th style="text-align: center">return</th>
+</tr>
+</thead>
+        <tbody><tr>
+<td>10</td>
+<td style="text-align: center">true</td>
+</tr>
+<tr>
+<td>12</td>
+<td style="text-align: center">true</td>
+</tr>
+<tr>
+<td>11</td>
+<td style="text-align: center">false</td>
+</tr>
+<tr>
+<td>13</td>
+<td style="text-align: center">false</td>
+</tr>
+</tbody>
+      </table>
+<h5>입출력 예 설명</h5>
 
-<p>첫째 줄에 N!을 출력한다.</p>
+<p><strong>입출력 예 #1</strong><br />
+10의 모든 자릿수의 합은 1입니다. 10은 1로 나누어 떨어지므로 10은 하샤드 수입니다.</p>
+
+<p><strong>입출력 예 #2</strong><br />
+12의 모든 자릿수의 합은 3입니다. 12는 3으로 나누어 떨어지므로 12는 하샤드 수입니다.</p>
+
+<p><strong>입출력 예 #3</strong><br />
+11의 모든 자릿수의 합은 2입니다. 11은 2로 나누어 떨어지지 않으므로 11는 하샤드 수가 아닙니다.</p>
+
+<p><strong>입출력 예 #4</strong><br />
+13의 모든 자릿수의 합은 4입니다. 13은 4로 나누어 떨어지지 않으므로 13은 하샤드 수가 아닙니다.</p>
 
 <blockquote>
-  <p>출처: 백준, https://https://www.acmicpc.net/</p>
+  <p>출처: 프로그래머스 코딩 테스트 연습, https://programmers.co.kr/learn/challenges</p>
 </blockquote>
 
 <h2 id="2-해결방법-시간복잡도">2. 해결방법 시간복잡도</h2>
-
 <ol>
-  <li>단순 코딩, 재귀문 1번 호출 O(N)</li>
+  <li>단순 코딩 O(N)</li>
 </ol>
 
 <h2 id="3-문제-해결-및-코드">3. 문제 해결 및 코드</h2>
 <hr />
 
-<script src="https://gist.github.com/godhin/2bd618b10ab460ba8059cd1208ca6c8d.js"></script>
+<script src="https://gist.github.com/godhin/6e57e5d25222eba813e94de14a9ee90f.js"></script>
 
 <ul>
   <li>
@@ -364,20 +404,16 @@
 <h2 id="4-알고리즘-및-해설">4. 알고리즘 및 해설</h2>
 
 <ol>
-  <li>N!를 구하기위해 재귀문을 통해 해당 값 - 1을 반복적으로 호출하여 최종적으로 해당 정수까지의 곱을 구한다.</li>
-  <li>F(N) = F(N - 1) * F(N - 2) * … F(0)</li>
+  <li>숫자로 이루어진 값을 문자로 받은 이후에 해당 문자내 값들을 반복문을 통해 나눈다.</li>
+  <li>이후 해당 문자로 이루어진 리스트를 다시 숫자로 되받아 값을 더해준다.</li>
+  <li>처음 받은 값이 위에 과정을 거쳐 받은 값으로 나누어서 떨어지면 True를 아니라면 False를 출력한다.</li>
 </ol>
 
 <h2 id="5-짚고-넘어가기">5. 짚고 넘어가기</h2>
 
-<ol>
-  <li>팩토리얼 문제는 1부터 해당 수까지의 곱이다. 단순 반복으로도 해결이 가능하다.</li>
-  <li>math 라이브러리를 통해서 간단하게 구현도 가능하다.</li>
-</ol>
-
-<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">import</span> <span class="nn">math</span>
-<span class="k">print</span><span class="p">(</span><span class="n">math</span><span class="p">.</span><span class="n">factorial</span><span class="p">(</span><span class="n">N</span><span class="p">))</span> <span class="c1"># N값까지의 팩토리얼
-</span></code></pre></div></div>
+<h3 id="하샤드-수">하샤드 수</h3>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>x를 x의 자리수의 합으로 나누었을 때 나누어지는 수
+</code></pre></div></div>
 
         
       </section>
@@ -394,15 +430,15 @@
     <strong><i class="fas fa-fw fa-tags" aria-hidden="true"></i> 태그: </strong>
     <span itemprop="keywords">
     
-      <a href="/tags/#bronze" class="page__taxonomy-item p-category" rel="tag">Bronze</a><span class="sep">, </span>
+      <a href="/tags/#level-1" class="page__taxonomy-item p-category" rel="tag">Level_1</a><span class="sep">, </span>
     
       <a href="/tags/#%EB%9D%BC%EC%9D%B4%EB%B8%8C%EC%BD%94%EB%94%A9" class="page__taxonomy-item p-category" rel="tag">라이브코딩</a><span class="sep">, </span>
     
-      <a href="/tags/#%EB%B0%B1%EC%A4%80" class="page__taxonomy-item p-category" rel="tag">백준</a><span class="sep">, </span>
-    
       <a href="/tags/#%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98" class="page__taxonomy-item p-category" rel="tag">알고리즘</a><span class="sep">, </span>
     
-      <a href="/tags/#%EC%BD%94%ED%85%8C" class="page__taxonomy-item p-category" rel="tag">코테</a>
+      <a href="/tags/#%EC%BD%94%ED%85%8C" class="page__taxonomy-item p-category" rel="tag">코테</a><span class="sep">, </span>
+    
+      <a href="/tags/#%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4" class="page__taxonomy-item p-category" rel="tag">프로그래머스</a>
     
     </span>
   </p>
@@ -427,7 +463,7 @@
 
         
 
-  <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> 업데이트:</strong> <time class="dt-published" datetime="2022-04-05">April 5, 2022</time></p>
+  <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> 업데이트:</strong> <time class="dt-published" datetime="2022-04-04">April 4, 2022</time></p>
 
       </footer>
 
@@ -436,22 +472,22 @@
     <h4 class="page__share-title">공유하기</h4>
   
 
-  <a href="https://twitter.com/intent/tweet?text=%5B%ED%8C%8C%EC%9D%B4%EC%8D%AC%5D%5B%EB%B0%B1%EC%A4%80+10872%EB%B2%88%5D+%ED%8C%A9%ED%86%A0%EB%A6%AC%EC%96%BC%20http%3A%2F%2Flocalhost%3A4000%2F%25EC%25BD%2594%25EB%2594%25A9%25ED%2585%258C%25EC%258A%25A4%25ED%258A%25B8%2F10872%2F" class="btn btn--twitter" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="공유하기 Twitter"><i class="fab fa-fw fa-twitter" aria-hidden="true"></i><span> Twitter</span></a>
+  <a href="https://twitter.com/intent/tweet?text=%5B%ED%8C%8C%EC%9D%B4%EC%8D%AC%5D%5B%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4%5D+%ED%95%98%EC%83%A4%EB%93%9C+%EC%88%98%20http%3A%2F%2Flocalhost%3A4000%2F%25EC%25BD%2594%25EB%2594%25A9%25ED%2585%258C%25EC%258A%25A4%25ED%258A%25B8%2F12947%2F" class="btn btn--twitter" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="공유하기 Twitter"><i class="fab fa-fw fa-twitter" aria-hidden="true"></i><span> Twitter</span></a>
 
-  <a href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Flocalhost%3A4000%2F%25EC%25BD%2594%25EB%2594%25A9%25ED%2585%258C%25EC%258A%25A4%25ED%258A%25B8%2F10872%2F" class="btn btn--facebook" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="공유하기 Facebook"><i class="fab fa-fw fa-facebook" aria-hidden="true"></i><span> Facebook</span></a>
+  <a href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Flocalhost%3A4000%2F%25EC%25BD%2594%25EB%2594%25A9%25ED%2585%258C%25EC%258A%25A4%25ED%258A%25B8%2F12947%2F" class="btn btn--facebook" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="공유하기 Facebook"><i class="fab fa-fw fa-facebook" aria-hidden="true"></i><span> Facebook</span></a>
 
-  <a href="https://www.linkedin.com/shareArticle?mini=true&url=http%3A%2F%2Flocalhost%3A4000%2F%25EC%25BD%2594%25EB%2594%25A9%25ED%2585%258C%25EC%258A%25A4%25ED%258A%25B8%2F10872%2F" class="btn btn--linkedin" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="공유하기 LinkedIn"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i><span> LinkedIn</span></a>
+  <a href="https://www.linkedin.com/shareArticle?mini=true&url=http%3A%2F%2Flocalhost%3A4000%2F%25EC%25BD%2594%25EB%2594%25A9%25ED%2585%258C%25EC%258A%25A4%25ED%258A%25B8%2F12947%2F" class="btn btn--linkedin" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="공유하기 LinkedIn"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i><span> LinkedIn</span></a>
 </section>
 
 
       
   <nav class="pagination">
     
-      <a href="/%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8/12947/" class="pagination--pager" title="[파이썬][프로그래머스] 하샤드 수
+      <a href="/%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8/12944/" class="pagination--pager" title="[파이썬][프로그래머스] 평균 구하기
 ">이전</a>
     
     
-      <a href="/%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8/10797/" class="pagination--pager" title="[파이썬][백준 10797번] 10부제
+      <a href="/%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8/10872/" class="pagination--pager" title="[파이썬][백준 10872번] 팩토리얼
 ">다음</a>
     
   </nav>
