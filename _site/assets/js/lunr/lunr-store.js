@@ -574,4 +574,40 @@ var store = [{
         "tags": ["알고리즘","라이브코딩","코테","프로그래머스","Level_1"],
         "url": "/%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8/77484/",
         "teaser": null
+      },{
+        "title": "[파이썬][Codility_][코디리티] FrogRiverOne",
+        "excerpt":"1. 문제 A small frog wants to get to the other side of a river. The frog is initially located on one bank of the river (position 0) and wants to get to the opposite bank (position X+1). Leaves fall from a tree onto the surface of the river. You...","categories": ["코딩테스트"],
+        "tags": ["알고리즘","라이브코딩","코테","Codility","코디리티","Lessons"],
+        "url": "/%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8/FrogRiverOne/",
+        "teaser": null
+      },{
+        "title": "[파이썬][Codility_][코디리티] PermCheck",
+        "excerpt":"1. 문제 A non-empty array A consisting of N integers is given. A permutation is a sequence containing each element from 1 to N once, and only once. For example, array A such that: A[0] = 4 A[1] = 1 A[2] = 3 A[3] = 2 is a permutation, but...","categories": ["코딩테스트"],
+        "tags": ["알고리즘","라이브코딩","코테","Codility","코디리티","Lessons"],
+        "url": "/%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8/PermCheck/",
+        "teaser": null
+      },{
+        "title": "[파이썬][프로그래머스] [1차] 비밀지도",
+        "excerpt":"1. 문제 [level 1] [1차] 비밀지도 - 17681 문제 링크 성능 요약 메모리: 10.4 MB, 시간: 0.03 ms 구분 코딩테스트 연습 &gt; 2018 KAKAO BLIND RECRUITMENT 채점결과 정확성: 100.0 합계: 100.0 / 100.0 문제 설명 비밀지도 네오는 평소 프로도가 비상금을 숨겨놓는 장소를 알려줄 비밀지도를 손에 넣었다. 그런데 이 비밀지도는 숫자로 암호화되어 있어 위치를 확인하기...","categories": ["코딩테스트"],
+        "tags": ["알고리즘","라이브코딩","코테","프로그래머스","Level_1"],
+        "url": "/%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8/17681/",
+        "teaser": null
+      },{
+        "title": "[파이썬][프로그래머스] [1차] 다트 게임",
+        "excerpt":"1. 문제 [level 1] [1차] 다트 게임 - 17682 문제 링크 성능 요약 메모리: 10.3 MB, 시간: 0.03 ms 구분 코딩테스트 연습 &gt; 2018 KAKAO BLIND RECRUITMENT 채점결과 정확성: 100.0 합계: 100.0 / 100.0 문제 설명 다트 게임 카카오톡에 뜬 네 번째 별! 심심할 땐? 카카오톡 게임별~ 카카오톡 게임별의 하반기 신규 서비스로 다트 게임을...","categories": ["코딩테스트"],
+        "tags": ["알고리즘","라이브코딩","코테","프로그래머스","Level_1"],
+        "url": "/%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8/17682/",
+        "teaser": null
+      },{
+        "title": "[파이썬][프로그래머스] 실패율",
+        "excerpt":"1. 문제 [level 1] 실패율 - 42889 문제 링크 성능 요약 메모리: 10.2 MB, 시간: 0.01 ms 구분 코딩테스트 연습 &gt; 2019 KAKAO BLIND RECRUITMENT 채점결과 정확성: 100.0 합계: 100.0 / 100.0 문제 설명 실패율 슈퍼 게임 개발자 오렐리는 큰 고민에 빠졌다. 그녀가 만든 프랜즈 오천성이 대성공을 거뒀지만, 요즘 신규 사용자의 수가 급감한 것이다....","categories": ["코딩테스트"],
+        "tags": ["알고리즘","라이브코딩","코테","프로그래머스","Level_1"],
+        "url": "/%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8/42889/",
+        "teaser": null
+      },{
+        "title": "[파이썬][프로그래머스] 숫자 문자열과 영단어",
+        "excerpt":"1. 문제 [level 1] 숫자 문자열과 영단어 - 81301 문제 링크 성능 요약 메모리: 10.3 MB, 시간: 0.02 ms 구분 코딩테스트 연습 &gt; 2021 카카오 채용연계형 인턴십 채점결과 정확성: 100.0 합계: 100.0 / 100.0 문제 설명 네오와 프로도가 숫자놀이를 하고 있습니다. 네오가 프로도에게 숫자를 건넬 때 일부 자릿수를 영단어로 바꾼 카드를 건네주면 프로도는 원래...","categories": ["코딩테스트"],
+        "tags": ["알고리즘","라이브코딩","코테","프로그래머스","Level_1"],
+        "url": "/%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8/81301/",
+        "teaser": null
       }]
