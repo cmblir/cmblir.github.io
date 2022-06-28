@@ -5,7 +5,7 @@ excerpt: "Codility TapeEquilibrium 문제 풀이"
 categories:
   - 코딩테스트
 tags:
-  - [알고리즘, 라이브코딩, 코테, Codility, 코디리티, Lessons]
+  - [알고리즘, 파이썬, 코테, Codility, 코디리티, Lessons]
 
 toc: true
 toc_sticky: true

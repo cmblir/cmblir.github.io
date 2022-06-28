@@ -1,0 +1,741 @@
+<!doctype html>
+<!--
+  Minimal Mistakes Jekyll Theme 4.24.0 by Michael Rose
+  Copyright 2013-2020 Michael Rose - mademistakes.com | @mmistakes
+  Free for personal and commercial use under the MIT license
+  https://github.com/mmistakes/minimal-mistakes/blob/master/LICENSE
+-->
+<html lang="ko" class="no-js">
+  <head>
+    <meta charset="utf-8">
+
+<!-- begin _includes/seo.html --><title>[파이썬][프로그래머스] K번째수 - 성장형 개발자 블로그</title>
+<meta name="description" content="프로그래머스 K번째수 문제 풀이">
+
+
+  <meta name="author" content="You Nicholas">
+  
+  <meta property="article:author" content="You Nicholas">
+  
+
+
+<meta property="og:type" content="article">
+<meta property="og:locale" content="ko">
+<meta property="og:site_name" content="성장형 개발자 블로그">
+<meta property="og:title" content="[파이썬][프로그래머스] K번째수">
+<meta property="og:url" content="http://localhost:4000/%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8/42840/">
+
+
+  <meta property="og:description" content="프로그래머스 K번째수 문제 풀이">
+
+
+
+
+
+
+
+  <meta property="article:published_time" content="2022-05-07T00:00:00+09:00">
+
+
+
+  <meta property="article:modified_time" content="2022-05-07T00:00:00+09:00">
+
+
+
+  
+
+  
+
+
+<link rel="canonical" href="http://localhost:4000/%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8/42840/">
+
+
+
+
+<script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    
+      "@type": "Person",
+      "name": "Yoo Nicholas",
+      "url": "http://localhost:4000/"
+    
+  }
+</script>
+
+
+
+
+
+
+
+<!-- end _includes/seo.html -->
+
+
+
+  <link href="/feed.xml" type="application/atom+xml" rel="alternate" title="성장형 개발자 블로그 Feed">
+
+
+<!-- https://t.co/dKP3o1e -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script>
+  document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
+</script>
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="/assets/css/main.css">
+<link rel="preload" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css"></noscript>
+
+
+
+    <!-- start custom head snippets -->
+
+<!-- insert favicons. use https://realfavicongenerator.net/ -->
+
+<!-- end custom head snippets -->
+
+  </head>
+
+  <body class="layout--single">
+    <nav class="skip-links">
+  <ul>
+    <li><a href="#site-nav" class="screen-reader-shortcut">Skip to primary navigation</a></li>
+    <li><a href="#main" class="screen-reader-shortcut">Skip to content</a></li>
+    <li><a href="#footer" class="screen-reader-shortcut">Skip to footer</a></li>
+  </ul>
+</nav>
+
+    
+
+<div class="masthead">
+  <div class="masthead__inner-wrap">
+    <div class="masthead__menu">
+      <nav id="site-nav" class="greedy-nav">
+        
+        <a class="site-title" href="/">
+          성장형 개발자 블로그
+          
+        </a>
+        <ul class="visible-links"><li class="masthead__menu-item">
+              <a href="/about/">소개글</a>
+            </li><li class="masthead__menu-item">
+              <a href="/categories/">카테고리</a>
+            </li><li class="masthead__menu-item">
+              <a href="/tags/">태그</a>
+            </li></ul>
+        
+        <button class="greedy-nav__toggle hidden" type="button">
+          <span class="visually-hidden">토글 메뉴</span>
+          <div class="navicon"></div>
+        </button>
+        <ul class="hidden-links hidden"></ul>
+      </nav>
+    </div>
+  </div>
+</div>
+
+
+    <div class="initial-content">
+      
+
+
+
+
+
+<div id="main" role="main">
+  
+  <div class="sidebar sticky">
+  
+
+
+<div itemscope itemtype="https://schema.org/Person" class="h-card">
+
+  
+    <div class="author__avatar">
+      <a href="http://localhost:4000/">
+        <img src="https://avatars.githubusercontent.com/u/75519839?v=4" alt="You Nicholas" itemprop="image" class="u-photo">
+      </a>
+    </div>
+  
+
+  <div class="author__content">
+    <h3 class="author__name p-name" itemprop="name">
+      <a class="u-url" rel="me" href="http://localhost:4000/" itemprop="url">You Nicholas</a>
+    </h3>
+    
+      <div class="author__bio p-note" itemprop="description">
+        <p>가고 가고 또 가면 <strong>알게되고</strong>, 행하고 행하고 또 행하게 되면 <strong>이루게 된다.</strong></p>
+
+      </div>
+    
+  </div>
+
+  <div class="author__urls-wrapper">
+    <button class="btn btn--inverse">팔로우</button>
+    <ul class="author__urls social-icons">
+      
+        <li itemprop="homeLocation" itemscope itemtype="https://schema.org/Place">
+          <i class="fas fa-fw fa-map-marker-alt" aria-hidden="true"></i> <span itemprop="name" class="p-locality">Republic of Korea</span>
+        </li>
+      
+
+      
+        
+          
+            <li><a href="godhin:sodlalwl13e@gmail.com" rel="nofollow noopener noreferrer me"><i class="fas fa-fw fa-envelope-square" aria-hidden="true"></i><span class="label">Email</span></a></li>
+          
+        
+          
+        
+          
+        
+          
+        
+          
+            <li><a href="https://github.com/godhin" rel="nofollow noopener noreferrer me" itemprop="sameAs"><i class="fab fa-fw fa-github" aria-hidden="true"></i><span class="label">GitHub</span></a></li>
+          
+        
+          
+            <li><a href="https://instagram.com/cmblir" rel="nofollow noopener noreferrer me" itemprop="sameAs"><i class="fab fa-fw fa-instagram" aria-hidden="true"></i><span class="label">Instagram</span></a></li>
+          
+        
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      <!--
+  <li>
+    <a href="http://link-to-whatever-social-network.com/user/" itemprop="sameAs" rel="nofollow noopener noreferrer me">
+      <i class="fas fa-fw" aria-hidden="true"></i> Custom Social Profile Link
+    </a>
+  </li>
+-->
+    </ul>
+  </div>
+</div>
+
+  
+  </div>
+
+
+
+  <article class="page h-entry" itemscope itemtype="https://schema.org/CreativeWork">
+    <meta itemprop="headline" content="[파이썬][프로그래머스] K번째수">
+    <meta itemprop="description" content="프로그래머스 K번째수 문제 풀이">
+    <meta itemprop="datePublished" content="2022-05-07T00:00:00+09:00">
+    <meta itemprop="dateModified" content="2022-05-07T00:00:00+09:00">
+
+    <div class="page__inner-wrap">
+      
+        <header>
+          <h1 id="page-title" class="page__title p-name" itemprop="headline">
+            <a href="http://localhost:4000/%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8/42840/" class="u-url" itemprop="url">[파이썬][프로그래머스] K번째수
+</a>
+          </h1>
+          
+
+  <p class="page__meta">
+    
+
+    
+
+    
+      
+      
+
+      <span class="page__meta-readtime">
+        <i class="far fa-clock" aria-hidden="true"></i>
+        
+          1 분 소요
+        
+      </span>
+    
+  </p>
+
+
+        </header>
+      
+
+      <section class="page__content e-content" itemprop="text">
+        
+          <aside class="sidebar__right sticky">
+            <nav class="toc">
+              <header><h4 class="nav__title"><i class="fas fa-file-alt"></i> On This Page</h4></header>
+              <ul class="toc__menu"><li><a href="#1-문제">1. 문제</a><ul><li><a href="#성능-요약">성능 요약</a></li><li><a href="#구분">구분</a></li><li><a href="#채점결과">채점결과</a></li><li><a href="#문제-설명">문제 설명</a></li></ul></li><li><a href="#2-해결방법-시간복잡도">2. 해결방법 시간복잡도</a></li><li><a href="#3-문제-해결-및-코드">3. 문제 해결 및 코드</a></li><li><a href="#주석을-참고하면서-이해를-돕습니다">주석을 참고하면서 이해를 돕습니다.</a></li><li><a href="#4-알고리즘-및-해설">4. 알고리즘 및 해설</a></li><li><a href="#5-위의-코드보다-쉽지만-시간복잡도는-높은-방법">5. 위의 코드보다 쉽지만 시간복잡도는 높은 방법</a></li></ul>
+
+            </nav>
+          </aside>
+        
+        <h2 id="1-문제">1. 문제</h2>
+
+<h1 id="level-1-k번째수---42748">[level 1] K번째수 - 42748</h1>
+
+<p><a href="https://programmers.co.kr/learn/courses/30/lessons/42748?language=python3">문제 링크</a></p>
+
+<h3 id="성능-요약">성능 요약</h3>
+
+<p>메모리: 9.95 MB, 시간: 0.01 ms</p>
+
+<h3 id="구분">구분</h3>
+
+<p>코딩테스트 연습 &gt; 정렬</p>
+
+<h3 id="채점결과">채점결과</h3>
+
+<p><br />정확성: 100.0<br />합계: 100.0 / 100.0</p>
+
+<h3 id="문제-설명">문제 설명</h3>
+
+<p>배열 array의 i번째 숫자부터 j번째 숫자까지 자르고 정렬했을 때, k번째에 있는 수를 구하려 합니다.</p>
+
+<p>예를 들어 array가 [1, 5, 2, 6, 3, 7, 4], i = 2, j = 5, k = 3이라면</p>
+
+<ol>
+<li>array의 2번째부터 5번째까지 자르면 [5, 2, 6, 3]입니다.</li>
+<li>1에서 나온 배열을 정렬하면 [2, 3, 5, 6]입니다.</li>
+<li>2에서 나온 배열의 3번째 숫자는 5입니다.</li>
+</ol>
+
+<p>배열 array, [i, j, k]를 원소로 가진 2차원 배열 commands가 매개변수로 주어질 때, commands의 모든 원소에 대해 앞서 설명한 연산을 적용했을 때 나온 결과를 배열에 담아 return 하도록 solution 함수를 작성해주세요.</p>
+
+<h5>제한사항</h5>
+
+<ul>
+<li>array의 길이는 1 이상 100 이하입니다.</li>
+<li>array의 각 원소는 1 이상 100 이하입니다.</li>
+<li>commands의 길이는 1 이상 50 이하입니다.</li>
+<li>commands의 각 원소는 길이가 3입니다.</li>
+</ul>
+
+<h5>입출력 예</h5>
+<table class="table">
+        <thead><tr>
+<th>array</th>
+<th>commands</th>
+<th>return</th>
+</tr>
+</thead>
+        <tbody><tr>
+<td>[1, 5, 2, 6, 3, 7, 4]</td>
+<td>[[2, 5, 3], [4, 4, 1], [1, 7, 3]]</td>
+<td>[5, 6, 3]</td>
+</tr>
+</tbody>
+      </table>
+<h5>입출력 예 설명</h5>
+
+<p>[1, 5, 2, 6, 3, 7, 4]를 2번째부터 5번째까지 자른 후 정렬합니다. [2, 3, 5, 6]의 세 번째 숫자는 5입니다.<br />
+[1, 5, 2, 6, 3, 7, 4]를 4번째부터 4번째까지 자른 후 정렬합니다. [6]의 첫 번째 숫자는 6입니다.<br />
+[1, 5, 2, 6, 3, 7, 4]를 1번째부터 7번째까지 자릅니다. [1, 2, 3, 4, 5, 6, 7]의 세 번째 숫자는 3입니다.</p>
+
+<p><a href="https://neerc.ifmo.ru/subregions/northern.html" target="_blank" rel="noopener">출처</a></p>
+
+<blockquote>
+  <p>출처: 프로그래머스 코딩 테스트 연습, https://programmers.co.kr/learn/challenges</p>
+</blockquote>
+
+<h2 id="2-해결방법-시간복잡도">2. 해결방법 시간복잡도</h2>
+<ol>
+  <li>정렬 O(log(N))</li>
+</ol>
+
+<h2 id="3-문제-해결-및-코드">3. 문제 해결 및 코드</h2>
+<hr />
+
+<script src="https://gist.github.com/godhin/330dc60148f65fe5a742da1703707d1c.js"></script>
+
+<ul>
+  <li>
+    <h2 id="주석을-참고하면서-이해를-돕습니다">주석을 참고하면서 이해를 돕습니다.</h2>
+  </li>
+</ul>
+
+<h2 id="4-알고리즘-및-해설">4. 알고리즘 및 해설</h2>
+
+<ol>
+  <li>lambda를 통해 해당 값을 정렬된 상태로 받는다.</li>
+  <li>이후 map()을 통해 해당 값을 다시 받은 후 리스트형태로 출력한다.</li>
+</ol>
+
+<h2 id="5-위의-코드보다-쉽지만-시간복잡도는-높은-방법">5. 위의 코드보다 쉽지만 시간복잡도는 높은 방법</h2>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">def</span> <span class="nf">solution</span><span class="p">(</span><span class="n">array</span><span class="p">,</span> <span class="n">commands</span><span class="p">):</span>
+    <span class="n">answer</span> <span class="o">=</span> <span class="p">[]</span>
+    <span class="n">result</span> <span class="o">=</span> <span class="p">[]</span>
+    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">commands</span><span class="p">:</span>
+        <span class="n">result</span><span class="p">.</span><span class="n">append</span><span class="p">(</span><span class="n">i</span><span class="p">)</span>
+    <span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">commands</span><span class="p">)):</span>
+        <span class="n">a</span> <span class="o">=</span> <span class="p">(</span><span class="nb">sorted</span><span class="p">(</span><span class="n">array</span><span class="p">[</span><span class="n">result</span><span class="p">[</span><span class="n">j</span><span class="p">][</span><span class="mi">0</span><span class="p">]</span><span class="o">-</span><span class="mi">1</span><span class="p">:</span><span class="n">result</span><span class="p">[</span><span class="n">j</span><span class="p">][</span><span class="mi">1</span><span class="p">]]))</span>
+        <span class="n">answer</span><span class="p">.</span><span class="n">append</span><span class="p">(</span><span class="n">a</span><span class="p">[</span><span class="n">result</span><span class="p">[</span><span class="n">j</span><span class="p">][</span><span class="mi">2</span><span class="p">]</span><span class="o">-</span><span class="mi">1</span><span class="p">])</span>
+    <span class="k">return</span> <span class="n">answer</span>
+</code></pre></div></div>
+
+<ul>
+  <li>위의 방식이랑 거의 동일하나 해당 값을 반복문을 통해 보다 가시적으로 풀이해봤다.</li>
+  <li>대신 시간복잡도는 O(Nlog(N))으로 위의 코드보다 메모리 효율이 좋지 않은 것 같다.</li>
+</ul>
+
+        
+      </section>
+
+      <footer class="page__meta">
+        
+        
+  
+
+
+  
+
+  <p class="page__taxonomy">
+    <strong><i class="fas fa-fw fa-tags" aria-hidden="true"></i> 태그: </strong>
+    <span itemprop="keywords">
+    
+      <a href="/tags/#level-1" class="page__taxonomy-item p-category" rel="tag">Level_1</a><span class="sep">, </span>
+    
+      <a href="/tags/#%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98" class="page__taxonomy-item p-category" rel="tag">알고리즘</a><span class="sep">, </span>
+    
+      <a href="/tags/#%EC%BD%94%ED%85%8C" class="page__taxonomy-item p-category" rel="tag">코테</a><span class="sep">, </span>
+    
+      <a href="/tags/#%ED%8C%8C%EC%9D%B4%EC%8D%AC" class="page__taxonomy-item p-category" rel="tag">파이썬</a><span class="sep">, </span>
+    
+      <a href="/tags/#%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4" class="page__taxonomy-item p-category" rel="tag">프로그래머스</a>
+    
+    </span>
+  </p>
+
+
+
+
+  
+
+
+  
+
+  <p class="page__taxonomy">
+    <strong><i class="fas fa-fw fa-folder-open" aria-hidden="true"></i> 카테고리: </strong>
+    <span itemprop="keywords">
+    
+      <a href="/categories/#%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8" class="page__taxonomy-item p-category" rel="tag">코딩테스트</a>
+    
+    </span>
+  </p>
+
+
+        
+
+  <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> 업데이트:</strong> <time class="dt-published" datetime="2022-05-07">May 7, 2022</time></p>
+
+      </footer>
+
+      <section class="page__share">
+  
+    <h4 class="page__share-title">공유하기</h4>
+  
+
+  <a href="https://twitter.com/intent/tweet?text=%5B%ED%8C%8C%EC%9D%B4%EC%8D%AC%5D%5B%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4%5D+K%EB%B2%88%EC%A7%B8%EC%88%98%20http%3A%2F%2Flocalhost%3A4000%2F%25EC%25BD%2594%25EB%2594%25A9%25ED%2585%258C%25EC%258A%25A4%25ED%258A%25B8%2F42840%2F" class="btn btn--twitter" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="공유하기 Twitter"><i class="fab fa-fw fa-twitter" aria-hidden="true"></i><span> Twitter</span></a>
+
+  <a href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Flocalhost%3A4000%2F%25EC%25BD%2594%25EB%2594%25A9%25ED%2585%258C%25EC%258A%25A4%25ED%258A%25B8%2F42840%2F" class="btn btn--facebook" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="공유하기 Facebook"><i class="fab fa-fw fa-facebook" aria-hidden="true"></i><span> Facebook</span></a>
+
+  <a href="https://www.linkedin.com/shareArticle?mini=true&url=http%3A%2F%2Flocalhost%3A4000%2F%25EC%25BD%2594%25EB%2594%25A9%25ED%2585%258C%25EC%258A%25A4%25ED%258A%25B8%2F42840%2F" class="btn btn--linkedin" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="공유하기 LinkedIn"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i><span> LinkedIn</span></a>
+</section>
+
+
+      
+  <nav class="pagination">
+    
+      <a href="/%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8/59407/" class="pagination--pager" title="[파이썬][프로그래머스] 이름이 있는 동물의 아이디
+">이전</a>
+    
+    
+      <a href="/%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8/11050/" class="pagination--pager" title="[파이썬][백준 11050번] 이항 계수 1
+">다음</a>
+    
+  </nav>
+
+    </div>
+
+    
+  </article>
+
+  
+  
+    <div class="page__related">
+      <h2 class="page__related-title">참고</h2>
+      <div class="grid__wrapper">
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title no_toc" itemprop="headline">
+      
+        <a href="/%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8/81301/" rel="permalink">[파이썬][프로그래머스] 숫자 문자열과 영단어
+</a>
+      
+    </h2>
+    
+
+  <p class="page__meta">
+    
+
+    
+
+    
+      
+      
+
+      <span class="page__meta-readtime">
+        <i class="far fa-clock" aria-hidden="true"></i>
+        
+          2 분 소요
+        
+      </span>
+    
+  </p>
+
+
+    <p class="archive__item-excerpt" itemprop="description">프로그래머스 숫자 문자열과 영단어 문제 풀이
+</p>
+  </article>
+</div>
+
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title no_toc" itemprop="headline">
+      
+        <a href="/%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8/42889/" rel="permalink">[파이썬][프로그래머스] 실패율
+</a>
+      
+    </h2>
+    
+
+  <p class="page__meta">
+    
+
+    
+
+    
+      
+      
+
+      <span class="page__meta-readtime">
+        <i class="far fa-clock" aria-hidden="true"></i>
+        
+          2 분 소요
+        
+      </span>
+    
+  </p>
+
+
+    <p class="archive__item-excerpt" itemprop="description">프로그래머스 실패율 문제 풀이
+</p>
+  </article>
+</div>
+
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title no_toc" itemprop="headline">
+      
+        <a href="/%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8/17682/" rel="permalink">[파이썬][프로그래머스] [1차] 다트 게임
+</a>
+      
+    </h2>
+    
+
+  <p class="page__meta">
+    
+
+    
+
+    
+      
+      
+
+      <span class="page__meta-readtime">
+        <i class="far fa-clock" aria-hidden="true"></i>
+        
+          2 분 소요
+        
+      </span>
+    
+  </p>
+
+
+    <p class="archive__item-excerpt" itemprop="description">프로그래머스 [1차] 다트 게임 풀이
+</p>
+  </article>
+</div>
+
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title no_toc" itemprop="headline">
+      
+        <a href="/%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8/17681/" rel="permalink">[파이썬][프로그래머스] [1차] 비밀지도
+</a>
+      
+    </h2>
+    
+
+  <p class="page__meta">
+    
+
+    
+
+    
+      
+      
+
+      <span class="page__meta-readtime">
+        <i class="far fa-clock" aria-hidden="true"></i>
+        
+          1 분 소요
+        
+      </span>
+    
+  </p>
+
+
+    <p class="archive__item-excerpt" itemprop="description">프로그래머스 [1차] 비밀지도 문제 풀이
+</p>
+  </article>
+</div>
+
+        
+      </div>
+    </div>
+  
+  
+</div>
+
+    </div>
+
+    
+
+    <div id="footer" class="page__footer">
+      <footer>
+        <!-- start custom footer snippets -->
+
+<!-- end custom footer snippets -->
+        <div class="page__footer-follow">
+  <ul class="social-icons">
+    
+      <li><strong>팔로우:</strong></li>
+    
+
+    
+      
+        
+          <li><a href="godhin:sodlalwl13e@gmail.com" rel="nofollow noopener noreferrer"><i class="fas fa-fw fa-envelope-square" aria-hidden="true"></i> Email</a></li>
+        
+      
+        
+      
+        
+      
+        
+      
+        
+          <li><a href="https://github.com/godhin" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-github" aria-hidden="true"></i> GitHub</a></li>
+        
+      
+        
+          <li><a href="https://instagram.com/cmblir" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-instagram" aria-hidden="true"></i> Instagram</a></li>
+        
+      
+    
+
+    
+      <li><a href="/feed.xml"><i class="fas fa-fw fa-rss-square" aria-hidden="true"></i> 피드</a></li>
+    
+  </ul>
+</div>
+
+<div class="page__footer-copyright">&copy; 2022 Yoo Nicholas. Powered by <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.</div>
+
+      </footer>
+    </div>
+
+    
+  <script src="/assets/js/main.min.js"></script>
+
+
+
+
+
+
+
+
+
+
+  </body>
+</html>
