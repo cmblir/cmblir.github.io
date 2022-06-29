@@ -1,452 +1,123 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2022-06-29T13:55:04+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">성장형 개발자 블로그</title><subtitle>An amazing website.</subtitle><author><name>You Nicholas</name></author><entry><title type="html">[파이썬][프로그래머스] [1차] 다트 게임</title><link href="http://localhost:4000/%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8/17682/" rel="alternate" type="text/html" title="[파이썬][프로그래머스] [1차] 다트 게임" /><published>2022-06-28T00:00:00+09:00</published><updated>2022-06-28T00:00:00+09:00</updated><id>http://localhost:4000/%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8/17682</id><content type="html" xml:base="http://localhost:4000/%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8/17682/">&lt;h2 id=&quot;1-문제&quot;&gt;1. 문제&lt;/h2&gt;
-
-&lt;h1 id=&quot;level-1-1차-다트-게임---17682&quot;&gt;[level 1] [1차] 다트 게임 - 17682&lt;/h1&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://programmers.co.kr/learn/courses/30/lessons/17682&quot;&gt;문제 링크&lt;/a&gt;&lt;/p&gt;
-
-&lt;h3 id=&quot;성능-요약&quot;&gt;성능 요약&lt;/h3&gt;
-
-&lt;p&gt;메모리: 10.3 MB, 시간: 0.03 ms&lt;/p&gt;
-
-&lt;h3 id=&quot;구분&quot;&gt;구분&lt;/h3&gt;
-
-&lt;p&gt;코딩테스트 연습 &amp;gt; 2018 KAKAO BLIND RECRUITMENT&lt;/p&gt;
-
-&lt;h3 id=&quot;채점결과&quot;&gt;채점결과&lt;/h3&gt;
-
-&lt;p&gt;&lt;br /&gt;정확성: 100.0&lt;br /&gt;합계: 100.0 / 100.0&lt;/p&gt;
-
-&lt;h3 id=&quot;문제-설명&quot;&gt;문제 설명&lt;/h3&gt;
-
-&lt;h2&gt;다트 게임&lt;/h2&gt;
-
-&lt;p&gt;카카오톡에 뜬 네 번째 별! 심심할 땐? 카카오톡 게임별~&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;http://t1.kakaocdn.net/welcome2018/gamestar.png&quot; title=&quot;게임별&quot; alt=&quot;Game Star&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;카카오톡 게임별의 하반기 신규 서비스로 다트 게임을 출시하기로 했다. 다트 게임은 다트판에 다트를 세 차례 던져 그 점수의 합계로 실력을 겨루는 게임으로, 모두가 간단히 즐길 수 있다.&lt;br /&gt;
-갓 입사한 무지는 코딩 실력을 인정받아 게임의 핵심 부분인 점수 계산 로직을 맡게 되었다. 다트 게임의 점수 계산 로직은 아래와 같다.&lt;/p&gt;
-
-&lt;ol&gt;
-&lt;li&gt;다트 게임은 총 3번의 기회로 구성된다.&lt;/li&gt;
-&lt;li&gt;각 기회마다 얻을 수 있는 점수는 0점에서 10점까지이다.&lt;/li&gt;
-&lt;li&gt;점수와 함께 Single(&lt;code&gt;S&lt;/code&gt;), Double(&lt;code&gt;D&lt;/code&gt;), Triple(&lt;code&gt;T&lt;/code&gt;) 영역이 존재하고 각 영역 당첨 시 점수에서 1제곱, 2제곱, 3제곱 (점수&lt;sup&gt;1&lt;/sup&gt; , 점수&lt;sup&gt;2&lt;/sup&gt; , 점수&lt;sup&gt;3&lt;/sup&gt; )으로 계산된다.&lt;/li&gt;
-&lt;li&gt;옵션으로 스타상(&lt;code&gt;*&lt;/code&gt;) , 아차상(&lt;code&gt;#&lt;/code&gt;)이 존재하며 스타상(&lt;code&gt;*&lt;/code&gt;) 당첨 시 해당 점수와 바로 전에 얻은 점수를 각 2배로 만든다. 아차상(&lt;code&gt;#&lt;/code&gt;) 당첨 시 해당 점수는 마이너스된다.&lt;/li&gt;
-&lt;li&gt;스타상(&lt;code&gt;*&lt;/code&gt;)은 첫 번째 기회에서도 나올 수 있다. 이 경우 첫 번째 스타상(&lt;code&gt;*&lt;/code&gt;)의 점수만 2배가 된다. (예제 4번 참고)&lt;/li&gt;
-&lt;li&gt;스타상(&lt;code&gt;*&lt;/code&gt;)의 효과는 다른 스타상(&lt;code&gt;*&lt;/code&gt;)의 효과와 중첩될 수 있다. 이 경우 중첩된 스타상(&lt;code&gt;*&lt;/code&gt;) 점수는 4배가 된다. (예제 4번 참고)&lt;/li&gt;
-&lt;li&gt;스타상(&lt;code&gt;*&lt;/code&gt;)의 효과는 아차상(&lt;code&gt;#&lt;/code&gt;)의 효과와 중첩될 수 있다. 이 경우 중첩된 아차상(&lt;code&gt;#&lt;/code&gt;)의 점수는 -2배가 된다. (예제 5번 참고)&lt;/li&gt;
-&lt;li&gt;Single(&lt;code&gt;S&lt;/code&gt;), Double(&lt;code&gt;D&lt;/code&gt;), Triple(&lt;code&gt;T&lt;/code&gt;)은 점수마다 하나씩 존재한다.&lt;/li&gt;
-&lt;li&gt;스타상(&lt;code&gt;*&lt;/code&gt;), 아차상(&lt;code&gt;#&lt;/code&gt;)은 점수마다 둘 중 하나만 존재할 수 있으며, 존재하지 않을 수도 있다. &lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;0~10의 정수와 문자 S, D, T, *, #로 구성된 문자열이 입력될 시 총점수를 반환하는 함수를 작성하라.&lt;/p&gt;
-
-&lt;h3&gt;입력 형식&lt;/h3&gt;
-
-&lt;p&gt;&quot;점수|보너스|[옵션]&quot;으로 이루어진 문자열 3세트.&lt;br /&gt;
-예)  &lt;code&gt;1S2D*3T&lt;/code&gt;&lt;/p&gt;
-
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2022-06-30T01:57:24+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">성장형 개발자 블로그</title><subtitle>An amazing website.</subtitle><author><name>You Nicholas</name></author><entry><title type="html">Gooroomee 구루밑업</title><link href="http://localhost:4000/%EC%9D%BC%EC%83%81/Gooroomee/" rel="alternate" type="text/html" title="Gooroomee 구루밑업" /><published>2022-06-29T00:00:00+09:00</published><updated>2022-06-29T00:00:00+09:00</updated><id>http://localhost:4000/%EC%9D%BC%EC%83%81/Gooroomee</id><content type="html" xml:base="http://localhost:4000/%EC%9D%BC%EC%83%81/Gooroomee/">&lt;h2 id=&quot;밋업&quot;&gt;밋업&lt;/h2&gt;
+&lt;p&gt;&lt;img src=&quot;https://user-images.githubusercontent.com/75519839/176487192-11d9cd3c-0bd0-41ca-a91b-94629f3e06c2.jpeg&quot; alt=&quot;IMG_8523&quot; /&gt;&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;점수는 0에서 10 사이의 정수이다.&lt;/li&gt;
-&lt;li&gt;보너스는 S, D, T 중 하나이다.&lt;/li&gt;
-&lt;li&gt;옵선은 *이나 # 중 하나이며, 없을 수도 있다.&lt;/li&gt;
+  &lt;li&gt;이거는 오늘 참여한 Gooroomee 밋업 세미나행사&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h3&gt;출력 형식&lt;/h3&gt;
+&lt;h3 id=&quot;나에게-행사란&quot;&gt;나에게 행사란&lt;/h3&gt;
 
-&lt;p&gt;3번의 기회에서 얻은 점수 합계에 해당하는 정수값을 출력한다.&lt;br /&gt;
-예) 37&lt;/p&gt;
+&lt;p&gt;아직 취업을 못해본 나에게 밋업 행사는 새로운 자극이다. 회사에 대한 열망, 궁금증에 대한 해소, 그리고 그들의 성장을 모두 느낄 수 있게 해준다. 그동안 코로나와 부트캠프 일정으로 바쁘게 지내며 오프라인 행사를 참여하지 못하다가 오랜만에 오프라인 행사에 참여하게 되었다. 구루미의 행사는 처음으로 참여하게 되었다.&lt;/p&gt;
 
-&lt;h3&gt;입출력 예제&lt;/h3&gt;
-&lt;table class=&quot;table&quot;&gt;
-        &lt;thead&gt;&lt;tr&gt;
-&lt;th&gt;예제&lt;/th&gt;
-&lt;th&gt;dartResult&lt;/th&gt;
-&lt;th&gt;answer&lt;/th&gt;
-&lt;th&gt;설명&lt;/th&gt;
-&lt;/tr&gt;
-&lt;/thead&gt;
-        &lt;tbody&gt;&lt;tr&gt;
-&lt;td&gt;1&lt;/td&gt;
-&lt;td&gt;&lt;code&gt;1S2D*3T&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;37&lt;/td&gt;
-&lt;td&gt;1&lt;sup&gt;1&lt;/sup&gt; * 2 + 2&lt;sup&gt;2&lt;/sup&gt; * 2 + 3&lt;sup&gt;3&lt;/sup&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;2&lt;/td&gt;
-&lt;td&gt;&lt;code&gt;1D2S#10S&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;9&lt;/td&gt;
-&lt;td&gt;1&lt;sup&gt;2&lt;/sup&gt; + 2&lt;sup&gt;1&lt;/sup&gt; * (-1) + 10&lt;sup&gt;1&lt;/sup&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;3&lt;/td&gt;
-&lt;td&gt;&lt;code&gt;1D2S0T&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;3&lt;/td&gt;
-&lt;td&gt;1&lt;sup&gt;2&lt;/sup&gt; + 2&lt;sup&gt;1&lt;/sup&gt; + 0&lt;sup&gt;3&lt;/sup&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;4&lt;/td&gt;
-&lt;td&gt;&lt;code&gt;1S*2T*3S&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;23&lt;/td&gt;
-&lt;td&gt;1&lt;sup&gt;1&lt;/sup&gt; * 2 * 2 + 2&lt;sup&gt;3&lt;/sup&gt; * 2 + 3&lt;sup&gt;1&lt;/sup&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;5&lt;/td&gt;
-&lt;td&gt;&lt;code&gt;1D#2S*3S&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;5&lt;/td&gt;
-&lt;td&gt;1&lt;sup&gt;2&lt;/sup&gt; * (-1) * 2 + 2&lt;sup&gt;1&lt;/sup&gt; * 2 + 3&lt;sup&gt;1&lt;/sup&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;6&lt;/td&gt;
-&lt;td&gt;&lt;code&gt;1T2D3D#&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;-4&lt;/td&gt;
-&lt;td&gt;1&lt;sup&gt;3&lt;/sup&gt; + 2&lt;sup&gt;2&lt;/sup&gt; + 3&lt;sup&gt;2&lt;/sup&gt; * (-1)&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;7&lt;/td&gt;
-&lt;td&gt;&lt;code&gt;1D2S3T*&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;59&lt;/td&gt;
-&lt;td&gt;1&lt;sup&gt;2&lt;/sup&gt; + 2&lt;sup&gt;1&lt;/sup&gt; * 2 + 3&lt;sup&gt;3&lt;/sup&gt; * 2&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/tbody&gt;
-      &lt;/table&gt;
-&lt;p&gt;&lt;a href=&quot;http://tech.kakao.com/2017/09/27/kakao-blind-recruitment-round-1/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;해설 보러가기&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&quot;작년-컨퍼런스와의-비교&quot;&gt;작년 컨퍼런스와의 비교&lt;/h2&gt;
 
-&lt;blockquote&gt;
-  &lt;p&gt;출처: 프로그래머스 코딩 테스트 연습, https://programmers.co.kr/learn/challenges&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;h2 id=&quot;2-해결방법-시간복잡도&quot;&gt;2. 해결방법 시간복잡도&lt;/h2&gt;
-&lt;ol&gt;
-  &lt;li&gt;스택 O(N)&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;h2 id=&quot;3-문제-해결-및-코드&quot;&gt;3. 문제 해결 및 코드&lt;/h2&gt;
-&lt;hr /&gt;
-
-&lt;script src=&quot;https://gist.github.com/godhin/8c407ff96c96bf1477376d1c1ef4d98b.js&quot;&gt;&lt;/script&gt;
+&lt;p&gt;&lt;img src=&quot;https://user-images.githubusercontent.com/75519839/176481748-ff6f051f-d350-4b20-82cd-5da8e7a06d4b.jpg&quot; alt=&quot;IMG_8538&quot; /&gt;&lt;/p&gt;
 
 &lt;ul&gt;
-  &lt;li&gt;
-    &lt;h2 id=&quot;주석을-참고하면서-이해를-돕습니다&quot;&gt;주석을 참고하면서 이해를 돕습니다.&lt;/h2&gt;
-  &lt;/li&gt;
+  &lt;li&gt;작년 IF 2021 스타트업 컨퍼런스이다. SPACE라는 컨셉으로 다소 특이했지만 많은 스타트 기업들이 참여해서 매우 재미있었던 행사&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h2 id=&quot;4-알고리즘-및-해설&quot;&gt;4. 알고리즘 및 해설&lt;/h2&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;문제의 요점은 각 문자마다 조건에 맞게 값을 도출하여 최종 결과를 만드는 것이다.&lt;/li&gt;
-  &lt;li&gt;딕셔너리 형태로 싱글, 더블, 트리플에 제곱수를 만들었다.
-    &lt;ul&gt;
-      &lt;li&gt;해당 방식 말고도 하나하나 리스트를 만들거나, 그냥 구현해도 무관하다.&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;이후 10 같은 경우 1, 0 으로 문자가 나뉘어지기때문에 A라는 임의의 문자로 변경하여 추후 10으로 인식하게끔 하였다.&lt;/li&gt;
-  &lt;li&gt;반복문이 도는 동안 isdigit() 함수로 수인지 확인하거나 아까 만든 A라는 수가 있을 경우 스택에 값을 넣는다.&lt;/li&gt;
-  &lt;li&gt;숫자가 아닌 경우
-    &lt;ul&gt;
-      &lt;li&gt;조건에 맞게 계산해준다.
-        &lt;ul&gt;
-          &lt;li&gt;단, 마지막 *의 경우 스택에 수가 남아있을 경우 *2를 더해준다.&lt;/li&gt;
-        &lt;/ul&gt;
-      &lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-&lt;/ol&gt;</content><author><name>You Nicholas</name></author><category term="코딩테스트" /><category term="알고리즘" /><category term="파이썬" /><category term="코테" /><category term="프로그래머스" /><category term="Level_1" /><summary type="html">프로그래머스 [1차] 다트 게임 풀이</summary></entry><entry><title type="html">[파이썬][프로그래머스] [1차] 비밀지도</title><link href="http://localhost:4000/%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8/17681/" rel="alternate" type="text/html" title="[파이썬][프로그래머스] [1차] 비밀지도" /><published>2022-06-28T00:00:00+09:00</published><updated>2022-06-28T00:00:00+09:00</updated><id>http://localhost:4000/%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8/17681</id><content type="html" xml:base="http://localhost:4000/%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8/17681/">&lt;h2 id=&quot;1-문제&quot;&gt;1. 문제&lt;/h2&gt;
-
-&lt;h1 id=&quot;level-1-1차-비밀지도---17681&quot;&gt;[level 1] [1차] 비밀지도 - 17681&lt;/h1&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://programmers.co.kr/learn/courses/30/lessons/17681&quot;&gt;문제 링크&lt;/a&gt;&lt;/p&gt;
-
-&lt;h3 id=&quot;성능-요약&quot;&gt;성능 요약&lt;/h3&gt;
-
-&lt;p&gt;메모리: 10.4 MB, 시간: 0.03 ms&lt;/p&gt;
-
-&lt;h3 id=&quot;구분&quot;&gt;구분&lt;/h3&gt;
-
-&lt;p&gt;코딩테스트 연습 &amp;gt; 2018 KAKAO BLIND RECRUITMENT&lt;/p&gt;
-
-&lt;h3 id=&quot;채점결과&quot;&gt;채점결과&lt;/h3&gt;
-
-&lt;p&gt;&lt;br /&gt;정확성: 100.0&lt;br /&gt;합계: 100.0 / 100.0&lt;/p&gt;
-
-&lt;h3 id=&quot;문제-설명&quot;&gt;문제 설명&lt;/h3&gt;
-
-&lt;h2&gt;비밀지도&lt;/h2&gt;
-
-&lt;p&gt;네오는 평소 프로도가 비상금을 숨겨놓는 장소를 알려줄 비밀지도를 손에 넣었다. 그런데 이 비밀지도는 숫자로 암호화되어 있어 위치를 확인하기 위해서는 암호를 해독해야 한다. 다행히 지도 암호를 해독할 방법을 적어놓은 메모도 함께 발견했다.&lt;/p&gt;
-
-&lt;ol&gt;
-&lt;li&gt;지도는 한 변의 길이가 &lt;code&gt;n&lt;/code&gt;인 정사각형 배열 형태로, 각 칸은 &quot;공백&quot;(&quot; &quot;) 또는 &quot;벽&quot;(&quot;#&quot;) 두 종류로 이루어져 있다.&lt;/li&gt;
-&lt;li&gt;전체 지도는 두 장의 지도를 겹쳐서 얻을 수 있다. 각각 &quot;지도 1&quot;과 &quot;지도 2&quot;라고 하자. 지도 1 또는 지도 2 중 어느 하나라도 벽인 부분은 전체 지도에서도 벽이다. 지도 1과 지도 2에서 모두 공백인 부분은 전체 지도에서도 공백이다.&lt;/li&gt;
-&lt;li&gt;&quot;지도 1&quot;과 &quot;지도 2&quot;는 각각 정수 배열로 암호화되어 있다.&lt;/li&gt;
-&lt;li&gt;암호화된 배열은 지도의 각 가로줄에서 벽 부분을 &lt;code&gt;1&lt;/code&gt;, 공백 부분을 &lt;code&gt;0&lt;/code&gt;으로 부호화했을 때 얻어지는 이진수에 해당하는 값의 배열이다.&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;&lt;img src=&quot;http://t1.kakaocdn.net/welcome2018/secret8.png&quot; title=&quot;Secret Map&quot; alt=&quot;secret map&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;네오가 프로도의 비상금을 손에 넣을 수 있도록, 비밀지도의 암호를 해독하는 작업을 도와줄 프로그램을 작성하라.&lt;/p&gt;
-
-&lt;h3&gt;입력 형식&lt;/h3&gt;
-
-&lt;p&gt;입력으로 지도의 한 변 크기 &lt;code&gt;n&lt;/code&gt; 과 2개의 정수 배열 &lt;code&gt;arr1&lt;/code&gt;, &lt;code&gt;arr2&lt;/code&gt;가 들어온다.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://user-images.githubusercontent.com/75519839/176481726-e3ae034a-3f2e-431a-9e15-369d5932f2d6.jpg&quot; alt=&quot;IMG_8539&quot; /&gt;&lt;/p&gt;
 
 &lt;ul&gt;
-&lt;li&gt;1 ≦ &lt;code&gt;n&lt;/code&gt; ≦ 16&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;arr1&lt;/code&gt;, &lt;code&gt;arr2&lt;/code&gt;는 길이 &lt;code&gt;n&lt;/code&gt;인 정수 배열로 주어진다.&lt;/li&gt;
-&lt;li&gt;정수 배열의 각 원소 &lt;code&gt;x&lt;/code&gt;를 이진수로 변환했을 때의 길이는 &lt;code&gt;n&lt;/code&gt; 이하이다. 즉, 0 ≦ &lt;code&gt;x&lt;/code&gt; ≦ 2&lt;sup&gt;n&lt;/sup&gt; - 1을 만족한다.&lt;/li&gt;
+  &lt;li&gt;이거는 거기 행사중 퀘스트를 주는데 모든 퀘스트를 완주하면 주는 레인보우 베이글 존맛탱구리&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h3&gt;출력 형식&lt;/h3&gt;
+&lt;h2 id=&quot;밋업과-컨퍼런스의-차이&quot;&gt;밋업과 컨퍼런스의 차이&lt;/h2&gt;
 
-&lt;p&gt;원래의 비밀지도를 해독하여 &lt;code&gt;'#'&lt;/code&gt;, &lt;code&gt;공백&lt;/code&gt;으로 구성된 문자열 배열로 출력하라.&lt;/p&gt;
+&lt;h3 id=&quot;밋업이란&quot;&gt;밋업이란&lt;/h3&gt;
 
-&lt;h3&gt;입출력 예제&lt;/h3&gt;
-&lt;table class=&quot;table&quot;&gt;
-        &lt;thead&gt;&lt;tr&gt;
-&lt;th&gt;매개변수&lt;/th&gt;
-&lt;th&gt;값&lt;/th&gt;
-&lt;/tr&gt;
-&lt;/thead&gt;
-        &lt;tbody&gt;&lt;tr&gt;
-&lt;td&gt;n&lt;/td&gt;
-&lt;td&gt;5&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;arr1&lt;/td&gt;
-&lt;td&gt;[9, 20, 28, 18, 11]&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;arr2&lt;/td&gt;
-&lt;td&gt;[30, 1, 21, 17, 28]&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;출력&lt;/td&gt;
-&lt;td&gt;&lt;code&gt;[&quot;#####&quot;,&quot;# # #&quot;, &quot;### #&quot;, &quot;#  ##&quot;, &quot;#####&quot;]&lt;/code&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/tbody&gt;
-      &lt;/table&gt;
-&lt;table class=&quot;table&quot;&gt;
-        &lt;thead&gt;&lt;tr&gt;
-&lt;th&gt;매개변수&lt;/th&gt;
-&lt;th&gt;값&lt;/th&gt;
-&lt;/tr&gt;
-&lt;/thead&gt;
-        &lt;tbody&gt;&lt;tr&gt;
-&lt;td&gt;n&lt;/td&gt;
-&lt;td&gt;6&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;arr1&lt;/td&gt;
-&lt;td&gt;[46, 33, 33 ,22, 31, 50]&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;arr2&lt;/td&gt;
-&lt;td&gt;[27 ,56, 19, 14, 14, 10]&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;출력&lt;/td&gt;
-&lt;td&gt;&lt;code&gt;[&quot;######&quot;, &quot;###  #&quot;, &quot;##  ##&quot;, &quot; #### &quot;, &quot; #####&quot;, &quot;### # &quot;]&lt;/code&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/tbody&gt;
-      &lt;/table&gt;
-&lt;p&gt;&lt;a href=&quot;http://tech.kakao.com/2017/09/27/kakao-blind-recruitment-round-1/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;해설 보러가기&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;사업자가 투자자를 유치하기 위해 회사나 제품 또는 서비스에 대해 설명하고 토론하는 행사를 말한다.&lt;/p&gt;
 
-&lt;blockquote&gt;
-  &lt;p&gt;출처: 프로그래머스 코딩 테스트 연습, https://programmers.co.kr/learn/challenges&lt;/p&gt;
-&lt;/blockquote&gt;
+&lt;h3 id=&quot;컨퍼런스란&quot;&gt;컨퍼런스란&lt;/h3&gt;
 
-&lt;h2 id=&quot;2-해결방법-시간복잡도&quot;&gt;2. 해결방법 시간복잡도&lt;/h2&gt;
-&lt;ol&gt;
-  &lt;li&gt;단순 코딩 O(N)&lt;/li&gt;
-&lt;/ol&gt;
+&lt;p&gt;특정 주제나 이슈에 관해서 사람들을 모아 협의하는 회의를 말한다. 행사라고도 많이 하고 주로 테크 기업들이 많이한다.&lt;/p&gt;
 
-&lt;h2 id=&quot;3-문제-해결-및-코드&quot;&gt;3. 문제 해결 및 코드&lt;/h2&gt;
-&lt;hr /&gt;
+&lt;h3 id=&quot;if-2021&quot;&gt;IF 2021&lt;/h3&gt;
 
-&lt;script src=&quot;https://gist.github.com/godhin/b3118fbf8af7f0354fc647bd6aadeba7.js&quot;&gt;&lt;/script&gt;
+&lt;p&gt;이때 참여할 시기에는 아직 프로그래밍을 배운 지 얼마 안된 시기이다. 그래서 기술 소개보다는 해당 회사에 대한 관심도와 궁금증 그리고 스타트업 기업의 성장에 대해서 주로 보았던 것 같았다. 그리고 무엇보다 가이드가 있을 정도로 많은 기업들이 참여했다는 점이 인상깊었다.&lt;/p&gt;
+
+&lt;h2 id=&quot;gooroomee-구루미-밋업&quot;&gt;Gooroomee 구루미 밋업&lt;/h2&gt;
 
 &lt;ul&gt;
-  &lt;li&gt;
-    &lt;h2 id=&quot;주석을-참고하면서-이해를-돕습니다&quot;&gt;주석을 참고하면서 이해를 돕습니다.&lt;/h2&gt;
-  &lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;한줄평&lt;/strong&gt; : &lt;em&gt;구루미는 마치 구름처럼 생겼다. 뭔가 구루미는 구름처럼 활공하며 성장하는 기업 같았다.&lt;/em&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h2 id=&quot;4-알고리즘-및-해설&quot;&gt;4. 알고리즘 및 해설&lt;/h2&gt;
+&lt;h3 id=&quot;밋업-방문전&quot;&gt;밋업 방문전&lt;/h3&gt;
+&lt;p&gt;원래는 큰 기대를 하지 않고 행사에 참석하였고, 최근 면접과 취업준비로 인해 다소 흐트러진 마음가짐을 다 잡을겸사 찾아가게 되었다. 스타트업 기업 행사에 자주 참여하는 나의 가장 큰 이유중 하나는 그들의 눈을 보기 위해서이다. 뭔가 성공하는 기업들의 특징은 하나같이 눈에서 &lt;em&gt;열정&lt;/em&gt;이 뿜어져 나온다. 그 열기때문에 다소 식었던 나의 열정마저 불태우는 것 같은 느낌이라 나는 오프라인 행사나 연설이 있으면 최대한 찾아서 가는 편이다.&lt;/p&gt;
 
-&lt;ol&gt;
-  &lt;li&gt;문제에서 비밀지도는 정수를 2진수로 변환한 값을 지도에 칠한뒤 하나의 지도를 덧칠하는 과정을 거친다.&lt;/li&gt;
-  &lt;li&gt;이 과정에서 덧칠한 부분은 #로 아닌 부분은 공백으로 표기한다.&lt;/li&gt;
-  &lt;li&gt;일단 리스트에 해당 값들을 이진수형태로 더해서 넣는다.&lt;/li&gt;
-  &lt;li&gt;이후 반복문을 통해 해당 값을 주어진 n이라는 값 만큼 0으로 채우고 나머지를 부분은 변환시켜서 출력해준다.
-    &lt;ul&gt;
-      &lt;li&gt;값을 더해도 상관없는 이유는 1 + 1 최대 2까지 밖에 안나오기떄문에 경우의 수가 1개밖에 더 생기지 않는다.&lt;/li&gt;
-      &lt;li&gt;rjust()를 통해 해당 값의 좌측 (더하게 되면 001000은 1000으로 나오기떄문에)이 비어있을 경우 채워준다.&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-&lt;/ol&gt;</content><author><name>You Nicholas</name></author><category term="코딩테스트" /><category term="알고리즘" /><category term="파이썬" /><category term="코테" /><category term="프로그래머스" /><category term="Level_1" /><summary type="html">프로그래머스 [1차] 비밀지도 문제 풀이</summary></entry><entry><title type="html">[파이썬][프로그래머스] 실패율</title><link href="http://localhost:4000/%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8/42889/" rel="alternate" type="text/html" title="[파이썬][프로그래머스] 실패율" /><published>2022-06-28T00:00:00+09:00</published><updated>2022-06-28T00:00:00+09:00</updated><id>http://localhost:4000/%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8/42889</id><content type="html" xml:base="http://localhost:4000/%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8/42889/">&lt;h2 id=&quot;1-문제&quot;&gt;1. 문제&lt;/h2&gt;
-
-&lt;h1 id=&quot;level-1-실패율---42889&quot;&gt;[level 1] 실패율 - 42889&lt;/h1&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://programmers.co.kr/learn/courses/30/lessons/42889&quot;&gt;문제 링크&lt;/a&gt;&lt;/p&gt;
-
-&lt;h3 id=&quot;성능-요약&quot;&gt;성능 요약&lt;/h3&gt;
-
-&lt;p&gt;메모리: 10.2 MB, 시간: 0.01 ms&lt;/p&gt;
-
-&lt;h3 id=&quot;구분&quot;&gt;구분&lt;/h3&gt;
-
-&lt;p&gt;코딩테스트 연습 &amp;gt; 2019 KAKAO BLIND RECRUITMENT&lt;/p&gt;
-
-&lt;h3 id=&quot;채점결과&quot;&gt;채점결과&lt;/h3&gt;
-
-&lt;p&gt;&lt;br /&gt;정확성: 100.0&lt;br /&gt;합계: 100.0 / 100.0&lt;/p&gt;
-
-&lt;h3 id=&quot;문제-설명&quot;&gt;문제 설명&lt;/h3&gt;
-
-&lt;h2&gt;실패율&lt;/h2&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://grepp-programmers.s3.amazonaws.com/files/production/bde471d8ac/48ddf1cc-c4ea-499d-b431-9727ee799191.png&quot; title=&quot;&quot; alt=&quot;failture_rate1.png&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;슈퍼 게임 개발자 오렐리는 큰 고민에 빠졌다. 그녀가 만든 프랜즈 오천성이 대성공을 거뒀지만, 요즘 신규 사용자의 수가 급감한 것이다. 원인은 신규 사용자와 기존 사용자 사이에 스테이지 차이가 너무 큰 것이 문제였다.&lt;/p&gt;
-
-&lt;p&gt;이 문제를 어떻게 할까 고민 한 그녀는 동적으로 게임 시간을 늘려서 난이도를 조절하기로 했다. 역시 슈퍼 개발자라 대부분의 로직은 쉽게 구현했지만, 실패율을 구하는 부분에서 위기에 빠지고 말았다. 오렐리를 위해 실패율을 구하는 코드를 완성하라.&lt;/p&gt;
-
+&lt;h3 id=&quot;밋업-행사중&quot;&gt;밋업 행사중&lt;/h3&gt;
+&lt;p&gt;&lt;img src=&quot;https://user-images.githubusercontent.com/75519839/176487164-0104640c-1358-4e43-a46f-a57b5514bb84.jpeg&quot; alt=&quot;IMG_8524&quot; /&gt;&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;실패율은 다음과 같이 정의한다.
-
-&lt;ul&gt;
-&lt;li&gt;스테이지에 도달했으나 아직 클리어하지 못한 플레이어의 수 / 스테이지에 도달한 플레이어 수&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
+  &lt;li&gt;이거는 행사 참여하면서 받은 목걸이 ‘나도 오늘부터 루미’&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;전체 스테이지의 개수 N, 게임을 이용하는 사용자가 현재 멈춰있는 스테이지의 번호가 담긴 배열 stages가 매개변수로 주어질 때, 실패율이 높은 스테이지부터 내림차순으로 스테이지의 번호가 담겨있는 배열을 return 하도록 solution 함수를 완성하라.&lt;/p&gt;
+&lt;p&gt;&lt;br /&gt;행사의 진행 순서는 CEO -&amp;gt; COO -&amp;gt; CXO -&amp;gt; CTO 순이였다. 대표님의 구루미 이름의 유래부터 시작해서 포부 그리고 성장 가치, COO님의 회사 경영 방식과 영업 방식, 그리고 워크 플로우, CXO님의 회사 컬쳐, 사내 복지와 워크샵 마지막으로 CTO님의 구루미 서비스 기술 설명이 있었다.&amp;lt;/br&amp;gt;&lt;/p&gt;
 
-&lt;h5&gt;제한사항&lt;/h5&gt;
+&lt;p&gt;&lt;br /&gt;개발 직군에 있는 나와 경영에 관심이 있는 나로서는 CTO님과 COO님 얘기가 가장 눈에 들어왔고 재미있었다.
+그중 CTO님께서 WEB RTC에 대해 간략하게 설명해주셨는데 그동안 몰랐던 새로운 정보를 알게되서 더욱 관심이 갔다.&amp;lt;/br&amp;gt;&lt;/p&gt;
 
+&lt;p&gt;&lt;img src=&quot;https://user-images.githubusercontent.com/75519839/176487218-0a9c243c-d7c3-47d6-8647-f7cebe629362.jpeg&quot; alt=&quot;IMG_8522&quot; /&gt;&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;스테이지의 개수 N은 &lt;code&gt;1&lt;/code&gt; 이상 &lt;code&gt;500&lt;/code&gt; 이하의 자연수이다.&lt;/li&gt;
-&lt;li&gt;stages의 길이는 &lt;code&gt;1&lt;/code&gt; 이상 &lt;code&gt;200,000&lt;/code&gt; 이하이다.&lt;/li&gt;
-&lt;li&gt;stages에는 &lt;code&gt;1&lt;/code&gt; 이상 &lt;code&gt;N + 1&lt;/code&gt; 이하의 자연수가 담겨있다.
-
-&lt;ul&gt;
-&lt;li&gt;각 자연수는 사용자가 현재 도전 중인 스테이지의 번호를 나타낸다.&lt;/li&gt;
-&lt;li&gt;단, &lt;code&gt;N + 1&lt;/code&gt; 은 마지막 스테이지(N 번째 스테이지) 까지 클리어 한 사용자를 나타낸다.&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;li&gt;만약 실패율이 같은 스테이지가 있다면 작은 번호의 스테이지가 먼저 오도록 하면 된다.&lt;/li&gt;
-&lt;li&gt;스테이지에 도달한 유저가 없는 경우 해당 스테이지의 실패율은 &lt;code&gt;0&lt;/code&gt; 으로 정의한다.&lt;/li&gt;
+  &lt;li&gt;CXO님께서 주시고 가신 기프트이다. 세상 묵직해서 조금 당황했다.&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h5&gt;입출력 예&lt;/h5&gt;
-&lt;table class=&quot;table&quot;&gt;
-        &lt;thead&gt;&lt;tr&gt;
-&lt;th&gt;N&lt;/th&gt;
-&lt;th&gt;stages&lt;/th&gt;
-&lt;th&gt;result&lt;/th&gt;
-&lt;/tr&gt;
-&lt;/thead&gt;
-        &lt;tbody&gt;&lt;tr&gt;
-&lt;td&gt;5&lt;/td&gt;
-&lt;td&gt;[2, 1, 2, 6, 2, 4, 3, 3]&lt;/td&gt;
-&lt;td&gt;[3,4,2,1,5]&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;4&lt;/td&gt;
-&lt;td&gt;[4,4,4,4,4]&lt;/td&gt;
-&lt;td&gt;[4,1,2,3]&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/tbody&gt;
-      &lt;/table&gt;
-&lt;h5&gt;입출력 예 설명&lt;/h5&gt;
+&lt;p&gt;&lt;br /&gt;행사가 거의 끝나고 CEO님이 와줘서 고맙다며 나에게 명함을 주셨다. 그 친절함을 집에 온 지금 이 순간까지 잊지 못하겠다. 일개 취준생이었던 나에게 허리를 굽히며 고맙다고 악수를 청하는 자세는 그 어떤 경영진을 보면서도 보지 못했고, 그런 태도가 이 회사가 성장할 수 있는 이유중 하나인 것 같다.&amp;lt;/br&amp;gt;&lt;/p&gt;
 
-&lt;p&gt;입출력 예 #1&lt;br /&gt;
-1번 스테이지에는 총 8명의 사용자가 도전했으며, 이 중 1명의 사용자가 아직 클리어하지 못했다. 따라서 1번 스테이지의 실패율은 다음과 같다.&lt;/p&gt;
+&lt;h3 id=&quot;밋업-행사-끝&quot;&gt;밋업 행사 끝&lt;/h3&gt;
 
+&lt;p&gt;&lt;img src=&quot;https://user-images.githubusercontent.com/75519839/176487092-90f4b8fa-84c3-4142-9468-434c4b52501f.jpeg&quot; alt=&quot;IMG_8528&quot; /&gt;&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;1 번 스테이지 실패율 : 1/8&lt;/li&gt;
+  &lt;li&gt;웰컴 드링크&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;2번 스테이지에는 총 7명의 사용자가 도전했으며, 이 중 3명의 사용자가 아직 클리어하지 못했다. 따라서 2번 스테이지의 실패율은 다음과 같다.&lt;/p&gt;
+&lt;p&gt;&lt;br /&gt;행사가 종료된 이후 1층에 뷔페식으로 준비가 되어있으니 시장한 배를 채우고 가라는 말에 ‘와.. 여기 세미나 제대로다!’ 라며 감탄을 금치 못했다. 그 어떤 컨퍼런스 밋업에서도 밥을 챙겨주는 행사는 처음이였다. 뭔가 마음이 따뜻해지는게 이 회사 좋았다.&amp;lt;/br&amp;gt;&lt;/p&gt;
 
+&lt;p&gt;&lt;img src=&quot;https://user-images.githubusercontent.com/75519839/176487119-cc41ef1f-e5a9-4902-bd6d-ee3d51e83332.jpeg&quot; alt=&quot;IMG_8527&quot; /&gt;
+&lt;img src=&quot;https://user-images.githubusercontent.com/75519839/176487140-68e60113-a94e-4015-8bab-9afc059944fa.jpeg&quot; alt=&quot;IMG_8526&quot; /&gt;&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;2 번 스테이지 실패율 : 3/7&lt;/li&gt;
+  &lt;li&gt;푸짐한 음식들&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;마찬가지로 나머지 스테이지의 실패율은 다음과 같다.&lt;/p&gt;
+&lt;p&gt;&lt;br /&gt;혼자 온거라 웰컴 드링크만 마시려다가 직원분이 “식사 조금이라도 하고 가세요!”라고 해서 급하게 접시 한가득 담아서 와구와구 먹었다. 큰 테이블에서 혼자 먹고 있었는데 CTO님과 다른 분이 오셔서 나와 얘기를 했는데 정말 좋은 경험이였다. &lt;em&gt;‘이게 바로 밋업이지!’&lt;/em&gt; 라는 생각이 들면서 TED 컨퍼런스 후기로만 듣던 일이 나에게도 일어났다.&amp;lt;/br&amp;gt;&lt;/p&gt;
 
+&lt;p&gt;&lt;br /&gt;여기 온 얘기부터 나의 얘기를 하였고, 옆에 계신던 분들이 조언도 해주며 뜻밖에 조언도 들어서 굉장히 좋았고, 개발팀장님께서 ‘회사에 관심있으면 언제든지 연락주세요’라며 주신 연락처는 내 핸드폰에 소중히 보관하였다.&amp;lt;/br&amp;gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;행사-종료-후-언박싱&quot;&gt;행사 종료 후 언박싱&lt;/h2&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://user-images.githubusercontent.com/75519839/176474696-61e19db2-b218-4d77-9af3-ad7bbfdf7321.jpeg&quot; alt=&quot;IMG_8529&quot; /&gt;
+&lt;img src=&quot;https://user-images.githubusercontent.com/75519839/176474728-b986962b-b2e5-461a-a05b-69ae9949aa52.jpeg&quot; alt=&quot;IMG_8530&quot; /&gt;&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;3 번 스테이지 실패율 : 2/4&lt;/li&gt;
-&lt;li&gt;4번 스테이지 실패율 : 1/2&lt;/li&gt;
-&lt;li&gt;5번 스테이지 실패율 : 0/1&lt;/li&gt;
+  &lt;li&gt;언박싱하고 나니 어마어마한 양의 기프트들이였다. 밋업 행사에서 이정도로 주는 곳은 아마 구루미가 처음이지 않을까싶다 ㅋㅋㅋㅋ&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;각 스테이지의 번호를 실패율의 내림차순으로 정렬하면 다음과 같다.&lt;/p&gt;
-
+&lt;p&gt;&lt;img src=&quot;https://user-images.githubusercontent.com/75519839/176474775-95fcf458-a5b8-47e0-be66-84ceea4cad0c.jpeg&quot; alt=&quot;IMG_8534&quot; /&gt;&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;[3,4,2,1,5]&lt;/li&gt;
+  &lt;li&gt;요건 역시 화상 서비스 회사답게 카메라 가리개를 주셨다. 고맙게도 바로 노트북에 필요해서 붙여줬다.&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;입출력 예 #2&lt;/p&gt;
-
-&lt;p&gt;모든 사용자가 마지막 스테이지에 있으므로 4번 스테이지의 실패율은 1이며 나머지 스테이지의 실패율은 0이다.&lt;/p&gt;
-
+&lt;p&gt;&lt;img src=&quot;https://user-images.githubusercontent.com/75519839/176474741-16e7f002-84d1-414c-a2e5-b08da23e6ed1.jpeg&quot; alt=&quot;IMG_8531&quot; /&gt;&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;[4,1,2,3]&lt;/li&gt;
+  &lt;li&gt;두근두근 포춘쿠키
+&lt;img src=&quot;https://user-images.githubusercontent.com/75519839/176474747-24309508-c462-409f-80da-e46253a42091.jpeg&quot; alt=&quot;IMG_8532&quot; /&gt;&lt;/li&gt;
+  &lt;li&gt;요새 엄청 바빴는데 어떻게 이렇게 귀신같이 알고 ‘바빴던 당신 지금 필요한 건 여유입니다.’라고 말도 이쁘게 하는 포춘쿠키&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;blockquote&gt;
-  &lt;p&gt;출처: 프로그래머스 코딩 테스트 연습, https://programmers.co.kr/learn/challenges&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;h2 id=&quot;2-해결방법-시간복잡도&quot;&gt;2. 해결방법 시간복잡도&lt;/h2&gt;
-&lt;ol&gt;
-  &lt;li&gt;정렬 O(N) or O(Nlog(N))&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;h2 id=&quot;3-문제-해결-및-코드&quot;&gt;3. 문제 해결 및 코드&lt;/h2&gt;
-&lt;hr /&gt;
-
-&lt;script src=&quot;https://gist.github.com/godhin/7929921c4f3a0912fbb607eb83668f13.js&quot;&gt;&lt;/script&gt;
+&lt;h3 id=&quot;인상깊었던-기프트&quot;&gt;인상깊었던 기프트&lt;/h3&gt;
+&lt;p&gt;&lt;img src=&quot;https://user-images.githubusercontent.com/75519839/176474759-ffa346ef-9775-4c87-819f-c2b14598f33c.jpeg&quot; alt=&quot;IMG_8533&quot; /&gt;&lt;/p&gt;
 
 &lt;ul&gt;
-  &lt;li&gt;
-    &lt;h2 id=&quot;주석을-참고하면서-이해를-돕습니다&quot;&gt;주석을 참고하면서 이해를 돕습니다.&lt;/h2&gt;
-  &lt;/li&gt;
+  &lt;li&gt;황인선은 30년 마케터로 굉장히 유명한 사람이다. 그 분의 책을 이렇게 선물해주신 점이 놀라웠다.&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h2 id=&quot;4-알고리즘-및-해설&quot;&gt;4. 알고리즘 및 해설&lt;/h2&gt;
+&lt;p&gt;&lt;br /&gt;나만의 도서관에 경영 마케팅라인에 새로운 책이 꽃혀 뭔가 기분이 좋다. 나중에 시간되면 천천히 읽어봐야겠다.&amp;lt;/br&amp;gt;&lt;/p&gt;
 
-&lt;ol&gt;
-  &lt;li&gt;문제는 해당 스테이지 도달 후 클리어하지 못한 사람 / 스테이지 도달한 플레이어 수를 정렬해서 스테이지 실패율 구하는 문제이다.&lt;/li&gt;
-  &lt;li&gt;반복문을 1, N+1까지 돌린다.
-    &lt;ul&gt;
-      &lt;li&gt;2가지 경우로 나뉘는데 만약 전체 인원들이 해당 스테이지에 도달한 사람이 없을 경우와 그렇지 않은 경우&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;해당 스테이지에 도달한 사람이 없는 경우
-    &lt;ul&gt;
-      &lt;li&gt;해당 스테이지 실패율은 0으로 해준다.&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;해당 스테이지에 도달한 사람이 있는 경우
-    &lt;ul&gt;
-      &lt;li&gt;실패율 계산을 위해 이전 스테이지까지의 사람들을 tmp라는 수에 지속적으로 더해준다.&lt;/li&gt;
-      &lt;li&gt;해당 스테이지에 머문 사람 / 스테이지 도달 플레이어 수(이때 tmp는 이전 스테이지를 제외한 수이다.)&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;마지막으로 딕셔너리를 lambda를 이용해서 정렬해준뒤 출력한다.&lt;/li&gt;
-&lt;/ol&gt;
+&lt;h2 id=&quot;총평&quot;&gt;총평&lt;/h2&gt;
 
-&lt;h2 id=&quot;5-짚고-넘어가기&quot;&gt;5. 짚고 넘어가기&lt;/h2&gt;
+&lt;p&gt;&lt;br /&gt;구루미는 굉장히 기대가 되는 기업이다. 내가 사전에 조사해본 최근 31억이라는 Pre-A급 투자 유치에 성공했고 근래에 특허만 8개를 낸걸로 안다. 비상장 기업이지만 오늘 밋업을 통해 대표님은 글로벌 진출과 상장을 목표로 두고 있으셨고, 아기유니콘 200에 드는 기업이라 충분히 가능성이 보였다. 15년에 설립하여 거의 7년간 성장하는 회사가 이렇게 공격적으로 노이즈 마케팅을 내놓고 전략적으로 성장하는 것은 또 하나의 좋은 징조이기도 하다.&amp;lt;/br&amp;gt;&lt;/p&gt;
 
-&lt;ol&gt;
-  &lt;li&gt;딕셔너리를 정렬하는 방법은 여러가지가 있는데 그 중 lambda가 가장 편리하다.&lt;/li&gt;
-&lt;/ol&gt;
+&lt;p&gt;&lt;br /&gt;매출액도 매년 지속적으로 성장하고, 대표님과 사내 문화등 여러가지 요인들이 이 회사가 더 큰 기업으로 성장할거라는 걸 보여주고 있다. 특히 마지막에 대표님이 하신 말씀이 내 귀에 맴도는데 “스타트업은 없는 길을 만들어 나가는 거라고 생각한다. 시장이 형성되지 않는 곳에서 형성하려니 막막하고 힘들었다. 그래도 하면 된다.”라고 하셨다. 없던 시장이 생긴다는 것은 나는 그렇게 생각한다. “사막에서 바늘찾기”처럼 바늘이 보일리가 없다. 근데 결국에는 그 많은 모래들 사이에서 바늘을 찾게 된다면 그게 바로 기회인거다. 기회를 잡고 선택과 집중을 통해 성공으로 이끄는 것이 스타트업이 가지고 있어야할 마음가짐중 하나이고 그걸 구루미는 오늘 그 모습을 너무 잘 보여줬다.&amp;lt;/br&amp;gt;&lt;/p&gt;
 
-&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c1&quot;&gt;# 단순 정렬해서 출력하기
-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;result&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;sorted&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;리스트&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;key&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;lambda&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;x&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;리스트&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;x&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;])&lt;/span&gt;
-&lt;span class=&quot;c1&quot;&gt;# 이때 정렬의 기준이 되는 값을 x로 잡아주면 되며, 정렬 방식을 오름차로 하고 싶으면 reverse = True를 해준다.
-&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name>You Nicholas</name></author><category term="코딩테스트" /><category term="알고리즘" /><category term="파이썬" /><category term="코테" /><category term="프로그래머스" /><category term="Level_1" /><summary type="html">프로그래머스 실패율 문제 풀이</summary></entry><entry><title type="html">[파이썬][프로그래머스] 숫자 문자열과 영단어</title><link href="http://localhost:4000/%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8/81301/" rel="alternate" type="text/html" title="[파이썬][프로그래머스] 숫자 문자열과 영단어" /><published>2022-06-28T00:00:00+09:00</published><updated>2022-06-28T00:00:00+09:00</updated><id>http://localhost:4000/%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8/81301</id><content type="html" xml:base="http://localhost:4000/%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8/81301/">&lt;h2 id=&quot;1-문제&quot;&gt;1. 문제&lt;/h2&gt;
+&lt;p&gt;&lt;br /&gt;글이 너무 긍정적인데 구루미한테 받은 거 아무것도 없다. 너무 매력적인 기업이였다. &amp;lt;/br&amp;gt;&lt;/p&gt;</content><author><name>You Nicholas</name></author><category term="일상" /><category term="일상" /><category term="밋업" /><summary type="html">빠르게 성장하는 스타트업의 밋업 구경가기</summary></entry><entry><title type="html">[파이썬][프로그래머스] 숫자 문자열과 영단어</title><link href="http://localhost:4000/%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8/81301/" rel="alternate" type="text/html" title="[파이썬][프로그래머스] 숫자 문자열과 영단어" /><published>2022-06-28T00:00:00+09:00</published><updated>2022-06-28T00:00:00+09:00</updated><id>http://localhost:4000/%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8/81301</id><content type="html" xml:base="http://localhost:4000/%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8/81301/">&lt;h2 id=&quot;1-문제&quot;&gt;1. 문제&lt;/h2&gt;
 
 &lt;h1 id=&quot;level-1-숫자-문자열과-영단어---81301&quot;&gt;[level 1] 숫자 문자열과 영단어 - 81301&lt;/h1&gt;
 
@@ -671,7 +342,455 @@ def solution(s):
 
 &lt;ul&gt;
   &lt;li&gt;정규표현식으로 풀면 더 간단하게 시간복잡도를 O(1)로 줄일 수 있다.&lt;/li&gt;
-&lt;/ul&gt;</content><author><name>You Nicholas</name></author><category term="코딩테스트" /><category term="알고리즘" /><category term="파이썬" /><category term="코테" /><category term="프로그래머스" /><category term="Level_1" /><summary type="html">프로그래머스 숫자 문자열과 영단어 문제 풀이</summary></entry><entry><title type="html">[파이썬][Codility_][코디리티] PermCheck</title><link href="http://localhost:4000/%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8/PermCheck/" rel="alternate" type="text/html" title="[파이썬][Codility_][코디리티] PermCheck" /><published>2022-06-27T00:00:00+09:00</published><updated>2022-06-27T00:00:00+09:00</updated><id>http://localhost:4000/%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8/PermCheck</id><content type="html" xml:base="http://localhost:4000/%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8/PermCheck/">&lt;h2 id=&quot;1-문제&quot;&gt;1. 문제&lt;/h2&gt;
+&lt;/ul&gt;</content><author><name>You Nicholas</name></author><category term="코딩테스트" /><category term="알고리즘" /><category term="파이썬" /><category term="코테" /><category term="프로그래머스" /><category term="Level_1" /><summary type="html">프로그래머스 숫자 문자열과 영단어 문제 풀이</summary></entry><entry><title type="html">[파이썬][프로그래머스] [1차] 비밀지도</title><link href="http://localhost:4000/%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8/17681/" rel="alternate" type="text/html" title="[파이썬][프로그래머스] [1차] 비밀지도" /><published>2022-06-28T00:00:00+09:00</published><updated>2022-06-28T00:00:00+09:00</updated><id>http://localhost:4000/%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8/17681</id><content type="html" xml:base="http://localhost:4000/%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8/17681/">&lt;h2 id=&quot;1-문제&quot;&gt;1. 문제&lt;/h2&gt;
+
+&lt;h1 id=&quot;level-1-1차-비밀지도---17681&quot;&gt;[level 1] [1차] 비밀지도 - 17681&lt;/h1&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://programmers.co.kr/learn/courses/30/lessons/17681&quot;&gt;문제 링크&lt;/a&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;성능-요약&quot;&gt;성능 요약&lt;/h3&gt;
+
+&lt;p&gt;메모리: 10.4 MB, 시간: 0.03 ms&lt;/p&gt;
+
+&lt;h3 id=&quot;구분&quot;&gt;구분&lt;/h3&gt;
+
+&lt;p&gt;코딩테스트 연습 &amp;gt; 2018 KAKAO BLIND RECRUITMENT&lt;/p&gt;
+
+&lt;h3 id=&quot;채점결과&quot;&gt;채점결과&lt;/h3&gt;
+
+&lt;p&gt;&lt;br /&gt;정확성: 100.0&lt;br /&gt;합계: 100.0 / 100.0&lt;/p&gt;
+
+&lt;h3 id=&quot;문제-설명&quot;&gt;문제 설명&lt;/h3&gt;
+
+&lt;h2&gt;비밀지도&lt;/h2&gt;
+
+&lt;p&gt;네오는 평소 프로도가 비상금을 숨겨놓는 장소를 알려줄 비밀지도를 손에 넣었다. 그런데 이 비밀지도는 숫자로 암호화되어 있어 위치를 확인하기 위해서는 암호를 해독해야 한다. 다행히 지도 암호를 해독할 방법을 적어놓은 메모도 함께 발견했다.&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;지도는 한 변의 길이가 &lt;code&gt;n&lt;/code&gt;인 정사각형 배열 형태로, 각 칸은 &quot;공백&quot;(&quot; &quot;) 또는 &quot;벽&quot;(&quot;#&quot;) 두 종류로 이루어져 있다.&lt;/li&gt;
+&lt;li&gt;전체 지도는 두 장의 지도를 겹쳐서 얻을 수 있다. 각각 &quot;지도 1&quot;과 &quot;지도 2&quot;라고 하자. 지도 1 또는 지도 2 중 어느 하나라도 벽인 부분은 전체 지도에서도 벽이다. 지도 1과 지도 2에서 모두 공백인 부분은 전체 지도에서도 공백이다.&lt;/li&gt;
+&lt;li&gt;&quot;지도 1&quot;과 &quot;지도 2&quot;는 각각 정수 배열로 암호화되어 있다.&lt;/li&gt;
+&lt;li&gt;암호화된 배열은 지도의 각 가로줄에서 벽 부분을 &lt;code&gt;1&lt;/code&gt;, 공백 부분을 &lt;code&gt;0&lt;/code&gt;으로 부호화했을 때 얻어지는 이진수에 해당하는 값의 배열이다.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://t1.kakaocdn.net/welcome2018/secret8.png&quot; title=&quot;Secret Map&quot; alt=&quot;secret map&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;네오가 프로도의 비상금을 손에 넣을 수 있도록, 비밀지도의 암호를 해독하는 작업을 도와줄 프로그램을 작성하라.&lt;/p&gt;
+
+&lt;h3&gt;입력 형식&lt;/h3&gt;
+
+&lt;p&gt;입력으로 지도의 한 변 크기 &lt;code&gt;n&lt;/code&gt; 과 2개의 정수 배열 &lt;code&gt;arr1&lt;/code&gt;, &lt;code&gt;arr2&lt;/code&gt;가 들어온다.&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;1 ≦ &lt;code&gt;n&lt;/code&gt; ≦ 16&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;arr1&lt;/code&gt;, &lt;code&gt;arr2&lt;/code&gt;는 길이 &lt;code&gt;n&lt;/code&gt;인 정수 배열로 주어진다.&lt;/li&gt;
+&lt;li&gt;정수 배열의 각 원소 &lt;code&gt;x&lt;/code&gt;를 이진수로 변환했을 때의 길이는 &lt;code&gt;n&lt;/code&gt; 이하이다. 즉, 0 ≦ &lt;code&gt;x&lt;/code&gt; ≦ 2&lt;sup&gt;n&lt;/sup&gt; - 1을 만족한다.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3&gt;출력 형식&lt;/h3&gt;
+
+&lt;p&gt;원래의 비밀지도를 해독하여 &lt;code&gt;'#'&lt;/code&gt;, &lt;code&gt;공백&lt;/code&gt;으로 구성된 문자열 배열로 출력하라.&lt;/p&gt;
+
+&lt;h3&gt;입출력 예제&lt;/h3&gt;
+&lt;table class=&quot;table&quot;&gt;
+        &lt;thead&gt;&lt;tr&gt;
+&lt;th&gt;매개변수&lt;/th&gt;
+&lt;th&gt;값&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+        &lt;tbody&gt;&lt;tr&gt;
+&lt;td&gt;n&lt;/td&gt;
+&lt;td&gt;5&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;arr1&lt;/td&gt;
+&lt;td&gt;[9, 20, 28, 18, 11]&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;arr2&lt;/td&gt;
+&lt;td&gt;[30, 1, 21, 17, 28]&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;출력&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;[&quot;#####&quot;,&quot;# # #&quot;, &quot;### #&quot;, &quot;#  ##&quot;, &quot;#####&quot;]&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+      &lt;/table&gt;
+&lt;table class=&quot;table&quot;&gt;
+        &lt;thead&gt;&lt;tr&gt;
+&lt;th&gt;매개변수&lt;/th&gt;
+&lt;th&gt;값&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+        &lt;tbody&gt;&lt;tr&gt;
+&lt;td&gt;n&lt;/td&gt;
+&lt;td&gt;6&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;arr1&lt;/td&gt;
+&lt;td&gt;[46, 33, 33 ,22, 31, 50]&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;arr2&lt;/td&gt;
+&lt;td&gt;[27 ,56, 19, 14, 14, 10]&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;출력&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;[&quot;######&quot;, &quot;###  #&quot;, &quot;##  ##&quot;, &quot; #### &quot;, &quot; #####&quot;, &quot;### # &quot;]&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+      &lt;/table&gt;
+&lt;p&gt;&lt;a href=&quot;http://tech.kakao.com/2017/09/27/kakao-blind-recruitment-round-1/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;해설 보러가기&lt;/a&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;출처: 프로그래머스 코딩 테스트 연습, https://programmers.co.kr/learn/challenges&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h2 id=&quot;2-해결방법-시간복잡도&quot;&gt;2. 해결방법 시간복잡도&lt;/h2&gt;
+&lt;ol&gt;
+  &lt;li&gt;단순 코딩 O(N)&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h2 id=&quot;3-문제-해결-및-코드&quot;&gt;3. 문제 해결 및 코드&lt;/h2&gt;
+&lt;hr /&gt;
+
+&lt;script src=&quot;https://gist.github.com/godhin/b3118fbf8af7f0354fc647bd6aadeba7.js&quot;&gt;&lt;/script&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;h2 id=&quot;주석을-참고하면서-이해를-돕습니다&quot;&gt;주석을 참고하면서 이해를 돕습니다.&lt;/h2&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;4-알고리즘-및-해설&quot;&gt;4. 알고리즘 및 해설&lt;/h2&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;문제에서 비밀지도는 정수를 2진수로 변환한 값을 지도에 칠한뒤 하나의 지도를 덧칠하는 과정을 거친다.&lt;/li&gt;
+  &lt;li&gt;이 과정에서 덧칠한 부분은 #로 아닌 부분은 공백으로 표기한다.&lt;/li&gt;
+  &lt;li&gt;일단 리스트에 해당 값들을 이진수형태로 더해서 넣는다.&lt;/li&gt;
+  &lt;li&gt;이후 반복문을 통해 해당 값을 주어진 n이라는 값 만큼 0으로 채우고 나머지를 부분은 변환시켜서 출력해준다.
+    &lt;ul&gt;
+      &lt;li&gt;값을 더해도 상관없는 이유는 1 + 1 최대 2까지 밖에 안나오기떄문에 경우의 수가 1개밖에 더 생기지 않는다.&lt;/li&gt;
+      &lt;li&gt;rjust()를 통해 해당 값의 좌측 (더하게 되면 001000은 1000으로 나오기떄문에)이 비어있을 경우 채워준다.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;</content><author><name>You Nicholas</name></author><category term="코딩테스트" /><category term="알고리즘" /><category term="파이썬" /><category term="코테" /><category term="프로그래머스" /><category term="Level_1" /><summary type="html">프로그래머스 [1차] 비밀지도 문제 풀이</summary></entry><entry><title type="html">[파이썬][프로그래머스] [1차] 다트 게임</title><link href="http://localhost:4000/%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8/17682/" rel="alternate" type="text/html" title="[파이썬][프로그래머스] [1차] 다트 게임" /><published>2022-06-28T00:00:00+09:00</published><updated>2022-06-28T00:00:00+09:00</updated><id>http://localhost:4000/%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8/17682</id><content type="html" xml:base="http://localhost:4000/%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8/17682/">&lt;h2 id=&quot;1-문제&quot;&gt;1. 문제&lt;/h2&gt;
+
+&lt;h1 id=&quot;level-1-1차-다트-게임---17682&quot;&gt;[level 1] [1차] 다트 게임 - 17682&lt;/h1&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://programmers.co.kr/learn/courses/30/lessons/17682&quot;&gt;문제 링크&lt;/a&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;성능-요약&quot;&gt;성능 요약&lt;/h3&gt;
+
+&lt;p&gt;메모리: 10.3 MB, 시간: 0.03 ms&lt;/p&gt;
+
+&lt;h3 id=&quot;구분&quot;&gt;구분&lt;/h3&gt;
+
+&lt;p&gt;코딩테스트 연습 &amp;gt; 2018 KAKAO BLIND RECRUITMENT&lt;/p&gt;
+
+&lt;h3 id=&quot;채점결과&quot;&gt;채점결과&lt;/h3&gt;
+
+&lt;p&gt;&lt;br /&gt;정확성: 100.0&lt;br /&gt;합계: 100.0 / 100.0&lt;/p&gt;
+
+&lt;h3 id=&quot;문제-설명&quot;&gt;문제 설명&lt;/h3&gt;
+
+&lt;h2&gt;다트 게임&lt;/h2&gt;
+
+&lt;p&gt;카카오톡에 뜬 네 번째 별! 심심할 땐? 카카오톡 게임별~&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://t1.kakaocdn.net/welcome2018/gamestar.png&quot; title=&quot;게임별&quot; alt=&quot;Game Star&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;카카오톡 게임별의 하반기 신규 서비스로 다트 게임을 출시하기로 했다. 다트 게임은 다트판에 다트를 세 차례 던져 그 점수의 합계로 실력을 겨루는 게임으로, 모두가 간단히 즐길 수 있다.&lt;br /&gt;
+갓 입사한 무지는 코딩 실력을 인정받아 게임의 핵심 부분인 점수 계산 로직을 맡게 되었다. 다트 게임의 점수 계산 로직은 아래와 같다.&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;다트 게임은 총 3번의 기회로 구성된다.&lt;/li&gt;
+&lt;li&gt;각 기회마다 얻을 수 있는 점수는 0점에서 10점까지이다.&lt;/li&gt;
+&lt;li&gt;점수와 함께 Single(&lt;code&gt;S&lt;/code&gt;), Double(&lt;code&gt;D&lt;/code&gt;), Triple(&lt;code&gt;T&lt;/code&gt;) 영역이 존재하고 각 영역 당첨 시 점수에서 1제곱, 2제곱, 3제곱 (점수&lt;sup&gt;1&lt;/sup&gt; , 점수&lt;sup&gt;2&lt;/sup&gt; , 점수&lt;sup&gt;3&lt;/sup&gt; )으로 계산된다.&lt;/li&gt;
+&lt;li&gt;옵션으로 스타상(&lt;code&gt;*&lt;/code&gt;) , 아차상(&lt;code&gt;#&lt;/code&gt;)이 존재하며 스타상(&lt;code&gt;*&lt;/code&gt;) 당첨 시 해당 점수와 바로 전에 얻은 점수를 각 2배로 만든다. 아차상(&lt;code&gt;#&lt;/code&gt;) 당첨 시 해당 점수는 마이너스된다.&lt;/li&gt;
+&lt;li&gt;스타상(&lt;code&gt;*&lt;/code&gt;)은 첫 번째 기회에서도 나올 수 있다. 이 경우 첫 번째 스타상(&lt;code&gt;*&lt;/code&gt;)의 점수만 2배가 된다. (예제 4번 참고)&lt;/li&gt;
+&lt;li&gt;스타상(&lt;code&gt;*&lt;/code&gt;)의 효과는 다른 스타상(&lt;code&gt;*&lt;/code&gt;)의 효과와 중첩될 수 있다. 이 경우 중첩된 스타상(&lt;code&gt;*&lt;/code&gt;) 점수는 4배가 된다. (예제 4번 참고)&lt;/li&gt;
+&lt;li&gt;스타상(&lt;code&gt;*&lt;/code&gt;)의 효과는 아차상(&lt;code&gt;#&lt;/code&gt;)의 효과와 중첩될 수 있다. 이 경우 중첩된 아차상(&lt;code&gt;#&lt;/code&gt;)의 점수는 -2배가 된다. (예제 5번 참고)&lt;/li&gt;
+&lt;li&gt;Single(&lt;code&gt;S&lt;/code&gt;), Double(&lt;code&gt;D&lt;/code&gt;), Triple(&lt;code&gt;T&lt;/code&gt;)은 점수마다 하나씩 존재한다.&lt;/li&gt;
+&lt;li&gt;스타상(&lt;code&gt;*&lt;/code&gt;), 아차상(&lt;code&gt;#&lt;/code&gt;)은 점수마다 둘 중 하나만 존재할 수 있으며, 존재하지 않을 수도 있다. &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;0~10의 정수와 문자 S, D, T, *, #로 구성된 문자열이 입력될 시 총점수를 반환하는 함수를 작성하라.&lt;/p&gt;
+
+&lt;h3&gt;입력 형식&lt;/h3&gt;
+
+&lt;p&gt;&quot;점수|보너스|[옵션]&quot;으로 이루어진 문자열 3세트.&lt;br /&gt;
+예)  &lt;code&gt;1S2D*3T&lt;/code&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;점수는 0에서 10 사이의 정수이다.&lt;/li&gt;
+&lt;li&gt;보너스는 S, D, T 중 하나이다.&lt;/li&gt;
+&lt;li&gt;옵선은 *이나 # 중 하나이며, 없을 수도 있다.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3&gt;출력 형식&lt;/h3&gt;
+
+&lt;p&gt;3번의 기회에서 얻은 점수 합계에 해당하는 정수값을 출력한다.&lt;br /&gt;
+예) 37&lt;/p&gt;
+
+&lt;h3&gt;입출력 예제&lt;/h3&gt;
+&lt;table class=&quot;table&quot;&gt;
+        &lt;thead&gt;&lt;tr&gt;
+&lt;th&gt;예제&lt;/th&gt;
+&lt;th&gt;dartResult&lt;/th&gt;
+&lt;th&gt;answer&lt;/th&gt;
+&lt;th&gt;설명&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+        &lt;tbody&gt;&lt;tr&gt;
+&lt;td&gt;1&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;1S2D*3T&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;37&lt;/td&gt;
+&lt;td&gt;1&lt;sup&gt;1&lt;/sup&gt; * 2 + 2&lt;sup&gt;2&lt;/sup&gt; * 2 + 3&lt;sup&gt;3&lt;/sup&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;2&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;1D2S#10S&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;9&lt;/td&gt;
+&lt;td&gt;1&lt;sup&gt;2&lt;/sup&gt; + 2&lt;sup&gt;1&lt;/sup&gt; * (-1) + 10&lt;sup&gt;1&lt;/sup&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;3&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;1D2S0T&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;3&lt;/td&gt;
+&lt;td&gt;1&lt;sup&gt;2&lt;/sup&gt; + 2&lt;sup&gt;1&lt;/sup&gt; + 0&lt;sup&gt;3&lt;/sup&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;4&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;1S*2T*3S&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;23&lt;/td&gt;
+&lt;td&gt;1&lt;sup&gt;1&lt;/sup&gt; * 2 * 2 + 2&lt;sup&gt;3&lt;/sup&gt; * 2 + 3&lt;sup&gt;1&lt;/sup&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;5&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;1D#2S*3S&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;5&lt;/td&gt;
+&lt;td&gt;1&lt;sup&gt;2&lt;/sup&gt; * (-1) * 2 + 2&lt;sup&gt;1&lt;/sup&gt; * 2 + 3&lt;sup&gt;1&lt;/sup&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;6&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;1T2D3D#&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;-4&lt;/td&gt;
+&lt;td&gt;1&lt;sup&gt;3&lt;/sup&gt; + 2&lt;sup&gt;2&lt;/sup&gt; + 3&lt;sup&gt;2&lt;/sup&gt; * (-1)&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;7&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;1D2S3T*&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;59&lt;/td&gt;
+&lt;td&gt;1&lt;sup&gt;2&lt;/sup&gt; + 2&lt;sup&gt;1&lt;/sup&gt; * 2 + 3&lt;sup&gt;3&lt;/sup&gt; * 2&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+      &lt;/table&gt;
+&lt;p&gt;&lt;a href=&quot;http://tech.kakao.com/2017/09/27/kakao-blind-recruitment-round-1/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;해설 보러가기&lt;/a&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;출처: 프로그래머스 코딩 테스트 연습, https://programmers.co.kr/learn/challenges&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h2 id=&quot;2-해결방법-시간복잡도&quot;&gt;2. 해결방법 시간복잡도&lt;/h2&gt;
+&lt;ol&gt;
+  &lt;li&gt;스택 O(N)&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h2 id=&quot;3-문제-해결-및-코드&quot;&gt;3. 문제 해결 및 코드&lt;/h2&gt;
+&lt;hr /&gt;
+
+&lt;script src=&quot;https://gist.github.com/godhin/8c407ff96c96bf1477376d1c1ef4d98b.js&quot;&gt;&lt;/script&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;h2 id=&quot;주석을-참고하면서-이해를-돕습니다&quot;&gt;주석을 참고하면서 이해를 돕습니다.&lt;/h2&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;4-알고리즘-및-해설&quot;&gt;4. 알고리즘 및 해설&lt;/h2&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;문제의 요점은 각 문자마다 조건에 맞게 값을 도출하여 최종 결과를 만드는 것이다.&lt;/li&gt;
+  &lt;li&gt;딕셔너리 형태로 싱글, 더블, 트리플에 제곱수를 만들었다.
+    &lt;ul&gt;
+      &lt;li&gt;해당 방식 말고도 하나하나 리스트를 만들거나, 그냥 구현해도 무관하다.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;이후 10 같은 경우 1, 0 으로 문자가 나뉘어지기때문에 A라는 임의의 문자로 변경하여 추후 10으로 인식하게끔 하였다.&lt;/li&gt;
+  &lt;li&gt;반복문이 도는 동안 isdigit() 함수로 수인지 확인하거나 아까 만든 A라는 수가 있을 경우 스택에 값을 넣는다.&lt;/li&gt;
+  &lt;li&gt;숫자가 아닌 경우
+    &lt;ul&gt;
+      &lt;li&gt;조건에 맞게 계산해준다.
+        &lt;ul&gt;
+          &lt;li&gt;단, 마지막 *의 경우 스택에 수가 남아있을 경우 *2를 더해준다.&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;</content><author><name>You Nicholas</name></author><category term="코딩테스트" /><category term="알고리즘" /><category term="파이썬" /><category term="코테" /><category term="프로그래머스" /><category term="Level_1" /><summary type="html">프로그래머스 [1차] 다트 게임 풀이</summary></entry><entry><title type="html">[파이썬][프로그래머스] 실패율</title><link href="http://localhost:4000/%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8/42889/" rel="alternate" type="text/html" title="[파이썬][프로그래머스] 실패율" /><published>2022-06-28T00:00:00+09:00</published><updated>2022-06-28T00:00:00+09:00</updated><id>http://localhost:4000/%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8/42889</id><content type="html" xml:base="http://localhost:4000/%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8/42889/">&lt;h2 id=&quot;1-문제&quot;&gt;1. 문제&lt;/h2&gt;
+
+&lt;h1 id=&quot;level-1-실패율---42889&quot;&gt;[level 1] 실패율 - 42889&lt;/h1&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://programmers.co.kr/learn/courses/30/lessons/42889&quot;&gt;문제 링크&lt;/a&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;성능-요약&quot;&gt;성능 요약&lt;/h3&gt;
+
+&lt;p&gt;메모리: 10.2 MB, 시간: 0.01 ms&lt;/p&gt;
+
+&lt;h3 id=&quot;구분&quot;&gt;구분&lt;/h3&gt;
+
+&lt;p&gt;코딩테스트 연습 &amp;gt; 2019 KAKAO BLIND RECRUITMENT&lt;/p&gt;
+
+&lt;h3 id=&quot;채점결과&quot;&gt;채점결과&lt;/h3&gt;
+
+&lt;p&gt;&lt;br /&gt;정확성: 100.0&lt;br /&gt;합계: 100.0 / 100.0&lt;/p&gt;
+
+&lt;h3 id=&quot;문제-설명&quot;&gt;문제 설명&lt;/h3&gt;
+
+&lt;h2&gt;실패율&lt;/h2&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://grepp-programmers.s3.amazonaws.com/files/production/bde471d8ac/48ddf1cc-c4ea-499d-b431-9727ee799191.png&quot; title=&quot;&quot; alt=&quot;failture_rate1.png&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;슈퍼 게임 개발자 오렐리는 큰 고민에 빠졌다. 그녀가 만든 프랜즈 오천성이 대성공을 거뒀지만, 요즘 신규 사용자의 수가 급감한 것이다. 원인은 신규 사용자와 기존 사용자 사이에 스테이지 차이가 너무 큰 것이 문제였다.&lt;/p&gt;
+
+&lt;p&gt;이 문제를 어떻게 할까 고민 한 그녀는 동적으로 게임 시간을 늘려서 난이도를 조절하기로 했다. 역시 슈퍼 개발자라 대부분의 로직은 쉽게 구현했지만, 실패율을 구하는 부분에서 위기에 빠지고 말았다. 오렐리를 위해 실패율을 구하는 코드를 완성하라.&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;실패율은 다음과 같이 정의한다.
+
+&lt;ul&gt;
+&lt;li&gt;스테이지에 도달했으나 아직 클리어하지 못한 플레이어의 수 / 스테이지에 도달한 플레이어 수&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;전체 스테이지의 개수 N, 게임을 이용하는 사용자가 현재 멈춰있는 스테이지의 번호가 담긴 배열 stages가 매개변수로 주어질 때, 실패율이 높은 스테이지부터 내림차순으로 스테이지의 번호가 담겨있는 배열을 return 하도록 solution 함수를 완성하라.&lt;/p&gt;
+
+&lt;h5&gt;제한사항&lt;/h5&gt;
+
+&lt;ul&gt;
+&lt;li&gt;스테이지의 개수 N은 &lt;code&gt;1&lt;/code&gt; 이상 &lt;code&gt;500&lt;/code&gt; 이하의 자연수이다.&lt;/li&gt;
+&lt;li&gt;stages의 길이는 &lt;code&gt;1&lt;/code&gt; 이상 &lt;code&gt;200,000&lt;/code&gt; 이하이다.&lt;/li&gt;
+&lt;li&gt;stages에는 &lt;code&gt;1&lt;/code&gt; 이상 &lt;code&gt;N + 1&lt;/code&gt; 이하의 자연수가 담겨있다.
+
+&lt;ul&gt;
+&lt;li&gt;각 자연수는 사용자가 현재 도전 중인 스테이지의 번호를 나타낸다.&lt;/li&gt;
+&lt;li&gt;단, &lt;code&gt;N + 1&lt;/code&gt; 은 마지막 스테이지(N 번째 스테이지) 까지 클리어 한 사용자를 나타낸다.&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;만약 실패율이 같은 스테이지가 있다면 작은 번호의 스테이지가 먼저 오도록 하면 된다.&lt;/li&gt;
+&lt;li&gt;스테이지에 도달한 유저가 없는 경우 해당 스테이지의 실패율은 &lt;code&gt;0&lt;/code&gt; 으로 정의한다.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h5&gt;입출력 예&lt;/h5&gt;
+&lt;table class=&quot;table&quot;&gt;
+        &lt;thead&gt;&lt;tr&gt;
+&lt;th&gt;N&lt;/th&gt;
+&lt;th&gt;stages&lt;/th&gt;
+&lt;th&gt;result&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+        &lt;tbody&gt;&lt;tr&gt;
+&lt;td&gt;5&lt;/td&gt;
+&lt;td&gt;[2, 1, 2, 6, 2, 4, 3, 3]&lt;/td&gt;
+&lt;td&gt;[3,4,2,1,5]&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;4&lt;/td&gt;
+&lt;td&gt;[4,4,4,4,4]&lt;/td&gt;
+&lt;td&gt;[4,1,2,3]&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+      &lt;/table&gt;
+&lt;h5&gt;입출력 예 설명&lt;/h5&gt;
+
+&lt;p&gt;입출력 예 #1&lt;br /&gt;
+1번 스테이지에는 총 8명의 사용자가 도전했으며, 이 중 1명의 사용자가 아직 클리어하지 못했다. 따라서 1번 스테이지의 실패율은 다음과 같다.&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;1 번 스테이지 실패율 : 1/8&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;2번 스테이지에는 총 7명의 사용자가 도전했으며, 이 중 3명의 사용자가 아직 클리어하지 못했다. 따라서 2번 스테이지의 실패율은 다음과 같다.&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;2 번 스테이지 실패율 : 3/7&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;마찬가지로 나머지 스테이지의 실패율은 다음과 같다.&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;3 번 스테이지 실패율 : 2/4&lt;/li&gt;
+&lt;li&gt;4번 스테이지 실패율 : 1/2&lt;/li&gt;
+&lt;li&gt;5번 스테이지 실패율 : 0/1&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;각 스테이지의 번호를 실패율의 내림차순으로 정렬하면 다음과 같다.&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;[3,4,2,1,5]&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;입출력 예 #2&lt;/p&gt;
+
+&lt;p&gt;모든 사용자가 마지막 스테이지에 있으므로 4번 스테이지의 실패율은 1이며 나머지 스테이지의 실패율은 0이다.&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;[4,1,2,3]&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;출처: 프로그래머스 코딩 테스트 연습, https://programmers.co.kr/learn/challenges&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h2 id=&quot;2-해결방법-시간복잡도&quot;&gt;2. 해결방법 시간복잡도&lt;/h2&gt;
+&lt;ol&gt;
+  &lt;li&gt;정렬 O(N) or O(Nlog(N))&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h2 id=&quot;3-문제-해결-및-코드&quot;&gt;3. 문제 해결 및 코드&lt;/h2&gt;
+&lt;hr /&gt;
+
+&lt;script src=&quot;https://gist.github.com/godhin/7929921c4f3a0912fbb607eb83668f13.js&quot;&gt;&lt;/script&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;h2 id=&quot;주석을-참고하면서-이해를-돕습니다&quot;&gt;주석을 참고하면서 이해를 돕습니다.&lt;/h2&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;4-알고리즘-및-해설&quot;&gt;4. 알고리즘 및 해설&lt;/h2&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;문제는 해당 스테이지 도달 후 클리어하지 못한 사람 / 스테이지 도달한 플레이어 수를 정렬해서 스테이지 실패율 구하는 문제이다.&lt;/li&gt;
+  &lt;li&gt;반복문을 1, N+1까지 돌린다.
+    &lt;ul&gt;
+      &lt;li&gt;2가지 경우로 나뉘는데 만약 전체 인원들이 해당 스테이지에 도달한 사람이 없을 경우와 그렇지 않은 경우&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;해당 스테이지에 도달한 사람이 없는 경우
+    &lt;ul&gt;
+      &lt;li&gt;해당 스테이지 실패율은 0으로 해준다.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;해당 스테이지에 도달한 사람이 있는 경우
+    &lt;ul&gt;
+      &lt;li&gt;실패율 계산을 위해 이전 스테이지까지의 사람들을 tmp라는 수에 지속적으로 더해준다.&lt;/li&gt;
+      &lt;li&gt;해당 스테이지에 머문 사람 / 스테이지 도달 플레이어 수(이때 tmp는 이전 스테이지를 제외한 수이다.)&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;마지막으로 딕셔너리를 lambda를 이용해서 정렬해준뒤 출력한다.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h2 id=&quot;5-짚고-넘어가기&quot;&gt;5. 짚고 넘어가기&lt;/h2&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;딕셔너리를 정렬하는 방법은 여러가지가 있는데 그 중 lambda가 가장 편리하다.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c1&quot;&gt;# 단순 정렬해서 출력하기
+&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;result&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;sorted&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;리스트&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;key&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;lambda&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;x&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;리스트&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;x&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;])&lt;/span&gt;
+&lt;span class=&quot;c1&quot;&gt;# 이때 정렬의 기준이 되는 값을 x로 잡아주면 되며, 정렬 방식을 오름차로 하고 싶으면 reverse = True를 해준다.
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name>You Nicholas</name></author><category term="코딩테스트" /><category term="알고리즘" /><category term="파이썬" /><category term="코테" /><category term="프로그래머스" /><category term="Level_1" /><summary type="html">프로그래머스 실패율 문제 풀이</summary></entry><entry><title type="html">[파이썬][Codility_][코디리티] PermCheck</title><link href="http://localhost:4000/%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8/PermCheck/" rel="alternate" type="text/html" title="[파이썬][Codility_][코디리티] PermCheck" /><published>2022-06-27T00:00:00+09:00</published><updated>2022-06-27T00:00:00+09:00</updated><id>http://localhost:4000/%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8/PermCheck</id><content type="html" xml:base="http://localhost:4000/%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8/PermCheck/">&lt;h2 id=&quot;1-문제&quot;&gt;1. 문제&lt;/h2&gt;
 
 &lt;p&gt;A non-empty array A consisting of N integers is given.&lt;/p&gt;
 
@@ -1346,66 +1465,4 @@ Copyright 2009–2022 by Codility Limited. All Rights Reserved. Unauthorized cop
       &lt;li&gt;해당 방식으로 해결한 결과 시간 복잡도 O(N*N)&lt;/li&gt;
     &lt;/ul&gt;
   &lt;/li&gt;
-&lt;/ol&gt;</content><author><name>You Nicholas</name></author><category term="코딩테스트" /><category term="알고리즘" /><category term="파이썬" /><category term="코테" /><category term="Codility" /><category term="코디리티" /><category term="Lessons" /><summary type="html">Codility TapeEquilibrium 문제 풀이</summary></entry><entry><title type="html">[파이썬][Codility_][코디리티] FrogJmp</title><link href="http://localhost:4000/%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8/FrogJmp/" rel="alternate" type="text/html" title="[파이썬][Codility_][코디리티] FrogJmp" /><published>2022-06-23T00:00:00+09:00</published><updated>2022-06-24T00:00:00+09:00</updated><id>http://localhost:4000/%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8/FrogJmp</id><content type="html" xml:base="http://localhost:4000/%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8/FrogJmp/">&lt;h2 id=&quot;1-문제&quot;&gt;1. 문제&lt;/h2&gt;
-
-&lt;p&gt;A small frog wants to get to the other side of the road. The frog is currently located at position X and wants to get to a position greater than or equal to Y. The small frog always jumps a fixed distance, D.&lt;/p&gt;
-
-&lt;p&gt;Count the minimal number of jumps that the small frog must perform to reach its target.&lt;/p&gt;
-
-&lt;p&gt;Write a function:&lt;/p&gt;
-
-&lt;p&gt;def solution(X, Y, D)&lt;/p&gt;
-
-&lt;p&gt;that, given three integers X, Y and D, returns the minimal number of jumps from position X to a position equal to or greater than Y.&lt;/p&gt;
-
-&lt;p&gt;For example, given:&lt;/p&gt;
-
-&lt;p&gt;X = 10
-  Y = 85
-  D = 30
-the function should return 3, because the frog will be positioned as follows:&lt;/p&gt;
-
-&lt;p&gt;after the first jump, at position 10 + 30 = 40
-after the second jump, at position 10 + 30 + 30 = 70
-after the third jump, at position 10 + 30 + 30 + 30 = 100
-Write an efficient algorithm for the following assumptions:&lt;/p&gt;
-
-&lt;p&gt;X, Y and D are integers within the range [1..1,000,000,000];
-X ≤ Y.
-Copyright 2009–2022 by Codility Limited. All Rights Reserved. Unauthorized copying, publication or disclosure prohibited.&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;출처: Codility_, https://app.codility.com/programmers/&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;h2 id=&quot;2-해결방법-시간복잡도&quot;&gt;2. 해결방법 시간복잡도&lt;/h2&gt;
-&lt;ol&gt;
-  &lt;li&gt;단순 코딩 O(1)&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;h2 id=&quot;3-문제-해결-및-코드&quot;&gt;3. 문제 해결 및 코드&lt;/h2&gt;
-&lt;hr /&gt;
-
-&lt;script src=&quot;https://gist.github.com/godhin/712e1f66446f2bf122be0cf7444ce152.js&quot;&gt;&lt;/script&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;
-    &lt;h2 id=&quot;주석을-참고하면서-이해를-돕습니다&quot;&gt;주석을 참고하면서 이해를 돕습니다.&lt;/h2&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&quot;4-알고리즘-및-해설&quot;&gt;4. 알고리즘 및 해설&lt;/h2&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;문제의 요점은 개구리가 현재 위치에서 목표지점까지 몇 번을 뛰어야하냐는 것이다.&lt;/li&gt;
-  &lt;li&gt;목표지점까지의 거리를 점프하는 거리로 나누어주되, 그 값을 반올림해준다.
-    &lt;ul&gt;
-      &lt;li&gt;소수점단위로 뛸 수는 없기떄문에 math.ceil() 함수를 이용해서 반올림한다.&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;h2 id=&quot;5-알아두면-좋은-정보&quot;&gt;5. 알아두면 좋은 정보&lt;/h2&gt;
-&lt;ol&gt;
-  &lt;li&gt;문제 자체는 간단하나 &lt;em&gt;math&lt;/em&gt; 라이브러리를 사용해서 보다 쉽게 문제 해결이 가능하다.&lt;/li&gt;
-&lt;/ol&gt;</content><author><name>You Nicholas</name></author><category term="코딩테스트" /><category term="알고리즘" /><category term="파이썬" /><category term="코테" /><category term="Codility" /><category term="코디리티" /><category term="Lessons" /><summary type="html">Codility FrogJmp 문제 풀이</summary></entry></feed>
+&lt;/ol&gt;</content><author><name>You Nicholas</name></author><category term="코딩테스트" /><category term="알고리즘" /><category term="파이썬" /><category term="코테" /><category term="Codility" /><category term="코디리티" /><category term="Lessons" /><summary type="html">Codility TapeEquilibrium 문제 풀이</summary></entry></feed>
