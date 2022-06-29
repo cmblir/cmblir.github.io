@@ -1,229 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2022-06-28T21:41:22+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">성장형 개발자 블로그</title><subtitle>An amazing website.</subtitle><author><name>You Nicholas</name></author><entry><title type="html">[파이썬][프로그래머스] 숫자 문자열과 영단어</title><link href="http://localhost:4000/%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8/81301/" rel="alternate" type="text/html" title="[파이썬][프로그래머스] 숫자 문자열과 영단어" /><published>2022-06-28T00:00:00+09:00</published><updated>2022-06-28T00:00:00+09:00</updated><id>http://localhost:4000/%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8/81301</id><content type="html" xml:base="http://localhost:4000/%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8/81301/">&lt;h2 id=&quot;1-문제&quot;&gt;1. 문제&lt;/h2&gt;
-
-&lt;h1 id=&quot;level-1-숫자-문자열과-영단어---81301&quot;&gt;[level 1] 숫자 문자열과 영단어 - 81301&lt;/h1&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://programmers.co.kr/learn/courses/30/lessons/81301&quot;&gt;문제 링크&lt;/a&gt;&lt;/p&gt;
-
-&lt;h3 id=&quot;성능-요약&quot;&gt;성능 요약&lt;/h3&gt;
-
-&lt;p&gt;메모리: 10.3 MB, 시간: 0.02 ms&lt;/p&gt;
-
-&lt;h3 id=&quot;구분&quot;&gt;구분&lt;/h3&gt;
-
-&lt;p&gt;코딩테스트 연습 &amp;gt; 2021 카카오 채용연계형 인턴십&lt;/p&gt;
-
-&lt;h3 id=&quot;채점결과&quot;&gt;채점결과&lt;/h3&gt;
-
-&lt;p&gt;&lt;br /&gt;정확성: 100.0&lt;br /&gt;합계: 100.0 / 100.0&lt;/p&gt;
-
-&lt;h3 id=&quot;문제-설명&quot;&gt;문제 설명&lt;/h3&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://grepp-programmers.s3.ap-northeast-2.amazonaws.com/files/production/d31cb063-4025-4412-8cbc-6ac6909cf93e/img1.png&quot; title=&quot;&quot; alt=&quot;img1.png&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;네오와 프로도가 숫자놀이를 하고 있습니다. 네오가 프로도에게 숫자를 건넬 때 일부 자릿수를 영단어로 바꾼 카드를 건네주면 프로도는 원래 숫자를 찾는 게임입니다.&lt;br /&gt;&lt;br /&gt;
-다음은 숫자의 일부 자릿수를 영단어로 바꾸는 예시입니다.&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;1478 → &quot;one4seveneight&quot;&lt;/li&gt;
-&lt;li&gt;234567 → &quot;23four5six7&quot;&lt;/li&gt;
-&lt;li&gt;10203 → &quot;1zerotwozero3&quot;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;이렇게 숫자의 일부 자릿수가 영단어로 바뀌어졌거나, 혹은 바뀌지 않고 그대로인 문자열 &lt;code&gt;s&lt;/code&gt;가 매개변수로 주어집니다. &lt;code&gt;s&lt;/code&gt;가 의미하는 원래 숫자를 return 하도록 solution 함수를 완성해주세요.&lt;/p&gt;
-
-&lt;p&gt;참고로 각 숫자에 대응되는 영단어는 다음 표와 같습니다.&lt;/p&gt;
-&lt;table class=&quot;table&quot;&gt;
-        &lt;thead&gt;&lt;tr&gt;
-&lt;th&gt;숫자&lt;/th&gt;
-&lt;th&gt;영단어&lt;/th&gt;
-&lt;/tr&gt;
-&lt;/thead&gt;
-        &lt;tbody&gt;&lt;tr&gt;
-&lt;td&gt;0&lt;/td&gt;
-&lt;td&gt;zero&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;1&lt;/td&gt;
-&lt;td&gt;one&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;2&lt;/td&gt;
-&lt;td&gt;two&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;3&lt;/td&gt;
-&lt;td&gt;three&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;4&lt;/td&gt;
-&lt;td&gt;four&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;5&lt;/td&gt;
-&lt;td&gt;five&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;6&lt;/td&gt;
-&lt;td&gt;six&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;7&lt;/td&gt;
-&lt;td&gt;seven&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;8&lt;/td&gt;
-&lt;td&gt;eight&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;9&lt;/td&gt;
-&lt;td&gt;nine&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/tbody&gt;
-      &lt;/table&gt;
-&lt;hr /&gt;
-
-&lt;h5&gt;제한사항&lt;/h5&gt;
-
-&lt;ul&gt;
-&lt;li&gt;1 ≤ &lt;code&gt;s&lt;/code&gt;의 길이 ≤ 50&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;s&lt;/code&gt;가 &quot;zero&quot; 또는 &quot;0&quot;으로 시작하는 경우는 주어지지 않습니다.&lt;/li&gt;
-&lt;li&gt;return 값이 1 이상 2,000,000,000 이하의 정수가 되는 올바른 입력만 &lt;code&gt;s&lt;/code&gt;로 주어집니다.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;hr /&gt;
-
-&lt;h5&gt;입출력 예&lt;/h5&gt;
-&lt;table class=&quot;table&quot;&gt;
-        &lt;thead&gt;&lt;tr&gt;
-&lt;th&gt;s&lt;/th&gt;
-&lt;th&gt;result&lt;/th&gt;
-&lt;/tr&gt;
-&lt;/thead&gt;
-        &lt;tbody&gt;&lt;tr&gt;
-&lt;td&gt;&lt;code&gt;&quot;one4seveneight&quot;&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;1478&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;code&gt;&quot;23four5six7&quot;&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;234567&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;code&gt;&quot;2three45sixseven&quot;&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;234567&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;code&gt;&quot;123&quot;&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;123&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/tbody&gt;
-      &lt;/table&gt;
-&lt;hr /&gt;
-
-&lt;h5&gt;입출력 예 설명&lt;/h5&gt;
-
-&lt;p&gt;&lt;strong&gt;입출력 예 #1&lt;/strong&gt;&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;문제 예시와 같습니다.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;strong&gt;입출력 예 #2&lt;/strong&gt;&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;문제 예시와 같습니다.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;strong&gt;입출력 예 #3&lt;/strong&gt;&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&quot;three&quot;는 3, &quot;six&quot;는 6, &quot;seven&quot;은 7에 대응되기 때문에 정답은 입출력 예 #2와 같은 234567이 됩니다.&lt;/li&gt;
-&lt;li&gt;입출력 예 #2와 #3과 같이 같은 정답을 가리키는 문자열이 여러 가지가 나올 수 있습니다.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;strong&gt;입출력 예 #4&lt;/strong&gt;&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;code&gt;s&lt;/code&gt;에는 영단어로 바뀐 부분이 없습니다.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;hr /&gt;
-
-&lt;h5&gt;제한시간 안내&lt;/h5&gt;
-
-&lt;ul&gt;
-&lt;li&gt;정확성 테스트 : 10초&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;출처: 프로그래머스 코딩 테스트 연습, https://programmers.co.kr/learn/challenges&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;h2 id=&quot;2-해결방법-시간복잡도&quot;&gt;2. 해결방법 시간복잡도&lt;/h2&gt;
-&lt;ol&gt;
-  &lt;li&gt;스택 O(N^2)&lt;/li&gt;
-  &lt;li&gt;단순 코딩 O(N)&lt;/li&gt;
-  &lt;li&gt;단순 코딩 O(1)&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;h2 id=&quot;3-문제-해결-및-코드&quot;&gt;3. 문제 해결 및 코드&lt;/h2&gt;
-&lt;hr /&gt;
-
-&lt;script src=&quot;https://gist.github.com/godhin/fa0f5b07c25d8b9f16763e9af9c7f5da.js&quot;&gt;&lt;/script&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;
-    &lt;h2 id=&quot;주석을-참고하면서-이해를-돕습니다&quot;&gt;주석을 참고하면서 이해를 돕습니다.&lt;/h2&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&quot;4-알고리즘-및-해설&quot;&gt;4. 알고리즘 및 해설&lt;/h2&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;해당 문제풀이는 참고만 하고 밑에 다른 풀이를 봐주세요!&lt;/li&gt;
-  &lt;li&gt;문제는 문자열내 숫자가 아닌 문자로 이루어진 영단어를 숫자로 바꾸는 것이다.&lt;/li&gt;
-  &lt;li&gt;반복문을 통해 해당 값을 도는 동안 만약 숫자일 경우 바로 넣고, 아닌 경우는 해당 값을 스택에 넣었다.
-    &lt;ul&gt;
-      &lt;li&gt;스택에 모든 문자를 하나로 출력했을 때 나오는 값이 사전에 존재한다면, 해당 값을 넣고 스택을 비우는 방식으로 진행했다.&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;이후 결과값에 있는 문자를 정수로 변환하여 출력한다.&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;h2 id=&quot;5-회고&quot;&gt;5. 회고&lt;/h2&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;기존에 어려운 문제들 풀어버릇해서 해당 문제를 너무 복잡하게 생각해 시간복잡도가 너무 올라가버렸다.
-```python
-num_dic = {“zero”:”0”, “one”:”1”, “two”:”2”, “three”:”3”, “four”:”4”, “five”:”5”, “six”:”6”, “seven”:”7”, “eight”:”8”, “nine”:”9”}&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;def solution(s):
-    answer = s
-    for key, value in num_dic.items():
-        answer = answer.replace(key, value)
-    return int(answer)&lt;/p&gt;
-&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;
-- 위의 방식을 통해 해당 값을 찾고, 변경하면 O(N)으로도 충분히 풀 수 있는 문제이다.
-
-```python
-import re
-def solution(s):
-    s = re.sub('zero', '0', s)
-    s = re.sub('one', '1', s)
-    s = re.sub('two', '2', s)
-    s = re.sub('three', '3', s)
-    s = re.sub('four', '4', s)
-    s = re.sub('five', '5', s)
-    s = re.sub('six', '6', s)
-    s = re.sub('seven', '7', s)
-    s = re.sub('eight', '8', s)
-    s = re.sub('nine', '9', s)
-    return int(s)
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;정규표현식으로 풀면 더 간단하게 시간복잡도를 O(1)로 줄일 수 있다.&lt;/li&gt;
-&lt;/ul&gt;</content><author><name>You Nicholas</name></author><category term="코딩테스트" /><category term="알고리즘" /><category term="파이썬" /><category term="코테" /><category term="프로그래머스" /><category term="Level_1" /><summary type="html">프로그래머스 숫자 문자열과 영단어 문제 풀이</summary></entry><entry><title type="html">[파이썬][프로그래머스] [1차] 다트 게임</title><link href="http://localhost:4000/%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8/17682/" rel="alternate" type="text/html" title="[파이썬][프로그래머스] [1차] 다트 게임" /><published>2022-06-28T00:00:00+09:00</published><updated>2022-06-28T00:00:00+09:00</updated><id>http://localhost:4000/%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8/17682</id><content type="html" xml:base="http://localhost:4000/%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8/17682/">&lt;h2 id=&quot;1-문제&quot;&gt;1. 문제&lt;/h2&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2022-06-29T13:55:04+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">성장형 개발자 블로그</title><subtitle>An amazing website.</subtitle><author><name>You Nicholas</name></author><entry><title type="html">[파이썬][프로그래머스] [1차] 다트 게임</title><link href="http://localhost:4000/%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8/17682/" rel="alternate" type="text/html" title="[파이썬][프로그래머스] [1차] 다트 게임" /><published>2022-06-28T00:00:00+09:00</published><updated>2022-06-28T00:00:00+09:00</updated><id>http://localhost:4000/%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8/17682</id><content type="html" xml:base="http://localhost:4000/%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8/17682/">&lt;h2 id=&quot;1-문제&quot;&gt;1. 문제&lt;/h2&gt;
 
 &lt;h1 id=&quot;level-1-1차-다트-게임---17682&quot;&gt;[level 1] [1차] 다트 게임 - 17682&lt;/h1&gt;
 
@@ -671,7 +446,232 @@ def solution(s):
 &lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c1&quot;&gt;# 단순 정렬해서 출력하기
 &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;result&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;sorted&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;리스트&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;key&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;lambda&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;x&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;리스트&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;x&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;])&lt;/span&gt;
 &lt;span class=&quot;c1&quot;&gt;# 이때 정렬의 기준이 되는 값을 x로 잡아주면 되며, 정렬 방식을 오름차로 하고 싶으면 reverse = True를 해준다.
-&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name>You Nicholas</name></author><category term="코딩테스트" /><category term="알고리즘" /><category term="파이썬" /><category term="코테" /><category term="프로그래머스" /><category term="Level_1" /><summary type="html">프로그래머스 실패율 문제 풀이</summary></entry><entry><title type="html">[파이썬][Codility_][코디리티] PermCheck</title><link href="http://localhost:4000/%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8/PermCheck/" rel="alternate" type="text/html" title="[파이썬][Codility_][코디리티] PermCheck" /><published>2022-06-27T00:00:00+09:00</published><updated>2022-06-27T00:00:00+09:00</updated><id>http://localhost:4000/%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8/PermCheck</id><content type="html" xml:base="http://localhost:4000/%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8/PermCheck/">&lt;h2 id=&quot;1-문제&quot;&gt;1. 문제&lt;/h2&gt;
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name>You Nicholas</name></author><category term="코딩테스트" /><category term="알고리즘" /><category term="파이썬" /><category term="코테" /><category term="프로그래머스" /><category term="Level_1" /><summary type="html">프로그래머스 실패율 문제 풀이</summary></entry><entry><title type="html">[파이썬][프로그래머스] 숫자 문자열과 영단어</title><link href="http://localhost:4000/%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8/81301/" rel="alternate" type="text/html" title="[파이썬][프로그래머스] 숫자 문자열과 영단어" /><published>2022-06-28T00:00:00+09:00</published><updated>2022-06-28T00:00:00+09:00</updated><id>http://localhost:4000/%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8/81301</id><content type="html" xml:base="http://localhost:4000/%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8/81301/">&lt;h2 id=&quot;1-문제&quot;&gt;1. 문제&lt;/h2&gt;
+
+&lt;h1 id=&quot;level-1-숫자-문자열과-영단어---81301&quot;&gt;[level 1] 숫자 문자열과 영단어 - 81301&lt;/h1&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://programmers.co.kr/learn/courses/30/lessons/81301&quot;&gt;문제 링크&lt;/a&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;성능-요약&quot;&gt;성능 요약&lt;/h3&gt;
+
+&lt;p&gt;메모리: 10.3 MB, 시간: 0.02 ms&lt;/p&gt;
+
+&lt;h3 id=&quot;구분&quot;&gt;구분&lt;/h3&gt;
+
+&lt;p&gt;코딩테스트 연습 &amp;gt; 2021 카카오 채용연계형 인턴십&lt;/p&gt;
+
+&lt;h3 id=&quot;채점결과&quot;&gt;채점결과&lt;/h3&gt;
+
+&lt;p&gt;&lt;br /&gt;정확성: 100.0&lt;br /&gt;합계: 100.0 / 100.0&lt;/p&gt;
+
+&lt;h3 id=&quot;문제-설명&quot;&gt;문제 설명&lt;/h3&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://grepp-programmers.s3.ap-northeast-2.amazonaws.com/files/production/d31cb063-4025-4412-8cbc-6ac6909cf93e/img1.png&quot; title=&quot;&quot; alt=&quot;img1.png&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;네오와 프로도가 숫자놀이를 하고 있습니다. 네오가 프로도에게 숫자를 건넬 때 일부 자릿수를 영단어로 바꾼 카드를 건네주면 프로도는 원래 숫자를 찾는 게임입니다.&lt;br /&gt;&lt;br /&gt;
+다음은 숫자의 일부 자릿수를 영단어로 바꾸는 예시입니다.&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;1478 → &quot;one4seveneight&quot;&lt;/li&gt;
+&lt;li&gt;234567 → &quot;23four5six7&quot;&lt;/li&gt;
+&lt;li&gt;10203 → &quot;1zerotwozero3&quot;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;이렇게 숫자의 일부 자릿수가 영단어로 바뀌어졌거나, 혹은 바뀌지 않고 그대로인 문자열 &lt;code&gt;s&lt;/code&gt;가 매개변수로 주어집니다. &lt;code&gt;s&lt;/code&gt;가 의미하는 원래 숫자를 return 하도록 solution 함수를 완성해주세요.&lt;/p&gt;
+
+&lt;p&gt;참고로 각 숫자에 대응되는 영단어는 다음 표와 같습니다.&lt;/p&gt;
+&lt;table class=&quot;table&quot;&gt;
+        &lt;thead&gt;&lt;tr&gt;
+&lt;th&gt;숫자&lt;/th&gt;
+&lt;th&gt;영단어&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+        &lt;tbody&gt;&lt;tr&gt;
+&lt;td&gt;0&lt;/td&gt;
+&lt;td&gt;zero&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;1&lt;/td&gt;
+&lt;td&gt;one&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;2&lt;/td&gt;
+&lt;td&gt;two&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;3&lt;/td&gt;
+&lt;td&gt;three&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;4&lt;/td&gt;
+&lt;td&gt;four&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;5&lt;/td&gt;
+&lt;td&gt;five&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;6&lt;/td&gt;
+&lt;td&gt;six&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;7&lt;/td&gt;
+&lt;td&gt;seven&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;8&lt;/td&gt;
+&lt;td&gt;eight&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;9&lt;/td&gt;
+&lt;td&gt;nine&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+      &lt;/table&gt;
+&lt;hr /&gt;
+
+&lt;h5&gt;제한사항&lt;/h5&gt;
+
+&lt;ul&gt;
+&lt;li&gt;1 ≤ &lt;code&gt;s&lt;/code&gt;의 길이 ≤ 50&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;s&lt;/code&gt;가 &quot;zero&quot; 또는 &quot;0&quot;으로 시작하는 경우는 주어지지 않습니다.&lt;/li&gt;
+&lt;li&gt;return 값이 1 이상 2,000,000,000 이하의 정수가 되는 올바른 입력만 &lt;code&gt;s&lt;/code&gt;로 주어집니다.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr /&gt;
+
+&lt;h5&gt;입출력 예&lt;/h5&gt;
+&lt;table class=&quot;table&quot;&gt;
+        &lt;thead&gt;&lt;tr&gt;
+&lt;th&gt;s&lt;/th&gt;
+&lt;th&gt;result&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+        &lt;tbody&gt;&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;&quot;one4seveneight&quot;&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;1478&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;&quot;23four5six7&quot;&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;234567&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;&quot;2three45sixseven&quot;&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;234567&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;&quot;123&quot;&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;123&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+      &lt;/table&gt;
+&lt;hr /&gt;
+
+&lt;h5&gt;입출력 예 설명&lt;/h5&gt;
+
+&lt;p&gt;&lt;strong&gt;입출력 예 #1&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;문제 예시와 같습니다.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;입출력 예 #2&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;문제 예시와 같습니다.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;입출력 예 #3&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&quot;three&quot;는 3, &quot;six&quot;는 6, &quot;seven&quot;은 7에 대응되기 때문에 정답은 입출력 예 #2와 같은 234567이 됩니다.&lt;/li&gt;
+&lt;li&gt;입출력 예 #2와 #3과 같이 같은 정답을 가리키는 문자열이 여러 가지가 나올 수 있습니다.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;입출력 예 #4&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;s&lt;/code&gt;에는 영단어로 바뀐 부분이 없습니다.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr /&gt;
+
+&lt;h5&gt;제한시간 안내&lt;/h5&gt;
+
+&lt;ul&gt;
+&lt;li&gt;정확성 테스트 : 10초&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;출처: 프로그래머스 코딩 테스트 연습, https://programmers.co.kr/learn/challenges&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h2 id=&quot;2-해결방법-시간복잡도&quot;&gt;2. 해결방법 시간복잡도&lt;/h2&gt;
+&lt;ol&gt;
+  &lt;li&gt;스택 O(N^2)&lt;/li&gt;
+  &lt;li&gt;단순 코딩 O(N)&lt;/li&gt;
+  &lt;li&gt;단순 코딩 O(1)&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h2 id=&quot;3-문제-해결-및-코드&quot;&gt;3. 문제 해결 및 코드&lt;/h2&gt;
+&lt;hr /&gt;
+
+&lt;script src=&quot;https://gist.github.com/godhin/fa0f5b07c25d8b9f16763e9af9c7f5da.js&quot;&gt;&lt;/script&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;h2 id=&quot;주석을-참고하면서-이해를-돕습니다&quot;&gt;주석을 참고하면서 이해를 돕습니다.&lt;/h2&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;4-알고리즘-및-해설&quot;&gt;4. 알고리즘 및 해설&lt;/h2&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;해당 문제풀이는 참고만 하고 밑에 다른 풀이를 봐주세요!&lt;/li&gt;
+  &lt;li&gt;문제는 문자열내 숫자가 아닌 문자로 이루어진 영단어를 숫자로 바꾸는 것이다.&lt;/li&gt;
+  &lt;li&gt;반복문을 통해 해당 값을 도는 동안 만약 숫자일 경우 바로 넣고, 아닌 경우는 해당 값을 스택에 넣었다.
+    &lt;ul&gt;
+      &lt;li&gt;스택에 모든 문자를 하나로 출력했을 때 나오는 값이 사전에 존재한다면, 해당 값을 넣고 스택을 비우는 방식으로 진행했다.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;이후 결과값에 있는 문자를 정수로 변환하여 출력한다.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h2 id=&quot;5-회고&quot;&gt;5. 회고&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;기존에 어려운 문제들 풀어버릇해서 해당 문제를 너무 복잡하게 생각해 시간복잡도가 너무 올라가버렸다.
+```python
+num_dic = {“zero”:”0”, “one”:”1”, “two”:”2”, “three”:”3”, “four”:”4”, “five”:”5”, “six”:”6”, “seven”:”7”, “eight”:”8”, “nine”:”9”}&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;def solution(s):
+    answer = s
+    for key, value in num_dic.items():
+        answer = answer.replace(key, value)
+    return int(answer)&lt;/p&gt;
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;
+- 위의 방식을 통해 해당 값을 찾고, 변경하면 O(N)으로도 충분히 풀 수 있는 문제이다.
+
+```python
+import re
+def solution(s):
+    s = re.sub('zero', '0', s)
+    s = re.sub('one', '1', s)
+    s = re.sub('two', '2', s)
+    s = re.sub('three', '3', s)
+    s = re.sub('four', '4', s)
+    s = re.sub('five', '5', s)
+    s = re.sub('six', '6', s)
+    s = re.sub('seven', '7', s)
+    s = re.sub('eight', '8', s)
+    s = re.sub('nine', '9', s)
+    return int(s)
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;정규표현식으로 풀면 더 간단하게 시간복잡도를 O(1)로 줄일 수 있다.&lt;/li&gt;
+&lt;/ul&gt;</content><author><name>You Nicholas</name></author><category term="코딩테스트" /><category term="알고리즘" /><category term="파이썬" /><category term="코테" /><category term="프로그래머스" /><category term="Level_1" /><summary type="html">프로그래머스 숫자 문자열과 영단어 문제 풀이</summary></entry><entry><title type="html">[파이썬][Codility_][코디리티] PermCheck</title><link href="http://localhost:4000/%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8/PermCheck/" rel="alternate" type="text/html" title="[파이썬][Codility_][코디리티] PermCheck" /><published>2022-06-27T00:00:00+09:00</published><updated>2022-06-27T00:00:00+09:00</updated><id>http://localhost:4000/%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8/PermCheck</id><content type="html" xml:base="http://localhost:4000/%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8/PermCheck/">&lt;h2 id=&quot;1-문제&quot;&gt;1. 문제&lt;/h2&gt;
 
 &lt;p&gt;A non-empty array A consisting of N integers is given.&lt;/p&gt;
 
@@ -850,151 +850,7 @@ Copyright 2009–2022 by Codility Limited. All Rights Reserved. Unauthorized cop
       &lt;li&gt;아니라면 -1을 반환해준다.&lt;/li&gt;
     &lt;/ul&gt;
   &lt;/li&gt;
-&lt;/ol&gt;</content><author><name>You Nicholas</name></author><category term="코딩테스트" /><category term="알고리즘" /><category term="파이썬" /><category term="코테" /><category term="Codility" /><category term="코디리티" /><category term="Lessons" /><summary type="html">Codility FrogRiverOne 문제 풀이</summary></entry><entry><title type="html">[파이썬][프로그래머스] 크레인 인형뽑기 게임</title><link href="http://localhost:4000/%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8/64061/" rel="alternate" type="text/html" title="[파이썬][프로그래머스] 크레인 인형뽑기 게임" /><published>2022-06-26T00:00:00+09:00</published><updated>2022-06-26T00:00:00+09:00</updated><id>http://localhost:4000/%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8/64061</id><content type="html" xml:base="http://localhost:4000/%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8/64061/">&lt;h2 id=&quot;1-문제&quot;&gt;1. 문제&lt;/h2&gt;
-
-&lt;h1 id=&quot;level-1-크레인-인형뽑기-게임---64061&quot;&gt;[level 1] 크레인 인형뽑기 게임 - 64061&lt;/h1&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://programmers.co.kr/learn/courses/30/lessons/64061&quot;&gt;문제 링크&lt;/a&gt;&lt;/p&gt;
-
-&lt;h3 id=&quot;성능-요약&quot;&gt;성능 요약&lt;/h3&gt;
-
-&lt;p&gt;메모리: 10.2 MB, 시간: 0.71 ms&lt;/p&gt;
-
-&lt;h3 id=&quot;구분&quot;&gt;구분&lt;/h3&gt;
-
-&lt;p&gt;코딩테스트 연습 &amp;gt; 2019 카카오 개발자 겨울 인턴십&lt;/p&gt;
-
-&lt;h3 id=&quot;채점결과&quot;&gt;채점결과&lt;/h3&gt;
-
-&lt;p&gt;&lt;br /&gt;정확성: 100.0&lt;br /&gt;합계: 100.0 / 100.0&lt;/p&gt;
-
-&lt;h3 id=&quot;문제-설명&quot;&gt;문제 설명&lt;/h3&gt;
-
-&lt;p&gt;게임개발자인 &quot;죠르디&quot;는 크레인 인형뽑기 기계를 모바일 게임으로 만들려고 합니다.&lt;br /&gt;
-&quot;죠르디&quot;는 게임의 재미를 높이기 위해 화면 구성과 규칙을 다음과 같이 게임 로직에 반영하려고 합니다.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://grepp-programmers.s3.ap-northeast-2.amazonaws.com/files/production/69f1cd36-09f4-4435-8363-b71a650f7448/crane_game_101.png&quot; title=&quot;&quot; alt=&quot;crane_game_101.png&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;게임 화면은 &lt;strong&gt;&quot;1 x 1&quot;&lt;/strong&gt; 크기의 칸들로 이루어진 &lt;strong&gt;&quot;N x N&quot;&lt;/strong&gt; 크기의 정사각 격자이며 위쪽에는 크레인이 있고 오른쪽에는 바구니가 있습니다. (위 그림은 &quot;5 x 5&quot; 크기의 예시입니다). 각 격자 칸에는 다양한 인형이 들어 있으며 인형이 없는 칸은 빈칸입니다. 모든 인형은 &quot;1 x 1&quot; 크기의 격자 한 칸을 차지하며 &lt;strong&gt;격자의 가장 아래 칸부터 차곡차곡 쌓여 있습니다.&lt;/strong&gt; 게임 사용자는 크레인을 좌우로 움직여서 멈춘 위치에서 가장 위에 있는 인형을 집어 올릴 수 있습니다. 집어 올린 인형은 바구니에 쌓이게 되는 데, 이때 바구니의 가장 아래 칸부터 인형이 순서대로 쌓이게 됩니다. 다음 그림은  [1번, 5번, 3번] 위치에서 순서대로 인형을 집어 올려 바구니에 담은 모습입니다.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://grepp-programmers.s3.ap-northeast-2.amazonaws.com/files/production/638e2162-b1e4-4bbb-b0d7-62d31e97d75c/crane_game_102.png&quot; title=&quot;&quot; alt=&quot;crane_game_102.png&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;만약 같은 모양의 인형 두 개가 바구니에 연속해서 쌓이게 되면 두 인형은 터뜨려지면서 바구니에서 사라지게 됩니다. 위 상태에서 이어서 [5번] 위치에서 인형을 집어 바구니에 쌓으면 같은 모양 인형 &lt;strong&gt;두 개&lt;/strong&gt;가 없어집니다.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://grepp-programmers.s3.ap-northeast-2.amazonaws.com/files/production/8569d736-091e-4771-b2d3-7a6e95a20c22/crane_game_103.gif&quot; title=&quot;&quot; alt=&quot;crane_game_103.gif&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;크레인 작동 시 인형이 집어지지 않는 경우는 없으나 만약 인형이 없는 곳에서 크레인을 작동시키는 경우에는 아무런 일도 일어나지 않습니다. 또한 바구니는 모든 인형이  들어갈 수 있을 만큼 충분히 크다고 가정합니다. (그림에서는 화면표시 제약으로 5칸만으로 표현하였음)&lt;/p&gt;
-
-&lt;p&gt;게임 화면의 격자의 상태가 담긴 2차원 배열 board와 인형을 집기 위해 크레인을 작동시킨 위치가 담긴 배열 moves가 매개변수로 주어질 때, 크레인을 모두 작동시킨 후 터트려져 사라진 인형의 개수를 return 하도록 solution 함수를 완성해주세요.&lt;/p&gt;
-
-&lt;h5&gt;&lt;strong&gt;[제한사항]&lt;/strong&gt;&lt;/h5&gt;
-
-&lt;ul&gt;
-&lt;li&gt;board 배열은 2차원 배열로 크기는 &quot;5 x 5&quot; 이상 &quot;30 x 30&quot; 이하입니다.&lt;/li&gt;
-&lt;li&gt;board의 각 칸에는 0 이상 100 이하인 정수가 담겨있습니다.
-
-&lt;ul&gt;
-&lt;li&gt;0은 빈 칸을 나타냅니다.&lt;/li&gt;
-&lt;li&gt;1 ~ 100의 각 숫자는 각기 다른 인형의 모양을 의미하며 같은 숫자는 같은 모양의 인형을 나타냅니다.&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;li&gt;moves 배열의 크기는 1 이상 1,000 이하입니다.&lt;/li&gt;
-&lt;li&gt;moves 배열 각 원소들의 값은 1 이상이며 board 배열의 가로 크기 이하인 자연수입니다.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h5&gt;&lt;strong&gt;입출력 예&lt;/strong&gt;&lt;/h5&gt;
-&lt;table class=&quot;table&quot;&gt;
-        &lt;thead&gt;&lt;tr&gt;
-&lt;th&gt;board&lt;/th&gt;
-&lt;th&gt;moves&lt;/th&gt;
-&lt;th&gt;result&lt;/th&gt;
-&lt;/tr&gt;
-&lt;/thead&gt;
-        &lt;tbody&gt;&lt;tr&gt;
-&lt;td&gt;[[0,0,0,0,0],[0,0,1,0,3],[0,2,5,0,1],[4,2,4,4,2],[3,5,1,3,1]]&lt;/td&gt;
-&lt;td&gt;[1,5,3,5,1,2,1,4]&lt;/td&gt;
-&lt;td&gt;4&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/tbody&gt;
-      &lt;/table&gt;
-&lt;h5&gt;&lt;strong&gt;입출력 예에 대한 설명&lt;/strong&gt;&lt;/h5&gt;
-
-&lt;p&gt;&lt;strong&gt;입출력 예 #1&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;인형의 처음 상태는 문제에 주어진 예시와 같습니다. 크레인이 [1, 5, 3, 5, 1, 2, 1, 4] 번 위치에서 차례대로 인형을 집어서 바구니에 옮겨 담은 후, 상태는 아래 그림과 같으며 바구니에 담는 과정에서 터트려져 사라진 인형은 4개 입니다.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://grepp-programmers.s3.ap-northeast-2.amazonaws.com/files/production/bb0f59c7-6b72-485a-8302-217fe53ea88f/crane_game_104.jpg&quot; title=&quot;&quot; alt=&quot;crane_game_104.jpg&quot; /&gt;&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;출처: 프로그래머스 코딩 테스트 연습, https://programmers.co.kr/learn/challenges&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;h2 id=&quot;2-해결방법-시간복잡도&quot;&gt;2. 해결방법 시간복잡도&lt;/h2&gt;
-&lt;ol&gt;
-  &lt;li&gt;스택 O(N^2)&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;h2 id=&quot;3-문제-해결-및-코드&quot;&gt;3. 문제 해결 및 코드&lt;/h2&gt;
-&lt;hr /&gt;
-
-&lt;script src=&quot;https://gist.github.com/godhin/3d39a4402caef85886a9e792dfc8af7a.js&quot;&gt;&lt;/script&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;
-    &lt;h2 id=&quot;주석을-참고하면서-이해를-돕습니다&quot;&gt;주석을 참고하면서 이해를 돕습니다.&lt;/h2&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&quot;4-알고리즘-및-해설&quot;&gt;4. 알고리즘 및 해설&lt;/h2&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;크레인 뽑기의 핵심은 배열내에 해당 값을 찾아 스택에 쌓는 것이다.&lt;/li&gt;
-  &lt;li&gt;moves라는 우리가 움직여야하는 손과 board라는 2차원 배열에서 해당 값을 찾아 만약 0이 아니라면 해당 값을 스택에 쌓는다.
-    &lt;ul&gt;
-      &lt;li&gt;0이 아닌 경우는 != 라고도 표현할 수 있으나 해당 문제에서는 0보다 크게 나와 &amp;gt; 라고 표현하였다.&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;이후 내가 뽑은 위치값을 0으로 변경해준다. 삭제하는 방법도 있지만 이는 추후에 크레인이 해당 위치값을 또 찾으러 갈 때 값이 변경되어 있을 가능성을 배제하기 위해서 0으로 변경한다.
-    &lt;ul&gt;
-      &lt;li&gt;0이 아닌 삭제를 할 경우 뒤의 값이 앞으로 당겨져서 의도와는 다른 수를 찾게 되는 경우가 있음&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;스택에 마지막에 쌓인 값과 바로 앞에 쌓인 값이 같다면 pop()을 통해 빼준다.
-    &lt;ul&gt;
-      &lt;li&gt;문제에서는 2개가 같은 경우에 빼주기떄문에 결과값에 += 2를 해준다.&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;최종 결과값을 출력해준다.&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;h2 id=&quot;5-짚고-넘어가기&quot;&gt;5. 짚고 넘어가기&lt;/h2&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;문제를 해결하는 방법은 크게 2가지 정도가 있는 것같다.
-    &lt;ul&gt;
-      &lt;li&gt;단순 코딩 == 브루트 포스&lt;/li&gt;
-      &lt;li&gt;&lt;strong&gt;스택&lt;/strong&gt;&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;solution&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;board&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;moves&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt;
-    &lt;span class=&quot;n&quot;&gt;cols&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;list&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;map&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;lambda&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;x&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;list&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;filter&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;lambda&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;y&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;y&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;x&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)),&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;zip&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;*&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;board&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)))&lt;/span&gt;
-    &lt;span class=&quot;n&quot;&gt;a&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;s&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;
-
-    &lt;span class=&quot;k&quot;&gt;for&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;m&lt;/span&gt; &lt;span class=&quot;ow&quot;&gt;in&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;moves&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
-        &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;len&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;cols&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;m&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;])&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
-            &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;d&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;cols&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;m&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;].&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;pop&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;==&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;l&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;s&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;pop&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()):&lt;/span&gt;
-                &lt;span class=&quot;n&quot;&gt;a&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;
-            &lt;span class=&quot;k&quot;&gt;else&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
-                &lt;span class=&quot;n&quot;&gt;s&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;extend&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;([&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;l&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;d&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;])&lt;/span&gt;
-
-    &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;a&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;[정답 출처 : 프로그래머스 다른 사람의 풀이]&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;다른 분이 푼 문제를 봤는데, 해당 문제를 lambda와 filter의 조화로 해결하여서 굉장히 인상깊었다. 이런 식으로 문제를 해결한다면 시간복잡도는 O(N)으로 기존보다 훨씬 메모리 효율이 좋을 것이라는 생각이 들었다.&lt;/li&gt;
-&lt;/ul&gt;</content><author><name>You Nicholas</name></author><category term="코딩테스트" /><category term="알고리즘" /><category term="파이썬" /><category term="코테" /><category term="프로그래머스" /><category term="Level_1" /><summary type="html">프로그래머스 크레인 인형뽑기 게임 문제 풀이</summary></entry><entry><title type="html">[파이썬][프로그래머스] 로또의 최고 순위와 최저 순위</title><link href="http://localhost:4000/%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8/77484/" rel="alternate" type="text/html" title="[파이썬][프로그래머스] 로또의 최고 순위와 최저 순위" /><published>2022-06-26T00:00:00+09:00</published><updated>2022-06-26T00:00:00+09:00</updated><id>http://localhost:4000/%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8/77484</id><content type="html" xml:base="http://localhost:4000/%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8/77484/">&lt;h2 id=&quot;1-문제&quot;&gt;1. 문제&lt;/h2&gt;
+&lt;/ol&gt;</content><author><name>You Nicholas</name></author><category term="코딩테스트" /><category term="알고리즘" /><category term="파이썬" /><category term="코테" /><category term="Codility" /><category term="코디리티" /><category term="Lessons" /><summary type="html">Codility FrogRiverOne 문제 풀이</summary></entry><entry><title type="html">[파이썬][프로그래머스] 로또의 최고 순위와 최저 순위</title><link href="http://localhost:4000/%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8/77484/" rel="alternate" type="text/html" title="[파이썬][프로그래머스] 로또의 최고 순위와 최저 순위" /><published>2022-06-26T00:00:00+09:00</published><updated>2022-06-26T00:00:00+09:00</updated><id>http://localhost:4000/%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8/77484</id><content type="html" xml:base="http://localhost:4000/%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8/77484/">&lt;h2 id=&quot;1-문제&quot;&gt;1. 문제&lt;/h2&gt;
 
 &lt;h1 id=&quot;level-1-로또의-최고-순위와-최저-순위---77484&quot;&gt;[level 1] 로또의 최고 순위와 최저 순위 - 77484&lt;/h1&gt;
 
@@ -1249,7 +1105,248 @@ Copyright 2009–2022 by Codility Limited. All Rights Reserved. Unauthorized cop
 &lt;p&gt;[정답 출처 : 프로그래머스 다른 사람의 풀이]&lt;/p&gt;
 &lt;ul&gt;
   &lt;li&gt;다른 코드를 보았을 때 대부분 비슷하게 풀이하였으나, 이분의 경우 컴프리핸션과 count()함수를 사용해서 0값을 찾고 시작했다는 점이 인상깊었다.&lt;/li&gt;
-&lt;/ul&gt;</content><author><name>You Nicholas</name></author><category term="코딩테스트" /><category term="알고리즘" /><category term="파이썬" /><category term="코테" /><category term="프로그래머스" /><category term="Level_1" /><summary type="html">프로그래머스 로또의 최고 순위와 최저 순위 문제 풀이</summary></entry><entry><title type="html">[파이썬][Codility_][코디리티] FrogJmp</title><link href="http://localhost:4000/%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8/FrogJmp/" rel="alternate" type="text/html" title="[파이썬][Codility_][코디리티] FrogJmp" /><published>2022-06-23T00:00:00+09:00</published><updated>2022-06-24T00:00:00+09:00</updated><id>http://localhost:4000/%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8/FrogJmp</id><content type="html" xml:base="http://localhost:4000/%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8/FrogJmp/">&lt;h2 id=&quot;1-문제&quot;&gt;1. 문제&lt;/h2&gt;
+&lt;/ul&gt;</content><author><name>You Nicholas</name></author><category term="코딩테스트" /><category term="알고리즘" /><category term="파이썬" /><category term="코테" /><category term="프로그래머스" /><category term="Level_1" /><summary type="html">프로그래머스 로또의 최고 순위와 최저 순위 문제 풀이</summary></entry><entry><title type="html">[파이썬][프로그래머스] 크레인 인형뽑기 게임</title><link href="http://localhost:4000/%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8/64061/" rel="alternate" type="text/html" title="[파이썬][프로그래머스] 크레인 인형뽑기 게임" /><published>2022-06-26T00:00:00+09:00</published><updated>2022-06-26T00:00:00+09:00</updated><id>http://localhost:4000/%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8/64061</id><content type="html" xml:base="http://localhost:4000/%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8/64061/">&lt;h2 id=&quot;1-문제&quot;&gt;1. 문제&lt;/h2&gt;
+
+&lt;h1 id=&quot;level-1-크레인-인형뽑기-게임---64061&quot;&gt;[level 1] 크레인 인형뽑기 게임 - 64061&lt;/h1&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://programmers.co.kr/learn/courses/30/lessons/64061&quot;&gt;문제 링크&lt;/a&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;성능-요약&quot;&gt;성능 요약&lt;/h3&gt;
+
+&lt;p&gt;메모리: 10.2 MB, 시간: 0.71 ms&lt;/p&gt;
+
+&lt;h3 id=&quot;구분&quot;&gt;구분&lt;/h3&gt;
+
+&lt;p&gt;코딩테스트 연습 &amp;gt; 2019 카카오 개발자 겨울 인턴십&lt;/p&gt;
+
+&lt;h3 id=&quot;채점결과&quot;&gt;채점결과&lt;/h3&gt;
+
+&lt;p&gt;&lt;br /&gt;정확성: 100.0&lt;br /&gt;합계: 100.0 / 100.0&lt;/p&gt;
+
+&lt;h3 id=&quot;문제-설명&quot;&gt;문제 설명&lt;/h3&gt;
+
+&lt;p&gt;게임개발자인 &quot;죠르디&quot;는 크레인 인형뽑기 기계를 모바일 게임으로 만들려고 합니다.&lt;br /&gt;
+&quot;죠르디&quot;는 게임의 재미를 높이기 위해 화면 구성과 규칙을 다음과 같이 게임 로직에 반영하려고 합니다.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://grepp-programmers.s3.ap-northeast-2.amazonaws.com/files/production/69f1cd36-09f4-4435-8363-b71a650f7448/crane_game_101.png&quot; title=&quot;&quot; alt=&quot;crane_game_101.png&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;게임 화면은 &lt;strong&gt;&quot;1 x 1&quot;&lt;/strong&gt; 크기의 칸들로 이루어진 &lt;strong&gt;&quot;N x N&quot;&lt;/strong&gt; 크기의 정사각 격자이며 위쪽에는 크레인이 있고 오른쪽에는 바구니가 있습니다. (위 그림은 &quot;5 x 5&quot; 크기의 예시입니다). 각 격자 칸에는 다양한 인형이 들어 있으며 인형이 없는 칸은 빈칸입니다. 모든 인형은 &quot;1 x 1&quot; 크기의 격자 한 칸을 차지하며 &lt;strong&gt;격자의 가장 아래 칸부터 차곡차곡 쌓여 있습니다.&lt;/strong&gt; 게임 사용자는 크레인을 좌우로 움직여서 멈춘 위치에서 가장 위에 있는 인형을 집어 올릴 수 있습니다. 집어 올린 인형은 바구니에 쌓이게 되는 데, 이때 바구니의 가장 아래 칸부터 인형이 순서대로 쌓이게 됩니다. 다음 그림은  [1번, 5번, 3번] 위치에서 순서대로 인형을 집어 올려 바구니에 담은 모습입니다.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://grepp-programmers.s3.ap-northeast-2.amazonaws.com/files/production/638e2162-b1e4-4bbb-b0d7-62d31e97d75c/crane_game_102.png&quot; title=&quot;&quot; alt=&quot;crane_game_102.png&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;만약 같은 모양의 인형 두 개가 바구니에 연속해서 쌓이게 되면 두 인형은 터뜨려지면서 바구니에서 사라지게 됩니다. 위 상태에서 이어서 [5번] 위치에서 인형을 집어 바구니에 쌓으면 같은 모양 인형 &lt;strong&gt;두 개&lt;/strong&gt;가 없어집니다.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://grepp-programmers.s3.ap-northeast-2.amazonaws.com/files/production/8569d736-091e-4771-b2d3-7a6e95a20c22/crane_game_103.gif&quot; title=&quot;&quot; alt=&quot;crane_game_103.gif&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;크레인 작동 시 인형이 집어지지 않는 경우는 없으나 만약 인형이 없는 곳에서 크레인을 작동시키는 경우에는 아무런 일도 일어나지 않습니다. 또한 바구니는 모든 인형이  들어갈 수 있을 만큼 충분히 크다고 가정합니다. (그림에서는 화면표시 제약으로 5칸만으로 표현하였음)&lt;/p&gt;
+
+&lt;p&gt;게임 화면의 격자의 상태가 담긴 2차원 배열 board와 인형을 집기 위해 크레인을 작동시킨 위치가 담긴 배열 moves가 매개변수로 주어질 때, 크레인을 모두 작동시킨 후 터트려져 사라진 인형의 개수를 return 하도록 solution 함수를 완성해주세요.&lt;/p&gt;
+
+&lt;h5&gt;&lt;strong&gt;[제한사항]&lt;/strong&gt;&lt;/h5&gt;
+
+&lt;ul&gt;
+&lt;li&gt;board 배열은 2차원 배열로 크기는 &quot;5 x 5&quot; 이상 &quot;30 x 30&quot; 이하입니다.&lt;/li&gt;
+&lt;li&gt;board의 각 칸에는 0 이상 100 이하인 정수가 담겨있습니다.
+
+&lt;ul&gt;
+&lt;li&gt;0은 빈 칸을 나타냅니다.&lt;/li&gt;
+&lt;li&gt;1 ~ 100의 각 숫자는 각기 다른 인형의 모양을 의미하며 같은 숫자는 같은 모양의 인형을 나타냅니다.&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;moves 배열의 크기는 1 이상 1,000 이하입니다.&lt;/li&gt;
+&lt;li&gt;moves 배열 각 원소들의 값은 1 이상이며 board 배열의 가로 크기 이하인 자연수입니다.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h5&gt;&lt;strong&gt;입출력 예&lt;/strong&gt;&lt;/h5&gt;
+&lt;table class=&quot;table&quot;&gt;
+        &lt;thead&gt;&lt;tr&gt;
+&lt;th&gt;board&lt;/th&gt;
+&lt;th&gt;moves&lt;/th&gt;
+&lt;th&gt;result&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+        &lt;tbody&gt;&lt;tr&gt;
+&lt;td&gt;[[0,0,0,0,0],[0,0,1,0,3],[0,2,5,0,1],[4,2,4,4,2],[3,5,1,3,1]]&lt;/td&gt;
+&lt;td&gt;[1,5,3,5,1,2,1,4]&lt;/td&gt;
+&lt;td&gt;4&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+      &lt;/table&gt;
+&lt;h5&gt;&lt;strong&gt;입출력 예에 대한 설명&lt;/strong&gt;&lt;/h5&gt;
+
+&lt;p&gt;&lt;strong&gt;입출력 예 #1&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;인형의 처음 상태는 문제에 주어진 예시와 같습니다. 크레인이 [1, 5, 3, 5, 1, 2, 1, 4] 번 위치에서 차례대로 인형을 집어서 바구니에 옮겨 담은 후, 상태는 아래 그림과 같으며 바구니에 담는 과정에서 터트려져 사라진 인형은 4개 입니다.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://grepp-programmers.s3.ap-northeast-2.amazonaws.com/files/production/bb0f59c7-6b72-485a-8302-217fe53ea88f/crane_game_104.jpg&quot; title=&quot;&quot; alt=&quot;crane_game_104.jpg&quot; /&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;출처: 프로그래머스 코딩 테스트 연습, https://programmers.co.kr/learn/challenges&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h2 id=&quot;2-해결방법-시간복잡도&quot;&gt;2. 해결방법 시간복잡도&lt;/h2&gt;
+&lt;ol&gt;
+  &lt;li&gt;스택 O(N^2)&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h2 id=&quot;3-문제-해결-및-코드&quot;&gt;3. 문제 해결 및 코드&lt;/h2&gt;
+&lt;hr /&gt;
+
+&lt;script src=&quot;https://gist.github.com/godhin/3d39a4402caef85886a9e792dfc8af7a.js&quot;&gt;&lt;/script&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;h2 id=&quot;주석을-참고하면서-이해를-돕습니다&quot;&gt;주석을 참고하면서 이해를 돕습니다.&lt;/h2&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;4-알고리즘-및-해설&quot;&gt;4. 알고리즘 및 해설&lt;/h2&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;크레인 뽑기의 핵심은 배열내에 해당 값을 찾아 스택에 쌓는 것이다.&lt;/li&gt;
+  &lt;li&gt;moves라는 우리가 움직여야하는 손과 board라는 2차원 배열에서 해당 값을 찾아 만약 0이 아니라면 해당 값을 스택에 쌓는다.
+    &lt;ul&gt;
+      &lt;li&gt;0이 아닌 경우는 != 라고도 표현할 수 있으나 해당 문제에서는 0보다 크게 나와 &amp;gt; 라고 표현하였다.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;이후 내가 뽑은 위치값을 0으로 변경해준다. 삭제하는 방법도 있지만 이는 추후에 크레인이 해당 위치값을 또 찾으러 갈 때 값이 변경되어 있을 가능성을 배제하기 위해서 0으로 변경한다.
+    &lt;ul&gt;
+      &lt;li&gt;0이 아닌 삭제를 할 경우 뒤의 값이 앞으로 당겨져서 의도와는 다른 수를 찾게 되는 경우가 있음&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;스택에 마지막에 쌓인 값과 바로 앞에 쌓인 값이 같다면 pop()을 통해 빼준다.
+    &lt;ul&gt;
+      &lt;li&gt;문제에서는 2개가 같은 경우에 빼주기떄문에 결과값에 += 2를 해준다.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;최종 결과값을 출력해준다.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h2 id=&quot;5-짚고-넘어가기&quot;&gt;5. 짚고 넘어가기&lt;/h2&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;문제를 해결하는 방법은 크게 2가지 정도가 있는 것같다.
+    &lt;ul&gt;
+      &lt;li&gt;단순 코딩 == 브루트 포스&lt;/li&gt;
+      &lt;li&gt;&lt;strong&gt;스택&lt;/strong&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;solution&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;board&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;moves&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;cols&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;list&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;map&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;lambda&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;x&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;list&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;filter&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;lambda&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;y&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;y&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;x&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)),&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;zip&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;*&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;board&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)))&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;a&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;s&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;
+
+    &lt;span class=&quot;k&quot;&gt;for&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;m&lt;/span&gt; &lt;span class=&quot;ow&quot;&gt;in&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;moves&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
+        &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;len&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;cols&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;m&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;])&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
+            &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;d&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;cols&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;m&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;].&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;pop&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;==&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;l&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;s&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;pop&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()):&lt;/span&gt;
+                &lt;span class=&quot;n&quot;&gt;a&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;
+            &lt;span class=&quot;k&quot;&gt;else&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
+                &lt;span class=&quot;n&quot;&gt;s&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;extend&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;([&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;l&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;d&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;])&lt;/span&gt;
+
+    &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;a&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;[정답 출처 : 프로그래머스 다른 사람의 풀이]&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;다른 분이 푼 문제를 봤는데, 해당 문제를 lambda와 filter의 조화로 해결하여서 굉장히 인상깊었다. 이런 식으로 문제를 해결한다면 시간복잡도는 O(N)으로 기존보다 훨씬 메모리 효율이 좋을 것이라는 생각이 들었다.&lt;/li&gt;
+&lt;/ul&gt;</content><author><name>You Nicholas</name></author><category term="코딩테스트" /><category term="알고리즘" /><category term="파이썬" /><category term="코테" /><category term="프로그래머스" /><category term="Level_1" /><summary type="html">프로그래머스 크레인 인형뽑기 게임 문제 풀이</summary></entry><entry><title type="html">[파이썬][Codility_][코디리티] TapeEquilibrium</title><link href="http://localhost:4000/%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8/TapeEquilibrium/" rel="alternate" type="text/html" title="[파이썬][Codility_][코디리티] TapeEquilibrium" /><published>2022-06-23T00:00:00+09:00</published><updated>2022-06-24T00:00:00+09:00</updated><id>http://localhost:4000/%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8/TapeEquilibrium</id><content type="html" xml:base="http://localhost:4000/%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8/TapeEquilibrium/">&lt;h2 id=&quot;1-문제&quot;&gt;1. 문제&lt;/h2&gt;
+
+&lt;p&gt;A non-empty array A consisting of N integers is given. Array A represents numbers on a tape.&lt;/p&gt;
+
+&lt;p&gt;Any integer P, such that 0 &amp;lt; P &amp;lt; N, splits this tape into two non-empty parts: A[0], A[1], …, A[P − 1] and A[P], A[P + 1], …, A[N − 1].&lt;/p&gt;
+
+&lt;table&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;The difference between the two parts is the value of:&lt;/td&gt;
+      &lt;td&gt;(A[0] + A[1] + … + A[P − 1]) − (A[P] + A[P + 1] + … + A[N − 1])&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;p&gt;In other words, it is the absolute difference between the sum of the first part and the sum of the second part.&lt;/p&gt;
+
+&lt;p&gt;For example, consider array A such that:&lt;/p&gt;
+
+&lt;p&gt;A[0] = 3
+  A[1] = 1
+  A[2] = 2
+  A[3] = 4
+  A[4] = 3
+We can split this tape in four places:&lt;/p&gt;
+
+&lt;p&gt;P = 1, difference = |3 − 10| = 7
+P = 2, difference = |4 − 9| = 5
+P = 3, difference = |6 − 7| = 1
+P = 4, difference = |10 − 3| = 7
+Write a function:&lt;/p&gt;
+
+&lt;p&gt;def solution(A)&lt;/p&gt;
+
+&lt;p&gt;that, given a non-empty array A of N integers, returns the minimal difference that can be achieved.&lt;/p&gt;
+
+&lt;p&gt;For example, given:&lt;/p&gt;
+
+&lt;p&gt;A[0] = 3
+  A[1] = 1
+  A[2] = 2
+  A[3] = 4
+  A[4] = 3
+the function should return 1, as explained above.&lt;/p&gt;
+
+&lt;p&gt;Write an efficient algorithm for the following assumptions:&lt;/p&gt;
+
+&lt;p&gt;N is an integer within the range [2..100,000];
+each element of array A is an integer within the range [−1,000..1,000].
+Copyright 2009–2022 by Codility Limited. All Rights Reserved. Unauthorized copying, publication or disclosure prohibited.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;출처: Codility_, https://app.codility.com/programmers/&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h2 id=&quot;2-해결방법-시간복잡도&quot;&gt;2. 해결방법 시간복잡도&lt;/h2&gt;
+&lt;ol&gt;
+  &lt;li&gt;단순 코딩 O(N)&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h2 id=&quot;3-문제-해결-및-코드&quot;&gt;3. 문제 해결 및 코드&lt;/h2&gt;
+&lt;hr /&gt;
+
+&lt;script src=&quot;https://gist.github.com/godhin/49a2fb5ae8c51b4ffb7b83fbf11778b4.js&quot;&gt;&lt;/script&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;h2 id=&quot;주석을-참고하면서-이해를-돕습니다&quot;&gt;주석을 참고하면서 이해를 돕습니다.&lt;/h2&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;4-알고리즘-및-해설&quot;&gt;4. 알고리즘 및 해설&lt;/h2&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;문제의 요점은 P까지의 합과 P이후의 합의 차를 절대값으로 구하고, 모든 P의 수 중 가장 작은 값을 도출하는 것이다.&lt;/li&gt;
+  &lt;li&gt;0이라는 값과 A 배열의 모든 합을 좌측 우측으로 지정해준다.
+    &lt;ol&gt;
+      &lt;li&gt;결과값은 None으로 지정해줘서 계속해서 업데이트 해준다.&lt;/li&gt;
+    &lt;/ol&gt;
+  &lt;/li&gt;
+  &lt;li&gt;반복문을 통해 좌 우측 값을 업데이트하고 값을 계산해서, min()을 통해 결과값들을 비교후 가장 작은 값을 도출해준다.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h2 id=&quot;5-내가-처음-시도했던-방식&quot;&gt;5. 내가 처음 시도했던 방식&lt;/h2&gt;
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;result&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;bp&quot;&gt;None&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;for&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;i&lt;/span&gt; &lt;span class=&quot;ow&quot;&gt;in&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;range&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;len&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;A&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)):&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;result&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;==&lt;/span&gt; &lt;span class=&quot;bp&quot;&gt;None&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;result&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;abs&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;sum&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;A&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[:&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;])&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;sum&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;A&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:]))&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;else&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;result&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;min&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;abs&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;sum&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;A&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[:&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;])&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;sum&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;A&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:])),&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;result&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;result&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;위와 같은 방법이나 리스트내에서 현재 위치 i 이전의 합과, 현재 위치 i 이후의 값을 계산한다는 점에서 시간복잡도가 높게 나온 것 같다.
+    &lt;ul&gt;
+      &lt;li&gt;해당 방식으로 해결한 결과 시간 복잡도 O(N*N)&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;</content><author><name>You Nicholas</name></author><category term="코딩테스트" /><category term="알고리즘" /><category term="파이썬" /><category term="코테" /><category term="Codility" /><category term="코디리티" /><category term="Lessons" /><summary type="html">Codility TapeEquilibrium 문제 풀이</summary></entry><entry><title type="html">[파이썬][Codility_][코디리티] FrogJmp</title><link href="http://localhost:4000/%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8/FrogJmp/" rel="alternate" type="text/html" title="[파이썬][Codility_][코디리티] FrogJmp" /><published>2022-06-23T00:00:00+09:00</published><updated>2022-06-24T00:00:00+09:00</updated><id>http://localhost:4000/%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8/FrogJmp</id><content type="html" xml:base="http://localhost:4000/%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8/FrogJmp/">&lt;h2 id=&quot;1-문제&quot;&gt;1. 문제&lt;/h2&gt;
 
 &lt;p&gt;A small frog wants to get to the other side of the road. The frog is currently located at position X and wants to get to a position greater than or equal to Y. The small frog always jumps a fixed distance, D.&lt;/p&gt;
 
@@ -1311,61 +1408,4 @@ Copyright 2009–2022 by Codility Limited. All Rights Reserved. Unauthorized cop
 &lt;h2 id=&quot;5-알아두면-좋은-정보&quot;&gt;5. 알아두면 좋은 정보&lt;/h2&gt;
 &lt;ol&gt;
   &lt;li&gt;문제 자체는 간단하나 &lt;em&gt;math&lt;/em&gt; 라이브러리를 사용해서 보다 쉽게 문제 해결이 가능하다.&lt;/li&gt;
-&lt;/ol&gt;</content><author><name>You Nicholas</name></author><category term="코딩테스트" /><category term="알고리즘" /><category term="파이썬" /><category term="코테" /><category term="Codility" /><category term="코디리티" /><category term="Lessons" /><summary type="html">Codility FrogJmp 문제 풀이</summary></entry><entry><title type="html">[파이썬][Codility_][코디리티] PermMissingElem</title><link href="http://localhost:4000/%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8/PermMissingElem/" rel="alternate" type="text/html" title="[파이썬][Codility_][코디리티] PermMissingElem" /><published>2022-06-23T00:00:00+09:00</published><updated>2022-06-24T00:00:00+09:00</updated><id>http://localhost:4000/%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8/PermMissingElem</id><content type="html" xml:base="http://localhost:4000/%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8/PermMissingElem/">&lt;h2 id=&quot;1-문제&quot;&gt;1. 문제&lt;/h2&gt;
-
-&lt;p&gt;Task description
-An array A consisting of N different integers is given. The array contains integers in the range [1..(N + 1)], which means that exactly one element is missing.&lt;/p&gt;
-
-&lt;p&gt;Your goal is to find that missing element.&lt;/p&gt;
-
-&lt;p&gt;Write a function:&lt;/p&gt;
-
-&lt;p&gt;def solution(A)&lt;/p&gt;
-
-&lt;p&gt;that, given an array A, returns the value of the missing element.&lt;/p&gt;
-
-&lt;p&gt;For example, given array A such that:&lt;/p&gt;
-
-&lt;p&gt;A[0] = 2
-  A[1] = 3
-  A[2] = 1
-  A[3] = 5
-the function should return 4, as it is the missing element.&lt;/p&gt;
-
-&lt;p&gt;Write an efficient algorithm for the following assumptions:&lt;/p&gt;
-
-&lt;p&gt;N is an integer within the range [0..100,000];
-the elements of A are all distinct;
-each element of array A is an integer within the range [1..(N + 1)].
-Copyright 2009–2022 by Codility Limited. All Rights Reserved. Unauthorized copying, publication or disclosure prohibited.&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;출처: Codility_, https://app.codility.com/programmers/&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;h2 id=&quot;2-해결방법-시간복잡도&quot;&gt;2. 해결방법 시간복잡도&lt;/h2&gt;
-&lt;ol&gt;
-  &lt;li&gt;단순 코딩 O(N) or O(Nlog(N))&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;h2 id=&quot;3-문제-해결-및-코드&quot;&gt;3. 문제 해결 및 코드&lt;/h2&gt;
-&lt;hr /&gt;
-
-&lt;script src=&quot;https://gist.github.com/godhin/5afa6fba851afcc2151af39c0909989b.js&quot;&gt;&lt;/script&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;
-    &lt;h2 id=&quot;주석을-참고하면서-이해를-돕습니다&quot;&gt;주석을 참고하면서 이해를 돕습니다.&lt;/h2&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&quot;4-알고리즘-및-해설&quot;&gt;4. 알고리즘 및 해설&lt;/h2&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;문제의 요점은 순차적으로 증가하는 배열에서 규칙에 맞지않는 수를 찾는 것이다.&lt;/li&gt;
-  &lt;li&gt;내가 사용한 방법은 해당 규칙의 모든 수의 합 - 배열의 합을 한 것이다.
-    &lt;ul&gt;
-      &lt;li&gt;이때 예외처리를 해야하는 것은 배열이 없는 경우는 1로 출력한다.&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-&lt;/ol&gt;</content><author><name>You Nicholas</name></author><category term="코딩테스트" /><category term="알고리즘" /><category term="파이썬" /><category term="코테" /><category term="Codility" /><category term="코디리티" /><category term="Lessons" /><summary type="html">Codility PermMissingElem 문제 풀이</summary></entry></feed>
+&lt;/ol&gt;</content><author><name>You Nicholas</name></author><category term="코딩테스트" /><category term="알고리즘" /><category term="파이썬" /><category term="코테" /><category term="Codility" /><category term="코디리티" /><category term="Lessons" /><summary type="html">Codility FrogJmp 문제 풀이</summary></entry></feed>

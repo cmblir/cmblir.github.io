@@ -545,6 +545,12 @@ var store = [{
         "url": "/%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8/42840/",
         "teaser": null
       },{
+        "title": "[파이썬][Leetcode][릿코드] Concatenation of Array",
+        "excerpt":"1. 문제 1929. Concatenation of Array Easy Given an integer array nums of length n, you want to create an array ans of length 2n where ans[i] == nums[i] and ans[i + n] == nums[i] for 0 &lt;= i &lt; n (0-indexed). Specifically, ans is the concatenation of two nums...","categories": ["코딩테스트"],
+        "tags": ["알고리즘","파이썬","코테","Leetcode","릿코드"],
+        "url": "/%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8/1929/",
+        "teaser": null
+      },{
         "title": "[파이썬][백준 11050번] 이항 계수 1",
         "excerpt":"1. 문제 [Bronze I] 이항 계수 1 - 11050 문제 링크 성능 요약 메모리: 30840 KB, 시간: 68 ms 분류 조합론(combinatorics), 구현(implementation), 수학(math) 문제 설명 자연수 N\\(N\\)과 정수 K\\(K\\)가 주어졌을 때 이항 계수 (NK)\\(\\binom{N}{K}\\)를 구하는 프로그램을 작성하시오. 입력 첫째 줄에 N\\(N\\)과 K\\(K\\)가 주어진다. (1 ≤ N\\(N\\) ≤ 10, 0 ≤...","categories": ["코딩테스트"],
         "tags": ["알고리즘","파이썬","코테","백준","Bronze"],
@@ -611,6 +617,36 @@ var store = [{
         "url": "/%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8/10093/",
         "teaser": null
       },{
+        "title": "[파이썬][Leetcode][릿코드] squares of a sorted array",
+        "excerpt":"1. 문제 1. Two Sum Easy Given an array of integers nums&nbsp;and an integer target, return indices of the two numbers such that they add up to target. You may assume that each input would have exactly one solution, and you may not use the same element twice. You can...","categories": ["코딩테스트"],
+        "tags": ["알고리즘","파이썬","코테","Leetcode","릿코드"],
+        "url": "/%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8/1/",
+        "teaser": null
+      },{
+        "title": "[파이썬][Leetcode][릿코드] 3Sum",
+        "excerpt":"1. 문제 15. 3Sum Medium Given an integer array nums, return all the triplets [nums[i], nums[j], nums[k]] such that i != j, i != k, and j != k, and nums[i] + nums[j] + nums[k] == 0. Notice that the solution set must not contain duplicate triplets. &nbsp; Example 1:...","categories": ["코딩테스트"],
+        "tags": ["알고리즘","파이썬","코테","Leetcode","릿코드"],
+        "url": "/%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8/15/",
+        "teaser": null
+      },{
+        "title": "[파이썬][Leetcode][릿코드] find numbers with even number of digits",
+        "excerpt":"1. 문제  Find Numbers with Even Number of Digits Given an array nums of integers, return how many of them contain an even number of digits. &nbsp; Example 1: Input: nums = [12,345,2,6,7896] Output: 2 Explanation: 12 contains 2 digits (even number of digits).&nbsp; 345 contains 3 digits (odd number...","categories": ["코딩테스트"],
+        "tags": ["알고리즘","파이썬","코테","Leetcode","릿코드"],
+        "url": "/%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8/find-numbers-with-even-number-of-digits/",
+        "teaser": null
+      },{
+        "title": "[파이썬][Leetcode][릿코드] max consecutive ones",
+        "excerpt":"1. 문제  Max Consecutive Ones Given a binary array nums, return the maximum number of consecutive 1's in the array. &nbsp; Example 1: Input: nums = [1,1,0,1,1,1] Output: 3 Explanation: The first two digits or the last three digits are consecutive 1s. The maximum number of consecutive 1s is 3....","categories": ["코딩테스트"],
+        "tags": ["알고리즘","파이썬","코테","Leetcode","릿코드"],
+        "url": "/%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8/max-consecutive-ones/",
+        "teaser": null
+      },{
+        "title": "[파이썬][Leetcode][릿코드] squares of a sorted array",
+        "excerpt":"1. 문제  Squares of a Sorted Array Given an integer array nums sorted in non-decreasing order, return an array of the squares of each number sorted in non-decreasing order. &nbsp; Example 1: Input: nums = [-4,-1,0,3,10] Output: [0,1,9,16,100] Explanation: After squaring, the array becomes [16,1,0,9,100]. After sorting, it becomes [0,1,9,16,100]....","categories": ["코딩테스트"],
+        "tags": ["알고리즘","파이썬","코테","Leetcode","릿코드"],
+        "url": "/%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8/squares-of-a-sorted-array/",
+        "teaser": null
+      },{
         "title": "처음으로 면접을 보았다.",
         "excerpt":"너무 오랜만에 입어보는 정장 🤵🏻‍♂️ 1. 고민하고 고민하다. 거의 방치하다싶이 학생들을 가르키는 부트캠프를 끝마치면서 처음으로 회사를 지원하게 되었다. 내가 이 회사에 이끌리면서 지원하게 된 계기는 이커머스 회사라는 점과 이커머스 회사치곤 보기 드문 D-C라는 점 그리고 훌륭한 리더가 있는 곳이 너무 맘에 들어 많이 아쉬운 스펙이지만 고민하고 고민하다가 지원하게 되었다. 2....","categories": ["일상"],
         "tags": ["일상","면접"],
@@ -629,10 +665,52 @@ var store = [{
         "url": "/%EC%9E%A5%EA%B3%A0/Django-&-AWS/",
         "teaser": null
       },{
+        "title": "[파이썬][Leetcode][릿코드] Palindrome Number",
+        "excerpt":"1. 문제 9. Palindrome Number Easy Given an integer x, return true if x is palindrome integer. An integer is a palindrome when it reads the same backward as forward. For example, 121 is a palindrome while 123 is not. &nbsp; Example 1: Input: x = 121 Output: true Explanation:...","categories": ["코딩테스트"],
+        "tags": ["알고리즘","파이썬","코테","Leetcode","릿코드"],
+        "url": "/%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8/9/",
+        "teaser": null
+      },{
+        "title": "[파이썬][Leetcode][릿코드] number of different integers in a string",
+        "excerpt":"1. 문제 1805. Number of Different Integers in a String Easy You are given a string word that consists of digits and lowercase English letters. You will replace every non-digit character with a space. For example, \"a123bc34d8ef34\" will become \" 123&nbsp; 34 8&nbsp; 34\". Notice that you are left with...","categories": ["코딩테스트"],
+        "tags": ["알고리즘","파이썬","코테","Leetcode","릿코드"],
+        "url": "/%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8/1805/",
+        "teaser": null
+      },{
         "title": "라이브 코딩",
         "excerpt":"1. 문제 리스트 길이가 긴 리스트에서 내가 찾아야할 값이 존재하는 위치 찾기 2. 해결방법 및 시간복잡도 브루트포스 O(N) 이진탐색 O(logN) index 라이브러리 O(1) bisect 라이브러리 O(logN) 3. 문제 해결 및 코드 주석을 참고하면서 이해를 돕습니다. 4. 알고리즘 간략 설명 브루트포스 알고리즘 문제의 뜻 그래도 단순하게 “난폭한 힘” 이다. 단순 무식하게...","categories": ["알고리즘"],
         "tags": ["알고리즘","라이브코딩","코테"],
         "url": "/%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98/%EB%9D%BC%EC%9D%B4%EB%B8%8C%EC%BD%94%EB%94%A9-%ED%9B%84%EA%B8%B0/",
+        "teaser": null
+      },{
+        "title": "[파이썬][Leetcode][릿코드] Merge Sorted Array",
+        "excerpt":"1. 문제 88. Merge Sorted Array Easy You are given two integer arrays nums1 and nums2, sorted in non-decreasing order, and two integers m and n, representing the number of elements in nums1 and nums2 respectively. Merge nums1 and nums2 into a single array sorted in non-decreasing order. The final...","categories": ["코딩테스트"],
+        "tags": ["알고리즘","파이썬","코테","Leetcode","릿코드"],
+        "url": "/%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8/88/",
+        "teaser": null
+      },{
+        "title": "[파이썬][Leetcode][릿코드] Perfect Number",
+        "excerpt":"1. 문제 507. Perfect Number Easy A perfect number is a positive integer that is equal to the sum of its positive divisors, excluding the number itself. A divisor of an integer x is an integer that can divide x evenly. Given an integer n, return true if n is...","categories": ["코딩테스트"],
+        "tags": ["알고리즘","파이썬","코테","Leetcode","릿코드"],
+        "url": "/%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8/507/",
+        "teaser": null
+      },{
+        "title": "[파이썬][Leetcode][릿코드] build array from permutation",
+        "excerpt":"1. 문제 1920. Build Array from Permutation Easy Given a zero-based permutation nums (0-indexed), build an array ans of the same length where ans[i] = nums[nums[i]] for each 0 &lt;= i &lt; nums.length and return it. A zero-based permutation nums is an array of distinct integers from 0 to nums.length...","categories": ["코딩테스트"],
+        "tags": ["알고리즘","파이썬","코테","Leetcode","릿코드"],
+        "url": "/%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8/1920/",
+        "teaser": null
+      },{
+        "title": "[파이썬][Leetcode][릿코드] Valid Parentheses",
+        "excerpt":"1. 문제 20. Valid Parentheses Easy Given a string s containing just the characters '(', ')', '{', '}', '[' and ']', determine if the input string is valid. An input string is valid if: Open brackets must be closed by the same type of brackets. Open brackets must be closed...","categories": ["코딩테스트"],
+        "tags": ["알고리즘","파이썬","코테","Leetcode","릿코드"],
+        "url": "/%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8/20/",
+        "teaser": null
+      },{
+        "title": "[파이썬][Leetcode][릿코드] Final Value of Variable After Performing Operations",
+        "excerpt":"1. 문제 2011. Final Value of Variable After Performing Operations Easy There is a programming language with only four operations and one variable X: ++X and X++ increments the value of the variable X by 1. --X and X-- decrements the value of the variable X by 1. Initially, the...","categories": ["코딩테스트"],
+        "tags": ["알고리즘","파이썬","코테","Leetcode","릿코드"],
+        "url": "/%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8/2011/",
         "teaser": null
       },{
         "title": "DP로 해결하기",
