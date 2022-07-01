@@ -611,6 +611,12 @@ var store = [{
         "url": "/%EA%B9%83/Document-Manager-from-Hell-git,-github/",
         "teaser": null
       },{
+        "title": "[파이썬][백준 1110번] 더하기 사이클",
+        "excerpt":"1. 문제 [Bronze I] 더하기 사이클 - 1110 문제 링크 성능 요약 메모리: 30864 KB, 시간: 72 ms 분류 구현(implementation), 수학(math) 문제 설명 0보다 크거나 같고, 99보다 작거나 같은 정수가 주어질 때 다음과 같은 연산을 할 수 있다. 먼저 주어진 수가 10보다 작다면 앞에 0을 붙여 두 자리 수로 만들고,...","categories": ["코딩테스트"],
+        "tags": ["알고리즘","파이썬","코테","백준","Bronze"],
+        "url": "/%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8/1110/",
+        "teaser": null
+      },{
         "title": "[파이썬][백준 10093번] 숫자",
         "excerpt":"1. 문제 [Bronze II] 숫자 - 10093 문제 링크 성능 요약 메모리: 30840 KB, 시간: 128 ms 분류 구현(implementation) 문제 설명 두 양의 정수가 주어졌을 때, 두 수 사이에 있는 정수를 모두 출력하는 프로그램을 작성하시오. 입력 두 정수 A와 B가 주어진다. 출력 첫째 줄에 두 수 사이에 있는 수의 개수를...","categories": ["코딩테스트"],
         "tags": ["알고리즘","파이썬","코테","백준","Bronze"],
@@ -867,5 +873,11 @@ var store = [{
         "excerpt":"밋업 이거는 오늘 참여한 Gooroomee 밋업 세미나행사 나에게 행사란 아직 취업을 못해본 나에게 밋업 행사는 새로운 자극이다. 회사에 대한 열망, 궁금증에 대한 해소, 그리고 그들의 성장을 모두 느낄 수 있게 해준다. 그동안 코로나와 부트캠프 일정으로 바쁘게 지내며 오프라인 행사를 참여하지 못하다가 오랜만에 오프라인 행사에 참여하게 되었다. 구루미의 행사는 처음으로 참여하게...","categories": ["일상"],
         "tags": ["일상","밋업"],
         "url": "/%EC%9D%BC%EC%83%81/Gooroomee/",
+        "teaser": null
+      },{
+        "title": "[파이썬][백준 11104번] Fridge of Your Dreams",
+        "excerpt":"1. 문제 [Bronze I] Fridge of Your Dreams - 11104 문제 링크 성능 요약 메모리: 30840 KB, 시간: 144 ms 분류 구현(implementation), 수학(math) 문제 설명 Eirik drinks a lot of Bingo Cola to help him program faster, and over the years he has burned many unnecessary calories walking all the...","categories": ["코딩테스트"],
+        "tags": ["알고리즘","파이썬","코테","백준","Bronze"],
+        "url": "/%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8/11104/",
         "teaser": null
       }]
