@@ -185,6 +185,18 @@ var store = [{
         "url": "/%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8/1085/",
         "teaser": null
       },{
+        "title": "[파이썬][백준 24904번] Baekjoon Wordline Judge",
+        "excerpt":"1. 문제 [Unrated] Baekjoon Wordline Judge - 24904 문제 링크 성능 요약 메모리: 4528 KB, 시간: 0 ms 분류 Empty 문제 설명 Wordle 287 3/6 ⬜⬜🟩🟨⬜ ⬜⬜⬜🟨🟨 🟩🟩🟩🟩🟩 입력 Empty 출력 다섯 글자 영단어를 대문자로 써서 제출한다. 출처: 백준, https://https://www.acmicpc.net/ 2. 해결방법 시간복잡도 txt 3. 문제 해결 및 코드 RETCH...","categories": ["코딩테스트"],
+        "tags": ["알고리즘","파이썬","코테","백준","Unrated"],
+        "url": "/%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8/24904/",
+        "teaser": null
+      },{
+        "title": "[파이썬][백준 24905번] 24905",
+        "excerpt":"1. 문제 [Unrated] 24905번 문제 - 24905 문제 링크 성능 요약 메모리: 4528 KB, 시간: 0 ms 분류 구현(implementation) 문제 설명 이 문제는 대회가 끝나면 문제 번호로 24905번을 부여받을 예정이다. 제출할 소스가 부여받을 제출 번호를 그대로 출력하는 프로그램을 작성하시오. 입력 Empty 출력 제출할 소스가 부여받을 제출 번호를 출력한다. 출처: 백준,...","categories": ["코딩테스트"],
+        "tags": ["알고리즘","파이썬","코테","백준","Unrated"],
+        "url": "/%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8/24905/",
+        "teaser": null
+      },{
         "title": "[파이썬][백준 10170번] NFC West vs North",
         "excerpt":"1. 문제 [Bronze V] NFC West vs North - 10170 문제 링크 성능 요약 메모리: 30864 KB, 시간: 72 ms 분류 구현(implementation) 문제 설명 동혁이를 위해 NFC 서부와 북부 디비전 순위를 출력하는 프로그램을 작성하시오. 입력 없음 출력 예제와 같이 NFC 서부와 북부 디비전 순위를 출력한다. 출처: 백준, https://https://www.acmicpc.net/ 2. 해결방법...","categories": ["코딩테스트"],
         "tags": ["알고리즘","파이썬","코테","백준","Bronze"],
@@ -551,6 +563,30 @@ var store = [{
         "url": "/%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8/1929/",
         "teaser": null
       },{
+        "title": "[파이썬][백준 15631번] BOJeopardy",
+        "excerpt":"1. 문제 [Unrated] BOJeopardy - 15631 문제 링크 성능 요약 메모리: 4528 KB, 시간: 0 ms 분류 Empty 문제 설명 ????에 들어갈 말은 무엇인가? 답은 숫자와 소문자 영어 알파벳으로만 작성하고, 띄어쓰기나 é 등의 악센트가 있으면 제거해야 한다. 같은 답을 여러 형태로 출력할 수 있으면 (예를 들어 obama, barackobama, barackhusseinobamaii 등)...","categories": ["코딩테스트"],
+        "tags": ["알고리즘","파이썬","코테","백준","Unranted"],
+        "url": "/%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8/15631/",
+        "teaser": null
+      },{
+        "title": "[파이썬][백준 15639번] Rick",
+        "excerpt":"1. 문제 [Unrated] Rick - 15639 문제 링크 성능 요약 메모리: 30840 KB, 시간: 68 ms 분류 구현(implementation), 문자열(string) 문제 설명 릭이 하지 않는 행동은 무엇일까? 입력 한 줄로 행동이 주어진다. 알파벳과 띄어쓰기로만 이루어져 있다. 첫 단어 이전과 마지막 단어 이후에 띄어쓰기는 없으며, 단어 사이에는 하나의 띄어쓰기만 들어간다. 입력의 길이는...","categories": ["코딩테스트"],
+        "tags": ["알고리즘","파이썬","코테","백준","Unrated"],
+        "url": "/%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8/15639/",
+        "teaser": null
+      },{
+        "title": "[파이썬][백준 15641번] SUPER SUPER BINARY SEARCH DELUXE 2.5: THE LEGEND OF THE GOLDEN MAZASSUMNIDA, EPISODE 2: THE MAZWAETL UNIVERSE, PART 2: THE PARALLEL UNIVERSE AND THE LOST MAZASSUMNIDA: GAME OF THE YEAR EDITION",
+        "excerpt":"1. 문제 [Unrated] SUPER SUPER BINARY SEARCH DELUXE 2.5: THE LEGEND OF THE GOLDEN MAZASSUMNIDA, EPISODE 2: THE MAZWAETL UNIVERSE, PART 2: THE PARALLEL UNIVERSE AND THE LOST MAZASSUMNIDA: GAME OF THE YEAR EDITION - 15641 문제 링크 성능 요약 메모리: 4528 KB, 시간: 0 ms 분류 이분 탐색(binary_search), 브루트포스...","categories": ["코딩테스트"],
+        "tags": ["알고리즘","파이썬","코테","백준","Unrated"],
+        "url": "/%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8/15641/",
+        "teaser": null
+      },{
+        "title": "[파이썬][백준 15643번] Yee",
+        "excerpt":"1. 문제 [Unrated] Yee - 15643 문제 링크 성능 요약 메모리: 4528 KB, 시간: 0 ms 분류 구현(implementation) 문제 설명 Ba ba ba ba, ba, ba ba, baa, ba ba Ba ba ba ba, ba, ba ba Yee Ba ba ba ba, ba, ba ba, baa, ba ba Ba ba...","categories": ["코딩테스트"],
+        "tags": ["알고리즘","파이썬","코테","백준","Unrated"],
+        "url": "/%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8/15643/",
+        "teaser": null
+      },{
         "title": "[파이썬][백준 11050번] 이항 계수 1",
         "excerpt":"1. 문제 [Bronze I] 이항 계수 1 - 11050 문제 링크 성능 요약 메모리: 30840 KB, 시간: 68 ms 분류 조합론(combinatorics), 구현(implementation), 수학(math) 문제 설명 자연수 N\\(N\\)과 정수 K\\(K\\)가 주어졌을 때 이항 계수 (NK)\\(\\binom{N}{K}\\)를 구하는 프로그램을 작성하시오. 입력 첫째 줄에 N\\(N\\)과 K\\(K\\)가 주어진다. (1 ≤ N\\(N\\) ≤ 10, 0 ≤...","categories": ["코딩테스트"],
         "tags": ["알고리즘","파이썬","코테","백준","Bronze"],
@@ -621,6 +657,12 @@ var store = [{
         "excerpt":"1. 문제 [Bronze II] 숫자 - 10093 문제 링크 성능 요약 메모리: 30840 KB, 시간: 128 ms 분류 구현(implementation) 문제 설명 두 양의 정수가 주어졌을 때, 두 수 사이에 있는 정수를 모두 출력하는 프로그램을 작성하시오. 입력 두 정수 A와 B가 주어진다. 출력 첫째 줄에 두 수 사이에 있는 수의 개수를...","categories": ["코딩테스트"],
         "tags": ["알고리즘","파이썬","코테","백준","Bronze"],
         "url": "/%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8/10093/",
+        "teaser": null
+      },{
+        "title": "[파이썬][백준 11104번] Fridge of Your Dreams",
+        "excerpt":"1. 문제 [Bronze I] Fridge of Your Dreams - 11104 문제 링크 성능 요약 메모리: 30840 KB, 시간: 144 ms 분류 구현(implementation), 수학(math) 문제 설명 Eirik drinks a lot of Bingo Cola to help him program faster, and over the years he has burned many unnecessary calories walking all the...","categories": ["코딩테스트"],
+        "tags": ["알고리즘","파이썬","코테","백준","Bronze"],
+        "url": "/%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8/11104/",
         "teaser": null
       },{
         "title": "[파이썬][Leetcode][릿코드] squares of a sorted array",
@@ -873,11 +915,5 @@ var store = [{
         "excerpt":"밋업 이거는 오늘 참여한 Gooroomee 밋업 세미나행사 나에게 행사란 아직 취업을 못해본 나에게 밋업 행사는 새로운 자극이다. 회사에 대한 열망, 궁금증에 대한 해소, 그리고 그들의 성장을 모두 느낄 수 있게 해준다. 그동안 코로나와 부트캠프 일정으로 바쁘게 지내며 오프라인 행사를 참여하지 못하다가 오랜만에 오프라인 행사에 참여하게 되었다. 구루미의 행사는 처음으로 참여하게...","categories": ["일상"],
         "tags": ["일상","밋업"],
         "url": "/%EC%9D%BC%EC%83%81/Gooroomee/",
-        "teaser": null
-      },{
-        "title": "[파이썬][백준 11104번] Fridge of Your Dreams",
-        "excerpt":"1. 문제 [Bronze I] Fridge of Your Dreams - 11104 문제 링크 성능 요약 메모리: 30840 KB, 시간: 144 ms 분류 구현(implementation), 수학(math) 문제 설명 Eirik drinks a lot of Bingo Cola to help him program faster, and over the years he has burned many unnecessary calories walking all the...","categories": ["코딩테스트"],
-        "tags": ["알고리즘","파이썬","코테","백준","Bronze"],
-        "url": "/%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8/11104/",
         "teaser": null
       }]
