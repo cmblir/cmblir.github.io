@@ -161,6 +161,12 @@ var store = [{
         "url": "/%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8/10809/",
         "teaser": null
       },{
+        "title": "[파이썬][백준 1152번] 단어의 개수",
+        "excerpt":"1. 문제 [Bronze II] 단어의 개수 - 1152 문제 링크 성능 요약 메모리: 37996 KB, 시간: 100 ms 분류 구현(implementation), 문자열(string) 문제 설명 영어 대소문자와 공백으로 이루어진 문자열이 주어진다. 이 문자열에는 몇 개의 단어가 있을까? 이를 구하는 프로그램을 작성하시오. 단, 한 단어가 여러 번 등장하면 등장한 횟수만큼 모두 세어야 한다....","categories": ["코딩테스트"],
+        "tags": ["알고리즘","파이썬","코테","백준","Bronze"],
+        "url": "/%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8/1152/",
+        "teaser": null
+      },{
         "title": "[파이썬][백준 10250번] ACM 호텔",
         "excerpt":"1. 문제 [Bronze III] ACM 호텔 - 10250 문제 링크 성능 요약 메모리: 30864 KB, 시간: 76 ms 분류 사칙연산(arithmetic), 구현(implementation), 수학(math) 문제 설명 ACM 호텔 매니저 지우는 손님이 도착하는 대로 빈 방을 배정하고 있다. 고객 설문조사에 따르면 손님들은 호텔 정문으로부터 걸어서 가장 짧은 거리에 있는 방을 선호한다고 한다. 여러분은...","categories": ["코딩테스트"],
         "tags": ["알고리즘","파이썬","코테","백준","Bronze"],
@@ -207,6 +213,12 @@ var store = [{
         "excerpt":"1. 문제 [Bronze V] NFC West vs North - 10170 문제 링크 성능 요약 메모리: 30864 KB, 시간: 72 ms 분류 구현(implementation) 문제 설명 동혁이를 위해 NFC 서부와 북부 디비전 순위를 출력하는 프로그램을 작성하시오. 입력 없음 출력 예제와 같이 NFC 서부와 북부 디비전 순위를 출력한다. 출처: 백준, https://https://www.acmicpc.net/ 2. 해결방법...","categories": ["코딩테스트"],
         "tags": ["알고리즘","파이썬","코테","백준","Bronze"],
         "url": "/%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8/10170/",
+        "teaser": null
+      },{
+        "title": "[파이썬][백준 11382번] 꼬마 정민",
+        "excerpt":"1. 문제 [Bronze V] 꼬마 정민 - 11382 문제 링크 성능 요약 메모리: 30860 KB, 시간: 68 ms 분류 사칙연산(arithmetic), 수학(math) 문제 설명 꼬마 정민이는 이제 A + B 정도는 쉽게 계산할 수 있다. 이제 A + B + C를 계산할 차례이다! 입력 첫 번째 줄에 A, B, C (1...","categories": ["코딩테스트"],
+        "tags": ["알고리즘","파이썬","코테","백준","Bronze"],
+        "url": "/%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8/11382/",
         "teaser": null
       },{
         "title": "[파이썬][프로그래머스] 짝수와 홀수",
@@ -633,6 +645,12 @@ var store = [{
         "excerpt":"1. 문제 [Bronze I] 팰린드롬인지 확인하기 - 10988 문제 링크 성능 요약 메모리: 30840 KB, 시간: 68 ms 분류 구현(implementation), 문자열(string) 문제 설명 알파벳 소문자로만 이루어진 단어가 주어진다. 이때, 이 단어가 팰린드롬인지 아닌지 확인하는 프로그램을 작성하시오. 팰린드롬이란 앞으로 읽을 때와 거꾸로 읽을 때 똑같은 단어를 말한다. level, noon은 팰린드롬이고, baekjoon,...","categories": ["코딩테스트"],
         "tags": ["알고리즘","파이썬","코테","백준","Bronze"],
         "url": "/%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8/10988/",
+        "teaser": null
+      },{
+        "title": "[파이썬][백준 11557번] Yangjojang of The Year",
+        "excerpt":"1. 문제 [Bronze I] Yangjojang of The Year - 11557 문제 링크 성능 요약 메모리: 30840 KB, 시간: 64 ms 분류 구현(implementation), 정렬(sorting) 문제 설명 입학 OT때 누구보다도 남다르게 놀았던 당신은 자연스럽게 1학년 과대를 역임하게 되었다. 타교와의 조인트 엠티를 기획하려는 당신은 근처에 있는 학교 중 어느 학교가 술을 가장 많이...","categories": ["코딩테스트"],
+        "tags": ["알고리즘","파이썬","코테","백준","Bronze"],
+        "url": "/%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8/11557/",
         "teaser": null
       },{
         "title": "[파이썬][백준 10102번] 개표",

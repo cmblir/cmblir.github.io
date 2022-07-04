@@ -9,8 +9,8 @@
   <head>
     <meta charset="utf-8">
 
-<!-- begin _includes/seo.html --><title>[파이썬][백준 10170번] NFC West vs North - 성장형 개발자 블로그</title>
-<meta name="description" content="백준 10170번 NFC West vs North 문제 풀이">
+<!-- begin _includes/seo.html --><title>[파이썬][백준 1152번] 단어의 개수 - 성장형 개발자 블로그</title>
+<meta name="description" content="백준 1152번 단어의 개수 문제 풀이">
 
 
   <meta name="author" content="You Nicholas">
@@ -22,32 +22,32 @@
 <meta property="og:type" content="article">
 <meta property="og:locale" content="ko">
 <meta property="og:site_name" content="성장형 개발자 블로그">
-<meta property="og:title" content="[파이썬][백준 10170번] NFC West vs North">
-<meta property="og:url" content="http://localhost:4000/%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8/10170/">
+<meta property="og:title" content="[파이썬][백준 1152번] 단어의 개수">
+<meta property="og:url" content="http://localhost:4000/%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8/1152/">
 
 
-  <meta property="og:description" content="백준 10170번 NFC West vs North 문제 풀이">
-
-
-
+  <meta property="og:description" content="백준 1152번 단어의 개수 문제 풀이">
 
 
 
 
-  <meta property="article:published_time" content="2022-04-04T00:00:00+09:00">
 
 
 
-  <meta property="article:modified_time" content="2022-04-04T00:00:00+09:00">
+  <meta property="article:published_time" content="2022-03-28T00:00:00+09:00">
 
 
 
-  
+  <meta property="article:modified_time" content="2022-03-28T00:00:00+09:00">
+
+
 
   
 
+  
 
-<link rel="canonical" href="http://localhost:4000/%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8/10170/">
+
+<link rel="canonical" href="http://localhost:4000/%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8/1152/">
 
 
 
@@ -268,16 +268,16 @@
 
 
   <article class="page h-entry" itemscope itemtype="https://schema.org/CreativeWork">
-    <meta itemprop="headline" content="[파이썬][백준 10170번] NFC West vs North">
-    <meta itemprop="description" content="백준 10170번 NFC West vs North 문제 풀이">
-    <meta itemprop="datePublished" content="2022-04-04T00:00:00+09:00">
-    <meta itemprop="dateModified" content="2022-04-04T00:00:00+09:00">
+    <meta itemprop="headline" content="[파이썬][백준 1152번] 단어의 개수">
+    <meta itemprop="description" content="백준 1152번 단어의 개수 문제 풀이">
+    <meta itemprop="datePublished" content="2022-03-28T00:00:00+09:00">
+    <meta itemprop="dateModified" content="2022-03-28T00:00:00+09:00">
 
     <div class="page__inner-wrap">
       
         <header>
           <h1 id="page-title" class="page__title p-name" itemprop="headline">
-            <a href="http://localhost:4000/%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8/10170/" class="u-url" itemprop="url">[파이썬][백준 10170번] NFC West vs North
+            <a href="http://localhost:4000/%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8/1152/" class="u-url" itemprop="url">[파이썬][백준 1152번] 단어의 개수
 </a>
           </h1>
           
@@ -309,50 +309,52 @@
           <aside class="sidebar__right sticky">
             <nav class="toc">
               <header><h4 class="nav__title"><i class="fas fa-file-alt"></i> On This Page</h4></header>
-              <ul class="toc__menu"><li><a href="#1-문제">1. 문제</a><ul><li><a href="#성능-요약">성능 요약</a></li><li><a href="#분류">분류</a></li><li><a href="#문제-설명">문제 설명</a></li><li><a href="#입력">입력</a></li><li><a href="#출력">출력</a></li></ul></li><li><a href="#2-해결방법-시간복잡도">2. 해결방법 시간복잡도</a></li><li><a href="#3-문제-해결-및-코드">3. 문제 해결 및 코드</a></li><li><a href="#주석을-참고하면서-이해를-돕습니다">주석을 참고하면서 이해를 돕습니다.</a></li><li><a href="#4-알고리즘-및-해설">4. 알고리즘 및 해설</a></li><li><a href="#5-짚고-넘어가기">5. 짚고 넘어가기</a></li></ul>
+              <ul class="toc__menu"><li><a href="#1-문제">1. 문제</a><ul><li><a href="#성능-요약">성능 요약</a></li><li><a href="#분류">분류</a></li><li><a href="#문제-설명">문제 설명</a></li><li><a href="#입력">입력</a></li><li><a href="#출력">출력</a></li></ul></li><li><a href="#2-해결방법-시간복잡도">2. 해결방법 시간복잡도</a></li><li><a href="#3-문제-해결-및-코드">3. 문제 해결 및 코드</a></li><li><a href="#주석을-참고하면서-이해를-돕습니다">주석을 참고하면서 이해를 돕습니다.</a></li><li><a href="#4-알고리즘-및-해설">4. 알고리즘 및 해설</a></li><li><a href="#5-단순하게">5. 단순하게</a></li></ul>
 
             </nav>
           </aside>
         
         <h2 id="1-문제">1. 문제</h2>
 
-<h1 id="bronze-v-nfc-west-vs-north---10170">[Bronze V] NFC West vs North - 10170</h1>
+<h1 id="bronze-ii-단어의-개수---1152">[Bronze II] 단어의 개수 - 1152</h1>
 
-<p><a href="https://www.acmicpc.net/problem/10170">문제 링크</a></p>
+<p><a href="https://www.acmicpc.net/problem/1152">문제 링크</a></p>
 
 <h3 id="성능-요약">성능 요약</h3>
 
-<p>메모리: 30864 KB, 시간: 72 ms</p>
+<p>메모리: 37996 KB, 시간: 100 ms</p>
 
 <h3 id="분류">분류</h3>
 
-<p>구현(implementation)</p>
+<p>구현(implementation), 문자열(string)</p>
 
 <h3 id="문제-설명">문제 설명</h3>
 
-<p>동혁이를 위해 NFC 서부와 북부 디비전 순위를 출력하는 프로그램을 작성하시오.</p>
+<p>영어 대소문자와 공백으로 이루어진 문자열이 주어진다. 이 문자열에는 몇 개의 단어가 있을까? 이를 구하는 프로그램을 작성하시오. 단, 한 단어가 여러 번 등장하면 등장한 횟수만큼 모두 세어야 한다.</p>
 
 <h3 id="입력">입력</h3>
 
-<p>없음</p>
+<p>첫 줄에 영어 대소문자와 공백으로 이루어진 문자열이 주어진다. 이 문자열의 길이는 1,000,000을 넘지 않는다. 단어는 공백 한 개로 구분되며, 공백이 연속해서 나오는 경우는 없다. 또한 문자열은 공백으로 시작하거나 끝날 수 있다.</p>
 
 <h3 id="출력">출력</h3>
 
-<p>예제와 같이 NFC 서부와 북부 디비전 순위를 출력한다.</p>
+<p>첫째 줄에 단어의 개수를 출력한다.</p>
 
 <blockquote>
   <p>출처: 백준, https://https://www.acmicpc.net/</p>
 </blockquote>
 
 <h2 id="2-해결방법-시간복잡도">2. 해결방법 시간복잡도</h2>
+
 <ol>
-  <li>단순 코딩</li>
+  <li>단순 코딩 O(N)</li>
+  <li>단순 코딩 O(1)</li>
 </ol>
 
 <h2 id="3-문제-해결-및-코드">3. 문제 해결 및 코드</h2>
 <hr />
 
-<script src="https://gist.github.com/godhin/96108a96be3a00378008ee9a172a7f13.js"></script>
+<script src="https://gist.github.com/godhin/e2e1aadc01695aa485a46f40660de955.js"></script>
 
 <ul>
   <li>
@@ -363,14 +365,16 @@
 <h2 id="4-알고리즘-및-해설">4. 알고리즘 및 해설</h2>
 
 <ol>
-  <li>단순 출력 문제로 여러 줄을 print()를 통해 출력한다.</li>
+  <li>리스트형태로 받은 값을 돌면서 카운트해준다.</li>
 </ol>
 
-<h2 id="5-짚고-넘어가기">5. 짚고 넘어가기</h2>
+<h2 id="5-단순하게">5. 단순하게</h2>
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">print</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="nb">list</span><span class="p">(</span><span class="nb">map</span><span class="p">(</span><span class="nb">str</span><span class="p">,</span> <span class="nb">input</span><span class="p">().</span><span class="n">split</span><span class="p">()))))</span>
+</code></pre></div></div>
 
-<ol>
-  <li><strong>print(“”” 넣고자 하는 값 “””)</strong> 함수를 통해 여러 줄을 동시에 출력한다.</li>
-</ol>
+<ul>
+  <li>값을 받자마자 바로 리스트형태로 만들어 길이를 출력해준다.</li>
+</ul>
 
         
       </section>
@@ -420,7 +424,7 @@
 
         
 
-  <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> 업데이트:</strong> <time class="dt-published" datetime="2022-04-04">April 4, 2022</time></p>
+  <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> 업데이트:</strong> <time class="dt-published" datetime="2022-03-28">March 28, 2022</time></p>
 
       </footer>
 
@@ -429,22 +433,22 @@
     <h4 class="page__share-title">공유하기</h4>
   
 
-  <a href="https://twitter.com/intent/tweet?text=%5B%ED%8C%8C%EC%9D%B4%EC%8D%AC%5D%5B%EB%B0%B1%EC%A4%80+10170%EB%B2%88%5D+NFC+West+vs+North%20http%3A%2F%2Flocalhost%3A4000%2F%25EC%25BD%2594%25EB%2594%25A9%25ED%2585%258C%25EC%258A%25A4%25ED%258A%25B8%2F10170%2F" class="btn btn--twitter" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="공유하기 Twitter"><i class="fab fa-fw fa-twitter" aria-hidden="true"></i><span> Twitter</span></a>
+  <a href="https://twitter.com/intent/tweet?text=%5B%ED%8C%8C%EC%9D%B4%EC%8D%AC%5D%5B%EB%B0%B1%EC%A4%80+1152%EB%B2%88%5D+%EB%8B%A8%EC%96%B4%EC%9D%98+%EA%B0%9C%EC%88%98%20http%3A%2F%2Flocalhost%3A4000%2F%25EC%25BD%2594%25EB%2594%25A9%25ED%2585%258C%25EC%258A%25A4%25ED%258A%25B8%2F1152%2F" class="btn btn--twitter" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="공유하기 Twitter"><i class="fab fa-fw fa-twitter" aria-hidden="true"></i><span> Twitter</span></a>
 
-  <a href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Flocalhost%3A4000%2F%25EC%25BD%2594%25EB%2594%25A9%25ED%2585%258C%25EC%258A%25A4%25ED%258A%25B8%2F10170%2F" class="btn btn--facebook" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="공유하기 Facebook"><i class="fab fa-fw fa-facebook" aria-hidden="true"></i><span> Facebook</span></a>
+  <a href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Flocalhost%3A4000%2F%25EC%25BD%2594%25EB%2594%25A9%25ED%2585%258C%25EC%258A%25A4%25ED%258A%25B8%2F1152%2F" class="btn btn--facebook" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="공유하기 Facebook"><i class="fab fa-fw fa-facebook" aria-hidden="true"></i><span> Facebook</span></a>
 
-  <a href="https://www.linkedin.com/shareArticle?mini=true&url=http%3A%2F%2Flocalhost%3A4000%2F%25EC%25BD%2594%25EB%2594%25A9%25ED%2585%258C%25EC%258A%25A4%25ED%258A%25B8%2F10170%2F" class="btn btn--linkedin" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="공유하기 LinkedIn"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i><span> LinkedIn</span></a>
+  <a href="https://www.linkedin.com/shareArticle?mini=true&url=http%3A%2F%2Flocalhost%3A4000%2F%25EC%25BD%2594%25EB%2594%25A9%25ED%2585%258C%25EC%258A%25A4%25ED%258A%25B8%2F1152%2F" class="btn btn--linkedin" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="공유하기 LinkedIn"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i><span> LinkedIn</span></a>
 </section>
 
 
       
   <nav class="pagination">
     
-      <a href="/%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8/24905/" class="pagination--pager" title="[파이썬][백준 24905번] 24905
+      <a href="/%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8/10809/" class="pagination--pager" title="[파이썬][백준 10809번] 알파벳 찾기
 ">이전</a>
     
     
-      <a href="/%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8/11382/" class="pagination--pager" title="[파이썬][백준 11382번] 꼬마 정민
+      <a href="/%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8/10250/" class="pagination--pager" title="[파이썬][백준 10250번] ACM 호텔
 ">다음</a>
     
   </nav>
