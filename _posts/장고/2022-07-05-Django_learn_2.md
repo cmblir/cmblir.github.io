@@ -105,22 +105,3 @@ def year_archive(request, year):
 ### 4. Templates
 
 - 템플릿은 우리가 보여지는 곳을 말한다.
-
-```html
-{% extends "base.html" %}
-
-{% block title %}Articles for {{ year }}{% endblock %}
-
-{% block content %}
-<h1>Articles for {{ year }}</h1>
-
-{% for article in article_list %}
-    <p>{{ article.headline }}</p>
-    <p>By {{ article.reporter.full_name }}</p>
-    <p>Published {{ article.pub_date|date:"F j, Y" }}</p>
-{% endfor %}
-{% endblock %}
-```
-
-- year_archive의 템플릿을 만든 예시이다.
-    - extends가 안올라가서 text파일로 보여줄 수 밖에 없었다.
