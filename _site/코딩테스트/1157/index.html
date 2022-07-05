@@ -9,8 +9,8 @@
   <head>
     <meta charset="utf-8">
 
-<!-- begin _includes/seo.html --><title>[파이썬][Leetcode][릿코드] Concatenation of Array - 성장형 개발자 블로그</title>
-<meta name="description" content="Leetcode Concatenation of Array 문제 풀이">
+<!-- begin _includes/seo.html --><title>[파이썬][백준 1157번] 단어 공부 - 성장형 개발자 블로그</title>
+<meta name="description" content="백준 1157번 단어 공부 문제 풀이">
 
 
   <meta name="author" content="You Nicholas">
@@ -22,11 +22,11 @@
 <meta property="og:type" content="article">
 <meta property="og:locale" content="ko">
 <meta property="og:site_name" content="성장형 개발자 블로그">
-<meta property="og:title" content="[파이썬][Leetcode][릿코드] Concatenation of Array">
-<meta property="og:url" content="http://localhost:4000/%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8/1929/">
+<meta property="og:title" content="[파이썬][백준 1157번] 단어 공부">
+<meta property="og:url" content="http://localhost:4000/%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8/1157/">
 
 
-  <meta property="og:description" content="Leetcode Concatenation of Array 문제 풀이">
+  <meta property="og:description" content="백준 1157번 단어 공부 문제 풀이">
 
 
 
@@ -47,7 +47,7 @@
   
 
 
-<link rel="canonical" href="http://localhost:4000/%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8/1929/">
+<link rel="canonical" href="http://localhost:4000/%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8/1157/">
 
 
 
@@ -268,8 +268,8 @@
 
 
   <article class="page h-entry" itemscope itemtype="https://schema.org/CreativeWork">
-    <meta itemprop="headline" content="[파이썬][Leetcode][릿코드] Concatenation of Array">
-    <meta itemprop="description" content="Leetcode Concatenation of Array 문제 풀이">
+    <meta itemprop="headline" content="[파이썬][백준 1157번] 단어 공부">
+    <meta itemprop="description" content="백준 1157번 단어 공부 문제 풀이">
     <meta itemprop="datePublished" content="2022-05-09T00:00:00+09:00">
     <meta itemprop="dateModified" content="2022-05-09T00:00:00+09:00">
 
@@ -277,7 +277,7 @@
       
         <header>
           <h1 id="page-title" class="page__title p-name" itemprop="headline">
-            <a href="http://localhost:4000/%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8/1929/" class="u-url" itemprop="url">[파이썬][Leetcode][릿코드] Concatenation of Array
+            <a href="http://localhost:4000/%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8/1157/" class="u-url" itemprop="url">[파이썬][백준 1157번] 단어 공부
 </a>
           </h1>
           
@@ -309,55 +309,43 @@
           <aside class="sidebar__right sticky">
             <nav class="toc">
               <header><h4 class="nav__title"><i class="fas fa-file-alt"></i> On This Page</h4></header>
-              <ul class="toc__menu"><li><a href="#1-문제">1. 문제</a></li><li><a href="#2-해결방법-시간복잡도">2. 해결방법 시간복잡도</a></li><li><a href="#3-문제-해결-및-코드">3. 문제 해결 및 코드</a></li><li><a href="#주석을-참고하면서-이해를-돕습니다">주석을 참고하면서 이해를 돕습니다.</a></li><li><a href="#4-알고리즘-및-해설">4. 알고리즘 및 해설</a></li><li><a href="#5-비슷하지만-더-쉽게">5. 비슷하지만 더 쉽게</a></li></ul>
+              <ul class="toc__menu"><li><a href="#1-문제">1. 문제</a><ul><li><a href="#성능-요약">성능 요약</a></li><li><a href="#분류">분류</a></li><li><a href="#문제-설명">문제 설명</a></li><li><a href="#입력">입력</a></li><li><a href="#출력">출력</a></li></ul></li><li><a href="#2-해결방법-시간복잡도">2. 해결방법 시간복잡도</a></li><li><a href="#3-문제-해결-및-코드">3. 문제 해결 및 코드</a></li><li><a href="#주석을-참고하면서-이해를-돕습니다">주석을 참고하면서 이해를 돕습니다.</a></li><li><a href="#4-알고리즘-및-해설">4. 알고리즘 및 해설</a></li><li><a href="#5-짚고-넘어가기">5. 짚고 넘어가기</a></li></ul>
 
             </nav>
           </aside>
         
         <h2 id="1-문제">1. 문제</h2>
 
-<h2><a href="https://leetcode.com/problems/concatenation-of-array/">1929. Concatenation of Array</a></h2>
-<h3>Easy</h3>
-<hr />
-<div><p>Given an integer array <code>nums</code> of length <code>n</code>, you want to create an array <code>ans</code> of length <code>2n</code> where <code>ans[i] == nums[i]</code> and <code>ans[i + n] == nums[i]</code> for <code>0 &lt;= i &lt; n</code> (<strong>0-indexed</strong>).</p>
+<h1 id="bronze-i-단어-공부---1157">[Bronze I] 단어 공부 - 1157</h1>
 
-<p>Specifically, <code>ans</code> is the <strong>concatenation</strong> of two <code>nums</code> arrays.</p>
+<p><a href="https://www.acmicpc.net/problem/1157">문제 링크</a></p>
 
-<p>Return <em>the array </em><code>ans</code>.</p>
+<h3 id="성능-요약">성능 요약</h3>
 
-<p>&nbsp;</p>
-<p><strong>Example 1:</strong></p>
+<p>메모리: 32796 KB, 시간: 268 ms</p>
 
-<pre><strong>Input:</strong> nums = [1,2,1]
-<strong>Output:</strong> [1,2,1,1,2,1]
-<strong>Explanation:</strong> The array ans is formed as follows:
-- ans = [nums[0],nums[1],nums[2],nums[0],nums[1],nums[2]]
-- ans = [1,2,1,1,2,1]</pre>
+<h3 id="분류">분류</h3>
 
-<p><strong>Example 2:</strong></p>
+<p>구현(implementation), 문자열(string)</p>
 
-<pre><strong>Input:</strong> nums = [1,3,2,1]
-<strong>Output:</strong> [1,3,2,1,1,3,2,1]
-<strong>Explanation:</strong> The array ans is formed as follows:
-- ans = [nums[0],nums[1],nums[2],nums[3],nums[0],nums[1],nums[2],nums[3]]
-- ans = [1,3,2,1,1,3,2,1]
-</pre>
+<h3 id="문제-설명">문제 설명</h3>
 
-<p>&nbsp;</p>
-<p><strong>Constraints:</strong></p>
+<p>알파벳 대소문자로 된 단어가 주어지면, 이 단어에서 가장 많이 사용된 알파벳이 무엇인지 알아내는 프로그램을 작성하시오. 단, 대문자와 소문자를 구분하지 않는다.</p>
 
-<ul>
-	<li><code>n == nums.length</code></li>
-	<li><code>1 &lt;= n &lt;= 1000</code></li>
-	<li><code>1 &lt;= nums[i] &lt;= 1000</code></li>
-</ul>
-</div>
+<h3 id="입력">입력</h3>
+
+<p>첫째 줄에 알파벳 대소문자로 이루어진 단어가 주어진다. 주어지는 단어의 길이는 1,000,000을 넘지 않는다.</p>
+
+<h3 id="출력">출력</h3>
+
+<p>첫째 줄에 이 단어에서 가장 많이 사용된 알파벳을 대문자로 출력한다. 단, 가장 많이 사용된 알파벳이 여러 개 존재하는 경우에는 ?를 출력한다.</p>
 
 <blockquote>
-  <p>출처: Leetcode, https://leetcode.com/</p>
+  <p>출처: 백준, https://https://www.acmicpc.net/</p>
 </blockquote>
 
 <h2 id="2-해결방법-시간복잡도">2. 해결방법 시간복잡도</h2>
+
 <ol>
   <li>단순 코딩 O(N)</li>
 </ol>
@@ -365,7 +353,7 @@
 <h2 id="3-문제-해결-및-코드">3. 문제 해결 및 코드</h2>
 <hr />
 
-<script src="https://gist.github.com/godhin/2e3c2d697a7cabab1732ab448f485180.js"></script>
+<script src="https://gist.github.com/godhin/185f2d3dfde92c138e52e56cf600f786.js"></script>
 
 <ul>
   <li>
@@ -376,25 +364,16 @@
 <h2 id="4-알고리즘-및-해설">4. 알고리즘 및 해설</h2>
 
 <ol>
-  <li>리스트의 값을 반복하면 되는 문제이다.</li>
-  <li>반복문을 통해 해당 값을 결과 리스트에 두번 넣어서 해결하면 된다.</li>
+  <li>문자열을 받음과 동시에 소문자로 바꿔서 리스트형태로 받아준다.</li>
+  <li>중복을 제거한 값을 반복문을 통해 해당 값들의 수를 카운트해서 리스트에 넣어준다.</li>
+  <li>이때 결과 리스트에서 가장 큰 개수가 1보다 큰 경우에는 ?를 출력한다.
+    <ul>
+      <li>아니라면 가장 큰 개수를 가진 값을 대문자로 출력해준다.</li>
+    </ul>
+  </li>
 </ol>
 
-<h2 id="5-비슷하지만-더-쉽게">5. 비슷하지만 더 쉽게</h2>
-
-<ol>
-  <li>메모리 효율은 비슷하나 훨씬 쉽고 시간복잡도도 낮은 방법이다.</li>
-</ol>
-
-<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">import</span> <span class="nn">re</span>
-<span class="k">class</span> <span class="nc">Solution</span><span class="p">:</span>
-    <span class="k">def</span> <span class="nf">numDifferentIntegers</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">word</span><span class="p">:</span> <span class="nb">str</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">int</span><span class="p">:</span>
-        <span class="k">return</span> <span class="n">nums</span><span class="o">*</span><span class="mi">2</span>
-</code></pre></div></div>
-
-<ul>
-  <li>그냥 2배로 출력하면 된다.</li>
-</ul>
+<h2 id="5-짚고-넘어가기">5. 짚고 넘어가기</h2>
 
         
       </section>
@@ -411,9 +390,9 @@
     <strong><i class="fas fa-fw fa-tags" aria-hidden="true"></i> 태그: </strong>
     <span itemprop="keywords">
     
-      <a href="/tags/#leetcode" class="page__taxonomy-item p-category" rel="tag">Leetcode</a><span class="sep">, </span>
+      <a href="/tags/#bronze" class="page__taxonomy-item p-category" rel="tag">Bronze</a><span class="sep">, </span>
     
-      <a href="/tags/#%EB%A6%BF%EC%BD%94%EB%93%9C" class="page__taxonomy-item p-category" rel="tag">릿코드</a><span class="sep">, </span>
+      <a href="/tags/#%EB%B0%B1%EC%A4%80" class="page__taxonomy-item p-category" rel="tag">백준</a><span class="sep">, </span>
     
       <a href="/tags/#%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98" class="page__taxonomy-item p-category" rel="tag">알고리즘</a><span class="sep">, </span>
     
@@ -453,22 +432,22 @@
     <h4 class="page__share-title">공유하기</h4>
   
 
-  <a href="https://twitter.com/intent/tweet?text=%5B%ED%8C%8C%EC%9D%B4%EC%8D%AC%5D%5BLeetcode%5D%5B%EB%A6%BF%EC%BD%94%EB%93%9C%5D+Concatenation+of+Array%20http%3A%2F%2Flocalhost%3A4000%2F%25EC%25BD%2594%25EB%2594%25A9%25ED%2585%258C%25EC%258A%25A4%25ED%258A%25B8%2F1929%2F" class="btn btn--twitter" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="공유하기 Twitter"><i class="fab fa-fw fa-twitter" aria-hidden="true"></i><span> Twitter</span></a>
+  <a href="https://twitter.com/intent/tweet?text=%5B%ED%8C%8C%EC%9D%B4%EC%8D%AC%5D%5B%EB%B0%B1%EC%A4%80+1157%EB%B2%88%5D+%EB%8B%A8%EC%96%B4+%EA%B3%B5%EB%B6%80%20http%3A%2F%2Flocalhost%3A4000%2F%25EC%25BD%2594%25EB%2594%25A9%25ED%2585%258C%25EC%258A%25A4%25ED%258A%25B8%2F1157%2F" class="btn btn--twitter" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="공유하기 Twitter"><i class="fab fa-fw fa-twitter" aria-hidden="true"></i><span> Twitter</span></a>
 
-  <a href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Flocalhost%3A4000%2F%25EC%25BD%2594%25EB%2594%25A9%25ED%2585%258C%25EC%258A%25A4%25ED%258A%25B8%2F1929%2F" class="btn btn--facebook" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="공유하기 Facebook"><i class="fab fa-fw fa-facebook" aria-hidden="true"></i><span> Facebook</span></a>
+  <a href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Flocalhost%3A4000%2F%25EC%25BD%2594%25EB%2594%25A9%25ED%2585%258C%25EC%258A%25A4%25ED%258A%25B8%2F1157%2F" class="btn btn--facebook" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="공유하기 Facebook"><i class="fab fa-fw fa-facebook" aria-hidden="true"></i><span> Facebook</span></a>
 
-  <a href="https://www.linkedin.com/shareArticle?mini=true&url=http%3A%2F%2Flocalhost%3A4000%2F%25EC%25BD%2594%25EB%2594%25A9%25ED%2585%258C%25EC%258A%25A4%25ED%258A%25B8%2F1929%2F" class="btn btn--linkedin" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="공유하기 LinkedIn"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i><span> LinkedIn</span></a>
+  <a href="https://www.linkedin.com/shareArticle?mini=true&url=http%3A%2F%2Flocalhost%3A4000%2F%25EC%25BD%2594%25EB%2594%25A9%25ED%2585%258C%25EC%258A%25A4%25ED%258A%25B8%2F1157%2F" class="btn btn--linkedin" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="공유하기 LinkedIn"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i><span> LinkedIn</span></a>
 </section>
 
 
       
   <nav class="pagination">
     
-      <a href="/%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8/42840/" class="pagination--pager" title="[파이썬][프로그래머스] K번째수
+      <a href="/%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8/1929/" class="pagination--pager" title="[파이썬][Leetcode][릿코드] Concatenation of Array
 ">이전</a>
     
     
-      <a href="/%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8/1157/" class="pagination--pager" title="[파이썬][백준 1157번] 단어 공부
+      <a href="/%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8/15631/" class="pagination--pager" title="[파이썬][백준 15631번] BOJeopardy
 ">다음</a>
     
   </nav>

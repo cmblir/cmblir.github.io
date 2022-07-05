@@ -161,6 +161,12 @@ var store = [{
         "url": "/%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8/10809/",
         "teaser": null
       },{
+        "title": "[파이썬][백준 11654번] 아스키 쿄드",
+        "excerpt":"1. 문제 [Bronze V] 아스키 코드 - 11654 문제 링크 성능 요약 메모리: 30864 KB, 시간: 72 ms 분류 구현(implementation) 문제 설명 알파벳 소문자, 대문자, 숫자 0-9중 하나가 주어졌을 때, 주어진 글자의 아스키 코드값을 출력하는 프로그램을 작성하시오. 입력 알파벳 소문자, 대문자, 숫자 0-9 중 하나가 첫째 줄에 주어진다. 출력 입력으로...","categories": ["코딩테스트"],
+        "tags": ["알고리즘","파이썬","코테","백준","Bronze"],
+        "url": "/%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8/11654/",
+        "teaser": null
+      },{
         "title": "[파이썬][백준 1152번] 단어의 개수",
         "excerpt":"1. 문제 [Bronze II] 단어의 개수 - 1152 문제 링크 성능 요약 메모리: 37996 KB, 시간: 100 ms 분류 구현(implementation), 문자열(string) 문제 설명 영어 대소문자와 공백으로 이루어진 문자열이 주어진다. 이 문자열에는 몇 개의 단어가 있을까? 이를 구하는 프로그램을 작성하시오. 단, 한 단어가 여러 번 등장하면 등장한 횟수만큼 모두 세어야 한다....","categories": ["코딩테스트"],
         "tags": ["알고리즘","파이썬","코테","백준","Bronze"],
@@ -579,6 +585,12 @@ var store = [{
         "excerpt":"1. 문제 1929. Concatenation of Array Easy Given an integer array nums of length n, you want to create an array ans of length 2n where ans[i] == nums[i] and ans[i + n] == nums[i] for 0 &lt;= i &lt; n (0-indexed). Specifically, ans is the concatenation of two nums...","categories": ["코딩테스트"],
         "tags": ["알고리즘","파이썬","코테","Leetcode","릿코드"],
         "url": "/%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8/1929/",
+        "teaser": null
+      },{
+        "title": "[파이썬][백준 1157번] 단어 공부",
+        "excerpt":"1. 문제 [Bronze I] 단어 공부 - 1157 문제 링크 성능 요약 메모리: 32796 KB, 시간: 268 ms 분류 구현(implementation), 문자열(string) 문제 설명 알파벳 대소문자로 된 단어가 주어지면, 이 단어에서 가장 많이 사용된 알파벳이 무엇인지 알아내는 프로그램을 작성하시오. 단, 대문자와 소문자를 구분하지 않는다. 입력 첫째 줄에 알파벳 대소문자로 이루어진 단어가...","categories": ["코딩테스트"],
+        "tags": ["알고리즘","파이썬","코테","백준","Bronze"],
+        "url": "/%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8/1157/",
         "teaser": null
       },{
         "title": "[파이썬][백준 15631번] BOJeopardy",
