@@ -10,8 +10,8 @@ tags:
 toc: true
 toc_sticky: true
  
-date: 2022-06-09
-last_modified_at: 2022-06-09
+date: 2022-05-17
+last_modified_at: 2022-05-17
 ---
 
 # 장고와 AWS 설치하기

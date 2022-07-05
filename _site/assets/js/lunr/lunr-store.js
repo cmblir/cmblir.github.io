@@ -665,6 +665,12 @@ var store = [{
         "url": "/%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8/10156/",
         "teaser": null
       },{
+        "title": "django를 시작해보자",
+        "excerpt":"장고와 AWS 설치하기 프로젝트 배포를 위해 Django와 AWS를 공부해보았다. 사용하기 위한 환경 구현 프로젝트에 사용할 환경변수 설정 (필자는 conda를 활용) conda create —name test python=3.8 (파이썬은 3.8을 사용) Django 라이브러리 설치 pip install django 프로젝트 만들기 배포할 프로젝트 만들기 django-admin startproject test 프로젝트에 앱 만들기 cd test python [manage.py](http://manage.py) startapp...","categories": ["장고"],
+        "tags": ["장고","aws"],
+        "url": "/%EC%9E%A5%EA%B3%A0/Django-&-AWS/",
+        "teaser": null
+      },{
         "title": "깃 명렁어",
         "excerpt":"Document Manager from Hell {git, github} $ git 깃 명령어 확인 $ git config 깃 사용자 정보 설정 $ git config —global [user.name](http://user.name) 깃 이름 확인 $ git config —global [user.email](http://user.email) 깃 이메일 확인 $ git config —global core.editor “notepad++” 깃의 기본 편집기를 Notepad++ 로 변경 $ git init initialize의...","categories": ["깃"],
         "tags": ["깃허브","깃"],
@@ -729,12 +735,6 @@ var store = [{
         "excerpt":"화이트 보드 나는 화이트보드를 샀다. 무엇이든 내가 이루고자 하는 것이 있으면 그것에 필요한 물건에는 약간의 고민과 많은 추진력이 필요하다고 생각한다. 어제의 내가 풀지 못하였던 문제들은 나의 작은 습관 (컴퓨터에 안도하고 모르는 문제를 스스로 해결하지 않으려는 나쁜 버릇)이 문제 해결을 방해하였다고 생각한다. 그렇기에 오늘부로 문제 알고리즘별 문제 몇개를 선별해서 화이트보드로 푸는...","categories": ["일상"],
         "tags": ["일상","면접","라이브코딩"],
         "url": "/%EC%9D%BC%EC%83%81/%EB%B8%94%EB%A1%9C%EA%B7%B8%EB%A5%BC-%EB%8B%A4%EC%8B%9C-%EC%8B%9C%EC%9E%91%ED%95%98%EB%A9%B0/",
-        "teaser": null
-      },{
-        "title": "django를 시작해보자",
-        "excerpt":"장고와 AWS 설치하기 프로젝트 배포를 위해 Django와 AWS를 공부해보았다. 사용하기 위한 환경 구현 프로젝트에 사용할 환경변수 설정 (필자는 conda를 활용) conda create —name test python=3.8 (파이썬은 3.8을 사용) Django 라이브러리 설치 pip install django 프로젝트 만들기 배포할 프로젝트 만들기 django-admin startproject test 프로젝트에 앱 만들기 cd test python [manage.py](http://manage.py) startapp...","categories": ["장고"],
-        "tags": ["장고","aws"],
-        "url": "/%EC%9E%A5%EA%B3%A0/Django-&-AWS/",
         "teaser": null
       },{
         "title": "[파이썬][Leetcode][릿코드] Palindrome Number",
@@ -939,5 +939,29 @@ var store = [{
         "excerpt":"밋업 이거는 오늘 참여한 Gooroomee 밋업 세미나행사 나에게 행사란 아직 취업을 못해본 나에게 밋업 행사는 새로운 자극이다. 회사에 대한 열망, 궁금증에 대한 해소, 그리고 그들의 성장을 모두 느낄 수 있게 해준다. 그동안 코로나와 부트캠프 일정으로 바쁘게 지내며 오프라인 행사를 참여하지 못하다가 오랜만에 오프라인 행사에 참여하게 되었다. 구루미의 행사는 처음으로 참여하게...","categories": ["일상"],
         "tags": ["일상","밋업"],
         "url": "/%EC%9D%BC%EC%83%81/Gooroomee/",
+        "teaser": null
+      },{
+        "title": "Django 공식문서 - 1",
+        "excerpt":"장고의 기초 프로젝트 구조 django manage mysite settings.py urls.py wsgi.py init.py 장고에 대해 [출처 : 장고 공식문서] 카테고리 모델 계층 웹 어플리케이션의 데이터를 구조화하고 조작하기 위한 모델을 제공한다. 뷰 계층 사용자의 요청을 처리하고 결과를 반환하기 위한 로직을 캡슐화한 “뷰”의 개념을 가지고 있다. 템플릿 계층 사용자에게 표시할 정보를 표현하기 위해 디자이너에게...","categories": ["장고"],
+        "tags": ["장고"],
+        "url": "/%EC%9E%A5%EA%B3%A0/Django_learn_1/",
+        "teaser": null
+      },{
+        "title": "Django 공식문서 - 2",
+        "excerpt":"[출처 : 장고 공식문서] 장고 흩어보기 1. Model from django.db import models class Reporter(models.Model): full_name = models.CharField(max_length=70) def __str__(self): return self.full_name class Article(models.Model): pub_date = models.DateField() headline = models.CharField(max_length=200) content = models.TextField() reporter = models.ForeignKey(Reporter, on_delete=models.CASCADE) def __str__(self): return self.headline 장고에는 모델을 사용할 수 있다. $python manage.py makemigrations $python manage.py...","categories": ["장고"],
+        "tags": ["장고"],
+        "url": "/%EC%9E%A5%EA%B3%A0/Django_learn_2/",
+        "teaser": null
+      },{
+        "title": "Django 공식문서 - 3",
+        "excerpt":"파이썬 설치하기      파이썬 공식 홈페이지인 https://www.python.org/downloads/ 에서 설치하기를 바란다.   데이터베이스 설정하기      PostgreSQL, MariaDB, MySQL, Oracle과 같은 규모의 데이터베이스 엔진을 사용하여 작업할 때만 필요하다.   파이썬에 장고 확인하기   &gt;&gt;&gt; import django &gt;&gt;&gt; print(django.get_version()) 4.0  ","categories": ["장고"],
+        "tags": ["장고"],
+        "url": "/%EC%9E%A5%EA%B3%A0/Django_learn_3/",
+        "teaser": null
+      },{
+        "title": "Django_learn_4",
+        "excerpt":" ","categories": [],
+        "tags": [],
+        "url": "/Django_learn_4/",
         "teaser": null
       }]
