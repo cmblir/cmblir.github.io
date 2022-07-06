@@ -9,8 +9,8 @@
   <head>
     <meta charset="utf-8">
 
-<!-- begin _includes/seo.html --><title>[파이썬][백준 11104번] Fridge of Your Dreams - 성장형 개발자 블로그</title>
-<meta name="description" content="백준 11104번 Fridge of Your Dreams 문제 풀이">
+<!-- begin _includes/seo.html --><title>[파이썬][백준 1292번] TV 크기 - 성장형 개발자 블로그</title>
+<meta name="description" content="백준 1292번 TV 크기 문제 풀이">
 
 
   <meta name="author" content="You Nicholas">
@@ -22,32 +22,32 @@
 <meta property="og:type" content="article">
 <meta property="og:locale" content="ko">
 <meta property="og:site_name" content="성장형 개발자 블로그">
-<meta property="og:title" content="[파이썬][백준 11104번] Fridge of Your Dreams">
-<meta property="og:url" content="http://localhost:4000/%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8/11104/">
+<meta property="og:title" content="[파이썬][백준 1292번] TV 크기">
+<meta property="og:url" content="http://localhost:4000/%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8/1297/">
 
 
-  <meta property="og:description" content="백준 11104번 Fridge of Your Dreams 문제 풀이">
-
-
-
+  <meta property="og:description" content="백준 1292번 TV 크기 문제 풀이">
 
 
 
 
-  <meta property="article:published_time" content="2022-05-30T00:00:00+09:00">
 
 
 
-  <meta property="article:modified_time" content="2022-05-30T00:00:00+09:00">
+  <meta property="article:published_time" content="2022-04-07T00:00:00+09:00">
 
 
 
-  
+  <meta property="article:modified_time" content="2022-04-07T00:00:00+09:00">
+
+
 
   
 
+  
 
-<link rel="canonical" href="http://localhost:4000/%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8/11104/">
+
+<link rel="canonical" href="http://localhost:4000/%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8/1297/">
 
 
 
@@ -268,16 +268,16 @@
 
 
   <article class="page h-entry" itemscope itemtype="https://schema.org/CreativeWork">
-    <meta itemprop="headline" content="[파이썬][백준 11104번] Fridge of Your Dreams">
-    <meta itemprop="description" content="백준 11104번 Fridge of Your Dreams 문제 풀이">
-    <meta itemprop="datePublished" content="2022-05-30T00:00:00+09:00">
-    <meta itemprop="dateModified" content="2022-05-30T00:00:00+09:00">
+    <meta itemprop="headline" content="[파이썬][백준 1292번] TV 크기">
+    <meta itemprop="description" content="백준 1292번 TV 크기 문제 풀이">
+    <meta itemprop="datePublished" content="2022-04-07T00:00:00+09:00">
+    <meta itemprop="dateModified" content="2022-04-07T00:00:00+09:00">
 
     <div class="page__inner-wrap">
       
         <header>
           <h1 id="page-title" class="page__title p-name" itemprop="headline">
-            <a href="http://localhost:4000/%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8/11104/" class="u-url" itemprop="url">[파이썬][백준 11104번] Fridge of Your Dreams
+            <a href="http://localhost:4000/%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8/1297/" class="u-url" itemprop="url">[파이썬][백준 1292번] TV 크기
 </a>
           </h1>
           
@@ -316,31 +316,33 @@
         
         <h2 id="1-문제">1. 문제</h2>
 
-<h1 id="bronze-i-fridge-of-your-dreams---11104">[Bronze I] Fridge of Your Dreams - 11104</h1>
+<h1 id="bronze-iv-tv-크기---1297">[Bronze IV] TV 크기 - 1297</h1>
 
-<p><a href="https://www.acmicpc.net/problem/11104">문제 링크</a></p>
+<p><a href="https://www.acmicpc.net/problem/1297">문제 링크</a></p>
 
 <h3 id="성능-요약">성능 요약</h3>
 
-<p>메모리: 30840 KB, 시간: 144 ms</p>
+<p>메모리: 30864 KB, 시간: 76 ms</p>
 
 <h3 id="분류">분류</h3>
 
-<p>구현(implementation), 수학(math)</p>
+<p>기하학(geometry), 수학(math), 피타고라스 정리(pythagoras)</p>
 
 <h3 id="문제-설명">문제 설명</h3>
 
-<p>Eirik drinks a lot of Bingo Cola to help him program faster, and over the years he has burned many unnecessary calories walking all the way to the kitchen to get some. To avoid this he has just bought a small fridge, which is beautifully placed next to his computer. To make it match his fancy big-tower with all its blinking LEDs, it is necessary to style it a bit.</p>
+<p>김탑은 TV를 사러 인터넷 쇼핑몰에 들어갔다. 쇼핑을 하던 중에, TV의 크기는 그 TV의 대각선의 길이로 나타낸 다는 것을 알았다. 하지만, 김탑은 대각선의 길이가 같다고 해도, 실제 TV의 크기는 다를 수도 있다는 사실에 직접 TV를 보러갈걸 왜 인터넷 쇼핑을 대각선의 길이만 보고있는지 후회하고 있었다.</p>
 
-<p>He has bought a weight sensor with a display and a small general purpose programmable chip, to put underneath the fridge. The idea is to make the display show how many litres of Bingo Cola there is in the fridge. To do this he must read a binary register in the sensor, and convert it to a decimal number to be displayed.</p>
+<p>인터넷 쇼핑몰 관리자에게 이메일을 보내서 실제 높이와 실제 너비를 보내달라고 했지만, 관리자는 실제 높이와 실제 너비를 보내지 않고 그것의 비율을 보내왔다.</p>
+
+<p>TV의 대각선 길이와, 높이 너비의 비율이 주어졌을 때, 실제 높이와 너비의 길이를 출력하는 프로그램을 작성하시오.</p>
 
 <h3 id="입력">입력</h3>
 
-<p>The first line of input gives n ≤ 1000, the number of test cases. Then follow n lines with positive numbers represented as 24-bit binary strings (0s and 1s).</p>
+<p>첫째 줄에 TV의 대각선 길이 D, TV의 높이 비율 H, TV의 너비 비율 W이 공백 한 칸을 사이에 두고 주어진다.</p>
 
 <h3 id="출력">출력</h3>
 
-<p>For each number, output its decimal representation, without any leading zeros.</p>
+<p>첫째 줄에 TV의 높이와 TV의 너비를 공백 한 칸을 이용해서 구분지은 후 출력한다. 만약, 실제 TV의 높이나 너비가 소수점이 나올 경우에는 그 수보다 작으면서 가장 큰 정수로 출력한다. (예) 1.7 -&gt; 1</p>
 
 <blockquote>
   <p>출처: 백준, https://https://www.acmicpc.net/</p>
@@ -348,13 +350,13 @@
 
 <h2 id="2-해결방법-시간복잡도">2. 해결방법 시간복잡도</h2>
 <ol>
-  <li>단순 코딩 O(N)</li>
+  <li>단순 코딩 O(1)</li>
 </ol>
 
 <h2 id="3-문제-해결-및-코드">3. 문제 해결 및 코드</h2>
 <hr />
 
-<script src="https://gist.github.com/godhin/764dfb1c1ccf40d9a2494caa567476c2.js"></script>
+<script src="https://gist.github.com/godhin/e6acc218a1e523e65b572daa0e1ae34c.js"></script>
 
 <ul>
   <li>
@@ -365,8 +367,13 @@
 <h2 id="4-알고리즘-및-해설">4. 알고리즘 및 해설</h2>
 
 <ol>
-  <li>문제의 요점은 받은 값도 2진수로 변경해서 출력하는 것이다.</li>
-  <li>반복문을 통해 해당 값을 계속 받아서 출력해준다.</li>
+  <li>map() 함수를 통해 값을 정수형으로 받는다.</li>
+  <li>이후 대각선 비율을 구한뒤 해당 값을 기준으로, 출력하고자 하는 TV높이와 너비를 출력한다.
+    <ul>
+      <li>대각선 비율은 대각선 길이를 높이 비율 제곱과 너비 비율 제곱을 더한 루트값</li>
+      <li>높이값은 높이 비율 * 대각선 비율, 너비값은 너비 비율 * 대각선 비율</li>
+    </ul>
+  </li>
 </ol>
 
         
@@ -417,7 +424,7 @@
 
         
 
-  <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> 업데이트:</strong> <time class="dt-published" datetime="2022-05-30">May 30, 2022</time></p>
+  <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> 업데이트:</strong> <time class="dt-published" datetime="2022-04-07">April 7, 2022</time></p>
 
       </footer>
 
@@ -426,22 +433,22 @@
     <h4 class="page__share-title">공유하기</h4>
   
 
-  <a href="https://twitter.com/intent/tweet?text=%5B%ED%8C%8C%EC%9D%B4%EC%8D%AC%5D%5B%EB%B0%B1%EC%A4%80+11104%EB%B2%88%5D+Fridge+of+Your+Dreams%20http%3A%2F%2Flocalhost%3A4000%2F%25EC%25BD%2594%25EB%2594%25A9%25ED%2585%258C%25EC%258A%25A4%25ED%258A%25B8%2F11104%2F" class="btn btn--twitter" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="공유하기 Twitter"><i class="fab fa-fw fa-twitter" aria-hidden="true"></i><span> Twitter</span></a>
+  <a href="https://twitter.com/intent/tweet?text=%5B%ED%8C%8C%EC%9D%B4%EC%8D%AC%5D%5B%EB%B0%B1%EC%A4%80+1292%EB%B2%88%5D+TV+%ED%81%AC%EA%B8%B0%20http%3A%2F%2Flocalhost%3A4000%2F%25EC%25BD%2594%25EB%2594%25A9%25ED%2585%258C%25EC%258A%25A4%25ED%258A%25B8%2F1297%2F" class="btn btn--twitter" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="공유하기 Twitter"><i class="fab fa-fw fa-twitter" aria-hidden="true"></i><span> Twitter</span></a>
 
-  <a href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Flocalhost%3A4000%2F%25EC%25BD%2594%25EB%2594%25A9%25ED%2585%258C%25EC%258A%25A4%25ED%258A%25B8%2F11104%2F" class="btn btn--facebook" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="공유하기 Facebook"><i class="fab fa-fw fa-facebook" aria-hidden="true"></i><span> Facebook</span></a>
+  <a href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Flocalhost%3A4000%2F%25EC%25BD%2594%25EB%2594%25A9%25ED%2585%258C%25EC%258A%25A4%25ED%258A%25B8%2F1297%2F" class="btn btn--facebook" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="공유하기 Facebook"><i class="fab fa-fw fa-facebook" aria-hidden="true"></i><span> Facebook</span></a>
 
-  <a href="https://www.linkedin.com/shareArticle?mini=true&url=http%3A%2F%2Flocalhost%3A4000%2F%25EC%25BD%2594%25EB%2594%25A9%25ED%2585%258C%25EC%258A%25A4%25ED%258A%25B8%2F11104%2F" class="btn btn--linkedin" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="공유하기 LinkedIn"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i><span> LinkedIn</span></a>
+  <a href="https://www.linkedin.com/shareArticle?mini=true&url=http%3A%2F%2Flocalhost%3A4000%2F%25EC%25BD%2594%25EB%2594%25A9%25ED%2585%258C%25EC%258A%25A4%25ED%258A%25B8%2F1297%2F" class="btn btn--linkedin" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="공유하기 LinkedIn"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i><span> LinkedIn</span></a>
 </section>
 
 
       
   <nav class="pagination">
     
-      <a href="/%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8/10093/" class="pagination--pager" title="[파이썬][백준 10093번] 숫자
+      <a href="/%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8/1330/" class="pagination--pager" title="[파이썬][백준 1330번] 두 수 비교하기
 ">이전</a>
     
     
-      <a href="/%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8/1408/" class="pagination--pager" title="[파이썬][백준 1408번] 24
+      <a href="/%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8/10797/" class="pagination--pager" title="[파이썬][백준 10797번] 10부제
 ">다음</a>
     
   </nav>

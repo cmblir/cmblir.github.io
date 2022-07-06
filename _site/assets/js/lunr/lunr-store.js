@@ -251,6 +251,18 @@ var store = [{
         "url": "/%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8/11942/",
         "teaser": null
       },{
+        "title": "[파이썬][백준 14645번] 와이버스 부릉부릉",
+        "excerpt":"1. 문제 [Bronze V] 와이버스 부릉부릉 - 14645 문제 링크 성능 요약 메모리: 30860 KB, 시간: 68 ms 분류 구현(implementation) 문제 설명 버스 운전수 비와이 씨가 운전하는 버스(verse아님 ㅎ)는 N개의 정거장을 거친 후 종착역에 도착한다. 각 정거장은 내릴 인원수와 올라탈 인원수가 정해져 있다. 종착역에 도착하면 버스에 타고 있던 모든 사람이...","categories": ["코딩테스트"],
+        "tags": ["알고리즘","파이썬","코테","백준","Bronze"],
+        "url": "/%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8/14645/",
+        "teaser": null
+      },{
+        "title": "[파이썬][백준 14652번] 나는 행복합니다~",
+        "excerpt":"1. 문제 [Bronze V] 나는 행복합니다~ - 14652 문제 링크 성능 요약 메모리: 30864 KB, 시간: 68 ms 분류 사칙연산(arithmetic), 수학(math) 문제 설명 “나는 행복합니다~ 한화라서 행복합니다~” 행복한 이 노래 가사! 그렇다. 욱제는 한화 이글스의 열렬한 이다. 욱제는 여름방학을 맞아 치킨과 맥주를 챙겨 야구장을 방문했다! 하지만 이게 웬걸? 치맥에 정신이...","categories": ["코딩테스트"],
+        "tags": ["알고리즘","파이썬","코테","백준","Bronze"],
+        "url": "/%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8/14652/",
+        "teaser": null
+      },{
         "title": "[파이썬][프로그래머스] 짝수와 홀수",
         "excerpt":"1. 문제 [level 1] 짝수와 홀수 - 12937 문제 링크 성능 요약 메모리: 10 MB, 시간: 0.00 ms 구분 코딩테스트 연습 &gt; 연습문제 채점결과 정확성: 100.0 합계: 100.0 / 100.0 문제 설명 정수 num이 짝수일 경우 \"Even\"을 반환하고 홀수인 경우 \"Odd\"를 반환하는 함수, solution을 완성해주세요. 제한 조건 num은 int 범위의 정수입니다....","categories": ["코딩테스트"],
         "tags": ["알고리즘","파이썬","코테","프로그래머스","Level_1"],
@@ -279,6 +291,18 @@ var store = [{
         "excerpt":"1. 문제 [Bronze III] 팩토리얼 - 10872 문제 링크 성능 요약 메모리: 30864 KB, 시간: 68 ms 분류 구현(implementation), 수학(math) 문제 설명 0보다 크거나 같은 정수 N이 주어진다. 이때, N!을 출력하는 프로그램을 작성하시오. 입력 첫째 줄에 정수 N(0 ≤ N ≤ 12)이 주어진다. 출력 첫째 줄에 N!을 출력한다. 출처: 백준,...","categories": ["코딩테스트"],
         "tags": ["알고리즘","파이썬","코테","백준","Bronze"],
         "url": "/%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8/10872/",
+        "teaser": null
+      },{
+        "title": "[파이썬][백준 1330번] 두 수 비교하기",
+        "excerpt":"1. 문제 [Bronze IV] 두 수 비교하기 - 1330 문제 링크 성능 요약 메모리: 30864 KB, 시간: 80 ms 분류 사칙연산(arithmetic), 구현(implementation), 수학(math) 문제 설명 두 정수 A와 B가 주어졌을 때, A와 B를 비교하는 프로그램을 작성하시오. 입력 첫째 줄에 A와 B가 주어진다. A와 B는 공백 한 칸으로 구분되어져 있다. 출력...","categories": ["코딩테스트"],
+        "tags": ["알고리즘","파이썬","코테","백준","Bronze"],
+        "url": "/%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8/1330/",
+        "teaser": null
+      },{
+        "title": "[파이썬][백준 1292번] TV 크기",
+        "excerpt":"1. 문제 [Bronze IV] TV 크기 - 1297 문제 링크 성능 요약 메모리: 30864 KB, 시간: 76 ms 분류 기하학(geometry), 수학(math), 피타고라스 정리(pythagoras) 문제 설명 김탑은 TV를 사러 인터넷 쇼핑몰에 들어갔다. 쇼핑을 하던 중에, TV의 크기는 그 TV의 대각선의 길이로 나타낸 다는 것을 알았다. 하지만, 김탑은 대각선의 길이가 같다고 해도,...","categories": ["코딩테스트"],
+        "tags": ["알고리즘","파이썬","코테","백준","Bronze"],
+        "url": "/%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8/1297/",
         "teaser": null
       },{
         "title": "[파이썬][백준 10797번] 10부제",
@@ -735,6 +759,12 @@ var store = [{
         "excerpt":"1. 문제 [Bronze I] Fridge of Your Dreams - 11104 문제 링크 성능 요약 메모리: 30840 KB, 시간: 144 ms 분류 구현(implementation), 수학(math) 문제 설명 Eirik drinks a lot of Bingo Cola to help him program faster, and over the years he has burned many unnecessary calories walking all the...","categories": ["코딩테스트"],
         "tags": ["알고리즘","파이썬","코테","백준","Bronze"],
         "url": "/%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8/11104/",
+        "teaser": null
+      },{
+        "title": "[파이썬][백준 1408번] 24",
+        "excerpt":"1. 문제 [Bronze II] 24 - 1408 문제 링크 성능 요약 메모리: 30840 KB, 시간: 72 ms 분류 사칙연산(arithmetic), 구현(implementation), 수학(math) 문제 설명 도현이는 Counter Terror Unit (CTU)에서 일하는 특수요원이다. 도현이는 모든 사건을 정확하게 24시간이 되는 순간 해결하는 것으로 유명하다. 도현이는 1시간 만에 범인을 잡을 수 있어도 잡지 않는다. 정확하게...","categories": ["코딩테스트"],
+        "tags": ["알고리즘","파이썬","코테","백준","Bronze"],
+        "url": "/%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8/1408/",
         "teaser": null
       },{
         "title": "[파이썬][Leetcode][릿코드] squares of a sorted array",

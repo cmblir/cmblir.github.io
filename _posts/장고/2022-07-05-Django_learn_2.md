@@ -105,3 +105,7 @@ def year_archive(request, year):
 ### 4. Templates
 
 - 템플릿은 우리가 보여지는 곳을 말한다.
+
+<script src="https://gist.github.com/godhin/2f469ae67c38c44b731428ad41508a32.js"></script>
+
+- 위에서 article과 year_archive의 템플릿을 만들 수 있는 예제이다.

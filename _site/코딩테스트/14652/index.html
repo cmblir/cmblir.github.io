@@ -9,8 +9,8 @@
   <head>
     <meta charset="utf-8">
 
-<!-- begin _includes/seo.html --><title>[파이썬][백준 11104번] Fridge of Your Dreams - 성장형 개발자 블로그</title>
-<meta name="description" content="백준 11104번 Fridge of Your Dreams 문제 풀이">
+<!-- begin _includes/seo.html --><title>[파이썬][백준 14652번] 나는 행복합니다~ - 성장형 개발자 블로그</title>
+<meta name="description" content="백준 14652번 나는 행복합니다~ 문제 풀이">
 
 
   <meta name="author" content="You Nicholas">
@@ -22,32 +22,32 @@
 <meta property="og:type" content="article">
 <meta property="og:locale" content="ko">
 <meta property="og:site_name" content="성장형 개발자 블로그">
-<meta property="og:title" content="[파이썬][백준 11104번] Fridge of Your Dreams">
-<meta property="og:url" content="http://localhost:4000/%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8/11104/">
+<meta property="og:title" content="[파이썬][백준 14652번] 나는 행복합니다~">
+<meta property="og:url" content="http://localhost:4000/%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8/14652/">
 
 
-  <meta property="og:description" content="백준 11104번 Fridge of Your Dreams 문제 풀이">
-
-
-
+  <meta property="og:description" content="백준 14652번 나는 행복합니다~ 문제 풀이">
 
 
 
 
-  <meta property="article:published_time" content="2022-05-30T00:00:00+09:00">
 
 
 
-  <meta property="article:modified_time" content="2022-05-30T00:00:00+09:00">
+  <meta property="article:published_time" content="2022-04-04T00:00:00+09:00">
 
 
 
-  
+  <meta property="article:modified_time" content="2022-04-04T00:00:00+09:00">
+
+
 
   
 
+  
 
-<link rel="canonical" href="http://localhost:4000/%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8/11104/">
+
+<link rel="canonical" href="http://localhost:4000/%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8/14652/">
 
 
 
@@ -268,16 +268,16 @@
 
 
   <article class="page h-entry" itemscope itemtype="https://schema.org/CreativeWork">
-    <meta itemprop="headline" content="[파이썬][백준 11104번] Fridge of Your Dreams">
-    <meta itemprop="description" content="백준 11104번 Fridge of Your Dreams 문제 풀이">
-    <meta itemprop="datePublished" content="2022-05-30T00:00:00+09:00">
-    <meta itemprop="dateModified" content="2022-05-30T00:00:00+09:00">
+    <meta itemprop="headline" content="[파이썬][백준 14652번] 나는 행복합니다~">
+    <meta itemprop="description" content="백준 14652번 나는 행복합니다~ 문제 풀이">
+    <meta itemprop="datePublished" content="2022-04-04T00:00:00+09:00">
+    <meta itemprop="dateModified" content="2022-04-04T00:00:00+09:00">
 
     <div class="page__inner-wrap">
       
         <header>
           <h1 id="page-title" class="page__title p-name" itemprop="headline">
-            <a href="http://localhost:4000/%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8/11104/" class="u-url" itemprop="url">[파이썬][백준 11104번] Fridge of Your Dreams
+            <a href="http://localhost:4000/%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8/14652/" class="u-url" itemprop="url">[파이썬][백준 14652번] 나는 행복합니다~
 </a>
           </h1>
           
@@ -316,45 +316,87 @@
         
         <h2 id="1-문제">1. 문제</h2>
 
-<h1 id="bronze-i-fridge-of-your-dreams---11104">[Bronze I] Fridge of Your Dreams - 11104</h1>
+<h1 id="bronze-v-나는-행복합니다---14652">[Bronze V] 나는 행복합니다~ - 14652</h1>
 
-<p><a href="https://www.acmicpc.net/problem/11104">문제 링크</a></p>
+<p><a href="https://www.acmicpc.net/problem/14652">문제 링크</a></p>
 
 <h3 id="성능-요약">성능 요약</h3>
 
-<p>메모리: 30840 KB, 시간: 144 ms</p>
+<p>메모리: 30864 KB, 시간: 68 ms</p>
 
 <h3 id="분류">분류</h3>
 
-<p>구현(implementation), 수학(math)</p>
+<p>사칙연산(arithmetic), 수학(math)</p>
 
 <h3 id="문제-설명">문제 설명</h3>
 
-<p>Eirik drinks a lot of Bingo Cola to help him program faster, and over the years he has burned many unnecessary calories walking all the way to the kitchen to get some. To avoid this he has just bought a small fridge, which is beautifully placed next to his computer. To make it match his fancy big-tower with all its blinking LEDs, it is necessary to style it a bit.</p>
+<p>“나는 행복합니다~ 한화라서 행복합니다~”</p>
 
-<p>He has bought a weight sensor with a display and a small general purpose programmable chip, to put underneath the fridge. The idea is to make the display show how many litres of Bingo Cola there is in the fridge. To do this he must read a binary register in the sensor, and convert it to a decimal number to be displayed.</p>
+<p>행복한 이 노래 가사! 그렇다. 욱제는 한화 이글스의 열렬한 <!--[if gte vml 1]><v:shapetype id="_x0000_t75"
+ coordsize="21600,21600" o:spt="75" o:preferrelative="t" path="m@4@5l@4@11@9@11@9@5xe"
+ filled="f" stroked="f">
+ <v:stroke joinstyle="miter"/>
+ <v:formulas>
+  <v:f eqn="if lineDrawn pixelLineWidth 0"/>
+  <v:f eqn="sum @0 1 0"/>
+  <v:f eqn="sum 0 0 @1"/>
+  <v:f eqn="prod @2 1 2"/>
+  <v:f eqn="prod @3 21600 pixelWidth"/>
+  <v:f eqn="prod @3 21600 pixelHeight"/>
+  <v:f eqn="sum @0 0 1"/>
+  <v:f eqn="prod @6 1 2"/>
+  <v:f eqn="prod @7 21600 pixelWidth"/>
+  <v:f eqn="sum @8 21600 0"/>
+  <v:f eqn="prod @7 21600 pixelHeight"/>
+  <v:f eqn="sum @10 21600 0"/>
+ </v:formulas>
+ <v:path o:extrusionok="f" gradientshapeok="t" o:connecttype="rect"/>
+ <o:lock v:ext="edit" aspectratio="t"/>
+</v:shapetype><v:shape id="그림_x0020__x0025_d_x0020_1" o:spid="_x0000_i1027"
+ type="#_x0000_t75" style='width:12pt;height:17pt;visibility:visible;
+ mso-wrap-style:square'>
+ <v:imagedata src="file:////Users/baekjoon/Library/Group%20Containers/UBF8T346G9.Office/msoclip1/01/clip_image001.png"
+  o:title=""/>
+</v:shape><![endif]--><img src="https://onlinejudgeimages.s3-ap-northeast-1.amazonaws.com/problem/14652/1.png" style="height:18px; width:12px" />이다. 욱제는 여름방학을 맞아 치킨과 맥주를 챙겨 야구장을 방문했다! 하지만 이게 웬걸? 치맥에 정신이 팔린 욱제는 그만 자신의 관중석 위치가 담긴 티켓을 잃어버리고 말았다. 욱제가 유일하게 기억하는 것이라고는 자신의 관중석 번호 K뿐이다.</p>
+
+<p>당신은 한화 이글스의 감독이다. 열혈<!--[if gte vml 1]><v:shape
+ id="그림_x0020__x0025_d_x0020_2" o:spid="_x0000_i1026" type="#_x0000_t75"
+ style='width:12pt;height:17pt;visibility:visible;mso-wrap-style:square'>
+ <v:imagedata src="file:////Users/baekjoon/Library/Group%20Containers/UBF8T346G9.Office/msoclip1/01/clip_image001.png"
+  o:title=""/>
+</v:shape><![endif]--><img src="https://onlinejudgeimages.s3-ap-northeast-1.amazonaws.com/problem/14652/1.png" style="height:18px; width:12px" />인 욱제의 방문에 깊은 감동을 받은 당신은 욱제가 잃어버린 자리를 찾아주려고 한다. 오늘 경기가 펼쳐지는 잠실구장은 세로 길이가 N, 가로 길이가 M인 N≤M 크기의 관중석을 가지고 있다. 관중석의 왼쪽 위는 (0, 0), 오른쪽 아래는 (N-1, M-1)으로 표시된다. 각 관중석에는 번호가 아래 그림처럼 매겨져있다. (0, 0)에서부터 0번으로 시작하여 오른쪽으로, 끝에 다다르면 그 아래에서 또 오른쪽으로 숫자가 증가해나가는 식이다.</p>
+
+<p style="text-align: center;"><!--[if gte vml 1]><v:shape
+ id="그림_x0020__x0025_d_x0020_3" o:spid="_x0000_i1025" type="#_x0000_t75"
+ style='width:207pt;height:146pt;visibility:visible;mso-wrap-style:square'>
+ <v:imagedata src="file:////Users/baekjoon/Library/Group%20Containers/UBF8T346G9.Office/msoclip1/01/clip_image004.png"
+  o:title=""/>
+</v:shape><![endif]--><img src="https://onlinejudgeimages.s3-ap-northeast-1.amazonaws.com/problem/14652/2.png" style="height:146px; width:207px" /></p>
+
+<p>당신은 관중석의 크기와 욱제 자리의 번호를 알고 있다. 욱제가 잃어버린 자리는 어디일까? 자리를 찾아서 욱제에게 알려주도록 하자!</p>
 
 <h3 id="입력">입력</h3>
 
-<p>The first line of input gives n ≤ 1000, the number of test cases. Then follow n lines with positive numbers represented as 24-bit binary strings (0s and 1s).</p>
+<p>첫째 줄에 관중석의 크기를 나타내는 N, M과 잃어버린 관중석 번호를 나타내는 K가 주어진다. (1 ≤ N, M ≤ 30,000, 0 ≤ K ≤ N×M-1)</p>
 
 <h3 id="출력">출력</h3>
 
-<p>For each number, output its decimal representation, without any leading zeros.</p>
+<p>욱제의 잃어버린 자리를 찾아서, 잃어버린 자리의 좌표 (n, m)를 하나의 공백을 사이에 두고 숫자만 출력한다.</p>
 
 <blockquote>
   <p>출처: 백준, https://https://www.acmicpc.net/</p>
 </blockquote>
 
 <h2 id="2-해결방법-시간복잡도">2. 해결방법 시간복잡도</h2>
+
 <ol>
-  <li>단순 코딩 O(N)</li>
+  <li>단순 코딩 O(1)</li>
 </ol>
 
 <h2 id="3-문제-해결-및-코드">3. 문제 해결 및 코드</h2>
 <hr />
 
-<script src="https://gist.github.com/godhin/764dfb1c1ccf40d9a2494caa567476c2.js"></script>
+<script src="https://gist.github.com/godhin/0221cb0c1662d803f3b16add928c83c2.js"></script>
 
 <ul>
   <li>
@@ -365,8 +407,8 @@
 <h2 id="4-알고리즘-및-해설">4. 알고리즘 및 해설</h2>
 
 <ol>
-  <li>문제의 요점은 받은 값도 2진수로 변경해서 출력하는 것이다.</li>
-  <li>반복문을 통해 해당 값을 계속 받아서 출력해준다.</li>
+  <li>각 값을 받은 이후에 잃어버린 관중석 번호를 관중석 크기로 나눠준다.</li>
+  <li>관중석 번호를 크기로 나눠준 값과 몫을 출력해준다.</li>
 </ol>
 
         
@@ -417,7 +459,7 @@
 
         
 
-  <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> 업데이트:</strong> <time class="dt-published" datetime="2022-05-30">May 30, 2022</time></p>
+  <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> 업데이트:</strong> <time class="dt-published" datetime="2022-04-04">April 4, 2022</time></p>
 
       </footer>
 
@@ -426,22 +468,22 @@
     <h4 class="page__share-title">공유하기</h4>
   
 
-  <a href="https://twitter.com/intent/tweet?text=%5B%ED%8C%8C%EC%9D%B4%EC%8D%AC%5D%5B%EB%B0%B1%EC%A4%80+11104%EB%B2%88%5D+Fridge+of+Your+Dreams%20http%3A%2F%2Flocalhost%3A4000%2F%25EC%25BD%2594%25EB%2594%25A9%25ED%2585%258C%25EC%258A%25A4%25ED%258A%25B8%2F11104%2F" class="btn btn--twitter" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="공유하기 Twitter"><i class="fab fa-fw fa-twitter" aria-hidden="true"></i><span> Twitter</span></a>
+  <a href="https://twitter.com/intent/tweet?text=%5B%ED%8C%8C%EC%9D%B4%EC%8D%AC%5D%5B%EB%B0%B1%EC%A4%80+14652%EB%B2%88%5D+%EB%82%98%EB%8A%94+%ED%96%89%EB%B3%B5%ED%95%A9%EB%8B%88%EB%8B%A4~%20http%3A%2F%2Flocalhost%3A4000%2F%25EC%25BD%2594%25EB%2594%25A9%25ED%2585%258C%25EC%258A%25A4%25ED%258A%25B8%2F14652%2F" class="btn btn--twitter" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="공유하기 Twitter"><i class="fab fa-fw fa-twitter" aria-hidden="true"></i><span> Twitter</span></a>
 
-  <a href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Flocalhost%3A4000%2F%25EC%25BD%2594%25EB%2594%25A9%25ED%2585%258C%25EC%258A%25A4%25ED%258A%25B8%2F11104%2F" class="btn btn--facebook" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="공유하기 Facebook"><i class="fab fa-fw fa-facebook" aria-hidden="true"></i><span> Facebook</span></a>
+  <a href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Flocalhost%3A4000%2F%25EC%25BD%2594%25EB%2594%25A9%25ED%2585%258C%25EC%258A%25A4%25ED%258A%25B8%2F14652%2F" class="btn btn--facebook" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="공유하기 Facebook"><i class="fab fa-fw fa-facebook" aria-hidden="true"></i><span> Facebook</span></a>
 
-  <a href="https://www.linkedin.com/shareArticle?mini=true&url=http%3A%2F%2Flocalhost%3A4000%2F%25EC%25BD%2594%25EB%2594%25A9%25ED%2585%258C%25EC%258A%25A4%25ED%258A%25B8%2F11104%2F" class="btn btn--linkedin" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="공유하기 LinkedIn"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i><span> LinkedIn</span></a>
+  <a href="https://www.linkedin.com/shareArticle?mini=true&url=http%3A%2F%2Flocalhost%3A4000%2F%25EC%25BD%2594%25EB%2594%25A9%25ED%2585%258C%25EC%258A%25A4%25ED%258A%25B8%2F14652%2F" class="btn btn--linkedin" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="공유하기 LinkedIn"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i><span> LinkedIn</span></a>
 </section>
 
 
       
   <nav class="pagination">
     
-      <a href="/%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8/10093/" class="pagination--pager" title="[파이썬][백준 10093번] 숫자
+      <a href="/%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8/14645/" class="pagination--pager" title="[파이썬][백준 14645번] 와이버스 부릉부릉
 ">이전</a>
     
     
-      <a href="/%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8/1408/" class="pagination--pager" title="[파이썬][백준 1408번] 24
+      <a href="/%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8/12937/" class="pagination--pager" title="[파이썬][프로그래머스] 짝수와 홀수
 ">다음</a>
     
   </nav>
