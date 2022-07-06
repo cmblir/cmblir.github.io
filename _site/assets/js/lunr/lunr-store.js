@@ -107,6 +107,12 @@ var store = [{
         "url": "/%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8/10998/",
         "teaser": null
       },{
+        "title": "[파이썬][백준 14681번] 사분면 고르기",
+        "excerpt":"1. 문제 [Bronze IV] 사분면 고르기 - 14681 문제 링크 성능 요약 메모리: 30864 KB, 시간: 68 ms 분류 기하학(geometry), 구현(implementation), 수학(math) 문제 설명 흔한 수학 문제 중 하나는 주어진 점이 어느 사분면에 속하는지 알아내는 것이다. 사분면은 아래 그림처럼 1부터 4까지 번호를 갖는다. \"Quadrant n\"은 \"제n사분면\"이라는 뜻이다. 예를 들어, 좌표가...","categories": ["코딩테스트"],
+        "tags": ["알고리즘","파이썬","코테","백준","Bronze"],
+        "url": "/%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8/14681/",
+        "teaser": null
+      },{
         "title": "[파이썬][백준 10870번] 피보나치 수 5",
         "excerpt":"1. 문제 [Bronze II] 피보나치 수 5 - 10870 문제 링크 성능 요약 메모리: 30864 KB, 시간: 72 ms 분류 구현(implementation), 수학(math) 문제 설명 피보나치 수는 0과 1로 시작한다. 0번째 피보나치 수는 0이고, 1번째 피보나치 수는 1이다. 그 다음 2번째 부터는 바로 앞 두 피보나치 수의 합이 된다. 이를 식으로...","categories": ["코딩테스트"],
         "tags": ["알고리즘","파이썬","코테","백준","Bronze"],
@@ -153,6 +159,12 @@ var store = [{
         "excerpt":"1. 문제 [Bronze III] A+B - 4 - 10951 문제 링크 성능 요약 메모리: 30860 KB, 시간: 88 ms 분류 사칙연산(arithmetic), 구현(implementation), 수학(math) 문제 설명 두 정수 A와 B를 입력받은 다음, A+B를 출력하는 프로그램을 작성하시오. 입력 입력은 여러 개의 테스트 케이스로 이루어져 있다. 각 테스트 케이스는 한 줄로 이루어져 있으며,...","categories": ["코딩테스트"],
         "tags": ["알고리즘","파이썬","코테","백준","Bronze"],
         "url": "/%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8/10951/",
+        "teaser": null
+      },{
+        "title": "[파이썬][백준 1546번] 평균",
+        "excerpt":"1. 문제 [Bronze I] 평균 - 1546 문제 링크 성능 요약 메모리: 30864 KB, 시간: 68 ms 분류 사칙연산(arithmetic), 수학(math) 문제 설명 세준이는 기말고사를 망쳤다. 세준이는 점수를 조작해서 집에 가져가기로 했다. 일단 세준이는 자기 점수 중에 최댓값을 골랐다. 이 값을 M이라고 한다. 그리고 나서 모든 점수를 점수/M*100으로 고쳤다. 예를 들어,...","categories": ["코딩테스트"],
+        "tags": ["알고리즘","파이썬","코테","백준","Bronze"],
+        "url": "/%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8/1546/",
         "teaser": null
       },{
         "title": "[파이썬][백준 10809번] 알파벳 찾기",
@@ -261,6 +273,24 @@ var store = [{
         "excerpt":"1. 문제 [Bronze V] 나는 행복합니다~ - 14652 문제 링크 성능 요약 메모리: 30864 KB, 시간: 68 ms 분류 사칙연산(arithmetic), 수학(math) 문제 설명 “나는 행복합니다~ 한화라서 행복합니다~” 행복한 이 노래 가사! 그렇다. 욱제는 한화 이글스의 열렬한 이다. 욱제는 여름방학을 맞아 치킨과 맥주를 챙겨 야구장을 방문했다! 하지만 이게 웬걸? 치맥에 정신이...","categories": ["코딩테스트"],
         "tags": ["알고리즘","파이썬","코테","백준","Bronze"],
         "url": "/%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8/14652/",
+        "teaser": null
+      },{
+        "title": "[파이썬][백준 14928번] 큰 수 (BIG)",
+        "excerpt":"1. 문제 [Bronze V] 큰 수 (BIG) - 14928 문제 링크 성능 요약 메모리: 32820 KB, 시간: 6004 ms 분류 임의 정밀도 / 큰 수 연산(arbitrary_precision), 사칙연산(arithmetic), 수학(math) 문제 설명 제연이는 그의 생일(2000년 3월 3일)을 기념해 자신이 가장 좋아하는 수를 20000303으로 나눈 나머지를 구해 그 수만큼 잠을 자기로 했다. 제연이가...","categories": ["코딩테스트"],
+        "tags": ["알고리즘","파이썬","코테","백준","Bronze"],
+        "url": "/%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8/14928/",
+        "teaser": null
+      },{
+        "title": "[파이썬][백준 15439번] Vera and Outfits",
+        "excerpt":"1. 문제 [Bronze V] Vera and Outfits - 15439 문제 링크 성능 요약 메모리: 30864 KB, 시간: 72 ms 분류 사칙연산(arithmetic), 조합론(combinatorics), 수학(math) 문제 설명 Vera owns N tops and N pants. The i-th top and i-th pants have colour i, for 1 ≤ i ≤ N, where all N...","categories": ["코딩테스트"],
+        "tags": ["알고리즘","파이썬","코테","백준","Bronze"],
+        "url": "/%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8/15439/",
+        "teaser": null
+      },{
+        "title": "[파이썬][백준 15740번] A+B - 9",
+        "excerpt":"1. 문제 [Bronze V] A+B - 9 - 15740 문제 링크 성능 요약 메모리: 30864 KB, 시간: 84 ms 분류 임의 정밀도 / 큰 수 연산(arbitrary_precision), 사칙연산(arithmetic), 수학(math) 문제 설명 두 정수 A와 B를 입력받은 다음, A+B를 출력하는 프로그램을 작성하시오. 입력 첫째 줄에 A와 B (-1010000 ≤ A, B ≤...","categories": ["코딩테스트"],
+        "tags": ["알고리즘","파이썬","코테","백준","Bronze"],
+        "url": "/%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8/15740/",
         "teaser": null
       },{
         "title": "[파이썬][프로그래머스] 짝수와 홀수",
