@@ -9,8 +9,8 @@
   <head>
     <meta charset="utf-8">
 
-<!-- begin _includes/seo.html --><title>[파이썬][백준 11382번] 꼬마 정민 - 성장형 개발자 블로그</title>
-<meta name="description" content="백준 11382번 꼬마 정민 문제 풀이">
+<!-- begin _includes/seo.html --><title>[파이썬][백준 1259번] 팰린드롬수 - 성장형 개발자 블로그</title>
+<meta name="description" content="백준 1259번 팰린드롬수 문제 풀이">
 
 
   <meta name="author" content="You Nicholas">
@@ -22,32 +22,32 @@
 <meta property="og:type" content="article">
 <meta property="og:locale" content="ko">
 <meta property="og:site_name" content="성장형 개발자 블로그">
-<meta property="og:title" content="[파이썬][백준 11382번] 꼬마 정민">
-<meta property="og:url" content="http://localhost:4000/%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8/11382/">
+<meta property="og:title" content="[파이썬][백준 1259번] 팰린드롬수">
+<meta property="og:url" content="http://localhost:4000/%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8/1259/">
 
 
-  <meta property="og:description" content="백준 11382번 꼬마 정민 문제 풀이">
-
-
-
+  <meta property="og:description" content="백준 1259번 팰린드롬수 문제 풀이">
 
 
 
 
-  <meta property="article:published_time" content="2022-04-04T00:00:00+09:00">
 
 
 
-  <meta property="article:modified_time" content="2022-04-04T00:00:00+09:00">
+  <meta property="article:published_time" content="2022-05-06T00:00:00+09:00">
 
 
 
-  
+  <meta property="article:modified_time" content="2022-05-06T00:00:00+09:00">
+
+
 
   
 
+  
 
-<link rel="canonical" href="http://localhost:4000/%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8/11382/">
+
+<link rel="canonical" href="http://localhost:4000/%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8/1259/">
 
 
 
@@ -268,16 +268,16 @@
 
 
   <article class="page h-entry" itemscope itemtype="https://schema.org/CreativeWork">
-    <meta itemprop="headline" content="[파이썬][백준 11382번] 꼬마 정민">
-    <meta itemprop="description" content="백준 11382번 꼬마 정민 문제 풀이">
-    <meta itemprop="datePublished" content="2022-04-04T00:00:00+09:00">
-    <meta itemprop="dateModified" content="2022-04-04T00:00:00+09:00">
+    <meta itemprop="headline" content="[파이썬][백준 1259번] 팰린드롬수">
+    <meta itemprop="description" content="백준 1259번 팰린드롬수 문제 풀이">
+    <meta itemprop="datePublished" content="2022-05-06T00:00:00+09:00">
+    <meta itemprop="dateModified" content="2022-05-06T00:00:00+09:00">
 
     <div class="page__inner-wrap">
       
         <header>
           <h1 id="page-title" class="page__title p-name" itemprop="headline">
-            <a href="http://localhost:4000/%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8/11382/" class="u-url" itemprop="url">[파이썬][백준 11382번] 꼬마 정민
+            <a href="http://localhost:4000/%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8/1259/" class="u-url" itemprop="url">[파이썬][백준 1259번] 팰린드롬수
 </a>
           </h1>
           
@@ -316,29 +316,31 @@
         
         <h2 id="1-문제">1. 문제</h2>
 
-<h1 id="bronze-v-꼬마-정민---11382">[Bronze V] 꼬마 정민 - 11382</h1>
+<h1 id="bronze-i-팰린드롬수---1259">[Bronze I] 팰린드롬수 - 1259</h1>
 
-<p><a href="https://www.acmicpc.net/problem/11382">문제 링크</a></p>
+<p><a href="https://www.acmicpc.net/problem/1259">문제 링크</a></p>
 
 <h3 id="성능-요약">성능 요약</h3>
 
-<p>메모리: 30860 KB, 시간: 68 ms</p>
+<p>메모리: 30840 KB, 시간: 72 ms</p>
 
 <h3 id="분류">분류</h3>
 
-<p>사칙연산(arithmetic), 수학(math)</p>
+<p>구현(implementation), 문자열(string)</p>
 
 <h3 id="문제-설명">문제 설명</h3>
 
-<p>꼬마 정민이는 이제 A + B 정도는 쉽게 계산할 수 있다. 이제 A + B + C를 계산할 차례이다!</p>
+<p>어떤 단어를 뒤에서부터 읽어도 똑같다면 그 단어를 팰린드롬이라고 한다. 'radar', 'sees'는 팰린드롬이다.</p>
+
+<p>수도 팰린드롬으로 취급할 수 있다. 수의 숫자들을 뒤에서부터 읽어도 같다면 그 수는 팰린드롬수다. 121, 12421 등은 팰린드롬수다. 123, 1231은 뒤에서부터 읽으면 다르므로 팰린드롬수가 아니다. 또한 10도 팰린드롬수가 아닌데, 앞에 무의미한 0이 올 수 있다면 010이 되어 팰린드롬수로 취급할 수도 있지만, 특별히 이번 문제에서는 무의미한 0이 앞에 올 수 없다고 하자.</p>
 
 <h3 id="입력">입력</h3>
 
-<p>첫 번째 줄에 A, B, C (1 ≤ A, B, C ≤ 10<sup>12</sup>)이 공백을 사이에 두고 주어진다.</p>
+<p>입력은 여러 개의 테스트 케이스로 이루어져 있으며, 각 줄마다 1 이상 99999 이하의 정수가 주어진다. 입력의 마지막 줄에는 0이 주어지며, 이 줄은 문제에 포함되지 않는다.</p>
 
 <h3 id="출력">출력</h3>
 
-<p>A+B+C의 값을 출력한다.</p>
+<p>각 줄마다 주어진 수가 팰린드롬수면 'yes', 아니면 'no'를 출력한다.</p>
 
 <blockquote>
   <p>출처: 백준, https://https://www.acmicpc.net/</p>
@@ -347,13 +349,13 @@
 <h2 id="2-해결방법-시간복잡도">2. 해결방법 시간복잡도</h2>
 
 <ol>
-  <li>단순 코딩 O(1)</li>
+  <li>단순 코딩 O(N^2)</li>
 </ol>
 
 <h2 id="3-문제-해결-및-코드">3. 문제 해결 및 코드</h2>
 <hr />
 
-<script src="https://gist.github.com/godhin/2156123be406a718de8bd4414a026acb.js"></script>
+<script src="https://gist.github.com/godhin/494e359cedad9aae2a595f763dd0b568.js"></script>
 
 <ul>
   <li>
@@ -364,7 +366,12 @@
 <h2 id="4-알고리즘-및-해설">4. 알고리즘 및 해설</h2>
 
 <ol>
-  <li>받아야할 값 map()을 통해 받고 해당 값들을 더해서 출력해준다.</li>
+  <li>팰린드롬 수는 앞으로 해도 같고 뒤로 해도 같은 걸을 말한다.</li>
+  <li>while문을 통해 첫 값과 뒷 값이 같다면 yes를 아니라면 no를 출력한다.
+    <ul>
+      <li>이떄 무의미한 숫자인 0이 앞에 있을 경우 바로 break를 걸어 문제를 끝낸다.</li>
+    </ul>
+  </li>
 </ol>
 
         
@@ -415,7 +422,7 @@
 
         
 
-  <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> 업데이트:</strong> <time class="dt-published" datetime="2022-04-04">April 4, 2022</time></p>
+  <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> 업데이트:</strong> <time class="dt-published" datetime="2022-05-06">May 6, 2022</time></p>
 
       </footer>
 
@@ -424,22 +431,22 @@
     <h4 class="page__share-title">공유하기</h4>
   
 
-  <a href="https://twitter.com/intent/tweet?text=%5B%ED%8C%8C%EC%9D%B4%EC%8D%AC%5D%5B%EB%B0%B1%EC%A4%80+11382%EB%B2%88%5D+%EA%BC%AC%EB%A7%88+%EC%A0%95%EB%AF%BC%20http%3A%2F%2Flocalhost%3A4000%2F%25EC%25BD%2594%25EB%2594%25A9%25ED%2585%258C%25EC%258A%25A4%25ED%258A%25B8%2F11382%2F" class="btn btn--twitter" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="공유하기 Twitter"><i class="fab fa-fw fa-twitter" aria-hidden="true"></i><span> Twitter</span></a>
+  <a href="https://twitter.com/intent/tweet?text=%5B%ED%8C%8C%EC%9D%B4%EC%8D%AC%5D%5B%EB%B0%B1%EC%A4%80+1259%EB%B2%88%5D+%ED%8C%B0%EB%A6%B0%EB%93%9C%EB%A1%AC%EC%88%98%20http%3A%2F%2Flocalhost%3A4000%2F%25EC%25BD%2594%25EB%2594%25A9%25ED%2585%258C%25EC%258A%25A4%25ED%258A%25B8%2F1259%2F" class="btn btn--twitter" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="공유하기 Twitter"><i class="fab fa-fw fa-twitter" aria-hidden="true"></i><span> Twitter</span></a>
 
-  <a href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Flocalhost%3A4000%2F%25EC%25BD%2594%25EB%2594%25A9%25ED%2585%258C%25EC%258A%25A4%25ED%258A%25B8%2F11382%2F" class="btn btn--facebook" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="공유하기 Facebook"><i class="fab fa-fw fa-facebook" aria-hidden="true"></i><span> Facebook</span></a>
+  <a href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Flocalhost%3A4000%2F%25EC%25BD%2594%25EB%2594%25A9%25ED%2585%258C%25EC%258A%25A4%25ED%258A%25B8%2F1259%2F" class="btn btn--facebook" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="공유하기 Facebook"><i class="fab fa-fw fa-facebook" aria-hidden="true"></i><span> Facebook</span></a>
 
-  <a href="https://www.linkedin.com/shareArticle?mini=true&url=http%3A%2F%2Flocalhost%3A4000%2F%25EC%25BD%2594%25EB%2594%25A9%25ED%2585%258C%25EC%258A%25A4%25ED%258A%25B8%2F11382%2F" class="btn btn--linkedin" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="공유하기 LinkedIn"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i><span> LinkedIn</span></a>
+  <a href="https://www.linkedin.com/shareArticle?mini=true&url=http%3A%2F%2Flocalhost%3A4000%2F%25EC%25BD%2594%25EB%2594%25A9%25ED%2585%258C%25EC%258A%25A4%25ED%258A%25B8%2F1259%2F" class="btn btn--linkedin" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="공유하기 LinkedIn"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i><span> LinkedIn</span></a>
 </section>
 
 
       
   <nav class="pagination">
     
-      <a href="/%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8/10170/" class="pagination--pager" title="[파이썬][백준 10170번] NFC West vs North
+      <a href="/%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8/59405/" class="pagination--pager" title="[파이썬][프로그래머스] 상위 n개 레코드
 ">이전</a>
     
     
-      <a href="/%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8/11942/" class="pagination--pager" title="[파이썬][백준 11942번] 고려대는 사랑입니다
+      <a href="/%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8/59034/" class="pagination--pager" title="[파이썬][프로그래머스] 모든 레코드 조회하기
 ">다음</a>
     
   </nav>

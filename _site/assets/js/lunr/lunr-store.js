@@ -215,6 +215,12 @@ var store = [{
         "url": "/%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8/1085/",
         "teaser": null
       },{
+        "title": "[파이썬][백준 1271번] 엄청난 부자2",
+        "excerpt":"1. 문제 [Bronze V] 엄청난 부자2 - 1271 문제 링크 성능 요약 메모리: 30864 KB, 시간: 68 ms 분류 임의 정밀도 / 큰 수 연산(arbitrary_precision), 사칙연산(arithmetic), 수학(math) 문제 설명 갑부 최백준 조교는 동전을 최소로 바꾸는데 성공했으나 김재홍 조교가 그 돈을 발견해서 최백준 조교에게 그 돈을 나누자고 따진다. 그 사실이 전...","categories": ["코딩테스트"],
+        "tags": ["알고리즘","파이썬","코테","백준","Bronze"],
+        "url": "/%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8/1271/",
+        "teaser": null
+      },{
         "title": "[파이썬][백준 24904번] Baekjoon Wordline Judge",
         "excerpt":"1. 문제 [Unrated] Baekjoon Wordline Judge - 24904 문제 링크 성능 요약 메모리: 4528 KB, 시간: 0 ms 분류 Empty 문제 설명 Wordle 287 3/6 ⬜⬜🟩🟨⬜ ⬜⬜⬜🟨🟨 🟩🟩🟩🟩🟩 입력 Empty 출력 다섯 글자 영단어를 대문자로 써서 제출한다. 출처: 백준, https://https://www.acmicpc.net/ 2. 해결방법 시간복잡도 txt 3. 문제 해결 및 코드 RETCH...","categories": ["코딩테스트"],
         "tags": ["알고리즘","파이썬","코테","백준","Unrated"],
@@ -237,6 +243,12 @@ var store = [{
         "excerpt":"1. 문제 [Bronze V] 꼬마 정민 - 11382 문제 링크 성능 요약 메모리: 30860 KB, 시간: 68 ms 분류 사칙연산(arithmetic), 수학(math) 문제 설명 꼬마 정민이는 이제 A + B 정도는 쉽게 계산할 수 있다. 이제 A + B + C를 계산할 차례이다! 입력 첫 번째 줄에 A, B, C (1...","categories": ["코딩테스트"],
         "tags": ["알고리즘","파이썬","코테","백준","Bronze"],
         "url": "/%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8/11382/",
+        "teaser": null
+      },{
+        "title": "[파이썬][백준 11942번] 고려대는 사랑입니다",
+        "excerpt":"1. 문제 [Bronze V] 고려대는 사랑입니다 - 11942 문제 링크 성능 요약 메모리: 30860 KB, 시간: 64 ms 분류 구현(implementation) 문제 설명 고려대학교는 사랑입니다. 입력 Empty 출력 첫째 줄에 “고려대학교”를 출력하세요. 출처: 백준, https://https://www.acmicpc.net/ 2. 해결방법 시간복잡도 단순 코딩 O(1) 3. 문제 해결 및 코드 주석을 참고하면서 이해를 돕습니다. 4....","categories": ["코딩테스트"],
+        "tags": ["알고리즘","파이썬","코테","백준","Bronze"],
+        "url": "/%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8/11942/",
         "teaser": null
       },{
         "title": "[파이썬][프로그래머스] 짝수와 홀수",
@@ -531,6 +543,12 @@ var store = [{
         "excerpt":"1. 문제 [level 1] 상위 n개 레코드 - 59405 문제 링크 성능 요약 메모리: 0.0 MB, 시간: 0.00 ms 구분 코딩테스트 연습 &gt; SELECT 채점결과 Empty 문제 설명 ANIMAL_INS 테이블은 동물 보호소에 들어온 동물의 정보를 담은 테이블입니다. ANIMAL_INS 테이블 구조는 다음과 같으며, ANIMAL_ID, ANIMAL_TYPE, DATETIME, INTAKE_CONDITION, NAME, SEX_UPON_INTAKE는 각각 동물의 아이디,...","categories": ["코딩테스트"],
         "tags": ["알고리즘","코테","프로그래머스","Level_1","MYSQL"],
         "url": "/%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8/59405/",
+        "teaser": null
+      },{
+        "title": "[파이썬][백준 1259번] 팰린드롬수",
+        "excerpt":"1. 문제 [Bronze I] 팰린드롬수 - 1259 문제 링크 성능 요약 메모리: 30840 KB, 시간: 72 ms 분류 구현(implementation), 문자열(string) 문제 설명 어떤 단어를 뒤에서부터 읽어도 똑같다면 그 단어를 팰린드롬이라고 한다. 'radar', 'sees'는 팰린드롬이다. 수도 팰린드롬으로 취급할 수 있다. 수의 숫자들을 뒤에서부터 읽어도 같다면 그 수는 팰린드롬수다. 121, 12421 등은...","categories": ["코딩테스트"],
+        "tags": ["알고리즘","파이썬","코테","백준","Bronze"],
+        "url": "/%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8/1259/",
         "teaser": null
       },{
         "title": "[파이썬][프로그래머스] 모든 레코드 조회하기",
