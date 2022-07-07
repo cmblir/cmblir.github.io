@@ -1056,14 +1056,20 @@ var store = [{
         "teaser": null
       },{
         "title": "Django 공식문서 - 3",
-        "excerpt":"파이썬 설치하기      파이썬 공식 홈페이지인 https://www.python.org/downloads/ 에서 설치하기를 바란다.   데이터베이스 설정하기      PostgreSQL, MariaDB, MySQL, Oracle과 같은 규모의 데이터베이스 엔진을 사용하여 작업할 때만 필요하다.   파이썬에 장고 확인하기   &gt;&gt;&gt; import django &gt;&gt;&gt; print(django.get_version()) 4.0  ","categories": ["장고"],
+        "excerpt":"[출처 : 장고 공식문서]   파이썬 설치하기      파이썬 공식 홈페이지인 https://www.python.org/downloads/ 에서 설치하기를 바란다.   데이터베이스 설정하기      PostgreSQL, MariaDB, MySQL, Oracle과 같은 규모의 데이터베이스 엔진을 사용하여 작업할 때만 필요하다.   파이썬에 장고 확인하기   &gt;&gt;&gt; import django &gt;&gt;&gt; print(django.get_version()) 4.0  ","categories": ["장고"],
         "tags": ["장고"],
         "url": "/%EC%9E%A5%EA%B3%A0/Django_learn_3/",
         "teaser": null
       },{
-        "title": "Django_learn_4",
-        "excerpt":" ","categories": [],
-        "tags": [],
-        "url": "/Django_learn_4/",
+        "title": "Django 공식문서 - 4",
+        "excerpt":"[출처 : 장고 공식문서] django 버젼 확인하기 $ python -m django —version Django의 공식문서에서는 Django 버젼 4.0, Python 3.8 이후의 버젼을 지원합니다. 이전 버젼의 Python의 경우 faq-python-version-supprot에서 호환되는 Django를 이용할 것 새로 작업을 하는 경우 버젼확인은 필수불가결적인 것이다. 프로젝트 만들기 $ django-admin startproject mysite 장고의 프로젝트를 기획할 때 코드를 자동으로...","categories": ["장고"],
+        "tags": ["장고"],
+        "url": "/%EC%9E%A5%EA%B3%A0/Django_learn_4/",
+        "teaser": null
+      },{
+        "title": "Django 공식문서 - 5",
+        "excerpt":"[출처 : 장고 공식문서] 설문조사 앱 만들기 🔥 프로젝트와 앱의 차이점 앱은 블로그 시스템, 공개 기록 데이터베이스 또는 소규모 의견조사 앱과 같은 작업을 수행하는 웹 어플리케이션이다. 프로젝트는 특정 웹 사이트에 대한 구성 및 앱의 모음이다. 그러므로 프로젝트에는 여러 개의 앱이 포함이 될 수 있고, 앱은 여러 프로젝트에 있을 수 있다....","categories": ["장고"],
+        "tags": ["장고"],
+        "url": "/%EC%9E%A5%EA%B3%A0/Django_learn_5/",
         "teaser": null
       }]

@@ -9,8 +9,8 @@
   <head>
     <meta charset="utf-8">
 
-<!-- begin _includes/seo.html --><title>[파이썬][백준 1152번] 단어의 개수 - 성장형 개발자 블로그</title>
-<meta name="description" content="백준 1152번 단어의 개수 문제 풀이">
+<!-- begin _includes/seo.html --><title>Django 공식문서 - 4 - 성장형 개발자 블로그</title>
+<meta name="description" content="공식문서 가이드를 따라가면서 공부하기">
 
 
   <meta name="author" content="You Nicholas">
@@ -22,32 +22,32 @@
 <meta property="og:type" content="article">
 <meta property="og:locale" content="ko">
 <meta property="og:site_name" content="성장형 개발자 블로그">
-<meta property="og:title" content="[파이썬][백준 1152번] 단어의 개수">
-<meta property="og:url" content="http://localhost:4000/%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8/1152/">
+<meta property="og:title" content="Django 공식문서 - 4">
+<meta property="og:url" content="http://localhost:4000/%EC%9E%A5%EA%B3%A0/Django_learn_4/">
 
 
-  <meta property="og:description" content="백준 1152번 단어의 개수 문제 풀이">
-
-
-
+  <meta property="og:description" content="공식문서 가이드를 따라가면서 공부하기">
 
 
 
 
-  <meta property="article:published_time" content="2022-03-28T00:00:00+09:00">
 
 
 
-  <meta property="article:modified_time" content="2022-03-28T00:00:00+09:00">
+  <meta property="article:published_time" content="2022-07-05T00:00:00+09:00">
 
 
 
-  
+  <meta property="article:modified_time" content="2022-07-05T00:00:00+09:00">
+
+
 
   
 
+  
 
-<link rel="canonical" href="http://localhost:4000/%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8/1152/">
+
+<link rel="canonical" href="http://localhost:4000/%EC%9E%A5%EA%B3%A0/Django_learn_4/">
 
 
 
@@ -268,16 +268,16 @@
 
 
   <article class="page h-entry" itemscope itemtype="https://schema.org/CreativeWork">
-    <meta itemprop="headline" content="[파이썬][백준 1152번] 단어의 개수">
-    <meta itemprop="description" content="백준 1152번 단어의 개수 문제 풀이">
-    <meta itemprop="datePublished" content="2022-03-28T00:00:00+09:00">
-    <meta itemprop="dateModified" content="2022-03-28T00:00:00+09:00">
+    <meta itemprop="headline" content="Django 공식문서 - 4">
+    <meta itemprop="description" content="공식문서 가이드를 따라가면서 공부하기">
+    <meta itemprop="datePublished" content="2022-07-05T00:00:00+09:00">
+    <meta itemprop="dateModified" content="2022-07-05T00:00:00+09:00">
 
     <div class="page__inner-wrap">
       
         <header>
           <h1 id="page-title" class="page__title p-name" itemprop="headline">
-            <a href="http://localhost:4000/%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8/1152/" class="u-url" itemprop="url">[파이썬][백준 1152번] 단어의 개수
+            <a href="http://localhost:4000/%EC%9E%A5%EA%B3%A0/Django_learn_4/" class="u-url" itemprop="url">Django 공식문서 - 4
 </a>
           </h1>
           
@@ -294,7 +294,7 @@
       <span class="page__meta-readtime">
         <i class="far fa-clock" aria-hidden="true"></i>
         
-          최대 1 분 소요
+          1 분 소요
         
       </span>
     
@@ -309,72 +309,145 @@
           <aside class="sidebar__right sticky">
             <nav class="toc">
               <header><h4 class="nav__title"><i class="fas fa-file-alt"></i> On This Page</h4></header>
-              <ul class="toc__menu"><li><a href="#1-문제">1. 문제</a><ul><li><a href="#성능-요약">성능 요약</a></li><li><a href="#분류">분류</a></li><li><a href="#문제-설명">문제 설명</a></li><li><a href="#입력">입력</a></li><li><a href="#출력">출력</a></li></ul></li><li><a href="#2-해결방법-시간복잡도">2. 해결방법 시간복잡도</a></li><li><a href="#3-문제-해결-및-코드">3. 문제 해결 및 코드</a></li><li><a href="#주석을-참고하면서-이해를-돕습니다">주석을 참고하면서 이해를 돕습니다.</a></li><li><a href="#4-알고리즘-및-해설">4. 알고리즘 및 해설</a></li><li><a href="#5-단순하게">5. 단순하게</a></li></ul>
+              <ul class="toc__menu"><li><a href="#django-버젼-확인하기">django 버젼 확인하기</a></li><li><a href="#프로젝트-만들기">프로젝트 만들기</a><ul><li><a href="#구조들에-대해-살펴보자">구조들에 대해 살펴보자</a></li></ul></li><li><a href="#개발-서버">개발 서버</a><ul><li><a href="#포트-변경하기">포트 변경하기</a></li></ul></li></ul>
 
             </nav>
           </aside>
         
-        <h2 id="1-문제">1. 문제</h2>
+        <p>[출처 : 장고 공식문서]</p>
 
-<h1 id="bronze-ii-단어의-개수---1152">[Bronze II] 단어의 개수 - 1152</h1>
+<h2 id="django-버젼-확인하기">django 버젼 확인하기</h2>
 
-<p><a href="https://www.acmicpc.net/problem/1152">문제 링크</a></p>
-
-<h3 id="성능-요약">성능 요약</h3>
-
-<p>메모리: 37996 KB, 시간: 100 ms</p>
-
-<h3 id="분류">분류</h3>
-
-<p>구현(implementation), 문자열(string)</p>
-
-<h3 id="문제-설명">문제 설명</h3>
-
-<p>영어 대소문자와 공백으로 이루어진 문자열이 주어진다. 이 문자열에는 몇 개의 단어가 있을까? 이를 구하는 프로그램을 작성하시오. 단, 한 단어가 여러 번 등장하면 등장한 횟수만큼 모두 세어야 한다.</p>
-
-<h3 id="입력">입력</h3>
-
-<p>첫 줄에 영어 대소문자와 공백으로 이루어진 문자열이 주어진다. 이 문자열의 길이는 1,000,000을 넘지 않는다. 단어는 공백 한 개로 구분되며, 공백이 연속해서 나오는 경우는 없다. 또한 문자열은 공백으로 시작하거나 끝날 수 있다.</p>
-
-<h3 id="출력">출력</h3>
-
-<p>첫째 줄에 단어의 개수를 출력한다.</p>
-
-<blockquote>
-  <p>출처: 백준, https://https://www.acmicpc.net/</p>
-</blockquote>
-
-<h2 id="2-해결방법-시간복잡도">2. 해결방법 시간복잡도</h2>
-
-<ol>
-  <li>단순 코딩 O(N)</li>
-  <li>단순 코딩 O(1)</li>
-</ol>
-
-<h2 id="3-문제-해결-및-코드">3. 문제 해결 및 코드</h2>
-<hr />
-
-<script src="https://gist.github.com/godhin/e2e1aadc01695aa485a46f40660de955.js"></script>
+<p><code class="language-plaintext highlighter-rouge">$ python -m django —version</code></p>
 
 <ul>
-  <li>
-    <h2 id="주석을-참고하면서-이해를-돕습니다">주석을 참고하면서 이해를 돕습니다.</h2>
+  <li>Django의 공식문서에서는 Django 버젼 4.0, Python 3.8 이후의 버젼을 지원합니다.</li>
+  <li>이전 버젼의 Python의 경우 faq-python-version-supprot에서 호환되는 Django를 이용할 것
+    <ul>
+      <li>새로 작업을 하는 경우 버젼확인은 필수불가결적인 것이다.</li>
+    </ul>
   </li>
 </ul>
 
-<h2 id="4-알고리즘-및-해설">4. 알고리즘 및 해설</h2>
+<h2 id="프로젝트-만들기">프로젝트 만들기</h2>
 
-<ol>
-  <li>리스트형태로 받은 값을 돌면서 카운트해준다.</li>
-</ol>
+<p><code class="language-plaintext highlighter-rouge">$ django-admin startproject mysite</code></p>
 
-<h2 id="5-단순하게">5. 단순하게</h2>
-<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">print</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="nb">list</span><span class="p">(</span><span class="nb">map</span><span class="p">(</span><span class="nb">str</span><span class="p">,</span> <span class="nb">input</span><span class="p">().</span><span class="n">split</span><span class="p">()))))</span>
+<ul>
+  <li>장고의 프로젝트를 기획할 때 코드를 자동으로 생성하는데 이때 최소한의 옵션들을 불러오는 코드릀 ㅏ용하게 된다. mysite 위치에 내가 사용할 폴더명을 지정해주면 된다.</li>
+</ul>
+
+<aside>
+🔥 해당 공식문서에서는 웹 서버의 최상단에 코드 전체를 작성하는 경우가 익숙할 것임을 인지하고, Python코드의 경우 보안을 위해 DocumentRoot의 바깥에 두는 것을 권장한다.
+
+</aside>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>mysite/
+    manage.py
+    mysite/
+        __init__.py
+        settings.py
+        urls.py
+        asgi.py
+        wsgi.py
+</code></pre></div></div>
+
+<hr />
+
+<h3 id="구조들에-대해-살펴보자">구조들에 대해 살펴보자</h3>
+
+<ul>
+  <li>mysite
+    <ul>
+      <li>디텍토리 밖은 프로젝트를 담는 공간이다. 처음에 mysite로 생성했기때문에 해당 폴더명으로 장고가 만들어지나 폴더명을 변경해도 무관하다.</li>
+    </ul>
+  </li>
+  <li>manage.py
+    <ul>
+      <li>장고 프로젝트와 다양한 방법으로 상호작용하는 커맨드라인 유틸리티이다. 프로젝트의 몸통과도 같은 느낌이라고 이해했다.</li>
+    </ul>
+  </li>
+  <li>mysite/
+    <ul>
+      <li>디텍토리 내부로 실 프로젝트 패키지들이 저장된다.</li>
+      <li><strong>init</strong>.py
+        <ul>
+          <li>해당 디텍토리를 패키지처럼 다루라고 알려주는 용도의 단순한 빈 파일이다.</li>
+        </ul>
+      </li>
+      <li>settings.py
+        <ul>
+          <li>장고 프로젝트의 환경 및 구성을 저장한다.</li>
+        </ul>
+      </li>
+      <li>urls.py
+        <ul>
+          <li>장고 프로젝트의 URL 선언을 저장한다. 목차로 이해할 수있다.</li>
+        </ul>
+      </li>
+      <li>asgi.py
+        <ul>
+          <li>현재 프로젝트를 서비스하기 위한 ASGI-호환 웹 서버의 진입점이다. ASGI를 사용하여 배포를 진행할 때 사용하는 파일이다.</li>
+        </ul>
+      </li>
+      <li>wsgi.py
+        <ul>
+          <li>현재 프로젝트를 서비스하기 위한 WSGI 호환 웹 서버의 진입점이다. WSGI를 사용하여 배포를 진행할 때 사용하는 파일이다.</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+</ul>
+
+<hr />
+
+<h2 id="개발-서버">개발 서버</h2>
+
+<p><code class="language-plaintext highlighter-rouge">$ python [manage.py](http://manage.py) runserver</code></p>
+
+<ul>
+  <li>mysite에 들어가서 해당 프로젝트를 로컬서버에서 실행하는 커맨드이다.</li>
+</ul>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Performing system checks...
+
+System check identified no issues <span class="o">(</span>0 silenced<span class="o">)</span><span class="nb">.</span>
+
+You have unapplied migrations<span class="p">;</span> your app may not work properly <span class="k">until </span>they are applied.
+Run <span class="s1">'python manage.py migrate'</span> to apply them.
+
+7월 07, 2022 - 15:50:53
+Django version 4.0, using settings <span class="s1">'mysite.settings'</span>
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CONTROL-C.
 </code></pre></div></div>
 
 <ul>
-  <li>값을 받자마자 바로 리스트형태로 만들어 길이를 출력해준다.</li>
+  <li>실행을 하기될 시 위와같이 출력문이 나오게된다.
+    <ul>
+      <li>여기서 127.0.0.1:8000에 접속해서 해당 프로젝트의 결과물을 확인이 가능하다.
+        <ul>
+          <li>localhost:8000으로도 가능하다.</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
 </ul>
+
+<h3 id="포트-변경하기">포트 변경하기</h3>
+
+<p>**<code class="language-plaintext highlighter-rouge">$** python manage.py runserver 8080</code></p>
+
+<ul>
+  <li>위의 커맨드와 동일하나 뒤에 포트번호를 입력해주면 내가 지정하는 포트로 들어가게 된다.</li>
+  <li>이는 추후에 Docker나 다른 로컬서버로 동시에 실행하게 될 때 유의미하다.</li>
+</ul>
+
+<aside>
+🔥 **runserver의 자동 변경 기능**
+서버를 돌린 상태에서 파일을 수정할 경우 자동으로 변경사항이 반영되기 때문에 서버를 재기동 하지 않아도 된다. 이는 작업물을 계속해서 수정할 경우 굉장히 용이한데, 파일을 추가하거나 몇몇 동작의 경우 서버가 자동으로 인식을 하지 못하기떄문에 재기동해줘야 하는 경우도 있다.
+
+</aside>
 
         
       </section>
@@ -391,15 +464,7 @@
     <strong><i class="fas fa-fw fa-tags" aria-hidden="true"></i> 태그: </strong>
     <span itemprop="keywords">
     
-      <a href="/tags/#bronze" class="page__taxonomy-item p-category" rel="tag">Bronze</a><span class="sep">, </span>
-    
-      <a href="/tags/#%EB%B0%B1%EC%A4%80" class="page__taxonomy-item p-category" rel="tag">백준</a><span class="sep">, </span>
-    
-      <a href="/tags/#%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98" class="page__taxonomy-item p-category" rel="tag">알고리즘</a><span class="sep">, </span>
-    
-      <a href="/tags/#%EC%BD%94%ED%85%8C" class="page__taxonomy-item p-category" rel="tag">코테</a><span class="sep">, </span>
-    
-      <a href="/tags/#%ED%8C%8C%EC%9D%B4%EC%8D%AC" class="page__taxonomy-item p-category" rel="tag">파이썬</a>
+      <a href="/tags/#%EC%9E%A5%EA%B3%A0" class="page__taxonomy-item p-category" rel="tag">장고</a>
     
     </span>
   </p>
@@ -416,7 +481,7 @@
     <strong><i class="fas fa-fw fa-folder-open" aria-hidden="true"></i> 카테고리: </strong>
     <span itemprop="keywords">
     
-      <a href="/categories/#%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8" class="page__taxonomy-item p-category" rel="tag">코딩테스트</a>
+      <a href="/categories/#%EC%9E%A5%EA%B3%A0" class="page__taxonomy-item p-category" rel="tag">장고</a>
     
     </span>
   </p>
@@ -424,7 +489,7 @@
 
         
 
-  <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> 업데이트:</strong> <time class="dt-published" datetime="2022-03-28">March 28, 2022</time></p>
+  <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> 업데이트:</strong> <time class="dt-published" datetime="2022-07-05">July 5, 2022</time></p>
 
       </footer>
 
@@ -433,22 +498,22 @@
     <h4 class="page__share-title">공유하기</h4>
   
 
-  <a href="https://twitter.com/intent/tweet?text=%5B%ED%8C%8C%EC%9D%B4%EC%8D%AC%5D%5B%EB%B0%B1%EC%A4%80+1152%EB%B2%88%5D+%EB%8B%A8%EC%96%B4%EC%9D%98+%EA%B0%9C%EC%88%98%20http%3A%2F%2Flocalhost%3A4000%2F%25EC%25BD%2594%25EB%2594%25A9%25ED%2585%258C%25EC%258A%25A4%25ED%258A%25B8%2F1152%2F" class="btn btn--twitter" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="공유하기 Twitter"><i class="fab fa-fw fa-twitter" aria-hidden="true"></i><span> Twitter</span></a>
+  <a href="https://twitter.com/intent/tweet?text=Django+%EA%B3%B5%EC%8B%9D%EB%AC%B8%EC%84%9C+-+4%20http%3A%2F%2Flocalhost%3A4000%2F%25EC%259E%25A5%25EA%25B3%25A0%2FDjango_learn_4%2F" class="btn btn--twitter" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="공유하기 Twitter"><i class="fab fa-fw fa-twitter" aria-hidden="true"></i><span> Twitter</span></a>
 
-  <a href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Flocalhost%3A4000%2F%25EC%25BD%2594%25EB%2594%25A9%25ED%2585%258C%25EC%258A%25A4%25ED%258A%25B8%2F1152%2F" class="btn btn--facebook" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="공유하기 Facebook"><i class="fab fa-fw fa-facebook" aria-hidden="true"></i><span> Facebook</span></a>
+  <a href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Flocalhost%3A4000%2F%25EC%259E%25A5%25EA%25B3%25A0%2FDjango_learn_4%2F" class="btn btn--facebook" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="공유하기 Facebook"><i class="fab fa-fw fa-facebook" aria-hidden="true"></i><span> Facebook</span></a>
 
-  <a href="https://www.linkedin.com/shareArticle?mini=true&url=http%3A%2F%2Flocalhost%3A4000%2F%25EC%25BD%2594%25EB%2594%25A9%25ED%2585%258C%25EC%258A%25A4%25ED%258A%25B8%2F1152%2F" class="btn btn--linkedin" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="공유하기 LinkedIn"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i><span> LinkedIn</span></a>
+  <a href="https://www.linkedin.com/shareArticle?mini=true&url=http%3A%2F%2Flocalhost%3A4000%2F%25EC%259E%25A5%25EA%25B3%25A0%2FDjango_learn_4%2F" class="btn btn--linkedin" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="공유하기 LinkedIn"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i><span> LinkedIn</span></a>
 </section>
 
 
       
   <nav class="pagination">
     
-      <a href="/%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8/11720/" class="pagination--pager" title="[파이썬][백준 11720번] 숫자의 합
+      <a href="/%EC%9E%A5%EA%B3%A0/Django_learn_3/" class="pagination--pager" title="Django 공식문서 - 3
 ">이전</a>
     
     
-      <a href="/%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8/10250/" class="pagination--pager" title="[파이썬][백준 10250번] ACM 호텔
+      <a href="/%EC%9E%A5%EA%B3%A0/Django_learn_5/" class="pagination--pager" title="Django 공식문서 - 5
 ">다음</a>
     
   </nav>
@@ -474,46 +539,6 @@
     <h2 class="archive__item-title no_toc" itemprop="headline">
       
         <a href="/%EC%9E%A5%EA%B3%A0/Django_learn_5/" rel="permalink">Django 공식문서 - 5
-</a>
-      
-    </h2>
-    
-
-  <p class="page__meta">
-    
-
-    
-
-    
-      
-      
-
-      <span class="page__meta-readtime">
-        <i class="far fa-clock" aria-hidden="true"></i>
-        
-          1 분 소요
-        
-      </span>
-    
-  </p>
-
-
-    <p class="archive__item-excerpt" itemprop="description">공식문서 가이드를 따라가면서 공부하기
-</p>
-  </article>
-</div>
-
-        
-          
-
-
-
-<div class="grid__item">
-  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
-    
-    <h2 class="archive__item-title no_toc" itemprop="headline">
-      
-        <a href="/%EC%9E%A5%EA%B3%A0/Django_learn_4/" rel="permalink">Django 공식문서 - 4
 </a>
       
     </h2>
@@ -612,6 +637,46 @@
         <i class="far fa-clock" aria-hidden="true"></i>
         
           1 분 소요
+        
+      </span>
+    
+  </p>
+
+
+    <p class="archive__item-excerpt" itemprop="description">공식문서 가이드를 따라가면서 공부하기
+</p>
+  </article>
+</div>
+
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title no_toc" itemprop="headline">
+      
+        <a href="/%EC%9E%A5%EA%B3%A0/Django_learn_1/" rel="permalink">Django 공식문서 - 1
+</a>
+      
+    </h2>
+    
+
+  <p class="page__meta">
+    
+
+    
+
+    
+      
+      
+
+      <span class="page__meta-readtime">
+        <i class="far fa-clock" aria-hidden="true"></i>
+        
+          최대 1 분 소요
         
       </span>
     

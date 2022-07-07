@@ -13,6 +13,7 @@ toc_sticky: true
 date: 2022-07-05
 last_modified_at: 2022-07-05
 ---
+[출처 : 장고 공식문서]
 
 ## 파이썬 설치하기
 
