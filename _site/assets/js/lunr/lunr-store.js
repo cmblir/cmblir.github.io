@@ -679,7 +679,7 @@ var store = [{
       },{
         "title": "[파이썬][백준 15631번] BOJeopardy",
         "excerpt":"1. 문제 [Unrated] BOJeopardy - 15631 문제 링크 성능 요약 메모리: 4528 KB, 시간: 0 ms 분류 Empty 문제 설명 ????에 들어갈 말은 무엇인가? 답은 숫자와 소문자 영어 알파벳으로만 작성하고, 띄어쓰기나 é 등의 악센트가 있으면 제거해야 한다. 같은 답을 여러 형태로 출력할 수 있으면 (예를 들어 obama, barackobama, barackhusseinobamaii 등)...","categories": ["코딩테스트"],
-        "tags": ["알고리즘","파이썬","코테","백준","Unranted"],
+        "tags": ["알고리즘","파이썬","코테","백준","Unrated"],
         "url": "/%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8/15631/",
         "teaser": null
       },{
@@ -762,7 +762,7 @@ var store = [{
         "teaser": null
       },{
         "title": "django를 시작해보자",
-        "excerpt":"장고와 AWS 설치하기 프로젝트 배포를 위해 Django와 AWS를 공부해보았다. 사용하기 위한 환경 구현 프로젝트에 사용할 환경변수 설정 (필자는 conda를 활용) conda create —name test python=3.8 (파이썬은 3.8을 사용) Django 라이브러리 설치 pip install django 프로젝트 만들기 배포할 프로젝트 만들기 django-admin startproject test 프로젝트에 앱 만들기 cd test python [manage.py](http://manage.py) startapp...","categories": ["장고"],
+        "excerpt":"장고와 AWS 설치하기 프로젝트 배포를 위해 Django와 AWS를 공부해보았다. 사용하기 위한 환경 구현 프로젝트에 사용할 환경변수 설정 (필자는 conda를 활용) conda create —name test python=3.8 (파이썬은 3.8을 사용) Django 라이브러리 설치 pip install django 프로젝트 만들기 배포할 프로젝트 만들기 django-admin startproject test 프로젝트에 앱 만들기 cd test python manage.py startapp...","categories": ["장고"],
         "tags": ["장고","aws"],
         "url": "/%EC%9E%A5%EA%B3%A0/Django-&-AWS/",
         "teaser": null
@@ -1055,14 +1055,20 @@ var store = [{
         "url": "/%EC%9D%BC%EC%83%81/Gooroomee/",
         "teaser": null
       },{
+        "title": "Django 공식문서 - 0",
+        "excerpt":"[출처 : 장고 공식문서] 장고 공식문서의 가장 첫 페이지 🔥 **The web framework for perfectionists with deadlines. (마감에 쫓기는 완벽주의자를 위한 웹 프레임워크)** 장고는 웹 프로그램을 쉽고 빠르게 만들어주는 웹 프레임워크로 Flask보다 조금 더 견고하다고 생각이 든다. 참고로 장고는 2005년에 만들어져서 굉장히 오랜 시간 사랑을 받고 있는 웹 프레임워크이며, 많은...","categories": ["장고"],
+        "tags": ["장고"],
+        "url": "/%EC%9E%A5%EA%B3%A0/Django_learn_0/",
+        "teaser": null
+      },{
         "title": "Django 공식문서 - 1",
-        "excerpt":"장고의 기초 프로젝트 구조 django manage mysite settings.py urls.py wsgi.py init.py 장고에 대해 [출처 : 장고 공식문서] 카테고리 모델 계층 웹 어플리케이션의 데이터를 구조화하고 조작하기 위한 모델을 제공한다. 뷰 계층 사용자의 요청을 처리하고 결과를 반환하기 위한 로직을 캡슐화한 “뷰”의 개념을 가지고 있다. 템플릿 계층 사용자에게 표시할 정보를 표현하기 위해 디자이너에게...","categories": ["장고"],
+        "excerpt":"[출처 : 장고 공식문서] 장고의 기초 프로젝트 구조 django manage mysite settings.py urls.py wsgi.py init.py 장고에 대해 카테고리 모델 계층 웹 어플리케이션의 데이터를 구조화하고 조작하기 위한 모델을 제공한다. 뷰 계층 사용자의 요청을 처리하고 결과를 반환하기 위한 로직을 캡슐화한 “뷰”의 개념을 가지고 있다. 템플릿 계층 사용자에게 표시할 정보를 표현하기 위해 디자이너에게...","categories": ["장고"],
         "tags": ["장고"],
         "url": "/%EC%9E%A5%EA%B3%A0/Django_learn_1/",
         "teaser": null
       },{
         "title": "Django 공식문서 - 2",
-        "excerpt":"[출처 : 장고 공식문서] 장고 흩어보기 1. Model from django.db import models class Reporter(models.Model): full_name = models.CharField(max_length=70) def __str__(self): return self.full_name class Article(models.Model): pub_date = models.DateField() headline = models.CharField(max_length=200) content = models.TextField() reporter = models.ForeignKey(Reporter, on_delete=models.CASCADE) def __str__(self): return self.headline 장고에는 모델을 사용할 수 있다. $python manage.py makemigrations $python manage.py...","categories": ["장고"],
+        "excerpt":"[출처 : 장고 공식문서] 장고 흩어보기 1. Model from django.db import models class Reporter(models.Model): full_name = models.CharField(max_length=70) def __str__(self): return self.full_name class Article(models.Model): pub_date = models.DateField() headline = models.CharField(max_length=200) content = models.TextField() reporter = models.ForeignKey(Reporter, on_delete=models.CASCADE) def __str__(self): return self.headline 장고에는 모델을 사용할 수 있다. $ python manage.py makemigrations $...","categories": ["장고"],
         "tags": ["장고"],
         "url": "/%EC%9E%A5%EA%B3%A0/Django_learn_2/",
         "teaser": null
@@ -1083,6 +1089,24 @@ var store = [{
         "excerpt":"[출처 : 장고 공식문서] 설문조사 앱 만들기 🔥 프로젝트와 앱의 차이점 앱은 블로그 시스템, 공개 기록 데이터베이스 또는 소규모 의견조사 앱과 같은 작업을 수행하는 웹 어플리케이션이다. 프로젝트는 특정 웹 사이트에 대한 구성 및 앱의 모음이다. 그러므로 프로젝트에는 여러 개의 앱이 포함이 될 수 있고, 앱은 여러 프로젝트에 있을 수 있다....","categories": ["장고"],
         "tags": ["장고"],
         "url": "/%EC%9E%A5%EA%B3%A0/Django_learn_5/",
+        "teaser": null
+      },{
+        "title": "Django 공식문서 - 6",
+        "excerpt":"[출처 : 장고 공식문서] 데이터베이스 설치 mysite/settings.py 파일을 중심으로 이루어집니다. 장고는 기본적으로 SQLite를 사용하도록 구성되어 있다. 이는 파이썬에서 기본으로 제공되기때문에 사용하는 것이다. 다른 데이터베이스를 사용하고 싶다면, 적절한 데이터베이스 바인딩을 설치해줘야한다. DATABASES의 ‘default’값을 밑의 리스트중 바꿔주면 된다. ENGINE django.db.backends.sqlite3 django.db.backends.postgresql django.db.backends.mysql django.db.beckends.oracle 이외에도 SQLite를 제외한 다른 데이터베이스를 사용할 경우 여러 설정들이...","categories": ["장고"],
+        "tags": ["장고"],
+        "url": "/%EC%9E%A5%EA%B3%A0/Django_learn_6/",
+        "teaser": null
+      },{
+        "title": "Django 공식문서 - 7",
+        "excerpt":"[출처 : 장고 공식문서] 모델 만들기 장고에서의 모델이란 부가적인 메타데이터를 가진 데이터베이스의 구조를 말한다. 현재 수정중인 파일은 polls/models from django.db import models class Question(models.Model): question_text = models.CharField(max_length=200) pub_date = models.DateTimeField('date published') class Choice(models.Model): question = models.ForeignKey(Question, on_delete=models.CASCADE) choice_text = models.CharField(max_length=200) votes = models.IntegerField(default=0) 장고 공식문서에서는 여론조사 앱을 만든다. 그래서 여기서...","categories": ["장고"],
+        "tags": ["장고"],
+        "url": "/%EC%9E%A5%EA%B3%A0/Django_learn_7/",
+        "teaser": null
+      },{
+        "title": "Django 공식문서 - 8",
+        "excerpt":"[출처 : 장고 공식문서] API 가지고 놀기 쉘을 통해 장고의 API를 자유롭게 가지고 놀아보자 $ python manage.py shell 쉘에 진입한 이후에는 데이터베이스 API를 사용할 수 있게 된다. 영문의 내용을 직역한 것이므로 약간 이상할수도 있습니다! &gt;&gt;&gt; from polls.models import Choice, Question # 방금 만든 모델의 클래스를 불러온다. # 아직 작성한 질문이...","categories": ["장고"],
+        "tags": ["장고"],
+        "url": "/%EC%9E%A5%EA%B3%A0/Django_learn_8/",
         "teaser": null
       },{
         "title": "하루를 시작하는 곳",

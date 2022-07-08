@@ -1,6 +1,6 @@
 ---
 title:  "django를 시작해보자"
-excerpt: "장고로 시작해서 AWS까지 - 1"
+excerpt: "간단하게 프로젝트 배포하기"
 
 categories:
   - 장고
@@ -45,7 +45,7 @@ last_modified_at: 2022-05-17
         ```
         
         ```bash
-        python [manage.py](http://manage.py) startapp main
+        python manage.py startapp main
         ```
         
     3. 프로젝트 설정 수정하기
@@ -110,13 +110,13 @@ last_modified_at: 2022-05-17
     6. 기본 모델들 migrate
         
         ```bash
-        python [manage.py](http://manage.py) makemigrations && manage.py migrate
+        python manage.py makemigrations && manage.py migrate
         ```
         
     7. 서버 구동
         
         ```bash
-        python [manage.py](http://manage.py) runserver
+        python manage.py runserver
         ```
         
         [http://127.0.0.1:8000/](http://127.0.0.1:8000/) 주소 접속

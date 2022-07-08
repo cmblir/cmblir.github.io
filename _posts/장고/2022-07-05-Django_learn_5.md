@@ -20,6 +20,7 @@ last_modified_at: 2022-07-05
 
 <aside>
 🔥 프로젝트와 앱의 차이점
+
 앱은 블로그 시스템, 공개 기록 데이터베이스 또는 소규모 의견조사 앱과 같은 작업을 수행하는 웹 어플리케이션이다. 프로젝트는 특정 웹 사이트에 대한 구성 및 앱의 모음이다.
 그러므로 프로젝트에는 여러 개의 앱이 포함이 될 수 있고, 앱은 여러 프로젝트에 있을 수 있다.
 
@@ -27,7 +28,7 @@ last_modified_at: 2022-07-05
 
 - 만들기에 앞서 4장에서 했던 mysite를 생성했는지 여부를 확인한다.
 
-**`$** python manage.py startapp polls`
+`$ python manage.py startapp polls`
 
 mysite라는 프로젝트에 manage.py를 통해 새로운 앱을 생성해준다.
 
@@ -72,6 +73,7 @@ urlpatterns = [
 
 <aside>
 🔥 include() 함수의 경우 다른 URL 패턴을 포함할 경우 항상 사용된다고 보면 된다.
+
 단, admin.site.urls는 예외처리된다.
 
 </aside>

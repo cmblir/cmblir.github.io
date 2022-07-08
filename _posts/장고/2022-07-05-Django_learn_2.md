@@ -42,8 +42,8 @@ class Article(models.Model):
 - 장고에는 모델을 사용할 수 있다.
 
 ```bash
-$python manage.py makemigrations
-$python manage.py migrate
+$ python manage.py makemigrations
+$ python manage.py migrate
 ```
 
 - 데이터베이스를 자동으로 생성해주는 장고의 명령어이다.
