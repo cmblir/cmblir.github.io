@@ -9,8 +9,8 @@
   <head>
     <meta charset="utf-8">
 
-<!-- begin _includes/seo.html --><title>[파이썬][백준 15439번] Vera and Outfits - 성장형 개발자 블로그</title>
-<meta name="description" content="백준 15439번 Vera and Outfits 문제 풀이">
+<!-- begin _includes/seo.html --><title>[파이썬][백준 15700번] 타일 채우기 4 - 성장형 개발자 블로그</title>
+<meta name="description" content="백준 15700번 타일 채우기 4 문제 풀이">
 
 
   <meta name="author" content="You Nicholas">
@@ -22,32 +22,32 @@
 <meta property="og:type" content="article">
 <meta property="og:locale" content="ko">
 <meta property="og:site_name" content="성장형 개발자 블로그">
-<meta property="og:title" content="[파이썬][백준 15439번] Vera and Outfits">
-<meta property="og:url" content="http://localhost:4000/%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8/15439/">
+<meta property="og:title" content="[파이썬][백준 15700번] 타일 채우기 4">
+<meta property="og:url" content="http://localhost:4000/%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8/15700/">
 
 
-  <meta property="og:description" content="백준 15439번 Vera and Outfits 문제 풀이">
-
-
-
+  <meta property="og:description" content="백준 15700번 타일 채우기 4 문제 풀이">
 
 
 
 
-  <meta property="article:published_time" content="2022-04-04T00:00:00+09:00">
 
 
 
-  <meta property="article:modified_time" content="2022-04-04T00:00:00+09:00">
+  <meta property="article:published_time" content="2022-06-05T00:00:00+09:00">
 
 
 
-  
+  <meta property="article:modified_time" content="2022-06-05T00:00:00+09:00">
+
+
 
   
 
+  
 
-<link rel="canonical" href="http://localhost:4000/%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8/15439/">
+
+<link rel="canonical" href="http://localhost:4000/%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8/15700/">
 
 
 
@@ -268,16 +268,16 @@
 
 
   <article class="page h-entry" itemscope itemtype="https://schema.org/CreativeWork">
-    <meta itemprop="headline" content="[파이썬][백준 15439번] Vera and Outfits">
-    <meta itemprop="description" content="백준 15439번 Vera and Outfits 문제 풀이">
-    <meta itemprop="datePublished" content="2022-04-04T00:00:00+09:00">
-    <meta itemprop="dateModified" content="2022-04-04T00:00:00+09:00">
+    <meta itemprop="headline" content="[파이썬][백준 15700번] 타일 채우기 4">
+    <meta itemprop="description" content="백준 15700번 타일 채우기 4 문제 풀이">
+    <meta itemprop="datePublished" content="2022-06-05T00:00:00+09:00">
+    <meta itemprop="dateModified" content="2022-06-05T00:00:00+09:00">
 
     <div class="page__inner-wrap">
       
         <header>
           <h1 id="page-title" class="page__title p-name" itemprop="headline">
-            <a href="http://localhost:4000/%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8/15439/" class="u-url" itemprop="url">[파이썬][백준 15439번] Vera and Outfits
+            <a href="http://localhost:4000/%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8/15700/" class="u-url" itemprop="url">[파이썬][백준 15700번] 타일 채우기 4
 </a>
           </h1>
           
@@ -316,42 +316,29 @@
         
         <h2 id="1-문제">1. 문제</h2>
 
-<h1 id="bronze-v-vera-and-outfits---15439">[Bronze V] Vera and Outfits - 15439</h1>
+<h1 id="bronze-iv-타일-채우기-4---15700">[Bronze IV] 타일 채우기 4 - 15700</h1>
 
-<p><a href="https://www.acmicpc.net/problem/15439">문제 링크</a></p>
+<p><a href="https://www.acmicpc.net/problem/15700">문제 링크</a></p>
 
 <h3 id="성능-요약">성능 요약</h3>
 
-<p>메모리: 30864 KB, 시간: 72 ms</p>
+<p>메모리: 30840 KB, 시간: 68 ms</p>
 
 <h3 id="분류">분류</h3>
 
-<p>사칙연산(arithmetic), 조합론(combinatorics), 수학(math)</p>
+<p>사칙연산(arithmetic), 수학(math)</p>
 
 <h3 id="문제-설명">문제 설명</h3>
 
-<p>Vera owns N tops and N pants. The i-th top and i-th pants have colour i, for 1 ≤ i ≤ N, where all N colours are different from each other.</p>
-
-<p>An outfit consists of one top and one pants. Vera likes outfits where the top and pants are not the same colour.</p>
-
-<p>How many different outfits does she like?</p>
+<p>N×M 크기의 벽에 2×1, 1×2 크기의 타일을 채우려고 한다. 겹치지 않게 놓는다면, 최대 몇 개를 채울 수 있을까?</p>
 
 <h3 id="입력">입력</h3>
 
-<p>The input will be in the format:</p>
-
-<pre>N</pre>
-
-<p>Constraints:</p>
-
-<ul>
-	<li>1 ≤ N ≤ 2017</li>
-	<li>N is integer</li>
-</ul>
+<p>첫째 줄에 N과 M이 주어진다. (1 ≤ N, M ≤ 1,000,000,000)</p>
 
 <h3 id="출력">출력</h3>
 
-<p>Output one line with the number of different outfits Vera likes.</p>
+<p>첫째 줄에 채울 수 있는 타일 개수의 최댓값을 출력한다.</p>
 
 <blockquote>
   <p>출처: 백준, https://https://www.acmicpc.net/</p>
@@ -366,7 +353,7 @@
 <h2 id="3-문제-해결-및-코드">3. 문제 해결 및 코드</h2>
 <hr />
 
-<script src="https://gist.github.com/godhin/a3792644637a875b0dbfc216cacf76fa.js"></script>
+<script src="https://gist.github.com/godhin/271794c9663a78d9839d41fcd4f7dae2.js"></script>
 
 <ul>
   <li>
@@ -377,7 +364,7 @@
 <h2 id="4-알고리즘-및-해설">4. 알고리즘 및 해설</h2>
 
 <ol>
-  <li>받은 값이 1보다 작을 경우에는 0을 출력해주고, 0보다 크다면 해당 값을 해당값 - 1을 곱한뒤 출력한다.</li>
+  <li>받은 값을 N * M으로 곱해주고 해당 값을 2로 나눠서 출력해준다.</li>
 </ol>
 
         
@@ -428,7 +415,7 @@
 
         
 
-  <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> 업데이트:</strong> <time class="dt-published" datetime="2022-04-04">April 4, 2022</time></p>
+  <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> 업데이트:</strong> <time class="dt-published" datetime="2022-06-05">June 5, 2022</time></p>
 
       </footer>
 
@@ -437,22 +424,22 @@
     <h4 class="page__share-title">공유하기</h4>
   
 
-  <a href="https://twitter.com/intent/tweet?text=%5B%ED%8C%8C%EC%9D%B4%EC%8D%AC%5D%5B%EB%B0%B1%EC%A4%80+15439%EB%B2%88%5D+Vera+and+Outfits%20http%3A%2F%2Flocalhost%3A4000%2F%25EC%25BD%2594%25EB%2594%25A9%25ED%2585%258C%25EC%258A%25A4%25ED%258A%25B8%2F15439%2F" class="btn btn--twitter" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="공유하기 Twitter"><i class="fab fa-fw fa-twitter" aria-hidden="true"></i><span> Twitter</span></a>
+  <a href="https://twitter.com/intent/tweet?text=%5B%ED%8C%8C%EC%9D%B4%EC%8D%AC%5D%5B%EB%B0%B1%EC%A4%80+15700%EB%B2%88%5D+%ED%83%80%EC%9D%BC+%EC%B1%84%EC%9A%B0%EA%B8%B0+4%20http%3A%2F%2Flocalhost%3A4000%2F%25EC%25BD%2594%25EB%2594%25A9%25ED%2585%258C%25EC%258A%25A4%25ED%258A%25B8%2F15700%2F" class="btn btn--twitter" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="공유하기 Twitter"><i class="fab fa-fw fa-twitter" aria-hidden="true"></i><span> Twitter</span></a>
 
-  <a href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Flocalhost%3A4000%2F%25EC%25BD%2594%25EB%2594%25A9%25ED%2585%258C%25EC%258A%25A4%25ED%258A%25B8%2F15439%2F" class="btn btn--facebook" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="공유하기 Facebook"><i class="fab fa-fw fa-facebook" aria-hidden="true"></i><span> Facebook</span></a>
+  <a href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Flocalhost%3A4000%2F%25EC%25BD%2594%25EB%2594%25A9%25ED%2585%258C%25EC%258A%25A4%25ED%258A%25B8%2F15700%2F" class="btn btn--facebook" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="공유하기 Facebook"><i class="fab fa-fw fa-facebook" aria-hidden="true"></i><span> Facebook</span></a>
 
-  <a href="https://www.linkedin.com/shareArticle?mini=true&url=http%3A%2F%2Flocalhost%3A4000%2F%25EC%25BD%2594%25EB%2594%25A9%25ED%2585%258C%25EC%258A%25A4%25ED%258A%25B8%2F15439%2F" class="btn btn--linkedin" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="공유하기 LinkedIn"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i><span> LinkedIn</span></a>
+  <a href="https://www.linkedin.com/shareArticle?mini=true&url=http%3A%2F%2Flocalhost%3A4000%2F%25EC%25BD%2594%25EB%2594%25A9%25ED%2585%258C%25EC%258A%25A4%25ED%258A%25B8%2F15700%2F" class="btn btn--linkedin" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="공유하기 LinkedIn"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i><span> LinkedIn</span></a>
 </section>
 
 
       
   <nav class="pagination">
     
-      <a href="/%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8/14928/" class="pagination--pager" title="[파이썬][백준 14928번] 큰 수 (BIG)
+      <a href="/%ED%82%A4%EB%B3%B4%EB%93%9C/%ED%94%84%EB%9E%91%EC%BC%84-%EC%8A%A4%EC%9C%84%EC%B9%98%EB%9E%80/" class="pagination--pager" title="프랑켄 스위치란
 ">이전</a>
     
     
-      <a href="/%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8/15727/" class="pagination--pager" title="[파이썬][백준 15727번] 조별과제를 하려는데 조장이 사라졌다
+      <a href="/%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8/1/" class="pagination--pager" title="[파이썬][Leetcode][릿코드] squares of a sorted array
 ">다음</a>
     
   </nav>
