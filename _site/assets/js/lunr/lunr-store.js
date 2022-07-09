@@ -113,6 +113,12 @@ var store = [{
         "url": "/%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8/14681/",
         "teaser": null
       },{
+        "title": "[파이썬][백준 18108번] 1998년생인 내가 태국에서는 2541년생?!",
+        "excerpt":"1. 문제 [Bronze V] 1998년생인 내가 태국에서는 2541년생?! - 18108 문제 링크 성능 요약 메모리: 30864 KB, 시간: 72 ms 분류 사칙연산(arithmetic), 수학(math) 문제 설명 ICPC Bangkok Regional에 참가하기 위해 수완나품 국제공항에 막 도착한 팀 레드시프트 일행은 눈을 믿을 수 없었다. 공항의 대형 스크린에 올해가 2562년이라고 적혀 있던 것이었다. 불교...","categories": ["코딩테스트"],
+        "tags": ["알고리즘","파이썬","코테","백준","Bronze"],
+        "url": "/%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8/18108/",
+        "teaser": null
+      },{
         "title": "[파이썬][백준 10870번] 피보나치 수 5",
         "excerpt":"1. 문제 [Bronze II] 피보나치 수 5 - 10870 문제 링크 성능 요약 메모리: 30864 KB, 시간: 72 ms 분류 구현(implementation), 수학(math) 문제 설명 피보나치 수는 0과 1로 시작한다. 0번째 피보나치 수는 0이고, 1번째 피보나치 수는 1이다. 그 다음 2번째 부터는 바로 앞 두 피보나치 수의 합이 된다. 이를 식으로...","categories": ["코딩테스트"],
         "tags": ["알고리즘","파이썬","코테","백준","Bronze"],
@@ -387,6 +393,30 @@ var store = [{
         "excerpt":"1. 문제 [Bronze V] 달달함이 넘쳐흘러 - 17256 문제 링크 성능 요약 메모리: 30864 KB, 시간: 68 ms 분류 사칙연산(arithmetic), 구현(implementation), 수학(math) 문제 설명 냉장고에서 맛있게 숙성되고 있는 마카롱은 심심한 나머지 새로운 수 체계를 생각해냈다. 마카롱은 이를 케이크 수라고 이름 붙이고, 다음과 같이 정의했다. 케이크 수는 3개의 자연수 x, y,...","categories": ["코딩테스트"],
         "tags": ["알고리즘","파이썬","코테","백준","Bronze"],
         "url": "/%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8/17256/",
+        "teaser": null
+      },{
+        "title": "[파이썬][백준 17496번] 스타후르츠",
+        "excerpt":"1. 문제 [Bronze V] 스타후르츠 - 17496 문제 링크 성능 요약 메모리: 30860 KB, 시간: 68 ms 분류 사칙연산(arithmetic), 수학(math) 출처: 백준, https://https://www.acmicpc.net/ 2. 해결방법 시간복잡도 단순 코딩 O(N) 3. 문제 해결 및 코드 주석을 참고하면서 이해를 돕습니다. 4. 알고리즘 및 해설 반복문을 통해 해당 위에 문구에서 제시하는 조건을 충족한...","categories": ["코딩테스트"],
+        "tags": ["알고리즘","파이썬","코테","백준","Bronze"],
+        "url": "/%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8/17496/",
+        "teaser": null
+      },{
+        "title": "[파이썬][백준 18096번] Арифметическая магия",
+        "excerpt":"1. 문제 [Bronze V] Арифметическая магия - 18096 문제 링크 성능 요약 메모리: 30864 KB, 시간: 68 ms 분류 수학(math) 문제 설명 Дэвид Блейн попросил зрителя задумать два числа. Затем он попросил перемножить два числа, большие каждого из задуманных на единицу, вычесть из результата сначала одно задуманное число, затем другое,...","categories": ["코딩테스트"],
+        "tags": ["알고리즘","파이썬","코테","백준","Bronze"],
+        "url": "/%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8/18096/",
+        "teaser": null
+      },{
+        "title": "[파이썬][백준 18301번] Rats",
+        "excerpt":"1. 문제 [Bronze V] Rats - 18301 문제 링크 성능 요약 메모리: 30864 KB, 시간: 80 ms 분류 사칙연산(arithmetic), 수학(math) 문제 설명 To celebrate the Lunar New Year of the Rat, Douglas decides to count the number of rats living in his area. It is impossible for him to find...","categories": ["코딩테스트"],
+        "tags": ["알고리즘","파이썬","코테","백준","Bronze"],
+        "url": "/%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8/18301/",
+        "teaser": null
+      },{
+        "title": "[파이썬][백준 20254번] Site Score",
+        "excerpt":"1. 문제 [Bronze V] Site Score - 20254 문제 링크 성능 요약 메모리: 30864 KB, 시간: 72 ms 분류 사칙연산(arithmetic), 수학(math) 문제 설명 Teams from variaous universities compete in ICPC regional contests for tickets to the ICPC World Finals. The number of tickets allocated to every regional contest may be...","categories": ["코딩테스트"],
+        "tags": ["알고리즘","파이썬","코테","백준","Bronze"],
+        "url": "/%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8/20254/",
         "teaser": null
       },{
         "title": "[파이썬][프로그래머스] 짝수와 홀수",

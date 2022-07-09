@@ -9,8 +9,8 @@
   <head>
     <meta charset="utf-8">
 
-<!-- begin _includes/seo.html --><title>[파이썬][백준 14681번] 사분면 고르기 - 성장형 개발자 블로그</title>
-<meta name="description" content="백준 14681번 사분면 고르기 문제 풀이">
+<!-- begin _includes/seo.html --><title>[파이썬][백준 18108번] 1998년생인 내가 태국에서는 2541년생?! - 성장형 개발자 블로그</title>
+<meta name="description" content="백준 18108번 1998년생인 내가 태국에서는 2541년생?! 문제 풀이">
 
 
   <meta name="author" content="You Nicholas">
@@ -22,11 +22,11 @@
 <meta property="og:type" content="article">
 <meta property="og:locale" content="ko">
 <meta property="og:site_name" content="성장형 개발자 블로그">
-<meta property="og:title" content="[파이썬][백준 14681번] 사분면 고르기">
-<meta property="og:url" content="http://localhost:4000/%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8/14681/">
+<meta property="og:title" content="[파이썬][백준 18108번] 1998년생인 내가 태국에서는 2541년생?!">
+<meta property="og:url" content="http://localhost:4000/%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8/18108/">
 
 
-  <meta property="og:description" content="백준 14681번 사분면 고르기 문제 풀이">
+  <meta property="og:description" content="백준 18108번 1998년생인 내가 태국에서는 2541년생?! 문제 풀이">
 
 
 
@@ -47,7 +47,7 @@
   
 
 
-<link rel="canonical" href="http://localhost:4000/%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8/14681/">
+<link rel="canonical" href="http://localhost:4000/%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8/18108/">
 
 
 
@@ -268,8 +268,8 @@
 
 
   <article class="page h-entry" itemscope itemtype="https://schema.org/CreativeWork">
-    <meta itemprop="headline" content="[파이썬][백준 14681번] 사분면 고르기">
-    <meta itemprop="description" content="백준 14681번 사분면 고르기 문제 풀이">
+    <meta itemprop="headline" content="[파이썬][백준 18108번] 1998년생인 내가 태국에서는 2541년생?!">
+    <meta itemprop="description" content="백준 18108번 1998년생인 내가 태국에서는 2541년생?! 문제 풀이">
     <meta itemprop="datePublished" content="2022-03-24T00:00:00+09:00">
     <meta itemprop="dateModified" content="2022-03-24T00:00:00+09:00">
 
@@ -277,7 +277,7 @@
       
         <header>
           <h1 id="page-title" class="page__title p-name" itemprop="headline">
-            <a href="http://localhost:4000/%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8/14681/" class="u-url" itemprop="url">[파이썬][백준 14681번] 사분면 고르기
+            <a href="http://localhost:4000/%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8/18108/" class="u-url" itemprop="url">[파이썬][백준 18108번] 1998년생인 내가 태국에서는 2541년생?!
 </a>
           </h1>
           
@@ -294,7 +294,7 @@
       <span class="page__meta-readtime">
         <i class="far fa-clock" aria-hidden="true"></i>
         
-          1 분 소요
+          최대 1 분 소요
         
       </span>
     
@@ -316,41 +316,38 @@
         
         <h2 id="1-문제">1. 문제</h2>
 
-<h1 id="bronze-iv-사분면-고르기---14681">[Bronze IV] 사분면 고르기 - 14681</h1>
+<h1 id="bronze-v-1998년생인-내가-태국에서는-2541년생---18108">[Bronze V] 1998년생인 내가 태국에서는 2541년생?! - 18108</h1>
 
-<p><a href="https://www.acmicpc.net/problem/14681">문제 링크</a></p>
+<p><a href="https://www.acmicpc.net/problem/18108">문제 링크</a></p>
 
 <h3 id="성능-요약">성능 요약</h3>
 
-<p>메모리: 30864 KB, 시간: 68 ms</p>
+<p>메모리: 30864 KB, 시간: 72 ms</p>
 
 <h3 id="분류">분류</h3>
 
-<p>기하학(geometry), 구현(implementation), 수학(math)</p>
+<p>사칙연산(arithmetic), 수학(math)</p>
 
 <h3 id="문제-설명">문제 설명</h3>
 
-<p>흔한 수학 문제 중 하나는 주어진 점이 어느 사분면에 속하는지 알아내는 것이다. 사분면은 아래 그림처럼 1부터 4까지 번호를 갖는다. "Quadrant n"은 "제n사분면"이라는 뜻이다.</p>
+<p>ICPC Bangkok Regional에 참가하기 위해 수완나품 국제공항에 막 도착한 팀 레드시프트 일행은 눈을 믿을 수 없었다. 공항의 대형 스크린에 올해가 2562년이라고 적혀 있던 것이었다.</p>
 
-<p style="text-align: center;"><img alt="" src="https://onlinejudgeimages.s3-ap-northeast-1.amazonaws.com/problem/14681/1.png" style="width: 276px; height: 200px;" /></p>
-
-<p>예를 들어, 좌표가 (12, 5)인 점 A는 x좌표와 y좌표가 모두 양수이므로 제1사분면에 속한다. 점 B는 x좌표가 음수이고 y좌표가 양수이므로 제2사분면에 속한다.</p>
-
-<p>점의 좌표를 입력받아 그 점이 어느 사분면에 속하는지 알아내는 프로그램을 작성하시오. 단, x좌표와 y좌표는 모두 양수나 음수라고 가정한다.</p>
+<p>불교 국가인 태국은 불멸기원(佛滅紀元), 즉 석가모니가 열반한 해를 기준으로 연도를 세는 불기를 사용한다. 반면, 우리나라는 서기 연도를 사용하고 있다. 불기 연도가 주어질 때 이를 서기 연도로 바꿔 주는 프로그램을 작성하시오.</p>
 
 <h3 id="입력">입력</h3>
 
-<p>첫 줄에는 정수 x가 주어진다. (−1000 ≤ x ≤ 1000; x ≠ 0) 다음 줄에는 정수 y가 주어진다. (−1000 ≤ y ≤ 1000; y ≠ 0)</p>
+<p>서기 연도를 알아보고 싶은 불기 연도 <em>y</em>가 주어진다. (1000 ≤ <em>y</em> ≤ 3000)</p>
 
 <h3 id="출력">출력</h3>
 
-<p>점 (x, y)의 사분면 번호(1, 2, 3, 4 중 하나)를 출력한다.</p>
+<p>불기 연도를 서기 연도로 변환한 결과를 출력한다.</p>
 
 <blockquote>
   <p>출처: 백준, https://https://www.acmicpc.net/</p>
 </blockquote>
 
 <h2 id="2-해결방법-시간복잡도">2. 해결방법 시간복잡도</h2>
+
 <ol>
   <li>단순 코딩 O(1)</li>
 </ol>
@@ -358,7 +355,7 @@
 <h2 id="3-문제-해결-및-코드">3. 문제 해결 및 코드</h2>
 <hr />
 
-<script src="https://gist.github.com/godhin/0b2cc92c5dd619dcee5b6cd0f5cc1c78.js"></script>
+<script src="https://gist.github.com/godhin/16b582edb57ab9330454b89931682e05.js"></script>
 
 <ul>
   <li>
@@ -369,22 +366,8 @@
 <h2 id="4-알고리즘-및-해설">4. 알고리즘 및 해설</h2>
 
 <ol>
-  <li>각각의 받은 값들을 경우에 수에 따라 출력해준다.
-    <ul>
-      <li>좌표값에 따라 분면이 나뉘게 되는데 각각의 분면마다 특징이 있다.
-        <ul>
-          <li>사분면은 양의 값을 기준으로 시계방향으로 돌아간다.
-            <ul>
-              <li>1분면 : x값이 0보다 크고 y값이 0보다 큼 == 우상단</li>
-              <li>2분면 : x값이 0보다 작고 y값이 0보다 큼 == 좌상단</li>
-              <li>3분면 : x값이 0보다 작고 y값이 0보다 작음 == 좌하단</li>
-              <li>4분면 : x값이 0보다 크고 y값이 0보다 작음 == 우하단</li>
-            </ul>
-          </li>
-        </ul>
-      </li>
-    </ul>
-  </li>
+  <li>문제에서 1998년생이 2541년생이라고 불기 연도로 표기가 되는 것에 놀랐다.</li>
+  <li>그러므로 2541년에서 1998년으로 바꿀 수 있는 수인 543을 빼서 다시 서기 연도로 맞춰준다.</li>
 </ol>
 
         
@@ -444,22 +427,22 @@
     <h4 class="page__share-title">공유하기</h4>
   
 
-  <a href="https://twitter.com/intent/tweet?text=%5B%ED%8C%8C%EC%9D%B4%EC%8D%AC%5D%5B%EB%B0%B1%EC%A4%80+14681%EB%B2%88%5D+%EC%82%AC%EB%B6%84%EB%A9%B4+%EA%B3%A0%EB%A5%B4%EA%B8%B0%20http%3A%2F%2Flocalhost%3A4000%2F%25EC%25BD%2594%25EB%2594%25A9%25ED%2585%258C%25EC%258A%25A4%25ED%258A%25B8%2F14681%2F" class="btn btn--twitter" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="공유하기 Twitter"><i class="fab fa-fw fa-twitter" aria-hidden="true"></i><span> Twitter</span></a>
+  <a href="https://twitter.com/intent/tweet?text=%5B%ED%8C%8C%EC%9D%B4%EC%8D%AC%5D%5B%EB%B0%B1%EC%A4%80+18108%EB%B2%88%5D+1998%EB%85%84%EC%83%9D%EC%9D%B8+%EB%82%B4%EA%B0%80+%ED%83%9C%EA%B5%AD%EC%97%90%EC%84%9C%EB%8A%94+2541%EB%85%84%EC%83%9D%3F%21%20http%3A%2F%2Flocalhost%3A4000%2F%25EC%25BD%2594%25EB%2594%25A9%25ED%2585%258C%25EC%258A%25A4%25ED%258A%25B8%2F18108%2F" class="btn btn--twitter" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="공유하기 Twitter"><i class="fab fa-fw fa-twitter" aria-hidden="true"></i><span> Twitter</span></a>
 
-  <a href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Flocalhost%3A4000%2F%25EC%25BD%2594%25EB%2594%25A9%25ED%2585%258C%25EC%258A%25A4%25ED%258A%25B8%2F14681%2F" class="btn btn--facebook" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="공유하기 Facebook"><i class="fab fa-fw fa-facebook" aria-hidden="true"></i><span> Facebook</span></a>
+  <a href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Flocalhost%3A4000%2F%25EC%25BD%2594%25EB%2594%25A9%25ED%2585%258C%25EC%258A%25A4%25ED%258A%25B8%2F18108%2F" class="btn btn--facebook" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="공유하기 Facebook"><i class="fab fa-fw fa-facebook" aria-hidden="true"></i><span> Facebook</span></a>
 
-  <a href="https://www.linkedin.com/shareArticle?mini=true&url=http%3A%2F%2Flocalhost%3A4000%2F%25EC%25BD%2594%25EB%2594%25A9%25ED%2585%258C%25EC%258A%25A4%25ED%258A%25B8%2F14681%2F" class="btn btn--linkedin" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="공유하기 LinkedIn"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i><span> LinkedIn</span></a>
+  <a href="https://www.linkedin.com/shareArticle?mini=true&url=http%3A%2F%2Flocalhost%3A4000%2F%25EC%25BD%2594%25EB%2594%25A9%25ED%2585%258C%25EC%258A%25A4%25ED%258A%25B8%2F18108%2F" class="btn btn--linkedin" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="공유하기 LinkedIn"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i><span> LinkedIn</span></a>
 </section>
 
 
       
   <nav class="pagination">
     
-      <a href="/%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8/10998/" class="pagination--pager" title="[파이썬][백준 10998번] A x B
+      <a href="/%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8/14681/" class="pagination--pager" title="[파이썬][백준 14681번] 사분면 고르기
 ">이전</a>
     
     
-      <a href="/%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8/18108/" class="pagination--pager" title="[파이썬][백준 18108번] 1998년생인 내가 태국에서는 2541년생?!
+      <a href="/%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8/10870/" class="pagination--pager" title="[파이썬][백준 10870번] 피보나치 수 5
 ">다음</a>
     
   </nav>
