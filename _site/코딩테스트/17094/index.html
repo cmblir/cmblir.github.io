@@ -9,8 +9,8 @@
   <head>
     <meta charset="utf-8">
 
-<!-- begin _includes/seo.html --><title>[파이썬][백준 16170번] 오늘의 날짜는? - 성장형 개발자 블로그</title>
-<meta name="description" content="백준 16170번 오늘의 날짜는? 문제 풀이">
+<!-- begin _includes/seo.html --><title>[파이썬][백준 17094번] Serious Problem - 성장형 개발자 블로그</title>
+<meta name="description" content="백준 17094번 Serious Problem 문제 풀이">
 
 
   <meta name="author" content="You Nicholas">
@@ -22,11 +22,11 @@
 <meta property="og:type" content="article">
 <meta property="og:locale" content="ko">
 <meta property="og:site_name" content="성장형 개발자 블로그">
-<meta property="og:title" content="[파이썬][백준 16170번] 오늘의 날짜는?">
-<meta property="og:url" content="http://localhost:4000/%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8/16170/">
+<meta property="og:title" content="[파이썬][백준 17094번] Serious Problem">
+<meta property="og:url" content="http://localhost:4000/%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8/17094/">
 
 
-  <meta property="og:description" content="백준 16170번 오늘의 날짜는? 문제 풀이">
+  <meta property="og:description" content="백준 17094번 Serious Problem 문제 풀이">
 
 
 
@@ -47,7 +47,7 @@
   
 
 
-<link rel="canonical" href="http://localhost:4000/%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8/16170/">
+<link rel="canonical" href="http://localhost:4000/%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8/17094/">
 
 
 
@@ -268,8 +268,8 @@
 
 
   <article class="page h-entry" itemscope itemtype="https://schema.org/CreativeWork">
-    <meta itemprop="headline" content="[파이썬][백준 16170번] 오늘의 날짜는?">
-    <meta itemprop="description" content="백준 16170번 오늘의 날짜는? 문제 풀이">
+    <meta itemprop="headline" content="[파이썬][백준 17094번] Serious Problem">
+    <meta itemprop="description" content="백준 17094번 Serious Problem 문제 풀이">
     <meta itemprop="datePublished" content="2022-04-04T00:00:00+09:00">
     <meta itemprop="dateModified" content="2022-04-04T00:00:00+09:00">
 
@@ -277,7 +277,7 @@
       
         <header>
           <h1 id="page-title" class="page__title p-name" itemprop="headline">
-            <a href="http://localhost:4000/%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8/16170/" class="u-url" itemprop="url">[파이썬][백준 16170번] 오늘의 날짜는?
+            <a href="http://localhost:4000/%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8/17094/" class="u-url" itemprop="url">[파이썬][백준 17094번] Serious Problem
 </a>
           </h1>
           
@@ -316,35 +316,33 @@
         
         <h2 id="1-문제">1. 문제</h2>
 
-<h1 id="bronze-v-오늘의-날짜는---16170">[Bronze V] 오늘의 날짜는? - 16170</h1>
+<h1 id="bronze-ii-serious-problem---17094">[Bronze II] Serious Problem - 17094</h1>
 
-<p><a href="https://www.acmicpc.net/problem/16170">문제 링크</a></p>
+<p><a href="https://www.acmicpc.net/problem/17094">문제 링크</a></p>
 
 <h3 id="성능-요약">성능 요약</h3>
 
-<p>메모리: 36296 KB, 시간: 88 ms</p>
+<p>메모리: 30840 KB, 시간: 72 ms</p>
 
 <h3 id="분류">분류</h3>
 
-<p>구현(implementation)</p>
+<p>구현(implementation), 문자열(string)</p>
 
 <h3 id="문제-설명">문제 설명</h3>
 
-<p>2018 SCAL-MOOKJA에 출전하기로 한 무근이와 인서는 대회 준비를 위해 같이 모여 문제를 풀기로 했다.</p>
+<p>2와 e는 발음이 비슷해, 둘을 섞어서 말하면 듣는 사람을 짜증나게 만들 수 있다.</p>
 
-<p>그런데 어느 날, 일어나서 날짜를 확인해 보니 무근이와 인서의 시계가 서로 다른 날짜를 가리키고 있었다. 두 사람이 정확한 날짜에 모일 수 있도록 문제를 푸는 지금 시각이 UTC+0(세계 표준시)을 기준으로 무슨 날짜인지 출력해 주는 프로그램을 작성하자.</p>
-
-<p>만약 서울에서 확인한 시각이 2018년 9월 29일 오후 2시 정각이라면 UTC+0 기준의 시각은 2018년 9월 29일 오전 5시 정각이다.</p>
-
-<div style="background:#eeeeee;border:1px solid #cccccc;padding:5px 10px;">Fri Sep 29 05:00:00 UTC 2018</div>
+<p>지민이는 이 점을 이용해 은수를 미치게 하고 있다. 은수를 위해 지민이가 말한 문자열 s가 주어질때, 2의 등장 횟수가 더 많은지, e의 등장 횟수가 더 많은지 도와주자.</p>
 
 <h3 id="입력">입력</h3>
 
-<p>이 문제는 입력이 없다.</p>
+<p>첫 줄에 문자열 s의 길이가 주어진다.</p>
+
+<p>둘째 줄에 문자열 s가 주어진다. s의 길이는 1 이상 10<sup>5</sup> 이하이며, s는 <code>2</code>와 <code>e</code>로만 이루어져 있다.</p>
 
 <h3 id="출력">출력</h3>
 
-<p>지금 시각을 UTC+0(세계 표준시)을 기준으로 나타냈을 때의 연도, 월, 일을 한 줄에 하나씩 순서대로 출력한다.</p>
+<p>2의 등장횟수가 더 많다면 <code>2</code>를 출력하고, e의 등장횟수가 더 많다면 <code>e</code>를 출력한다. 등장횟수가 같다면 <code>"yee"</code>를 출력한다. (큰 따옴표 제외)</p>
 
 <blockquote>
   <p>출처: 백준, https://https://www.acmicpc.net/</p>
@@ -359,7 +357,7 @@
 <h2 id="3-문제-해결-및-코드">3. 문제 해결 및 코드</h2>
 <hr />
 
-<script src="https://gist.github.com/godhin/35b41869882e5d2d49f1d4d4cf6a6ac8.js"></script>
+<script src="https://gist.github.com/godhin/4e32f49e8d2c44f5a32166040e7c5ac4.js"></script>
 
 <ul>
   <li>
@@ -370,11 +368,7 @@
 <h2 id="4-알고리즘-및-해설">4. 알고리즘 및 해설</h2>
 
 <ol>
-  <li>datetime을 활용해서 현재 시각을 출력해준다.
-    <ul>
-      <li>이때 연도, 월, 일을 하나씩 출력해야하므로 순서대로 출력해준다.</li>
-    </ul>
-  </li>
+  <li>if문을 통해 3가지 경우를 만들고 이 경우메 맞게끔 출력해준다.</li>
 </ol>
 
         
@@ -434,22 +428,22 @@
     <h4 class="page__share-title">공유하기</h4>
   
 
-  <a href="https://twitter.com/intent/tweet?text=%5B%ED%8C%8C%EC%9D%B4%EC%8D%AC%5D%5B%EB%B0%B1%EC%A4%80+16170%EB%B2%88%5D+%EC%98%A4%EB%8A%98%EC%9D%98+%EB%82%A0%EC%A7%9C%EB%8A%94%3F%20http%3A%2F%2Flocalhost%3A4000%2F%25EC%25BD%2594%25EB%2594%25A9%25ED%2585%258C%25EC%258A%25A4%25ED%258A%25B8%2F16170%2F" class="btn btn--twitter" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="공유하기 Twitter"><i class="fab fa-fw fa-twitter" aria-hidden="true"></i><span> Twitter</span></a>
+  <a href="https://twitter.com/intent/tweet?text=%5B%ED%8C%8C%EC%9D%B4%EC%8D%AC%5D%5B%EB%B0%B1%EC%A4%80+17094%EB%B2%88%5D+Serious+Problem%20http%3A%2F%2Flocalhost%3A4000%2F%25EC%25BD%2594%25EB%2594%25A9%25ED%2585%258C%25EC%258A%25A4%25ED%258A%25B8%2F17094%2F" class="btn btn--twitter" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="공유하기 Twitter"><i class="fab fa-fw fa-twitter" aria-hidden="true"></i><span> Twitter</span></a>
 
-  <a href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Flocalhost%3A4000%2F%25EC%25BD%2594%25EB%2594%25A9%25ED%2585%258C%25EC%258A%25A4%25ED%258A%25B8%2F16170%2F" class="btn btn--facebook" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="공유하기 Facebook"><i class="fab fa-fw fa-facebook" aria-hidden="true"></i><span> Facebook</span></a>
+  <a href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Flocalhost%3A4000%2F%25EC%25BD%2594%25EB%2594%25A9%25ED%2585%258C%25EC%258A%25A4%25ED%258A%25B8%2F17094%2F" class="btn btn--facebook" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="공유하기 Facebook"><i class="fab fa-fw fa-facebook" aria-hidden="true"></i><span> Facebook</span></a>
 
-  <a href="https://www.linkedin.com/shareArticle?mini=true&url=http%3A%2F%2Flocalhost%3A4000%2F%25EC%25BD%2594%25EB%2594%25A9%25ED%2585%258C%25EC%258A%25A4%25ED%258A%25B8%2F16170%2F" class="btn btn--linkedin" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="공유하기 LinkedIn"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i><span> LinkedIn</span></a>
+  <a href="https://www.linkedin.com/shareArticle?mini=true&url=http%3A%2F%2Flocalhost%3A4000%2F%25EC%25BD%2594%25EB%2594%25A9%25ED%2585%258C%25EC%258A%25A4%25ED%258A%25B8%2F17094%2F" class="btn btn--linkedin" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="공유하기 LinkedIn"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i><span> LinkedIn</span></a>
 </section>
 
 
       
   <nav class="pagination">
     
-      <a href="/%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8/15962/" class="pagination--pager" title="[파이썬][백준 15962번] 새로운 시작
+      <a href="/%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8/17388/" class="pagination--pager" title="[파이썬][백준 17388번] 와글와글 숭고한
 ">이전</a>
     
     
-      <a href="/%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8/17295/" class="pagination--pager" title="[파이썬][백준 17295번] 엔드게임 스포일러
+      <a href="/%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8/14652/" class="pagination--pager" title="[파이썬][백준 14652번] 나는 행복합니다~
 ">다음</a>
     
   </nav>

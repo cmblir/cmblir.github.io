@@ -30,7 +30,7 @@ last_modified_at: 2021-11-23
     - 데이터가 정규성을 나타나는지
 
 ## Type Error
-<img src = 'https://cdn.scribbr.com/wp-content/uploads/2021/01/type-i-and-ii-error-2.png'></img>
+<img src = 'https://cdn.scribbr.com/wp-content/uploads/2021/01/type-i-and-ii-error-2.png'>
 [이미지 출처 : https://www.scribbr.com/statistics/type-i-and-type-ii-errors/]
 
 ### Type 1 error (1종 오류)
