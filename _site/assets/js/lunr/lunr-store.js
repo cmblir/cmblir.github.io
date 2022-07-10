@@ -419,6 +419,24 @@ var store = [{
         "url": "/%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8/20254/",
         "teaser": null
       },{
+        "title": "[파이썬][백준 20492번] 세금",
+        "excerpt":"1. 문제 [Bronze V] 세금 - 20492 문제 링크 성능 요약 메모리: 32976 KB, 시간: 72 ms 분류 사칙연산(arithmetic), 수학(math) 문제 설명 선린인터넷고등학교의 한 학생은 프로그래밍 대회에 참가하여 거액의 상금을 수상하는 영광을 누리게 되었다. 하지만, 이 학생이 상금 금액의 전부를 수령하게 되는 것은 아니다. 상금의 일부를 제세공과금으로 납부하고, 나머지 금액을...","categories": ["코딩테스트"],
+        "tags": ["알고리즘","파이썬","코테","백준","Bronze"],
+        "url": "/%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8/20492/",
+        "teaser": null
+      },{
+        "title": "[파이썬][백준 21300번] Bottle Return",
+        "excerpt":"1. 문제 [Bronze V] Bottle Return - 21300 문제 링크 성능 요약 메모리: 30860 KB, 시간: 68 ms 분류 사칙연산(arithmetic), 수학(math) 문제 설명 In the United States, beverage container deposit laws, or so-called bottle bills, are designed to reduce litter and reclaim bottles, cans and other containers for recycling. Ten...","categories": ["코딩테스트"],
+        "tags": ["알고리즘","파이썬","코테","백준","Bronze"],
+        "url": "/%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8/21300/",
+        "teaser": null
+      },{
+        "title": "[파이썬][백준 22193번] Multiply",
+        "excerpt":"1. 문제 [Bronze V] Multiply - 22193 문제 링크 성능 요약 메모리: 30864 KB, 시간: 180 ms 분류 임의 정밀도 / 큰 수 연산(arbitrary_precision), 사칙연산(arithmetic), 수학(math) 문제 설명 Write a program that computes a product of two non-negative integers A and B. The integers are represented in decimal notation and...","categories": ["코딩테스트"],
+        "tags": ["알고리즘","파이썬","코테","백준","Bronze"],
+        "url": "/%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8/22193/",
+        "teaser": null
+      },{
         "title": "[파이썬][프로그래머스] 짝수와 홀수",
         "excerpt":"1. 문제 [level 1] 짝수와 홀수 - 12937 문제 링크 성능 요약 메모리: 10 MB, 시간: 0.00 ms 구분 코딩테스트 연습 &gt; 연습문제 채점결과 정확성: 100.0 합계: 100.0 / 100.0 문제 설명 정수 num이 짝수일 경우 \"Even\"을 반환하고 홀수인 경우 \"Odd\"를 반환하는 함수, solution을 완성해주세요. 제한 조건 num은 int 범위의 정수입니다....","categories": ["코딩테스트"],
         "tags": ["알고리즘","파이썬","코테","프로그래머스","Level_1"],
@@ -719,6 +737,12 @@ var store = [{
         "url": "/%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8/10817/",
         "teaser": null
       },{
+        "title": "[파이썬][백준 2163번] 초콜릿 자르기",
+        "excerpt":"1. 문제 [Bronze III] 초콜릿 자르기 - 2163 문제 링크 성능 요약 메모리: 30840 KB, 시간: 68 ms 분류 사칙연산(arithmetic), 수학(math) 문제 설명 정화는 N×M 크기의 초콜릿을 하나 가지고 있다. 초콜릿은 금이 가 있는 모양을 하고 있으며, 그 금에 의해 N×M개의 조각으로 나눠질 수 있다. 초콜릿의 크기가 너무 크다고 생각한...","categories": ["코딩테스트"],
+        "tags": ["알고리즘","파이썬","코테","백준","Bronze"],
+        "url": "/%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8/2163/",
+        "teaser": null
+      },{
         "title": "[파이썬][프로그래머스] 상위 n개 레코드",
         "excerpt":"1. 문제 [level 1] 상위 n개 레코드 - 59405 문제 링크 성능 요약 메모리: 0.0 MB, 시간: 0.00 ms 구분 코딩테스트 연습 &gt; SELECT 채점결과 Empty 문제 설명 ANIMAL_INS 테이블은 동물 보호소에 들어온 동물의 정보를 담은 테이블입니다. ANIMAL_INS 테이블 구조는 다음과 같으며, ANIMAL_ID, ANIMAL_TYPE, DATETIME, INTAKE_CONDITION, NAME, SEX_UPON_INTAKE는 각각 동물의 아이디,...","categories": ["코딩테스트"],
         "tags": ["알고리즘","코테","프로그래머스","Level_1","MYSQL"],
@@ -927,6 +951,12 @@ var store = [{
         "excerpt":"1. 문제 [Bronze II] 숫자 - 10093 문제 링크 성능 요약 메모리: 30840 KB, 시간: 128 ms 분류 구현(implementation) 문제 설명 두 양의 정수가 주어졌을 때, 두 수 사이에 있는 정수를 모두 출력하는 프로그램을 작성하시오. 입력 두 정수 A와 B가 주어진다. 출력 첫째 줄에 두 수 사이에 있는 수의 개수를...","categories": ["코딩테스트"],
         "tags": ["알고리즘","파이썬","코테","백준","Bronze"],
         "url": "/%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8/10093/",
+        "teaser": null
+      },{
+        "title": "[파이썬][백준 20499번] Darius님 한타 안 함 ?",
+        "excerpt":"1. 문제 [Bronze IV] Darius님 한타 안 함? - 20499 문제 링크 성능 요약 메모리: 30840 KB, 시간: 76 ms 분류 사칙연산(arithmetic), 수학(math) 문제 설명 아무래도 우리 팀 다리우스가 고수인 것 같다. 그의 K/D/A$K/D/A$를 보고 그가 「진짜」인지 판별해 보자.  K+A&lt;D$K+A &lt; D$이거나, D=0$D = 0$이면 그는 「가짜」이고, 그렇지 않으면 「진짜」이다....","categories": ["코딩테스트"],
+        "tags": ["알고리즘","파이썬","코테","백준","Bronze"],
+        "url": "/%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8/20499/",
         "teaser": null
       },{
         "title": "[파이썬][백준 11104번] Fridge of Your Dreams",
