@@ -9,8 +9,8 @@
   <head>
     <meta charset="utf-8">
 
-<!-- begin _includes/seo.html --><title>[파이썬][백준 1292번] TV 크기 - 성장형 개발자 블로그</title>
-<meta name="description" content="백준 1292번 TV 크기 문제 풀이">
+<!-- begin _includes/seo.html --><title>[파이썬][백준 1018번] 체스판 다시 칠하기 - 성장형 개발자 블로그</title>
+<meta name="description" content="백준 1018번 체스판 다시 칠하기 문제 풀이">
 
 
   <meta name="author" content="You Nicholas">
@@ -22,32 +22,32 @@
 <meta property="og:type" content="article">
 <meta property="og:locale" content="ko">
 <meta property="og:site_name" content="성장형 개발자 블로그">
-<meta property="og:title" content="[파이썬][백준 1292번] TV 크기">
-<meta property="og:url" content="http://localhost:4000/%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8/1297/">
+<meta property="og:title" content="[파이썬][백준 1018번] 체스판 다시 칠하기">
+<meta property="og:url" content="http://localhost:4000/%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8/1018/">
 
 
-  <meta property="og:description" content="백준 1292번 TV 크기 문제 풀이">
-
-
-
+  <meta property="og:description" content="백준 1018번 체스판 다시 칠하기 문제 풀이">
 
 
 
 
-  <meta property="article:published_time" content="2022-04-07T00:00:00+09:00">
 
 
 
-  <meta property="article:modified_time" content="2022-04-07T00:00:00+09:00">
+  <meta property="article:published_time" content="2022-05-09T00:00:00+09:00">
 
 
 
-  
+  <meta property="article:modified_time" content="2022-05-09T00:00:00+09:00">
+
+
 
   
 
+  
 
-<link rel="canonical" href="http://localhost:4000/%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8/1297/">
+
+<link rel="canonical" href="http://localhost:4000/%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8/1018/">
 
 
 
@@ -268,16 +268,16 @@
 
 
   <article class="page h-entry" itemscope itemtype="https://schema.org/CreativeWork">
-    <meta itemprop="headline" content="[파이썬][백준 1292번] TV 크기">
-    <meta itemprop="description" content="백준 1292번 TV 크기 문제 풀이">
-    <meta itemprop="datePublished" content="2022-04-07T00:00:00+09:00">
-    <meta itemprop="dateModified" content="2022-04-07T00:00:00+09:00">
+    <meta itemprop="headline" content="[파이썬][백준 1018번] 체스판 다시 칠하기">
+    <meta itemprop="description" content="백준 1018번 체스판 다시 칠하기 문제 풀이">
+    <meta itemprop="datePublished" content="2022-05-09T00:00:00+09:00">
+    <meta itemprop="dateModified" content="2022-05-09T00:00:00+09:00">
 
     <div class="page__inner-wrap">
       
         <header>
           <h1 id="page-title" class="page__title p-name" itemprop="headline">
-            <a href="http://localhost:4000/%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8/1297/" class="u-url" itemprop="url">[파이썬][백준 1292번] TV 크기
+            <a href="http://localhost:4000/%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8/1018/" class="u-url" itemprop="url">[파이썬][백준 1018번] 체스판 다시 칠하기
 </a>
           </h1>
           
@@ -316,47 +316,48 @@
         
         <h2 id="1-문제">1. 문제</h2>
 
-<h1 id="bronze-iv-tv-크기---1297">[Bronze IV] TV 크기 - 1297</h1>
+<h1 id="silver-v-체스판-다시-칠하기---1018">[Silver V] 체스판 다시 칠하기 - 1018</h1>
 
-<p><a href="https://www.acmicpc.net/problem/1297">문제 링크</a></p>
+<p><a href="https://www.acmicpc.net/problem/1018">문제 링크</a></p>
 
 <h3 id="성능-요약">성능 요약</h3>
 
-<p>메모리: 30864 KB, 시간: 76 ms</p>
+<p>메모리: 30840 KB, 시간: 116 ms</p>
 
 <h3 id="분류">분류</h3>
 
-<p>기하학(geometry), 수학(math), 피타고라스 정리(pythagoras)</p>
+<p>브루트포스 알고리즘(bruteforcing)</p>
 
 <h3 id="문제-설명">문제 설명</h3>
 
-<p>김탑은 TV를 사러 인터넷 쇼핑몰에 들어갔다. 쇼핑을 하던 중에, TV의 크기는 그 TV의 대각선의 길이로 나타낸 다는 것을 알았다. 하지만, 김탑은 대각선의 길이가 같다고 해도, 실제 TV의 크기는 다를 수도 있다는 사실에 직접 TV를 보러갈걸 왜 인터넷 쇼핑을 대각선의 길이만 보고있는지 후회하고 있었다.</p>
+<p>지민이는 자신의 저택에서 MN개의 단위 정사각형으로 나누어져 있는 M×N 크기의 보드를 찾았다. 어떤 정사각형은 검은색으로 칠해져 있고, 나머지는 흰색으로 칠해져 있다. 지민이는 이 보드를 잘라서 8×8 크기의 체스판으로 만들려고 한다.</p>
 
-<p>인터넷 쇼핑몰 관리자에게 이메일을 보내서 실제 높이와 실제 너비를 보내달라고 했지만, 관리자는 실제 높이와 실제 너비를 보내지 않고 그것의 비율을 보내왔다.</p>
+<p>체스판은 검은색과 흰색이 번갈아서 칠해져 있어야 한다. 구체적으로, 각 칸이 검은색과 흰색 중 하나로 색칠되어 있고, 변을 공유하는 두 개의 사각형은 다른 색으로 칠해져 있어야 한다. 따라서 이 정의를 따르면 체스판을 색칠하는 경우는 두 가지뿐이다. 하나는 맨 왼쪽 위 칸이 흰색인 경우, 하나는 검은색인 경우이다.</p>
 
-<p>TV의 대각선 길이와, 높이 너비의 비율이 주어졌을 때, 실제 높이와 너비의 길이를 출력하는 프로그램을 작성하시오.</p>
+<p>보드가 체스판처럼 칠해져 있다는 보장이 없어서, 지민이는 8×8 크기의 체스판으로 잘라낸 후에 몇 개의 정사각형을 다시 칠해야겠다고 생각했다. 당연히 8*8 크기는 아무데서나 골라도 된다. 지민이가 다시 칠해야 하는 정사각형의 최소 개수를 구하는 프로그램을 작성하시오.</p>
 
 <h3 id="입력">입력</h3>
 
-<p>첫째 줄에 TV의 대각선 길이 D, TV의 높이 비율 H, TV의 너비 비율 W이 공백 한 칸을 사이에 두고 주어진다.</p>
+<p>첫째 줄에 N과 M이 주어진다. N과 M은 8보다 크거나 같고, 50보다 작거나 같은 자연수이다. 둘째 줄부터 N개의 줄에는 보드의 각 행의 상태가 주어진다. B는 검은색이며, W는 흰색이다.</p>
 
 <h3 id="출력">출력</h3>
 
-<p>첫째 줄에 TV의 높이와 TV의 너비를 공백 한 칸을 이용해서 구분지은 후 출력한다. 만약, 실제 TV의 높이나 너비가 소수점이 나올 경우에는 그 수보다 작으면서 가장 큰 정수로 출력한다. (예) 1.7 -&gt; 1</p>
+<p>첫째 줄에 지민이가 다시 칠해야 하는 정사각형 개수의 최솟값을 출력한다.</p>
 
 <blockquote>
   <p>출처: 백준, https://https://www.acmicpc.net/</p>
 </blockquote>
 
 <h2 id="2-해결방법-시간복잡도">2. 해결방법 시간복잡도</h2>
+
 <ol>
-  <li>단순 코딩 O(1)</li>
+  <li>브루트 포스 O(N^4)</li>
 </ol>
 
 <h2 id="3-문제-해결-및-코드">3. 문제 해결 및 코드</h2>
 <hr />
 
-<script src="https://gist.github.com/godhin/e6acc218a1e523e65b572daa0e1ae34c.js"></script>
+<script src="https://gist.github.com/godhin/cee05ecf5e6d25e7c85ee66cb737aeee.js"></script>
 
 <ul>
   <li>
@@ -366,14 +367,40 @@
 
 <h2 id="4-알고리즘-및-해설">4. 알고리즘 및 해설</h2>
 
+<ul>
+  <li>단순 브루트포스 문제이다.</li>
+</ul>
+
 <ol>
-  <li>map() 함수를 통해 값을 정수형으로 받는다.</li>
-  <li>이후 대각선 비율을 구한뒤 해당 값을 기준으로, 출력하고자 하는 TV높이와 너비를 출력한다.
+  <li>문제에서 제시된 체스판을 반복문을 통해 화이트 보드의 색칠 여부를 확인하는 것이다.
     <ul>
-      <li>대각선 비율은 대각선 길이를 높이 비율 제곱과 너비 비율 제곱을 더한 루트값</li>
-      <li>높이값은 높이 비율 * 대각선 비율, 너비값은 너비 비율 * 대각선 비율</li>
+      <li>여기서 체스판의 크기를 8X8로 자르기 위해 n과 m 값에 -7을 해준 뒤 반복문을 돌린다.</li>
+    </ul>
+    <ul>
+      <li>이후 색칠 여부를 알아야하므로 변수 2개를 만들어 색칠 여부를 카운트해준다.
+        <ul>
+          <li>반복문을 통해 두 값이 돌아가는 동안 8X8크기이므로 +8을 해준 뒤 반복문을 또 두번 돌린다.
+            <ul>
+              <li>해당 반복문이 돌아가는 동안 두 값을 더한 게 만약 짝수라면 (시작점의 색깔과 같아야함)
+                <ul>
+                  <li>짝수번째 칸 화이트보드가 비어있지 않다면 검은색이므로 값에 +1을 해준다.</li>
+                  <li>짝수번째 칸 화이트보드가 비어있다면 흰색이므로 값에 +1을 해준다.</li>
+                </ul>
+              </li>
+              <li>해당 반복문이 돌아가는 동안 두 값을 더한 게 만약 홀수라면 (시작점의 색깔이 다른색이어야함)
+                <ul>
+                  <li>홀수번째 칸 화이트보드가 비어있다면 검은색이므로 값에 +1을 해준다.</li>
+                  <li>홀수번째 칸 화이트보드가 비어있다지 않다면 흰색이므로 값에 +1을 해준다.</li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+      <li>최종적으로 count라는 리스트에 해당 칠해진 값과 칠해지지 않은 값 중 작은 값을 넣는다.</li>
     </ul>
   </li>
+  <li>count라는 리스트에서 가장 작은 값을 출력한다. (지민이가 다시 칠해야 하는 정사각형의 개수의 최솟값)</li>
 </ol>
 
         
@@ -391,7 +418,7 @@
     <strong><i class="fas fa-fw fa-tags" aria-hidden="true"></i> 태그: </strong>
     <span itemprop="keywords">
     
-      <a href="/tags/#bronze" class="page__taxonomy-item p-category" rel="tag">Bronze</a><span class="sep">, </span>
+      <a href="/tags/#silver" class="page__taxonomy-item p-category" rel="tag">Silver</a><span class="sep">, </span>
     
       <a href="/tags/#%EB%B0%B1%EC%A4%80" class="page__taxonomy-item p-category" rel="tag">백준</a><span class="sep">, </span>
     
@@ -424,7 +451,7 @@
 
         
 
-  <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> 업데이트:</strong> <time class="dt-published" datetime="2022-04-07">April 7, 2022</time></p>
+  <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> 업데이트:</strong> <time class="dt-published" datetime="2022-05-09">May 9, 2022</time></p>
 
       </footer>
 
@@ -433,22 +460,22 @@
     <h4 class="page__share-title">공유하기</h4>
   
 
-  <a href="https://twitter.com/intent/tweet?text=%5B%ED%8C%8C%EC%9D%B4%EC%8D%AC%5D%5B%EB%B0%B1%EC%A4%80+1292%EB%B2%88%5D+TV+%ED%81%AC%EA%B8%B0%20http%3A%2F%2Flocalhost%3A4000%2F%25EC%25BD%2594%25EB%2594%25A9%25ED%2585%258C%25EC%258A%25A4%25ED%258A%25B8%2F1297%2F" class="btn btn--twitter" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="공유하기 Twitter"><i class="fab fa-fw fa-twitter" aria-hidden="true"></i><span> Twitter</span></a>
+  <a href="https://twitter.com/intent/tweet?text=%5B%ED%8C%8C%EC%9D%B4%EC%8D%AC%5D%5B%EB%B0%B1%EC%A4%80+1018%EB%B2%88%5D+%EC%B2%B4%EC%8A%A4%ED%8C%90+%EB%8B%A4%EC%8B%9C+%EC%B9%A0%ED%95%98%EA%B8%B0%20http%3A%2F%2Flocalhost%3A4000%2F%25EC%25BD%2594%25EB%2594%25A9%25ED%2585%258C%25EC%258A%25A4%25ED%258A%25B8%2F1018%2F" class="btn btn--twitter" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="공유하기 Twitter"><i class="fab fa-fw fa-twitter" aria-hidden="true"></i><span> Twitter</span></a>
 
-  <a href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Flocalhost%3A4000%2F%25EC%25BD%2594%25EB%2594%25A9%25ED%2585%258C%25EC%258A%25A4%25ED%258A%25B8%2F1297%2F" class="btn btn--facebook" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="공유하기 Facebook"><i class="fab fa-fw fa-facebook" aria-hidden="true"></i><span> Facebook</span></a>
+  <a href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Flocalhost%3A4000%2F%25EC%25BD%2594%25EB%2594%25A9%25ED%2585%258C%25EC%258A%25A4%25ED%258A%25B8%2F1018%2F" class="btn btn--facebook" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="공유하기 Facebook"><i class="fab fa-fw fa-facebook" aria-hidden="true"></i><span> Facebook</span></a>
 
-  <a href="https://www.linkedin.com/shareArticle?mini=true&url=http%3A%2F%2Flocalhost%3A4000%2F%25EC%25BD%2594%25EB%2594%25A9%25ED%2585%258C%25EC%258A%25A4%25ED%258A%25B8%2F1297%2F" class="btn btn--linkedin" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="공유하기 LinkedIn"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i><span> LinkedIn</span></a>
+  <a href="https://www.linkedin.com/shareArticle?mini=true&url=http%3A%2F%2Flocalhost%3A4000%2F%25EC%25BD%2594%25EB%2594%25A9%25ED%2585%258C%25EC%258A%25A4%25ED%258A%25B8%2F1018%2F" class="btn btn--linkedin" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="공유하기 LinkedIn"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i><span> LinkedIn</span></a>
 </section>
 
 
       
   <nav class="pagination">
     
-      <a href="/%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8/1330/" class="pagination--pager" title="[파이썬][백준 1330번] 두 수 비교하기
+      <a href="/%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8/1157/" class="pagination--pager" title="[파이썬][백준 1157번] 단어 공부
 ">이전</a>
     
     
-      <a href="/%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8/1002/" class="pagination--pager" title="[파이썬][백준 1002번] 터렛
+      <a href="/%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8/15631/" class="pagination--pager" title="[파이썬][백준 15631번] BOJeopardy
 ">다음</a>
     
   </nav>

@@ -9,8 +9,8 @@
   <head>
     <meta charset="utf-8">
 
-<!-- begin _includes/seo.html --><title>[파이썬][백준 1292번] TV 크기 - 성장형 개발자 블로그</title>
-<meta name="description" content="백준 1292번 TV 크기 문제 풀이">
+<!-- begin _includes/seo.html --><title>[파이썬][백준 1002번] 터렛 - 성장형 개발자 블로그</title>
+<meta name="description" content="백준 1002번 터렛 문제 풀이">
 
 
   <meta name="author" content="You Nicholas">
@@ -22,32 +22,32 @@
 <meta property="og:type" content="article">
 <meta property="og:locale" content="ko">
 <meta property="og:site_name" content="성장형 개발자 블로그">
-<meta property="og:title" content="[파이썬][백준 1292번] TV 크기">
-<meta property="og:url" content="http://localhost:4000/%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8/1297/">
+<meta property="og:title" content="[파이썬][백준 1002번] 터렛">
+<meta property="og:url" content="http://localhost:4000/%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8/1002/">
 
 
-  <meta property="og:description" content="백준 1292번 TV 크기 문제 풀이">
-
-
-
+  <meta property="og:description" content="백준 1002번 터렛 문제 풀이">
 
 
 
 
-  <meta property="article:published_time" content="2022-04-07T00:00:00+09:00">
 
 
 
-  <meta property="article:modified_time" content="2022-04-07T00:00:00+09:00">
+  <meta property="article:published_time" content="2022-04-08T00:00:00+09:00">
 
 
 
-  
+  <meta property="article:modified_time" content="2022-04-08T00:00:00+09:00">
+
+
 
   
 
+  
 
-<link rel="canonical" href="http://localhost:4000/%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8/1297/">
+
+<link rel="canonical" href="http://localhost:4000/%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8/1002/">
 
 
 
@@ -268,16 +268,16 @@
 
 
   <article class="page h-entry" itemscope itemtype="https://schema.org/CreativeWork">
-    <meta itemprop="headline" content="[파이썬][백준 1292번] TV 크기">
-    <meta itemprop="description" content="백준 1292번 TV 크기 문제 풀이">
-    <meta itemprop="datePublished" content="2022-04-07T00:00:00+09:00">
-    <meta itemprop="dateModified" content="2022-04-07T00:00:00+09:00">
+    <meta itemprop="headline" content="[파이썬][백준 1002번] 터렛">
+    <meta itemprop="description" content="백준 1002번 터렛 문제 풀이">
+    <meta itemprop="datePublished" content="2022-04-08T00:00:00+09:00">
+    <meta itemprop="dateModified" content="2022-04-08T00:00:00+09:00">
 
     <div class="page__inner-wrap">
       
         <header>
           <h1 id="page-title" class="page__title p-name" itemprop="headline">
-            <a href="http://localhost:4000/%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8/1297/" class="u-url" itemprop="url">[파이썬][백준 1292번] TV 크기
+            <a href="http://localhost:4000/%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8/1002/" class="u-url" itemprop="url">[파이썬][백준 1002번] 터렛
 </a>
           </h1>
           
@@ -316,47 +316,52 @@
         
         <h2 id="1-문제">1. 문제</h2>
 
-<h1 id="bronze-iv-tv-크기---1297">[Bronze IV] TV 크기 - 1297</h1>
+<h1 id="silver-iv-터렛---1002">[Silver IV] 터렛 - 1002</h1>
 
-<p><a href="https://www.acmicpc.net/problem/1297">문제 링크</a></p>
+<p><a href="https://www.acmicpc.net/problem/1002">문제 링크</a></p>
 
 <h3 id="성능-요약">성능 요약</h3>
 
-<p>메모리: 30864 KB, 시간: 76 ms</p>
+<p>메모리: 30860 KB, 시간: 84 ms</p>
 
 <h3 id="분류">분류</h3>
 
-<p>기하학(geometry), 수학(math), 피타고라스 정리(pythagoras)</p>
+<p>기하학(geometry), 수학(math)</p>
 
 <h3 id="문제-설명">문제 설명</h3>
 
-<p>김탑은 TV를 사러 인터넷 쇼핑몰에 들어갔다. 쇼핑을 하던 중에, TV의 크기는 그 TV의 대각선의 길이로 나타낸 다는 것을 알았다. 하지만, 김탑은 대각선의 길이가 같다고 해도, 실제 TV의 크기는 다를 수도 있다는 사실에 직접 TV를 보러갈걸 왜 인터넷 쇼핑을 대각선의 길이만 보고있는지 후회하고 있었다.</p>
+<p>조규현과 백승환은 터렛에 근무하는 직원이다. 하지만 워낙 존재감이 없어서 인구수는 차지하지 않는다. 다음은 조규현과 백승환의 사진이다.</p>
 
-<p>인터넷 쇼핑몰 관리자에게 이메일을 보내서 실제 높이와 실제 너비를 보내달라고 했지만, 관리자는 실제 높이와 실제 너비를 보내지 않고 그것의 비율을 보내왔다.</p>
+<p style="text-align: center;"><img alt="" src="https://www.acmicpc.net/upload/201003/dfcmhrjj_142c3w76qg8_b.jpg" style="height: 135px; width: 136px;" /></p>
 
-<p>TV의 대각선 길이와, 높이 너비의 비율이 주어졌을 때, 실제 높이와 너비의 길이를 출력하는 프로그램을 작성하시오.</p>
+<p>이석원은 조규현과 백승환에게 상대편 마린(류재명)의 위치를 계산하라는 명령을 내렸다. 조규현과 백승환은 각각 자신의 터렛 위치에서 현재 적까지의 거리를 계산했다.</p>
+
+<p>조규현의 좌표 (x<sub>1</sub>, y<sub>1</sub>)와 백승환의 좌표 (x<sub>2</sub>, y<sub>2</sub>)가 주어지고, 조규현이 계산한 류재명과의 거리 r<sub>1</sub>과 백승환이 계산한 류재명과의 거리 r<sub>2</sub>가 주어졌을 때, 류재명이 있을 수 있는 좌표의 수를 출력하는 프로그램을 작성하시오.</p>
 
 <h3 id="입력">입력</h3>
 
-<p>첫째 줄에 TV의 대각선 길이 D, TV의 높이 비율 H, TV의 너비 비율 W이 공백 한 칸을 사이에 두고 주어진다.</p>
+<p>첫째 줄에 테스트 케이스의 개수 T가 주어진다. 각 테스트 케이스는 다음과 같이 이루어져 있다.</p>
+
+<p>한 줄에 x<sub>1</sub>, y<sub>1</sub>, r<sub>1</sub>, x<sub>2</sub>, y<sub>2</sub>, r<sub>2</sub>가 주어진다. x<sub>1</sub>, y<sub>1</sub>, x<sub>2</sub>, y<sub>2</sub>는 -10,000보다 크거나 같고, 10,000보다 작거나 같은 정수이고, r<sub>1</sub>, r<sub>2</sub>는 10,000보다 작거나 같은 자연수이다.</p>
 
 <h3 id="출력">출력</h3>
 
-<p>첫째 줄에 TV의 높이와 TV의 너비를 공백 한 칸을 이용해서 구분지은 후 출력한다. 만약, 실제 TV의 높이나 너비가 소수점이 나올 경우에는 그 수보다 작으면서 가장 큰 정수로 출력한다. (예) 1.7 -&gt; 1</p>
+<p>각 테스트 케이스마다 류재명이 있을 수 있는 위치의 수를 출력한다. 만약 류재명이 있을 수 있는 위치의 개수가 무한대일 경우에는 -1을 출력한다.</p>
 
 <blockquote>
   <p>출처: 백준, https://https://www.acmicpc.net/</p>
 </blockquote>
 
 <h2 id="2-해결방법-시간복잡도">2. 해결방법 시간복잡도</h2>
+
 <ol>
-  <li>단순 코딩 O(1)</li>
+  <li>단순 코딩 O(N)</li>
 </ol>
 
 <h2 id="3-문제-해결-및-코드">3. 문제 해결 및 코드</h2>
 <hr />
 
-<script src="https://gist.github.com/godhin/e6acc218a1e523e65b572daa0e1ae34c.js"></script>
+<script src="https://gist.github.com/godhin/5d1dcdb5697581c632b613163a94caeb.js"></script>
 
 <ul>
   <li>
@@ -367,11 +372,34 @@
 <h2 id="4-알고리즘-및-해설">4. 알고리즘 및 해설</h2>
 
 <ol>
-  <li>map() 함수를 통해 값을 정수형으로 받는다.</li>
-  <li>이후 대각선 비율을 구한뒤 해당 값을 기준으로, 출력하고자 하는 TV높이와 너비를 출력한다.
+  <li>문제에서 제시한 좌표와 거리를 통해 문제를 풀어본다.</li>
+  <li>일단 문제에서 알아야되는 것은 두 원의 중심거리 d를 구해야된다.
     <ul>
-      <li>대각선 비율은 대각선 길이를 높이 비율 제곱과 너비 비율 제곱을 더한 루트값</li>
-      <li>높이값은 높이 비율 * 대각선 비율, 너비값은 너비 비율 * 대각선 비율</li>
+      <li>두 원의 중심거리를 구했다면 접점 유무를 확인하면 된다.
+        <ul>
+          <li>
+            <ol>
+              <li>반지름이 같은 경우
+                <ul>
+                  <li>두 원의 접점이 무수히 많은 경우 위에서 제시한 류재명이 있을 수 있는 위치의 개수가 무한대이므로 -1 출력</li>
+                  <li>접점이 없는 경우 0을 출력</li>
+                </ul>
+              </li>
+            </ol>
+          </li>
+          <li>
+            <ol>
+              <li>반지름이 다른 경우
+                <ul>
+                  <li>접점이 없는 경우 0을 출력</li>
+                  <li>반 지름의 합또는 차의 절대값이 두 원의 중심거리와 같은 경우 1을 출력한다.</li>
+                  <li>이외에 나머지 3가지 경우 접점이 많거나, 접점이 없거나, 접점이 1개인 경우를 모두 제외한 경우에는 2를 출력한다.</li>
+                </ul>
+              </li>
+            </ol>
+          </li>
+        </ul>
+      </li>
     </ul>
   </li>
 </ol>
@@ -391,7 +419,7 @@
     <strong><i class="fas fa-fw fa-tags" aria-hidden="true"></i> 태그: </strong>
     <span itemprop="keywords">
     
-      <a href="/tags/#bronze" class="page__taxonomy-item p-category" rel="tag">Bronze</a><span class="sep">, </span>
+      <a href="/tags/#silver" class="page__taxonomy-item p-category" rel="tag">Silver</a><span class="sep">, </span>
     
       <a href="/tags/#%EB%B0%B1%EC%A4%80" class="page__taxonomy-item p-category" rel="tag">백준</a><span class="sep">, </span>
     
@@ -424,7 +452,7 @@
 
         
 
-  <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> 업데이트:</strong> <time class="dt-published" datetime="2022-04-07">April 7, 2022</time></p>
+  <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> 업데이트:</strong> <time class="dt-published" datetime="2022-04-08">April 8, 2022</time></p>
 
       </footer>
 
@@ -433,22 +461,22 @@
     <h4 class="page__share-title">공유하기</h4>
   
 
-  <a href="https://twitter.com/intent/tweet?text=%5B%ED%8C%8C%EC%9D%B4%EC%8D%AC%5D%5B%EB%B0%B1%EC%A4%80+1292%EB%B2%88%5D+TV+%ED%81%AC%EA%B8%B0%20http%3A%2F%2Flocalhost%3A4000%2F%25EC%25BD%2594%25EB%2594%25A9%25ED%2585%258C%25EC%258A%25A4%25ED%258A%25B8%2F1297%2F" class="btn btn--twitter" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="공유하기 Twitter"><i class="fab fa-fw fa-twitter" aria-hidden="true"></i><span> Twitter</span></a>
+  <a href="https://twitter.com/intent/tweet?text=%5B%ED%8C%8C%EC%9D%B4%EC%8D%AC%5D%5B%EB%B0%B1%EC%A4%80+1002%EB%B2%88%5D+%ED%84%B0%EB%A0%9B%20http%3A%2F%2Flocalhost%3A4000%2F%25EC%25BD%2594%25EB%2594%25A9%25ED%2585%258C%25EC%258A%25A4%25ED%258A%25B8%2F1002%2F" class="btn btn--twitter" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="공유하기 Twitter"><i class="fab fa-fw fa-twitter" aria-hidden="true"></i><span> Twitter</span></a>
 
-  <a href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Flocalhost%3A4000%2F%25EC%25BD%2594%25EB%2594%25A9%25ED%2585%258C%25EC%258A%25A4%25ED%258A%25B8%2F1297%2F" class="btn btn--facebook" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="공유하기 Facebook"><i class="fab fa-fw fa-facebook" aria-hidden="true"></i><span> Facebook</span></a>
+  <a href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Flocalhost%3A4000%2F%25EC%25BD%2594%25EB%2594%25A9%25ED%2585%258C%25EC%258A%25A4%25ED%258A%25B8%2F1002%2F" class="btn btn--facebook" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="공유하기 Facebook"><i class="fab fa-fw fa-facebook" aria-hidden="true"></i><span> Facebook</span></a>
 
-  <a href="https://www.linkedin.com/shareArticle?mini=true&url=http%3A%2F%2Flocalhost%3A4000%2F%25EC%25BD%2594%25EB%2594%25A9%25ED%2585%258C%25EC%258A%25A4%25ED%258A%25B8%2F1297%2F" class="btn btn--linkedin" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="공유하기 LinkedIn"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i><span> LinkedIn</span></a>
+  <a href="https://www.linkedin.com/shareArticle?mini=true&url=http%3A%2F%2Flocalhost%3A4000%2F%25EC%25BD%2594%25EB%2594%25A9%25ED%2585%258C%25EC%258A%25A4%25ED%258A%25B8%2F1002%2F" class="btn btn--linkedin" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="공유하기 LinkedIn"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i><span> LinkedIn</span></a>
 </section>
 
 
       
   <nav class="pagination">
     
-      <a href="/%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8/1330/" class="pagination--pager" title="[파이썬][백준 1330번] 두 수 비교하기
+      <a href="/%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8/1297/" class="pagination--pager" title="[파이썬][백준 1292번] TV 크기
 ">이전</a>
     
     
-      <a href="/%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8/1002/" class="pagination--pager" title="[파이썬][백준 1002번] 터렛
+      <a href="/%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8/10797/" class="pagination--pager" title="[파이썬][백준 10797번] 10부제
 ">다음</a>
     
   </nav>
