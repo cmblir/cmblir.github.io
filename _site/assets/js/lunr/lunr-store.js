@@ -341,6 +341,18 @@ var store = [{
         "url": "/%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8/23234/",
         "teaser": null
       },{
+        "title": "[파이썬][백준 24218번] Double Crypt 1",
+        "excerpt":"1. 문제 [Bronze V] Double Crypt 1 - 24218 문제 링크 성능 요약 메모리: 30860 KB, 시간: 64 ms 분류 구현(implementation) 문제 설명 The Advanced Encryption Standard (AES) involves a new strong encryption algorithm. It works with three blocks of 128$128$ bits. Given a message block p$p$ (plaintext) and a...","categories": ["코딩테스트"],
+        "tags": ["알고리즘","파이썬","코테","백준","Bronze"],
+        "url": "/%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8/24218/",
+        "teaser": null
+      },{
+        "title": "[파이썬][백준 24262번] 알고리즘의 수행 시간 1",
+        "excerpt":"1. 문제 [Bronze V] 알고리즘 수업 - 알고리즘의 수행 시간 1 - 24262 문제 링크 성능 요약 메모리: 30864 KB, 시간: 64 ms 분류 구현(implementation), 시뮬레이션(simulation) 문제 설명 오늘도 서준이는 알고리즘의 수행시간 수업 조교를 하고 있다. 아빠가 수업한 내용을 학생들이 잘 이해했는지 문제를 통해서 확인해보자. 입력의 크기 n이 주어지면 MenOfPassion...","categories": ["코딩테스트"],
+        "tags": ["알고리즘","파이썬","코테","백준","Bronze"],
+        "url": "/%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8/24262/",
+        "teaser": null
+      },{
         "title": "[파이썬][백준 17388번] 와글와글 숭고한",
         "excerpt":"1. 문제 [Bronze IV] 와글와글 숭고한 - 17388 문제 링크 성능 요약 메모리: 30840 KB, 시간: 68 ms 분류 구현(implementation) 출처: 백준, https://https://www.acmicpc.net/ 2. 해결방법 시간복잡도 단순 코딩 O(1) 3. 문제 해결 및 코드 주석을 참고하면서 이해를 돕습니다. 4. 알고리즘 및 해설 해당 문제의 조건에 따라 값을 출력해준다. 3개값의 합이...","categories": ["코딩테스트"],
         "tags": ["알고리즘","파이썬","코테","백준","Bronze"],
@@ -455,6 +467,30 @@ var store = [{
         "url": "/%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8/22193/",
         "teaser": null
       },{
+        "title": "[파이썬][백준 24078번] 余り (Remainder)",
+        "excerpt":"1. 문제 [Bronze V] 余り (Remainder) - 24078 문제 링크 성능 요약 메모리: 30864 KB, 시간: 68 ms 분류 사칙연산(arithmetic), 수학(math) 문제 설명 正の整数 X が与えられる．X を 21 で割った余りを出力せよ． 입력 入力は以下の形式で標準入力から与えられる． X 출력 X を 21 で割った余りを出力せよ． 출처: 백준, https://https://www.acmicpc.net/ 2. 해결방법 시간복잡도 단순 코딩 O(1) 3. 문제 해결 및...","categories": ["코딩테스트"],
+        "tags": ["알고리즘","파이썬","코테","백준","Bronze"],
+        "url": "/%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8/24078/",
+        "teaser": null
+      },{
+        "title": "[파이썬][백준 24082번] 立方体 (Cube)",
+        "excerpt":"1. 문제 [Bronze V] 立方体 (Cube) - 24082 문제 링크 성능 요약 메모리: 30860 KB, 시간: 72 ms 분류 사칙연산(arithmetic), 수학(math) 문제 설명 一辺の長さが x cm の立方体の体積は (x × x × x) cm3 である． 整数 X が与えられる．一辺の長さが X cm の立方体の体積は何 cm3 か求めよ． 입력 入力は以下の形式で標準入力から与えられる． X 출력 一辺の長さが X cm の立方体の体積が何...","categories": ["코딩테스트"],
+        "tags": ["알고리즘","파이썬","코테","백준","Bronze"],
+        "url": "/%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8/24082/",
+        "teaser": null
+      },{
+        "title": "[파이썬][백준 24086번] 身長 (Height)",
+        "excerpt":"1. 문제 [Bronze V] 身長 (Height) - 24086 문제 링크 성능 요약 메모리: 30864 KB, 시간: 68 ms 분류 사칙연산(arithmetic), 수학(math) 문제 설명 JOI 君の 1 年前の身長は A cm であった．JOI 君の今の身長は B cm である． この 1 年間で JOI 君の身長は伸びたことがわかっている． JOI 君のこの 1 年間の身長の伸びは何 cm であるか出力せよ． 입력 入力は以下の形式で標準入力から与えられる． A B 출력...","categories": ["코딩테스트"],
+        "tags": ["알고리즘","파이썬","코테","백준","Bronze"],
+        "url": "/%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8/24086/",
+        "teaser": null
+      },{
+        "title": "[파이썬][백준 24183번] Affischutskicket",
+        "excerpt":"1. 문제 [Bronze V] Affischutskicket - 24183 문제 링크 성능 요약 메모리: 30860 KB, 시간: 68 ms 분류 사칙연산(arithmetic), 수학(math) 문제 설명 VE OCH FASA! PostNord har för det 1337$1337$:e året i rad höjt portot, vilket riskerar att bräcka Programmeringsolympiadens budget. Varje år skickar PO ut affischer till ca 450$450$...","categories": ["코딩테스트"],
+        "tags": ["알고리즘","파이썬","코테","백준","Bronze"],
+        "url": "/%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8/24183/",
+        "teaser": null
+      },{
         "title": "[파이썬][프로그래머스] 짝수와 홀수",
         "excerpt":"1. 문제 [level 1] 짝수와 홀수 - 12937 문제 링크 성능 요약 메모리: 10 MB, 시간: 0.00 ms 구분 코딩테스트 연습 &gt; 연습문제 채점결과 정확성: 100.0 합계: 100.0 / 100.0 문제 설명 정수 num이 짝수일 경우 \"Even\"을 반환하고 홀수인 경우 \"Odd\"를 반환하는 함수, solution을 완성해주세요. 제한 조건 num은 int 범위의 정수입니다....","categories": ["코딩테스트"],
         "tags": ["알고리즘","파이썬","코테","프로그래머스","Level_1"],
@@ -495,6 +531,12 @@ var store = [{
         "excerpt":"1. 문제 [Bronze IV] TV 크기 - 1297 문제 링크 성능 요약 메모리: 30864 KB, 시간: 76 ms 분류 기하학(geometry), 수학(math), 피타고라스 정리(pythagoras) 문제 설명 김탑은 TV를 사러 인터넷 쇼핑몰에 들어갔다. 쇼핑을 하던 중에, TV의 크기는 그 TV의 대각선의 길이로 나타낸 다는 것을 알았다. 하지만, 김탑은 대각선의 길이가 같다고 해도,...","categories": ["코딩테스트"],
         "tags": ["알고리즘","파이썬","코테","백준","Bronze"],
         "url": "/%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8/1297/",
+        "teaser": null
+      },{
+        "title": "[파이썬][백준 2420번] 사파리월드",
+        "excerpt":"1. 문제 [Bronze IV] 사파리월드 - 2420 문제 링크 성능 요약 메모리: 30860 KB, 시간: 68 ms 분류 사칙연산(arithmetic), 구현(implementation), 수학(math) 문제 설명 사파리월드는 인터넷으로만 존재하는 미스테리한 나라이다. 사파리월드에는 2개의 서브도메인이 seunghwan.royal.gov.sw와 kyuhyun.royal.gov.sw 이 있는데, 이것이 couple.royal.gov.sw으로 합쳐질 것이다. 그러나 도메인 관리 센터 SWNIC(센터장: 김동규)에는 엄격한 룰이 있다. 두 서브도메인을...","categories": ["코딩테스트"],
+        "tags": ["알고리즘","파이썬","코테","백준","Bronze"],
+        "url": "/%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8/2420/",
         "teaser": null
       },{
         "title": "[파이썬][백준 1002번] 터렛",
