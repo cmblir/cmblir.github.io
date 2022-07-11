@@ -269,6 +269,12 @@ var store = [{
         "url": "/%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8/1271/",
         "teaser": null
       },{
+        "title": "[파이썬][백준 2338번] 긴자리 계산",
+        "excerpt":"1. 문제 [Bronze V] 긴자리 계산 - 2338 문제 링크 성능 요약 메모리: 30860 KB, 시간: 68 ms 분류 임의 정밀도 / 큰 수 연산(arbitrary_precision), 사칙연산(arithmetic), 수학(math) 문제 설명 두 수 A, B를 입력받아, A+B, A-B, A×B를 구하는 프로그램을 작성하시오. 입력 첫째 줄에 A가, 둘째 줄에 B가 주어진다. 각각의 수는...","categories": ["코딩테스트"],
+        "tags": ["알고리즘","파이썬","코테","백준","Bronze"],
+        "url": "/%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8/2338/",
+        "teaser": null
+      },{
         "title": "[파이썬][백준 24904번] Baekjoon Wordline Judge",
         "excerpt":"1. 문제 [Unrated] Baekjoon Wordline Judge - 24904 문제 링크 성능 요약 메모리: 4528 KB, 시간: 0 ms 분류 Empty 문제 설명 Wordle 287 3/6 ⬜⬜🟩🟨⬜ ⬜⬜⬜🟨🟨 🟩🟩🟩🟩🟩 입력 Empty 출력 다섯 글자 영단어를 대문자로 써서 제출한다. 출처: 백준, https://https://www.acmicpc.net/ 2. 해결방법 시간복잡도 txt 3. 문제 해결 및 코드 RETCH...","categories": ["코딩테스트"],
         "tags": ["알고리즘","파이썬","코테","백준","Unrated"],
@@ -327,6 +333,12 @@ var store = [{
         "excerpt":"1. 문제 [Bronze V] 엔드게임 스포일러 - 17295 문제 링크 성능 요약 메모리: 30860 KB, 시간: 68 ms 분류 구현(implementation) 출처: 백준, https://https://www.acmicpc.net/ 2. 해결방법 시간복잡도 단순 코딩 O(1) 3. 문제 해결 및 코드 주석을 참고하면서 이해를 돕습니다. 4. 알고리즘 및 해설 입력값을 받은 다음 최종 출력은 어벤져스 엔드게임 제목을...","categories": ["코딩테스트"],
         "tags": ["알고리즘","파이썬","코테","백준","Bronze"],
         "url": "/%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8/17295/",
+        "teaser": null
+      },{
+        "title": "[파이썬][백준 23234번] The World Responds",
+        "excerpt":"1. 문제 [Bronze V] The World Responds - 23234 문제 링크 성능 요약 메모리: 30860 KB, 시간: 68 ms 분류 구현(implementation) 문제 설명 In many introductory computer programming classes, the first program that students learn to write just prints “Hello, world!” It is used as a first assignment because it...","categories": ["코딩테스트"],
+        "tags": ["알고리즘","파이썬","코테","백준","Bronze"],
+        "url": "/%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8/23234/",
         "teaser": null
       },{
         "title": "[파이썬][백준 17388번] 와글와글 숭고한",
@@ -947,10 +959,34 @@ var store = [{
         "url": "/%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8/10156/",
         "teaser": null
       },{
+        "title": "[파이썬][백준 22966번] 가장 쉬운 문제를 찾는 문제",
+        "excerpt":"1. 문제 [Bronze II] 가장 쉬운 문제를 찾는 문제 - 22966 문제 링크 성능 요약 메모리: 30840 KB, 시간: 72 ms 분류 구현(implementation) 문제 설명 예선 문제를 성실하게 복습한 학생들이라면 예선에 출제된 5문제가 난이도 순서대로 정렬되어 있다는 것을 알아차렸을 것이다. 하지만 본선은 문제 제목에 대해 사전순으로 정렬했기 때문에 난이도 순서대로...","categories": ["코딩테스트"],
+        "tags": ["알고리즘","파이썬","코테","백준","Bronze"],
+        "url": "/%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8/22966/",
+        "teaser": null
+      },{
         "title": "[파이썬][백준 22938번] 백발백준하는 명사수",
         "excerpt":"1. 문제 [Bronze III] 백발백준하는 명사수 - 22938 문제 링크 성능 요약 메모리: 32952 KB, 시간: 68 ms 분류 기하학(geometry), 수학(math), 피타고라스 정리(pythagoras) 문제 설명 백발백준은 무슨 과녁이던 백발백중하여 올림픽 금메달보다 따기 어렵다는 대한민국 양궁 국가대표 타이틀을 가지고 있다. 이런 백발백준이 현재 연마하는 스킬이 있는데... 바로 두 과녁을 한번에 맞추는...","categories": ["코딩테스트"],
         "tags": ["알고리즘","파이썬","코테","백준","Bronze"],
         "url": "/%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8/22938/",
+        "teaser": null
+      },{
+        "title": "[파이썬][백준 23037번] 5의 수난",
+        "excerpt":"1. 문제 [Bronze III] 5의 수난 - 23037 문제 링크 성능 요약 메모리: 30840 KB, 시간: 72 ms 분류 사칙연산(arithmetic), 수학(math) 출처: 백준, https://https://www.acmicpc.net/ 2. 해결방법 시간복잡도 단순 코딩 O(N) 3. 문제 해결 및 코드 주석을 참고하면서 이해를 돕습니다. 4. 알고리즘 및 해설 입력값을 정수형으로 받은 뒤 다시 문자열로 받는다....","categories": ["코딩테스트"],
+        "tags": ["알고리즘","파이썬","코테","백준","Bronze"],
+        "url": "/%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8/23037/",
+        "teaser": null
+      },{
+        "title": "[파이썬][백준 23795번] 사장님 도박은 재미로 하셔야 합니다",
+        "excerpt":"1. 문제 [Bronze III] 사장님 도박은 재미로 하셔야 합니다 - 23795 문제 링크 성능 요약 메모리: 30840 KB, 시간: 68 ms 분류 사칙연산(arithmetic), 구현(implementation), 수학(math) 문제 설명 영국에는 스티븐 제라드라는 전설의 야바위꾼이 있다. 영국으로 여행을 떠난 윤성이는 스티븐 제라드를 만나게 되었다. 이 전설의 야바위꾼이 진행하는 야바위는 널리 알려진 방식과 동일하다....","categories": ["코딩테스트"],
+        "tags": ["알고리즘","파이썬","코테","백준","Bronze"],
+        "url": "/%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8/23795/",
+        "teaser": null
+      },{
+        "title": "[파이썬][백준 23825번] SASA 모형을 만들어보자",
+        "excerpt":"1. 문제 [Bronze IV] SASA 모형을 만들어보자 - 23825 문제 링크 성능 요약 메모리: 30840 KB, 시간: 68 ms 분류 수학(math) 문제 설명 당신은 SASA 연못에서 알파벳 S 모양의 블록 N$N$개와 알파벳 A 모양의 블록 M$M$개를 건졌다. 태영이는 연못에서 건진 블록을 이용해 학교에 전시할 SASA 모형을 최대한 많이 만들려고 한다....","categories": ["코딩테스트"],
+        "tags": ["알고리즘","파이썬","코테","백준","Bronze"],
+        "url": "/%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8/23825/",
         "teaser": null
       },{
         "title": "django를 시작해보자",
