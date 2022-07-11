@@ -161,6 +161,18 @@ var store = [{
         "url": "/%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8/15552/",
         "teaser": null
       },{
+        "title": "[파이썬][백준 2438번] 별 찍기 - 1",
+        "excerpt":"1. 문제 [Bronze III] 별 찍기 - 1 - 2438 문제 링크 성능 요약 메모리: 30864 KB, 시간: 76 ms 분류 구현(implementation) 문제 설명 첫째 줄에는 별 1개, 둘째 줄에는 별 2개, N번째 줄에는 별 N개를 찍는 문제 입력 첫째 줄에 N(1 ≤ N ≤ 100)이 주어진다. 출력 첫째 줄부터...","categories": ["코딩테스트"],
+        "tags": ["알고리즘","파이썬","코테","백준","Bronze"],
+        "url": "/%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8/2438/",
+        "teaser": null
+      },{
+        "title": "[파이썬][백준 2439번] 별 찍기 - 2",
+        "excerpt":"1. 문제 [Bronze III] 별 찍기 - 2 - 2439 문제 링크 성능 요약 메모리: 30864 KB, 시간: 72 ms 분류 구현(implementation) 문제 설명 첫째 줄에는 별 1개, 둘째 줄에는 별 2개, N번째 줄에는 별 N개를 찍는 문제 하지만, 오른쪽을 기준으로 정렬한 별(예제 참고)을 출력하시오. 입력 첫째 줄에 N(1 ≤...","categories": ["코딩테스트"],
+        "tags": ["알고리즘","파이썬","코테","백준","Bronze"],
+        "url": "/%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8/2439/",
+        "teaser": null
+      },{
         "title": "[파이썬][백준 10818번] 최소, 최대",
         "excerpt":"1. 문제 [Bronze III] 최소, 최대 - 10818 문제 링크 성능 요약 메모리: 148396 KB, 시간: 412 ms 분류 구현(implementation), 수학(math) 문제 설명 N개의 정수가 주어진다. 이때, 최솟값과 최댓값을 구하는 프로그램을 작성하시오. 입력 첫째 줄에 정수의 개수 N (1 ≤ N ≤ 1,000,000)이 주어진다. 둘째 줄에는 N개의 정수를 공백으로 구분해서...","categories": ["코딩테스트"],
         "tags": ["알고리즘","파이썬","코테","백준","Bronze"],
@@ -273,6 +285,12 @@ var store = [{
         "excerpt":"1. 문제 [Bronze V] 긴자리 계산 - 2338 문제 링크 성능 요약 메모리: 30860 KB, 시간: 68 ms 분류 임의 정밀도 / 큰 수 연산(arbitrary_precision), 사칙연산(arithmetic), 수학(math) 문제 설명 두 수 A, B를 입력받아, A+B, A-B, A×B를 구하는 프로그램을 작성하시오. 입력 첫째 줄에 A가, 둘째 줄에 B가 주어진다. 각각의 수는...","categories": ["코딩테스트"],
         "tags": ["알고리즘","파이썬","코테","백준","Bronze"],
         "url": "/%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8/2338/",
+        "teaser": null
+      },{
+        "title": "[파이썬][백준 24309번] РАВЕНСТВО",
+        "excerpt":"1. 문제 [Bronze V] РАВЕНСТВО - 24309 문제 링크 성능 요약 메모리: 30860 KB, 시간: 72 ms 분류 임의 정밀도 / 큰 수 연산(arbitrary_precision), 사칙연산(arithmetic), 수학(math) 문제 설명 Учителката по математика дала на учениците да намерят неизвестното x от равенството: a·x = b-c. Числата а, b и c са естествени...","categories": ["코딩테스트"],
+        "tags": ["알고리즘","파이썬","코테","백준","Bronze"],
+        "url": "/%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8/24309/",
         "teaser": null
       },{
         "title": "[파이썬][백준 24904번] Baekjoon Wordline Judge",
@@ -489,6 +507,12 @@ var store = [{
         "excerpt":"1. 문제 [Bronze V] Affischutskicket - 24183 문제 링크 성능 요약 메모리: 30860 KB, 시간: 68 ms 분류 사칙연산(arithmetic), 수학(math) 문제 설명 VE OCH FASA! PostNord har för det 1337$1337$:e året i rad höjt portot, vilket riskerar att bräcka Programmeringsolympiadens budget. Varje år skickar PO ut affischer till ca 450$450$...","categories": ["코딩테스트"],
         "tags": ["알고리즘","파이썬","코테","백준","Bronze"],
         "url": "/%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8/24183/",
+        "teaser": null
+      },{
+        "title": "[파이썬][백준 24568번] Cupcake Party",
+        "excerpt":"1. 문제 [Bronze V] Cupcake Party - 24568 문제 링크 성능 요약 메모리: 30864 KB, 시간: 72 ms 분류 사칙연산(arithmetic), 수학(math) 문제 설명 A regular box of cupcakes holds 8 cupcakes, while a small box holds 3 cupcakes. There are 28 students in a class and a total of at...","categories": ["코딩테스트"],
+        "tags": ["알고리즘","파이썬","코테","백준","Bronze"],
+        "url": "/%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8/24568/",
         "teaser": null
       },{
         "title": "[파이썬][프로그래머스] 짝수와 홀수",
@@ -1083,6 +1107,12 @@ var store = [{
         "excerpt":"1. 문제 [Bronze II] 24 - 1408 문제 링크 성능 요약 메모리: 30840 KB, 시간: 72 ms 분류 사칙연산(arithmetic), 구현(implementation), 수학(math) 문제 설명 도현이는 Counter Terror Unit (CTU)에서 일하는 특수요원이다. 도현이는 모든 사건을 정확하게 24시간이 되는 순간 해결하는 것으로 유명하다. 도현이는 1시간 만에 범인을 잡을 수 있어도 잡지 않는다. 정확하게...","categories": ["코딩테스트"],
         "tags": ["알고리즘","파이썬","코테","백준","Bronze"],
         "url": "/%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8/1408/",
+        "teaser": null
+      },{
+        "title": "[파이썬][백준 2440번] 별 찍기 - 3",
+        "excerpt":"1. 문제 [Bronze III] 별 찍기 - 3 - 2440 문제 링크 성능 요약 메모리: 30840 KB, 시간: 68 ms 분류 구현(implementation) 문제 설명 첫째 줄에는 별 N개, 둘째 줄에는 별 N-1개, ..., N번째 줄에는 별 1개를 찍는 문제 입력 첫째 줄에 N(1 ≤ N ≤ 100)이 주어진다. 출력 첫째...","categories": ["코딩테스트"],
+        "tags": ["알고리즘","파이썬","코테","백준","Bronze"],
+        "url": "/%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8/2440/",
         "teaser": null
       },{
         "title": "기계식 키보드란",
