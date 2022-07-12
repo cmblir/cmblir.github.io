@@ -9,8 +9,8 @@
   <head>
     <meta charset="utf-8">
 
-<!-- begin _includes/seo.html --><title>[파이썬][백준 3053번] 택시 기하학 - 성장형 개발자 블로그</title>
-<meta name="description" content="백준 3053번 택시 기하학 문제 풀이">
+<!-- begin _includes/seo.html --><title>[파이썬][백준 4104번] 크냐? - 성장형 개발자 블로그</title>
+<meta name="description" content="백준 4104번 크냐? 문제 풀이">
 
 
   <meta name="author" content="You Nicholas">
@@ -22,32 +22,32 @@
 <meta property="og:type" content="article">
 <meta property="og:locale" content="ko">
 <meta property="og:site_name" content="성장형 개발자 블로그">
-<meta property="og:title" content="[파이썬][백준 3053번] 택시 기하학">
-<meta property="og:url" content="http://localhost:4000/%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8/3053/">
+<meta property="og:title" content="[파이썬][백준 4104번] 크냐?">
+<meta property="og:url" content="http://localhost:4000/%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8/4101/">
 
 
-  <meta property="og:description" content="백준 3053번 택시 기하학 문제 풀이">
-
-
-
+  <meta property="og:description" content="백준 4104번 크냐? 문제 풀이">
 
 
 
 
-  <meta property="article:published_time" content="2022-04-03T00:00:00+09:00">
 
 
 
-  <meta property="article:modified_time" content="2022-04-03T00:00:00+09:00">
+  <meta property="article:published_time" content="2022-05-14T00:00:00+09:00">
 
 
 
-  
+  <meta property="article:modified_time" content="2022-05-14T00:00:00+09:00">
+
+
 
   
 
+  
 
-<link rel="canonical" href="http://localhost:4000/%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8/3053/">
+
+<link rel="canonical" href="http://localhost:4000/%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8/4101/">
 
 
 
@@ -268,16 +268,16 @@
 
 
   <article class="page h-entry" itemscope itemtype="https://schema.org/CreativeWork">
-    <meta itemprop="headline" content="[파이썬][백준 3053번] 택시 기하학">
-    <meta itemprop="description" content="백준 3053번 택시 기하학 문제 풀이">
-    <meta itemprop="datePublished" content="2022-04-03T00:00:00+09:00">
-    <meta itemprop="dateModified" content="2022-04-03T00:00:00+09:00">
+    <meta itemprop="headline" content="[파이썬][백준 4104번] 크냐?">
+    <meta itemprop="description" content="백준 4104번 크냐? 문제 풀이">
+    <meta itemprop="datePublished" content="2022-05-14T00:00:00+09:00">
+    <meta itemprop="dateModified" content="2022-05-14T00:00:00+09:00">
 
     <div class="page__inner-wrap">
       
         <header>
           <h1 id="page-title" class="page__title p-name" itemprop="headline">
-            <a href="http://localhost:4000/%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8/3053/" class="u-url" itemprop="url">[파이썬][백준 3053번] 택시 기하학
+            <a href="http://localhost:4000/%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8/4101/" class="u-url" itemprop="url">[파이썬][백준 4104번] 크냐?
 </a>
           </h1>
           
@@ -316,41 +316,29 @@
         
         <h2 id="1-문제">1. 문제</h2>
 
-<h1 id="bronze-iii-택시-기하학---3053">[Bronze III] 택시 기하학 - 3053</h1>
+<h1 id="bronze-iii-크냐---4101">[Bronze III] 크냐? - 4101</h1>
 
-<p><a href="https://www.acmicpc.net/problem/3053">문제 링크</a></p>
+<p><a href="https://www.acmicpc.net/problem/4101">문제 링크</a></p>
 
 <h3 id="성능-요약">성능 요약</h3>
 
-<p>메모리: 32976 KB, 시간: 68 ms</p>
+<p>메모리: 30840 KB, 시간: 68 ms</p>
 
 <h3 id="분류">분류</h3>
 
-<p>기하학(geometry), 수학(math)</p>
+<p>사칙연산(arithmetic), 구현(implementation), 수학(math)</p>
 
 <h3 id="문제-설명">문제 설명</h3>
 
-<p>19세기 독일 수학자 헤르만 민코프스키는 비유클리드 기하학 중 택시 기하학을 고안했다.</p>
-
-<p>택시 기하학에서 두 점 T1(x1,y1), T2(x2,y2) 사이의 거리는 다음과 같이 구할 수 있다.</p>
-
-<p>D(T1,T2) = |x1-x2| + |y1-y2|</p>
-
-<p>두 점 사이의 거리를 제외한 나머지 정의는 유클리드 기하학에서의 정의와 같다.</p>
-
-<p>따라서 택시 기하학에서 원의 정의는 유클리드 기하학에서 원의 정의와 같다.</p>
-
-<p>원: 평면 상의 어떤 점에서 거리가 일정한 점들의 집합</p>
-
-<p>반지름 R이 주어졌을 때, 유클리드 기하학에서 원의 넓이와, 택시 기하학에서 원의 넓이를 구하는 프로그램을 작성하시오.</p>
+<p>두 양의 정수가 주어졌을 때, 첫 번째 수가 두 번째 수보다 큰지 구하는 프로그램을 작성하시오.</p>
 
 <h3 id="입력">입력</h3>
 
-<p>첫째 줄에 반지름 R이 주어진다. R은 10,000보다 작거나 같은 자연수이다.</p>
+<p>입력은 여러 개의 테스트 케이스로 이루어져 있다. 각 테스트 케이스는 한 줄로 이루어져 있으며, 두 정수가 주어진다. 두 수는 백만보다 작거나 같은 양의 정수이다. 입력의 마지막 줄에는 0이 두 개 주어진다.</p>
 
 <h3 id="출력">출력</h3>
 
-<p>첫째 줄에는 유클리드 기하학에서 반지름이 R인 원의 넓이를, 둘째 줄에는 택시 기하학에서 반지름이 R인 원의 넓이를 출력한다. 정답과의 오차는 0.0001까지 허용한다.</p>
+<p>각 테스트 케이스마다, 첫 번째 수가 두 번째 수보다 크면 Yes를, 아니면 No를 한 줄에 하나씩 출력한다.</p>
 
 <blockquote>
   <p>출처: 백준, https://https://www.acmicpc.net/</p>
@@ -359,13 +347,13 @@
 <h2 id="2-해결방법-시간복잡도">2. 해결방법 시간복잡도</h2>
 
 <ol>
-  <li>유클리드 기하학 O(1)</li>
+  <li>단순 코딩 O(N)</li>
 </ol>
 
 <h2 id="3-문제-해결-및-코드">3. 문제 해결 및 코드</h2>
 <hr />
 
-<script src="https://gist.github.com/godhin/92f96534cf18b49311c12bfa9509edad.js"></script>
+<script src="https://gist.github.com/godhin/b3254a8653c1324542d45368af3ebcaa.js"></script>
 
 <ul>
   <li>
@@ -376,10 +364,9 @@
 <h2 id="4-알고리즘-및-해설">4. 알고리즘 및 해설</h2>
 
 <ol>
-  <li>문제에서 제시한 유클리드 기하학 공식을 사용해서 두 값을 출력하면 된다.
+  <li>while문을 통해 두 값을 입력받은 뒤 만약 두 값이 같다면 멈춘다.
     <ul>
-      <li>유클리드 기하학 : 원의 넓이 = 반지름 제곱 * 원주율</li>
-      <li>택시 기하학 : 반지름제곱 * 2</li>
+      <li>만약 A가 B보다 작거나 같으면 No를 아니라면 Yes를 출력한다.</li>
     </ul>
   </li>
 </ol>
@@ -432,7 +419,7 @@
 
         
 
-  <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> 업데이트:</strong> <time class="dt-published" datetime="2022-04-03">April 3, 2022</time></p>
+  <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> 업데이트:</strong> <time class="dt-published" datetime="2022-05-14">May 14, 2022</time></p>
 
       </footer>
 
@@ -441,22 +428,22 @@
     <h4 class="page__share-title">공유하기</h4>
   
 
-  <a href="https://twitter.com/intent/tweet?text=%5B%ED%8C%8C%EC%9D%B4%EC%8D%AC%5D%5B%EB%B0%B1%EC%A4%80+3053%EB%B2%88%5D+%ED%83%9D%EC%8B%9C+%EA%B8%B0%ED%95%98%ED%95%99%20http%3A%2F%2Flocalhost%3A4000%2F%25EC%25BD%2594%25EB%2594%25A9%25ED%2585%258C%25EC%258A%25A4%25ED%258A%25B8%2F3053%2F" class="btn btn--twitter" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="공유하기 Twitter"><i class="fab fa-fw fa-twitter" aria-hidden="true"></i><span> Twitter</span></a>
+  <a href="https://twitter.com/intent/tweet?text=%5B%ED%8C%8C%EC%9D%B4%EC%8D%AC%5D%5B%EB%B0%B1%EC%A4%80+4104%EB%B2%88%5D+%ED%81%AC%EB%83%90%3F%20http%3A%2F%2Flocalhost%3A4000%2F%25EC%25BD%2594%25EB%2594%25A9%25ED%2585%258C%25EC%258A%25A4%25ED%258A%25B8%2F4101%2F" class="btn btn--twitter" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="공유하기 Twitter"><i class="fab fa-fw fa-twitter" aria-hidden="true"></i><span> Twitter</span></a>
 
-  <a href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Flocalhost%3A4000%2F%25EC%25BD%2594%25EB%2594%25A9%25ED%2585%258C%25EC%258A%25A4%25ED%258A%25B8%2F3053%2F" class="btn btn--facebook" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="공유하기 Facebook"><i class="fab fa-fw fa-facebook" aria-hidden="true"></i><span> Facebook</span></a>
+  <a href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Flocalhost%3A4000%2F%25EC%25BD%2594%25EB%2594%25A9%25ED%2585%258C%25EC%258A%25A4%25ED%258A%25B8%2F4101%2F" class="btn btn--facebook" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="공유하기 Facebook"><i class="fab fa-fw fa-facebook" aria-hidden="true"></i><span> Facebook</span></a>
 
-  <a href="https://www.linkedin.com/shareArticle?mini=true&url=http%3A%2F%2Flocalhost%3A4000%2F%25EC%25BD%2594%25EB%2594%25A9%25ED%2585%258C%25EC%258A%25A4%25ED%258A%25B8%2F3053%2F" class="btn btn--linkedin" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="공유하기 LinkedIn"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i><span> LinkedIn</span></a>
+  <a href="https://www.linkedin.com/shareArticle?mini=true&url=http%3A%2F%2Flocalhost%3A4000%2F%25EC%25BD%2594%25EB%2594%25A9%25ED%2585%258C%25EC%258A%25A4%25ED%258A%25B8%2F4101%2F" class="btn btn--linkedin" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="공유하기 LinkedIn"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i><span> LinkedIn</span></a>
 </section>
 
 
       
   <nav class="pagination">
     
-      <a href="/%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8/2914/" class="pagination--pager" title="[파이썬][백준 2914번] 저작권
+      <a href="/%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8/1032/" class="pagination--pager" title="[파이썬][백준 1032번] 명령 프로모트
 ">이전</a>
     
     
-      <a href="/%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8/4153/" class="pagination--pager" title="[파이썬][백준 4153번] 직각삼각형
+      <a href="/%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8/10039/" class="pagination--pager" title="[파이썬][백준 10039번] 평균 점수
 ">다음</a>
     
   </nav>
