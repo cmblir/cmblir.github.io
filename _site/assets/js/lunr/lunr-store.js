@@ -137,6 +137,12 @@ var store = [{
         "url": "/%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8/2753/",
         "teaser": null
       },{
+        "title": "[파이썬][백준 9498번] 시험 성적",
+        "excerpt":"1. 문제 [Bronze IV] 시험 성적 - 9498 문제 링크 성능 요약 메모리: 30864 KB, 시간: 76 ms 분류 구현(implementation) 문제 설명 시험 점수를 입력받아 90 ~ 100점은 A, 80 ~ 89점은 B, 70 ~ 79점은 C, 60 ~ 69점은 D, 나머지 점수는 F를 출력하는 프로그램을 작성하시오. 입력 첫째 줄에...","categories": ["코딩테스트"],
+        "tags": ["알고리즘","파이썬","코테","백준","Bronze"],
+        "url": "/%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8/9498/",
+        "teaser": null
+      },{
         "title": "[파이썬][백준 14681번] 사분면 고르기",
         "excerpt":"1. 문제 [Bronze IV] 사분면 고르기 - 14681 문제 링크 성능 요약 메모리: 30864 KB, 시간: 68 ms 분류 기하학(geometry), 구현(implementation), 수학(math) 문제 설명 흔한 수학 문제 중 하나는 주어진 점이 어느 사분면에 속하는지 알아내는 것이다. 사분면은 아래 그림처럼 1부터 4까지 번호를 갖는다. \"Quadrant n\"은 \"제n사분면\"이라는 뜻이다. 예를 들어, 좌표가...","categories": ["코딩테스트"],
         "tags": ["알고리즘","파이썬","코테","백준","Bronze"],
@@ -273,6 +279,12 @@ var store = [{
         "excerpt":"1. 문제 [Bronze II] 최댓값 - 2562 문제 링크 성능 요약 메모리: 30864 KB, 시간: 68 ms 분류 구현(implementation) 문제 설명 9개의 서로 다른 자연수가 주어질 때, 이들 중 최댓값을 찾고 그 최댓값이 몇 번째 수인지를 구하는 프로그램을 작성하시오. 예를 들어, 서로 다른 9개의 자연수 3, 29, 38, 12, 57,...","categories": ["코딩테스트"],
         "tags": ["알고리즘","파이썬","코테","백준","Bronze"],
         "url": "/%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8/2562/",
+        "teaser": null
+      },{
+        "title": "[파이썬][백준 8958번] OX퀴즈",
+        "excerpt":"1. 문제 [Bronze II] OX퀴즈 - 8958 문제 링크 성능 요약 메모리: 30864 KB, 시간: 76 ms 분류 구현(implementation), 문자열(string) 문제 설명 \"OOXXOXXOOO\"와 같은 OX퀴즈의 결과가 있다. O는 문제를 맞은 것이고, X는 문제를 틀린 것이다. 문제를 맞은 경우 그 문제의 점수는 그 문제까지 연속된 O의 개수가 된다. 예를 들어, 10번...","categories": ["코딩테스트"],
+        "tags": ["알고리즘","파이썬","코테","백준","Bronze"],
+        "url": "/%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8/8958/",
         "teaser": null
       },{
         "title": "[파이썬][백준 1546번] 평균",
@@ -467,6 +479,18 @@ var store = [{
         "url": "/%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8/7287/",
         "teaser": null
       },{
+        "title": "[파이썬][백준 9653번] 스타워즈 로고",
+        "excerpt":"1. 문제 [Bronze V] 스타워즈 로고 - 9653 문제 링크 성능 요약 메모리: 30864 KB, 시간: 68 ms 분류 구현(implementation) 문제 설명 스타워즈 로고를 예제 출력과 같이 출력하는 프로그램을 작성하시오. 입력 Empty 출력 스타워즈 로고를 출력한다. 출처: 백준, https://https://www.acmicpc.net/ 2. 해결방법 시간복잡도 단순 코딩 O(1) 3. 문제 해결 및 코드...","categories": ["코딩테스트"],
+        "tags": ["알고리즘","파이썬","코테","백준","Bronze"],
+        "url": "/%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8/9653/",
+        "teaser": null
+      },{
+        "title": "[파이썬][백준 9654번] 나부 함대 데이터",
+        "excerpt":"1. 문제 [Bronze V] 나부 함대 데이터 - 9654 문제 링크 성능 요약 메모리: 30860 KB, 시간: 68 ms 분류 구현(implementation) 문제 설명 나부 행성의 함대 정보를 출력하는 프로그램을 작성하시오. 입력 Empty 출력 나부 행성의 함대의 정보를 아래와 예제 출력과 같은 표로 출력한다. 처음 두 열의 너비는 문자 15개, 세...","categories": ["코딩테스트"],
+        "tags": ["알고리즘","파이썬","코테","백준","Bronze"],
+        "url": "/%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8/9654/",
+        "teaser": null
+      },{
         "title": "[파이썬][백준 1085번] 직사각형에서 탈출",
         "excerpt":"1. 문제 [Bronze III] 직사각형에서 탈출 - 1085 문제 링크 성능 요약 메모리: 30864 KB, 시간: 68 ms 분류 기하학(geometry), 수학(math) 문제 설명 한수는 지금 (x, y)에 있다. 직사각형은 각 변이 좌표축에 평행하고, 왼쪽 아래 꼭짓점은 (0, 0), 오른쪽 위 꼭짓점은 (w, h)에 있다. 직사각형의 경계선까지 가는 거리의 최솟값을 구하는...","categories": ["코딩테스트"],
         "tags": ["알고리즘","파이썬","코테","백준","Bronze"],
@@ -549,6 +573,12 @@ var store = [{
         "excerpt":"1. 문제 [Bronze V] Julka - 8437 문제 링크 성능 요약 메모리: 30864 KB, 시간: 72 ms 분류 임의 정밀도 / 큰 수 연산(arbitrary_precision), 사칙연산(arithmetic), 수학(math) 문제 설명 Julka zaskoczyła wczoraj w przedszkolu swoją wychowawczynię rozwiązując następującą zagadkę: Klaudia i Natalia mają razem 10 jabłek, ale Klaudia ma o 2...","categories": ["코딩테스트"],
         "tags": ["알고리즘","파이썬","코테","백준","Bronze"],
         "url": "/%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8/8437/",
+        "teaser": null
+      },{
+        "title": "[파이썬][백준 8871번] Zadanie próbne 2",
+        "excerpt":"1. 문제 [Bronze V] Zadanie próbne 2 - 8871 문제 링크 성능 요약 메모리: 30860 KB, 시간: 72 ms 분류 사칙연산(arithmetic), 수학(math) 문제 설명 Wyobraźmy sobie przez chwilę, że w tym roku konkurs SKI'10 składa się z n punktowanych rund i jednej rundy próbnej. Ile zgodnie z regulaminem może się...","categories": ["코딩테스트"],
+        "tags": ["알고리즘","파이썬","코테","백준","Bronze"],
+        "url": "/%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8/8871/",
         "teaser": null
       },{
         "title": "[파이썬][백준 24904번] Baekjoon Wordline Judge",
@@ -1379,6 +1409,18 @@ var store = [{
         "url": "/%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8/5717/",
         "teaser": null
       },{
+        "title": "[파이썬][백준 9506번] 약수들의 합",
+        "excerpt":"1. 문제 [Bronze I] 약수들의 합 - 9506 문제 링크 성능 요약 메모리: 30840 KB, 시간: 96 ms 분류 수학(math), 정수론(number_theory), 런타임 전의 전처리(precomputation) 문제 설명 어떤 숫자 n이 자신을 제외한 모든 약수들의 합과 같으면, 그 수를 완전수라고 한다. 예를 들어 6은 6 = 1 + 2 + 3 으로...","categories": ["코딩테스트"],
+        "tags": ["알고리즘","파이썬","코테","백준","Bronze"],
+        "url": "/%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8/9506/",
+        "teaser": null
+      },{
+        "title": "[파이썬][백준 9610번] 사분면",
+        "excerpt":"1. 문제 [Bronze III] 사분면 - 9610 문제 링크 성능 요약 메모리: 30840 KB, 시간: 64 ms 분류 구현(implementation), 수학(math) 문제 설명 2차원 좌표 상의 여러 점의 좌표 (x,y)가 주어졌을 때, 각 사분면과 축에 점이 몇 개 있는지 구하는 프로그램을 작성하시오. 입력 첫째 줄에 점의 개수 n (1 ≤ n...","categories": ["코딩테스트"],
+        "tags": ["알고리즘","파이썬","코테","백준","Bronze"],
+        "url": "/%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8/9610/",
+        "teaser": null
+      },{
         "title": "[파이썬][백준 22966번] 가장 쉬운 문제를 찾는 문제",
         "excerpt":"1. 문제 [Bronze II] 가장 쉬운 문제를 찾는 문제 - 22966 문제 링크 성능 요약 메모리: 30840 KB, 시간: 72 ms 분류 구현(implementation) 문제 설명 예선 문제를 성실하게 복습한 학생들이라면 예선에 출제된 5문제가 난이도 순서대로 정렬되어 있다는 것을 알아차렸을 것이다. 하지만 본선은 문제 제목에 대해 사전순으로 정렬했기 때문에 난이도 순서대로...","categories": ["코딩테스트"],
         "tags": ["알고리즘","파이썬","코테","백준","Bronze"],
@@ -1433,6 +1475,12 @@ var store = [{
         "url": "/%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8/1110/",
         "teaser": null
       },{
+        "title": "[파이썬][백준 9316번] Hello Judge",
+        "excerpt":"1. 문제 [Bronze III] Hello Judge - 9316 문제 링크 성능 요약 메모리: 30840 KB, 시간: 64 ms 분류 구현(implementation) 문제 설명 당신은 N개의 테스트케이스들에게 반드시 인사를 해야 이 문제를 풀 수 있다. N개의 줄에 걸쳐 \"Hello World, Judge i!\" 를 출력하는 프로그램을 만들라. 여기서 i는 줄의 번호이다. 입력 N이...","categories": ["코딩테스트"],
+        "tags": ["알고리즘","파이썬","코테","백준","Bronze"],
+        "url": "/%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8/9316/",
+        "teaser": null
+      },{
         "title": "[파이썬][백준 6810번] ISBN",
         "excerpt":"1. 문제 [Bronze IV] ISBN - 6810 문제 링크 성능 요약 메모리: 30840 KB, 시간: 68 ms 분류 사칙연산(arithmetic), 구현(implementation), 수학(math) 출처: 백준, https://https://www.acmicpc.net/ 2. 해결방법 시간복잡도 단순 코딩 O(1) 3. 문제 해결 및 코드 주석을 참고하면서 이해를 돕습니다. 4. 알고리즘 및 해설 문제에서 제시한 조건에 맞게 계산한 뒤 출력해준다....","categories": ["코딩테스트"],
         "tags": ["알고리즘","파이썬","코테","백준","Bronze"],
@@ -1443,6 +1491,12 @@ var store = [{
         "excerpt":"1. 문제 [Bronze III] Can you add this? - 7891 문제 링크 성능 요약 메모리: 30840 KB, 시간: 76 ms 분류 사칙연산(arithmetic), 구현(implementation), 수학(math) 문제 설명 Given two integers, calculate and output their sum. 입력 The input contains several test cases. The first line contains and integer t (t ≤...","categories": ["코딩테스트"],
         "tags": ["알고리즘","파이썬","코테","백준","Bronze"],
         "url": "/%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8/7891/",
+        "teaser": null
+      },{
+        "title": "[파이썬][백준 9713번] Sum of Odd Sequence",
+        "excerpt":"1. 문제 [Bronze III] Sum of Odd Sequence - 9713 문제 링크 성능 요약 메모리: 30840 KB, 시간: 72 ms 분류 사칙연산(arithmetic), 수학(math) 문제 설명 Given an odd integer N, calculate the sum of all the odd integers between 1 and N inclusive. 입력 First line of the input contains...","categories": ["코딩테스트"],
+        "tags": ["알고리즘","파이썬","코테","백준","Bronze"],
+        "url": "/%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8/9713/",
         "teaser": null
       },{
         "title": "Seoul meet up",
