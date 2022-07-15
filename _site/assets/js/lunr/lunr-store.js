@@ -245,6 +245,12 @@ var store = [{
         "url": "/%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8/2739/",
         "teaser": null
       },{
+        "title": "[파이썬][백준 8393번] 합",
+        "excerpt":"1. 문제 [Bronze III] 합 - 8393 문제 링크 성능 요약 메모리: 30864 KB, 시간: 76 ms 분류 구현(implementation), 수학(math) 문제 설명 n이 주어졌을 때, 1부터 n까지 합을 구하는 프로그램을 작성하시오. 입력 첫째 줄에 n (1 ≤ n ≤ 10,000)이 주어진다. 출력 1부터 n까지 합을 출력한다. 출처: 백준, https://https://www.acmicpc.net/ 2....","categories": ["코딩테스트"],
+        "tags": ["알고리즘","파이썬","코테","백준","Bronze"],
+        "url": "/%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8/8393/",
+        "teaser": null
+      },{
         "title": "[파이썬][백준 10818번] 최소, 최대",
         "excerpt":"1. 문제 [Bronze III] 최소, 최대 - 10818 문제 링크 성능 요약 메모리: 148396 KB, 시간: 412 ms 분류 구현(implementation), 수학(math) 문제 설명 N개의 정수가 주어진다. 이때, 최솟값과 최댓값을 구하는 프로그램을 작성하시오. 입력 첫째 줄에 정수의 개수 N (1 ≤ N ≤ 1,000,000)이 주어진다. 둘째 줄에는 N개의 정수를 공백으로 구분해서...","categories": ["코딩테스트"],
         "tags": ["알고리즘","파이썬","코테","백준","Bronze"],
@@ -455,6 +461,12 @@ var store = [{
         "url": "/%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8/5339/",
         "teaser": null
       },{
+        "title": "[파이썬][백준 7287번] 등록",
+        "excerpt":"1. 문제 [Bronze V] 등록 - 7287 문제 링크 성능 요약 메모리: 30864 KB, 시간: 64 ms 분류 구현(implementation) 문제 설명 자신이 백준 온라인 저지(BOJ)에서 맞은 문제의 수와 아이디를 그대로 출력하는 프로그램을 작성하시오. 입력 이 문제는 입력이 없다. 출력 첫 줄에 자신이 맞은 문제의 수, 둘째 줄에 아이디를 출력한다. 출처:...","categories": ["코딩테스트"],
+        "tags": ["알고리즘","파이썬","코테","백준","Bronze"],
+        "url": "/%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8/7287/",
+        "teaser": null
+      },{
         "title": "[파이썬][백준 1085번] 직사각형에서 탈출",
         "excerpt":"1. 문제 [Bronze III] 직사각형에서 탈출 - 1085 문제 링크 성능 요약 메모리: 30864 KB, 시간: 68 ms 분류 기하학(geometry), 수학(math) 문제 설명 한수는 지금 (x, y)에 있다. 직사각형은 각 변이 좌표축에 평행하고, 왼쪽 아래 꼭짓점은 (0, 0), 오른쪽 위 꼭짓점은 (w, h)에 있다. 직사각형의 경계선까지 가는 거리의 최솟값을 구하는...","categories": ["코딩테스트"],
         "tags": ["알고리즘","파이썬","코테","백준","Bronze"],
@@ -525,6 +537,18 @@ var store = [{
         "excerpt":"1. 문제 [Bronze V] 심부름 가는 길 - 5554 문제 링크 성능 요약 메모리: 30860 KB, 시간: 72 ms 분류 사칙연산(arithmetic), 구현(implementation), 수학(math) 문제 설명 승균이는 매일 학교, PC방, 학원에 다닌다. 반복되는 일상에 익숙해진 승균이는 이동시간을 단축해서 PC방에 더 오래 머물고 싶었다. 그래서 스톱워치를 들고 이동할 때마다 기록을 잰 후...","categories": ["코딩테스트"],
         "tags": ["알고리즘","파이썬","코테","백준","Bronze"],
         "url": "/%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8/5554/",
+        "teaser": null
+      },{
+        "title": "[파이썬][백준 8370번] Plane",
+        "excerpt":"1. 문제 [Bronze V] Plane - 8370 문제 링크 성능 요약 메모리: 30864 KB, 시간: 72 ms 분류 사칙연산(arithmetic), 수학(math) 문제 설명 Byteland Airlines recently extended their aircraft fleet with a new model of a plane. The new acquisition has n1 rows of seats in the business class and n2...","categories": ["코딩테스트"],
+        "tags": ["알고리즘","파이썬","코테","백준","Bronze"],
+        "url": "/%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8/8370/",
+        "teaser": null
+      },{
+        "title": "[파이썬][백준 8437번] Julka",
+        "excerpt":"1. 문제 [Bronze V] Julka - 8437 문제 링크 성능 요약 메모리: 30864 KB, 시간: 72 ms 분류 임의 정밀도 / 큰 수 연산(arbitrary_precision), 사칙연산(arithmetic), 수학(math) 문제 설명 Julka zaskoczyła wczoraj w przedszkolu swoją wychowawczynię rozwiązując następującą zagadkę: Klaudia i Natalia mają razem 10 jabłek, ale Klaudia ma o 2...","categories": ["코딩테스트"],
+        "tags": ["알고리즘","파이썬","코테","백준","Bronze"],
+        "url": "/%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8/8437/",
         "teaser": null
       },{
         "title": "[파이썬][백준 24904번] Baekjoon Wordline Judge",
@@ -777,6 +801,12 @@ var store = [{
         "excerpt":"1. 문제 [Bronze III] 팩토리얼 - 10872 문제 링크 성능 요약 메모리: 30864 KB, 시간: 68 ms 분류 구현(implementation), 수학(math) 문제 설명 0보다 크거나 같은 정수 N이 주어진다. 이때, N!을 출력하는 프로그램을 작성하시오. 입력 첫째 줄에 정수 N(0 ≤ N ≤ 12)이 주어진다. 출력 첫째 줄에 N!을 출력한다. 출처: 백준,...","categories": ["코딩테스트"],
         "tags": ["알고리즘","파이썬","코테","백준","Bronze"],
         "url": "/%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8/10872/",
+        "teaser": null
+      },{
+        "title": "[파이썬][백준 6778번] Which Alien?",
+        "excerpt":"1. 문제 [Bronze IV] Which Alien? - 6778 문제 링크 성능 요약 메모리: 30864 KB, 시간: 72 ms 분류 구현(implementation) 문제 설명 Canada Cosmos Control has received a report of another incident. They believe that an alien has illegally entered our space. A person who witnessed the appearance of the...","categories": ["코딩테스트"],
+        "tags": ["알고리즘","파이썬","코테","백준","Bronze"],
+        "url": "/%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8/6778/",
         "teaser": null
       },{
         "title": "[파이썬][백준 1330번] 두 수 비교하기",
@@ -1307,10 +1337,22 @@ var store = [{
         "url": "/%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8/4562/",
         "teaser": null
       },{
+        "title": "[파이썬][백준 7567번] 그릇",
+        "excerpt":"1. 문제 [Bronze II] 그릇 - 7567 문제 링크 성능 요약 메모리: 30840 KB, 시간: 72 ms 분류 구현(implementation), 문자열(string) 문제 설명 그릇을 바닥에 놓았을 때 그 높이는 10cm 이다. 그런데 두 개의 그릇을 같은 방향으로 포개면 그 높이는 5cm만 증가된다. 만일 그릇이 서로 반대방향으로 쌓이면 높이는 그릇만큼, 즉 10cm...","categories": ["코딩테스트"],
+        "tags": ["알고리즘","파이썬","코테","백준","Bronze"],
+        "url": "/%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8/7567/",
+        "teaser": null
+      },{
         "title": "[파이썬][백준 10102번] 개표",
         "excerpt":"1. 문제 [Bronze II] 개표 - 10102 문제 링크 성능 요약 메모리: 30840 KB, 시간: 68 ms 분류 문자열(string) 출처: 백준, https://https://www.acmicpc.net/ 2. 해결방법 시간복잡도 단순 코딩 3. 문제 해결 및 코드 주석을 참고하면서 이해를 돕습니다. 4. 알고리즘 및 해설 받아야 될 값은 T로 받는다. AB라는 값을 문자열로 받고 해당...","categories": ["코딩테스트"],
         "tags": ["알고리즘","파이썬","코테","백준","Bronze"],
         "url": "/%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8/10102/",
+        "teaser": null
+      },{
+        "title": "[파이썬][백준 6749번] Next in line",
+        "excerpt":"1. 문제 [Bronze V] Next in line - 6749 문제 링크 성능 요약 메모리: 30860 KB, 시간: 76 ms 분류 사칙연산(arithmetic), 수학(math) 문제 설명 You know a family with three children. Their ages form an arithmetic sequence: the difference in ages between the middle child and youngest child is the...","categories": ["코딩테스트"],
+        "tags": ["알고리즘","파이썬","코테","백준","Bronze"],
+        "url": "/%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8/6749/",
         "teaser": null
       },{
         "title": "[파이썬][백준 10103번] 과제",
@@ -1389,6 +1431,18 @@ var store = [{
         "excerpt":"1. 문제 [Bronze I] 더하기 사이클 - 1110 문제 링크 성능 요약 메모리: 30864 KB, 시간: 72 ms 분류 구현(implementation), 수학(math) 문제 설명 0보다 크거나 같고, 99보다 작거나 같은 정수가 주어질 때 다음과 같은 연산을 할 수 있다. 먼저 주어진 수가 10보다 작다면 앞에 0을 붙여 두 자리 수로 만들고,...","categories": ["코딩테스트"],
         "tags": ["알고리즘","파이썬","코테","백준","Bronze"],
         "url": "/%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8/1110/",
+        "teaser": null
+      },{
+        "title": "[파이썬][백준 6810번] ISBN",
+        "excerpt":"1. 문제 [Bronze IV] ISBN - 6810 문제 링크 성능 요약 메모리: 30840 KB, 시간: 68 ms 분류 사칙연산(arithmetic), 구현(implementation), 수학(math) 출처: 백준, https://https://www.acmicpc.net/ 2. 해결방법 시간복잡도 단순 코딩 O(1) 3. 문제 해결 및 코드 주석을 참고하면서 이해를 돕습니다. 4. 알고리즘 및 해설 문제에서 제시한 조건에 맞게 계산한 뒤 출력해준다....","categories": ["코딩테스트"],
+        "tags": ["알고리즘","파이썬","코테","백준","Bronze"],
+        "url": "/%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8/6810/",
+        "teaser": null
+      },{
+        "title": "[파이썬][백준 7891번] Can you add this?",
+        "excerpt":"1. 문제 [Bronze III] Can you add this? - 7891 문제 링크 성능 요약 메모리: 30840 KB, 시간: 76 ms 분류 사칙연산(arithmetic), 구현(implementation), 수학(math) 문제 설명 Given two integers, calculate and output their sum. 입력 The input contains several test cases. The first line contains and integer t (t ≤...","categories": ["코딩테스트"],
+        "tags": ["알고리즘","파이썬","코테","백준","Bronze"],
+        "url": "/%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8/7891/",
         "teaser": null
       },{
         "title": "Seoul meet up",
