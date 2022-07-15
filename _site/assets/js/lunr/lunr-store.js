@@ -47,6 +47,24 @@ var store = [{
         "url": "/%EB%B0%91%EB%B0%94%EB%8B%A5%EB%B6%80%ED%84%B0%20%EC%8B%9C%EC%9E%91%ED%95%98%EB%8A%94%20%EB%94%A5%EB%9F%AC%EB%8B%9D/Deep-learning-from-bottom-up-(%EB%B0%91%EB%B0%94%EB%8B%A5%EB%B6%80%ED%84%B0-%EC%8B%9C%EC%9E%91%ED%95%98%EB%8A%94-%EB%94%A5%EB%9F%AC%EB%8B%9D)/",
         "teaser": null
       },{
+        "title": "[파이썬][백준 4892번] 숫자 맞추기 게임",
+        "excerpt":"1. 문제 [Bronze III] 숫자 맞추기 게임 - 4892 문제 링크 성능 요약 메모리: 30840 KB, 시간: 80 ms 분류 사칙연산(arithmetic), 구현(implementation), 수학(math) 문제 설명 숫자 맞추기 게임은 초등학교 학생들 사이에서 유행하는 게임이다. 선생님은 학생들의 연산 실력과 논리적인 사고력을 기르기위해 학생들에게 이 게임을 권유하고 있다. 이 게임을 시작할 때는 친구가...","categories": ["코딩테스트"],
+        "tags": ["알고리즘","파이썬","코테","백준","Bronze"],
+        "url": "/%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8/4892/",
+        "teaser": null
+      },{
+        "title": "[파이썬][백준 5217번] 쌍의 합",
+        "excerpt":"1. 문제 [Bronze III] 쌍의 합 - 5217 문제 링크 성능 요약 메모리: 30840 KB, 시간: 64 ms 분류 구현(implementation) 문제 설명 1보다 크거나 같고 12보다 작거나 같은 자연수 n이 주어졌을 때, 합이 n이 되는 두 자연수의 쌍을 찾는 프로그램을 작성하시오. 예를 들어, 5가 주어진 경우 가능한 쌍은 1,4와 2,3이...","categories": ["코딩테스트"],
+        "tags": ["알고리즘","파이썬","코테","백준","Bronze"],
+        "url": "/%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8/5217/",
+        "teaser": null
+      },{
+        "title": "[파이썬][백준 5086번] 배수와 약수",
+        "excerpt":"1. 문제 [Bronze III] 배수와 약수 - 5086 문제 링크 성능 요약 메모리: 30840 KB, 시간: 72 ms 분류 사칙연산(arithmetic), 수학(math) 출처: 백준, https://https://www.acmicpc.net/ 2. 해결방법 시간복잡도 단순 코딩 O(N) 3. 문제 해결 및 코드 주석을 참고하면서 이해를 돕습니다. 4. 알고리즘 및 해설 while문을 통해 두 값이 0인 경우가 아닌...","categories": ["코딩테스트"],
+        "tags": ["알고리즘","파이썬","코테","백준","Bronze"],
+        "url": "/%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8/5086/",
+        "teaser": null
+      },{
         "title": "[파이썬][백준 1000번] A + B",
         "excerpt":"1. 문제 [Bronze V] A+B - 1000 문제 링크 성능 요약 메모리: 30864 KB, 시간: 68 ms 분류 사칙연산(arithmetic), 구현(implementation), 수학(math) 문제 설명 두 정수 A와 B를 입력받은 다음, A+B를 출력하는 프로그램을 작성하시오. 입력 첫째 줄에 A와 B가 주어진다. (0 &lt; A, B &lt; 10) 출력 첫째 줄에 A+B를 출력한다....","categories": ["코딩테스트"],
         "tags": ["알고리즘","파이썬","코테","백준","Bronze"],
@@ -411,6 +429,18 @@ var store = [{
         "excerpt":"1. 문제 [Bronze V] R2 - 3046 문제 링크 성능 요약 메모리: 30864 KB, 시간: 68 ms 분류 사칙연산(arithmetic), 구현(implementation), 수학(math) 문제 설명 두 숫자 R1과 R2가 있을 때, 두 수의 평균 S는 (R1+R2)/2와 같다. 상근이는 정인이 생일 선물로 두 숫자 R1과 R2를 주려고 한다. 생일 파티에서 상근이는 정인이에게 이...","categories": ["코딩테스트"],
         "tags": ["알고리즘","파이썬","코테","백준","Bronze"],
         "url": "/%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8/3046/",
+        "teaser": null
+      },{
+        "title": "[파이썬][백준 5337번] 웰컴",
+        "excerpt":"1. 문제 [Bronze V] 웰컴 - 5337 문제 링크 성능 요약 메모리: 30860 KB, 시간: 68 ms 분류 구현(implementation) 문제 설명 Welcome을 예제 출력처럼 출력하는 프로그램을 작성하시오. 입력 Empty 출력 Welcome을 아래 예제 출력처럼 출력한다. 출처: 백준, https://https://www.acmicpc.net/ 2. 해결방법 시간복잡도 단순 코딩 O(1) 3. 문제 해결 및 코드 주석을...","categories": ["코딩테스트"],
+        "tags": ["알고리즘","파이썬","코테","백준","Bronze"],
+        "url": "/%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8/5337/",
+        "teaser": null
+      },{
+        "title": "[파이썬][백준 5338번] 마이크로소프트 로고",
+        "excerpt":"1. 문제 [Bronze V] 마이크로소프트 로고 - 5338 문제 링크 성능 요약 메모리: 30860 KB, 시간: 72 ms 분류 구현(implementation) 문제 설명 마이크로소프트 로고를 예제 출력처럼 출력하는 프로그램을 작성하시오. 입력 Empty 출력 마이크로소프트 로고를 예제 출력처럼 출력한다. 출처: 백준, https://https://www.acmicpc.net/ 2. 해결방법 시간복잡도 단순 코딩 O(1) 3. 문제 해결 및...","categories": ["코딩테스트"],
+        "tags": ["알고리즘","파이썬","코테","백준","Bronze"],
+        "url": "/%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8/5338/",
         "teaser": null
       },{
         "title": "[파이썬][백준 1085번] 직사각형에서 탈출",
@@ -1241,6 +1271,12 @@ var store = [{
         "url": "/%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8/2754/",
         "teaser": null
       },{
+        "title": "[파이썬][백준 4562번] No Brainer",
+        "excerpt":"1. 문제 [Bronze III] No Brainer - 4562 문제 링크 성능 요약 메모리: 30840 KB, 시간: 64 ms 분류 구현(implementation) 문제 설명 Zombies love to eat brains. Yum. 입력 The first line contains a single integer n indicating the number of data sets. The following n lines each represent a...","categories": ["코딩테스트"],
+        "tags": ["알고리즘","파이썬","코테","백준","Bronze"],
+        "url": "/%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8/4562/",
+        "teaser": null
+      },{
         "title": "[파이썬][백준 10102번] 개표",
         "excerpt":"1. 문제 [Bronze II] 개표 - 10102 문제 링크 성능 요약 메모리: 30840 KB, 시간: 68 ms 분류 문자열(string) 출처: 백준, https://https://www.acmicpc.net/ 2. 해결방법 시간복잡도 단순 코딩 3. 문제 해결 및 코드 주석을 참고하면서 이해를 돕습니다. 4. 알고리즘 및 해설 받아야 될 값은 T로 받는다. AB라는 값을 문자열로 받고 해당...","categories": ["코딩테스트"],
         "tags": ["알고리즘","파이썬","코테","백준","Bronze"],
@@ -1257,6 +1293,12 @@ var store = [{
         "excerpt":"1. 문제 [Bronze III] 주사위 게임 - 2476 문제 링크 성능 요약 메모리: 30840 KB, 시간: 68 ms 분류 구현(implementation), 수학(math) 문제 설명 1에서부터 6까지의 눈을 가진 3개의 주사위를 던져서 다음과 같은 규칙에 따라 상금을 받는 게임이 있다. 같은 눈이 3개가 나오면 10,000원+(같은 눈)×1,000원의 상금을 받게 된다. 같은 눈이 2개만...","categories": ["코딩테스트"],
         "tags": ["알고리즘","파이썬","코테","백준","Bronze"],
         "url": "/%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8/2476/",
+        "teaser": null
+      },{
+        "title": "[파이썬][백준 5063번] TGN",
+        "excerpt":"1. 문제 [Bronze III] TGN - 5063 문제 링크 성능 요약 메모리: 30840 KB, 시간: 68 ms 분류 사칙연산(arithmetic), 수학(math) 문제 설명 상근이는 TGN사의 사장이다. TGN은 Teenager Game Network의 약자 같지만, 사실 Temporary Group Name의 약자이다. 이 회사는 청소년을 위한 앱을 만드는 회사이다. 일년에 걸친 개발기간 끝에 드디어 앱을 완성했고,...","categories": ["코딩테스트"],
+        "tags": ["알고리즘","파이썬","코테","백준","Bronze"],
+        "url": "/%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8/5063/",
         "teaser": null
       },{
         "title": "[파이썬][백준 22966번] 가장 쉬운 문제를 찾는 문제",
