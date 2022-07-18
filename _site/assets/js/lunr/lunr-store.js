@@ -41,6 +41,30 @@ var store = [{
         "url": "/%EB%8D%B0%EC%9D%B4%ED%84%B0%20%EB%B6%84%EC%84%9D%EA%B3%BC%20%EB%A8%B8%EC%8B%A0%EB%9F%AC%EB%8B%9D/hypothesis/",
         "teaser": null
       },{
+        "title": "데이터 분석과 머신러닝 - Confidence Interval",
+        "excerpt":"신뢰구간이란? 통계적 추론을 통해 예측되는 값의 범위를 말한다. 데이터분석에서 신뢰도가 높을 수록 해당 문제 측정의 결과가 일관성을 가진다는 의미다. 즉, 신뢰도가 95% 라는 의미는 표본을 100번 뽑았을 때 95번은 신뢰 구간에 모집단의 평균이 포함된다는 뜻이다. ANOVA(one-way) 쉽게 세 개 이상의 집단의 차이를 통계적으로 검정하는 방법 두 개 이상 다수의 집단을...","categories": ["데이터 분석과 머신러닝"],
+        "tags": ["데이터 분석","머신러닝"],
+        "url": "/%EB%8D%B0%EC%9D%B4%ED%84%B0%20%EB%B6%84%EC%84%9D%EA%B3%BC%20%EB%A8%B8%EC%8B%A0%EB%9F%AC%EB%8B%9D/confidence_interval/",
+        "teaser": null
+      },{
+        "title": "데이터 분석과 머신러닝 - Bayesian Inference",
+        "excerpt":"베이지안적 사고 사고에 앞서 확률론과 통계학에서 유명한 베이즈 정리와 베이지안 확률에 대해 알아보자 베이즈 정리 두 확률 변수의 사전 확률과 사후 확률 사이의 관계를 나타내는 정리 베이지안 확률 베이즈 정리를 통해 사전확률로부터 사후확률을 구할 수 있게 된다는 해석의 기초 베이지안 확률, 화산이 폭발할 확률을 빈도 확률로 계산이 가능할까라는 문제에 우리가...","categories": ["데이터 분석과 머신러닝"],
+        "tags": ["데이터 분석","머신러닝"],
+        "url": "/%EB%8D%B0%EC%9D%B4%ED%84%B0%20%EB%B6%84%EC%84%9D%EA%B3%BC%20%EB%A8%B8%EC%8B%A0%EB%9F%AC%EB%8B%9D/bayesian_inference/",
+        "teaser": null
+      },{
+        "title": "데이터 분석과 머신러닝 - Vector Matrix",
+        "excerpt":"벡터와 스칼라 스칼라는 단순히 변수 형태로 저장된 숫자이며 벡터 혹은 매트릭스와 곱해지는 경우 해당 값에 곱한 값으로 결정된다. 벡터는 파이썬에서 주로 리스트형태로 사용되며, 데이터셋을 구성하고 있는 데이터프레임의 행과 열로써 사용된다. 매트릭스는 벡터의 모음정도로 이해하면 좋다. 스칼라 단일 숫자로 변수에 저장할 때는 일반적으로 소문자를 이용해서 표기한다. ```python import math import matplotlib.pyplot...","categories": ["데이터 분석과 머신러닝"],
+        "tags": ["데이터 분석","머신러닝"],
+        "url": "/%EB%8D%B0%EC%9D%B4%ED%84%B0%20%EB%B6%84%EC%84%9D%EA%B3%BC%20%EB%A8%B8%EC%8B%A0%EB%9F%AC%EB%8B%9D/vector_matrix/",
+        "teaser": null
+      },{
+        "title": "데이터 분석과 머신러닝 - Vector Matrix",
+        "excerpt":"분산이란? 데이터가 얼마나 퍼져있는지 데이터 분석에서 Variance 라고 불리우며 분산을 통해 평균을 구하고, 평균을 통해 분산을 구할 수도 있다. 모집단의 분산은 모집단의 PARAMETER (aspect, property, attribute, etc)이며, 샘플의 분산은 샘플의 STATISTIC (estimated attribute)이다. 공분산이란? 2개의 확률변수의 선형 관계를 나타내는 값이다. 2개의 변수 중 하나의 값이 상승하는 경향을 보일 때 다른...","categories": ["데이터 분석과 머신러닝"],
+        "tags": ["데이터 분석","머신러닝"],
+        "url": "/%EB%8D%B0%EC%9D%B4%ED%84%B0%20%EB%B6%84%EC%84%9D%EA%B3%BC%20%EB%A8%B8%EC%8B%A0%EB%9F%AC%EB%8B%9D/linear_algebra/",
+        "teaser": null
+      },{
         "title": "밑바닥부터 시작하는 딥러닝",
         "excerpt":"Deep learning from the bottom up (밑바닥부터 시작하는 딥러닝) CH1   Deep Learning for Scratch   사이토 고키 지음 / 齋藤康毅／著      Deep Learning 1  ","categories": ["밑바닥부터 시작하는 딥러닝"],
         "tags": ["밑바닥부터 시작하는 딥러닝","딥러닝"],
