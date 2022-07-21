@@ -1,6 +1,6 @@
 ---
 title:  "셀레니움 업데이트로 인한 변경"
-excerpt: "AttributeError: 'WebDriver' object has no attribute 'find_element_by_xpath'"
+excerpt: "AttributeError: 'WebDriver' object has no attribute 'find_element_by_xpath' 해결방법"
 
 categories:
   - 데이터 수집
@@ -14,7 +14,7 @@ date: 2022-07-21
 last_modified_at: 2022-07-21
 ---
 
-# 갑작스러운 셀레니움 4.3.0 변경
+### 갑작스러운 셀레니움 4.3.0 변경
 
 ```txt
 Selenium 4.3.0
