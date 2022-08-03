@@ -59,7 +59,7 @@ var store = [{
         "url": "/%EB%8D%B0%EC%9D%B4%ED%84%B0%20%EB%B6%84%EC%84%9D%EA%B3%BC%20%EB%A8%B8%EC%8B%A0%EB%9F%AC%EB%8B%9D/vector_matrix/",
         "teaser": null
       },{
-        "title": "데이터 분석과 머신러닝 - Vector Matrix",
+        "title": "데이터 분석과 머신러닝 - Linear Algebra",
         "excerpt":"분산이란? 데이터가 얼마나 퍼져있는지 데이터 분석에서 Variance 라고 불리우며 분산을 통해 평균을 구하고, 평균을 통해 분산을 구할 수도 있다. 모집단의 분산은 모집단의 PARAMETER (aspect, property, attribute, etc)이며, 샘플의 분산은 샘플의 STATISTIC (estimated attribute)이다. 공분산이란? 2개의 확률변수의 선형 관계를 나타내는 값이다. 2개의 변수 중 하나의 값이 상승하는 경향을 보일 때 다른...","categories": ["데이터 분석과 머신러닝"],
         "tags": ["데이터 분석","머신러닝"],
         "url": "/%EB%8D%B0%EC%9D%B4%ED%84%B0%20%EB%B6%84%EC%84%9D%EA%B3%BC%20%EB%A8%B8%EC%8B%A0%EB%9F%AC%EB%8B%9D/linear_algebra/",
@@ -1911,5 +1911,23 @@ var store = [{
         "excerpt":"너무 더워 🔥 날씨가 점점 더워진다. 지금은 7월의 대한민국, 여름의 피크라고 불리는 나날들이 이어지고 있다. 나는 오늘도 뜨거운 태양볕에 노트북을 키고 조용히 키보드 위에 손을 올린다. 내가 살고 있는 자취방은 쓰리룸인데, 그 중 내가 공부할 때 들어가는 방은 창이 굉장히 크게 나있어서 햇빛이 엄청 들어온다. 물론 커튼을 치고 공부하는 방법도...","categories": ["일상"],
         "tags": ["일상"],
         "url": "/%EC%9D%BC%EC%83%81/%EB%84%88%EB%AC%B4-%EB%8D%94%EC%9A%B4-%ED%95%98%EB%A3%A8/",
+        "teaser": null
+      },{
+        "title": "셀레니움 업데이트로 인한 변경",
+        "excerpt":"갑작스러운 셀레니움 4.3.0 변경 Selenium 4.3.0 * Deprecated find_element_by_* and find_elements_by_* are now removed (#10712) * Deprecated Opera support has been removed (#10630) * Fully upgraded from python 2x to 3.7 syntax and features (#10647) * Added a devtools version fallback mechanism to look for an older version when mismatch...","categories": ["데이터 수집"],
+        "tags": ["데이터 수집","Selenium"],
+        "url": "/%EB%8D%B0%EC%9D%B4%ED%84%B0%20%EC%88%98%EC%A7%91/selenium_fixed/",
+        "teaser": null
+      },{
+        "title": "RDKit에 대해",
+        "excerpt":"해당 정보는 RDKit 공식 홈페이지 문서를 기반으로 작성되었습니다. 공식 깃허브 홈페이지는 rdkit RDKit이란? RDKit은 cheminformatics 툴킷이라고 불리는 화학 정보학 오픈소스 라이브러리이다. 화학물질의 구조정보를 담보있는 파일형식의 데이터 또는 구조를 그리거나 해석해야하는 상황에서 자주 사용되는 툴이다. 대표적으로 사용할 수 있는 프로젝트에는 독성물질 예측과 같은 분석이나 신약 개발과 같은 개발에 사용된다. rdkit 설치...","categories": ["화학 정보학"],
+        "tags": ["화학 정보학","rdkit"],
+        "url": "/%ED%99%94%ED%95%99%20%EC%A0%95%EB%B3%B4%ED%95%99/about_rdkit/",
+        "teaser": null
+      },{
+        "title": "NetworkX로 분자구조 그리기",
+        "excerpt":"해당 정보는 NetworkX 공식 홈페이지 문서를 기반으로 작성되었습니다. 공식 깃허브 홈페이지는 networkx NetworkX란? 이전에는 RDKit에 대해 알아봤는데 NetworkX의 경우 복잡한 네트워크형 오픈소스 라이브러리이다. 공식 홈페이지에서는 역학의 기능을 생성하거나 조작 또는 연구에 사용된다고 명시되어있다. 설치하기 $ pip install networkx pip을 통해서 보다 쉽게 설치가 가능하다. $ pip install networkx[all] 공식 사이트에서는...","categories": ["화학 정보학"],
+        "tags": ["화학 정보학","Networkx"],
+        "url": "/%ED%99%94%ED%95%99%20%EC%A0%95%EB%B3%B4%ED%95%99/Networkx_rdkit/",
         "teaser": null
       }]
