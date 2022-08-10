@@ -65,6 +65,12 @@ var store = [{
         "url": "/%EB%8D%B0%EC%9D%B4%ED%84%B0%20%EB%B6%84%EC%84%9D%EA%B3%BC%20%EB%A8%B8%EC%8B%A0%EB%9F%AC%EB%8B%9D/linear_algebra/",
         "teaser": null
       },{
+        "title": "데이터 분석과 머신러닝 - High dimensional data",
+        "excerpt":"Vector transformation 벡터 변환에 대해서 알아보자. R2 공간에서의 벡터 변환, 즉 선형 변환은 임의의 두 벡터를 더하거나 혹은 스칼라 값을 곱하는 것을 의미한다. 이전 linear algebra에서 올린 내용중 linear projection도 일종의 벡터 변환이라고 볼 수 있다. 간단하게 코드로 구현 import matplotlib.pyplot as plt import numpy as np input_vec = np.array([3,...","categories": ["데이터 분석과 머신러닝"],
+        "tags": ["데이터 분석","머신러닝"],
+        "url": "/%EB%8D%B0%EC%9D%B4%ED%84%B0%20%EB%B6%84%EC%84%9D%EA%B3%BC%20%EB%A8%B8%EC%8B%A0%EB%9F%AC%EB%8B%9D/high_dimensional_data/",
+        "teaser": null
+      },{
         "title": "밑바닥부터 시작하는 딥러닝",
         "excerpt":"Deep learning from the bottom up (밑바닥부터 시작하는 딥러닝) CH1   Deep Learning for Scratch   사이토 고키 지음 / 齋藤康毅／著      Deep Learning 1  ","categories": ["밑바닥부터 시작하는 딥러닝"],
         "tags": ["밑바닥부터 시작하는 딥러닝","딥러닝"],
@@ -1229,6 +1235,12 @@ var store = [{
         "url": "/%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8/12909/",
         "teaser": null
       },{
+        "title": "[파이썬][프로그래머스] 최댓값과 최소값",
+        "excerpt":"1. 문제 [level 2] 최댓값과 최솟값 - 12939 문제 링크 성능 요약 메모리: 10.4 MB, 시간: 0.04 ms 구분 코딩테스트 연습 &gt; 연습문제 채점결과 정확성: 100.0 합계: 100.0 / 100.0 문제 설명 문자열 s에는 공백으로 구분된 숫자들이 저장되어 있습니다. str에 나타나는 숫자 중 최소값과 최대값을 찾아 이를 \"(최소값) (최대값)\"형태의 문자열을 반환하는...","categories": ["코딩테스트"],
+        "tags": ["알고리즘","파이썬","코테","프로그래머스","Level_2"],
+        "url": "/%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8/12939/",
+        "teaser": null
+      },{
         "title": "[파이썬][프로그래머스] 모든 레코드 조회하기",
         "excerpt":"1. 문제 [level 1] 모든 레코드 조회하기 - 59034 문제 링크 성능 요약 메모리: 0.0 MB, 시간: 0.00 ms 구분 코딩테스트 연습 &gt; SELECT 채점결과 Empty 문제 설명 ANIMAL_INS 테이블은 동물 보호소에 들어온 동물의 정보를 담은 테이블입니다. ANIMAL_INS 테이블 구조는 다음과 같으며, ANIMAL_ID, ANIMAL_TYPE, DATETIME, INTAKE_CONDITION, NAME, SEX_UPON_INTAKE는 각각 동물의 아이디,...","categories": ["코딩테스트"],
         "tags": ["알고리즘","코테","프로그래머스","Level_1","MYSQL"],
@@ -1299,6 +1311,12 @@ var store = [{
         "excerpt":"1. 문제 [level 2] 땅따먹기 - 12913 문제 링크 성능 요약 메모리: 32.3 MB, 시간: 217.42 ms 구분 코딩테스트 연습 &gt; 연습문제 채점결과 정확성: 59.8 효율성: 40.2 합계: 100.0 / 100.0 문제 설명 땅따먹기 게임을 하려고 합니다. 땅따먹기 게임의 땅(land)은 총 N행 4열로 이루어져 있고, 모든 칸에는 점수가 쓰여 있습니다. 1행부터...","categories": ["코딩테스트"],
         "tags": ["알고리즘","파이썬","코테","프로그래머스","Level_2"],
         "url": "/%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8/12913/",
+        "teaser": null
+      },{
+        "title": "[파이썬][프로그래머스] 숫자의 표현",
+        "excerpt":"1. 문제 [level 2] 숫자의 표현 - 12924 문제 링크 성능 요약 메모리: 10.1 MB, 시간: 4.76 ms 구분 코딩테스트 연습 &gt; 연습문제 채점결과 정확성: 75.0 효율성: 25.0 합계: 100.0 / 100.0 문제 설명 Finn은 요즘 수학공부에 빠져 있습니다. 수학 공부를 하던 Finn은 자연수 n을 연속한 자연수들로 표현 하는 방법이 여러개라는...","categories": ["코딩테스트"],
+        "tags": ["알고리즘","파이썬","코테","프로그래머스","Level_2"],
+        "url": "/%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8/12924/",
         "teaser": null
       },{
         "title": "[파이썬][Leetcode][릿코드] Concatenation of Array",
@@ -1941,5 +1959,23 @@ var store = [{
         "excerpt":"1. 문제 [level 2] H-Index - 42747 문제 링크 성능 요약 메모리: 10.1 MB, 시간: 0.00 ms 구분 코딩테스트 연습 &gt; 정렬 채점결과 정확성: 100.0 합계: 100.0 / 100.0 문제 설명 H-Index는 과학자의 생산성과 영향력을 나타내는 지표입니다. 어느 과학자의 H-Index를 나타내는 값인 h를 구하려고 합니다. 위키백과1에 따르면, H-Index는 다음과 같이 구합니다....","categories": ["코딩테스트"],
         "tags": ["알고리즘","파이썬","코테","프로그래머스","Level_2"],
         "url": "/%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8/42747/",
+        "teaser": null
+      },{
+        "title": "[파이썬][프로그래머스] 주식가격",
+        "excerpt":"1. 문제 [level 2] 주식가격 - 42584 문제 링크 성능 요약 메모리: 16.8 MB, 시간: 18.44 ms 구분 코딩테스트 연습 &gt; 스택／큐 채점결과 정확성: 66.7 효율성: 33.3 합계: 100.0 / 100.0 문제 설명 초 단위로 기록된 주식가격이 담긴 배열 prices가 매개변수로 주어질 때, 가격이 떨어지지 않은 기간은 몇 초인지를 return 하도록...","categories": ["코딩테스트"],
+        "tags": ["알고리즘","파이썬","코테","프로그래머스","Level_2"],
+        "url": "/%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8/42584/",
+        "teaser": null
+      },{
+        "title": "[파이썬][프로그래머스] 키패드 누르기",
+        "excerpt":"1. 문제 [level 1] [카카오 인턴] 키패드 누르기 - 67256 문제 링크 성능 요약 메모리: 10.2 MB, 시간: 0.38 ms 구분 코딩테스트 연습 &gt; 2020 카카오 인턴십 채점결과 정확성: 100.0 합계: 100.0 / 100.0 문제 설명 스마트폰 전화 키패드의 각 칸에 다음과 같이 숫자들이 적혀 있습니다. 이 전화 키패드에서 왼손과 오른손의 엄지손가락만을 이용해서...","categories": ["코딩테스트"],
+        "tags": ["알고리즘","파이썬","코테","프로그래머스","Level_2"],
+        "url": "/%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8/67256/",
+        "teaser": null
+      },{
+        "title": "[파이썬][프로그래머스] 피보나치 수",
+        "excerpt":"1. 문제 [level 2] 피보나치 수 - 12945 문제 링크 성능 요약 메모리: 13.8 MB, 시간: 21.19 ms 구분 코딩테스트 연습 &gt; 연습문제 채점결과 정확성: 100.0 합계: 100.0 / 100.0 문제 설명 피보나치 수는 F(0) = 0, F(1) = 1일 때, 1 이상의 n에 대하여 F(n) = F(n-1) + F(n-2) 가...","categories": ["코딩테스트"],
+        "tags": ["알고리즘","파이썬","코테","프로그래머스","Level_2"],
+        "url": "/%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8/12945/",
         "teaser": null
       }]
