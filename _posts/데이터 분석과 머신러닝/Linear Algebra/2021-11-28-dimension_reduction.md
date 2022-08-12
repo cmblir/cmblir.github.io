@@ -1,5 +1,5 @@
 ---
-title:  "데이터 분석과 머신러닝 - High dimensional data"
+title:  "데이터 분석과 머신러닝 - Dimension Reduction"
 excerpt: "벡터와 데이터 처리(차원 축소)에 대해"
 
 categories:
