@@ -7,7 +7,10 @@
 나는 느리지만 더디지 않게 앞으로 나아가려고 한다.
 깃블로그가 그것의 뒷받침이 될거라고 생각한다.
 
+데이터 분석가를 꿈꾸며 한발 한발 다가가고 로직적으로 이해하려고 노력합니다
+
 ## 🇺🇸 I've been working on a blog ##
 There is a favorite phrase. In Talmud, the source of Jewish learning, it reads, "Human beings can forget what they learned in two years, which takes 20 years."
 
 I try to move forward slowly but not slowly. I think gitblog will be a prop for that.
+
