@@ -54,7 +54,6 @@ last_modified_at: 2022-08-30
     - Sparse한 데이터 처리 가능하다.
     - 가독성이 안좋다.
 
----
 
 ## Filtering
 
