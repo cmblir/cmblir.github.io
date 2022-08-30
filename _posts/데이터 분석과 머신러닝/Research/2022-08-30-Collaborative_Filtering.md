@@ -1,6 +1,6 @@
 ---
-title:  "모델 학습에 필요한 가짜 유저 정보 만들기"
-excerpt: "Faker 라이브러리 사용하기"
+title:  "Collaborative Filtering (협업 필터링)"
+excerpt: "추천 시스템 구현의 기본"
 
 categories:
   - 추천 시스템
