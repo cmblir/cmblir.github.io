@@ -5,7 +5,7 @@ excerpt: "Faker 라이브러리 사용하기"
 categories:
   - 데이터 수집
 tags:
-  - [데이터 수집, Selenium]
+  - [데이터 수집, Faker]
 
 toc: true
 toc_sticky: true
