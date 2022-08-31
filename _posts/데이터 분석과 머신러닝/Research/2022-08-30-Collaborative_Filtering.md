@@ -1,6 +1,6 @@
 ---
 title:  "Collaborative Filtering (협업 필터링)"
-excerpt: "추천 시스템 구현의 기본"
+excerpt: "추천 시스템 구현에 대해 알아보자"
 
 categories:
   - 추천 시스템
