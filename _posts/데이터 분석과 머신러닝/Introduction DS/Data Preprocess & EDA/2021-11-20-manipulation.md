@@ -1,5 +1,5 @@
 ---
-title:  "데이터 분석과 머신러닝 - Data Manipulation"
+title:  "[파이썬][데이터분석] 데이터 분석과 머신러닝 - Data Manipulation"
 excerpt: "Data Manipulation에 대해"
 
 categories:

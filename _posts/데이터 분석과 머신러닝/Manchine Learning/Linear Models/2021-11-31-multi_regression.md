@@ -1,5 +1,5 @@
 ---
-title:  "데이터 분석과 머신러닝 - Multiple Regression"
+title:  "[파이썬][머신러닝] 데이터 분석과 머신러닝 - Multiple Regression"
 excerpt: "다중 선형회귀와 편향, 분산에 대해"
 
 categories:

@@ -1,5 +1,5 @@
 ---
-title:  "Django 공식문서 - 5"
+title:  "[파이썬][라이브러리] Django 공식문서 - 5"
 excerpt: "공식문서 가이드를 따라가면서 공부하기"
 
 categories:

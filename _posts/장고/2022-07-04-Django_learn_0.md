@@ -1,5 +1,5 @@
 ---
-title:  "Django 공식문서 - 0"
+title:  "[파이썬][라이브러리] Django 공식문서 - 0"
 excerpt: "공식문서를 보기 전 장고에 대해"
 
 categories:

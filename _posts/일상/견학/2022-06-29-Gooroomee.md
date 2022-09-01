@@ -1,5 +1,5 @@
 ---
-title:  "Gooroomee 구루밑업"
+title:  "[일상] Gooroomee 구루밑업"
 excerpt: "빠르게 성장하는 스타트업의 밋업 구경가기"
 
 categories:

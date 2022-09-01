@@ -1,5 +1,5 @@
 ---
-title:  "데이터 분석과 머신러닝 - Vector Matrix"
+title:  "[파이썬][데이터분석] 데이터 분석과 머신러닝 - Vector Matrix"
 excerpt: "벡터와 매트릭스, 그리고 선형대수에 대해"
 
 categories:

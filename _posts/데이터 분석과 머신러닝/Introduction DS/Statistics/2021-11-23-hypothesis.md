@@ -1,5 +1,5 @@
 ---
-title:  "데이터 분석과 머신러닝 - Hypothesis Test - 2"
+title:  "[파이썬][데이터분석] 데이터 분석과 머신러닝 - Hypothesis Test - 2"
 excerpt: "가설 검정에 대해 - 2"
 
 categories:

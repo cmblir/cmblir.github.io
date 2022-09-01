@@ -1,5 +1,5 @@
 ---
-title:  "데이터 분석과 머신러닝 - Simple Regression"
+title:  "[파이썬][머신러닝] 데이터 분석과 머신러닝 - Simple Regression"
 excerpt: "단순 선형회귀에 대해"
 
 categories:

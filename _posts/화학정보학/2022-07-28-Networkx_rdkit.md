@@ -1,5 +1,5 @@
 ---
-title:  "NetworkX로 분자구조 그리기"
+title:  "[파이썬][라이브러리] NetworkX로 분자구조 그리기"
 excerpt: "이전 편의 RDKit에 이어"
 
 categories:

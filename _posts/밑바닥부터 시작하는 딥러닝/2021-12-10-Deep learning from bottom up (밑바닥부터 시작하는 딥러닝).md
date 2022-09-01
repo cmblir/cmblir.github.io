@@ -1,5 +1,5 @@
 ---
-title:  "밑바닥부터 시작하는 딥러닝"
+title:  "[파이썬][딥러닝] 밑바닥부터 시작하는 딥러닝"
 excerpt: ""
 
 categories:

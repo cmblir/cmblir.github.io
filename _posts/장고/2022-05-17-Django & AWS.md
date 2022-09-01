@@ -1,5 +1,5 @@
 ---
-title:  "django를 시작해보자"
+title:  "[파이썬][라이브러리] django를 시작해보자"
 excerpt: "간단하게 프로젝트 배포하기"
 
 categories:

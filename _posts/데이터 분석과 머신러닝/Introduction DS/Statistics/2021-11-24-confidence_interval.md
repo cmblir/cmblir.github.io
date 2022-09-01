@@ -1,5 +1,5 @@
 ---
-title:  "데이터 분석과 머신러닝 - Confidence Interval"
+title:  "[파이썬][데이터분석] 데이터 분석과 머신러닝 - Confidence Interval"
 excerpt: "가설 검정과 신뢰구간의 목적"
 
 categories:

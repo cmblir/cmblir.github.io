@@ -1,5 +1,5 @@
 ---
-title:  "셀레니움 업데이트로 인한 변경"
+title:  "[파이썬][라이브러리] 셀레니움 업데이트로 인한 변경"
 excerpt: "AttributeError: 'WebDriver' object has no attribute 'find_element_by_xpath' 해결방법"
 
 categories:

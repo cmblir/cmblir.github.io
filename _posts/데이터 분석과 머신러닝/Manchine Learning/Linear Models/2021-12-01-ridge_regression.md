@@ -1,5 +1,5 @@
 ---
-title:  "데이터 분석과 머신러닝 - Ridge Regression"
+title:  "[파이썬][머신러닝] 데이터 분석과 머신러닝 - Ridge Regression"
 excerpt: "One-Hot 인코딩과 특성 공학에 대해"
 
 categories:

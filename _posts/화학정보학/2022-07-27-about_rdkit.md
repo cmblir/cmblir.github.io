@@ -1,5 +1,5 @@
 ---
-title:  "RDKit에 대해"
+title:  "[파이썬][라이브러리] RDKit에 대해"
 excerpt: "오픈 소스 화학 정보학 라이브러리"
 
 categories:

@@ -1,5 +1,5 @@
 ---
-title:  "데이터 분석과 머신러닝 - Bayesian Inference"
+title:  "[파이썬][데이터분석] 데이터 분석과 머신러닝 - Bayesian Inference"
 excerpt: "조건부 확률과 베이지안 통계란 무엇인가"
 
 categories:

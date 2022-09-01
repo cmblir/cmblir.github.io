@@ -1,5 +1,5 @@
 ---
-title:  "데이터 분석과 머신러닝 - Logistic Regression"
+title:  "[파이썬][머신러닝] 데이터 분석과 머신러닝 - Logistic Regression"
 excerpt: "학습 전 데이터 분리의 목적과 회귀 문제에 대해"
 
 categories:
