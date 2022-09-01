@@ -1,5 +1,5 @@
 ---
-title:  "깃 명렁어"
+title:  "[Git] 깃 명렁어"
 excerpt: "깃 터미널에서 사용할 수 명령어 모음"
 
 categories:
