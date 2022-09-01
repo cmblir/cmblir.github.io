@@ -1,5 +1,5 @@
 ---
-title:  "Collaborative Filtering (협업 필터링)"
+title:  "[파이썬][추천 알고리즘] Collaborative Filtering (협업 필터링)"
 excerpt: "추천 시스템 구현에 대해 알아보자"
 
 categories:
