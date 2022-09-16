@@ -167,6 +167,7 @@ od_encoded = od_encoder.fit_transform(df['encode'])
 - 단점
   - 빈도가 같은 특성들이 구분되지 않음
 
+
 ```python
 # category_encoders를 활용한 CountEncoder
 from category_encoders import CountEncoder
@@ -175,6 +176,7 @@ count_encoder = CountEncoder(normalize=True)
 # normalize=False -> frequency 자체를 반환시킨다.
 count_encoded = count_encoder.fit_transform(df["encode"])
 ```
+
 
 ### Target Encoding
 
@@ -185,7 +187,8 @@ count_encoded = count_encoder.fit_transform(df["encode"])
 - 단점
   - 과적합 문제 발생할 수 있음
 
-  ```python
+
+```python
 # category_encoders를 활용한 TargetEncoder
 from category_encoders import TargetEncoder
 
