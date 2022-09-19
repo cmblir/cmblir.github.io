@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://godhin.github.io/sitemap.xml
+Sitemap: https://cmblir.github.io/sitemap.xml
