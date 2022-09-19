@@ -1,5 +1,5 @@
 ---
-title:  "[파이썬][머신러닝] 데이터 분석과 머신러닝 - Model Selection"
+title:  "[파이썬][머신러닝] 데이터 분석과 머신러닝 - Feature Selection"
 excerpt: "교차 검증과 하이퍼 파라미터에 대해"
 
 categories:
