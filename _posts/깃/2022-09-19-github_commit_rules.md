@@ -84,12 +84,12 @@ This is the same convention as writing an email message.
 
 커밋에서는 아래와 같은 형식을 일반적으로 허용하지 않습니다.
 
-1. [bug]
-2. (release)
-3. #12345
-4. docs:
-5. JIRA-666 #time #resolve
-6. ticket ID number
+1. `[bug]`
+2. `(release)`
+3. `#12345`
+4. `docs:`
+5. `JIRA-666 #time #resolve`
+6. `ticket ID number`
 
 > 시간 추적 구문 사용을 권장하지 않습니다.<br>
 *대신 시간 추적을 원한다면 메시지 본문에 "YYYY-MM-DDTHH:MM:SSZ" 형식의 ISO 8601 포맷을 적용해서 사용하세요.*
@@ -103,47 +103,47 @@ This is the same convention as writing an email message.
 
 > 글에 앞서 Refactoring(리팩토링)은 소프트웨어 공학에서 '결과의 변경 없이 코드의 구조를 재조정' 하는 경우를 말한다.
 
-1. Add
+1. `Add`
     - 기능, 테스트, 종속성과 같은 기능을 만들때 사용
-2. Cut
+2. `Cut`
     - 기능, 테스트, 종속성과 같은 기능을 삭제
-3. Fix
+3. `Fix`
     - 버그, 오타, 문제, 또는 잘못된 설명들을 수정
-4. Bump
+4. `Bump`
     - 종속성 버전을 수정
-5. Make
+5. `Make`
     - 빌드 프로세스, 도구 또는 인프라를 변경
-6. Start
+6. `Start`
     - 무언가를 시작하거나 기능 플래그를 추가
-7. Stop
+7. `Stop`
     - 무언가를 끝내거나 기능 플래그를 삭제
-8. Stop
+8. `Stop`
     - 단지 리팩도링해야하는 코드를 변경
-9. Refactor
+9. `Refactor`
     - 단순한 리팩토링
-10. Reformat
+10. `Reformat`
     - 서식에 대해 리팩토링 진행
     - 예시 : 공백 생략
-11. Optimize
+11. `Optimize`
     - 퍼포먼스에 대해 리팩토링 진행
     - 예시 : 코드 속도 향상, 성능 향상
-12. Document
+12. `Document`
     - 도움말 파일과 같은 문서 리팩토링
-13. Rearrange
+13. `Rearrange`
     - 위치를 조정할 때 사용
-14. Redraw
+14. `Redraw`
     - 웹 앱이 작동하는 것을 확인
-15. Reword
+15. `Reword`
     - 웹 상의 텍스트를 수정
-16. Chore
+16. `Chore`
     - 빌드 업무 수정, 패키지 매니저 수정
-17. Test
+17. `Test`
     - 테스트 코드로 리팩토링 코드 추가
-18. Style
+18. `Style`
     - 세미콜론 누락이나 코드 변경이 없는 경우
-19. Docs
+19. `Docs`
     - 문서 수정
-20. Feat
+20. `Feat`
     - 새로운 기능 추가
 
 > 이외에도 커밋의 경우 What, Why 형식에 맞춰서 써야한다. <br>
