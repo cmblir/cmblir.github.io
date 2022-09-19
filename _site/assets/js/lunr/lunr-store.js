@@ -1,77 +1,131 @@
 var store = [{
-        "title": "저에 관하여 👨🏻‍💻",
+        "title": "[소개글] 저에 관하여 👨🏻‍💻",
         "excerpt":"🇰🇷 한국어 소개 성장하는 개발자의 블로그 🌸 시작하며 🫀 블로그를 시작한 이유는 제 스스로의 성장과정을 하나의 글로 담아보려고 합니다. 기억은 마치 한 순간처럼 눈 깜빡할 사이에 사라진다고 생각합니다. 순간을 기억하고 싶다면 우리는 사진을 찍습니다. 개발자는 순간을 기억하고 싶으면 기록을 해야한다고 생각합니다. 그래서 블로그를 시작하게 되었습니다. 완벽하지는 않지만 공들인 글 🙏🏻...","categories": [],
         "tags": [],
         "url": "/about/",
         "teaser": null
       },{
-        "title": "데이터 분석과 머신러닝 - EDA",
+        "title": "[파이썬][데이터분석] 데이터 분석과 머신러닝 - EDA",
         "excerpt":"1.1 Data EDA 데이터셋 불러오기 데이터를 분석한다 데이터를 다룬다 데이터로부터 모델링을 한다 데이터셋을 불러오기 위한 단계: 1. Description을 통해 데이터셋에 대한 정보를 파악합니다. 행과 열의 수 열에 헤더가 있는지 (or “데이터 이름”이 있는지?) 결측 데이터 (Missing data)가 있는지 확인 원본의 형태를 확인하기 : 여러분이 기대하던 형태가 아닐 수도 있다. pandas.read_csv()를...","categories": ["데이터 분석과 머신러닝"],
         "tags": ["데이터 분석","머신러닝"],
         "url": "/%EB%8D%B0%EC%9D%B4%ED%84%B0%20%EB%B6%84%EC%84%9D%EA%B3%BC%20%EB%A8%B8%EC%8B%A0%EB%9F%AC%EB%8B%9D/eda/",
         "teaser": null
       },{
-        "title": "데이터 분석과 머신러닝 - Feature Engineering",
+        "title": "[파이썬][데이터분석] 데이터 분석과 머신러닝 - Feature Engineering",
         "excerpt":"1.2 Feature-Engineering Feature Engineering 도메인 지식과 창의성을 바탕으로, 데이터셋에 존재하는 Feature들을 재조합하여 새로운 Feature을 만드는 것 feature를 조합하여 (+) 새로운 feature을 만들어 낸 다음, 이를 분석에 사용할 수 있을 것이다. 실사용에서 사용하고 있는 것 더 좋은 퍼포먼스를 위하여 더 새롭고, 더 의미있는 패턴을 제공하는 것이 궁극적인 Feature Engineering의 목적이다. DataFrame...","categories": ["데이터 분석과 머신러닝"],
         "tags": ["데이터 분석","머신러닝"],
         "url": "/%EB%8D%B0%EC%9D%B4%ED%84%B0%20%EB%B6%84%EC%84%9D%EA%B3%BC%20%EB%A8%B8%EC%8B%A0%EB%9F%AC%EB%8B%9D/feture_engineering/",
         "teaser": null
       },{
-        "title": "데이터 분석과 머신러닝 - Data Manipulation",
+        "title": "[파이썬][데이터분석] 데이터 분석과 머신러닝 - Data Manipulation",
         "excerpt":"1.3 Data Manipulation pandas로 데이터 합치기 Concat (Concatenate) concat은 ‘더한다’ 혹은 ‘붙인다’라는 의미로 이해하면 된다. 예를 들어, 2개의 문자열을 + 연산자를 이용해 붙일 수 있다. &gt;&gt;&gt; '\"+\" 연산자를 ' + '사용하여' + '붙일 수 있다.' '\"+\" 연산자를 사용하여 붙일 수 있다. string + 다른 방법으로 문자열을 더할 수 있다. tostring...","categories": ["데이터 분석과 머신러닝"],
         "tags": ["데이터 분석","머신러닝"],
         "url": "/%EB%8D%B0%EC%9D%B4%ED%84%B0%20%EB%B6%84%EC%84%9D%EA%B3%BC%20%EB%A8%B8%EC%8B%A0%EB%9F%AC%EB%8B%9D/manipulation/",
         "teaser": null
       },{
-        "title": "데이터 분석과 머신러닝 - Basic Derivative",
+        "title": "[파이썬][데이터분석] 데이터 분석과 머신러닝 - Basic Derivative",
         "excerpt":"1.4 Basic Derivation 미분 우리가 수학시간에 많이 들어봤던 단어로 말 그대로 작게 나누는 것이다. X라는 값이 들어갔을 때 해당 값을 나누는 것이다. 미분을 파이썬으로 구현하는 방법은 대표적으로 2가지가 있다. 직접 구현하는 경우 def numerical_diff(f, x): delta = 0.001 # 매우 작은 값 return (f(x+delta) - f(x)) / delta Scipy 라이브러리를...","categories": ["데이터 분석과 머신러닝"],
         "tags": ["데이터 분석","머신러닝"],
         "url": "/%EB%8D%B0%EC%9D%B4%ED%84%B0%20%EB%B6%84%EC%84%9D%EA%B3%BC%20%EB%A8%B8%EC%8B%A0%EB%9F%AC%EB%8B%9D/derivative/",
         "teaser": null
       },{
-        "title": "데이터 분석과 머신러닝 - Hypothesis Test",
+        "title": "[파이썬][데이터분석] 데이터 분석과 머신러닝 - Hypothesis Test",
         "excerpt":"1.5 Hypothesis Test 가설 검정에 대하여 가설 검정이란 주어진 상황에 대해서 하고자 하는 주장의 진위여부를 확인하는 것 데이터 분석에서는 모집단의 실제 값에 대한 sample의 통계치를 사용해서 통계적으로 유의한 지 아닌 지 확인하는 것 Descriptive Statics (기술 통계치) 데이터를 설명하는 값들 기술 통계치의 시각화 Boxplot &lt;/img&gt; Bagplot &lt;/img&gt; Violin plot &lt;/img&gt;...","categories": ["데이터 분석과 머신러닝"],
         "tags": ["데이터 분석","머신러닝"],
         "url": "/%EB%8D%B0%EC%9D%B4%ED%84%B0%20%EB%B6%84%EC%84%9D%EA%B3%BC%20%EB%A8%B8%EC%8B%A0%EB%9F%AC%EB%8B%9D/hypothesis/",
         "teaser": null
       },{
-        "title": "데이터 분석과 머신러닝 - Hypothesis Test - 2",
+        "title": "[파이썬][데이터분석] 데이터 분석과 머신러닝 - Hypothesis Test - 2",
         "excerpt":"1.6 Hypothesis Test 가설 검정에 대하여 가설 검정이란 주어진 상황에 대해서 하고자 하는 주장의 진위여부를 확인하는 것 데이터 분석에서는 모집단의 실제 값에 대한 sample의 통계치를 사용해서 통계적으로 유의한 지 아닌 지 확인하는 것 이전편에서 이어지는 내용에 T-test를 사용하기 위해서 조건이 필요한게 해당 조건에 대해 알아보자 T-test 특성 독립성 두 그룹이...","categories": ["데이터 분석과 머신러닝"],
         "tags": ["데이터 분석","머신러닝"],
         "url": "/%EB%8D%B0%EC%9D%B4%ED%84%B0%20%EB%B6%84%EC%84%9D%EA%B3%BC%20%EB%A8%B8%EC%8B%A0%EB%9F%AC%EB%8B%9D/hypothesis/",
         "teaser": null
       },{
-        "title": "데이터 분석과 머신러닝 - Confidence Interval",
+        "title": "[파이썬][데이터분석] 데이터 분석과 머신러닝 - Confidence Interval",
         "excerpt":"신뢰구간이란? 통계적 추론을 통해 예측되는 값의 범위를 말한다. 데이터분석에서 신뢰도가 높을 수록 해당 문제 측정의 결과가 일관성을 가진다는 의미다. 즉, 신뢰도가 95% 라는 의미는 표본을 100번 뽑았을 때 95번은 신뢰 구간에 모집단의 평균이 포함된다는 뜻이다. ANOVA(one-way) 쉽게 세 개 이상의 집단의 차이를 통계적으로 검정하는 방법 두 개 이상 다수의 집단을...","categories": ["데이터 분석과 머신러닝"],
         "tags": ["데이터 분석","머신러닝"],
         "url": "/%EB%8D%B0%EC%9D%B4%ED%84%B0%20%EB%B6%84%EC%84%9D%EA%B3%BC%20%EB%A8%B8%EC%8B%A0%EB%9F%AC%EB%8B%9D/confidence_interval/",
         "teaser": null
       },{
-        "title": "데이터 분석과 머신러닝 - Bayesian Inference",
+        "title": "[파이썬][데이터분석] 데이터 분석과 머신러닝 - Bayesian Inference",
         "excerpt":"베이지안적 사고 사고에 앞서 확률론과 통계학에서 유명한 베이즈 정리와 베이지안 확률에 대해 알아보자 베이즈 정리 두 확률 변수의 사전 확률과 사후 확률 사이의 관계를 나타내는 정리 베이지안 확률 베이즈 정리를 통해 사전확률로부터 사후확률을 구할 수 있게 된다는 해석의 기초 베이지안 확률, 화산이 폭발할 확률을 빈도 확률로 계산이 가능할까라는 문제에 우리가...","categories": ["데이터 분석과 머신러닝"],
         "tags": ["데이터 분석","머신러닝"],
         "url": "/%EB%8D%B0%EC%9D%B4%ED%84%B0%20%EB%B6%84%EC%84%9D%EA%B3%BC%20%EB%A8%B8%EC%8B%A0%EB%9F%AC%EB%8B%9D/bayesian_inference/",
         "teaser": null
       },{
-        "title": "데이터 분석과 머신러닝 - Vector Matrix",
+        "title": "[파이썬][데이터분석] 데이터 분석과 머신러닝 - Vector Matrix",
         "excerpt":"벡터와 스칼라 스칼라는 단순히 변수 형태로 저장된 숫자이며 벡터 혹은 매트릭스와 곱해지는 경우 해당 값에 곱한 값으로 결정된다. 벡터는 파이썬에서 주로 리스트형태로 사용되며, 데이터셋을 구성하고 있는 데이터프레임의 행과 열로써 사용된다. 매트릭스는 벡터의 모음정도로 이해하면 좋다. 스칼라 단일 숫자로 변수에 저장할 때는 일반적으로 소문자를 이용해서 표기한다. ```python import math import matplotlib.pyplot...","categories": ["데이터 분석과 머신러닝"],
         "tags": ["데이터 분석","머신러닝"],
         "url": "/%EB%8D%B0%EC%9D%B4%ED%84%B0%20%EB%B6%84%EC%84%9D%EA%B3%BC%20%EB%A8%B8%EC%8B%A0%EB%9F%AC%EB%8B%9D/vector_matrix/",
         "teaser": null
       },{
-        "title": "데이터 분석과 머신러닝 - Linear Algebra",
+        "title": "[파이썬][데이터분석] 데이터 분석과 머신러닝 - Linear Algebra",
         "excerpt":"분산이란? 데이터가 얼마나 퍼져있는지 데이터 분석에서 Variance 라고 불리우며 분산을 통해 평균을 구하고, 평균을 통해 분산을 구할 수도 있다. 모집단의 분산은 모집단의 PARAMETER (aspect, property, attribute, etc)이며, 샘플의 분산은 샘플의 STATISTIC (estimated attribute)이다. 공분산이란? 2개의 확률변수의 선형 관계를 나타내는 값이다. 2개의 변수 중 하나의 값이 상승하는 경향을 보일 때 다른...","categories": ["데이터 분석과 머신러닝"],
         "tags": ["데이터 분석","머신러닝"],
         "url": "/%EB%8D%B0%EC%9D%B4%ED%84%B0%20%EB%B6%84%EC%84%9D%EA%B3%BC%20%EB%A8%B8%EC%8B%A0%EB%9F%AC%EB%8B%9D/linear_algebra/",
         "teaser": null
       },{
-        "title": "데이터 분석과 머신러닝 - High dimensional data",
+        "title": "[파이썬][데이터분석] 데이터 분석과 머신러닝 - Dimension Reduction",
         "excerpt":"Vector transformation 벡터 변환에 대해서 알아보자. R2 공간에서의 벡터 변환, 즉 선형 변환은 임의의 두 벡터를 더하거나 혹은 스칼라 값을 곱하는 것을 의미한다. 이전 linear algebra에서 올린 내용중 linear projection도 일종의 벡터 변환이라고 볼 수 있다. 간단하게 코드로 구현 import matplotlib.pyplot as plt import numpy as np input_vec = np.array([3,...","categories": ["데이터 분석과 머신러닝"],
         "tags": ["데이터 분석","머신러닝"],
-        "url": "/%EB%8D%B0%EC%9D%B4%ED%84%B0%20%EB%B6%84%EC%84%9D%EA%B3%BC%20%EB%A8%B8%EC%8B%A0%EB%9F%AC%EB%8B%9D/high_dimensional_data/",
+        "url": "/%EB%8D%B0%EC%9D%B4%ED%84%B0%20%EB%B6%84%EC%84%9D%EA%B3%BC%20%EB%A8%B8%EC%8B%A0%EB%9F%AC%EB%8B%9D/dimension_reduction/",
         "teaser": null
       },{
-        "title": "밑바닥부터 시작하는 딥러닝",
+        "title": "[파이썬][데이터분석] 데이터 분석과 머신러닝 - Clustering",
+        "excerpt":"Clustering 클러스터링은 Unsupervised Learning Algorithm(비지도 학습 알고리즘)의 한 종류이다. 목적 데이터들이 얼마나 또는 어떻게 유사한지를 알아보는 것이다. 비지도 학습답게 정답을 보장하지 않는다는 이슈가 있어서 간단한 분석이나 예측을 위한 모델링에 쓰이기보다 EDA 과정에서 많이 사용되는 기법이다. 종류 Hierachical Agglomerative : 개별 포인트에서 시작후 점점 크게 합쳐간다. Divisive : 한 개의 큰...","categories": ["데이터 분석과 머신러닝"],
+        "tags": ["데이터 분석","머신러닝"],
+        "url": "/%EB%8D%B0%EC%9D%B4%ED%84%B0%20%EB%B6%84%EC%84%9D%EA%B3%BC%20%EB%A8%B8%EC%8B%A0%EB%9F%AC%EB%8B%9D/Clustering/",
+        "teaser": null
+      },{
+        "title": "[파이썬][머신러닝] 데이터 분석과 머신러닝 - Simple Regression",
+        "excerpt":"Simple Regression 가장 직관적이고 간단한 모델인 선을 구하고 분석하는 방법을 선형 회귀 분석이라고 한다. - 머신러닝에서는 크게 2가지로 나눠서 분석을 하게 된다. 1. Regression (회귀) 예측하고 싶은 종속변수가 숫자일 경우 사용하는 방식으로 특정 수를 예측하고 싶을 때 많이 쓰이는 방법이다. 2. Classification (분류) 예측하고 싶은 변수가 문자또는 이름일 경우 사용하는...","categories": ["데이터 분석과 머신러닝"],
+        "tags": ["데이터 분석","머신러닝"],
+        "url": "/%EB%8D%B0%EC%9D%B4%ED%84%B0%20%EB%B6%84%EC%84%9D%EA%B3%BC%20%EB%A8%B8%EC%8B%A0%EB%9F%AC%EB%8B%9D/simple_regression/",
+        "teaser": null
+      },{
+        "title": "[파이썬][머신러닝] 데이터 분석과 머신러닝 - Multiple Regression",
+        "excerpt":"Multiple Regression 여러 개의 독립 변수와 하나의 종속 변수의 선형 관계를 모델링하는 방법중 하나이다. Evaluation Metrics MSE Mean Squared Error 평균제곱오차, 오차를 제곱한 값의 평균으로, 알고리즘이 예측한 값과 실제 정답과 차이를 의미한다. MSE값이 0에 가까울수록 좋은 모델이다. MAE Mean Absolute Error 평균절대오차, 회귀평가를 위한 지표로 주로 사용되고 0에 가까울수록 좋은...","categories": ["데이터 분석과 머신러닝"],
+        "tags": ["데이터 분석","머신러닝"],
+        "url": "/%EB%8D%B0%EC%9D%B4%ED%84%B0%20%EB%B6%84%EC%84%9D%EA%B3%BC%20%EB%A8%B8%EC%8B%A0%EB%9F%AC%EB%8B%9D/multi_regression/",
+        "teaser": null
+      },{
+        "title": "[파이썬][머신러닝] 데이터 분석과 머신러닝 - Ridge Regression",
+        "excerpt":"Ridge Regression '능형 회귀'라고도 불리며, 기본 선형 모델에서 자주 발생하는 Overfitting을 막아주기위해 '각 계수의 제곱을 더한 값'을 식에 포함하여 계수의 크기도 함께 최소화하도록 만든 기법이다. Overfitting이 되면 데이터에 매우 적합되어서 극단적인 올라갔다 내려하는 그래프가 생기는데 이런 Variance가 큰 상황을 막기 위해 계수 자체를 커지면 패널티를 주식 수식을 추가한 것이다. 특징...","categories": ["데이터 분석과 머신러닝"],
+        "tags": ["데이터 분석","머신러닝"],
+        "url": "/%EB%8D%B0%EC%9D%B4%ED%84%B0%20%EB%B6%84%EC%84%9D%EA%B3%BC%20%EB%A8%B8%EC%8B%A0%EB%9F%AC%EB%8B%9D/ridge_regression/",
+        "teaser": null
+      },{
+        "title": "[파이썬][머신러닝] 데이터 분석과 머신러닝 - Logistic Regression",
+        "excerpt":"Logistic Regression 머신 러닝에서 정확한 예측을 생성하는 데 자주 사용되는 통계 모델이다. 사건이 발생할 확률을 결정하는데 사용되고 특성 간의 관계를 보여주고 특정 결과의 확률을 계산하는 방식이다. 또한 대상 변수가 이진이기때문에 값이 0또는 1로 나오게 된다. 특징 이진 로지스틱 회귀에서는 응답 변수가 이진이어야 된다. 대체로 대규모 크기의 샘플을 하는 경우 많이...","categories": ["데이터 분석과 머신러닝"],
+        "tags": ["데이터 분석","머신러닝"],
+        "url": "/%EB%8D%B0%EC%9D%B4%ED%84%B0%20%EB%B6%84%EC%84%9D%EA%B3%BC%20%EB%A8%B8%EC%8B%A0%EB%9F%AC%EB%8B%9D/logistic_regression/",
+        "teaser": null
+      },{
+        "title": "[파이썬][머신러닝] 데이터 분석과 머신러닝 - Desicion Trees",
+        "excerpt":"Decision Tree 결정 트리라고도 불린다. 비용함수를 최소로 하는 특성과 그 값에 대한 옳고 그름의 답을 통해 데이터를 분할하는 알고리즘이다. 트리 구조 node(노드) root(루트) 부모가 없는 노드로 최초의 노드이다. internal(내부) 단말 노드가 아닌 노드들을 의미한다. 대개는 중간에 존재한다. leaf(단말) 자식이 없는 노드로 ‘잎 노드’라고도 불린다. Parent(부모) Sub-tree에서 상위에 위치해있는 노드이다. 자식이...","categories": ["데이터 분석과 머신러닝"],
+        "tags": ["데이터 분석","머신러닝"],
+        "url": "/%EB%8D%B0%EC%9D%B4%ED%84%B0%20%EB%B6%84%EC%84%9D%EA%B3%BC%20%EB%A8%B8%EC%8B%A0%EB%9F%AC%EB%8B%9D/decision_trees/",
+        "teaser": null
+      },{
+        "title": "[파이썬][머신러닝] 데이터 분석과 머신러닝 - Boosting",
+        "excerpt":"앙상블과 부스팅이란? Ensemble Learning은 모델 여러 개를 조합하여 더 정확한 예측에 도움을 주는 학습방법이다. 앙상블은 여러 모델이 같이 문제를 해결하는 집단지성이다. Voting (보팅) 여러 개의 분류기 투표로 최종 예측 결과를 결정하는 방식 각기 다른 알고리즘을 결합하여 사용하는 방식   1-1. Hard Voting     다수의 분류기가 예측한 결과값을 최종 결과로...","categories": ["데이터 분석과 머신러닝"],
+        "tags": ["데이터 분석","머신러닝"],
+        "url": "/%EB%8D%B0%EC%9D%B4%ED%84%B0%20%EB%B6%84%EC%84%9D%EA%B3%BC%20%EB%A8%B8%EC%8B%A0%EB%9F%AC%EB%8B%9D/boosting/",
+        "teaser": null
+      },{
+        "title": "[파이썬][머신러닝] 데이터 분석과 머신러닝 - Processing",
+        "excerpt":"전처리란? 분석에 활용되거나 모델 학습에 수집된 데이터를 사용하는 경우 누락이나 오차, 또는 불필요한 데이터들을 정리하는 것부터 시작한다. 쉽게 말하면 좋은 식자료로 맛있는 음식 만들기는 쉽다. 라고 표현할 수 있을 것 같다. 우리는 맛있는 음식(좋은 모델)을 만들기 위해 제각기 다른 재료들을 요리하기에 쉽게 좋은 식재료(가공된 데이터)를 만드는 재료 손질(전처리)를 하는 것이다....","categories": ["데이터 분석과 머신러닝"],
+        "tags": ["데이터 분석","머신러닝"],
+        "url": "/%EB%8D%B0%EC%9D%B4%ED%84%B0%20%EB%B6%84%EC%84%9D%EA%B3%BC%20%EB%A8%B8%EC%8B%A0%EB%9F%AC%EB%8B%9D/preprocessing/",
+        "teaser": null
+      },{
+        "title": "[파이썬][머신러닝] 데이터 분석과 머신러닝 - Feature Selection",
+        "excerpt":"하이퍼 파라미터란? Parameter(매개변수)는 모델 내부에서 데이터로부터 결정되는 변수이다. MLM(Machine Learning Mastery)에서 기술한 하이퍼 파라미터는 모델링할 때 직접 세팅해주는 값이라고 말한다. 이는 모델 학습에 나오는 learning rate나 SVM의 C, sigma, KNN의 K값 등등 모델을 세팅할 때 우리가 설정하는 값을 설명한다. 흔히 많은 사람들이 모델 설계를 할 때 값을 조정하는 것을 “하이퍼...","categories": ["데이터 분석과 머신러닝"],
+        "tags": ["데이터 분석","머신러닝"],
+        "url": "/%EB%8D%B0%EC%9D%B4%ED%84%B0%20%EB%B6%84%EC%84%9D%EA%B3%BC%20%EB%A8%B8%EC%8B%A0%EB%9F%AC%EB%8B%9D/model_selection/",
+        "teaser": null
+      },{
+        "title": "[파이썬][딥러닝] 밑바닥부터 시작하는 딥러닝",
         "excerpt":"Deep learning from the bottom up (밑바닥부터 시작하는 딥러닝) CH1   Deep Learning for Scratch   사이토 고키 지음 / 齋藤康毅／著      Deep Learning 1  ","categories": ["밑바닥부터 시작하는 딥러닝"],
         "tags": ["밑바닥부터 시작하는 딥러닝","딥러닝"],
         "url": "/%EB%B0%91%EB%B0%94%EB%8B%A5%EB%B6%80%ED%84%B0%20%EC%8B%9C%EC%9E%91%ED%95%98%EB%8A%94%20%EB%94%A5%EB%9F%AC%EB%8B%9D/Deep-learning-from-bottom-up-(%EB%B0%91%EB%B0%94%EB%8B%A5%EB%B6%80%ED%84%B0-%EC%8B%9C%EC%9E%91%ED%95%98%EB%8A%94-%EB%94%A5%EB%9F%AC%EB%8B%9D)/",
@@ -1523,13 +1577,13 @@ var store = [{
         "url": "/%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8/23825/",
         "teaser": null
       },{
-        "title": "django를 시작해보자",
+        "title": "[파이썬][라이브러리] django를 시작해보자",
         "excerpt":"장고와 AWS 설치하기 프로젝트 배포를 위해 Django와 AWS를 공부해보았다. 사용하기 위한 환경 구현 프로젝트에 사용할 환경변수 설정 (필자는 conda를 활용) conda create —name test python=3.8 (파이썬은 3.8을 사용) Django 라이브러리 설치 pip install django 프로젝트 만들기 배포할 프로젝트 만들기 django-admin startproject test 프로젝트에 앱 만들기 cd test python manage.py startapp...","categories": ["장고"],
         "tags": ["장고","aws"],
         "url": "/%EC%9E%A5%EA%B3%A0/Django-&-AWS/",
         "teaser": null
       },{
-        "title": "깃 명렁어",
+        "title": "[Git] 깃 명렁어",
         "excerpt":"Document Manager from Hell {git, github} $ git 깃 명령어 확인 $ git config 깃 사용자 정보 설정 $ git config —global [user.name](http://user.name) 깃 이름 확인 $ git config —global [user.email](http://user.email) 깃 이메일 확인 $ git config —global core.editor “notepad++” 깃의 기본 편집기를 Notepad++ 로 변경 $ git init initialize의...","categories": ["깃"],
         "tags": ["깃허브","깃"],
         "url": "/%EA%B9%83/Document-Manager-from-Hell-git,-github/",
@@ -1571,7 +1625,7 @@ var store = [{
         "url": "/%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8/9713/",
         "teaser": null
       },{
-        "title": "Seoul meet up",
+        "title": "[일상] Seoul meet up",
         "excerpt":"서울 밋업 한국에서 열리는 거의 첫번째 밋업이라고 들었다. 키보드에 관심을 가지고 나서 참석하게 어떻게 참석을 하게 되었는데 두근거리는 마음을 붙잡고 행사장에 도착하였다. 해당 밋업에 참가한 기업은 Geon Works, Linworks, Split.Labs, Namong, Della, Sandun, Cannonkeys, KLC 등등 키보드 업계에서 이름 날리는 곳들이 대거 참가하였다. 아티산 도착과 동시 보게된 히맨의 자태,, 아티산이지만...","categories": ["일상"],
         "tags": ["일상","밋업","키보드"],
         "url": "/%EC%9D%BC%EC%83%81/%ED%82%A4%EB%B3%B4%EB%93%9C-%EB%B0%8B%EC%97%85/",
@@ -1607,13 +1661,13 @@ var store = [{
         "url": "/%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8/2440/",
         "teaser": null
       },{
-        "title": "기계식 키보드란",
+        "title": "[키보드] 기계식 키보드란",
         "excerpt":"기계식 키보드란? 이 사진은 내 기계식 키보드이다. 기계식 키보드가 되기 위한 조건 우리가 흔히 말하는 ‘기계식’ 키보드는 3가지 조건을 달성하면 우리가 흔히 아는 기계식이 된다. 축전식이 아닌 것 분리되어 있던 금속 접점이 서로 접촉하며 키가 입력되는 방식일 것 금속 접점이 분리할 수 있는 스위치 내부에 존재할 것 좀 더 쉽게...","categories": ["키보드"],
         "tags": ["키보드"],
         "url": "/%ED%82%A4%EB%B3%B4%EB%93%9C/%EA%B8%B0%EA%B3%84%EC%8B%9D%ED%82%A4%EB%B3%B4%EB%93%9C%EB%9E%80/",
         "teaser": null
       },{
-        "title": "프랑켄 스위치란",
+        "title": "[키보드] 프랑켄 스위치란",
         "excerpt":"프랑켄 스위치란? 서로 다른 스위치를 합쳐서 만드는 방식으로 기존의 스위치의 단점을 보완하거나 장점을 부각시키는 방법에서 고안되었다. 가장 유명한 프랑켄 스위치는 Holy panda가 있다. 홀리판다라고 불리는 스위치로 카일의 Halo 스위치와 Invir Panda 스위치를 합쳐서 만드는 것으로 현재는 구하기 굉장히 어려운 스위치이다. 이후 카피작들이 많이 나오고 있으며, 인비르사에서 V2를 내놓긴했으나 기존의 구...","categories": ["키보드"],
         "tags": ["키보드"],
         "url": "/%ED%82%A4%EB%B3%B4%EB%93%9C/%ED%94%84%EB%9E%91%EC%BC%84-%EC%8A%A4%EC%9C%84%EC%B9%98%EB%9E%80/",
@@ -1655,13 +1709,13 @@ var store = [{
         "url": "/%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8/squares-of-a-sorted-array/",
         "teaser": null
       },{
-        "title": "처음으로 면접을 보았다.",
+        "title": "[일상] 처음으로 면접을 보았다.",
         "excerpt":"너무 오랜만에 입어보는 정장 🤵🏻‍♂️ 1. 고민하고 고민하다. 거의 방치하다싶이 학생들을 가르키는 부트캠프를 끝마치면서 처음으로 회사를 지원하게 되었다. 내가 이 회사에 이끌리면서 지원하게 된 계기는 이커머스 회사라는 점과 이커머스 회사치곤 보기 드문 D-C라는 점 그리고 훌륭한 리더가 있는 곳이 너무 맘에 들어 많이 아쉬운 스펙이지만 고민하고 고민하다가 지원하게 되었다. 2....","categories": ["일상"],
         "tags": ["일상","면접"],
         "url": "/%EC%9D%BC%EC%83%81/%EC%B2%AB-%EB%A9%B4%EC%A0%91/",
         "teaser": null
       },{
-        "title": "화이트 보드",
+        "title": "[일상] 화이트 보드",
         "excerpt":"화이트 보드 나는 화이트보드를 샀다. 무엇이든 내가 이루고자 하는 것이 있으면 그것에 필요한 물건에는 약간의 고민과 많은 추진력이 필요하다고 생각한다. 어제의 내가 풀지 못하였던 문제들은 나의 작은 습관 (컴퓨터에 안도하고 모르는 문제를 스스로 해결하지 않으려는 나쁜 버릇)이 문제 해결을 방해하였다고 생각한다. 그렇기에 오늘부로 문제 알고리즘별 문제 몇개를 선별해서 화이트보드로 푸는...","categories": ["일상"],
         "tags": ["일상","면접","라이브코딩"],
         "url": "/%EC%9D%BC%EC%83%81/%EB%B8%94%EB%A1%9C%EA%B7%B8%EB%A5%BC-%EB%8B%A4%EC%8B%9C-%EC%8B%9C%EC%9E%91%ED%95%98%EB%A9%B0/",
@@ -1679,7 +1733,7 @@ var store = [{
         "url": "/%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8/1805/",
         "teaser": null
       },{
-        "title": "라이브 코딩",
+        "title": "[파이썬][알고리즘] 라이브 코딩",
         "excerpt":"1. 문제 리스트 길이가 긴 리스트에서 내가 찾아야할 값이 존재하는 위치 찾기 2. 해결방법 및 시간복잡도 브루트포스 O(N) 이진탐색 O(logN) index 라이브러리 O(1) bisect 라이브러리 O(logN) 3. 문제 해결 및 코드 주석을 참고하면서 이해를 돕습니다. 4. 알고리즘 간략 설명 브루트포스 알고리즘 문제의 뜻 그래도 단순하게 “난폭한 힘” 이다. 단순 무식하게...","categories": ["알고리즘"],
         "tags": ["알고리즘","라이브코딩","코테"],
         "url": "/%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98/%EB%9D%BC%EC%9D%B4%EB%B8%8C%EC%BD%94%EB%94%A9-%ED%9B%84%EA%B8%B0/",
@@ -1715,13 +1769,13 @@ var store = [{
         "url": "/%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8/2011/",
         "teaser": null
       },{
-        "title": "DP로 해결하기",
+        "title": "[파이썬][알고리즘] DP로 해결하기",
         "excerpt":"1. 문제 자신이 속한 열을 제외한 값중 가장 큰 값을 중복으로 더하여 최종 행의 가장 큰 값을 호출하기 2. 해결방법 시간복잡도 DP O(N^2) 3. 문제 해결 및 코드 주석을 참고하면서 이해를 돕습니다. 4. 알고리즘 간략 설명 DP 동적 계획법이라고 불리는 문제로 1회용 알고리즘이다. 최소한의 계산방식으로 문제를 해결하기 때문에 시간을 최소화할...","categories": ["알고리즘"],
         "tags": ["알고리즘","라이브코딩","코테"],
         "url": "/%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98/DP%EB%A1%9C-%ED%95%B4%EA%B2%B0%ED%95%98%EA%B8%B0/",
         "teaser": null
       },{
-        "title": "탐욕 알고리즘 복습하기",
+        "title": "[파이썬][알고리즘] 탐욕 알고리즘 복습하기",
         "excerpt":"1. 문제 탐욕 알고리즘으로 가장 대표적인 거스름돈 문제 해결하기 손님에게 거스름돈으로 줄 수 있는 최소한의 동전 개수 구하기 2. 해결방법 시간복잡도 탐욕 알고리즘 O(N) 3. 문제 해결 및 코드 주석을 참고하면서 이해를 돕습니다. 4. 알고리즘 간략 설명 탐욕 알고리즘 대게 탐욕 알고리즘 2가지 조건에 의해 잘 작동하게 된다. 선택 조건...","categories": ["알고리즘"],
         "tags": ["알고리즘","라이브코딩","코테"],
         "url": "/%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98/%ED%83%90%EC%9A%95-%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98-%EB%B3%B5%EC%8A%B5%ED%95%98%EA%B8%B0/",
@@ -1733,31 +1787,31 @@ var store = [{
         "url": "/%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8/92334/",
         "teaser": null
       },{
-        "title": "갑작스러운 소나기",
+        "title": "[일상] 갑작스러운 소나기",
         "excerpt":"소나기 ☔️ 뭔가 집이 되게 낡아보이는 것 같다. 내가 수도권으로 올라오면서 처음 느낀 점은 집값이 너무 비싸다. 욕심을 내서 쓰리룸에 1억 2천에 운 좋게 들어갔는데 외관은 너무 빈티지하다. 🤣 너무 추워 오늘은 이른 아침부터 일어나서 분주하게 하루를 맞이했다. 뜨거운 여름에는 항상 선풍기와 함께 잠을 청하고는 하는데 비로 인해 차가워진 공기와...","categories": ["일상"],
         "tags": ["일상"],
         "url": "/%EC%9D%BC%EC%83%81/%EA%B0%91%EC%9E%91%EC%8A%A4%EB%9F%AC%EC%9A%B4-%EC%86%8C%EB%82%98%EA%B8%B0/",
         "teaser": null
       },{
-        "title": "하루라는 금",
+        "title": "[고찰] 하루라는 금",
         "excerpt":"돌아보면서 가끔 그런 생각에 빠져드는 날이 있다. ‘오늘 아무것도 하기 싫다’, ‘내일부터 하지 뭐’라는 생각이 나의 머리를 지배하는 날들 그런 날들이 나에게 계속해서 쌓여만 가던 와중 블로그를 시작하게 되었고, 책을 읽게 되고 거울속의 내 모습을 긴 시간동안 바라보았다. ‘과연 나는 내가 어릴 적 꿈꿔오던 지금 나이의 모습이랑 같은가’ 머릿속에 그런...","categories": ["하루"],
         "tags": ["유통기한 하루","성장","습관"],
         "url": "/%ED%95%98%EB%A3%A8/%ED%95%98%EB%A3%A8%EC%9D%98-%EC%8B%9C%EC%9E%91/",
         "teaser": null
       },{
-        "title": "노션의 글을 옮기며",
+        "title": "[일상] 노션의 글을 옮기며",
         "excerpt":"혼자만의 공부 공간 📜 혼자 공부하는 공간이라 나만 알아볼 수 있게 정리해놨다. 👀 위에 보이는 것 이외에도 페이지가 너무 많아서 조만간 더 정리할 생각이다 (아이디어 노트같이 카테고리를 정하기 애매한 것들이 많다 ㅠ) 나는 처음 코딩을 배울 때 아는 지인으로부터 공부한 걸 기록하는 습관이 중요하다고 배웠다. 중고등학교 시절부터 무언가 배운 것이...","categories": ["일상"],
         "tags": ["일상"],
         "url": "/%EC%9D%BC%EC%83%81/%EB%85%B8%EC%85%98%EC%9D%98-%EA%B8%80%EB%93%A4%EC%9D%84-%EC%98%AE%EA%B8%B0%EB%A9%B0/",
         "teaser": null
       },{
-        "title": "움직여라",
+        "title": "[고찰] 움직여라",
         "excerpt":"따뜻한 햇살 아래 포근한 침대 요새 너무 게을러버린 나는 9시에 일어난다. 그리고 오늘 해야할 일을 간략하게 적고 하다가 금방 낮잠에 들고 만다. 따뜻한 햇살이랑 누구도 건들지 않는 평일의 침대는 그 누구도 뿌리치기 힘든 유혹이다. 그런 유혹에 넘어가길 벌써 며칠째이다. 아침을 바꾸고 싶다는 마음에 동기부여영상을 보고 짐퀵이라는 브레인 코치의 말을 들으며...","categories": ["하루"],
         "tags": ["유통기한 하루","성장","습관"],
         "url": "/%ED%95%98%EB%A3%A8/%EC%9B%80%EC%A7%81%EC%97%AC%EB%9D%BC/",
         "teaser": null
       },{
-        "title": "애어른",
+        "title": "[고찰] 애어른",
         "excerpt":"어제는 누구보다 빠르게 달려갔고, 오늘은 누구보다 느리게 걸어간다. 어려서부터 독립성도 강하고 모든지 혼자 해결하려고 했다. 부모님 말로는 내가 애기때부터 숫자에 관심이 많아 산수가 빨랐다고 했다. 물건을 살때도 “엄마 이게 저거보다 양도 많은데 훨씬 싸” 하면서 비교하고 거스름돈도 착착 잘 챙겨와서 커서 걱정이 없을거라고 하셨다. 그래서 그런가 걱정을 안하시고 커서 남들보다...","categories": ["하루"],
         "tags": ["유통기한 하루","성장","습관"],
         "url": "/%ED%95%98%EB%A3%A8/%EC%95%A0%EC%96%B4%EB%A5%B8/",
@@ -1779,12 +1833,6 @@ var store = [{
         "excerpt":"1. 문제 An array A consisting of N integers is given. Rotation of the array means that each element is shifted right by one index, and the last element of the array is moved to the first place. For example, the rotation of array A = [3, 8, 9, 7,...","categories": ["코딩테스트"],
         "tags": ["알고리즘","파이썬","코테","Codility","코디리티","Lessons"],
         "url": "/%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8/CyclicRotation/",
-        "teaser": null
-      },{
-        "title": "[파이썬][Codility_][코디리티] FuryRoad",
-        "excerpt":"0. 챌린지 소개 1. 문제 You have to be at your work as soon as possible. The road on your route to work may consist of two types of surface: asphalt or sand. To simplify the description, it will be denoted by a string R consisting only of the letters:...","categories": ["코딩테스트"],
-        "tags": ["알고리즘","파이썬","코테","Codility","코디리티","Codility Challenge"],
-        "url": "/%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8/FuryRoad/",
         "teaser": null
       },{
         "title": "[파이썬][Codility_][코디리티] OddOccurrencesInArray",
@@ -1859,91 +1907,91 @@ var store = [{
         "url": "/%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8/81301/",
         "teaser": null
       },{
-        "title": "Gooroomee 구루밑업",
+        "title": "[일상] Gooroomee 구루밑업",
         "excerpt":"밋업 이거는 오늘 참여한 Gooroomee 밋업 세미나행사 나에게 행사란 아직 취업을 못해본 나에게 밋업 행사는 새로운 자극이다. 회사에 대한 열망, 궁금증에 대한 해소, 그리고 그들의 성장을 모두 느낄 수 있게 해준다. 그동안 코로나와 부트캠프 일정으로 바쁘게 지내며 오프라인 행사를 참여하지 못하다가 오랜만에 오프라인 행사에 참여하게 되었다. 구루미의 행사는 처음으로 참여하게...","categories": ["일상"],
         "tags": ["일상","밋업"],
         "url": "/%EC%9D%BC%EC%83%81/Gooroomee/",
         "teaser": null
       },{
-        "title": "Django 공식문서 - 0",
+        "title": "[파이썬][라이브러리] Django 공식문서 - 0",
         "excerpt":"[출처 : 장고 공식문서] 장고 공식문서의 가장 첫 페이지 🔥 **The web framework for perfectionists with deadlines. (마감에 쫓기는 완벽주의자를 위한 웹 프레임워크)** 장고는 웹 프로그램을 쉽고 빠르게 만들어주는 웹 프레임워크로 Flask보다 조금 더 견고하다고 생각이 든다. 참고로 장고는 2005년에 만들어져서 굉장히 오랜 시간 사랑을 받고 있는 웹 프레임워크이며, 많은...","categories": ["장고"],
         "tags": ["장고"],
         "url": "/%EC%9E%A5%EA%B3%A0/Django_learn_0/",
         "teaser": null
       },{
-        "title": "Django 공식문서 - 1",
+        "title": "[파이썬][라이브러리] Django 공식문서 - 1",
         "excerpt":"[출처 : 장고 공식문서] 장고의 기초 프로젝트 구조 django manage mysite settings.py urls.py wsgi.py init.py 장고에 대해 카테고리 모델 계층 웹 어플리케이션의 데이터를 구조화하고 조작하기 위한 모델을 제공한다. 뷰 계층 사용자의 요청을 처리하고 결과를 반환하기 위한 로직을 캡슐화한 “뷰”의 개념을 가지고 있다. 템플릿 계층 사용자에게 표시할 정보를 표현하기 위해 디자이너에게...","categories": ["장고"],
         "tags": ["장고"],
         "url": "/%EC%9E%A5%EA%B3%A0/Django_learn_1/",
         "teaser": null
       },{
-        "title": "Django 공식문서 - 2",
+        "title": "[파이썬][라이브러리] Django 공식문서 - 2",
         "excerpt":"[출처 : 장고 공식문서] 장고 흩어보기 1. Model from django.db import models class Reporter(models.Model): full_name = models.CharField(max_length=70) def __str__(self): return self.full_name class Article(models.Model): pub_date = models.DateField() headline = models.CharField(max_length=200) content = models.TextField() reporter = models.ForeignKey(Reporter, on_delete=models.CASCADE) def __str__(self): return self.headline 장고에는 모델을 사용할 수 있다. $ python manage.py makemigrations $...","categories": ["장고"],
         "tags": ["장고"],
         "url": "/%EC%9E%A5%EA%B3%A0/Django_learn_2/",
         "teaser": null
       },{
-        "title": "Django 공식문서 - 3",
+        "title": "[파이썬][라이브러리] Django 공식문서 - 3",
         "excerpt":"[출처 : 장고 공식문서]   파이썬 설치하기      파이썬 공식 홈페이지인 https://www.python.org/downloads/ 에서 설치하기를 바란다.   데이터베이스 설정하기      PostgreSQL, MariaDB, MySQL, Oracle과 같은 규모의 데이터베이스 엔진을 사용하여 작업할 때만 필요하다.   파이썬에 장고 확인하기   &gt;&gt;&gt; import django &gt;&gt;&gt; print(django.get_version()) 4.0  ","categories": ["장고"],
         "tags": ["장고"],
         "url": "/%EC%9E%A5%EA%B3%A0/Django_learn_3/",
         "teaser": null
       },{
-        "title": "Django 공식문서 - 4",
+        "title": "[파이썬][라이브러리] Django 공식문서 - 4",
         "excerpt":"[출처 : 장고 공식문서] django 버젼 확인하기 $ python -m django —version Django의 공식문서에서는 Django 버젼 4.0, Python 3.8 이후의 버젼을 지원합니다. 이전 버젼의 Python의 경우 faq-python-version-supprot에서 호환되는 Django를 이용할 것 새로 작업을 하는 경우 버젼확인은 필수불가결적인 것이다. 프로젝트 만들기 $ django-admin startproject mysite 장고의 프로젝트를 기획할 때 코드를 자동으로...","categories": ["장고"],
         "tags": ["장고"],
         "url": "/%EC%9E%A5%EA%B3%A0/Django_learn_4/",
         "teaser": null
       },{
-        "title": "Django 공식문서 - 5",
+        "title": "[파이썬][라이브러리] Django 공식문서 - 5",
         "excerpt":"[출처 : 장고 공식문서] 설문조사 앱 만들기 🔥 프로젝트와 앱의 차이점 앱은 블로그 시스템, 공개 기록 데이터베이스 또는 소규모 의견조사 앱과 같은 작업을 수행하는 웹 어플리케이션이다. 프로젝트는 특정 웹 사이트에 대한 구성 및 앱의 모음이다. 그러므로 프로젝트에는 여러 개의 앱이 포함이 될 수 있고, 앱은 여러 프로젝트에 있을 수 있다....","categories": ["장고"],
         "tags": ["장고"],
         "url": "/%EC%9E%A5%EA%B3%A0/Django_learn_5/",
         "teaser": null
       },{
-        "title": "Django 공식문서 - 6",
+        "title": "[파이썬][라이브러리] Django 공식문서 - 6",
         "excerpt":"[출처 : 장고 공식문서] 데이터베이스 설치 mysite/settings.py 파일을 중심으로 이루어집니다. 장고는 기본적으로 SQLite를 사용하도록 구성되어 있다. 이는 파이썬에서 기본으로 제공되기때문에 사용하는 것이다. 다른 데이터베이스를 사용하고 싶다면, 적절한 데이터베이스 바인딩을 설치해줘야한다. DATABASES의 ‘default’값을 밑의 리스트중 바꿔주면 된다. ENGINE django.db.backends.sqlite3 django.db.backends.postgresql django.db.backends.mysql django.db.beckends.oracle 이외에도 SQLite를 제외한 다른 데이터베이스를 사용할 경우 여러 설정들이...","categories": ["장고"],
         "tags": ["장고"],
         "url": "/%EC%9E%A5%EA%B3%A0/Django_learn_6/",
         "teaser": null
       },{
-        "title": "Django 공식문서 - 7",
+        "title": "[파이썬][라이브러리] Django 공식문서 - 7",
         "excerpt":"[출처 : 장고 공식문서] 모델 만들기 장고에서의 모델이란 부가적인 메타데이터를 가진 데이터베이스의 구조를 말한다. 현재 수정중인 파일은 polls/models from django.db import models class Question(models.Model): question_text = models.CharField(max_length=200) pub_date = models.DateTimeField('date published') class Choice(models.Model): question = models.ForeignKey(Question, on_delete=models.CASCADE) choice_text = models.CharField(max_length=200) votes = models.IntegerField(default=0) 장고 공식문서에서는 여론조사 앱을 만든다. 그래서 여기서...","categories": ["장고"],
         "tags": ["장고"],
         "url": "/%EC%9E%A5%EA%B3%A0/Django_learn_7/",
         "teaser": null
       },{
-        "title": "Django 공식문서 - 8",
+        "title": "[파이썬][라이브러리] Django 공식문서 - 8",
         "excerpt":"[출처 : 장고 공식문서] API 가지고 놀기 쉘을 통해 장고의 API를 자유롭게 가지고 놀아보자 $ python manage.py shell 쉘에 진입한 이후에는 데이터베이스 API를 사용할 수 있게 된다. 영문의 내용을 직역한 것이므로 약간 이상할수도 있습니다! &gt;&gt;&gt; from polls.models import Choice, Question # 방금 만든 모델의 클래스를 불러온다. # 아직 작성한 질문이...","categories": ["장고"],
         "tags": ["장고"],
         "url": "/%EC%9E%A5%EA%B3%A0/Django_learn_8/",
         "teaser": null
       },{
-        "title": "하루를 시작하는 곳",
+        "title": "[일상] 하루를 시작하는 곳",
         "excerpt":"나만의 작업 공간 🧑🏻‍💻 위의 사진은 내가 컴퓨터 앞의 공간이다. 이번에 중국 공제자인 Gaf가 장패드를 다시 재출시해서 사봤는데 결제부터 집에 도착까지 거의 2달 가량이 걸린 것 같다. 두 달이라는 시간동안 나는 정말 바쁘게 살아왔다. 지금도 너무 바빠서 하루하루 블로그에 글을 계속 옮기고는 있지만, 뭔가 나는 하나라도 마음에 걸리는 게 있으면...","categories": ["일상"],
         "tags": ["일상"],
         "url": "/%EC%9D%BC%EC%83%81/%ED%95%98%EB%A3%A8%EB%A5%BC-%EC%8B%9C%EC%9E%91%ED%95%98%EB%8A%94-%EA%B3%B3/",
         "teaser": null
       },{
-        "title": "너무 더운 하루",
+        "title": "[일상] 너무 더운 하루",
         "excerpt":"너무 더워 🔥 날씨가 점점 더워진다. 지금은 7월의 대한민국, 여름의 피크라고 불리는 나날들이 이어지고 있다. 나는 오늘도 뜨거운 태양볕에 노트북을 키고 조용히 키보드 위에 손을 올린다. 내가 살고 있는 자취방은 쓰리룸인데, 그 중 내가 공부할 때 들어가는 방은 창이 굉장히 크게 나있어서 햇빛이 엄청 들어온다. 물론 커튼을 치고 공부하는 방법도...","categories": ["일상"],
         "tags": ["일상"],
         "url": "/%EC%9D%BC%EC%83%81/%EB%84%88%EB%AC%B4-%EB%8D%94%EC%9A%B4-%ED%95%98%EB%A3%A8/",
         "teaser": null
       },{
-        "title": "셀레니움 업데이트로 인한 변경",
+        "title": "[파이썬][라이브러리] 셀레니움 업데이트로 인한 변경",
         "excerpt":"갑작스러운 셀레니움 4.3.0 변경 Selenium 4.3.0 * Deprecated find_element_by_* and find_elements_by_* are now removed (#10712) * Deprecated Opera support has been removed (#10630) * Fully upgraded from python 2x to 3.7 syntax and features (#10647) * Added a devtools version fallback mechanism to look for an older version when mismatch...","categories": ["데이터 수집"],
         "tags": ["데이터 수집","Selenium"],
         "url": "/%EB%8D%B0%EC%9D%B4%ED%84%B0%20%EC%88%98%EC%A7%91/selenium_fixed/",
         "teaser": null
       },{
-        "title": "RDKit에 대해",
+        "title": "[파이썬][라이브러리] RDKit에 대해",
         "excerpt":"해당 정보는 RDKit 공식 홈페이지 문서를 기반으로 작성되었습니다. 공식 깃허브 홈페이지는 rdkit RDKit이란? RDKit은 cheminformatics 툴킷이라고 불리는 화학 정보학 오픈소스 라이브러리이다. 화학물질의 구조정보를 담보있는 파일형식의 데이터 또는 구조를 그리거나 해석해야하는 상황에서 자주 사용되는 툴이다. 대표적으로 사용할 수 있는 프로젝트에는 독성물질 예측과 같은 분석이나 신약 개발과 같은 개발에 사용된다. rdkit 설치...","categories": ["화학 정보학"],
         "tags": ["화학 정보학","rdkit"],
         "url": "/%ED%99%94%ED%95%99%20%EC%A0%95%EB%B3%B4%ED%95%99/about_rdkit/",
         "teaser": null
       },{
-        "title": "NetworkX로 분자구조 그리기",
+        "title": "[파이썬][라이브러리] NetworkX로 분자구조 그리기",
         "excerpt":"해당 정보는 NetworkX 공식 홈페이지 문서를 기반으로 작성되었습니다. 공식 깃허브 홈페이지는 networkx NetworkX란? 이전에는 RDKit에 대해 알아봤는데 NetworkX의 경우 복잡한 네트워크형 오픈소스 라이브러리이다. 공식 홈페이지에서는 역학의 기능을 생성하거나 조작 또는 연구에 사용된다고 명시되어있다. 설치하기 $ pip install networkx pip을 통해서 보다 쉽게 설치가 가능하다. $ pip install networkx[all] 공식 사이트에서는...","categories": ["화학 정보학"],
         "tags": ["화학 정보학","Networkx"],
         "url": "/%ED%99%94%ED%95%99%20%EC%A0%95%EB%B3%B4%ED%95%99/Networkx_rdkit/",
@@ -1969,7 +2017,7 @@ var store = [{
       },{
         "title": "[파이썬][프로그래머스] 키패드 누르기",
         "excerpt":"1. 문제 [level 1] [카카오 인턴] 키패드 누르기 - 67256 문제 링크 성능 요약 메모리: 10.2 MB, 시간: 0.38 ms 구분 코딩테스트 연습 &gt; 2020 카카오 인턴십 채점결과 정확성: 100.0 합계: 100.0 / 100.0 문제 설명 스마트폰 전화 키패드의 각 칸에 다음과 같이 숫자들이 적혀 있습니다. 이 전화 키패드에서 왼손과 오른손의 엄지손가락만을 이용해서...","categories": ["코딩테스트"],
-        "tags": ["알고리즘","파이썬","코테","프로그래머스","Level_2"],
+        "tags": ["알고리즘","파이썬","코테","프로그래머스","Level_1"],
         "url": "/%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8/67256/",
         "teaser": null
       },{
@@ -1977,5 +2025,65 @@ var store = [{
         "excerpt":"1. 문제 [level 2] 피보나치 수 - 12945 문제 링크 성능 요약 메모리: 13.8 MB, 시간: 21.19 ms 구분 코딩테스트 연습 &gt; 연습문제 채점결과 정확성: 100.0 합계: 100.0 / 100.0 문제 설명 피보나치 수는 F(0) = 0, F(1) = 1일 때, 1 이상의 n에 대하여 F(n) = F(n-1) + F(n-2) 가...","categories": ["코딩테스트"],
         "tags": ["알고리즘","파이썬","코테","프로그래머스","Level_2"],
         "url": "/%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8/12945/",
+        "teaser": null
+      },{
+        "title": "[파이썬][프로그래머스] 피보나치 수",
+        "excerpt":"1. 문제 [level 2] 전화번호 목록 - 42577 문제 링크 성능 요약 메모리: 28 MB, 시간: 86.59 ms 구분 코딩테스트 연습 &gt; 해시 채점결과 정확성: 83.3 효율성: 16.7 합계: 100.0 / 100.0 문제 설명 전화번호부에 적힌 전화번호 중, 한 번호가 다른 번호의 접두어인 경우가 있는지 확인하려 합니다. 전화번호가 다음과 같을 경우,...","categories": ["코딩테스트"],
+        "tags": ["알고리즘","파이썬","코테","프로그래머스","Level_2"],
+        "url": "/%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8/42577/",
+        "teaser": null
+      },{
+        "title": "[파이썬][프로그래머스] 멀리 뛰기",
+        "excerpt":"1. 문제 [level 2] 멀리 뛰기 - 12914 문제 링크 성능 요약 메모리: 10.2 MB, 시간: 0.60 ms 구분 코딩테스트 연습 &gt; 연습문제 채점결과 정확성: 100.0 합계: 100.0 / 100.0 문제 설명 효진이는 멀리 뛰기를 연습하고 있습니다. 효진이는 한번에 1칸, 또는 2칸을 뛸 수 있습니다. 칸이 총 4개 있을 때, 효진이는...","categories": ["코딩테스트"],
+        "tags": ["알고리즘","파이썬","코테","프로그래머스","Level_2"],
+        "url": "/%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8/12914/",
+        "teaser": null
+      },{
+        "title": "[파이썬][프로그래머스] 프린터",
+        "excerpt":"1. 문제 [level 2] 프린터 - 42587 문제 링크 성능 요약 메모리: 10.2 MB, 시간: 0.20 ms 구분 코딩테스트 연습 &gt; 스택／큐 채점결과 정확성: 100.0 합계: 100.0 / 100.0 문제 설명 일반적인 프린터는 인쇄 요청이 들어온 순서대로 인쇄합니다. 그렇기 때문에 중요한 문서가 나중에 인쇄될 수 있습니다. 이런 문제를 보완하기 위해 중요도가...","categories": ["코딩테스트"],
+        "tags": ["알고리즘","파이썬","코테","프로그래머스","Level_2"],
+        "url": "/%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8/42587/",
+        "teaser": null
+      },{
+        "title": "[파이썬][프로그래머스] 숫자 블록",
+        "excerpt":"1. 문제 [level 2] 숫자 블록 - 12923 문제 링크 성능 요약 메모리: 10.2 MB, 시간: 727.81 ms 구분 코딩테스트 연습 &gt; 연습문제 채점결과 정확성: 70.0 효율성: 30.0 합계: 100.0 / 100.0 문제 설명 그렙시에는 0으로 된 도로에 숫자 블록을 설치하기로 하였습니다. 숫자 블록의 규칙은 다음과 같습니다. 블록의 번호가 n 일...","categories": ["코딩테스트"],
+        "tags": ["알고리즘","파이썬","코테","프로그래머스","Level_2"],
+        "url": "/%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8/12923/",
+        "teaser": null
+      },{
+        "title": "[파이썬][프로그래머스] 모음 사전",
+        "excerpt":"1. 문제 [level 2] 모음 사전 - 84512 문제 링크 성능 요약 메모리: 10.3 MB, 시간: 0.01 ms 구분 코딩테스트 연습 &gt; 완전탐색 채점결과 정확성: 100.0 합계: 100.0 / 100.0 문제 설명 사전에 알파벳 모음 'A', 'E', 'I', 'O', 'U'만을 사용하여 만들 수 있는, 길이 5 이하의 모든 단어가 수록되어 있습니다....","categories": ["코딩테스트"],
+        "tags": ["알고리즘","파이썬","코테","프로그래머스","Level_2"],
+        "url": "/%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8/84512/",
+        "teaser": null
+      },{
+        "title": "[파이썬][추천 알고리즘] Collaborative Filtering (협업 필터링)",
+        "excerpt":"협업 필터링(Collaborative Filtering) 추천 알고리즘의 2종류 관심사를 찾아본다. → Content Based Filtering 취향을 찾아본다. → Collaborative Filtering 특징 정보가 축적된 데이터를 기반으로 추천 예시 검은셔츠 구매이력 소비자(1)가 검은 셔츠를 사면서 청바지를 샀다. 소비자(2)가 검은 셔츠를 사면서 슬랙스를 샀다. 소비자(3)가 검은 셔츠를 샀다. 소비자(4)가 검은 셔츠를 사면서 양말을 샀다. … 소비자(123)가...","categories": ["추천 시스템"],
+        "tags": ["추천 시스템"],
+        "url": "/%EC%B6%94%EC%B2%9C%20%EC%8B%9C%EC%8A%A4%ED%85%9C/Collaborative_Filtering/",
+        "teaser": null
+      },{
+        "title": "[파이썬][라이브러리] 모델 학습에 필요한 가짜 유저 정보 만들기",
+        "excerpt":"데이터가 필요한데 구할수가 없어 어느날 추천시스템을 구현하게 될 날이 생겼다. 구현에 필요한 데이터가 너무 부족해서 직접 데이터를 구하거나, 만들어야하는 상황에 쳐했을 때 해당 라이브러리가 많이 도움이 되었다. 프로토타입을 제작중이여서 해당 라이브러리를 통해 보다 빠르게 작업에 들어갈 수 있었다. ++ 생각보다 퀄리티가 은근 좋다. (다국어를 지원한다는 점!) Faker 시제품 개발 또는...","categories": ["데이터 수집"],
+        "tags": ["데이터 수집","Faker"],
+        "url": "/%EB%8D%B0%EC%9D%B4%ED%84%B0%20%EC%88%98%EC%A7%91/faker_user/",
+        "teaser": null
+      },{
+        "title": "[데이터베이스] 객체 관계형 데이터베이스 매핑",
+        "excerpt":"ORM (Object Relational Mapping) 객체 관계형 데이터베이스로 자동으로 매핑해주는 것을 의미한다. 객체간의 관계를 바탕으로 기존에 발생했던 객체 모델과 관계형 모델간의 불일치를 완화시켜주고 해결해준다. DB &lt;-&gt; Mapping &lt;-&gt; Object Field 이와 같은 개념으로 객체를 통해 간접적으로 데이터베이스의 데이터들을 다루는 것을 말한다. 장점 Object Relational 객체 지향적인 코드로 인해서 직관적이면서 로직적으로 구현할...","categories": ["데이터베이스"],
+        "tags": ["데이터베이스","ORM"],
+        "url": "/%EB%8D%B0%EC%9D%B4%ED%84%B0%EB%B2%A0%EC%9D%B4%EC%8A%A4/ORM/",
+        "teaser": null
+      },{
+        "title": "[파이썬][프로그래머스] 성격 유형 검사하기",
+        "excerpt":"1. 문제 [unrated] 성격 유형 검사하기 - 118666 문제 링크 성능 요약 메모리: 10.3 MB, 시간: 0.12 ms 구분 코딩테스트 연습 &gt; 2022 KAKAO TECH INTERNSHIP 채점결과 정확성: 100.0 합계: 100.0 / 100.0 문제 설명 나만의 카카오 성격 유형 검사지를 만들려고 합니다. 성격 유형 검사는 다음과 같은 4개 지표로 성격 유형을 구분합니다. 성격은 각...","categories": ["코딩테스트"],
+        "tags": ["알고리즘","파이썬","코테","프로그래머스","unrated"],
+        "url": "/%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8/118666/",
+        "teaser": null
+      },{
+        "title": "[Github] 깃허브 커밋 Rule",
+        "excerpt":"user@cmblir:~$ git add user@cmblir:~$ git commit -m \"Update getting started documentation with git commit\" user@cmblir:~$ git push origin main 깃허브에 커밋하는 것도 규칙이 다 있었다. github commit rules 개발자라면 깃허브를 매일 마주하게 될 것이다. 저또한 1일 1커밋 운동을 하면서 매일매일 깃허브를 사용했었는데 가끔 드는 의문점이 있었습니다. 커밋을 이렇게 막 올려도...","categories": ["깃"],
+        "tags": ["깃허브","깃"],
+        "url": "/%EA%B9%83/github_commit_rules/",
         "teaser": null
       }]

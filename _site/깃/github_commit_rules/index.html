@@ -1,0 +1,984 @@
+<!doctype html>
+<!--
+  Minimal Mistakes Jekyll Theme 4.24.0 by Michael Rose
+  Copyright 2013-2020 Michael Rose - mademistakes.com | @mmistakes
+  Free for personal and commercial use under the MIT license
+  https://github.com/mmistakes/minimal-mistakes/blob/master/LICENSE
+-->
+<html lang="ko" class="no-js">
+  <head>
+    <meta charset="utf-8">
+
+<!-- begin _includes/seo.html --><title>[Github] 깃허브 커밋 Rule - 성장형 개발자 블로그</title>
+<meta name="description" content="알고 하는 커밋 법칙">
+
+
+  <meta name="author" content="You Nicholas">
+  
+  <meta property="article:author" content="You Nicholas">
+  
+
+
+<meta property="og:type" content="article">
+<meta property="og:locale" content="ko">
+<meta property="og:site_name" content="성장형 개발자 블로그">
+<meta property="og:title" content="[Github] 깃허브 커밋 Rule">
+<meta property="og:url" content="http://localhost:4000/%EA%B9%83/github_commit_rules/">
+
+
+  <meta property="og:description" content="알고 하는 커밋 법칙">
+
+
+
+
+
+
+
+  <meta property="article:published_time" content="2022-09-19T00:00:00+09:00">
+
+
+
+  <meta property="article:modified_time" content="2022-09-19T00:00:00+09:00">
+
+
+
+  
+
+  
+
+
+<link rel="canonical" href="http://localhost:4000/%EA%B9%83/github_commit_rules/">
+
+
+
+
+<script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    
+      "@type": "Person",
+      "name": "Yoo Nicholas",
+      "url": "http://localhost:4000/"
+    
+  }
+</script>
+
+
+
+
+
+
+
+<!-- end _includes/seo.html -->
+
+
+
+  <link href="/feed.xml" type="application/atom+xml" rel="alternate" title="성장형 개발자 블로그 Feed">
+
+
+<!-- https://t.co/dKP3o1e -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script>
+  document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
+</script>
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="/assets/css/main.css">
+<link rel="preload" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css"></noscript>
+
+
+
+    <!-- start custom head snippets -->
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4206652111439335"
+     crossorigin="anonymous"></script>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({
+          google_ad_client: "ca-pub-5218184138518164",
+          enable_page_level_ads: true
+     });
+</script>
+<!-- insert favicons. use https://realfavicongenerator.net/ -->
+
+<!-- end custom head snippets -->
+
+  </head>
+
+  <body class="layout--single">
+    <nav class="skip-links">
+  <ul>
+    <li><a href="#site-nav" class="screen-reader-shortcut">Skip to primary navigation</a></li>
+    <li><a href="#main" class="screen-reader-shortcut">Skip to content</a></li>
+    <li><a href="#footer" class="screen-reader-shortcut">Skip to footer</a></li>
+  </ul>
+</nav>
+
+    
+
+<div class="masthead">
+  <div class="masthead__inner-wrap">
+    <div class="masthead__menu">
+      <nav id="site-nav" class="greedy-nav">
+        
+        <a class="site-title" href="/">
+          성장형 개발자 블로그
+          
+        </a>
+        <ul class="visible-links"><li class="masthead__menu-item">
+              <a href="/about/">소개글</a>
+            </li><li class="masthead__menu-item">
+              <a href="/categories/">카테고리</a>
+            </li><li class="masthead__menu-item">
+              <a href="/tags/">태그</a>
+            </li></ul>
+        
+        <button class="greedy-nav__toggle hidden" type="button">
+          <span class="visually-hidden">토글 메뉴</span>
+          <div class="navicon"></div>
+        </button>
+        <ul class="hidden-links hidden"></ul>
+      </nav>
+    </div>
+  </div>
+</div>
+
+
+    <div class="initial-content">
+      
+
+
+
+
+
+<div id="main" role="main">
+  
+  <div class="sidebar sticky">
+  
+
+
+<div itemscope itemtype="https://schema.org/Person" class="h-card">
+
+  
+    <div class="author__avatar">
+      <a href="http://localhost:4000/">
+        <img src="https://avatars.githubusercontent.com/u/75519839?v=4" alt="You Nicholas" itemprop="image" class="u-photo">
+      </a>
+    </div>
+  
+
+  <div class="author__content">
+    <h3 class="author__name p-name" itemprop="name">
+      <a class="u-url" rel="me" href="http://localhost:4000/" itemprop="url">You Nicholas</a>
+    </h3>
+    
+      <div class="author__bio p-note" itemprop="description">
+        <p>가고 가고 또 가면 <strong>알게되고</strong>, 행하고 행하고 또 행하게 되면 <strong>이루게 된다.</strong></p>
+
+      </div>
+    
+  </div>
+
+  <div class="author__urls-wrapper">
+    <button class="btn btn--inverse">팔로우</button>
+    <ul class="author__urls social-icons">
+      
+        <li itemprop="homeLocation" itemscope itemtype="https://schema.org/Place">
+          <i class="fas fa-fw fa-map-marker-alt" aria-hidden="true"></i> <span itemprop="name" class="p-locality">Republic of Korea</span>
+        </li>
+      
+
+      
+        
+          
+            <li><a href="godhin:sodlalwl13e@gmail.com" rel="nofollow noopener noreferrer me"><i class="fas fa-fw fa-envelope-square" aria-hidden="true"></i><span class="label">Email</span></a></li>
+          
+        
+          
+        
+          
+        
+          
+        
+          
+            <li><a href="https://github.com/godhin" rel="nofollow noopener noreferrer me" itemprop="sameAs"><i class="fab fa-fw fa-github" aria-hidden="true"></i><span class="label">GitHub</span></a></li>
+          
+        
+          
+            <li><a href="https://instagram.com/cmblir" rel="nofollow noopener noreferrer me" itemprop="sameAs"><i class="fab fa-fw fa-instagram" aria-hidden="true"></i><span class="label">Instagram</span></a></li>
+          
+        
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      <!--
+  <li>
+    <a href="http://link-to-whatever-social-network.com/user/" itemprop="sameAs" rel="nofollow noopener noreferrer me">
+      <i class="fas fa-fw" aria-hidden="true"></i> Custom Social Profile Link
+    </a>
+  </li>
+-->
+    </ul>
+  </div>
+</div>
+
+  
+  </div>
+
+
+
+  <article class="page h-entry" itemscope itemtype="https://schema.org/CreativeWork">
+    <meta itemprop="headline" content="[Github] 깃허브 커밋 Rule">
+    <meta itemprop="description" content="알고 하는 커밋 법칙">
+    <meta itemprop="datePublished" content="2022-09-19T00:00:00+09:00">
+    <meta itemprop="dateModified" content="2022-09-19T00:00:00+09:00">
+
+    <div class="page__inner-wrap">
+      
+        <header>
+          <h1 id="page-title" class="page__title p-name" itemprop="headline">
+            <a href="http://localhost:4000/%EA%B9%83/github_commit_rules/" class="u-url" itemprop="url">[Github] 깃허브 커밋 Rule
+</a>
+          </h1>
+          
+
+  <p class="page__meta">
+    
+
+    
+
+    
+      
+      
+
+      <span class="page__meta-readtime">
+        <i class="far fa-clock" aria-hidden="true"></i>
+        
+          3 분 소요
+        
+      </span>
+    
+  </p>
+
+
+        </header>
+      
+
+      <section class="page__content e-content" itemprop="text">
+        
+          <aside class="sidebar__right sticky">
+            <nav class="toc">
+              <header><h4 class="nav__title"><i class="fas fa-file-alt"></i> On This Page</h4></header>
+              <ul class="toc__menu"><li><a href="#github-commit-rules">github commit rules</a><ul><li><a href="#what-is-commit">What is commit?</a></li></ul></li><li><a href="#commit-message-structure">commit message structure</a></li><li><a href="#specifics-for-length-summary">Specifics for length Summary</a></li><li><a href="#reject-these-formats">Reject these formats</a></li><li><a href="#commit-standard-terminology">commit standard terminology</a><ul><li><a href="#예시들">예시들</a></li></ul></li><li><a href="#optional">Optional</a><ul><li><a href="#use-footer">use footer</a></li><li><a href="#use-contact-email-address">use contact email address</a></li><li><a href="#use-task-tracking-links">use task tracking links</a></li><li><a href="#use-resource-tracking-metrics">use resource tracking metrics</a></li><li><a href="#use-keywords-importance-references">use keywords, importance, references</a></li></ul></li><li><a href="#a-good-example">a good example</a></li><li><a href="#reference">Reference</a></li></ul></li></ul>
+
+            </nav>
+          </aside>
+        
+        <div class="language-console highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="gp">user@cmblir:~$</span><span class="w"> </span>git add
+<span class="gp">user@cmblir:~$</span><span class="w"> </span>git commit <span class="nt">-m</span> <span class="s2">"Update getting started documentation with git commit"</span>
+<span class="gp">user@cmblir:~$</span><span class="w"> </span>git push origin main
+</code></pre></div></div>
+
+<p><em>깃허브에 커밋하는 것도 규칙이 다 있었다.</em></p>
+
+<h1 id="github-commit-rules">github commit rules</h1>
+
+<p>개발자라면 깃허브를 매일 마주하게 될 것이다.</p>
+
+<p>저또한 1일 1커밋 운동을 하면서 매일매일 깃허브를 사용했었는데 가끔 드는 의문점이 있었습니다.</p>
+
+<blockquote>
+  <p>커밋을 이렇게 막 올려도 되는건가? 나중에 log 찾아볼 때 헷갈리면 어떡하지</p>
+</blockquote>
+
+<p>그러던 와중 찾게된 깃허브 커밋 법칙!</p>
+
+<h3 id="what-is-commit">What is commit?</h3>
+
+<blockquote>
+  <p>commit은 의미있는 변화에 대해 기록하는 것을 말합니다.<br /> 해당 기록들은 <code class="language-plaintext highlighter-rouge">$ git log</code>를 통해서 기록들을 살필 수 있는데, 이의 경우 여러가지 방면에서 프로젝트의 진행과정 또는 같은 팀 동료의 수정사항을 확인 할 수 있는 좋은 지표가 될 수 있습니다.</p>
+</blockquote>
+
+<h2 id="commit-message-structure">commit message structure</h2>
+
+<ul>
+  <li>커밋의 구조는 아래와 같다.</li>
+</ul>
+
+<div class="language-markdown highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Type : Subject
+
+body
+
+footer
+</code></pre></div></div>
+
+<h2 id="specifics-for-length-summary">Specifics for length Summary</h2>
+
+<div class="language-text highlighter-rouge"><div class="highlight"><pre class="highlight"><code>The purpose is easy readability.
+
+This is the git official convention.
+
+This is the same convention as writing an email message.
+</code></pre></div></div>
+
+<ul>
+  <li>일반적으로 깃허브의 제목 커밋은 50글자 이내로 요약해야합니다.</li>
+  <li>본문의 경우 72글자 이내로 요약해야 한다.</li>
+</ul>
+
+<p>다음과 같은 조건을 따르는 것을 추천한다.</p>
+<ol>
+  <li>마침표 사용을 하지 않는다.</li>
+  <li>아래 Standard Terminology</li>
+  <li>과거시제를 사용하지 않는다.</li>
+  <li>본문은 첫 줄을 띄워서 분리한다.</li>
+</ol>
+
+<p>이유는 다음과 같습니다.</p>
+<ol>
+  <li>쉬운 가독성</li>
+  <li>git 공식 컨벤션</li>
+  <li>이메일 메시지 작성법과 동일</li>
+</ol>
+
+<ul>
+  <li>줄바꿈을 하는 경우 한 줄에 최대 72자까지 허용됩니다.</li>
+</ul>
+
+<h2 id="reject-these-formats">Reject these formats</h2>
+
+<p>커밋에서는 아래와 같은 형식을 일반적으로 허용하지 않습니다.</p>
+
+<ol>
+  <li>[bug]</li>
+  <li>(release)</li>
+  <li>#12345</li>
+  <li>docs:</li>
+  <li>JIRA-666 #time #resolve</li>
+  <li>ticket ID number</li>
+</ol>
+
+<blockquote>
+  <p>시간 추적 구문 사용을 권장하지 않습니다.<br />
+<em>대신 시간 추적을 원한다면 메시지 본문에 “YYYY-MM-DDTHH:MM:SSZ” 형식의 ISO 8601 포맷을 적용해서 사용하세요.</em></p>
+</blockquote>
+
+<h2 id="commit-standard-terminology">commit standard terminology</h2>
+
+<blockquote>
+  <p><em>Thank you for your reference in writing and for your help, Joel Parker Handerson and Pierre. :)</em></p>
+</blockquote>
+
+<blockquote>
+  <p><em>해당 게시글을 쓰면서 참조하였고 도움이 되준 Joel Parker Handerson과 Pierre의 글에 감사합니다. :)</em></p>
+</blockquote>
+
+<blockquote>
+  <p>글에 앞서 Refactoring(리팩토링)은 소프트웨어 공학에서 ‘결과의 변경 없이 코드의 구조를 재조정’ 하는 경우를 말한다.</p>
+</blockquote>
+
+<ol>
+  <li>Add
+    <ul>
+      <li>기능, 테스트, 종속성과 같은 기능을 만들때 사용</li>
+    </ul>
+  </li>
+  <li>Cut
+    <ul>
+      <li>기능, 테스트, 종속성과 같은 기능을 삭제</li>
+    </ul>
+  </li>
+  <li>Fix
+    <ul>
+      <li>버그, 오타, 문제, 또는 잘못된 설명들을 수정</li>
+    </ul>
+  </li>
+  <li>Bump
+    <ul>
+      <li>종속성 버전을 수정</li>
+    </ul>
+  </li>
+  <li>Make
+    <ul>
+      <li>빌드 프로세스, 도구 또는 인프라를 변경</li>
+    </ul>
+  </li>
+  <li>Start
+    <ul>
+      <li>무언가를 시작하거나 기능 플래그를 추가</li>
+    </ul>
+  </li>
+  <li>Stop
+    <ul>
+      <li>무언가를 끝내거나 기능 플래그를 삭제</li>
+    </ul>
+  </li>
+  <li>Stop
+    <ul>
+      <li>단지 리팩도링해야하는 코드를 변경</li>
+    </ul>
+  </li>
+  <li>Refactor
+    <ul>
+      <li>단순한 리팩토링</li>
+    </ul>
+  </li>
+  <li>Reformat
+    <ul>
+      <li>서식에 대해 리팩토링 진행</li>
+      <li>예시 : 공백 생략</li>
+    </ul>
+  </li>
+  <li>Optimize
+    <ul>
+      <li>퍼포먼스에 대해 리팩토링 진행</li>
+      <li>예시 : 코드 속도 향상, 성능 향상</li>
+    </ul>
+  </li>
+  <li>Document
+    <ul>
+      <li>도움말 파일과 같은 문서 리팩토링</li>
+    </ul>
+  </li>
+  <li>Rearrange
+    <ul>
+      <li>위치를 조정할 때 사용</li>
+    </ul>
+  </li>
+  <li>Redraw
+    <ul>
+      <li>웹 앱이 작동하는 것을 확인</li>
+    </ul>
+  </li>
+  <li>Reword
+    <ul>
+      <li>웹 상의 텍스트를 수정</li>
+    </ul>
+  </li>
+  <li>Chore
+    <ul>
+      <li>빌드 업무 수정, 패키지 매니저 수정</li>
+    </ul>
+  </li>
+  <li>Test
+    <ul>
+      <li>테스트 코드로 리팩토링 코드 추가</li>
+    </ul>
+  </li>
+  <li>Style
+    <ul>
+      <li>세미콜론 누락이나 코드 변경이 없는 경우</li>
+    </ul>
+  </li>
+  <li>Docs
+    <ul>
+      <li>문서 수정</li>
+    </ul>
+  </li>
+  <li>Feat
+    <ul>
+      <li>새로운 기능 추가</li>
+    </ul>
+  </li>
+</ol>
+
+<blockquote>
+  <p>이외에도 커밋의 경우 What, Why 형식에 맞춰서 써야한다. <br />
+무엇을 왜 하였는지</p>
+</blockquote>
+
+<hr />
+
+<h3 id="예시들">예시들</h3>
+
+<ol>
+  <li>좋은 예시</li>
+</ol>
+
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">Refactor Subsystem X for readability</code></li>
+  <li><code class="language-plaintext highlighter-rouge">Update getting started documentation</code></li>
+  <li><code class="language-plaintext highlighter-rouge">Remove deprecated methods</code></li>
+  <li><code class="language-plaintext highlighter-rouge">Release Version 1.0.0</code></li>
+</ul>
+
+<ol>
+  <li>나쁜 예시</li>
+</ol>
+
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">fixed bug with Y</code></li>
+  <li><code class="language-plaintext highlighter-rouge">changing behavior of X</code></li>
+</ul>
+
+<ol>
+  <li>매우 나쁜 예시</li>
+</ol>
+
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">More fixes for broken stuff</code></li>
+  <li><code class="language-plaintext highlighter-rouge">Sweet new API methods</code></li>
+  <li><code class="language-plaintext highlighter-rouge">42</code></li>
+</ul>
+
+<h2 id="optional">Optional</h2>
+<p><strong>아래의 내용은 선택사항입니다. 참고하면 좋은 내용이라서 정리해봤습니다.</strong></p>
+
+<h3 id="use-footer">use footer</h3>
+<ul>
+  <li>커밋에 꼬릿말을 작성하는 방법이다.</li>
+  <li>주로 Issue Tracker ID 작성시 사용된다.</li>
+</ul>
+
+<div class="language-console highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="gp">user@cmblir:~$</span><span class="w"> </span>git add
+<span class="gp">user@cmblir:~$</span><span class="w"> </span>git commit <span class="nt">-m</span> <span class="s2">"Resolves: #42"</span>
+<span class="go">또는
+</span><span class="gp">user@cmblir:~$</span><span class="w"> </span>git commit <span class="nt">-m</span> <span class="s2">"See also: # 42"</span>
+<span class="gp">user@cmblir:~$</span><span class="w"> </span>git push origin main
+</code></pre></div></div>
+
+<h3 id="use-contact-email-address">use contact email address</h3>
+<ul>
+  <li>커밋 작업을 두 명 이상이서 작업을 할경우 페어 프로그래밍을 해야합니다.</li>
+  <li>이를 위해서 추적이 가능하게 커밋할 때 한 줄에 본인의 이메일을 첨부합니다.</li>
+</ul>
+
+<div class="language-console highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="gp">user@cmblir:~$</span><span class="w"> </span>git add
+<span class="gp">user@cmblir:~$</span><span class="w"> </span>git commit <span class="nt">-m</span> <span class="s2">"Co-authored-by : Nicholas yoo &lt;cmblir@google.com&gt;"</span>
+<span class="gp">user@cmblir:~$</span><span class="w"> </span>git push origin main
+</code></pre></div></div>
+
+<h3 id="use-task-tracking-links">use task tracking links</h3>
+<ul>
+  <li>작업 추적 시스템을 사용해서 더 자세하게 해당 웹페이지에 설명을 해줍니다.</li>
+  <li>이런 방식을 분석이 좀 더 쉬워집니다.</li>
+</ul>
+
+<div class="language-console highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="gp">user@cmblir:~$</span><span class="w"> </span>git add
+<span class="gp">user@cmblir:~$</span><span class="w"> </span>git commit <span class="nt">-m</span> <span class="s2">"See: [Request for help with sign in](https://github.com/cmblir/repo/~~)"</span>
+<span class="go">또는
+</span><span class="gp">user@cmblir:~$</span><span class="w"> </span>git commit <span class="nt">-m</span> <span class="s2">"See: [Add feature foo](https://python.org/123)"</span>
+<span class="go">또는
+</span><span class="gp">user@cmblir:~$</span><span class="w"> </span>git commit <span class="nt">-m</span> <span class="s2">"See: [Wikipedia Quicksort](https://wikipedia/quicksort)"</span>
+<span class="gp">user@cmblir:~$</span><span class="w"> </span>git push origin main
+</code></pre></div></div>
+
+<h3 id="use-resource-tracking-metrics">use resource tracking metrics</h3>
+<ul>
+  <li>리소스 추적 시스템또는 메트릭 스크립트를 만들어줍니다.</li>
+  <li>프로젝트 관리자가 커밋에 소요된 시간, 기능 분기별 스토리 포인트 추정 또는 버그 수정을 위해서 개발자 고용 비용을 추적해야하는 일부 스포젝트에서 용의합니다.</li>
+</ul>
+
+<div class="language-console highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="gp">user@cmblir:~$</span><span class="w"> </span>git add
+<span class="gp">user@cmblir:~$</span><span class="w"> </span>git commit <span class="nt">-m</span> <span class="s2">"Time : 7 staff hours"</span>
+<span class="go">또는
+</span><span class="gp">user@cmblir:~$</span><span class="w"> </span>git commit <span class="nt">-m</span> <span class="s2">"Cost : </span><span class="nv">$42</span><span class="s2">"</span>
+<span class="go">또는
+</span><span class="gp">user@cmblir:~$</span><span class="w"> </span>git commit <span class="nt">-m</span> <span class="s2">"Points : 42"</span>
+<span class="gp">user@cmblir:~$</span><span class="w"> </span>git push origin main
+</code></pre></div></div>
+
+<h3 id="use-keywords-importance-references">use keywords, importance, references</h3>
+<ul>
+  <li>중요도또는 우선 순위, 참조등을 사용합니다.</li>
+  <li>해당 로그를 통해서 작업하면서 볼 수 있는 것도 하나의 좋은 방법입니다.</li>
+</ul>
+
+<div class="language-console highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="gp">user@cmblir:~$</span><span class="w"> </span>git add
+<span class="gp">user@cmblir:~$</span><span class="w"> </span>git commit <span class="nt">-m</span> <span class="s2">"Keywords: Security, Encryption, authentication"</span>
+<span class="go">또는
+</span><span class="gp">user@cmblir:~$</span><span class="w"> </span>git commit <span class="nt">-m</span> <span class="s2">"Importance : High"</span>
+<span class="go">또는
+</span><span class="gp">user@cmblir:~$</span><span class="w"> </span>git commit <span class="nt">-m</span> <span class="s2">"References : [cmblir blog](https://cmblir.github.io)"</span>
+<span class="gp">user@cmblir:~$</span><span class="w"> </span>git push origin main
+</code></pre></div></div>
+
+<h2 id="a-good-example">a good example</h2>
+
+<h2 id="reference"><strong>Reference</strong></h2>
+
+<p>Reference :</p>
+
+<p><a href="https://github.com/joelparkerhenderson/git-commit-message">joel parker henderson github post</a></p>
+
+<p><a href="https://gist.github.com/turbo">Pierre github</a></p>
+
+<p><a href="https://wiki.openstack.org/wiki/GitCommitMessages#Information_in_commit_messages">openstack wiki</a></p>
+
+        
+      </section>
+
+      <footer class="page__meta">
+        
+        
+  
+
+
+  
+
+  <p class="page__taxonomy">
+    <strong><i class="fas fa-fw fa-tags" aria-hidden="true"></i> 태그: </strong>
+    <span itemprop="keywords">
+    
+      <a href="/tags/#%EA%B9%83" class="page__taxonomy-item p-category" rel="tag">깃</a><span class="sep">, </span>
+    
+      <a href="/tags/#%EA%B9%83%ED%97%88%EB%B8%8C" class="page__taxonomy-item p-category" rel="tag">깃허브</a>
+    
+    </span>
+  </p>
+
+
+
+
+  
+
+
+  
+
+  <p class="page__taxonomy">
+    <strong><i class="fas fa-fw fa-folder-open" aria-hidden="true"></i> 카테고리: </strong>
+    <span itemprop="keywords">
+    
+      <a href="/categories/#%EA%B9%83" class="page__taxonomy-item p-category" rel="tag">깃</a>
+    
+    </span>
+  </p>
+
+
+        
+
+  <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> 업데이트:</strong> <time class="dt-published" datetime="2022-09-19">September 19, 2022</time></p>
+
+      </footer>
+
+      <section class="page__share">
+  
+    <h4 class="page__share-title">공유하기</h4>
+  
+
+  <a href="https://twitter.com/intent/tweet?text=%5BGithub%5D+%EA%B9%83%ED%97%88%EB%B8%8C+%EC%BB%A4%EB%B0%8B+Rule%20http%3A%2F%2Flocalhost%3A4000%2F%25EA%25B9%2583%2Fgithub_commit_rules%2F" class="btn btn--twitter" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="공유하기 Twitter"><i class="fab fa-fw fa-twitter" aria-hidden="true"></i><span> Twitter</span></a>
+
+  <a href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Flocalhost%3A4000%2F%25EA%25B9%2583%2Fgithub_commit_rules%2F" class="btn btn--facebook" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="공유하기 Facebook"><i class="fab fa-fw fa-facebook" aria-hidden="true"></i><span> Facebook</span></a>
+
+  <a href="https://www.linkedin.com/shareArticle?mini=true&url=http%3A%2F%2Flocalhost%3A4000%2F%25EA%25B9%2583%2Fgithub_commit_rules%2F" class="btn btn--linkedin" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="공유하기 LinkedIn"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i><span> LinkedIn</span></a>
+</section>
+
+
+      
+  <nav class="pagination">
+    
+      <a href="/%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8/118666/" class="pagination--pager" title="[파이썬][프로그래머스] 성격 유형 검사하기
+">이전</a>
+    
+    
+      <a href="#" class="pagination--pager disabled">다음</a>
+    
+  </nav>
+
+    </div>
+
+    
+  </article>
+
+  
+  
+    <div class="page__related">
+      <h2 class="page__related-title">참고</h2>
+      <div class="grid__wrapper">
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title no_toc" itemprop="headline">
+      
+        <a href="/%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8/118666/" rel="permalink">[파이썬][프로그래머스] 성격 유형 검사하기
+</a>
+      
+    </h2>
+    
+
+  <p class="page__meta">
+    
+
+    
+
+    
+      
+      
+
+      <span class="page__meta-readtime">
+        <i class="far fa-clock" aria-hidden="true"></i>
+        
+          5 분 소요
+        
+      </span>
+    
+  </p>
+
+
+    <p class="archive__item-excerpt" itemprop="description">프로그래머스 성격 유형 검사하기 문제 풀이
+</p>
+  </article>
+</div>
+
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title no_toc" itemprop="headline">
+      
+        <a href="/%EB%8D%B0%EC%9D%B4%ED%84%B0%EB%B2%A0%EC%9D%B4%EC%8A%A4/ORM/" rel="permalink">[데이터베이스] 객체 관계형 데이터베이스 매핑
+</a>
+      
+    </h2>
+    
+
+  <p class="page__meta">
+    
+
+    
+
+    
+      
+      
+
+      <span class="page__meta-readtime">
+        <i class="far fa-clock" aria-hidden="true"></i>
+        
+          1 분 소요
+        
+      </span>
+    
+  </p>
+
+
+    <p class="archive__item-excerpt" itemprop="description">ORM에 대해서 알아보자
+</p>
+  </article>
+</div>
+
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title no_toc" itemprop="headline">
+      
+        <a href="/%EB%8D%B0%EC%9D%B4%ED%84%B0%20%EC%88%98%EC%A7%91/faker_user/" rel="permalink">[파이썬][라이브러리] 모델 학습에 필요한 가짜 유저 정보 만들기
+</a>
+      
+    </h2>
+    
+
+  <p class="page__meta">
+    
+
+    
+
+    
+      
+      
+
+      <span class="page__meta-readtime">
+        <i class="far fa-clock" aria-hidden="true"></i>
+        
+          2 분 소요
+        
+      </span>
+    
+  </p>
+
+
+    <p class="archive__item-excerpt" itemprop="description">Faker 라이브러리 사용하기
+</p>
+  </article>
+</div>
+
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title no_toc" itemprop="headline">
+      
+        <a href="/%EC%B6%94%EC%B2%9C%20%EC%8B%9C%EC%8A%A4%ED%85%9C/Collaborative_Filtering/" rel="permalink">[파이썬][추천 알고리즘] Collaborative Filtering (협업 필터링)
+</a>
+      
+    </h2>
+    
+
+  <p class="page__meta">
+    
+
+    
+
+    
+      
+      
+
+      <span class="page__meta-readtime">
+        <i class="far fa-clock" aria-hidden="true"></i>
+        
+          최대 1 분 소요
+        
+      </span>
+    
+  </p>
+
+
+    <p class="archive__item-excerpt" itemprop="description">추천 시스템 구현에 대해 알아보자
+</p>
+  </article>
+</div>
+
+        
+      </div>
+    </div>
+  
+  
+</div>
+
+    </div>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4206652111439335"
+     crossorigin="anonymous"></script>
+    <div align="center" style="margin: 1em 0;">
+    <ins class="adsbygoogle"
+    style="display:block; border-bottom: initial;"
+    data-ad-client="ca-pub-9089895411733030"
+    data-ad-format="auto"></ins>
+  </div>
+  <script>
+  (adsbygoogle = window.adsbygoogle || []).push({});
+  </script>
+
+    
+
+    <div id="footer" class="page__footer">
+      <footer>
+        <!-- start custom footer snippets -->
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4206652111439335"
+     crossorigin="anonymous"></script>
+     <div align="center" style="margin: 1em 0;">
+        <ins class="adsbygoogle"
+        style="display:block; border-bottom: initial;"
+        data-ad-client="ca-pub-9089895411733030"
+        data-ad-format="auto"></ins>
+    </div>
+    <script>
+    (adsbygoogle = window.adsbygoogle || []).push({});
+    </script>
+<!-- end custom footer snippets -->
+        <div class="page__footer-follow">
+  <ul class="social-icons">
+    
+      <li><strong>팔로우:</strong></li>
+    
+
+    
+      
+        
+          <li><a href="godhin:sodlalwl13e@gmail.com" rel="nofollow noopener noreferrer"><i class="fas fa-fw fa-envelope-square" aria-hidden="true"></i> Email</a></li>
+        
+      
+        
+      
+        
+      
+        
+      
+        
+          <li><a href="https://github.com/godhin" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-github" aria-hidden="true"></i> GitHub</a></li>
+        
+      
+        
+          <li><a href="https://instagram.com/cmblir" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-instagram" aria-hidden="true"></i> Instagram</a></li>
+        
+      
+    
+
+    
+      <li><a href="/feed.xml"><i class="fas fa-fw fa-rss-square" aria-hidden="true"></i> 피드</a></li>
+    
+  </ul>
+</div>
+
+<div class="page__footer-copyright">&copy; 2022 Yoo Nicholas. Powered by <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.</div>
+
+      </footer>
+    </div>
+
+    
+  <script src="/assets/js/main.min.js"></script>
+
+
+
+
+
+
+
+
+
+
+  </body>
+</html>

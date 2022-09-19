@@ -1,0 +1,729 @@
+<!doctype html>
+<!--
+  Minimal Mistakes Jekyll Theme 4.24.0 by Michael Rose
+  Copyright 2013-2020 Michael Rose - mademistakes.com | @mmistakes
+  Free for personal and commercial use under the MIT license
+  https://github.com/mmistakes/minimal-mistakes/blob/master/LICENSE
+-->
+<html lang="ko" class="no-js">
+  <head>
+    <meta charset="utf-8">
+
+<!-- begin _includes/seo.html --><title>[파이썬][머신러닝] 데이터 분석과 머신러닝 - Boosting - 성장형 개발자 블로그</title>
+<meta name="description" content="앙상블 부스팅 기법에 대해">
+
+
+  <meta name="author" content="You Nicholas">
+  
+  <meta property="article:author" content="You Nicholas">
+  
+
+
+<meta property="og:type" content="article">
+<meta property="og:locale" content="ko">
+<meta property="og:site_name" content="성장형 개발자 블로그">
+<meta property="og:title" content="[파이썬][머신러닝] 데이터 분석과 머신러닝 - Boosting">
+<meta property="og:url" content="http://localhost:4000/%EB%8D%B0%EC%9D%B4%ED%84%B0%20%EB%B6%84%EC%84%9D%EA%B3%BC%20%EB%A8%B8%EC%8B%A0%EB%9F%AC%EB%8B%9D/boosting/">
+
+
+  <meta property="og:description" content="앙상블 부스팅 기법에 대해">
+
+
+
+
+
+
+
+  <meta property="article:published_time" content="2021-12-04T00:00:00+09:00">
+
+
+
+  <meta property="article:modified_time" content="2021-12-04T00:00:00+09:00">
+
+
+
+  
+
+  
+
+
+<link rel="canonical" href="http://localhost:4000/%EB%8D%B0%EC%9D%B4%ED%84%B0%20%EB%B6%84%EC%84%9D%EA%B3%BC%20%EB%A8%B8%EC%8B%A0%EB%9F%AC%EB%8B%9D/boosting/">
+
+
+
+
+<script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    
+      "@type": "Person",
+      "name": "Yoo Nicholas",
+      "url": "http://localhost:4000/"
+    
+  }
+</script>
+
+
+
+
+
+
+
+<!-- end _includes/seo.html -->
+
+
+
+  <link href="/feed.xml" type="application/atom+xml" rel="alternate" title="성장형 개발자 블로그 Feed">
+
+
+<!-- https://t.co/dKP3o1e -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script>
+  document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
+</script>
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="/assets/css/main.css">
+<link rel="preload" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css"></noscript>
+
+
+
+    <!-- start custom head snippets -->
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4206652111439335"
+     crossorigin="anonymous"></script>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({
+          google_ad_client: "ca-pub-5218184138518164",
+          enable_page_level_ads: true
+     });
+</script>
+<!-- insert favicons. use https://realfavicongenerator.net/ -->
+
+<!-- end custom head snippets -->
+
+  </head>
+
+  <body class="layout--single">
+    <nav class="skip-links">
+  <ul>
+    <li><a href="#site-nav" class="screen-reader-shortcut">Skip to primary navigation</a></li>
+    <li><a href="#main" class="screen-reader-shortcut">Skip to content</a></li>
+    <li><a href="#footer" class="screen-reader-shortcut">Skip to footer</a></li>
+  </ul>
+</nav>
+
+    
+
+<div class="masthead">
+  <div class="masthead__inner-wrap">
+    <div class="masthead__menu">
+      <nav id="site-nav" class="greedy-nav">
+        
+        <a class="site-title" href="/">
+          성장형 개발자 블로그
+          
+        </a>
+        <ul class="visible-links"><li class="masthead__menu-item">
+              <a href="/about/">소개글</a>
+            </li><li class="masthead__menu-item">
+              <a href="/categories/">카테고리</a>
+            </li><li class="masthead__menu-item">
+              <a href="/tags/">태그</a>
+            </li></ul>
+        
+        <button class="greedy-nav__toggle hidden" type="button">
+          <span class="visually-hidden">토글 메뉴</span>
+          <div class="navicon"></div>
+        </button>
+        <ul class="hidden-links hidden"></ul>
+      </nav>
+    </div>
+  </div>
+</div>
+
+
+    <div class="initial-content">
+      
+
+
+
+
+
+<div id="main" role="main">
+  
+  <div class="sidebar sticky">
+  
+
+
+<div itemscope itemtype="https://schema.org/Person" class="h-card">
+
+  
+    <div class="author__avatar">
+      <a href="http://localhost:4000/">
+        <img src="https://avatars.githubusercontent.com/u/75519839?v=4" alt="You Nicholas" itemprop="image" class="u-photo">
+      </a>
+    </div>
+  
+
+  <div class="author__content">
+    <h3 class="author__name p-name" itemprop="name">
+      <a class="u-url" rel="me" href="http://localhost:4000/" itemprop="url">You Nicholas</a>
+    </h3>
+    
+      <div class="author__bio p-note" itemprop="description">
+        <p>가고 가고 또 가면 <strong>알게되고</strong>, 행하고 행하고 또 행하게 되면 <strong>이루게 된다.</strong></p>
+
+      </div>
+    
+  </div>
+
+  <div class="author__urls-wrapper">
+    <button class="btn btn--inverse">팔로우</button>
+    <ul class="author__urls social-icons">
+      
+        <li itemprop="homeLocation" itemscope itemtype="https://schema.org/Place">
+          <i class="fas fa-fw fa-map-marker-alt" aria-hidden="true"></i> <span itemprop="name" class="p-locality">Republic of Korea</span>
+        </li>
+      
+
+      
+        
+          
+            <li><a href="godhin:sodlalwl13e@gmail.com" rel="nofollow noopener noreferrer me"><i class="fas fa-fw fa-envelope-square" aria-hidden="true"></i><span class="label">Email</span></a></li>
+          
+        
+          
+        
+          
+        
+          
+        
+          
+            <li><a href="https://github.com/godhin" rel="nofollow noopener noreferrer me" itemprop="sameAs"><i class="fab fa-fw fa-github" aria-hidden="true"></i><span class="label">GitHub</span></a></li>
+          
+        
+          
+            <li><a href="https://instagram.com/cmblir" rel="nofollow noopener noreferrer me" itemprop="sameAs"><i class="fab fa-fw fa-instagram" aria-hidden="true"></i><span class="label">Instagram</span></a></li>
+          
+        
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      <!--
+  <li>
+    <a href="http://link-to-whatever-social-network.com/user/" itemprop="sameAs" rel="nofollow noopener noreferrer me">
+      <i class="fas fa-fw" aria-hidden="true"></i> Custom Social Profile Link
+    </a>
+  </li>
+-->
+    </ul>
+  </div>
+</div>
+
+  
+  </div>
+
+
+
+  <article class="page h-entry" itemscope itemtype="https://schema.org/CreativeWork">
+    <meta itemprop="headline" content="[파이썬][머신러닝] 데이터 분석과 머신러닝 - Boosting">
+    <meta itemprop="description" content="앙상블 부스팅 기법에 대해">
+    <meta itemprop="datePublished" content="2021-12-04T00:00:00+09:00">
+    <meta itemprop="dateModified" content="2021-12-04T00:00:00+09:00">
+
+    <div class="page__inner-wrap">
+      
+        <header>
+          <h1 id="page-title" class="page__title p-name" itemprop="headline">
+            <a href="http://localhost:4000/%EB%8D%B0%EC%9D%B4%ED%84%B0%20%EB%B6%84%EC%84%9D%EA%B3%BC%20%EB%A8%B8%EC%8B%A0%EB%9F%AC%EB%8B%9D/boosting/" class="u-url" itemprop="url">[파이썬][머신러닝] 데이터 분석과 머신러닝 - Boosting
+</a>
+          </h1>
+          
+
+  <p class="page__meta">
+    
+
+    
+
+    
+      
+      
+
+      <span class="page__meta-readtime">
+        <i class="far fa-clock" aria-hidden="true"></i>
+        
+          1 분 소요
+        
+      </span>
+    
+  </p>
+
+
+        </header>
+      
+
+      <section class="page__content e-content" itemprop="text">
+        
+          <aside class="sidebar__right sticky">
+            <nav class="toc">
+              <header><h4 class="nav__title"><i class="fas fa-file-alt"></i> On This Page</h4></header>
+              <ul class="toc__menu"><li><a href="#앙상블과-부스팅이란">앙상블과 부스팅이란?</a><ul><li><a href="#xgboost">XGBoost</a><ul><li><a href="#xgboost-간단하게-구현하기">XGBoost 간단하게 구현하기</a></li></ul></li></ul></li></ul>
+
+            </nav>
+          </aside>
+        
+        <h1 id="앙상블과-부스팅이란">앙상블과 부스팅이란?</h1>
+<p><em>Ensemble Learning은 모델 여러 개를 조합하여 더 정확한 예측에 도움을 주는 학습방법이다.</em> <br /></p>
+
+<p><strong>앙상블은 여러 모델이 같이 문제를 해결하는 집단지성이다.</strong></p>
+
+<blockquote>
+  <ol>
+    <li>Voting (보팅) <br />
+      <ul>
+        <li>여러 개의 분류기 투표로 최종 예측 결과를 결정하는 방식 <br /></li>
+        <li>각기 다른 알고리즘을 결합하여 사용하는 방식 <br />
+   1-1. Hard Voting <br />
+    다수의 분류기가 예측한 결과값을 최종 결과로 선정하는 방법 <br /> 
+   1-2. Soft Voting <br />
+    모든 분류기가 예측한 레이블 값의 결정 확률 평균을 구한 다음 확률이 높은 레이블 값을 최종 결과로 선정하는 방법 <br /> 
+<br /></li>
+      </ul>
+    </li>
+    <li>Boostrap AGGregatING, Bagging (배깅)
+      <ul>
+        <li>여러 개의 분류기 투표로 최종 예측 결과를 결정하는 방식 <br /></li>
+        <li>Boostrap (데이터 샘플링하는 작업)을 통해서 모델 학습 후 
+결과를 집계하는 방법 <br /></li>
+        <li>비슷한 유형의 알고리즘 기반의 분류기를 사용 <br /></li>
+        <li>과적합 방지에 효율적이며 랜덤 포레스트 모델에서 사용하는 방법이다. <br />
+<br /></li>
+      </ul>
+    </li>
+    <li>Boosting (부스팅)
+      <ul>
+        <li>보팅과 비슷한 방식으로 여러 분류기를 사용하되 순차적으로 학습을 수행하는 방식을 말한다. <br /></li>
+        <li>예측 성능이 매우 좋아서 앙상블 학습을 주도하는 방법이다. <br /></li>
+        <li>배깅에 비해서 속도가 느리고 과적합 가능성이 있지만 성능이 좋다. <br /></li>
+        <li>각각의 분류기들이 이전 분류기에서 틀린 가중치를 기반으로 다음 분류기에게 전달하여 학습과 예측을 진행한다. <br /></li>
+        <li>대표적인 모델 2가지 <br />
+   3-1. XGBoost <br />
+   3-2. LightBGM <br /></li>
+      </ul>
+    </li>
+  </ol>
+</blockquote>
+
+<h2 id="xgboost">XGBoost</h2>
+
+<p>Gradient Boosting Decision Tree 구현 라이브러리의 일종으로 현재도 많이 이용되는 모델이다.</p>
+
+<h3 id="xgboost-간단하게-구현하기">XGBoost 간단하게 구현하기</h3>
+<p>사이킷런의 파이프라인을 활용해서 빠르게 구현해보겠다.</p>
+
+<blockquote>
+  <p>파이프라인 (Pipeline)은 전처리의 단계, 모델 생성 및 학습을 포함하는 여러 단계의 머신러닝 프로세스를 처리할 수 있는 클래스이다.</p>
+</blockquote>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">from</span> <span class="nn">category_encoders</span> <span class="kn">import</span> <span class="n">OrdinalEncoder</span>
+<span class="kn">from</span> <span class="nn">sklearn.impute</span> <span class="kn">import</span> <span class="n">SimpleImputer</span>
+<span class="kn">from</span> <span class="nn">xgboost</span> <span class="kn">import</span> <span class="n">XGBClassifier</span>
+<span class="kn">from</span> <span class="nn">sklearn.pipeline</span> <span class="kn">import</span> <span class="n">make_pipeline</span>
+
+
+<span class="n">model</span> <span class="o">=</span> <span class="n">make_pipeline</span><span class="p">(</span>
+    <span class="n">OrdinalEncoder</span><span class="p">(),</span>
+    <span class="n">SimpleImputer</span><span class="p">(</span><span class="n">strategy</span><span class="o">=</span><span class="s">"median"</span><span class="p">),</span>
+    <span class="n">XGBClassifier</span><span class="p">(</span>
+        <span class="n">objective</span><span class="o">=</span><span class="s">"binary:logistic"</span><span class="p">,</span>
+        <span class="n">eval_metric</span><span class="o">=</span><span class="s">"error"</span><span class="p">,</span> <span class="n">n_estimators</span><span class="o">=</span><span class="mi">200</span><span class="p">,</span>
+        <span class="n">random_state</span><span class="o">=</span><span class="mi">42</span><span class="p">,</span>
+        <span class="n">n_jobs</span><span class="o">=-</span><span class="mi">1</span><span class="p">,</span>
+        <span class="n">max_depth</span><span class="o">=</span><span class="mi">7</span><span class="p">,</span>
+        <span class="n">learning_rate</span><span class="o">=</span><span class="mf">0.1</span><span class="p">,</span>
+    <span class="p">),</span>
+<span class="p">)</span>
+
+</code></pre></div></div>
+
+
+        
+      </section>
+
+      <footer class="page__meta">
+        
+        
+  
+
+
+  
+
+  <p class="page__taxonomy">
+    <strong><i class="fas fa-fw fa-tags" aria-hidden="true"></i> 태그: </strong>
+    <span itemprop="keywords">
+    
+      <a href="/tags/#%EB%8D%B0%EC%9D%B4%ED%84%B0-%EB%B6%84%EC%84%9D" class="page__taxonomy-item p-category" rel="tag">데이터 분석</a><span class="sep">, </span>
+    
+      <a href="/tags/#%EB%A8%B8%EC%8B%A0%EB%9F%AC%EB%8B%9D" class="page__taxonomy-item p-category" rel="tag">머신러닝</a>
+    
+    </span>
+  </p>
+
+
+
+
+  
+
+
+  
+
+  <p class="page__taxonomy">
+    <strong><i class="fas fa-fw fa-folder-open" aria-hidden="true"></i> 카테고리: </strong>
+    <span itemprop="keywords">
+    
+      <a href="/categories/#%EB%8D%B0%EC%9D%B4%ED%84%B0-%EB%B6%84%EC%84%9D%EA%B3%BC-%EB%A8%B8%EC%8B%A0%EB%9F%AC%EB%8B%9D" class="page__taxonomy-item p-category" rel="tag">데이터 분석과 머신러닝</a>
+    
+    </span>
+  </p>
+
+
+        
+
+  <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> 업데이트:</strong> <time class="dt-published" datetime="2021-12-04">December 4, 2021</time></p>
+
+      </footer>
+
+      <section class="page__share">
+  
+    <h4 class="page__share-title">공유하기</h4>
+  
+
+  <a href="https://twitter.com/intent/tweet?text=%5B%ED%8C%8C%EC%9D%B4%EC%8D%AC%5D%5B%EB%A8%B8%EC%8B%A0%EB%9F%AC%EB%8B%9D%5D+%EB%8D%B0%EC%9D%B4%ED%84%B0+%EB%B6%84%EC%84%9D%EA%B3%BC+%EB%A8%B8%EC%8B%A0%EB%9F%AC%EB%8B%9D+-+Boosting%20http%3A%2F%2Flocalhost%3A4000%2F%25EB%258D%25B0%25EC%259D%25B4%25ED%2584%25B0%2520%25EB%25B6%2584%25EC%2584%259D%25EA%25B3%25BC%2520%25EB%25A8%25B8%25EC%258B%25A0%25EB%259F%25AC%25EB%258B%259D%2Fboosting%2F" class="btn btn--twitter" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="공유하기 Twitter"><i class="fab fa-fw fa-twitter" aria-hidden="true"></i><span> Twitter</span></a>
+
+  <a href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Flocalhost%3A4000%2F%25EB%258D%25B0%25EC%259D%25B4%25ED%2584%25B0%2520%25EB%25B6%2584%25EC%2584%259D%25EA%25B3%25BC%2520%25EB%25A8%25B8%25EC%258B%25A0%25EB%259F%25AC%25EB%258B%259D%2Fboosting%2F" class="btn btn--facebook" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="공유하기 Facebook"><i class="fab fa-fw fa-facebook" aria-hidden="true"></i><span> Facebook</span></a>
+
+  <a href="https://www.linkedin.com/shareArticle?mini=true&url=http%3A%2F%2Flocalhost%3A4000%2F%25EB%258D%25B0%25EC%259D%25B4%25ED%2584%25B0%2520%25EB%25B6%2584%25EC%2584%259D%25EA%25B3%25BC%2520%25EB%25A8%25B8%25EC%258B%25A0%25EB%259F%25AC%25EB%258B%259D%2Fboosting%2F" class="btn btn--linkedin" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="공유하기 LinkedIn"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i><span> LinkedIn</span></a>
+</section>
+
+
+      
+  <nav class="pagination">
+    
+      <a href="/%EB%8D%B0%EC%9D%B4%ED%84%B0%20%EB%B6%84%EC%84%9D%EA%B3%BC%20%EB%A8%B8%EC%8B%A0%EB%9F%AC%EB%8B%9D/decision_trees/" class="pagination--pager" title="[파이썬][머신러닝] 데이터 분석과 머신러닝 - Desicion Trees
+">이전</a>
+    
+    
+      <a href="/%EB%8D%B0%EC%9D%B4%ED%84%B0%20%EB%B6%84%EC%84%9D%EA%B3%BC%20%EB%A8%B8%EC%8B%A0%EB%9F%AC%EB%8B%9D/preprocessing/" class="pagination--pager" title="[파이썬][머신러닝] 데이터 분석과 머신러닝 - Processing
+">다음</a>
+    
+  </nav>
+
+    </div>
+
+    
+  </article>
+
+  
+  
+    <div class="page__related">
+      <h2 class="page__related-title">참고</h2>
+      <div class="grid__wrapper">
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title no_toc" itemprop="headline">
+      
+        <a href="/%EA%B9%83/github_commit_rules/" rel="permalink">[Github] 깃허브 커밋 Rule
+</a>
+      
+    </h2>
+    
+
+  <p class="page__meta">
+    
+
+    
+
+    
+      
+      
+
+      <span class="page__meta-readtime">
+        <i class="far fa-clock" aria-hidden="true"></i>
+        
+          4 분 소요
+        
+      </span>
+    
+  </p>
+
+
+    <p class="archive__item-excerpt" itemprop="description">알고 하는 커밋 법칙
+</p>
+  </article>
+</div>
+
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title no_toc" itemprop="headline">
+      
+        <a href="/%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8/118666/" rel="permalink">[파이썬][프로그래머스] 성격 유형 검사하기
+</a>
+      
+    </h2>
+    
+
+  <p class="page__meta">
+    
+
+    
+
+    
+      
+      
+
+      <span class="page__meta-readtime">
+        <i class="far fa-clock" aria-hidden="true"></i>
+        
+          5 분 소요
+        
+      </span>
+    
+  </p>
+
+
+    <p class="archive__item-excerpt" itemprop="description">프로그래머스 성격 유형 검사하기 문제 풀이
+</p>
+  </article>
+</div>
+
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title no_toc" itemprop="headline">
+      
+        <a href="/%EB%8D%B0%EC%9D%B4%ED%84%B0%EB%B2%A0%EC%9D%B4%EC%8A%A4/ORM/" rel="permalink">[데이터베이스] 객체 관계형 데이터베이스 매핑
+</a>
+      
+    </h2>
+    
+
+  <p class="page__meta">
+    
+
+    
+
+    
+      
+      
+
+      <span class="page__meta-readtime">
+        <i class="far fa-clock" aria-hidden="true"></i>
+        
+          1 분 소요
+        
+      </span>
+    
+  </p>
+
+
+    <p class="archive__item-excerpt" itemprop="description">ORM에 대해서 알아보자
+</p>
+  </article>
+</div>
+
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title no_toc" itemprop="headline">
+      
+        <a href="/%EB%8D%B0%EC%9D%B4%ED%84%B0%20%EC%88%98%EC%A7%91/faker_user/" rel="permalink">[파이썬][라이브러리] 모델 학습에 필요한 가짜 유저 정보 만들기
+</a>
+      
+    </h2>
+    
+
+  <p class="page__meta">
+    
+
+    
+
+    
+      
+      
+
+      <span class="page__meta-readtime">
+        <i class="far fa-clock" aria-hidden="true"></i>
+        
+          2 분 소요
+        
+      </span>
+    
+  </p>
+
+
+    <p class="archive__item-excerpt" itemprop="description">Faker 라이브러리 사용하기
+</p>
+  </article>
+</div>
+
+        
+      </div>
+    </div>
+  
+  
+</div>
+
+    </div>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4206652111439335"
+     crossorigin="anonymous"></script>
+    <div align="center" style="margin: 1em 0;">
+    <ins class="adsbygoogle"
+    style="display:block; border-bottom: initial;"
+    data-ad-client="ca-pub-9089895411733030"
+    data-ad-format="auto"></ins>
+  </div>
+  <script>
+  (adsbygoogle = window.adsbygoogle || []).push({});
+  </script>
+
+    
+
+    <div id="footer" class="page__footer">
+      <footer>
+        <!-- start custom footer snippets -->
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4206652111439335"
+     crossorigin="anonymous"></script>
+     <div align="center" style="margin: 1em 0;">
+        <ins class="adsbygoogle"
+        style="display:block; border-bottom: initial;"
+        data-ad-client="ca-pub-9089895411733030"
+        data-ad-format="auto"></ins>
+    </div>
+    <script>
+    (adsbygoogle = window.adsbygoogle || []).push({});
+    </script>
+<!-- end custom footer snippets -->
+        <div class="page__footer-follow">
+  <ul class="social-icons">
+    
+      <li><strong>팔로우:</strong></li>
+    
+
+    
+      
+        
+          <li><a href="godhin:sodlalwl13e@gmail.com" rel="nofollow noopener noreferrer"><i class="fas fa-fw fa-envelope-square" aria-hidden="true"></i> Email</a></li>
+        
+      
+        
+      
+        
+      
+        
+      
+        
+          <li><a href="https://github.com/godhin" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-github" aria-hidden="true"></i> GitHub</a></li>
+        
+      
+        
+          <li><a href="https://instagram.com/cmblir" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-instagram" aria-hidden="true"></i> Instagram</a></li>
+        
+      
+    
+
+    
+      <li><a href="/feed.xml"><i class="fas fa-fw fa-rss-square" aria-hidden="true"></i> 피드</a></li>
+    
+  </ul>
+</div>
+
+<div class="page__footer-copyright">&copy; 2022 Yoo Nicholas. Powered by <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.</div>
+
+      </footer>
+    </div>
+
+    
+  <script src="/assets/js/main.min.js"></script>
+
+
+
+
+
+
+
+
+
+
+  </body>
+</html>

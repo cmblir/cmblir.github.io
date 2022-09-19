@@ -9,8 +9,8 @@
   <head>
     <meta charset="utf-8">
 
-<!-- begin _includes/seo.html --><title>[파이썬][Codility_][코디리티] FuryRoad - 성장형 개발자 블로그</title>
-<meta name="description" content="Codility FuryRoad 문제 풀이">
+<!-- begin _includes/seo.html --><title>[파이썬][머신러닝] 데이터 분석과 머신러닝 - Multiple Regression - 성장형 개발자 블로그</title>
+<meta name="description" content="다중 선형회귀와 편향, 분산에 대해">
 
 
   <meta name="author" content="You Nicholas">
@@ -22,32 +22,32 @@
 <meta property="og:type" content="article">
 <meta property="og:locale" content="ko">
 <meta property="og:site_name" content="성장형 개발자 블로그">
-<meta property="og:title" content="[파이썬][Codility_][코디리티] FuryRoad">
-<meta property="og:url" content="http://localhost:4000/%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8/FuryRoad/">
+<meta property="og:title" content="[파이썬][머신러닝] 데이터 분석과 머신러닝 - Multiple Regression">
+<meta property="og:url" content="http://localhost:4000/%EB%8D%B0%EC%9D%B4%ED%84%B0%20%EB%B6%84%EC%84%9D%EA%B3%BC%20%EB%A8%B8%EC%8B%A0%EB%9F%AC%EB%8B%9D/multi_regression/">
 
 
-  <meta property="og:description" content="Codility FuryRoad 문제 풀이">
-
-
-
+  <meta property="og:description" content="다중 선형회귀와 편향, 분산에 대해">
 
 
 
 
-  <meta property="article:published_time" content="2022-06-22T00:00:00+09:00">
 
 
 
-  <meta property="article:modified_time" content="2022-06-23T00:00:00+09:00">
+  <meta property="article:published_time" content="2021-12-01T00:00:00+09:00">
 
 
 
-  
+  <meta property="article:modified_time" content="2021-12-01T00:00:00+09:00">
+
+
 
   
 
+  
 
-<link rel="canonical" href="http://localhost:4000/%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8/FuryRoad/">
+
+<link rel="canonical" href="http://localhost:4000/%EB%8D%B0%EC%9D%B4%ED%84%B0%20%EB%B6%84%EC%84%9D%EA%B3%BC%20%EB%A8%B8%EC%8B%A0%EB%9F%AC%EB%8B%9D/multi_regression/">
 
 
 
@@ -275,16 +275,16 @@
 
 
   <article class="page h-entry" itemscope itemtype="https://schema.org/CreativeWork">
-    <meta itemprop="headline" content="[파이썬][Codility_][코디리티] FuryRoad">
-    <meta itemprop="description" content="Codility FuryRoad 문제 풀이">
-    <meta itemprop="datePublished" content="2022-06-22T00:00:00+09:00">
-    <meta itemprop="dateModified" content="2022-06-23T00:00:00+09:00">
+    <meta itemprop="headline" content="[파이썬][머신러닝] 데이터 분석과 머신러닝 - Multiple Regression">
+    <meta itemprop="description" content="다중 선형회귀와 편향, 분산에 대해">
+    <meta itemprop="datePublished" content="2021-12-01T00:00:00+09:00">
+    <meta itemprop="dateModified" content="2021-12-01T00:00:00+09:00">
 
     <div class="page__inner-wrap">
       
         <header>
           <h1 id="page-title" class="page__title p-name" itemprop="headline">
-            <a href="http://localhost:4000/%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8/FuryRoad/" class="u-url" itemprop="url">[파이썬][Codility_][코디리티] FuryRoad
+            <a href="http://localhost:4000/%EB%8D%B0%EC%9D%B4%ED%84%B0%20%EB%B6%84%EC%84%9D%EA%B3%BC%20%EB%A8%B8%EC%8B%A0%EB%9F%AC%EB%8B%9D/multi_regression/" class="u-url" itemprop="url">[파이썬][머신러닝] 데이터 분석과 머신러닝 - Multiple Regression
 </a>
           </h1>
           
@@ -301,7 +301,7 @@
       <span class="page__meta-readtime">
         <i class="far fa-clock" aria-hidden="true"></i>
         
-          2 분 소요
+          1 분 소요
         
       </span>
     
@@ -316,100 +316,82 @@
           <aside class="sidebar__right sticky">
             <nav class="toc">
               <header><h4 class="nav__title"><i class="fas fa-file-alt"></i> On This Page</h4></header>
-              <ul class="toc__menu"><li><a href="#0-챌린지-소개">0. 챌린지 소개</a></li><li><a href="#1-문제">1. 문제</a></li><li><a href="#2-해결방법-시간복잡도">2. 해결방법 시간복잡도</a></li><li><a href="#3-문제-해결-및-코드">3. 문제 해결 및 코드</a></li><li><a href="#주석을-참고하면서-이해를-돕습니다">주석을 참고하면서 이해를 돕습니다.</a></li><li><a href="#4-알고리즘-및-해설">4. 알고리즘 및 해설</a></li></ul>
+              <ul class="toc__menu"><li><a href="#multiple-regression">Multiple Regression</a><ul><li><a href="#evaluation-metrics">Evaluation Metrics</a></li><li><a href="#과적합-overfitting과-과소적합-underfitting">과적합 (Overfitting)과 과소적합 (Underfitting)</a><ul><li><a href="#분산과-편향-트레이드-오프">분산과 편향, 트레이드 오프</a></li></ul></li></ul></li></ul>
 
             </nav>
           </aside>
         
-        <h2 id="0-챌린지-소개">0. 챌린지 소개</h2>
+        <h1 id="multiple-regression">Multiple Regression</h1>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>여러 개의 독립 변수와 하나의 종속 변수의 선형 관계를 모델링하는 방법중 하나이다.
+</code></pre></div></div>
 
-<p><img src="https://user-images.githubusercontent.com/75519839/175105370-bb96a64a-f99d-4138-8810-d788d154689d.png" alt="image" /></p>
-
-<h2 id="1-문제">1. 문제</h2>
-
-<p>You have to be at your work as soon as possible. The road on your route to work may consist of two types of surface: asphalt or sand. To simplify the description, it will be denoted by a string R consisting only of the letters: “A” for an asphalt segment and “S” for a sand segment. All segments represent the same distance. For example, R = “SAAS” describes a road comprising of sand, asphalt, asphalt and sand segments.</p>
-
-<p>When you go on foot, you need 20 minutes to pass through an asphalt segment and 30 minutes through a sand segment. You also have an electric scooter, which needs 5 minutes to pass through an asphalt segment and 40 minutes through a sand segment.</p>
-
-<p>You start your journey on the scooter, but at any point you can get off the scooter and go on foot for the rest of the journey. What is the shortest time in which you can get to work?</p>
-
-<p>Write a function:</p>
-
-<p>def solution(R)</p>
-
-<p>that, given a string R of length N, representing the road to work, returns the minimum time that you need to get to work.</p>
-
-<p>Examples:</p>
-
-<ol>
-  <li>
-    <p>Given R = “ASAASS”, your function should return 115. You ride on the scooter over the first four segments (“ASAA”) in 5 + 40 + 5 + 5 = 55 and then you go on foot through “SS” in 30 + 30 = 60. Altogether, your journey will take 55 + 60 = 115.</p>
-  </li>
-  <li>
-    <p>Given R = “SSA”, the function should return 80. You do not ride on the scooter at all, and you go on foot in 30 + 30 + 20 = 80.</p>
-  </li>
-  <li>
-    <p>Given R = “SSSSAAA”, the function should return 175. You ride on the scooter all the time in 40 + 40 + 40 + 40 + 5 + 5 + 5 = 175.</p>
-  </li>
-</ol>
-
-<p>Write an efficient algorithm for the following assumptions:</p>
-
-<p>N is an integer within the range [1..100,000];
-string R consists only of the characters “S” and/or “A”.
-Copyright 2009–2022 by Codility Limited. All Rights Reserved. Unauthorized copying, publication or disclosure prohibited.</p>
-
-<blockquote>
-  <p>출처: Codility_, https://app.codility.com/programmers/</p>
-</blockquote>
-
-<h2 id="2-해결방법-시간복잡도">2. 해결방법 시간복잡도</h2>
-<ol>
-  <li>단순 코딩 O(N)</li>
-</ol>
-
-<h2 id="3-문제-해결-및-코드">3. 문제 해결 및 코드</h2>
-<hr />
-
-<script src="https://gist.github.com/godhin/626d86140fbd84e219dd45731e965877.js"></script>
-
+<h2 id="evaluation-metrics">Evaluation Metrics</h2>
 <ul>
   <li>
-    <h2 id="주석을-참고하면서-이해를-돕습니다">주석을 참고하면서 이해를 돕습니다.</h2>
+    <p><em>MSE</em>
+  Mean Squared Error</p>
+
+    <p>평균제곱오차, 오차를 제곱한 값의 평균으로, 알고리즘이 예측한 값과 실제 정답과 차이를 의미한다. MSE값이 0에 가까울수록 좋은 모델이다.</p>
+  </li>
+  <li>
+    <p><em>MAE</em>
+  Mean Absolute Error</p>
+
+    <p>평균절대오차, 회귀평가를 위한 지표로 주로 사용되고 0에 가까울수록 좋은 모델이다.</p>
+  </li>
+  <li>
+    <p><em>RMSE</em>
+  Root Mean Squared Error</p>
+
+    <p>평균제곱근오차, 선형회귀에서 많이 쓰이는 방식중 하나로 평균제곱오차가 가끔 너무 커져버리는 경우가 많다. 이런 경우 연산속도가 매우 느린데 이때 루트를 씌워서 해결해준다.
+  이 방식을 최소화하는 기울기 a와 회귀상수 b를 찾는다!</p>
   </li>
 </ul>
 
-<h2 id="4-알고리즘-및-해설">4. 알고리즘 및 해설</h2>
+<h2 id="과적합-overfitting과-과소적합-underfitting">과적합 (Overfitting)과 과소적합 (Underfitting)</h2>
 
-<ol>
-  <li>문제의 요점은 2가지 이동수단을 통해 움직이는 것이다.
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>일반화란?
+학습 데이터와 입력값이 달라져도 출력에 대한 성능 차이가 나지 않게 하는 것을 일반화라고 한다.
+</code></pre></div></div>
+
+<ul>
+  <li>과적합이란 모델이 훈련 데이터에만 과하게 학습해 일반화를 모해 테스트 데이터에서 오차가 커지는 현상을 말한다.</li>
+  <li>과소적합이란 훈련데이터에 과적합도 못하고 일반화 성질도 학습하지 못하고 테스트 데이터에도 오차가 크게 나는 총체적 난국인 현상을 말한다.</li>
+</ul>
+
+<h3 id="분산과-편향-트레이드-오프">분산과 편향, 트레이드 오프</h3>
+<ul>
+  <li>
+    <p><strong>Variance (분산)</strong></p>
+
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  분산이란 말 그대로 데이터들이 퍼져있는 상태를 말한다. 지나치게 복잡한 모델에서 많이 나오는 에러중 하나이다. 그렇기에 분산이 크면 클수록 훈련 데이터에 집착하게 되는 Over-Fitting이 일어난다.
+  분산이 큰 모델은 지나치게 적합을 시켜 일반화가 잘 되지않는 모델이기도 하다.
+</code></pre></div>    </div>
+
     <ul>
-      <li>도보로 이동하는 경우
-        <ul>
-          <li>아스팔트 20분</li>
-          <li>모래 30분</li>
-        </ul>
-      </li>
-      <li>스쿠터로 이동하는 경우
-        <ul>
-          <li>아스팔트 5분</li>
-          <li>모래 40분</li>
-        </ul>
-      </li>
+      <li></li>
     </ul>
   </li>
-  <li>스쿠터의 경우 중간에 내리면 더 이상 사용할 수 없다는 점을 이용해서 도보로만 가는 경우를 만들었다.
+  <li>
+    <p><strong>Bias (편향)</strong></p>
+
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  편향은 분산과 달리 지나치게 단순한 모델로 데이터가 한곳에 밀집되어 있는 것을 말한다. 편향이 클수록 Under-Fitting을 일어나게 된다. 
+  모델에 편향이 크다는 것은 해당 모델이 중요한 요소를 놓쳤을 가능성이 있다는 것을 뜻한다.
+</code></pre></div>    </div>
+  </li>
+  <li>
+    <p><strong>Bias - Variance Trade-off</strong></p>
+
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  위의 분산과 편향은 트레이드 오프 관계에 있다. 서로의 연관관계는 모델과 연관성이다.
+  모델이 복잡할 수록 편향은 작아지고, 분산은 증가하여 over-fitting이 된다.
+  모델이 단순할 수록 편향은 증가하고, 분산은 작아져서 under-fitting이 된다.
+</code></pre></div>    </div>
+
     <ul>
-      <li>이때 아스팔트 A와 모래 S를 숫자로 변환해서 리스트로 넣었다. -&gt; 이는 도보로만 이동한 경우의 총합 시간을 구하기 위해서이다.</li>
+      <li>우리가 해결해야하는 문제는 오류를 최소화하기위해 편향과 분산의 합이 최소가 되는 적절한 지점을 찾는것이다.</li>
     </ul>
   </li>
-  <li>이후 반복문을 통해 스쿠터로 지나가는 모든 경우의 총합 시간을 리스트에 넣는다.
-    <ul>
-      <li>스쿠터가 해당 위치를 지나갈 때마다 스쿠터로 이동하는 시간으로 변경해준다.</li>
-    </ul>
-  </li>
-  <li>그 중 가장 적게 걸린 시간을 출력한다.</li>
-</ol>
+</ul>
 
         
       </section>
@@ -426,17 +408,9 @@ Copyright 2009–2022 by Codility Limited. All Rights Reserved. Unauthorized cop
     <strong><i class="fas fa-fw fa-tags" aria-hidden="true"></i> 태그: </strong>
     <span itemprop="keywords">
     
-      <a href="/tags/#codility" class="page__taxonomy-item p-category" rel="tag">Codility</a><span class="sep">, </span>
+      <a href="/tags/#%EB%8D%B0%EC%9D%B4%ED%84%B0-%EB%B6%84%EC%84%9D" class="page__taxonomy-item p-category" rel="tag">데이터 분석</a><span class="sep">, </span>
     
-      <a href="/tags/#codility-challenge" class="page__taxonomy-item p-category" rel="tag">Codility Challenge</a><span class="sep">, </span>
-    
-      <a href="/tags/#%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98" class="page__taxonomy-item p-category" rel="tag">알고리즘</a><span class="sep">, </span>
-    
-      <a href="/tags/#%EC%BD%94%EB%94%94%EB%A6%AC%ED%8B%B0" class="page__taxonomy-item p-category" rel="tag">코디리티</a><span class="sep">, </span>
-    
-      <a href="/tags/#%EC%BD%94%ED%85%8C" class="page__taxonomy-item p-category" rel="tag">코테</a><span class="sep">, </span>
-    
-      <a href="/tags/#%ED%8C%8C%EC%9D%B4%EC%8D%AC" class="page__taxonomy-item p-category" rel="tag">파이썬</a>
+      <a href="/tags/#%EB%A8%B8%EC%8B%A0%EB%9F%AC%EB%8B%9D" class="page__taxonomy-item p-category" rel="tag">머신러닝</a>
     
     </span>
   </p>
@@ -453,7 +427,7 @@ Copyright 2009–2022 by Codility Limited. All Rights Reserved. Unauthorized cop
     <strong><i class="fas fa-fw fa-folder-open" aria-hidden="true"></i> 카테고리: </strong>
     <span itemprop="keywords">
     
-      <a href="/categories/#%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8" class="page__taxonomy-item p-category" rel="tag">코딩테스트</a>
+      <a href="/categories/#%EB%8D%B0%EC%9D%B4%ED%84%B0-%EB%B6%84%EC%84%9D%EA%B3%BC-%EB%A8%B8%EC%8B%A0%EB%9F%AC%EB%8B%9D" class="page__taxonomy-item p-category" rel="tag">데이터 분석과 머신러닝</a>
     
     </span>
   </p>
@@ -461,7 +435,7 @@ Copyright 2009–2022 by Codility Limited. All Rights Reserved. Unauthorized cop
 
         
 
-  <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> 업데이트:</strong> <time class="dt-published" datetime="2022-06-23">June 23, 2022</time></p>
+  <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> 업데이트:</strong> <time class="dt-published" datetime="2021-12-01">December 1, 2021</time></p>
 
       </footer>
 
@@ -470,22 +444,22 @@ Copyright 2009–2022 by Codility Limited. All Rights Reserved. Unauthorized cop
     <h4 class="page__share-title">공유하기</h4>
   
 
-  <a href="https://twitter.com/intent/tweet?text=%5B%ED%8C%8C%EC%9D%B4%EC%8D%AC%5D%5BCodility_%5D%5B%EC%BD%94%EB%94%94%EB%A6%AC%ED%8B%B0%5D+FuryRoad%20http%3A%2F%2Flocalhost%3A4000%2F%25EC%25BD%2594%25EB%2594%25A9%25ED%2585%258C%25EC%258A%25A4%25ED%258A%25B8%2FFuryRoad%2F" class="btn btn--twitter" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="공유하기 Twitter"><i class="fab fa-fw fa-twitter" aria-hidden="true"></i><span> Twitter</span></a>
+  <a href="https://twitter.com/intent/tweet?text=%5B%ED%8C%8C%EC%9D%B4%EC%8D%AC%5D%5B%EB%A8%B8%EC%8B%A0%EB%9F%AC%EB%8B%9D%5D+%EB%8D%B0%EC%9D%B4%ED%84%B0+%EB%B6%84%EC%84%9D%EA%B3%BC+%EB%A8%B8%EC%8B%A0%EB%9F%AC%EB%8B%9D+-+Multiple+Regression%20http%3A%2F%2Flocalhost%3A4000%2F%25EB%258D%25B0%25EC%259D%25B4%25ED%2584%25B0%2520%25EB%25B6%2584%25EC%2584%259D%25EA%25B3%25BC%2520%25EB%25A8%25B8%25EC%258B%25A0%25EB%259F%25AC%25EB%258B%259D%2Fmulti_regression%2F" class="btn btn--twitter" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="공유하기 Twitter"><i class="fab fa-fw fa-twitter" aria-hidden="true"></i><span> Twitter</span></a>
 
-  <a href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Flocalhost%3A4000%2F%25EC%25BD%2594%25EB%2594%25A9%25ED%2585%258C%25EC%258A%25A4%25ED%258A%25B8%2FFuryRoad%2F" class="btn btn--facebook" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="공유하기 Facebook"><i class="fab fa-fw fa-facebook" aria-hidden="true"></i><span> Facebook</span></a>
+  <a href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Flocalhost%3A4000%2F%25EB%258D%25B0%25EC%259D%25B4%25ED%2584%25B0%2520%25EB%25B6%2584%25EC%2584%259D%25EA%25B3%25BC%2520%25EB%25A8%25B8%25EC%258B%25A0%25EB%259F%25AC%25EB%258B%259D%2Fmulti_regression%2F" class="btn btn--facebook" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="공유하기 Facebook"><i class="fab fa-fw fa-facebook" aria-hidden="true"></i><span> Facebook</span></a>
 
-  <a href="https://www.linkedin.com/shareArticle?mini=true&url=http%3A%2F%2Flocalhost%3A4000%2F%25EC%25BD%2594%25EB%2594%25A9%25ED%2585%258C%25EC%258A%25A4%25ED%258A%25B8%2FFuryRoad%2F" class="btn btn--linkedin" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="공유하기 LinkedIn"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i><span> LinkedIn</span></a>
+  <a href="https://www.linkedin.com/shareArticle?mini=true&url=http%3A%2F%2Flocalhost%3A4000%2F%25EB%258D%25B0%25EC%259D%25B4%25ED%2584%25B0%2520%25EB%25B6%2584%25EC%2584%259D%25EA%25B3%25BC%2520%25EB%25A8%25B8%25EC%258B%25A0%25EB%259F%25AC%25EB%258B%259D%2Fmulti_regression%2F" class="btn btn--linkedin" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="공유하기 LinkedIn"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i><span> LinkedIn</span></a>
 </section>
 
 
       
   <nav class="pagination">
     
-      <a href="/%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8/CyclicRotation/" class="pagination--pager" title="[파이썬][Codility_][코디리티] CyclicRotation
+      <a href="/%EB%8D%B0%EC%9D%B4%ED%84%B0%20%EB%B6%84%EC%84%9D%EA%B3%BC%20%EB%A8%B8%EC%8B%A0%EB%9F%AC%EB%8B%9D/simple_regression/" class="pagination--pager" title="[파이썬][머신러닝] 데이터 분석과 머신러닝 - Simple Regression
 ">이전</a>
     
     
-      <a href="/%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8/OddOccurrencesInArray/" class="pagination--pager" title="[파이썬][Codility_][코디리티] OddOccurrencesInArray
+      <a href="/%EB%8D%B0%EC%9D%B4%ED%84%B0%20%EB%B6%84%EC%84%9D%EA%B3%BC%20%EB%A8%B8%EC%8B%A0%EB%9F%AC%EB%8B%9D/ridge_regression/" class="pagination--pager" title="[파이썬][머신러닝] 데이터 분석과 머신러닝 - Ridge Regression
 ">다음</a>
     
   </nav>
@@ -510,7 +484,87 @@ Copyright 2009–2022 by Codility Limited. All Rights Reserved. Unauthorized cop
     
     <h2 class="archive__item-title no_toc" itemprop="headline">
       
-        <a href="/%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8/12945/" rel="permalink">[파이썬][프로그래머스] 피보나치 수
+        <a href="/%EA%B9%83/github_commit_rules/" rel="permalink">[Github] 깃허브 커밋 Rule
+</a>
+      
+    </h2>
+    
+
+  <p class="page__meta">
+    
+
+    
+
+    
+      
+      
+
+      <span class="page__meta-readtime">
+        <i class="far fa-clock" aria-hidden="true"></i>
+        
+          4 분 소요
+        
+      </span>
+    
+  </p>
+
+
+    <p class="archive__item-excerpt" itemprop="description">알고 하는 커밋 법칙
+</p>
+  </article>
+</div>
+
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title no_toc" itemprop="headline">
+      
+        <a href="/%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8/118666/" rel="permalink">[파이썬][프로그래머스] 성격 유형 검사하기
+</a>
+      
+    </h2>
+    
+
+  <p class="page__meta">
+    
+
+    
+
+    
+      
+      
+
+      <span class="page__meta-readtime">
+        <i class="far fa-clock" aria-hidden="true"></i>
+        
+          5 분 소요
+        
+      </span>
+    
+  </p>
+
+
+    <p class="archive__item-excerpt" itemprop="description">프로그래머스 성격 유형 검사하기 문제 풀이
+</p>
+  </article>
+</div>
+
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title no_toc" itemprop="headline">
+      
+        <a href="/%EB%8D%B0%EC%9D%B4%ED%84%B0%EB%B2%A0%EC%9D%B4%EC%8A%A4/ORM/" rel="permalink">[데이터베이스] 객체 관계형 데이터베이스 매핑
 </a>
       
     </h2>
@@ -535,7 +589,7 @@ Copyright 2009–2022 by Codility Limited. All Rights Reserved. Unauthorized cop
   </p>
 
 
-    <p class="archive__item-excerpt" itemprop="description">프로그래머스 피보나치 수 문제 풀이
+    <p class="archive__item-excerpt" itemprop="description">ORM에 대해서 알아보자
 </p>
   </article>
 </div>
@@ -550,7 +604,7 @@ Copyright 2009–2022 by Codility Limited. All Rights Reserved. Unauthorized cop
     
     <h2 class="archive__item-title no_toc" itemprop="headline">
       
-        <a href="/%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8/67256/" rel="permalink">[파이썬][프로그래머스] 키패드 누르기
+        <a href="/%EB%8D%B0%EC%9D%B4%ED%84%B0%20%EC%88%98%EC%A7%91/faker_user/" rel="permalink">[파이썬][라이브러리] 모델 학습에 필요한 가짜 유저 정보 만들기
 </a>
       
     </h2>
@@ -575,87 +629,7 @@ Copyright 2009–2022 by Codility Limited. All Rights Reserved. Unauthorized cop
   </p>
 
 
-    <p class="archive__item-excerpt" itemprop="description">프로그래머스 키패드 누르기 문제 풀이
-</p>
-  </article>
-</div>
-
-        
-          
-
-
-
-<div class="grid__item">
-  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
-    
-    <h2 class="archive__item-title no_toc" itemprop="headline">
-      
-        <a href="/%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8/42584/" rel="permalink">[파이썬][프로그래머스] 주식가격
-</a>
-      
-    </h2>
-    
-
-  <p class="page__meta">
-    
-
-    
-
-    
-      
-      
-
-      <span class="page__meta-readtime">
-        <i class="far fa-clock" aria-hidden="true"></i>
-        
-          1 분 소요
-        
-      </span>
-    
-  </p>
-
-
-    <p class="archive__item-excerpt" itemprop="description">프로그래머스 주식가격 문제 풀이
-</p>
-  </article>
-</div>
-
-        
-          
-
-
-
-<div class="grid__item">
-  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
-    
-    <h2 class="archive__item-title no_toc" itemprop="headline">
-      
-        <a href="/%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8/42747/" rel="permalink">[파이썬][프로그래머스] H-Index
-</a>
-      
-    </h2>
-    
-
-  <p class="page__meta">
-    
-
-    
-
-    
-      
-      
-
-      <span class="page__meta-readtime">
-        <i class="far fa-clock" aria-hidden="true"></i>
-        
-          1 분 소요
-        
-      </span>
-    
-  </p>
-
-
-    <p class="archive__item-excerpt" itemprop="description">프로그래머스 H-Index 문제 풀이
+    <p class="archive__item-excerpt" itemprop="description">Faker 라이브러리 사용하기
 </p>
   </article>
 </div>

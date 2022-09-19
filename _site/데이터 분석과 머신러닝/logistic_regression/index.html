@@ -1,0 +1,770 @@
+<!doctype html>
+<!--
+  Minimal Mistakes Jekyll Theme 4.24.0 by Michael Rose
+  Copyright 2013-2020 Michael Rose - mademistakes.com | @mmistakes
+  Free for personal and commercial use under the MIT license
+  https://github.com/mmistakes/minimal-mistakes/blob/master/LICENSE
+-->
+<html lang="ko" class="no-js">
+  <head>
+    <meta charset="utf-8">
+
+<!-- begin _includes/seo.html --><title>[파이썬][머신러닝] 데이터 분석과 머신러닝 - Logistic Regression - 성장형 개발자 블로그</title>
+<meta name="description" content="학습 전 데이터 분리의 목적과 회귀 문제에 대해">
+
+
+  <meta name="author" content="You Nicholas">
+  
+  <meta property="article:author" content="You Nicholas">
+  
+
+
+<meta property="og:type" content="article">
+<meta property="og:locale" content="ko">
+<meta property="og:site_name" content="성장형 개발자 블로그">
+<meta property="og:title" content="[파이썬][머신러닝] 데이터 분석과 머신러닝 - Logistic Regression">
+<meta property="og:url" content="http://localhost:4000/%EB%8D%B0%EC%9D%B4%ED%84%B0%20%EB%B6%84%EC%84%9D%EA%B3%BC%20%EB%A8%B8%EC%8B%A0%EB%9F%AC%EB%8B%9D/logistic_regression/">
+
+
+  <meta property="og:description" content="학습 전 데이터 분리의 목적과 회귀 문제에 대해">
+
+
+
+
+
+
+
+  <meta property="article:published_time" content="2021-12-02T00:00:00+09:00">
+
+
+
+  <meta property="article:modified_time" content="2021-12-02T00:00:00+09:00">
+
+
+
+  
+
+  
+
+
+<link rel="canonical" href="http://localhost:4000/%EB%8D%B0%EC%9D%B4%ED%84%B0%20%EB%B6%84%EC%84%9D%EA%B3%BC%20%EB%A8%B8%EC%8B%A0%EB%9F%AC%EB%8B%9D/logistic_regression/">
+
+
+
+
+<script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    
+      "@type": "Person",
+      "name": "Yoo Nicholas",
+      "url": "http://localhost:4000/"
+    
+  }
+</script>
+
+
+
+
+
+
+
+<!-- end _includes/seo.html -->
+
+
+
+  <link href="/feed.xml" type="application/atom+xml" rel="alternate" title="성장형 개발자 블로그 Feed">
+
+
+<!-- https://t.co/dKP3o1e -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script>
+  document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
+</script>
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="/assets/css/main.css">
+<link rel="preload" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css"></noscript>
+
+
+
+    <!-- start custom head snippets -->
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4206652111439335"
+     crossorigin="anonymous"></script>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({
+          google_ad_client: "ca-pub-5218184138518164",
+          enable_page_level_ads: true
+     });
+</script>
+<!-- insert favicons. use https://realfavicongenerator.net/ -->
+
+<!-- end custom head snippets -->
+
+  </head>
+
+  <body class="layout--single">
+    <nav class="skip-links">
+  <ul>
+    <li><a href="#site-nav" class="screen-reader-shortcut">Skip to primary navigation</a></li>
+    <li><a href="#main" class="screen-reader-shortcut">Skip to content</a></li>
+    <li><a href="#footer" class="screen-reader-shortcut">Skip to footer</a></li>
+  </ul>
+</nav>
+
+    
+
+<div class="masthead">
+  <div class="masthead__inner-wrap">
+    <div class="masthead__menu">
+      <nav id="site-nav" class="greedy-nav">
+        
+        <a class="site-title" href="/">
+          성장형 개발자 블로그
+          
+        </a>
+        <ul class="visible-links"><li class="masthead__menu-item">
+              <a href="/about/">소개글</a>
+            </li><li class="masthead__menu-item">
+              <a href="/categories/">카테고리</a>
+            </li><li class="masthead__menu-item">
+              <a href="/tags/">태그</a>
+            </li></ul>
+        
+        <button class="greedy-nav__toggle hidden" type="button">
+          <span class="visually-hidden">토글 메뉴</span>
+          <div class="navicon"></div>
+        </button>
+        <ul class="hidden-links hidden"></ul>
+      </nav>
+    </div>
+  </div>
+</div>
+
+
+    <div class="initial-content">
+      
+
+
+
+
+
+<div id="main" role="main">
+  
+  <div class="sidebar sticky">
+  
+
+
+<div itemscope itemtype="https://schema.org/Person" class="h-card">
+
+  
+    <div class="author__avatar">
+      <a href="http://localhost:4000/">
+        <img src="https://avatars.githubusercontent.com/u/75519839?v=4" alt="You Nicholas" itemprop="image" class="u-photo">
+      </a>
+    </div>
+  
+
+  <div class="author__content">
+    <h3 class="author__name p-name" itemprop="name">
+      <a class="u-url" rel="me" href="http://localhost:4000/" itemprop="url">You Nicholas</a>
+    </h3>
+    
+      <div class="author__bio p-note" itemprop="description">
+        <p>가고 가고 또 가면 <strong>알게되고</strong>, 행하고 행하고 또 행하게 되면 <strong>이루게 된다.</strong></p>
+
+      </div>
+    
+  </div>
+
+  <div class="author__urls-wrapper">
+    <button class="btn btn--inverse">팔로우</button>
+    <ul class="author__urls social-icons">
+      
+        <li itemprop="homeLocation" itemscope itemtype="https://schema.org/Place">
+          <i class="fas fa-fw fa-map-marker-alt" aria-hidden="true"></i> <span itemprop="name" class="p-locality">Republic of Korea</span>
+        </li>
+      
+
+      
+        
+          
+            <li><a href="godhin:sodlalwl13e@gmail.com" rel="nofollow noopener noreferrer me"><i class="fas fa-fw fa-envelope-square" aria-hidden="true"></i><span class="label">Email</span></a></li>
+          
+        
+          
+        
+          
+        
+          
+        
+          
+            <li><a href="https://github.com/godhin" rel="nofollow noopener noreferrer me" itemprop="sameAs"><i class="fab fa-fw fa-github" aria-hidden="true"></i><span class="label">GitHub</span></a></li>
+          
+        
+          
+            <li><a href="https://instagram.com/cmblir" rel="nofollow noopener noreferrer me" itemprop="sameAs"><i class="fab fa-fw fa-instagram" aria-hidden="true"></i><span class="label">Instagram</span></a></li>
+          
+        
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      <!--
+  <li>
+    <a href="http://link-to-whatever-social-network.com/user/" itemprop="sameAs" rel="nofollow noopener noreferrer me">
+      <i class="fas fa-fw" aria-hidden="true"></i> Custom Social Profile Link
+    </a>
+  </li>
+-->
+    </ul>
+  </div>
+</div>
+
+  
+  </div>
+
+
+
+  <article class="page h-entry" itemscope itemtype="https://schema.org/CreativeWork">
+    <meta itemprop="headline" content="[파이썬][머신러닝] 데이터 분석과 머신러닝 - Logistic Regression">
+    <meta itemprop="description" content="학습 전 데이터 분리의 목적과 회귀 문제에 대해">
+    <meta itemprop="datePublished" content="2021-12-02T00:00:00+09:00">
+    <meta itemprop="dateModified" content="2021-12-02T00:00:00+09:00">
+
+    <div class="page__inner-wrap">
+      
+        <header>
+          <h1 id="page-title" class="page__title p-name" itemprop="headline">
+            <a href="http://localhost:4000/%EB%8D%B0%EC%9D%B4%ED%84%B0%20%EB%B6%84%EC%84%9D%EA%B3%BC%20%EB%A8%B8%EC%8B%A0%EB%9F%AC%EB%8B%9D/logistic_regression/" class="u-url" itemprop="url">[파이썬][머신러닝] 데이터 분석과 머신러닝 - Logistic Regression
+</a>
+          </h1>
+          
+
+  <p class="page__meta">
+    
+
+    
+
+    
+      
+      
+
+      <span class="page__meta-readtime">
+        <i class="far fa-clock" aria-hidden="true"></i>
+        
+          1 분 소요
+        
+      </span>
+    
+  </p>
+
+
+        </header>
+      
+
+      <section class="page__content e-content" itemprop="text">
+        
+          <aside class="sidebar__right sticky">
+            <nav class="toc">
+              <header><h4 class="nav__title"><i class="fas fa-file-alt"></i> On This Page</h4></header>
+              <ul class="toc__menu"><li><a href="#logistic-regression">Logistic Regression</a><ul><li><a href="#특징">특징</a></li><li><a href="#ridge-regression-장단점">Ridge Regression 장단점</a></li></ul></li><li><a href="#데이터-나누기">데이터 나누기</a><ul><li><a href="#예시">예시</a></li><li><a href="#훈련-데이터">훈련 데이터</a></li><li><a href="#테스트-데이터">테스트 데이터</a></li><li><a href="#검증-데이터의-중요성">검증 데이터의 중요성</a></li></ul></li></ul></li></ul>
+
+            </nav>
+          </aside>
+        
+        <h1 id="logistic-regression">Logistic Regression</h1>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>머신 러닝에서 정확한 예측을 생성하는 데 자주 사용되는 통계 모델이다. 사건이 발생할 확률을 결정하는데 사용되고 특성 간의 관계를 보여주고 특정 결과의 확률을 계산하는 방식이다.
+또한 대상 변수가 이진이기때문에 값이 0또는 1로 나오게 된다.
+</code></pre></div></div>
+
+<h3 id="특징">특징</h3>
+<ol>
+  <li>이진 로지스틱 회귀에서는 응답 변수가 이진이어야 된다.</li>
+  <li>대체로 대규모 크기의 샘플을 하는 경우 많이 사용된다.
+    <ul>
+      <li>유명한 것은 심장병 질환에 걸릴 확률 예측</li>
+    </ul>
+  </li>
+</ol>
+
+<h3 id="ridge-regression-장단점">Ridge Regression 장단점</h3>
+
+<ul>
+  <li>
+    <p>장점</p>
+
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  1. 매우 효율적이고 엄청난 양의 리소스를 필요로 하지 않기 때문에 다양하게 사용된다.
+  2. 해석이 쉽고 정규화또한 쉽기때문에 제공하는 결과도 잘 보정되어 있는 예측 확률이다.
+  3. 관련이 없는 속성 또는 상관 관계가 있는 속성이 생략될 때 더 효율적이고 특히 Feature Engineering에서 성능의 효율성에 중요한 역할을 한다.
+  4. 구현이 쉽고 복잡한 알고리즘 성능을 측정하는 데 도움이 된다.
+</code></pre></div>    </div>
+  </li>
+  <li>
+    <p>단점</p>
+
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  1. 비선형 문제를 해결할 때 사용이 불가능하다.
+  2. 데이터의 표시에 의존성이 높고, 그로인해 과적합이 될 확률이 높다.
+</code></pre></div>    </div>
+  </li>
+</ul>
+
+<h2 id="데이터-나누기">데이터 나누기</h2>
+
+<p><em>‘너가 찾아야할 답은 이거야’</em></p>
+
+<ul>
+  <li>머신러닝 학습을 시킬 때 평가를 위해서 데이터를 적절하게 분리하는 작업이 필요하다.</li>
+</ul>
+
+<ol>
+  <li>훈련데이터
+    <ul>
+      <li>모델을 학습하는데 사용된다.</li>
+      <li>이 데이터를 기반으로 모델이 예측하는 것이 달라지게 된다.</li>
+    </ul>
+  </li>
+  <li>테스트데이터
+    <ul>
+      <li>훈련이나 검증과정에서 사용되지 않으며, 일반화 오류를 평가하기 위해서 선택된 모델에 한해서 한번 사용된다.</li>
+    </ul>
+  </li>
+  <li>검증데이터
+    <ul>
+      <li>모델을 선택하기 위해서 오류를 측정할 때 사용된다.</li>
+    </ul>
+  </li>
+</ol>
+
+<ul>
+  <li>보통 훈련과 테스트 데이터를 나누는 경우 4:1 비율이 많이 사용된다.
+    <ul>
+      <li>이때 데이터의 비율이 훈련과 테스트가 동일해야한다. 예를 들어 양성, 음성을 나누는 문제에서 훈련이나 테스트에 양성또는 음성 비율이 과하게 이상할 경우 내가 원하는 모델이 안나올 수도 있다.</li>
+    </ul>
+  </li>
+</ul>
+
+<h3 id="예시">예시</h3>
+
+<ul>
+  <li>흔한 간질환 데이터로 보도록 하자.</li>
+  <li>보통 학습전에 이런식으로 나누게 된다. 여기서 <code class="language-plaintext highlighter-rouge">test_size=0.2</code>의 비율이 위에서 언급한 80% 20% 4:1 비율이다.</li>
+</ul>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">from</span> <span class="nn">sklearn.datasets</span> <span class="kn">import</span> <span class="n">load_breast_cancer</span>
+<span class="n">cancer</span> <span class="o">=</span> <span class="n">load_breast_cancer</span><span class="p">()</span>
+<span class="n">x</span> <span class="o">=</span> <span class="n">cancer</span><span class="p">.</span><span class="n">data</span>
+<span class="n">y</span> <span class="o">=</span> <span class="n">cancer</span><span class="p">.</span><span class="n">target</span>
+
+<span class="c1"># 데이터 나누기
+</span><span class="kn">from</span> <span class="nn">sklearn.model_selection</span> <span class="kn">import</span> <span class="n">train_test_split</span>
+<span class="n">x_train</span><span class="p">,</span> <span class="n">x_test</span><span class="p">,</span> <span class="n">y_train</span><span class="p">,</span> <span class="n">y_test</span> <span class="o">=</span> <span class="n">train_test_split</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="n">stratify</span><span class="o">=</span><span class="n">y</span><span class="p">,</span> <span class="n">test_size</span><span class="o">=</span><span class="mf">0.2</span><span class="p">,</span> <span class="n">random_state</span><span class="o">=</span><span class="mi">42</span><span class="p">)</span>
+</code></pre></div></div>
+
+<h3 id="훈련-데이터">훈련 데이터</h3>
+
+<p><em>모델에게 가리키기</em></p>
+
+<p>우리가 무언가를 보고 배우듯, 모델에게도 보고 배울 무언가가 필요하다. 그게 바로 <strong>훈련 데이터</strong>이다.</p>
+
+<h3 id="테스트-데이터"><strong>테스트 데이터</strong></h3>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>모델을 만들 때 없어서는 안되는 데이터이다. '최종 모델에 대한 바이어스가 없는 평가를 제공하는 것'이라고도 표현한다.
+</code></pre></div></div>
+
+<p>위에서도 언급했듯이 딱 1번만 사용되기 떄문에, 훈련 데이터셋과 검증 데이터셋 두 가지를 모두 사용한 경우 흔히 <em>최종 학습이 끝난 모델</em>이라고 한다.</p>
+
+<ul>
+  <li><em>Kaggle 대회에서는 검증셋이 초기에 훈련셋과 주어지는데, 경쟁에서 승리하기 위해서는 시험 데이터셋의 성능을 바탕으로 정해진다.</em>
+    <ul>
+      <li>이때 많이들 검증 셋을 테스트 셋으로 사용하는데, 이것은 좋지 않은 경우가 많다고 한다.</li>
+    </ul>
+  </li>
+</ul>
+
+<h3 id="검증-데이터의-중요성">검증 데이터의 중요성</h3>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>검증 데이터는 모델 평가를 위해 사용되지만, 매 학습마다 자주 수행하는 평가를 위한 것이다.
+</code></pre></div></div>
+
+<p>특히 모델의 <strong>성능</strong>을 개선하는 과정에서 하이퍼파라미터를 미세조정하기 위해 사용된다. 별거 아닌것같아 검증을 넘길 경우 모델에 큰 영향을 주지는 않지만, 간접적으로 성능 향상의 기회를 간파하게 되는 것이다.</p>
+
+
+        
+      </section>
+
+      <footer class="page__meta">
+        
+        
+  
+
+
+  
+
+  <p class="page__taxonomy">
+    <strong><i class="fas fa-fw fa-tags" aria-hidden="true"></i> 태그: </strong>
+    <span itemprop="keywords">
+    
+      <a href="/tags/#%EB%8D%B0%EC%9D%B4%ED%84%B0-%EB%B6%84%EC%84%9D" class="page__taxonomy-item p-category" rel="tag">데이터 분석</a><span class="sep">, </span>
+    
+      <a href="/tags/#%EB%A8%B8%EC%8B%A0%EB%9F%AC%EB%8B%9D" class="page__taxonomy-item p-category" rel="tag">머신러닝</a>
+    
+    </span>
+  </p>
+
+
+
+
+  
+
+
+  
+
+  <p class="page__taxonomy">
+    <strong><i class="fas fa-fw fa-folder-open" aria-hidden="true"></i> 카테고리: </strong>
+    <span itemprop="keywords">
+    
+      <a href="/categories/#%EB%8D%B0%EC%9D%B4%ED%84%B0-%EB%B6%84%EC%84%9D%EA%B3%BC-%EB%A8%B8%EC%8B%A0%EB%9F%AC%EB%8B%9D" class="page__taxonomy-item p-category" rel="tag">데이터 분석과 머신러닝</a>
+    
+    </span>
+  </p>
+
+
+        
+
+  <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> 업데이트:</strong> <time class="dt-published" datetime="2021-12-02">December 2, 2021</time></p>
+
+      </footer>
+
+      <section class="page__share">
+  
+    <h4 class="page__share-title">공유하기</h4>
+  
+
+  <a href="https://twitter.com/intent/tweet?text=%5B%ED%8C%8C%EC%9D%B4%EC%8D%AC%5D%5B%EB%A8%B8%EC%8B%A0%EB%9F%AC%EB%8B%9D%5D+%EB%8D%B0%EC%9D%B4%ED%84%B0+%EB%B6%84%EC%84%9D%EA%B3%BC+%EB%A8%B8%EC%8B%A0%EB%9F%AC%EB%8B%9D+-+Logistic+Regression%20http%3A%2F%2Flocalhost%3A4000%2F%25EB%258D%25B0%25EC%259D%25B4%25ED%2584%25B0%2520%25EB%25B6%2584%25EC%2584%259D%25EA%25B3%25BC%2520%25EB%25A8%25B8%25EC%258B%25A0%25EB%259F%25AC%25EB%258B%259D%2Flogistic_regression%2F" class="btn btn--twitter" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="공유하기 Twitter"><i class="fab fa-fw fa-twitter" aria-hidden="true"></i><span> Twitter</span></a>
+
+  <a href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Flocalhost%3A4000%2F%25EB%258D%25B0%25EC%259D%25B4%25ED%2584%25B0%2520%25EB%25B6%2584%25EC%2584%259D%25EA%25B3%25BC%2520%25EB%25A8%25B8%25EC%258B%25A0%25EB%259F%25AC%25EB%258B%259D%2Flogistic_regression%2F" class="btn btn--facebook" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="공유하기 Facebook"><i class="fab fa-fw fa-facebook" aria-hidden="true"></i><span> Facebook</span></a>
+
+  <a href="https://www.linkedin.com/shareArticle?mini=true&url=http%3A%2F%2Flocalhost%3A4000%2F%25EB%258D%25B0%25EC%259D%25B4%25ED%2584%25B0%2520%25EB%25B6%2584%25EC%2584%259D%25EA%25B3%25BC%2520%25EB%25A8%25B8%25EC%258B%25A0%25EB%259F%25AC%25EB%258B%259D%2Flogistic_regression%2F" class="btn btn--linkedin" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="공유하기 LinkedIn"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i><span> LinkedIn</span></a>
+</section>
+
+
+      
+  <nav class="pagination">
+    
+      <a href="/%EB%8D%B0%EC%9D%B4%ED%84%B0%20%EB%B6%84%EC%84%9D%EA%B3%BC%20%EB%A8%B8%EC%8B%A0%EB%9F%AC%EB%8B%9D/ridge_regression/" class="pagination--pager" title="[파이썬][머신러닝] 데이터 분석과 머신러닝 - Ridge Regression
+">이전</a>
+    
+    
+      <a href="/%EB%8D%B0%EC%9D%B4%ED%84%B0%20%EB%B6%84%EC%84%9D%EA%B3%BC%20%EB%A8%B8%EC%8B%A0%EB%9F%AC%EB%8B%9D/decision_trees/" class="pagination--pager" title="[파이썬][머신러닝] 데이터 분석과 머신러닝 - Desicion Trees
+">다음</a>
+    
+  </nav>
+
+    </div>
+
+    
+  </article>
+
+  
+  
+    <div class="page__related">
+      <h2 class="page__related-title">참고</h2>
+      <div class="grid__wrapper">
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title no_toc" itemprop="headline">
+      
+        <a href="/%EA%B9%83/github_commit_rules/" rel="permalink">[Github] 깃허브 커밋 Rule
+</a>
+      
+    </h2>
+    
+
+  <p class="page__meta">
+    
+
+    
+
+    
+      
+      
+
+      <span class="page__meta-readtime">
+        <i class="far fa-clock" aria-hidden="true"></i>
+        
+          4 분 소요
+        
+      </span>
+    
+  </p>
+
+
+    <p class="archive__item-excerpt" itemprop="description">알고 하는 커밋 법칙
+</p>
+  </article>
+</div>
+
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title no_toc" itemprop="headline">
+      
+        <a href="/%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8/118666/" rel="permalink">[파이썬][프로그래머스] 성격 유형 검사하기
+</a>
+      
+    </h2>
+    
+
+  <p class="page__meta">
+    
+
+    
+
+    
+      
+      
+
+      <span class="page__meta-readtime">
+        <i class="far fa-clock" aria-hidden="true"></i>
+        
+          5 분 소요
+        
+      </span>
+    
+  </p>
+
+
+    <p class="archive__item-excerpt" itemprop="description">프로그래머스 성격 유형 검사하기 문제 풀이
+</p>
+  </article>
+</div>
+
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title no_toc" itemprop="headline">
+      
+        <a href="/%EB%8D%B0%EC%9D%B4%ED%84%B0%EB%B2%A0%EC%9D%B4%EC%8A%A4/ORM/" rel="permalink">[데이터베이스] 객체 관계형 데이터베이스 매핑
+</a>
+      
+    </h2>
+    
+
+  <p class="page__meta">
+    
+
+    
+
+    
+      
+      
+
+      <span class="page__meta-readtime">
+        <i class="far fa-clock" aria-hidden="true"></i>
+        
+          1 분 소요
+        
+      </span>
+    
+  </p>
+
+
+    <p class="archive__item-excerpt" itemprop="description">ORM에 대해서 알아보자
+</p>
+  </article>
+</div>
+
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title no_toc" itemprop="headline">
+      
+        <a href="/%EB%8D%B0%EC%9D%B4%ED%84%B0%20%EC%88%98%EC%A7%91/faker_user/" rel="permalink">[파이썬][라이브러리] 모델 학습에 필요한 가짜 유저 정보 만들기
+</a>
+      
+    </h2>
+    
+
+  <p class="page__meta">
+    
+
+    
+
+    
+      
+      
+
+      <span class="page__meta-readtime">
+        <i class="far fa-clock" aria-hidden="true"></i>
+        
+          2 분 소요
+        
+      </span>
+    
+  </p>
+
+
+    <p class="archive__item-excerpt" itemprop="description">Faker 라이브러리 사용하기
+</p>
+  </article>
+</div>
+
+        
+      </div>
+    </div>
+  
+  
+</div>
+
+    </div>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4206652111439335"
+     crossorigin="anonymous"></script>
+    <div align="center" style="margin: 1em 0;">
+    <ins class="adsbygoogle"
+    style="display:block; border-bottom: initial;"
+    data-ad-client="ca-pub-9089895411733030"
+    data-ad-format="auto"></ins>
+  </div>
+  <script>
+  (adsbygoogle = window.adsbygoogle || []).push({});
+  </script>
+
+    
+
+    <div id="footer" class="page__footer">
+      <footer>
+        <!-- start custom footer snippets -->
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4206652111439335"
+     crossorigin="anonymous"></script>
+     <div align="center" style="margin: 1em 0;">
+        <ins class="adsbygoogle"
+        style="display:block; border-bottom: initial;"
+        data-ad-client="ca-pub-9089895411733030"
+        data-ad-format="auto"></ins>
+    </div>
+    <script>
+    (adsbygoogle = window.adsbygoogle || []).push({});
+    </script>
+<!-- end custom footer snippets -->
+        <div class="page__footer-follow">
+  <ul class="social-icons">
+    
+      <li><strong>팔로우:</strong></li>
+    
+
+    
+      
+        
+          <li><a href="godhin:sodlalwl13e@gmail.com" rel="nofollow noopener noreferrer"><i class="fas fa-fw fa-envelope-square" aria-hidden="true"></i> Email</a></li>
+        
+      
+        
+      
+        
+      
+        
+      
+        
+          <li><a href="https://github.com/godhin" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-github" aria-hidden="true"></i> GitHub</a></li>
+        
+      
+        
+          <li><a href="https://instagram.com/cmblir" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-instagram" aria-hidden="true"></i> Instagram</a></li>
+        
+      
+    
+
+    
+      <li><a href="/feed.xml"><i class="fas fa-fw fa-rss-square" aria-hidden="true"></i> 피드</a></li>
+    
+  </ul>
+</div>
+
+<div class="page__footer-copyright">&copy; 2022 Yoo Nicholas. Powered by <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.</div>
+
+      </footer>
+    </div>
+
+    
+  <script src="/assets/js/main.min.js"></script>
+
+
+
+
+
+
+
+
+
+
+  </body>
+</html>
