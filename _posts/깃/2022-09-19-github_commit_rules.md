@@ -14,6 +14,9 @@ date: 2022-09-19
 last_modified_at: 2022-09-19
 ---
 
+![GitHub_Logo](https://user-images.githubusercontent.com/75519839/190954372-1dc3219c-0927-48dc-8bdc-194371895ca5.png)
+
+
 ```console
 user@cmblir:~$ git add
 user@cmblir:~$ git commit -m "Update getting started documentation with git commit"
