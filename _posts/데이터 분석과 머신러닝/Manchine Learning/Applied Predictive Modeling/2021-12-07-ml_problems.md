@@ -106,16 +106,18 @@ metics = accuracy_score(y_true, y_pred)
 - 오차 행렬
 >위의 TP, TN, FP, FN을 표로 정리해놓은 것으로 예측 오류가 어떠한 유형으로 발생하고 얼마인 지를 나타낸다.
 
-### Precision
-- 정밀도
-> 진짜가 참일 확률
-
 ```python
 from sklearn.metrics import confusion_matrix
 # Sklearn의 confusion_matrix 활용
 
 metrics = confusion_matrix(y_true, y_pred)
 ```
+
+### Precision
+- 정밀도
+> 진짜가 참일 확률
+
+
 
 **Precision = TP / TP + FP**
 
