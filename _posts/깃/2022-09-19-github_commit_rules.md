@@ -154,7 +154,7 @@ This is the same convention as writing an email message.
 
 ---
 
-### 예시들
+### Example
 
 1. 좋은 예시
 
