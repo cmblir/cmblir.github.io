@@ -81,6 +81,7 @@ scaler = StandardScaler()
 
 ### Clipping
 - 특정 범위를 넘어서는 값들을 특정 경계값으로 변환시켜 주는 기법이다.
+
 ```python
 # pandas의 clip함수를 활용
 import pandas as pd
