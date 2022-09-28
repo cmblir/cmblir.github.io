@@ -78,4 +78,4 @@ PI.fit(X_val_transformed, y_val)
 features = X_val.columns.tolist()
 pd.Series(PI.feature_importances_, feature_name).sort_values()
 # Pandas의 Series를 이용해서 마지막으로 순열 중요도와 특성을 순서대로 출력하여 확인한다.
-
+```
