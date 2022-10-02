@@ -59,7 +59,7 @@ Only 1771 contains an even number of digits.
 ## 3. 문제 해결 및 코드
 --- 
 
-<script src="https://gist.github.com/godhin/f898a7c26ead839276fb65ea74070637.js"></script>
+<script src="https://gist.github.com/cmblir/f898a7c26ead839276fb65ea74070637.js"></script>
 
 - 주석을 참고하면서 이해를 돕습니다.
 ---

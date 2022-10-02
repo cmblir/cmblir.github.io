@@ -51,7 +51,7 @@ last_modified_at: 2022-06-08
 ## 3. 문제 해결 및 코드
 --- 
 
-<script src="https://gist.github.com/godhin/6caecad823b230efc5abf5bf43c88c83.js"></script>
+<script src="https://gist.github.com/cmblir/6caecad823b230efc5abf5bf43c88c83.js"></script>
 
 - 주석을 참고하면서 이해를 돕습니다.
 ---

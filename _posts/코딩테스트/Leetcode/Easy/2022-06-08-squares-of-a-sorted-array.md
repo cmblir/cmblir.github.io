@@ -55,7 +55,7 @@ After sorting, it becomes [0,1,9,16,100].
 ## 3. 문제 해결 및 코드
 --- 
 
-<script src="https://gist.github.com/godhin/cd3fd14b5e5e090437780c31ee97a147.js"></script>
+<script src="https://gist.github.com/cmblir/cd3fd14b5e5e090437780c31ee97a147.js"></script>
 
 - 주석을 참고하면서 이해를 돕습니다.
 ---

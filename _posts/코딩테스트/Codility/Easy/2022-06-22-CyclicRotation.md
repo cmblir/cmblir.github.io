@@ -66,7 +66,7 @@ Copyright 2009–2022 by Codility Limited. All Rights Reserved. Unauthorized cop
 ## 3. 문제 해결 및 코드
 --- 
 
-<script src="https://gist.github.com/godhin/ef883c5fa2f2e33ef23bba0c5606a8ae.js"></script>
+<script src="https://gist.github.com/cmblir/ef883c5fa2f2e33ef23bba0c5606a8ae.js"></script>
 
 - 주석을 참고하면서 이해를 돕습니다.
 ---
