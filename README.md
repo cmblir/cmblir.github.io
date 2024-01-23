@@ -1,4 +1,4 @@
-![IMG_7194 2](https://user-images.githubusercontent.com/75519839/173573581-dd89ce93-8350-4c73-931a-7428359dd508.jpg)
+# 블로그 이사중 ~> https://cmblir-java.tistory.com #
 
 ## 🇰🇷 깃블로그를 만들면서 ##
 좋아하는 글귀가 있다.
